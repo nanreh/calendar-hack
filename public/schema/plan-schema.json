@@ -1,0 +1,99 @@
+{
+    "description": "Plan schema",
+    "$id": "https://defy.org/plan",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        },
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "type": {
+            "enum": [
+                "Marathon",
+                "Half Marathon",
+                "5K",
+                "10K",
+		"50K",
+		"100K",
+		"100M"
+            ]
+        },
+        "units": {
+            "enum": [
+                "mi",
+                "km"
+            ]
+        },
+        "source": {
+            "type": "string"
+        },
+        "schedule": {
+            "type": "array",
+            "items": {
+                "$ref": "#/defs/week"
+            },
+            "minItems": 1
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description",
+        "units",
+        "source",
+        "type",
+        "schedule"
+    ],
+    "defs": {
+        "week": {
+            "properties": {
+                "description": "string",
+                "distance": "number",
+                "workouts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/defs/workout"
+                    },
+                    "minItems": 7,
+                    "maxItems": 7
+                }
+            },
+            "required": [
+                "workouts"
+            ]
+        },
+        "workout": {
+            "properties": {
+                "description": "string",
+                "distance": "number",
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "enum": [
+                            "Rest",
+                            "Easy Run",
+                            "Run",
+                            "Long Run",
+                            "Cross Train",
+                            "Race",
+                            "Speedwork",
+                            "Hills"
+                        ]
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                }
+            },
+            "required": [
+                "description"
+            ]
+        }
+    }
+}

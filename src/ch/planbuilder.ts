@@ -1,0 +1,62 @@
+import { eachDayOfInterval } from 'date-fns'
+import { calcPlanDates } from './datecalc'
+import { DateGrid, dayOfWeek } from './dategrid'
+import { TrainingPlan, PlannedWorkout } from './planrepo'
+import { RacePlan, DayDetails } from './models'
+
+function renderDayDetails(date: Date, plannedWorkout: PlannedWorkout | undefined): DayDetails | undefined {
+    if (plannedWorkout) {
+        return { desc: plannedWorkout.description, tags: plannedWorkout.tags, dist: plannedWorkout.distance };
+    } else {
+        return undefined;
+    }
+}
+
+function getWorkouts(trainingPlan: TrainingPlan): PlannedWorkout[] {
+    const result = new Array<PlannedWorkout>();
+    for (let w = 0; w < trainingPlan.schedule.length; w++) {
+        const currWeek = trainingPlan.schedule[w];
+        for (let d = 0; d < currWeek.workouts.length; d++) {
+            result.push(currWeek.workouts[d]);
+        }
+    }
+    return result;
+}
+
+export function build(trainingPlan: TrainingPlan, raceDate: Date): RacePlan {
+    const planDates = calcPlanDates(trainingPlan.schedule.length, raceDate);
+    const workoutsToPlace = getWorkouts(trainingPlan);
+    const map = new Map<Date, DayDetails>();
+    eachDayOfInterval({ start: planDates.planStartDate, end: planDates.planEndDate }).forEach(currDate => {
+        const dayDetails = renderDayDetails(currDate, workoutsToPlace.shift())
+        if (dayDetails) {
+            map.set(currDate, dayDetails);
+        }
+    });
+    const dateGrid = new DateGrid(map);
+    return { raceType: trainingPlan.type, planDates: planDates, dateGrid: dateGrid, sourceUnits: trainingPlan.units };
+}
+
+export function swap(racePlan: RacePlan, d1: Date, d2: Date): RacePlan {
+    const newPlan = {
+        planDates: racePlan.planDates,
+        raceType: racePlan.raceType,
+        title: racePlan.raceType,
+        dateGrid: racePlan.dateGrid.clone(),
+        sourceUnits: racePlan.sourceUnits,
+    }
+    newPlan.dateGrid.swap(d1, d2);
+    return newPlan;
+}
+
+export function swapDow(racePlan: RacePlan, dow1: dayOfWeek, dow2: dayOfWeek): RacePlan {
+    const newPlan = {
+        planDates: racePlan.planDates,
+        raceType: racePlan.raceType,
+        title: racePlan.raceType,
+        dateGrid: racePlan.dateGrid.clone(),
+        sourceUnits: racePlan.sourceUnits,
+    }
+    newPlan.dateGrid.swapDow(dow1, dow2);
+    return newPlan;
+}

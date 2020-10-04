@@ -1,0 +1,989 @@
+{
+  "id": "hansons_beg_half",
+  "name": "Hansons Beginner",
+  "description": "Hansons Beginner",
+  "units": "mi",
+  "source": "https://hansons-running.com/pages/training-plans",
+  "type": "Half Marathon",
+  "schedule": [
+    {
+      "workouts": [
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 3 miles",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 3 miles",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 2 miles",
+          "distance": 2,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 3 miles",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 3 miles",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 3 miles",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 3 miles",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 3 miles",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n3 miles @ HMP\n1.5 miles Cool Down",
+          "distance": 6,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8 miles Long Run",
+          "distance": 8,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n12 x 400m @ 5k-10k pace w. 400m jog rest\n1.5 miles Cool Down",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n3 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 6,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "9 miles Long Run",
+          "distance": 9,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n8 x 600m @ 5k-10k pace w. 400m jog rest\n1.5 miles Cool Down",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n3 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 6,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "10 miles Long Run",
+          "distance": 0,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n6 x 800m @ 5k-10k pace w. 400m jog rest\n1.5 miles Cool Down",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n4 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "10 miles Long Run",
+          "distance": 10,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n5 x 1k @ 5k-10k pace w. 600m jog rest\n1.5 miles Cool Down",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n4 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "10 miles Long Run",
+          "distance": 10,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n4 x 1200m @ 5k-10k pace w. 600m jog rest\n1.5 miles Cool Down",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n4 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "12 miles Long Run",
+          "distance": 12,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n6 x 1 mile @ HMP -10s w. 400m jog rest\n1.5 miles Cool Down",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n5 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "10 miles Long Run",
+          "distance": 10,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n4 x 1.5 miles @ HMP -10s w. 800m jog rest\n1.5 miles Cool Down",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n5 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "12 miles Long Run",
+          "distance": 12,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n3 x 2 miles @ HMP -10s w. 800m jog rest\n1.5 miles Cool Down",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n5 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "10 miles Long Run",
+          "distance": 10,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n2 x 3 miles @ HMP -10s w. 1 mile jog rest\n1.5 miles Cool Down",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n6 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "12 miles Long Run",
+          "distance": 12,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n3 x 2 miles @ HMP -10s w. 800m jog rest\n1.5 miles Cool Down",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n6 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "10 miles Long Run",
+          "distance": 10,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n4 x 1.5 miles @ HMP -10s w. 800m jog rest\n1.5 miles Cool Down",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n6 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "12 miles Long Run",
+          "distance": 12,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n6 x 1 mile @ HMP -10s w. 400m jog rest\n1.5 miles Cool Down",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "1.5 miles Warm Up\n5 miles@ HMP\n1.5 miles Cool Down",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 8 miles",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest or Cross-Train",
+          "distance": 0,
+          "tags": [
+            "Rest",
+            "Cross Train"
+          ]
+        },
+        {
+          "description": "Easy 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Easy 3 miles",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Plan Ends",
+          "distance": 13.1,
+          "tags": [
+            "Race"
+          ]
+        }
+      ]
+    }
+  ]
+}

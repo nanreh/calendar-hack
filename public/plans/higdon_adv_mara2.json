@@ -1,0 +1,964 @@
+{
+  "id": "higdon_adv_mara2",
+  "name": "Hal Higdon: Advanced 2",
+  "description": "Hal Higdon: Advanced 2",
+  "units": "mi",
+  "source": "https://www.halhigdon.com/training/marathon-training/",
+  "type": "Marathon",
+  "schedule": [
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 x hill",
+          "distance": 0,
+          "tags": [
+            "Hills"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "30 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "5 miles pace",
+          "distance": 5,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "10 miles",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "30 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles pace",
+          "distance": 3,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "11 miles",
+          "distance": 11,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 x 800",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "30 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "6 miles pace",
+          "distance": 6,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "8 miles",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 x hill",
+          "distance": 0,
+          "tags": [
+            "Hills"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "30 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "6 miles pace",
+          "distance": 6,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "13 miles",
+          "distance": 13,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "35 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles pace",
+          "distance": 3,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "7 miles run",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "14 miles",
+          "distance": 14,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 x 800",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "35 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "7 miles pace",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "10 miles",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 x hill",
+          "distance": 0,
+          "tags": [
+            "Hills"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "40 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "8 miles pace",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "16 miles",
+          "distance": 16,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "40 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles pace",
+          "distance": 3,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "8 miles run",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "17 miles",
+          "distance": 17,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "6 x 800",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "40 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "Half Marathon",
+          "distance": 13.1,
+          "tags": [
+            "Race"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "6 x hill",
+          "distance": 0,
+          "tags": [
+            "Hills"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "45 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "9 miles pace",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "19 miles",
+          "distance": 19,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "45 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles pace",
+          "distance": 4,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "10 miles run",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "20 miles",
+          "distance": 20,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "7 x 800",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "45 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "6 miles pace",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "7 x hill",
+          "distance": 0,
+          "tags": [
+            "Hills"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "50 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "10 miles pace",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "20 miles",
+          "distance": 20,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "45 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 miles pace",
+          "distance": 5,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "6 miles run",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8 x 800",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "40 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "10 miles pace",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "20 miles",
+          "distance": 20,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "6 x hill",
+          "distance": 0,
+          "tags": [
+            "Hills"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "30 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "4 miles pace",
+          "distance": 4,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "30 tempo",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles pace",
+          "distance": 4,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8 miles",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 x 400",
+          "distance": 0,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "2 miles run",
+          "distance": 2,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Plan Ends",
+          "distance": 26.2,
+          "tags": [
+            "Race"
+          ]
+        }
+      ]
+    }
+  ]
+}

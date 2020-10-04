@@ -1,0 +1,964 @@
+{
+  "id": "higdon_nov_mara1",
+  "name": "Hal Higdon: Novice 1",
+  "description": "Hal Higdon: Novice 1",
+  "units": "mi",
+  "source": "https://www.halhigdon.com/training/marathon-training/",
+  "type": "Marathon",
+  "schedule": [
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "9 miles",
+          "distance": 9,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "10 miles",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "6 miles run",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "6 miles run",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "13.1 Half Marathon",
+          "distance": 13.1,
+          "tags": [
+            "Race"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "7 miles run",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "10 miles",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "7 miles run",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "15 miles",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8 miles run",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "16 miles",
+          "distance": 16,
+          "tags": [
+            "Long Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8 miles run",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "9 miles run",
+          "distance": 9,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "18 miles",
+          "distance": 18,
+          "tags": [
+            "Long Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "9 miles run",
+          "distance": 9,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "14 miles",
+          "distance": 14,
+          "tags": [
+            "Long Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "10 miles run",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "20 miles",
+          "distance": 20,
+          "tags": [
+            "Long Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "5 miles run",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8 miles run",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "6 miles run",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "8 miles",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Cross",
+          "distance": 0,
+          "tags": [
+            "Cross Train"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "3 miles run",
+          "distance": 3,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "4 miles run",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "2 miles run",
+          "distance": 2,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "Rest",
+          "distance": 0,
+          "tags": [
+            "Rest"
+          ]
+        },
+        {
+          "description": "Plan Ends",
+          "distance": 26.2,
+          "tags": [
+            "Race"
+          ]
+        }
+      ]
+    }
+  ]
+}

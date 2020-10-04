@@ -1,0 +1,968 @@
+{
+  "id": "pfitz_18_85",
+  "name": "Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule",
+  "description": "Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule",
+  "raceType": "Marathon",
+  "units": "mi",
+  "source": "https://www.amazon.com/gp/product/149256866X/ref=dbs_a_def_rwt_bibl_vppi_i2",
+  "type": "Marathon",
+  "schedule": [
+    {
+      "workouts": [
+        {
+          "description": "Recovery 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Lactate threshold  9 miles w  4 miles @ 15K to half marathon pace",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic  10 miles",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Long run  17 miles",
+          "distance": 17,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic + speed  8 miles w/ 10x100m strides",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  13 miles",
+          "distance": 13,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  11 miles",
+          "distance": 11,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Marathon pace run  17 miles w/ 8 miles @ marathon race pace",
+          "distance": 17,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Lactate threshold  10 miles w 5  miles @ 15K to half marathon race pace",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  14 miles",
+          "distance": 14,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  12  miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  16  miles",
+          "distance": 16,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic + speed  10 miles w/ 10 X 100 m strides",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  14 miles",
+          "distance": 14,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Long run  20 miles",
+          "distance": 20,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Lactate threshold  10 miles w  4 miles @ 15K to half marathon race pace",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  15 miles",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  13 miles",
+          "distance": 13,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Marathon pace run  18 miles w  10 miles @ marathon race pace",
+          "distance": 18,
+          "tags": [
+            "Long Run",
+            "Speedwork"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic + speed  10 miles w/ 10 x 100m strides",
+          "distance": 10,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  13 miles",
+          "distance": 13,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic  10 miles",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Long run  16 miles",
+          "distance": 16,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Lactate threshold  11 miles w  5 miles @ 15K to half marathon race pace",
+          "distance": 11,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  15 miles",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  13 miles",
+          "distance": 13,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic + speed  8 miles w/10 x 100m strides",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Long run 20 mi",
+          "distance": 20,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic  9 miles",
+          "distance": 9,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  15 miles",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Lactate threshold  12 miles w/  6 miles @ 15K to half marathon race pace",
+          "distance": 12,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Long run  22 miles",
+          "distance": 22,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic  9 miles",
+          "distance": 9,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  15 miles",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 8 miles",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  13 miles",
+          "distance": 13,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery + speed  7 miles w/ 6 x 100 m strides",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Marathon-pace run  18 miles w/  12 miles @ marathon race pace",
+          "distance": 18,
+          "tags": [
+            "Long Run",
+            "Speedwork"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic  9 miles",
+          "distance": 9,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "VO₂ Max  9 miles w/ 6 x 800 m @ 5K race pace; jog 50 to 90% interval time between",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  11 miles a.m. Recovery  4 miles p.m.",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic + speed  8 miles w/10 x 100m strides",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Long run  16 miles",
+          "distance": 16,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic  8 miles",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  15 miles",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Lactate threshold  12 miles w/  7 miles @ 15K to half marathon race pace",
+          "distance": 12,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "General aerobic  8 miles",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Long run  24 miles",
+          "distance": 24,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "VO₂ Max  9 miles w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  15 miles",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery + speed  7 miles w/6 x 100 m strides",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8K-15K tune-up race (total 9-13 mi/14-21 km)",
+          "distance": 9,
+          "tags": [
+            "Race"
+          ]
+        },
+        {
+          "description": "Long run  18 miles",
+          "distance": 18,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "VO₂ Max  12 miles w/ 6 x 1,000 m @ 5K race pace; jog 50 to 90% interval time between",
+          "distance": 12,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  15 miles",
+          "distance": 15,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Medium-long run  12 miles",
+          "distance": 12,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery 7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Marathon-pace run  20 miles w/  14 miles @ marathon race pace",
+          "distance": 20,
+          "tags": [
+            "Long Run",
+            "Speedwork"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "VO₂ Max  9 miles w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  14 miles",
+          "distance": 14,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery + speed  7 miles w/ 6 x 100 m strides",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8K-15K tune-up race (total 9-13 mi/14-21 km)",
+          "distance": 9,
+          "tags": [
+            "Race"
+          ]
+        },
+        {
+          "description": "Long run  18 miles",
+          "distance": 18,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles a.m.  4 miles p.m.",
+          "distance": 10,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic  8 miles",
+          "distance": 8,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "VO₂ Max  12 miles w/ 6 x 1,200 m @ 5K race pace; jog 50 to 90% interval time between",
+          "distance": 12,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  15 miles a.m. Recovery  4 miles p.m.",
+          "distance": 19,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic + speed  8 miles w/ 8 x 100 m strides",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Long run  22 miles",
+          "distance": 22,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "VO₂ Max  9 miles w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  14 miles",
+          "distance": 14,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery + speed  7 miles w/ 6 x 100 m strides",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "8K-10K tune-up race (total 9-11 mi/14-18 km)",
+          "distance": 9,
+          "tags": [
+            "Race"
+          ]
+        },
+        {
+          "description": "Long run  17 miles",
+          "distance": 17,
+          "tags": [
+            "Long Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic + speed  8 miles w/ 8 x 100 m strides",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "VO₂ Max  9 miles w/ 3 x 1,600 m @ 5K race pace; jog 50 to 90% interval time between",
+          "distance": 9,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 5 miles",
+          "distance": 5,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic + speed  7 miles w/ 8 x 100 m strides",
+          "distance": 7,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Medium-long run  13 miles",
+          "distance": 13,
+          "tags": [
+            "Run"
+          ]
+        }
+      ]
+    },
+    {
+      "workouts": [
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "General aerobic  7 miles",
+          "distance": 7,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Dress rehearsal  8 miles w/  2 miles @ marathon race pace",
+          "distance": 8,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 6 miles",
+          "distance": 6,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Recovery + speed  5 miles w/ 6 x 100 m strides",
+          "distance": 5,
+          "tags": [
+            "Speedwork"
+          ]
+        },
+        {
+          "description": "Recovery 4 miles",
+          "distance": 4,
+          "tags": [
+            "Run"
+          ]
+        },
+        {
+          "description": "Plan Ends",
+          "distance": 26.2,
+          "tags": [
+            "Race"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Validate each plan in the plans dir against plan-schema.json
+FILES=./public/plans/*
+for f in $FILES
+do
+  echo "Validating plan $f ..."
+  ajv -s ./public/schema/plan-schema.json -d $f
+done
+
