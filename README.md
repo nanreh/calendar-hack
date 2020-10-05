@@ -7,18 +7,9 @@ The project is hosted at [defy.org/hacks/calendarhack](https://www.defy.org/hack
 More project details are available on [the About page](https://www.defy.org/hacks/calendarhack/about)
 
 ## Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
-I'm a runner and I train for races. I built this application because I got tired of manually keying workouts into my Google Calendar... and also because I enjoy web programming.
-
-Over the years, I've had a steady stream of requests for new features, changes, and additional training plans. Some of these requests I've been able to handle but others, despite my best efforts, I have not. So I'm posting the project publicly and hoping you can help make it better.
-
-I have a strong desire to keep this tool useful, free, and open.
-
-If you have a bugfix, a new feature, a plan you'd like to add, a UX/UI fix, please send me a PR.
-
-Also please feel free to create a GitHub issue if you want to call something out.
-
-# Plans
+## Plans
 
 Plans are represented as [JSON files](./public/plans/) and there's a JSON Schema defining the format [here](./public/schema/plan-schema.json). There's a bash script to validate the plans. To run the validation script, you first need to install the `ajv` cli command. Info for that project is [here](https://www.npmjs.com/package/ajv-cli). You can install it with yarn like this:
 ```
@@ -37,7 +28,7 @@ Validating plan ./public/plans/hansons_adv_half.json ...
 
 ## Running Locally
 
-Calendar Hack is a React application. I used create-react-app to bootstrap this project. I opted for TypeScript.
+Calendar Hack is a React application. It was created using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) with the TypeScript template:
 ```
 yarn create react-app ch-bootstrap --template typescript
 ```

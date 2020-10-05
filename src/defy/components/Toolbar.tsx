@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeButton from './HomeButton'
 import AboutButton from './AboutButton'
+import GitHubButton from './GitHubButton'
 import styled from 'styled-components'
 
 interface Props {
@@ -51,6 +52,7 @@ const Toolbar: React.FC<Props> = ({ downloadHandler }) => {
                 <ToolsStart>
                     <HomeButton />
                     <AboutButton />
+                    <GitHubButton />
                 </ToolsStart>
                 <ToolsMiddle>
                     <Title>Calendar Hack</Title>
