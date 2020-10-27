@@ -3,7 +3,7 @@ import { Week } from '../ch/dategrid'
 import { Units } from '../defy/models'
 import { DayDetails, RacePlan } from '../ch/models'
 import styled from 'styled-components'
-import { renderDist } from '../ch/rendering'
+import { renderDist, miToKm, getWeekDistance } from '../ch/rendering'
 import StartIcon from '../svg/icons02/start.svg'
 import FinishIcon from '../svg/icons02/finish.svg'
 import HighMileageIcon from '../svg/highMileage.svg'
@@ -45,11 +45,11 @@ const Icon = styled.img`
 `
 
 export const WeekSummary: React.FC<Props> = ({ desc, week, units, racePlan, isFirstWeek, isLastWeek, isHighestMileage }) => {
-    const distance = week.days.map(d => d.event).reduce((a, e) => { return (!e || !e.dist) ? a : a + e.dist }, 0);
+    const distance = getWeekDistance(week, units);
     return (
         <Root key={'week:' + week.weekNum}>
             <p><strong>{`Week ${1 + week.weekNum}`}</strong></p>
-            {distance > 0 && <p>{renderDist(distance, racePlan.sourceUnits, units)}</p>}
+            {distance > 0 && <p>{renderDist(distance, units, units)}</p>}
             {isFirstWeek && <Icon src={StartIcon} alt={"Start"} />}
             {isLastWeek && <Icon src={FinishIcon} alt="Finish" />}
             {isHighestMileage && <Icon src={HighMileageIcon} alt="Highest Mileage" />}

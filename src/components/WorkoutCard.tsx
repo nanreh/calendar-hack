@@ -27,6 +27,11 @@ const DragSource = styled.div<DragSourceProps>`
     opacity: ${props => props.isDragging ? 0.5 : 1};
 `;
 
+function renderDesc(dayDetails: DayDetails, from: Units, to: Units): string {
+    let [title, desc] = render(dayDetails, from, to);
+    return title + '\n' + desc;
+}
+
 const generateDayPreview: PreviewGenerator = ({ itemType, item, style }) => {
     return (
         <div style={{
@@ -34,7 +39,7 @@ const generateDayPreview: PreviewGenerator = ({ itemType, item, style }) => {
         }}>
             <Content>
                 <DragHandle viewBox="0 0 32 36" />
-                <p>{render(item.dayDetails.desc, item.units)}</p>
+                <p>{renderDesc(item.dayDetails, item.dayDetails.sourceUnits, item.units)}</p>
             </Content>
         </div>
     )
@@ -64,7 +69,7 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({ dayDetails, date, unit
                     <div ref={drag}>
                         <DragHandle viewBox="0 0 32 36" />
                     </div>
-                    <p>{render(dayDetails.desc, units)}</p>
+                    <p>{renderDesc(dayDetails, dayDetails.sourceUnits, units)}</p>
                 </Content>
             </DragSource>
         </Card >

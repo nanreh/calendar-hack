@@ -1,0 +1,102 @@
+# id: pfitz_12_55
+# name: Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule
+# description: Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule
+# units: mi
+# source: https://www.amazon.com/gp/product/149256866X/ref=dbs_a_def_rwt_bibl_vppi_i2
+# type: Marathon
+# Week 1
+"Rest or cross-training","",0
+"General aerobic + speed {8} w/ 10 x 100m strides","",8
+"Rest or cross-training","",0
+"General aerobic {9}","",9
+"Rest or cross-training","",0
+"Recovery {5}","",5
+"Marathon pace run {13} w/ {8} @ marathon race pace","",13
+# Week 2
+"Rest or cross-training","",0
+"Medium-long run {11}","",11
+"Rest or cross-training","",0
+"Lactate threshold {8} w {4} @ 15K to half marathon race pace","",8
+"Rest or cross-training","",0
+"Recovery {5}","",5
+"Medium-long run {15}","",15
+# Week 3
+"Rest or cross-training","",0
+"General aerobic + speed {8} w/ 10 X 100 m strides","",8
+"Recovery {4}","",4
+"Medium-long run {11}","",11
+"Rest or cross-training","",0
+"Recovery {4}","",4
+"Marathon pace run {16} w/ {10} @ marathon race pace","",16
+# Week 4
+"Rest or cross-training","",0
+"Recovery {5}","",5
+"Lactate threshold {10} w {5} @ 15K to half marathon race pace","",10
+"Medium-long run {11}","",11
+"Rest or cross-training","",0
+"Recovery {5}","",5
+"Long run {17}","",17
+# Week 5
+"Rest or cross-training","",0
+"Rest or cross-training","",0
+"Medium-long run {12}","",12
+"Rest or cross-training","",0
+"Lactate threshold {9} w {4} @ 15K to half marathon race pace","",9
+"Recovery {5}","",5
+"Long run {16}","",16
+# Week 6
+"Rest or cross-training","",0
+"Recovery {5}","",5
+"VO₂max {10} w/ 5 x 1000 m @ 5K race pace; jog 50 to 90% interval time between","",10
+"Medium-long run {12}","",12
+"Rest or cross-training","",0
+"Recovery + speed {6} w/ 6 x 100 m strides","",6
+"Marathon-pace run {15} w/ {12} @ marathon race pace","",15
+# Week 7
+"Rest or cross-training","",0
+"Recovery + speed {6} w/ 6 x 100 m strides","",6
+"Medium-long run {12}","",12
+"Rest or cross-training","",0
+"Lactate threshold {12} w {7} @ 15K to half marathon race pace","",12
+"Recovery {5}","",5
+"Long run {20}","",20
+# Week 8
+"Rest or cross-training","",0
+"VO₂max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between","",8
+"Medium-long run {11}","",11
+"Rest or cross-training","",0
+"Recovery + speed {4} w/ 6 x 100 m strides","",4
+"8K-15K tune-up race (total 9-13 mi/14-21 km)","",9
+"Long run {17}","",17
+# Week 9
+"Rest or cross-training","",0
+"Recovery + speed {7} w/ 6 x 100 m strides","",7
+"VO₂max {10} w/ 4 x 1200 m @ 5K race pace; jog 50 to 90% interval time between","",10
+"Rest or cross-training","",0
+"Medium-long run {11}","",11
+"Recovery {4}","",4
+"Long run {20}","",20
+# Week 10
+"Rest or cross-training","",0
+"VO₂max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between","",8
+"Recovery {6}","",6
+"Rest or cross-training","",0
+"Recovery + speed {4} w/ 6 x 100 m strides","",4
+"8K-10K tune-up race (total 9-11 mi/14-18 km)","",9
+"Long run {16}","",16
+# Week 11
+"Rest or cross-training","",0
+"General aerobic + speed {7} w/ 8 x 100 m strides","",7
+"VO₂max {8} w/ 3 x 1,600 m @ 5K race pace; jog 50 to 90% interval time between","",8
+"Rest or cross-training","",0
+"Recovery + speed {5} w/ 6 x 100 m strides","",5
+"Rest or cross-training","",0
+"Medium-long run {12}","",12
+# Week 12
+"Rest","",0
+"Recovery {6}","",6
+"Dress rehearsal {7} w/ {2} @ marathon race pace","",7
+"Rest","",0
+"Recovery + speed {5} w/ 6 x 100 m strides","",5
+"Recovery {4}","",4
+"Plan Ends","",26.2

@@ -1,31 +1,41 @@
 import * as moo from 'moo'
 import { Units } from '../defy/models'
+import { Week } from './dategrid';
+import { DayDetails } from './models';
 
-let lexer = moo.compile({
-    miles: [
-        { match: /\d+\.?\d?miles/, value: x => x.slice(0, -5) },
-        { match: /\d+\.?\d?\smiles/, value: x => x.slice(0, -6) },
-        { match: /\d+\.?\d?mile/, value: x => x.slice(0, -4) },
-        { match: /\d+\.?\d?\smile/, value: x => x.slice(0, -5) },
-        { match: /\d+\.?\d?mi/, value: x => x.slice(0, -2) },
-        { match: /\d+\.?\d?\smi\s/, value: x => x.slice(0, -3) },
-    ],
-    kilometers: [
-        { match: /\d+\.?\d?kilometers/, value: x => x.slice(0, -10) },
-        { match: /\d+\.?\d?\skilometers/, value: x => x.slice(0, -11) },
-        { match: /\d+\.?\d?kilometer/, value: x => x.slice(0, -9) },
-        { match: /\d+\.?\d?\skilometer/, value: x => x.slice(0, -10) },
-        { match: /\d+\.?\d?km/, value: x => x.slice(0, -2) },
-        { match: /\d+\.?\d?\skm/, value: x => x.slice(0, -3) },
-    ],
-    text: /.+?/,
-    NL: { match: /\n/, lineBreaks: true },
-})
+export function kmToMiles(value: number): number {
+    return (value * 0.62137);
+}
+
+export function miToKm(value: number): number {
+    return (value / 0.62137);
+}
+
+export function getWeekDistance(week: Week<DayDetails>, units: Units): number {
+    return week.days.map(d => d.event).reduce((a, e) => {
+        if (!e) {
+            return a;
+        }
+        if (units === 'mi') {
+            if (e.dist) {
+                return a + e.dist;
+            } else {
+                return a;
+            }
+        } else {
+            if (e.dist) {
+                return a + miToKm(e.dist);
+            } else {
+                return a;
+            }
+        }
+    }, 0);
+}
 
 export function renderDist(value: number, from: Units, to: Units): string {
     let suffix = to;
     if (from === to) {
-        return value + ' ' + suffix;
+        return (Number.isInteger(value) ? value.toFixed(0) : value.toFixed(1)) + ' ' + suffix;
     }
     if ('mi' === from) {
         return (value / 0.62137).toFixed(1) + ' ' + suffix;
@@ -33,20 +43,41 @@ export function renderDist(value: number, from: Units, to: Units): string {
     return (value * 0.62137).toFixed(1) + ' ' + suffix;
 }
 
-export function render(input: string, to: Units): string {
+let dlexer = moo.compile({
+    single: [{ match: /{\d+(?:\.\d+)?}/, value: x => x.slice(1, -1) }], // {17}
+    with_conversion: [{ match: /{\d+(?:\.\d+)?(?::\d+(?:\.\d+)?)}/, value: x => x.slice(1, -1) }], // {1,1.6}
+    text: /.+?/,
+    NL: { match: /\n/, lineBreaks: true },
+})
+
+function handle_conversions(input: string, from: Units, to: Units): string {
     let result = '';
-    lexer.reset(input);
-    let tokens = Array.from(lexer);
-    for (let i = 0; i < tokens.length; i++) {
-        const t = tokens[i];
-        let value = Number(t.value);
-        if (t.type === 'miles') {
-            result += renderDist(value, 'mi', to);
-        } else if (t.type === 'kilometers') {
-            result += renderDist(value, 'km', to);
+    dlexer.reset(input);
+    let t = dlexer.next();
+    while (t) {
+        if (t.type === 'single') {
+            result += renderDist(Number(t.value), from, to)
+        } else if (t.type === 'with_conversion') {
+            let tokens = t.value.split(":");
+            if (from === to) {
+                result += renderDist(Number(tokens[0]), from, from);
+            } else {
+                result += renderDist(Number(tokens[1]), to, to);
+            }
         } else { // t.type === 'text' || t.type === 'NL')
             result += t.value;
         }
+        t = dlexer.next();
     }
     return result;
+}
+
+export function renderStr(input: string, from: Units, to: Units): string {
+    return handle_conversions(input, from, to);
+}
+
+export function render(input: DayDetails, from: Units, to: Units): [string, string] { // [title, desc]
+    let title = handle_conversions(input.title, from, to);
+    let desc = handle_conversions(input.desc, from, to);
+    return [title, desc];
 }

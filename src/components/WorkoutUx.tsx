@@ -15,6 +15,10 @@ export const Content = styled.div`
         top: 2px;
         left: 4px;    
     }
+    p {
+        white-space: pre-wrap;
+        /* so newlines render correctly for workout text */
+    }
     position: relative;
     height: 100%;
     padding: .1em .5em 1.5em 1.8em;

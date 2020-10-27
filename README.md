@@ -7,24 +7,11 @@ The project is hosted at [defy.org/hacks/calendarhack](https://www.defy.org/hack
 More project details are available on [the About page](https://www.defy.org/hacks/calendarhack/about)
 
 ## Contributing
-See [CONTRIBUTING.md](./CONTRIBUTING.md)
+If you have a bugfix, a new feature, a new training plan, a UX/UI fix, or other contribution, please send a PR.
+Feel free to create a GitHub issue if you want to call something out.
 
 ## Plans
-
-Plans are represented as [JSON files](./public/plans/) and there's a JSON Schema defining the format [here](./public/schema/plan-schema.json). There's a bash script to validate the plans. To run the validation script, you first need to install the `ajv` cli command. Info for that project is [here](https://www.npmjs.com/package/ajv-cli). You can install it with yarn like this:
-```
-yarn global add ajv-cli
-```
-You should then be able to run the validation script in this project.
-```
-> ./bin/validatePlans
-Validating plan ./public/plans/c25k.json ...
-./public/plans/c25k.json valid
-Validating plan ./public/plans/hansons_adv_half.json ...
-./public/plans/hansons_adv_half.json valid
-... and so on
-```
-`ajv` provides helpful error messages if a document fails to validate. But if you have a validation error you don't understand you should read [the schema](./public/schema/plan-schema.json).
+Training plans are represented in text files that are easy to create and edit. Details [here](./public/plans/csv/README.md).
 
 ## Running Locally
 

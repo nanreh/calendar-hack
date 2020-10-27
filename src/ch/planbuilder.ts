@@ -3,10 +3,11 @@ import { calcPlanDates } from './datecalc'
 import { DateGrid, dayOfWeek } from './dategrid'
 import { TrainingPlan, PlannedWorkout } from './planrepo'
 import { RacePlan, DayDetails } from './models'
+import { Units } from '../defy/models'
 
-function renderDayDetails(date: Date, plannedWorkout: PlannedWorkout | undefined): DayDetails | undefined {
+function renderDayDetails(date: Date, sourceUnits: Units, plannedWorkout: PlannedWorkout | undefined): DayDetails | undefined {
     if (plannedWorkout) {
-        return { desc: plannedWorkout.description, tags: plannedWorkout.tags, dist: plannedWorkout.distance };
+        return { title: plannedWorkout.title, desc: plannedWorkout.description, tags: plannedWorkout.tags, dist: plannedWorkout.distance, sourceUnits: sourceUnits };
     } else {
         return undefined;
     }
@@ -28,7 +29,7 @@ export function build(trainingPlan: TrainingPlan, raceDate: Date): RacePlan {
     const workoutsToPlace = getWorkouts(trainingPlan);
     const map = new Map<Date, DayDetails>();
     eachDayOfInterval({ start: planDates.planStartDate, end: planDates.planEndDate }).forEach(currDate => {
-        const dayDetails = renderDayDetails(currDate, workoutsToPlace.shift())
+        const dayDetails = renderDayDetails(currDate, trainingPlan.units, workoutsToPlace.shift())
         if (dayDetails) {
             map.set(currDate, dayDetails);
         }

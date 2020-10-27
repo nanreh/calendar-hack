@@ -2,7 +2,7 @@ import { createEvents, EventAttributes } from "ics"
 import { Units } from '../defy/models'
 import { RacePlan } from "./models";
 import { addDays } from 'date-fns'
-import { render, renderDist } from './rendering'
+import { getWeekDistance, render, renderDist } from './rendering'
 
 function toDate(d: Date): [number, number, number] {
     return [d.getUTCFullYear(), 1 + d.getUTCMonth(), d.getUTCDate()]
@@ -14,14 +14,14 @@ export function toIcal(plan: RacePlan, units: Units): string | undefined {
     let weeks = plan.dateGrid.weeks;
     for (let i = 0; i < weeks.length; i++) {
         const currWeek = weeks[i];
-        const distance = currWeek.days.map(d => d.event).reduce((a, e) => { return (!e || !e.dist) ? a : a + e.dist }, 0);
+        const distance = getWeekDistance(currWeek, units);
         if (i === weeks.length - 1) {
             weekDesc = "Final Training Week!";
         } else {
             weekDesc = `Training Week ${1 + i}`
         }
         if (distance > 0) {
-            weekDesc += " Distance: " + renderDist(distance, plan.sourceUnits, units);
+            weekDesc += " Distance: " + renderDist(distance, units, units);
         }
         events.push({
             title: weekDesc,
@@ -33,11 +33,11 @@ export function toIcal(plan: RacePlan, units: Units): string | undefined {
         for (var j = 0; j < currWeek.days.length; j++) {
             const currWorkout = currWeek.days[j];
             if (currWorkout.event) {
-                let desc = currWorkout.event.desc;
+                let [title, desc] = render(currWorkout.event, plan.sourceUnits, units);
                 desc = desc.replace(/(\r\n|\n|\r)/gm, '\n');
-                desc = render(desc, units);
                 events.push({
-                    title: desc,
+                    title: title,
+                    description: desc,
                     start: toDate(currWorkout.date),
                     end: toDate(addDays(currWorkout.date, 1)), // end dates are non-inclusive in iCal
                 });
