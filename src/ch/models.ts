@@ -19,4 +19,6 @@ export interface RacePlan {
     raceType: RaceType,
     dateGrid: DateGrid<DayDetails>,
     sourceUnits: Units,
+    description: string,
+    sourceUrl: string,
 }

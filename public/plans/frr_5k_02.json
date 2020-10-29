@@ -1,9 +1,9 @@
 {
    "id": "ffr_5k_02",
    "name": "Faster Road Racing: 5K Schedule 2",
-   "description": "5K Schedule 2: 45 to 55 Miles (71-88 km) per Week",
+   "description": "\"5K Schedule 2: 45 to 55 Miles (71-88 km) per Week\" from \"Faster Road Racing: 5K to Half Marathon\" by Pete D. Pfitzinger and Philip Latter. \"This schedule is for runners who have been training 40 to 50 miles per week. If you have been running fewer than 40 miles per week, follow the base- training schedule in chapter 8 for building up to 45 miles per week before attempting this schedule, which starts at 45 miles per week and gradually builds up to 55 with three weeks to go before your goal race. The training then tapers so you are fit and refreshed for race day.\"",
    "units": "mi",
-   "source": "tbd",
+   "source": "https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459",
    "type": "5K",
    "schedule": [
       {

@@ -34,7 +34,7 @@ const Root = styled.div`
       }
 `
 
-const PlanDateUnits: React.FC<Props> = ({ units, unitsChangeHandler, selectedPlan, selectedPlanChangeHandler, availablePlans, selectedDate, dateChangeHandler, downloadHandler }) => {
+const PlanAndDate: React.FC<Props> = ({ units, unitsChangeHandler, selectedPlan, selectedPlanChangeHandler, availablePlans, selectedDate, dateChangeHandler, downloadHandler }) => {
     return (
         <Root>
             <PlanPicker availablePlans={availablePlans} selectedPlan={selectedPlan} planChangeHandler={selectedPlanChangeHandler} />
@@ -44,4 +44,4 @@ const PlanDateUnits: React.FC<Props> = ({ units, unitsChangeHandler, selectedPla
     )
 }
 
-export default PlanDateUnits;
+export default PlanAndDate;

@@ -22,7 +22,7 @@ class DateInputButton extends React.Component<ButtonProps> {
     render() {
         return (
             <Button onClick={this.props.onClick}>
-                <MdDateRange style={{ verticalAlign: 'text-bottom' }} /><span>{this.props.value}</span>
+                <span>{this.props.value}</span>
             </Button>
         )
     }

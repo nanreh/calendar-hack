@@ -35,7 +35,7 @@ export function build(trainingPlan: TrainingPlan, raceDate: Date): RacePlan {
         }
     });
     const dateGrid = new DateGrid(map);
-    return { raceType: trainingPlan.type, planDates: planDates, dateGrid: dateGrid, sourceUnits: trainingPlan.units };
+    return { raceType: trainingPlan.type, planDates: planDates, dateGrid: dateGrid, sourceUnits: trainingPlan.units, description: trainingPlan.description, sourceUrl: trainingPlan.source };
 }
 
 export function swap(racePlan: RacePlan, d1: Date, d2: Date): RacePlan {
@@ -45,6 +45,8 @@ export function swap(racePlan: RacePlan, d1: Date, d2: Date): RacePlan {
         title: racePlan.raceType,
         dateGrid: racePlan.dateGrid.clone(),
         sourceUnits: racePlan.sourceUnits,
+        description: racePlan.description,
+        sourceUrl: racePlan.sourceUrl,
     }
     newPlan.dateGrid.swap(d1, d2);
     return newPlan;
@@ -57,6 +59,8 @@ export function swapDow(racePlan: RacePlan, dow1: dayOfWeek, dow2: dayOfWeek): R
         title: racePlan.raceType,
         dateGrid: racePlan.dateGrid.clone(),
         sourceUnits: racePlan.sourceUnits,
+        description: racePlan.description,
+        sourceUrl: racePlan.sourceUrl,
     }
     newPlan.dateGrid.swapDow(dow1, dow2);
     return newPlan;

@@ -9,13 +9,14 @@ import { CalendarGrid } from './components/CalendarGrid'
 import { ThemeProvider } from 'styled-components';
 import { toIcal, download } from './ch/icalservice'
 import UnitsButtons from './defy/components/UnitsButtons'
-import PlanDateUnits from './components/PlanDateUnits';
+import PlanAndDate from './components/PlanAndDate';
 import Toolbar from './defy/components/Toolbar'
 import styled from 'styled-components'
 import DownloadButton from './components/DownloadButton'
 import UndoButton from './components/UndoButton'
 import history from './defy/history';
 import { useQueryParams, StringParam, DateParam } from 'use-query-params';
+import { PlanDetailsCard } from './components/PlanDetailsCard';
 
 const planRepo = new PlanRepo(availablePlans);
 
@@ -32,6 +33,8 @@ const theme = {
     workoutCardBg: '#E3F7F8',
     datelineBg: '#B391D2',
     datelineTxt: '#424242',
+    planDescriptionBg: '#E3F7F8',
+    planDescriptionTxt: '#424242',
   },
   fonts: ["sans-serif", "Roboto"],
   fontSizes: {
@@ -167,7 +170,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Toolbar downloadHandler={downloadHandler} />
-      <PlanDateUnits units={selectedUnits} availablePlans={availablePlans} selectedPlan={selectedPlan} selectedDate={planEndDate}
+      <PlanAndDate units={selectedUnits} availablePlans={availablePlans} selectedPlan={selectedPlan} selectedDate={planEndDate}
         dateChangeHandler={onSelectedEndDateChange} selectedPlanChangeHandler={onSelectedPlanChange} unitsChangeHandler={onSelectedUnitsChanged}
         downloadHandler={downloadHandler}
       />
@@ -178,6 +181,7 @@ const App: React.FC = () => {
         <DownloadButton downloadHandler={downloadHandler} />
         <UndoButton disabled={undoHistory.length <= 1} undoHandler={undoHandler} />
       </SecondToolbar>
+      <PlanDetailsCard racePlan={racePlan} />
       <MainUI>
         {racePlan && <CalendarGrid racePlan={racePlan} units={selectedUnits} swap={swapDates} swapDow={doSwapDow} swapWeeks={swapWeeks} />}
       </MainUI>

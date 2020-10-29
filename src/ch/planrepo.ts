@@ -30,7 +30,7 @@ export interface TrainingPlan {
     units: Units,
     type: RaceType,
     schedule: WeekSchedule[],
-    source?: string,
+    source: string,
 }
 
 export const availablePlans: AvailablePlan[] = [

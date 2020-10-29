@@ -1,9 +1,9 @@
 {
    "id": "higdon_nov_mara2",
    "name": "Hal Higdon: Novice 2",
-   "description": "Hal Higdon: Novice 2",
+   "description": "Hal Higdon: Novice 2: \"Novice 2 is designed to fit comfortably between the Novice 1 and Intermediate 1 marathon plans. It is designed for runners who may already have run and finished their first marathon and want to add just a bit more mileage while training for their second or third marathons, hoping to improve their times, perhaps even qualify for the Boston Marathon.\" (more details at the link below)",
    "units": "mi",
-   "source": "https://www.halhigdon.com/training/marathon-training/",
+   "source": "https://www.halhigdon.com/training-programs/marathon-training/novice-2-marathon/",
    "type": "Marathon",
    "schedule": [
       {
