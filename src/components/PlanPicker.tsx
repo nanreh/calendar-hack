@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react'
+import React from 'react'
 import { AvailablePlan } from '../ch/planrepo'
 import Select from '../defy/components/Select'
 

@@ -25,7 +25,7 @@ const Link = styled.a`
     margin-right: auto;
 }
 `
-const HomeButton: React.FC<Props> = ({ }) => {
+const HomeButton: React.FC<Props> = () => {
     const themeContext = useContext(ThemeContext);
     return (
         <IconContext.Provider value={{ color: themeContext.colors.buttonIcons }}>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { useContext } from 'react';
-import { MdUndo } from 'react-icons/md';
 import { Button } from './Button'
 import { IconContext } from 'react-icons'
 import styled, { ThemeContext } from 'styled-components';

@@ -1,6 +1,5 @@
 import React from 'react'
 import { useContext } from 'react';
-import { MdCloudDownload } from 'react-icons/md';
 import styled from 'styled-components';
 import { ThemeContext } from 'styled-components';
 import { IconContext } from 'react-icons'
@@ -9,10 +8,6 @@ import { Button } from './Button'
 
 interface Props {
     downloadHandler: () => void
-}
-
-interface ButtonProps {
-    onClick: (e: React.MouseEvent<HTMLElement>) => void,
 }
 
 const Root = styled.div`

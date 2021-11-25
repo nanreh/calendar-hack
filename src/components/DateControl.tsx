@@ -1,5 +1,4 @@
-import { MdDateRange } from 'react-icons/md';
-import React, { MouseEvent } from 'react'
+import React from 'react'
 import DatePicker from 'react-datepicker';
 import { registerLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
