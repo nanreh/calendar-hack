@@ -37,7 +37,7 @@ const LongPressButton: React.FC<Props> = ({ activeCb, doneCb, type }) => {
 
     const timer = useCallback(
         () => {
-            timerID = setInterval(function doCb() {
+            timerID = window.setInterval(function doCb() {
                 activeCb();
             }, 100);
         },
