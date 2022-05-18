@@ -44,6 +44,7 @@ export const availablePlans: AvailablePlan[] = [
     { url: Config.plansPath + 'hansons_c210k.json', id: 'hansons_c210k', name: 'Hansons Couch Potato to 10k', type: '10K' },
     { url: Config.plansPath + 'hansons_adv_half.json', id: 'hansons_adv_half', name: 'Hansons Advanced Half Marathon', type: 'Half Marathon' },
     { url: Config.plansPath + 'hansons_beg_half.json', id: 'hansons_beg_half', name: 'Hansons Beginner Half Marathon', type: 'Half Marathon' },
+    { url: Config.plansPath + 'pfitz_half_12_47.json', id: 'pfitz_half_12_47', name: 'Faster Road Racing: Half Marathon Schedule 1, 31 to 47 miles per Week', type: 'Half Marathon' },
     { url: Config.plansPath + 'higdon_adv_mara1.json', id: 'higdon_adv_mara1', name: 'Hal Higdon: Advanced 1', type: 'Marathon' },
     { url: Config.plansPath + 'higdon_adv_mara2.json', id: 'higdon_adv_mara2', name: 'Hal Higdon: Advanced 2', type: 'Marathon' },
     { url: Config.plansPath + 'higdon_int_mara1.json', id: 'higdon_int_mara1', name: 'Hal Higdon: Intermediate 1', type: 'Marathon' },

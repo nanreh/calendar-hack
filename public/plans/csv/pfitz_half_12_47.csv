@@ -1,0 +1,102 @@
+# id: pfitz_half_12_47
+# name: Pfitzinger/Latter: 31 to 47 Miles per Week, 12-week schedule
+# description: "31 to 47 Miles per Week, 12-week schedule" from "Faster Road Racing: 5K to Half Marathon" by Pete Pfitzinger and Philip Latter
+# units: mi
+# source: https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459
+# type: Half Marathon
+# Week 1
+"Rest or cross-training","",0
+"General aerobic + speed\n{6}\n8 X 100 m strides","",6
+"Endurance\n{8}","",8
+"Rest or cross-training","",0
+"Lactate threshold\n{7}\n14 min LT interval (jog 4 min recovery)\n12 min LT interval","",7
+"Rest or cross-training","",0
+"Endurance\n{10}","",10
+# Week 2
+"Rest or cross-training","",0
+"General aerobic + speed\n{7}\n6 X 12 sec uphill followed by 6 X 100 m strides","",7
+"Endurance\n{8}","",8
+"Rest or cross-training","",0
+"Lactate threshold\n{8}\n18 min LT interval (jog 4 min recovery)\n12 min LT interval","",8
+"Rest or cross-training","",0
+"Endurance\n{11}","",11
+# Week 3
+"Rest or cross-training","",0
+"General aerobic + speed\n{8}\n6 X 12 sec uphill followed by 6 X 100 m strides","",8
+"Endurance\n{9}","",9
+"Rest or cross-training","",0
+"Lactate threshold\n{8}\n18 min LT interval (jog 4 min recovery)\n15 min LT interval","",8
+"Rest or cross-training","",0
+"Progression long run\n{12}\nIncrease effort steadily throughout run, last {2} @ LT pace","",12
+# Week 4
+"Rest or cross-training","",0
+"General aerobic + speed\n{8}\n2 sets of 5 X 150 m strides (jog 250 m recovery and 4 min between sets)","",8
+"General aerobic\n{7}","",7
+"Rest or cross-training","",0
+"General aerobic\n{8}","",8
+"Rest or cross-training","",0
+"General aerobic\n{9}","",9
+# Week 5
+"Rest or cross-training","",0
+"Lactate threshold\n{8}\n20 min LT interval (jog 4 min recovery)\n16 min LT interval","",8
+"Endurance\n{9}","",9
+"Rest or cross-training","",0
+"General aerobic + speed\n{7}\n10 X 100 m strides","",7
+"Recovery\n{4}","",4
+"Progression long run\n{12}\nIncrease effort steadily throughout run, last {3} @ LT pace","",12
+# Week 6
+"Rest or cross-training","",0
+"General aerobic + speed\n{8}\n6 X 12 sec uphill followed by 6 X 100 m strides","",8
+"Endurance\n{9}","",9
+"Rest or cross-training","",0
+"VO2max\n{9}\n6 X 1,000 m @ 3K-5K race pace (jog 50-90% interval time recovery)","",9
+"Recovery\n{5}","",5
+"Endurance\n{12}","",12
+# Week 7
+"Rest or cross-training","",0
+"Lactate threshold\n{9}\n38 min tempo run","",9
+"Endurance\n{10}","",10
+"Rest or cross-training","",0
+"General aerobic + speed\n{8}\n10 X 100 m strides","",8
+"Recovery\n{5}","",5
+"Progression long run\n{13}\nIncrease effort steadily throughout run, last {3} @ LT pace","",13
+# Week 8
+"Rest or cross-training","",0
+"General aerobic + speed\n{8}\n2 sets of 4 X 150 m strides (jog 250 m recovery and 4 min between sets)","",8
+"General aerobic\n{7}","",7
+"Rest","",0
+"Recovery\n{3}\n4 X 100 m strides","",3
+"8K-10K tune-up race\n{10}","",10
+"Endurance\n{10}","",10
+# Week 9
+"Rest or cross-training","",0
+"General aerobic\n{8}","",8
+"Endurance\n{11}","",11
+"Rest or cross-training","",0
+"VO2max\n{10}\n2 sets of 2 X 1,200 m, 1 X 800 m\nAll intervals @ 3K-5K race pace (jog 50-90% interval recovery time)","",10
+"Recovery\n{4}","",4
+"Endurance\n{14}","",14
+# Week 10
+"Rest or cross-training","",0
+"General aerobic + speed\n{8}\n2 sets of 4 X 150 m strides (jog 250 m recovery and 4 min between sets)","",8
+"General aerobic\n{7}","",7
+"Rest","",0
+"Recovery\n{3}\n4 X 100 m strides","",3
+"8K-10K tune-up race\n{10}","",10
+"Endurance\n{10}","",10
+# Week 11
+"Rest or cross-training","",0
+"General aerobic + speed\n{6}\n2 sets of 6 X 100 m strides (jog 3 min between sets)","",6
+"Recovery\n{4}","",4
+"Rest or cross-training","",0
+"VO2max\n{9}\n2 X 1,200 m\n2 X 1,000 m\n1 X 800 m\nAll intervals @ 3K-5K race pace (jog 50-90% interval recovery time)","",9
+"Recovery\n{3}","",3
+"Endurance\n{10}","",10
+# Week 12
+"Rest or cross-training","",0
+"Race pace + speed\n{7}\n4 X 100 m strides\n{2} @ half marathon race pace","",7
+"Recovery\n{5}","",5
+"Recovery\n{4}","",4
+"Rest","",0
+"Recovery\n{3}\n4 X 100 m strides","",3
+"Half marathon goal race {13.1}","",13.1
