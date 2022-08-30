@@ -1,0 +1,38 @@
+# id: pfitz_multi_4
+# name: Pfitzinger/Douglas: Multiple Marathons, 4 Weeks Between Marathons
+# description: Multiple Marathons 4 Weeks from "Advanced Marathoning" by Pete Pfitzinger and Scott Douglas
+# units: mi
+# source: https://www.amazon.com/gp/product/149256866X/
+# type: Marathon
+# Week 1
+"Rest or cross-training","",0
+"Rest or cross-training","",0
+"Recovery {5}","",5
+"Rest or cross-training","",0
+"Recovery {6}","",6
+"Recovery {5}","",5
+"General aerobic {8}","",8
+# Week 2
+"Rest or cross-training","",0
+"Recovery {6}","",6
+"General aerobic {8}","",8
+"Rest or cross-training","",0
+"General aerobic + speed {8} w/ 8 x 100m strides","",8
+"Recovery {5}","",5
+"Medium-long run {11}","",11
+# Week 3
+"Rest or cross-training","",0
+"VO₂max {8} w/ 5 x 800 m @ 5K race pace; jog 50 to 90% interval time between","",8
+"Recovery {5}","",5
+"Medium-long run {15}","",15
+"Recovery {4}","",4
+"Recovery + speed {5} w/ 8 x 100 m strides","",5
+"Medium-long run {11}","",11
+# Week 4
+"Rest or cross-training","",0
+"Recovery {6}","",6
+"Dress rehearsal {7} w/ {2} @ marathon race pace","",7
+"Recovery {6}","",6
+"Recovery + speed {5} w/ 8 x 100 m strides","",5
+"Recovery {4}","",4
+"Plan Ends","",26.2

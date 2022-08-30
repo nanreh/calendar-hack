@@ -37,7 +37,7 @@
         "schedule": {
             "type": "array",
             "items": {
-                "$ref": "#/defs/week"
+                "$ref": "#/definitions/week"
             },
             "minItems": 1
         }
@@ -51,15 +51,16 @@
         "type",
         "schedule"
     ],
-    "defs": {
+    "definitions": {
         "week": {
+            "type": "object",
             "properties": {
-                "description": "string",
-                "distance": "number",
+                "description": {"type": "string"},
+                "distance": {"type": "number"},
                 "workouts": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/defs/workout"
+                        "$ref": "#/definitions/workout"
                     },
                     "minItems": 7,
                     "maxItems": 7
@@ -70,9 +71,10 @@
             ]
         },
         "workout": {
+            "type": "object",
             "properties": {
-                "description": "string",
-                "distance": "number",
+                "description": {"type": "string"},
+                "distance": {"type": "number"},
                 "tags": {
                     "type": "array",
                     "items": {

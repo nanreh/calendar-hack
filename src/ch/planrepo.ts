@@ -58,6 +58,7 @@ export const availablePlans: AvailablePlan[] = [
     { url: Config.plansPath + 'pfitz_18_55.json', id: 'pfitz_18_55', name: 'Pfitzinger/Douglas: Up to 55 miles per week, 18-week schedule', type: 'Marathon' },
     { url: Config.plansPath + 'pfitz_18_70.json', id: 'pfitz_18_70', name: 'Pfitzinger/Douglas: 55 to 70 Miles per Week, 18-week schedule', type: 'Marathon' },
     { url: Config.plansPath + 'pfitz_18_85.json', id: 'pfitz_18_85', name: 'Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule', type: 'Marathon' },
+    { url: Config.plansPath + 'pfitz_multi_4.json', id: 'pfitz_multi_4', name: 'Pfitzinger/Douglas: Multiple Marathons, 4 Weeks Between Marathons', type: 'Marathon' },
 ];
 
 var initialMap: { [id: string]: AvailablePlan; } = {};
