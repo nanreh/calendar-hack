@@ -35,6 +35,7 @@ export interface TrainingPlan {
 
 export const availablePlans: AvailablePlan[] = [
     { url: Config.plansPath + 'c25k.json', id: 'c25k', name: 'Couch to 5K', type: '5K' },
+    { url: Config.plansPath + 'c25k_rbp.json', id: 'c25k_rbp', name: 'Couch to 5K -- Runner\'s Blueprint', type: '5K' },
     { url: Config.plansPath + 'frr_5k_01.json', id: 'frr_5k_01', name: 'Faster Road Racing: 5K Schedule 1', type: '5K' },
     { url: Config.plansPath + 'frr_5k_02.json', id: 'frr_5k_02', name: 'Faster Road Racing: 5K Schedule 2', type: '5K' },
     { url: Config.plansPath + 'frr_5k_03.json', id: 'frr_5k_03', name: 'Faster Road Racing: 5K Schedule 3', type: '5K' },
