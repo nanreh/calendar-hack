@@ -19,7 +19,7 @@
 "Recovery {5}","",5
 "General aerobic {9}","",9
 "Recovery {5}","",5
-"Marathon pace run {16} w/ {8} @ marathon race pace","",17
+"Marathon-pace run {16} w/ {8} @ marathon race pace","",16
 # Week 3
 "Rest or cross-training","",0
 "Medium-long run {11}","",11
@@ -59,7 +59,7 @@
 "Recovery {5}","",5
 "Medium-long run {11}","",11
 "General aerobic + speed {7} w/ 10 x 100m strides","",7
-"Long run 21","",21
+"Long run {21}","",21
 # Week 8
 "Rest or cross-training","",0
 "Recovery {6} a.m. {4} p.m.","",10
