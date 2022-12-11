@@ -52,6 +52,7 @@ export const availablePlans: AvailablePlan[] = [
     { url: Config.plansPath + 'higdon_int_mara2.json', id: 'higdon_int_mara2', name: 'Hal Higdon: Intermediate 2', type: 'Marathon' },
     { url: Config.plansPath + 'higdon_nov_mara1.json', id: 'higdon_nov_mara1', name: 'Hal Higdon: Novice 1', type: 'Marathon' },
     { url: Config.plansPath + 'higdon_nov_mara2.json', id: 'higdon_nov_mara2', name: 'Hal Higdon: Novice 2', type: 'Marathon' },
+    { url: Config.plansPath + 'higdon_mara3.json', id: 'higdon_mara3', name: 'Hal Higdon: Marathon 3', type: 'Marathon' },
     { url: Config.plansPath + 'hansons_adv_mara.json', id: 'hansons_adv_mara', name: 'Hansons Advanced Marathon', type: 'Marathon' },
     { url: Config.plansPath + 'hansons_beg_mara.json', id: 'hansons_beg_mara', name: 'Hansons Beginner Marathon', type: 'Marathon' },
     { url: Config.plansPath + 'pfitz_12_55.json', id: 'pfitz_12_55', name: 'Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule', type: 'Marathon' },

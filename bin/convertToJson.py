@@ -42,7 +42,8 @@ rdr = csv.reader(filter(lambda row: row[0] != '#', f))
 for row in rdr:
     title = row[0].replace("\\n", "\n")
     description = row[1].replace("\\n", "\n")
-    (distance_mi, distance_km) = handle_distance(float(row[2]))
+    distance = 0 if row[2] == "" else float(row[2])
+    (distance_mi, distance_km) = handle_distance(distance)
     # print("vals: %s %s %.1f %.1f" %
     #      (title, description, distance_mi, distance_km))
     week.append({
