@@ -1,0 +1,374 @@
+id: ffr_5k_02
+name: 'Faster Road Racing: 5K Schedule 2'
+description: '"5K Schedule 2: 45 to 55 Miles (71-88 km) per Week" from "Faster Road
+  Racing: 5K to Half Marathon" by Pete D. Pfitzinger and Philip Latter. "This schedule
+  is for runners who have been training 40 to 50 miles per week. If you have been
+  running fewer than 40 miles per week, follow the base-training schedule in chapter
+  8 for building up to 45 miles per week before attempting this schedule, which starts
+  at 45 miles per week and gradually builds up to 55 with three weeks to go before
+  your goal race. The training then tapers so you are fit and refreshed for race day."'
+units: mi
+source: https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459
+type: 5K
+schedule:
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {7:11}
+    distance: 7.0
+  - title: |-
+      Lactate threshold
+      {8:13}
+    description: "3 \xD7 8 min LT intervals\n(jog 3 min recovery)"
+    distance: 8.0
+  - title: |-
+      Endurance
+      {9:14}
+    distance: 9.0
+  - title: |-
+      Recovery
+      {4:6}
+    distance: 4.0
+  - title: |-
+      General aerobic + speed
+      {7:11}
+    description: "6 \xD7 12 sec uphill followed by\n8 \xD7 100 m strides"
+    distance: 7.0
+  - title: |-
+      Endurance
+      {10:16}
+    distance: 10.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: "VO\u2082max\n{9:14}"
+    description: "6 \xD7 3 min uphill @ 3K-5K race effort\n(jog downhill recovery)"
+    distance: 9.0
+  - title: |-
+      Endurance
+      {9:14}
+    distance: 9.0
+  - title: |-
+      Recovery
+      {4:6}
+    distance: 4.0
+  - title: |-
+      General aerobic + speed
+      {7:11}
+    description: "6 \xD7 12 sec uphill followed by\n8 \xD7 100 m strides"
+    distance: 7.0
+  - title: |-
+      Endurance
+      {10:16}
+    distance: 10.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: |-
+      Lactate threshold
+      {9:14}
+    description: |-
+      10 min LT interval
+      (jog 3 min recovery)
+      10 min LT interval
+      (jog 3 min recovery)
+      8 min LT interval
+    distance: 9.0
+  - title: |-
+      Endurance
+      {9:14}
+    distance: 9.0
+  - title: |-
+      Recovery
+      {5:8}
+    distance: 5.0
+  - title: |-
+      Speed
+      {8:13}
+    description: "2 sets of 4 \xD7 300 m @ 800 m to mile race pace\n(jog 300 m recovery\
+      \ and 4 min between sets)"
+    distance: 8.0
+  - title: |-
+      Endurance
+      {10:16}
+    distance: 10.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {7:11}
+    distance: 7.0
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: |-
+      Speed
+      {8:13}
+    description: "2 sets of 5 \xD7 200 m @ 800 m to mile race pace\n(jog 200 m recovery\
+      \ and 4 min between sets)"
+    distance: 8.0
+  - title: |-
+      Recovery
+      {4:6}
+    distance: 4.0
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: |-
+      Endurance
+      {9:14}
+    distance: 9.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: "VO\u2082max\n{9:14}"
+    description: "5 \xD7 1,000 m @ 3K-5K race pace\n(jog 50-90% interval time recovery)"
+    distance: 9.0
+  - title: |-
+      Endurance
+      {9:14}
+    distance: 9.0
+  - title: |-
+      Recovery
+      {5:8}
+    distance: 5.0
+  - title: |-
+      General aerobic + speed
+      {8:13}
+    description: "6 \xD7 12 sec uphill followed by\n8 \xD7 100 m strides"
+    distance: 8.0
+  - title: |-
+      Endurance
+      {11:18}
+    distance: 11.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: |-
+      Lactate threshold
+      {9:14}
+    description: 20 min tempo run
+    distance: 9.0
+  - title: |-
+      Endurance
+      {9:14}
+    distance: 9.0
+  - title: |-
+      Recovery
+      {6:10}
+    distance: 6.0
+  - title: "VO\u2082max\n{8:13}"
+    description: "8 \xD7 600 m @ 3K-5K race pace\n(jog 50-90% interval time recovery)"
+    distance: 8.0
+  - title: |-
+      Endurance
+      {11:18}
+    distance: 11.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: "VO\u2082max\n{9:14}"
+    description: "4 \xD7 1,000 m\n2 \xD7 800 m\nAll intervals @ 3K-5K race pace\n\
+      (jog 50-90% interval time recovery)"
+    distance: 9.0
+  - title: |-
+      Endurance
+      {10:16}
+    distance: 10.0
+  - title: |-
+      Recovery
+      {6:10}
+    distance: 6.0
+  - title: |-
+      General aerobic + speed
+      {9:14}
+    description: "2 sets of 6 \xD7 100 m strides\n(jog 3 min between sets)"
+    distance: 9.0
+  - title: |-
+      Endurance
+      {11:18}
+    distance: 11.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic + speed
+      {9:14}
+    description: "2 sets of 5 \xD7 150 m strides\n(jog 250 m recovery and 4 min between\
+      \ sets)"
+    distance: 9.0
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: |-
+      Recovery
+      {7:11}
+    distance: 7.0
+  - title: |-
+      Recovery
+      {4:6}
+    distance: 4.0
+  - title: |-
+      5K tune-up race
+      {9:14}
+    distance: 9.0
+  - title: |-
+      Endurance
+      {9:14}
+    distance: 9.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {9:14}
+    distance: 9.0
+  - title: "VO\u2082max\n{10:16}"
+    description: |-
+      2 sets of (1,200 m, 800 m, 800 m)
+      All intervals @ 3K-5K race pace
+      (jog 50-90% interval time recovery)
+    distance: 10.0
+  - title: |-
+      Endurance
+      {10:16}
+    distance: 10.0
+  - title: |-
+      Recovery
+      {6:10}
+    distance: 6.0
+  - title: |-
+      General aerobic + speed
+      {9:14}
+    description: "2 sets of 6 \xD7 100 m strides\n(jog 3 min between sets)"
+    distance: 9.0
+  - title: |-
+      Endurance
+      {11:18}
+    distance: 11.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic + speed
+      {9:14}
+    description: "2 sets of 5 \xD7 150 m strides\n(jog 250 m recovery and 4 min between\
+      \ sets)"
+    distance: 9.0
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+  - title: |-
+      Recovery
+      {7:11}
+    distance: 7.0
+  - title: |-
+      Recovery
+      {4:6}
+    distance: 4.0
+  - title: |-
+      5K tune-up race or 3K time trial
+      {9:14}
+    distance: 9.0
+  - title: |-
+      Endurance
+      {9:14}
+    distance: 9.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      General aerobic
+      {7:11}
+    distance: 7.0
+  - title: |-
+      Recovery
+      {5:8}
+    distance: 5.0
+  - title: "VO\u2082max\n{9:14}"
+    description: "5 \xD7 1,000 m @ 3K-5K race pace\n(jog 50-90% interval time recovery)"
+    distance: 9.0
+  - title: |-
+      Recovery
+      {4:6}
+    distance: 4.0
+  - title: |-
+      General aerobic + speed
+      {6:10}
+    description: "8 \xD7 100 m strides"
+    distance: 6.0
+  - title: |-
+      General aerobic
+      {8:13}
+    distance: 8.0
+- workouts:
+  - title: |-
+      Race pace + speed
+      {7:11}
+    description: "4 \xD7 100 m strides\n800 m @ 5K race pace"
+    distance: 7.0
+  - title: |-
+      General aerobic
+      {6:10}
+    distance: 6.0
+  - title: |-
+      Recovery
+      {5:8}
+    distance: 5.0
+  - title: Rest
+  - title: |-
+      Recovery
+      {4:6}
+    description: "4 \xD7 100 m strides"
+    distance: 4.0
+  - title: |-
+      5K goal race
+      {9:14}
+    distance: 9.0
+  - title: |-
+      Recovery
+      {5:8}
+    distance: 5.0
+- workouts:
+  - title: Rest or cross-training
+  - title: |-
+      Recovery
+      {5:8}
+    distance: 5.0
+  - title: |-
+      Recovery
+      {6:10}
+    distance: 6.0
+  - title: |-
+      Recovery
+      {6:10}
+    distance: 6.0
+  - title: |-
+      Recovery
+      {4:6}
+    distance: 4.0
+  - title: |-
+      General aerobic + speed
+      {8:13}
+    description: "8 \xD7 100 m strides"
+    distance: 8.0
+  - title: |-
+      General aerobic
+      {9:14}
+    distance: 9.0

@@ -1,0 +1,234 @@
+{
+   "id": "c25k_rbp",
+   "name": "Runner's Blueprint Couch to 5K",
+   "description": "Popular 8 week \"Couch to 5K\" plan from Runner's Blueprint.",
+   "units": "km",
+   "source": "https://www.runnersblueprint.com/couch-to-5k/",
+   "type": "5K",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Session I, Workout Time: 20 min",
+               "description": "A 5-min brisk walk followed by a 30-sec jog and a 90-sec walk. Repeat 5 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session II, Workout Time: 20 min",
+               "description": "A 5-min brisk walk followed by a 30-sec jog, and one-min walk. Repeat 6 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session III, Workout Time: 30 min",
+               "description": "A 5-min brisk walk followed by a 30-sec jog and a one-min walk. Repeat 8 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Session I, Workout Time: 20 min",
+               "description": "A 5-min brisk walk followed by a one-min jog and a one-min walk. Repeat 8 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session II, Workout Time: 20 min",
+               "description": "A 5-min brisk walk followed by a one-min jog and 30-sec walk. Repeat 10 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session III, Workout Time: 30 min",
+               "description": "A 5-min brisk walk followed by a one-min jog and a 30-sec walk. Repeat 15 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Session I, Workout Time: 25 min",
+               "description": "A 5-min brisk walk followed by a two-min jog and a one-min walk. Repeat 7 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session II, Workout Time: 25 min",
+               "description": "A 5-min brisk walk followed by a two-min jog and 30-sec walk. Repeat 8 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session III, Workout Time: 30 min",
+               "description": "A 5-min brisk walk followed by a three-min jog and a one-min walk. Repeat 7 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Session I, Workout Time: 30 min",
+               "description": "A 5-min brisk walk followed by a three-min jog and a one-min walk. Repeat 7 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session II, Workout Time: 30 min",
+               "description": "A 5-min brisk walk followed by a four-min jog and one-min walk. Repeat 5 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session III, Workout Time: 30 min",
+               "description": "A 5-min brisk walk followed by a four-min jog and a 30-sec walk. Repeat 5 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Session I, Workout Time: 20 min",
+               "description": "A 5-min brisk walk followed by a 6-min jog and a one-min walk. Repeat 3 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session II, Workout Time: 25 min",
+               "description": "A 5-min brisk walk followed by a 7-min jog and one-min walk. Repeat 3 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session III, Workout Time: 25 min",
+               "description": "A 5-min brisk walk followed by a 7-min jog and a 30-sec walk. Repeat 3 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Session I, Workout Time: 35 min",
+               "description": "A 5-min brisk walk followed by a 10-min jog and a one-min walk. Repeat 3 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session II, Workout Time: 30 min",
+               "description": "A 5-min brisk walk followed by a 10-min jog and 30-sec walk. Repeat 3 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session III, Workout Time: 35 min",
+               "description": "A 5-min brisk walk followed by a 15-min jog and a two-min walk. Repeat 2 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Session I, Workout Time: 40 min",
+               "description": "A 5-min brisk walk followed by a 20-min jog. Repeat 2 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session II, Workout Time: 30 min",
+               "description": "A 5-min brisk walk followed by a 15-min jog. Repeat 2 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session III, Workout Time: 45 min",
+               "description": "A 5-min brisk walk followed by a 20-min jog. Repeat 2 times."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Session I, Workout Time: 50 min",
+               "description": "A 5-min brisk walk followed by a 15-min jog, walk for two min, jog for 10 min, walk for one min, jog for 15 min."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session II, Workout Time: 40 min",
+               "description": "A 5-min brisk walk, jog for 25 min, walk for five min, jog for 15 min."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Session III, Run 5K",
+               "description": "Run 5K -- 30 to 40 min. Jog at a slow and conversational pace."
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      }
+   ]
+}

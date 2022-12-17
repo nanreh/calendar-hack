@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Validate each plan in the plans dir against plan-schema.json
-FILES=./public/plans/*.json
+FILES=./public/plans/yaml/*.yaml
 for f in $FILES
 do
   echo "Validating plan $f ..."

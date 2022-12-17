@@ -73,6 +73,7 @@
         "workout": {
             "type": "object",
             "properties": {
+                "title": {"type": "string"},
                 "description": {"type": "string"},
                 "distance": {"type": "number"},
                 "tags": {
@@ -94,7 +95,7 @@
                 }
             },
             "required": [
-                "description"
+                "title"
             ]
         }
     }

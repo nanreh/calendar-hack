@@ -1,0 +1,35 @@
+#!/usr/local/bin/python3
+import yaml
+import json
+import sys
+import os
+import glob
+
+CH_DIR = 'calendar-hack'
+
+# find the calendar hack dir
+d = os.getcwd()
+while os.path.basename(d) and os.path.basename(d) != CH_DIR:
+    d = os.path.dirname(d)
+if os.path.basename(d) != CH_DIR:
+    sys.exit("Could not find directory {}".format(CH_DIR))
+
+# find all yaml plan files in calendar-hack/public/plans/yaml
+src_path = os.path.join(d, "public", "plans", "yaml")
+out_path = os.path.join(d, "public", "plans", "json")
+print("Looking in {}".format(src_path))
+
+plan_ids = []
+for file in os.listdir(src_path):
+    if file.endswith('.yaml'):
+        plan_ids.append(file[:-5])
+
+for plan_id in plan_ids:
+    yaml_filename = os.path.join(src_path, "{}.yaml".format(plan_id)) 
+    json_filename = os.path.join(out_path, "{}.json".format(plan_id)) 
+    print("YAML FILE: " + yaml_filename)
+    with open(yaml_filename, 'r') as yaml_file:
+        yaml_doc = yaml.safe_load(yaml_file)
+        print("JSON FILE: " + json_filename)
+        with open(json_filename, 'w') as json_file:
+            json.dump(yaml_doc, json_file, indent=3, sort_keys=False)

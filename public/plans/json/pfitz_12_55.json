@@ -1,0 +1,366 @@
+{
+   "id": "pfitz_12_55",
+   "name": "Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule",
+   "description": "\"Up to 55 miles per week, 12-week schedule\" from \"Advanced Marathoning\" by Pete Pfitzinger and Scott Douglas",
+   "units": "mi",
+   "source": "https://www.amazon.com/gp/product/149256866X/",
+   "type": "Marathon",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic + speed {8} w/ 10 x 100m strides",
+               "distance": 8.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic {9}",
+               "distance": 9.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Marathon pace run {13} w/ {8} @ marathon race pace",
+               "distance": 13.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Medium-long run {11}",
+               "distance": 11.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Lactate threshold {8} w {4} @ 15K to half marathon race pace",
+               "distance": 8.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Medium-long run {15}",
+               "distance": 15.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic + speed {8} w/ 10 X 100 m strides",
+               "distance": 8.0
+            },
+            {
+               "title": "Recovery {4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Medium-long run {11}",
+               "distance": 11.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Marathon pace run {16} w/ {10} @ marathon race pace",
+               "distance": 16.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Lactate threshold {10} w {5} @ 15K to half marathon race pace",
+               "distance": 10.0
+            },
+            {
+               "title": "Medium-long run {11}",
+               "distance": 11.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Long run {17}",
+               "distance": 17.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Medium-long run {12}",
+               "distance": 12.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Lactate threshold {9} w {4} @ 15K to half marathon race pace",
+               "distance": 9.0
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Long run {16}",
+               "distance": 16.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "VO\u2082max {10} w/ 5 x 1000 m @ 5K race pace; jog 50 to 90% interval time between",
+               "distance": 10.0
+            },
+            {
+               "title": "Medium-long run {12}",
+               "distance": 12.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery + speed {6} w/ 6 x 100 m strides",
+               "distance": 6.0
+            },
+            {
+               "title": "Marathon-pace run {15} w/ {12} @ marathon race pace",
+               "distance": 15.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery + speed {6} w/ 6 x 100 m strides",
+               "distance": 6.0
+            },
+            {
+               "title": "Medium-long run {12}",
+               "distance": 12.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Lactate threshold {12} w {7} @ 15K to half marathon race pace",
+               "distance": 12.0
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Long run {20}",
+               "distance": 20.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "VO\u2082max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between",
+               "distance": 8.0
+            },
+            {
+               "title": "Medium-long run {11}",
+               "distance": 11.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery + speed {4} w/ 6 x 100 m strides",
+               "distance": 4.0
+            },
+            {
+               "title": "8K-15K tune-up race (total 9-13 mi/14-21 km)",
+               "distance": 9.0
+            },
+            {
+               "title": "Long run {17}",
+               "distance": 17.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery + speed {7} w/ 6 x 100 m strides",
+               "distance": 7.0
+            },
+            {
+               "title": "VO\u2082max {10} w/ 4 x 1200 m @ 5K race pace; jog 50 to 90% interval time between",
+               "distance": 10.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Medium-long run {11}",
+               "distance": 11.0
+            },
+            {
+               "title": "Recovery {4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run {20}",
+               "distance": 20.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "VO\u2082max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between",
+               "distance": 8.0
+            },
+            {
+               "title": "Recovery {6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery + speed {4} w/ 6 x 100 m strides",
+               "distance": 4.0
+            },
+            {
+               "title": "8K-10K tune-up race (total 9-11 mi/14-18 km)",
+               "distance": 9.0
+            },
+            {
+               "title": "Long run {16}",
+               "distance": 16.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic + speed {7} w/ 8 x 100 m strides",
+               "distance": 7.0
+            },
+            {
+               "title": "VO\u2082max {8} w/ 3 x 1,600 m @ 5K race pace; jog 50 to 90% interval time between",
+               "distance": 8.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery + speed {5} w/ 6 x 100 m strides",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Medium-long run {12}",
+               "distance": 12.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Recovery {6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Dress rehearsal {7} w/ {2} @ marathon race pace",
+               "distance": 7.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Recovery + speed {5} w/ 6 x 100 m strides",
+               "distance": 5.0
+            },
+            {
+               "title": "Recovery {4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Plan Ends",
+               "distance": 26.2
+            }
+         ]
+      }
+   ]
+}

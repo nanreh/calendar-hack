@@ -1,0 +1,176 @@
+id: hansons_c25k
+name: Hansons Couch Potato to 10k
+description: '"Hansons Couch Potato to 10k": one of the more popular "Couch to 10k"
+  plans for new runners.'
+units: mi
+source: https://hansons-running.com/pages/training-plans
+type: 10K
+schedule:
+- workouts:
+  - title: ''
+  - title: 30 minutes of easy walking
+  - title: ''
+  - title: ''
+  - title: 30 minutes of easy walking
+  - title: ''
+  - title: 30 minutes of easy walking
+- workouts:
+  - title: ''
+  - title: 30 minutes of easy walking
+  - title: ''
+  - title: 30 minutes of easy walking
+  - title: ''
+  - title: 10 minute walk, 3 minute jog, 7 minute walk, 3 minute jog, 7 minute walk
+  - title: 30 minutes of easy walking
+- workouts:
+  - title: ''
+  - title: 8 minute walk, 5 minute jog, 5 minute walk, 5 minute jog, 7 minute walk
+  - title: ''
+  - title: 8 minute walk, 5 minute jog, 5 minute walk, 5 minute jog, 7 minute walk
+  - title: ''
+  - title: 8 minute walk, 5 minute jog, 5 minute walk, 5 minute jog, 7 minute walk
+  - title: 8 minute walk, 5 minute jog, 5 minute walk, 5 minute jog, 7 minute walk
+- workouts:
+  - title: ''
+  - title: 6 minute walk, 7 minute jog, 5 minute walk, 6 minute jog, 6 minute walk
+  - title: ''
+  - title: 6 minute walk, 7 minute jog, 5 minute walk, 6 minute jog, 6 minute walk
+  - title: ''
+  - title: 6 minute walk, 7 minute jog, 5 minute walk, 6 minute jog, 6 minute walk
+  - title: 6 minute walk, 7 minute jog, 5 minute walk, 6 minute jog, 6 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 10 minute jog, 5 minute walk, 5 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 10 minute jog, 5 minute walk, 5 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 10 minute jog, 5 minute walk, 5 minute jog, 5 minute walk
+  - title: 5 minute walk, 10 minute jog, 5 minute walk, 5 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 10 minute jog, 2 minute walk, 8 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 10 minute jog, 2 minute walk, 8 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 10 minute jog, 2 minute walk, 8 minute jog, 5 minute walk
+  - title: 5 minute walk, 10 minute jog, 2 minute walk, 8 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 20 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 20 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 20 minute jog, 5 minute walk
+  - title: 5 minute walk, 20 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 min walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 20 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 min walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 20 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 30 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 35 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 40 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 40 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 45 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 45 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 45 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 45 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 45 minute jog, 5 minute walk
+- workouts:
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: ''
+  - title: 5 minute walk, 25 minute jog, 5 minute walk
+  - title: 5 minute walk, 30 minute jog, 5 minute walk
+- workouts:
+  - title: 5 minute walk, 30 minute jog, 5 minute walk
+  - title: 5 minute walk, 30 minute jog, 5 minute walk
+  - title: 5 minute walk, 30 minute jog, 5 minute walk
+  - title: ''
+  - title: ''
+  - title: 5 minute walk, 10 minute jog, 5 minute walk
+  - title: Race Day!

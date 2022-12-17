@@ -1,0 +1,249 @@
+id: higdon_int_mara2
+name: 'Hal Higdon: Intermediate 2'
+description: 'Hal Higdon: Intermediate 2: "What''s the difference between the Intermediate
+  1 and the Intermediate 2 Marathon Training Programs? A little bit of mileage, that''s
+  all. Runners who choose the latter run three 20-milers toward the end of the program
+  instead of two. And there''s a bit more mileage leading up to those 20-milers. Otherwise,
+  the programs are basically the same. You would choose one or the other depending
+  on how many marathons you have run and how your training has progressed." (more
+  details at the link below)'
+units: mi
+source: https://www.halhigdon.com/training-programs/marathon-training/intermediate-2-marathon/
+type: Marathon
+schedule:
+- workouts:
+  - title: Cross
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{5:8.1} pace'
+    distance: 5.0
+  - title: '{10:16.1}'
+    distance: 10.0
+- workouts:
+  - title: Cross
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{11:17.7}'
+    distance: 11.0
+- workouts:
+  - title: Cross
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{6:9.7} pace'
+    distance: 6.0
+  - title: '{8:12.9}'
+    distance: 8.0
+- workouts:
+  - title: Cross
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{6:9.7} pace'
+    distance: 6.0
+  - title: '{13:21.0}'
+    distance: 13.0
+- workouts:
+  - title: Cross
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{7:11.3} run'
+    distance: 7.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{7:11.3} run'
+    distance: 7.0
+  - title: '{14:22.5}'
+    distance: 14.0
+- workouts:
+  - title: Cross
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{7:11.3} run'
+    distance: 7.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{7:11.3} pace'
+    distance: 7.0
+  - title: '{10:16.1}'
+    distance: 10.0
+- workouts:
+  - title: Cross
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{8:12.9} run'
+    distance: 8.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{8:12.9} pace'
+    distance: 8.0
+  - title: '{16:25.7}'
+    distance: 16.0
+- workouts:
+  - title: Cross
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{8:12.9} run'
+    distance: 8.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{8:12.9} run'
+    distance: 8.0
+  - title: '{17:27.4}'
+    distance: 17.0
+- workouts:
+  - title: Cross
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{9:14.5} run'
+    distance: 9.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: Rest
+  - title: |-
+      Half Marathon
+      ({13.1:21.1})
+    distance: 13.1
+- workouts:
+  - title: Cross
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{9:14.5} run'
+    distance: 9.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{9:14.5} pace'
+    distance: 9.0
+  - title: '{19:30.6}'
+    distance: 19.0
+- workouts:
+  - title: Cross
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{10:16.1} run'
+    distance: 10.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{10:16.1} run'
+    distance: 10.0
+  - title: '{20:32.2}'
+    distance: 20.0
+- workouts:
+  - title: Cross
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{6:9.7} pace'
+    distance: 6.0
+  - title: '{12:19.3}'
+    distance: 12.0
+- workouts:
+  - title: Cross
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{10:16.1} run'
+    distance: 10.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{10:16.1} pace'
+    distance: 10.0
+  - title: '{20:32.2}'
+    distance: 20.0
+- workouts:
+  - title: Cross
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '{12:19.3}'
+    distance: 12.0
+- workouts:
+  - title: Cross
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{10:16.1} run'
+    distance: 10.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{10:16.1} pace'
+    distance: 10.0
+  - title: '{20:32.2}'
+    distance: 20.0
+- workouts:
+  - title: Cross
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{8:12.9} run'
+    distance: 8.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{4:6.4} pace'
+    distance: 4.0
+  - title: '{12:19.3}'
+    distance: 12.0
+- workouts:
+  - title: Cross
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{8:12.9}'
+    distance: 8.0
+- workouts:
+  - title: Cross
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: Rest
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: |-
+      Marathon
+      ({26.2:42.2})
+    distance: 26.2

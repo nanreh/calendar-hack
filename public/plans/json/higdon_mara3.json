@@ -1,0 +1,712 @@
+{
+   "id": "higdon_mara3",
+   "name": "Hal Higdon: Marathon 3",
+   "description": "Hal Higdon: Marathon 3: \"The Marathon 3 program fits conveniently between Novice 2 and Intermediate 1, but its main feature (and appeal) is that it offers only three days of running and an extra dose of cross training for those of us who need a bit more rest between our running workouts. Marathon 3, thus, is for experienced runners, those who have been running a year or two or more and who have raced at distances between 5-K and the marathon. It is not an easy program. Expect to run more miles on those three days. You will also run three long runs of 20 miles in a program lasting 24 weeks.\" (more details at the link below)",
+   "units": "mi",
+   "source": "https://www.halhigdon.com/training-programs/marathon-training/marathon-3/",
+   "type": "Marathon",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Bike: 30 min"
+            },
+            {
+               "title": "{3:4.8} pace",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "Cross 60 min"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Bike: 30 min"
+            },
+            {
+               "title": "30 min tempo"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7.0
+            },
+            {
+               "title": "Cross 60 min"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Bike: 30 min"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Cross 60 min"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Bike: 35 min"
+            },
+            {
+               "title": "{3:4.8} pace",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{9:14.5} run",
+               "distance": 9.0
+            },
+            {
+               "title": "Cross 65 min"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Bike: 35 min"
+            },
+            {
+               "title": "35 min tempo"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{10:16.1} run",
+               "distance": 10.0
+            },
+            {
+               "title": "Cross 65 min"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Bike: 35 min",
+               "distance": 0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "Cross 65 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "Bike: 40 min",
+               "distance": 0
+            },
+            {
+               "title": "{4:6.4} pace",
+               "distance": 4.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3} run",
+               "distance": 12.0
+            },
+            {
+               "title": "Cross 70 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7.0
+            },
+            {
+               "title": "Bike: 40 min",
+               "distance": 0
+            },
+            {
+               "title": "40 min tempo",
+               "distance": 0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{13:20.9} run",
+               "distance": 13.0
+            },
+            {
+               "title": "Cross 70 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Bike: 40 min",
+               "distance": 0
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "5-K Race",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7.0
+            },
+            {
+               "title": "Bike: 45 min",
+               "distance": 0
+            },
+            {
+               "title": "{4:6.4} pace",
+               "distance": 4.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{15:24.1} run",
+               "distance": 15.0
+            },
+            {
+               "title": "Cross 75 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "Bike: 45 min",
+               "distance": 0
+            },
+            {
+               "title": "45 min tempo",
+               "distance": 0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{16:25.8} run",
+               "distance": 16.0
+            },
+            {
+               "title": "Cross 75 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "Bike: 45 min",
+               "distance": 0
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "10-K Race",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "Bike: 50 min",
+               "distance": 0
+            },
+            {
+               "title": "{5:8.1} pace",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{17:27.4} run",
+               "distance": 17.0
+            },
+            {
+               "title": "Cross 80 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{9:14.5} run",
+               "distance": 9.0
+            },
+            {
+               "title": "Bike: 50 min",
+               "distance": 0
+            },
+            {
+               "title": "50 min tempo",
+               "distance": 0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{18:29} run",
+               "distance": 18.0
+            },
+            {
+               "title": "Cross 80 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "Bike: 50 min",
+               "distance": 0
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{13:20.9} run",
+               "distance": 13.0
+            },
+            {
+               "title": "Cross 80 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{9:14.5} run",
+               "distance": 9.0
+            },
+            {
+               "title": "Bike: 55 min",
+               "distance": 0
+            },
+            {
+               "title": "{6:9.7} pace",
+               "distance": 6.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Half Marathon\n({13.1:21.1})",
+               "distance": 13.1
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{10:16.1} run",
+               "distance": 10.0
+            },
+            {
+               "title": "Bike: 55 min",
+               "distance": 0
+            },
+            {
+               "title": "55 min tempo",
+               "distance": 0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{20:32.1} run",
+               "distance": 20.0
+            },
+            {
+               "title": "Cross 85 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7.0
+            },
+            {
+               "title": "Bike: 55 min",
+               "distance": 0
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{14:22.5} run",
+               "distance": 14.0
+            },
+            {
+               "title": "Cross 85 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{10:16.1} run",
+               "distance": 10.0
+            },
+            {
+               "title": "Bike: 60 min",
+               "distance": 0
+            },
+            {
+               "title": "{7:11.3} pace",
+               "distance": 7.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{20:32.1} run",
+               "distance": 20.0
+            },
+            {
+               "title": "Cross 85 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "Bike: 60 min",
+               "distance": 0
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "10-K Race",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{10:16.1} run",
+               "distance": 10.0
+            },
+            {
+               "title": "Bike: 60 min",
+               "distance": 0
+            },
+            {
+               "title": "60 min tempo",
+               "distance": 0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{20:32.1} run",
+               "distance": 20.0
+            },
+            {
+               "title": "Cross 90 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "Bike: 50 min",
+               "distance": 0
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3} run",
+               "distance": 12.0
+            },
+            {
+               "title": "Cross 75 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Bike: 40 min",
+               "distance": 0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "Cross 60 min",
+               "distance": 0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Bike: 30 min",
+               "distance": 0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "1-{2:3.2} run",
+               "distance": 2.0
+            },
+            {
+               "title": "Marathon\n({26.2:42.2})"
+            }
+         ]
+      }
+   ]
+}

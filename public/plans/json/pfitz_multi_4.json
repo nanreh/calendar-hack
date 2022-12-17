@@ -1,0 +1,131 @@
+{
+   "id": "pfitz_multi_4",
+   "name": "Pfitzinger/Douglas: Multiple Marathons, 4 Weeks Between Marathons",
+   "description": "Multiple Marathons 4 Weeks from \"Advanced Marathoning\" by Pete Pfitzinger and Scott Douglas",
+   "units": "mi",
+   "source": "https://www.amazon.com/gp/product/149256866X/",
+   "type": "Marathon",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "General aerobic {8}",
+               "distance": 8.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {6}",
+               "distance": 6.0
+            },
+            {
+               "title": "General aerobic {8}",
+               "distance": 8.0
+            },
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic + speed {8} w/ 8 x 100m strides",
+               "distance": 8.0
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Medium-long run {11}",
+               "distance": 11.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "VO\u2082max {8} w/ 5 x 800 m @ 5K race pace; jog 50 to 90% interval time between",
+               "distance": 8.0
+            },
+            {
+               "title": "Recovery {5}",
+               "distance": 5.0
+            },
+            {
+               "title": "Medium-long run {15}",
+               "distance": 15.0
+            },
+            {
+               "title": "Recovery {4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Recovery + speed {5} w/ 8 x 100 m strides",
+               "distance": 5.0
+            },
+            {
+               "title": "Medium-long run {11}",
+               "distance": 11.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery {6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Dress rehearsal {7} w/ {2} @ marathon race pace",
+               "distance": 7.0
+            },
+            {
+               "title": "Recovery {6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Recovery + speed {5} w/ 8 x 100 m strides",
+               "distance": 5.0
+            },
+            {
+               "title": "Recovery {4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Plan Ends",
+               "distance": 26.2
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,532 @@
+{
+   "id": "higdon_nov_mara1",
+   "name": "Hal Higdon: Novice 1",
+   "description": "Hal Higdon: Novice 1: \"This is Hal's most popular program: the Novice 1 Marathon Training Program. If you are training for your first marathon, this is the training program for you! Even if you are an experienced marathoner, you may choose this as a gentle and low-mileage approach to your favorite sport. More than a million runners have used Hal's programs with success. Novice 1 will get you to the starting line--and finish line.\" (more details at the link below)",
+   "units": "mi",
+   "source": "https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/",
+   "type": "Marathon",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7}",
+               "distance": 6.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{7:11.3}",
+               "distance": 7.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1}",
+               "distance": 5.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{9:14.5}",
+               "distance": 9.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{10:16.1}",
+               "distance": 10.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{7:11.3}",
+               "distance": 7.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3}",
+               "distance": 12.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Half Marathon\n({13.1:21.1})",
+               "distance": 13.1
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{10:16.1}",
+               "distance": 10.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{15:24.1}",
+               "distance": 15.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{16:25.7}",
+               "distance": 16.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3}",
+               "distance": 12.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "{9:14.5} run",
+               "distance": 9.0
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{18:29.0}",
+               "distance": 18.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "{9:14.5} run",
+               "distance": 9.0
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{14:22.5}",
+               "distance": 14.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "{10:16.1} run",
+               "distance": 10.0
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{20:32.2}",
+               "distance": 20.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5.0
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3}",
+               "distance": 12.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{8:12.9}",
+               "distance": 8.0
+            },
+            {
+               "title": "Cross"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4.0
+            },
+            {
+               "title": "{2:4.8} run",
+               "distance": 2.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Marathon\n({26.2:42.2})",
+               "distance": 26.2
+            }
+         ]
+      }
+   ]
+}

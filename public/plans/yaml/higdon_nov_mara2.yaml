@@ -1,0 +1,232 @@
+id: higdon_nov_mara2
+name: 'Hal Higdon: Novice 2'
+description: 'Hal Higdon: Novice 2: "Novice 2 is designed to fit comfortably between
+  the Novice 1 and Intermediate 1 marathon plans. It is designed for runners who may
+  already have run and finished their first marathon and want to add just a bit more
+  mileage while training for their second or third marathons, hoping to improve their
+  times, perhaps even qualify for the Boston Marathon." (more details at the link
+  below)'
+units: mi
+source: https://www.halhigdon.com/training-programs/marathon-training/novice-2-marathon/
+type: Marathon
+schedule:
+- workouts:
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} pace'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{8:12.9}'
+    distance: 8.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{9:14.5}'
+    distance: 9.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} pace'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{6:9.7}'
+    distance: 6.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{6:9.7} pace'
+    distance: 6.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{11:17.7}'
+    distance: 11.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{12:19.3}'
+    distance: 12.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{6:9.7} pace'
+    distance: 6.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{9:14.5}'
+    distance: 9.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{7:11.3} pace'
+    distance: 7.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{14:22.5}'
+    distance: 14.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{7:11.3} run'
+    distance: 7.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{15:24.1}'
+    distance: 15.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{7:11.3} pace'
+    distance: 7.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: Rest
+  - title: |-
+      Half Marathon
+      ({13.1:21.1})
+    distance: 13.1
+- workouts:
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{8:12.9} pace'
+    distance: 8.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{17:27.4}'
+    distance: 17.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{8:12.9} run'
+    distance: 8.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{18:29.0}'
+    distance: 18.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{8:12.9} pace'
+    distance: 8.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{13:21.0}'
+    distance: 13.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{5:8.1} pace'
+    distance: 5.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{19:30.6}'
+    distance: 19.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{8:12.9} run'
+    distance: 8.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{12:19.3}'
+    distance: 12.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{5:8.1} pace'
+    distance: 5.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{20:32.2}'
+    distance: 20.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{4:6.4} pace'
+    distance: 4.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: Rest
+  - title: '{12:19.3}'
+    distance: 12.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{8:12.9}'
+    distance: 8.0
+  - title: Cross
+- workouts:
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: Rest
+  - title: Rest
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: |-
+      Marathon
+      ({26.2:42.2})
+    distance: 26.2

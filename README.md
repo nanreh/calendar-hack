@@ -11,7 +11,7 @@ If you have a bugfix, a new feature, a new training plan, a UX/UI fix, or other 
 Feel free to create a GitHub issue if you want to call something out.
 
 ## Plans
-Training plans are represented in text files that are easy to create and edit. Details [here](./public/plans/csv/README.md).
+Training plans are represented as YAML files that are easy to create and edit. They can be found in [plans/yaml](public/plans/yaml/). A JSON schema exists at [public/schema/plan-schema.json](public/schema/plan-schema.json)
 
 ## Running Locally
 

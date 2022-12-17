@@ -1,0 +1,181 @@
+id: pfitz_12_70
+name: 'Pfitzinger/Douglas: 55 to 70 Miles per Week, 12-week schedule'
+description: '"55 to 70 Miles per Week, 12-week schedule" from "Advanced Marathoning"
+  by Pete Pfitzinger and Scott Douglas'
+units: mi
+source: https://www.amazon.com/gp/product/149256866X/
+type: Marathon
+schedule:
+- workouts:
+  - title: Rest or cross-training
+  - title: General aerobic + speed {8} w/ 10x100m strides
+    distance: 8.0
+  - title: Medium-long run {11}
+    distance: 11.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Medium-long run {11}
+    distance: 11.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Marathon pace run {15} w/ {8} @ marathon race pace
+    distance: 15.0
+- workouts:
+  - title: Rest or cross-training
+  - title: Medium-long run {12}
+    distance: 12.0
+  - title: Medium-long run {11}
+    distance: 11.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Lactate threshold {9} w {4} @ 15K to half marathon race pace
+    distance: 9.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Long run {17}
+    distance: 17.0
+- workouts:
+  - title: Rest or cross-training
+  - title: General aerobic + speed {8} w/ 10x100m strides
+    distance: 8.0
+  - title: Medium-long run {14}
+    distance: 14.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Medium-long run {12}
+    distance: 12.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Marathon pace run {17} w/ {10} @ marathon race pace
+    distance: 17.0
+- workouts:
+  - title: Rest or cross-training
+  - title: Medium-long run {13}
+    distance: 13.0
+  - title: Medium-long run {15}
+    distance: 15.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Lactate threshold {10} w {5} @ 15K to half marathon race pace
+    distance: 10.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Long run {18}
+    distance: 18.0
+- workouts:
+  - title: Rest or cross-training
+  - title: General aerobic + speed {8} w/10 x 100m strides
+    distance: 8.0
+  - title: Medium-long run {15}
+    distance: 15.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Lactate threshold {10} w {4} @ 15K to half marathon race pace
+    distance: 10.0
+  - title: General aerobic {7}
+    distance: 7.0
+  - title: Long run {17}
+    distance: 17.0
+- workouts:
+  - title: Rest or cross-training
+  - title: Recovery {6} a.m. {4} p.m.
+    distance: 10.0
+  - title: "VO\u2082max {11} w/ 5 x 1200 m @ 5K race pace; jog 50 to 90% interval\
+      \ time between"
+    distance: 11.0
+  - title: Medium-long run {15}
+    distance: 15.0
+  - title: General aerobic {10}
+    distance: 10.0
+  - title: Recovery {6}
+    distance: 6.0
+  - title: Marathon-pace run {18} w/ {12} @ marathon race pace
+    distance: 18.0
+- workouts:
+  - title: Rest or cross-training
+  - title: General aerobic + speed {9} w/ 10x100m strides
+    distance: 9.0
+  - title: Medium-long run {15}
+    distance: 15.0
+  - title: Recovery {7}
+    distance: 7.0
+  - title: Lactate threshold {12} w {7} @ 15K to half marathon race pace
+    distance: 12.0
+  - title: Recovery {6}
+    distance: 6.0
+  - title: Long run {21}
+    distance: 21.0
+- workouts:
+  - title: Rest or cross-training
+  - title: "VO\u2082max {9} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time\
+      \ between"
+    distance: 9.0
+  - title: Medium-long run {15}
+    distance: 15.0
+  - title: Recovery + speed {7} w/ 6 x 100 m strides
+    distance: 7.0
+  - title: Recovery {6}
+    distance: 6.0
+  - title: 8K-15K tune-up race (total 9-13 mi/14-21 km)
+    distance: 9.0
+  - title: Long run {18}
+    distance: 18.0
+- workouts:
+  - title: Rest or cross-training
+  - title: Recovery {6} a.m. {4} p.m.
+    distance: 10.0
+  - title: "VO\u2082max {11} w/ 6 x 1,000 m @ 5K race pace; jog 50 to 90% interval\
+      \ time between"
+    distance: 11.0
+  - title: Medium-long run {15}
+    distance: 15.0
+  - title: General aerobic {8}
+    distance: 8.0
+  - title: Recovery {6}
+    distance: 6.0
+  - title: Long run {20}
+    distance: 20.0
+- workouts:
+  - title: Rest or cross-training
+  - title: "VO\u2082max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time\
+      \ between"
+    distance: 8.0
+  - title: Medium-long run {12}
+    distance: 12.0
+  - title: Recovery + speed {6} w/ 6 x 100 m strides
+    distance: 6.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: 8K-10K tune-up race (total 9-13 mi/14-21 km)
+    distance: 9.0
+  - title: Long run {17}
+    distance: 17.0
+- workouts:
+  - title: Rest or cross-training
+  - title: General aerobic + speed {8} w/ 10x100m strides
+    distance: 8.0
+  - title: Recovery {4}
+    distance: 4.0
+  - title: "VO\u2082max {8} w/ 3 x 1,600 m @ 5K race pace; jog 50 to 90% interval\
+      \ time between"
+    distance: 8.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Recovery + speed {6} w/ 10 x 100 m strides
+    distance: 6.0
+  - title: Medium-long run {13}
+    distance: 13.0
+- workouts:
+  - title: Rest
+  - title: Recovery {7}
+    distance: 7.0
+  - title: Dress rehearsal {7} w/ {2} @ marathon race pace
+    distance: 7.0
+  - title: Recovery {5}
+    distance: 5.0
+  - title: Recovery + speed {5} w/ 6 x 100 m strides
+    distance: 5.0
+  - title: Recovery {4}
+    distance: 4.0
+  - title: Plan Ends
+    distance: 26.2

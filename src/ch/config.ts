@@ -3,7 +3,7 @@ interface IConfig {
 }
 
 const AppConfig: IConfig = {
-    plansPath: "plans/",
+    plansPath: "plans/json/",
 }
 
 export const Config = AppConfig;

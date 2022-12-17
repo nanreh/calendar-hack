@@ -1,0 +1,414 @@
+{
+   "id": "ffr_8k10k_02",
+   "name": "Faster Road Racing: 8K-10K Schedule 2",
+   "description": "\"8K-10K Schedule 2: 30 to 42 Miles (48-67 km) per Week\" from \"Faster Road Racing: 5K to Half Marathon\" by Pete D. Pfitzinger and Philip Latter. \"This schedule is for runners who have been training 40 to 50 miles per week. If you have been running fewer than 40 miles per week, follow the base-training schedule in chapter 8 for building up to 45 miles per week before attempting this schedule. This schedule starts at 45 miles per week and gradually builds up to 57 miles with three weeks to go before your goal race. The training then tapers so you are fit and refreshed for race day.\"",
+   "units": "mi",
+   "source": "https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459",
+   "type": "10K",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{8:13}",
+               "distance": 8.0
+            },
+            {
+               "title": "Lactate threshold\n{8:13}\n10 min LT interval (jog 3 min recovery)\n8 min LT interval (jog 3 min recovery)\n8 min LT interval",
+               "distance": 8.0
+            },
+            {
+               "title": "Endurance\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "Recovery\n{3:5}",
+               "distance": 3.0
+            },
+            {
+               "title": "General aerobic + speed\n{7:11}\n6 \u00d7 12 sec uphill followed by\n8 \u00d7100 m strides",
+               "distance": 7.0
+            },
+            {
+               "title": "Endurance\n{10:16}",
+               "distance": 10.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{8:13}",
+               "distance": 8.0
+            },
+            {
+               "title": "Lactate threshold\n{9:14}\n12 min LT interval (jog 4 min recovery)\n10 min LT interval (jog 4 min recovery)\n8 min LT interval",
+               "distance": 9.0
+            },
+            {
+               "title": "Endurance\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "Recovery\n{3:5}",
+               "distance": 3.0
+            },
+            {
+               "title": "Speed\n{7:11}\n2 sets of 5 \u00d7 200 m @ 800 m to mile race pace\n(jog 200 m recov-ery and 4 min between sets)",
+               "distance": 7.0
+            },
+            {
+               "title": "Endurance\n{11:18}",
+               "distance": 11.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{8:13}",
+               "distance": 8.0
+            },
+            {
+               "title": "VO\u2082max\n{9:14}\n7 \u00d7 3 min uphill @ 3K-5K race effort\n(jog downhill recovery)",
+               "distance": 9.0
+            },
+            {
+               "title": "Endurance\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "Recovery\n{4:6}",
+               "distance": 4.0
+            },
+            {
+               "title": "General aerobic + speed\n{8:13}\n6 \u00d7 12 sec uphill followed by\n8 \u00d7 100 m strides",
+               "distance": 8.0
+            },
+            {
+               "title": "Endurance\n{11:18}",
+               "distance": 11.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{7:11}",
+               "distance": 7.0
+            },
+            {
+               "title": "General aerobic\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "Speed\n{8:13}\n2 sets of 5 \u00d7 200 m @ 800 m to mile race pace\n(jog 200 m recovery and 4 min between sets)",
+               "distance": 8.0
+            },
+            {
+               "title": "Recovery\n{3:5}",
+               "distance": 3.0
+            },
+            {
+               "title": "General aerobic\n{8:13}",
+               "distance": 8.0
+            },
+            {
+               "title": "Endurance\n{10:16}",
+               "distance": 10.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "VO\u2082max\n{9:14}\n6 \u00d7 1,000 m @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
+               "distance": 9.0
+            },
+            {
+               "title": "Endurance\n{10:16}",
+               "distance": 10.0
+            },
+            {
+               "title": "Recovery\n{4:6}",
+               "distance": 4.0
+            },
+            {
+               "title": "General aerobic + speed\n{8:13}\n6 \u00d7 12 sec uphill followed by\n8 \u00d7 100 m strides",
+               "distance": 8.0
+            },
+            {
+               "title": "Endurance\n{12:19}",
+               "distance": 12.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "Lactate threshold\n{10:16}\n14 min LT interval (jog 4 min recovery)\n10 min LT interval (jog 4 min recovery)\n10 min LT interval",
+               "distance": 10.0
+            },
+            {
+               "title": "Endurance\n{10:16}",
+               "distance": 10.0
+            },
+            {
+               "title": "Recovery\n{5:8}",
+               "distance": 5.0
+            },
+            {
+               "title": "Speed\n{8:13}\n3 sets of 4 \u00d7 200 m @ 800 m to mile race pace\n(jog 200 m recov-ery and 4 min between sets)",
+               "distance": 8.0
+            },
+            {
+               "title": "Endurance\n{12:19}",
+               "distance": 12.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "Race pace {10:16}\n2 sets of (1,600 m, 1,200 m, 1,000 m)\nAll intervals @ 8K-10K race pace\n(jog 50% interval time recovery)",
+               "distance": 10.0
+            },
+            {
+               "title": "Endurance\n{11:18}",
+               "distance": 11.0
+            },
+            {
+               "title": "Recovery\n{5:8}",
+               "distance": 5.0
+            },
+            {
+               "title": "General aerobic + speed\n{9:14}\n2 sets of 6 \u00d7 100 m strides\n(jog 3 min between sets)",
+               "distance": 9.0
+            },
+            {
+               "title": "Endurance\n{12:19}",
+               "distance": 12.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic + speed\n{9:14}\n2 sets of 5 \u00d7 150 m strides\n(jog 250 m recovery and 4 min between sets)",
+               "distance": 9.0
+            },
+            {
+               "title": "General aerobic\n{8:13}",
+               "distance": 8.0
+            },
+            {
+               "title": "Recovery\n{7:11}",
+               "distance": 7.0
+            },
+            {
+               "title": "Recovery\n{4:6}",
+               "distance": 4.0
+            },
+            {
+               "title": "5K tune-up race\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "Endurance\n{10:16}",
+               "distance": 10.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "VO\u2082max\n{10:16}\n3 \u00d7 1,200 m\n3 \u00d7 800 m\nAll intervals @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
+               "distance": 10.0
+            },
+            {
+               "title": "Endurance\n{11:18}",
+               "distance": 11.0
+            },
+            {
+               "title": "Recovery\n{5:8}",
+               "distance": 5.0
+            },
+            {
+               "title": "General aerobic + speed\n{9:14}\n2 sets of 6 \u00d7 100 m strides\n(jog 3 min between sets)",
+               "distance": 9.0
+            },
+            {
+               "title": "Endurance\n{13:21}",
+               "distance": 13.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic + speed\n{9:14}\n2 sets of 5 \u00d7 150 m strides\n(jog 250 m recovery and 4 min between sets)",
+               "distance": 9.0
+            },
+            {
+               "title": "General aerobic\n{8:13}",
+               "distance": 8.0
+            },
+            {
+               "title": "Recovery\n{7:11}",
+               "distance": 7.0
+            },
+            {
+               "title": "Recovery\n{4:6}",
+               "distance": 4.0
+            },
+            {
+               "title": "5K tune-up race\n{9:14}",
+               "distance": 9.0
+            },
+            {
+               "title": "Endurance\n{10:16}",
+               "distance": 10.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "General aerobic\n{7:11}",
+               "distance": 7.0
+            },
+            {
+               "title": "Recovery\n{5:8}",
+               "distance": 5.0
+            },
+            {
+               "title": "VO\u2082max\n{9:14}\n4 \u00d7 800 m3 \u00d7 600 m\nAll intervals @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
+               "distance": 9.0
+            },
+            {
+               "title": "Recovery\n{4:6}",
+               "distance": 4.0
+            },
+            {
+               "title": "General aerobic + speed\n{6:10}\n8 \u00d7 100 m strides",
+               "distance": 6.0
+            },
+            {
+               "title": "General aerobic\n{9:14}",
+               "distance": 9.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Race pace + speed\n{7:11}\n4 \u00d7 100 m strides\n1,200 m @ 8K-10K race pace",
+               "distance": 7.0
+            },
+            {
+               "title": "General aerobic\n{6:10}",
+               "distance": 6.0
+            },
+            {
+               "title": "Recovery\n{5:8}",
+               "distance": 5.0
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Recovery\n{4:6}\n4 \u00d7 100 m strides",
+               "distance": 4.0
+            },
+            {
+               "title": "8K-10K goal race\n{11:18}",
+               "distance": 11.0
+            },
+            {
+               "title": "Recovery\n{5:8}",
+               "distance": 5.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or cross-training"
+            },
+            {
+               "title": "Recovery\n{5:8}",
+               "distance": 5.0
+            },
+            {
+               "title": "Recovery\n{6:10}",
+               "distance": 6.0
+            },
+            {
+               "title": "Recovery\n{6:10}",
+               "distance": 6.0
+            },
+            {
+               "title": "Recovery\n{4:6}",
+               "distance": 4.0
+            },
+            {
+               "title": "General aerobic + speed\n{8:13}",
+               "description": "8 x 100m strides",
+               "distance": 8.0
+            },
+            {
+               "title": "General aerobic\n{10:16}",
+               "distance": 10.0
+            }
+         ]
+      }
+   ]
+}

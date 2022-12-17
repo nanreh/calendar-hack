@@ -1,0 +1,92 @@
+id: c25k
+name: Couch to 5K
+description: One of the more popular "Couch to 5K" plans to get you off the couch
+  and running 5K without stopping in 8 weeks.
+units: km
+source: https://www.coachmag.co.uk/5k-training/3472/running-for-beginners-free-couch-to-5k-plan
+type: 5K
+schedule:
+- workouts:
+  - title: Rest
+  - title: Run 30 seconds, walk 30 seconds.
+
+      Repeat 15 times
+  - title: Rest
+  - title: Run/walk 10 minutes
+  - title: Rest
+  - title: Walk 5km
+  - title: Rest
+- workouts:
+  - title: Rest
+  - title: Run 45 seconds, walk 45 seconds.
+
+      Repeat 12 times
+  - title: Rest
+  - title: Run/walk 15 minutes
+  - title: Rest
+  - title: Walk 5km
+
+      (aim to beat previous week's time)
+  - title: Rest
+- workouts:
+  - title: Rest
+  - title: Run 60 seconds, walk 60 seconds.
+
+      Repeat 10 times
+  - title: Rest
+  - title: Run/walk 20 minutes
+  - title: Rest
+  - title: |-
+      Walk 5km
+      (aim to beat previous week's time)
+  - title: Rest
+- workouts:
+  - title: Rest
+  - title: |-
+      Run 90 seconds, walk 90 seconds.
+      Repeat 8 times
+  - title: Rest
+  - title: Run/walk 25 minutes
+  - title: Rest
+  - title: Run 1km, walk 4km
+  - title: Rest
+- workouts:
+  - title: Rest
+  - title: |-
+      Run 2 minutes, walk 2 minutes.
+      Repeat 6 times
+  - title: Rest
+  - title: Run/walk 30 minutes
+  - title: Rest
+  - title: Run 2km, walk 3km
+  - title: Rest
+- workouts:
+  - title: Rest
+  - title: |-
+      Run 3 minutes, walk 2 minutes.
+      Repeat 5 times
+  - title: Rest
+  - title: Run/walk 35 minutes
+  - title: Rest
+  - title: Run 3km, walk 2km
+  - title: Rest
+- workouts:
+  - title: Rest
+  - title: |-
+      Run 5 minutes, walk 2 minutes.
+      Repeat 4 times
+  - title: Rest
+  - title: Run/walk 40 minutes
+  - title: Rest
+  - title: Run 4km, walk 1km
+  - title: Rest
+- workouts:
+  - title: Rest
+  - title: |-
+      Run 10 minutes, walk 60 seconds.
+      Repeat 3 times
+  - title: Rest
+  - title: Run/walk 45 minutes
+  - title: Rest
+  - title: Rest
+  - title: Race Day!
