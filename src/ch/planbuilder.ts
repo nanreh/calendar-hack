@@ -26,7 +26,7 @@ function getWorkouts(trainingPlan: TrainingPlan): PlannedWorkout[] {
 
 export function build(trainingPlan: TrainingPlan, raceDate: Date, weekStartsOn: WeekStartsOn): RacePlan {
     const planDates = calcPlanDates(trainingPlan.schedule.length, raceDate, weekStartsOn);
-    console.log(`planDates: ${JSON.stringify(planDates)}`)
+    //console.log(`planDates: ${JSON.stringify(planDates)}`)
     const workoutsToPlace = getWorkouts(trainingPlan);
     const map = new Map<Date, DayDetails>();
     eachDayOfInterval({ start: planDates.planStartDate, end: planDates.planEndDate }).forEach(currDate => {
