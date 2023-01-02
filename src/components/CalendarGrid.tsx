@@ -8,10 +8,12 @@ import { DayOfWeekHeader } from './DayOfWeekHeader'
 import { DayDetails } from '../ch/models'
 import styled from 'styled-components'
 import { format } from 'date-fns'
+import { getDaysHeader, WeekStartsOn } from '../ch/datecalc'
 
 interface Props {
     racePlan: RacePlan,
     units: Units,
+    weekStartsOn: WeekStartsOn,
     swap: (d1: Date, d2: Date) => void,
     swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void,
     swapWeeks: (w1: number, w2: number) => void,
@@ -50,7 +52,7 @@ function findMaxDistance(weeks: Week<DayDetails>[]): number {
     return currMax;
 }
 
-export const CalendarGrid: React.FC<Props> = ({ racePlan, units, swap, swapDow, swapWeeks }) => {
+export const CalendarGrid: React.FC<Props> = ({ racePlan, units, weekStartsOn, swap, swapDow, swapWeeks }) => {
     const [selectedDow, setSelectedDow] = React.useState<dayOfWeek | undefined>(undefined);
     const [hoveringDow, setHoveringDow] = React.useState<dayOfWeek | undefined>(undefined);
     const maxDistance = findMaxDistance(racePlan.dateGrid.weeks);
@@ -83,7 +85,7 @@ export const CalendarGrid: React.FC<Props> = ({ racePlan, units, swap, swapDow, 
     function getHeader() {
         return <WeekRow>
             <Blank key={'blank-left'} />
-            {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((dow, index) => (
+            {getDaysHeader(weekStartsOn).map((dow, index) => (
                 <DayOfWeekHeader key={dow} dow={dow as dayOfWeek} swapDow={swapDow} selectDow={setSelectedDow} hoverDow={setHoveringDow} />
             ))}
         </WeekRow>;

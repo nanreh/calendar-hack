@@ -1,6 +1,6 @@
 import { format, isWithinInterval, eachDayOfInterval, differenceInWeeks, isBefore, isAfter, addDays, addWeeks } from 'date-fns'
 import { startOfWeek, startOfDay, endOfWeek, isMonday, isTuesday, isWednesday, isThursday, isFriday, isSaturday, isSunday } from 'date-fns'
-import { AssertionError } from 'assert';
+import { WeekStartsOn, WeekStartsOnValues } from './datecalc';
 
 export type dayOfWeek = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday' | 'Sunday';
 export const key = (d: Date) => format(d, 'yyyy/MM/dd');
@@ -24,8 +24,10 @@ export class DateGrid<T> {
     private _first: Date | undefined = undefined;
     private _last: Date | undefined = undefined;
     private _weekCount: number = 0;
+    private _weekStartsOn: WeekStartsOn = WeekStartsOnValues.Monday;
 
-    constructor(events: Map<Date, T>) {
+    constructor(events: Map<Date, T>, weekStartsOn: WeekStartsOn) {
+        this._weekStartsOn = weekStartsOn;
         events?.forEach((v, k) => {
             this.setEvent(k, v);
         });
@@ -71,7 +73,7 @@ export class DateGrid<T> {
     }
 
     clone(): DateGrid<T> {
-        const res = new DateGrid<T>(new Map());
+        const res = new DateGrid<T>(new Map(), this._weekStartsOn);
         res._events = new Map<string, T>(this._events);
         res._min = this._min;
         res._max = this._max;
@@ -88,10 +90,10 @@ export class DateGrid<T> {
             // min/max/first/last/weekCount maintenance
             if (!this._max || isAfter(date, this._max))
                 this._max = date;
-            this._last = startOfDay(endOfWeek(this._max, { weekStartsOn: 1 }))
+            this._last = startOfDay(endOfWeek(this._max, { weekStartsOn: this._weekStartsOn }))
             if (!this._min || isBefore(date, this._min))
                 this._min = date;
-            this._first = startOfWeek(this._min, { weekStartsOn: 1 })
+            this._first = startOfWeek(this._min, { weekStartsOn: this._weekStartsOn })
             this._weekCount = differenceInWeeks(startOfDay(addDays(this._last, 1)), this._first);
         } else {
             this._events.delete(k);
@@ -129,7 +131,7 @@ export class DateGrid<T> {
         const firstSelection = this.selectAll(dow1);
         const secondSelection = this.selectAll(dow2);
         if (firstSelection.length !== secondSelection.length) {
-            throw new AssertionError({ message: `selection lengths do not match` })
+            throw new Error(`selection lengths do not match`)
         }
 
         for (let i = 0; i < firstSelection.length; i++) {

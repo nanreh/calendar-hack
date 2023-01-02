@@ -1,5 +1,5 @@
 import { eachDayOfInterval } from 'date-fns'
-import { calcPlanDates } from './datecalc'
+import { calcPlanDates, WeekStartsOn } from './datecalc'
 import { DateGrid, dayOfWeek } from './dategrid'
 import { TrainingPlan, PlannedWorkout } from './planrepo'
 import { RacePlan, DayDetails } from './models'
@@ -24,8 +24,9 @@ function getWorkouts(trainingPlan: TrainingPlan): PlannedWorkout[] {
     return result;
 }
 
-export function build(trainingPlan: TrainingPlan, raceDate: Date): RacePlan {
-    const planDates = calcPlanDates(trainingPlan.schedule.length, raceDate);
+export function build(trainingPlan: TrainingPlan, raceDate: Date, weekStartsOn: WeekStartsOn): RacePlan {
+    const planDates = calcPlanDates(trainingPlan.schedule.length, raceDate, weekStartsOn);
+    console.log(`planDates: ${JSON.stringify(planDates)}`)
     const workoutsToPlace = getWorkouts(trainingPlan);
     const map = new Map<Date, DayDetails>();
     eachDayOfInterval({ start: planDates.planStartDate, end: planDates.planEndDate }).forEach(currDate => {
@@ -34,7 +35,7 @@ export function build(trainingPlan: TrainingPlan, raceDate: Date): RacePlan {
             map.set(currDate, dayDetails);
         }
     });
-    const dateGrid = new DateGrid(map);
+    const dateGrid = new DateGrid(map, weekStartsOn);
     return { raceType: trainingPlan.type, planDates: planDates, dateGrid: dateGrid, sourceUnits: trainingPlan.units, description: trainingPlan.description, sourceUrl: trainingPlan.source };
 }
 

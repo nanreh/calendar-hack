@@ -1,8 +1,5 @@
-interface IConfig {
-    plansPath: string,
-}
 
-const AppConfig: IConfig = {
+const AppConfig = {
     plansPath: "plans/json/",
 }
 

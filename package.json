@@ -33,7 +33,8 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.1.1",
     "typescript": "~3.7.2",
-    "use-query-params": "^0.4.0"
+    "use-query-params": "^0.4.0",
+    "weekstart": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

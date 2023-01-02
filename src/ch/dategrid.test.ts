@@ -1,5 +1,6 @@
 import { DateGrid } from './dategrid';
 import { parse, format, eachDayOfInterval, subWeeks } from 'date-fns'
+import { WeekStartsOn, WeekStartsOnValues } from './datecalc';
 
 const dparse = (s: string) => parse(s, 'MM/dd/yyyy', new Date());
 const fmt = (d: Date) => format(d, 'MM/dd/yyyy');
@@ -9,7 +10,7 @@ type Event = { desc: string }
 describe('Plan', function () {
 
     it('initially empty grid', function () {
-        let p = new DateGrid(new Map());
+        let p = new DateGrid(new Map(), WeekStartsOnValues.Monday);
         expect(p).not.toBeNull();
         expect(p.min).toBeUndefined();
         expect(p.max).toBeUndefined();
@@ -34,7 +35,7 @@ describe('Plan', function () {
             { date: dparse('4/19/2020'), event: testEvent },
         ];
         m.set(d, testEvent);
-        let p = new DateGrid<Event>(m);
+        let p = new DateGrid<Event>(m, WeekStartsOnValues.Monday);
         expect(p).not.toBeNull();
         expect(p.min).toEqual(d);
         expect(p.max).toEqual(d);
@@ -69,7 +70,7 @@ describe('Plan', function () {
             { date: dparse('5/16/2020'), event: eventTwo },
             { date: dparse('5/17/2020'), event: undefined },
         ];
-        let p = new DateGrid<Event>(m);
+        let p = new DateGrid<Event>(m, WeekStartsOnValues.Monday);
         expect(p).not.toBeNull();
         expect(p.min).toEqual(dparse('5/7/2020'));
         expect(p.max).toEqual(dparse('5/16/2020'));
@@ -91,7 +92,7 @@ describe('Plan', function () {
         eachDayOfInterval({ start: firstDay, end: lastDay }).forEach(d => {
             m.set(d, { desc: format(d, 'MM/dd/yyyy') });
         });
-        const p = new DateGrid(m);
+        const p = new DateGrid(m, WeekStartsOnValues.Monday);
         expect(p.days.length).toEqual(7);
         expect(p.getEvent(firstDay)).toEqual({ desc: '04/13/2020' });
         expect(p.getEvent(secondDay)).toEqual({ desc: '04/14/2020' });
@@ -107,7 +108,7 @@ describe('Plan', function () {
         eachDayOfInterval({ start: firstDay, end: lastDay }).forEach(d => {
             m.set(d, { desc: format(d, 'EEEE MM/dd/yyyy') });
         });
-        const p = new DateGrid(m);
+        const p = new DateGrid(m, WeekStartsOnValues.Monday);
         expect(p.days.length).toEqual(35);
 
         expect(() => p.getEvent(dparse('03/01/2020'))).toThrow(/is not within interval/);
