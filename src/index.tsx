@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { HTML5Backend } from 'react-dnd-html5-backend';
-import { TouchBackend } from 'react-dnd-touch-backend';
-import { DndProvider, Backends } from 'react-dnd-multi-backend';
-import { TouchTransition, MouseTransition } from 'react-dnd-multi-backend';
-import './css/reset.css'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import { TouchBackend } from "react-dnd-touch-backend";
+import { DndProvider, Backends } from "react-dnd-multi-backend";
+import { TouchTransition, MouseTransition } from "react-dnd-multi-backend";
+import "./css/reset.css";
 
 const CustomHTML5toTouch: Backends = {
   backends: [
@@ -22,12 +22,12 @@ const CustomHTML5toTouch: Backends = {
       // Note that you can call your backends with options
       options: {
         enableMouseEvents: true,
-        skipDispatchOnTransition: true // will not dispatch a duplicate `touchstart` event when this backend is activated
+        skipDispatchOnTransition: true, // will not dispatch a duplicate `touchstart` event when this backend is activated
       },
       preview: true,
       transition: TouchTransition,
-    }
-  ]
+    },
+  ],
 };
 
 ReactDOM.render(
@@ -37,7 +37,7 @@ ReactDOM.render(
       <App />
     </DndProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
