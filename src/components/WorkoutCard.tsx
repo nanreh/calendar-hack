@@ -28,8 +28,14 @@ const DragSource = styled.div<DragSourceProps>`
   opacity: ${(props) => (props.isDragging ? 0.5 : 1)};
 `;
 
+const EditWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
 const TextArea = styled.textarea`
   width: 100%;
+  flex: 1;
 `;
 
 function renderDesc(dayDetails: DayDetails, from: Units, to: Units): string {
@@ -90,7 +96,7 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
             <DragHandle viewBox="0 0 32 36" />
           </div>
           {rpContext?.isEditing && (
-            <>
+            <EditWrapper>
               <TextArea
                 value={title}
                 onChange={(v) =>
@@ -111,7 +117,7 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
                   }
                 />
               )}
-            </>
+            </EditWrapper>
           )}
           {!rpContext?.isEditing && (
             <p>{render(dayDetails, dayDetails.sourceUnits, units)}</p>

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Units } from "../defy/models";
-import { RacePlan } from "../ch/models";
 import { dayOfWeek, key, Week } from "../ch/dategrid";
 import { DayCell } from "./DayCell";
 import { WeekSummary } from "./WeekSummary";
@@ -12,12 +11,10 @@ import { getDaysHeader, WeekStartsOn } from "../ch/datecalc";
 import { RacePlanContext } from "../context/planContext";
 
 interface Props {
-  racePlan: RacePlan;
   units: Units;
   weekStartsOn: WeekStartsOn;
   swap: (d1: Date, d2: Date) => void;
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
-  swapWeeks: (w1: number, w2: number) => void;
 }
 
 const Root = styled.div`
@@ -57,14 +54,13 @@ function findMaxDistance(weeks: Week<DayDetails>[]): number {
 }
 
 export const CalendarGrid: React.FC<Props> = ({
-  racePlan,
   units,
   weekStartsOn,
   swap,
   swapDow,
-  swapWeeks,
 }) => {
   const rpContext = React.useContext(RacePlanContext);
+  const racePlan = rpContext!.racePlan;
   const [selectedDow, setSelectedDow] = React.useState<dayOfWeek | undefined>(
     undefined
   );

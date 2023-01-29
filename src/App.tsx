@@ -201,15 +201,7 @@ const App: React.FC = () => {
     }
   }
 
-  function swapWeeks(w1: number, w2: number): void {
-    if (racePlan) {
-      racePlan.dateGrid.swapWeeks(w1, w2);
-      updatePlan(racePlan);
-    }
-  }
-
   function updatePlan(rp: RacePlan): void {
-    console.log(rp.dateGrid.days);
     setRacePlan(rp);
     setUndoHistory([...undoHistory, rp]);
   }
@@ -275,12 +267,10 @@ const App: React.FC = () => {
             value={{ racePlan, setRacePlan: updatePlan, isEditing: editing }}
           >
             <CalendarGrid
-              racePlan={racePlan}
               units={selectedUnits}
               weekStartsOn={weekStartsOn}
               swap={swapDates}
               swapDow={doSwapDow}
-              swapWeeks={swapWeeks}
             />
           </RacePlanContext.Provider>
         )}
