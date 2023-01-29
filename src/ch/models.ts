@@ -15,7 +15,7 @@ export interface DayDetails {
   title: string;
   desc: string;
   tags: Tags[];
-  dist: number;
+  dist: number | undefined;
   sourceUnits: Units;
 }
 

@@ -37,6 +37,14 @@ const TextArea = styled.textarea`
   width: 100%;
   flex: 1;
 `;
+const UnitWrapper = styled.div`
+  display: flex;
+  gap: 2px;
+  justify-items: center;
+`;
+const UnitInput = styled.input.attrs({ type: "number" })`
+  width: 100%;
+`;
 
 function renderDesc(dayDetails: DayDetails, from: Units, to: Units): string {
   let [title, desc] = render(dayDetails, from, to);
@@ -84,7 +92,6 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
       }
     },
   });
-  let [title, desc] = render(dayDetails, dayDetails.sourceUnits, units);
 
   return (
     <Card>
@@ -97,8 +104,21 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
           </div>
           {rpContext?.isEditing && (
             <EditWrapper>
+              <UnitWrapper>
+                <UnitInput
+                  type="number"
+                  value={dayDetails.dist}
+                  onChange={(v) =>
+                    updateDayDetails({
+                      ...dayDetails,
+                      dist: v.target.value ? Number(v.target.value) : undefined,
+                    })
+                  }
+                />
+                <span>{dayDetails.sourceUnits}</span>
+              </UnitWrapper>
               <TextArea
-                value={title}
+                value={dayDetails.title}
                 onChange={(v) =>
                   updateDayDetails({
                     ...dayDetails,
@@ -106,9 +126,9 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
                   })
                 }
               />
-              {desc && (
+              {dayDetails.desc && (
                 <TextArea
-                  value={desc}
+                  value={dayDetails.desc}
                   onChange={(v) =>
                     updateDayDetails({
                       ...dayDetails,

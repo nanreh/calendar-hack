@@ -84,7 +84,7 @@ export const CalendarGrid: React.FC<Props> = ({
             maxDistance > 0 && calcWeeklyDistance(w) === maxDistance
           }
         ></WeekSummary>
-        {w.days.map((d, index) => (
+        {w.days.map((d) => (
           <DayCell
             key={key(d.date)}
             date={d.date}
@@ -127,7 +127,7 @@ export const CalendarGrid: React.FC<Props> = ({
   return (
     <Root>
       {getHeader()}
-      {racePlan.dateGrid.weeks.map((w, index) => getWeek(w))}
+      {racePlan.dateGrid.weeks.map((w) => getWeek(w))}
     </Root>
   );
 };
