@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useThrottle } from "@react-hook/throttle";
 import { Units } from "./defy/models";
 import { RacePlan } from "./ch/models";
 import {
@@ -30,6 +31,8 @@ import { PlanDetailsCard } from "./components/PlanDetailsCard";
 import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
 import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
+import { RacePlanContext } from "./context/planContext";
+import Checkbox from "./components/Checkbox";
 
 const planRepo = new PlanRepo(availablePlans);
 
@@ -77,6 +80,7 @@ const SecondToolbar = styled.div`
   @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
     flex-direction: column;
   }
+  gap: 5px 5px;
 `;
 const UnitsDiv = styled.div`
   @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
@@ -98,7 +102,8 @@ const App: React.FC = () => {
     p && availablePlansById[p] ? availablePlansById[p] : availablePlans[0]
   );
   var [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
-  var [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
+  const [editing, setIsEditing] = useState(false);
+  var [undoHistory, setUndoHistory] = useThrottle<RacePlan[]>([], 1);
   var [weekStartsOn, setWeekStartsOn] = useState<WeekStartsOn>(
     s === 0 || s === 1 || s === 6 ? s : WeekStartsOnValues.Monday
   );
@@ -141,8 +146,7 @@ const App: React.FC = () => {
     weekStartsOn: WeekStartsOn
   ) => {
     const racePlan = build(await planRepo.fetch(plan), endDate, weekStartsOn);
-    setRacePlan(racePlan);
-    setUndoHistory([...undoHistory, racePlan]);
+    updatePlan(racePlan);
     setq(getParams(units, plan, endDate, weekStartsOn));
   };
 
@@ -176,7 +180,6 @@ const App: React.FC = () => {
   };
 
   const onWeekStartsOnChanged = async (v: WeekStartsOn) => {
-    console.log("onWeekStartsOnChanged: " + v);
     const racePlan = build(await planRepo.fetch(selectedPlan), planEndDate, v);
     setWeekStartsOn(v);
     setRacePlan(racePlan);
@@ -187,25 +190,28 @@ const App: React.FC = () => {
   function swapDates(d1: Date, d2: Date): void {
     if (racePlan) {
       const newRacePlan = swap(racePlan, d1, d2);
-      setRacePlan(newRacePlan);
-      setUndoHistory([...undoHistory, newRacePlan]);
+      updatePlan(newRacePlan);
     }
   }
 
   function doSwapDow(dow1: dayOfWeek, dow2: dayOfWeek) {
     if (racePlan) {
       const newRacePlan = swapDow(racePlan, dow1, dow2);
-      setRacePlan(newRacePlan);
-      setUndoHistory([...undoHistory, newRacePlan]);
+      updatePlan(newRacePlan);
     }
   }
 
   function swapWeeks(w1: number, w2: number): void {
     if (racePlan) {
       racePlan.dateGrid.swapWeeks(w1, w2);
-      setRacePlan(racePlan);
-      setUndoHistory([...undoHistory, racePlan]);
+      updatePlan(racePlan);
     }
+  }
+
+  function updatePlan(rp: RacePlan): void {
+    console.log(rp.dateGrid.days);
+    setRacePlan(rp);
+    setUndoHistory([...undoHistory, rp]);
   }
 
   function downloadHandler() {
@@ -251,6 +257,10 @@ const App: React.FC = () => {
           disabled={undoHistory.length <= 1}
           undoHandler={undoHandler}
         />
+        <label>
+          <Checkbox checked={editing} onChange={() => setIsEditing(!editing)} />
+          <span style={{ marginLeft: "4px" }}>Edit</span>
+        </label>
       </SecondToolbar>
       <PlanDetailsCard racePlan={racePlan} />
       <SecondToolbar>
@@ -261,14 +271,18 @@ const App: React.FC = () => {
       </SecondToolbar>
       <MainUI>
         {racePlan && (
-          <CalendarGrid
-            racePlan={racePlan}
-            units={selectedUnits}
-            weekStartsOn={weekStartsOn}
-            swap={swapDates}
-            swapDow={doSwapDow}
-            swapWeeks={swapWeeks}
-          />
+          <RacePlanContext.Provider
+            value={{ racePlan, setRacePlan: updatePlan, isEditing: editing }}
+          >
+            <CalendarGrid
+              racePlan={racePlan}
+              units={selectedUnits}
+              weekStartsOn={weekStartsOn}
+              swap={swapDates}
+              swapDow={doSwapDow}
+              swapWeeks={swapWeeks}
+            />
+          </RacePlanContext.Provider>
         )}
       </MainUI>
     </ThemeProvider>

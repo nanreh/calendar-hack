@@ -10,6 +10,7 @@ import { Overlay } from "./Overlay";
 
 interface Props {
   dayDetails: DayDetails | undefined;
+  updateDayDetails: (dayDetails: DayDetails) => void;
   date: Date;
   units: Units;
   swap: (d1: Date, d2: Date) => void;
@@ -29,6 +30,7 @@ const DropTarget = styled.div<DropTargetProps>`
 
 export const DayCell: React.FC<Props> = ({
   dayDetails,
+  updateDayDetails,
   date,
   units,
   swap,
@@ -64,10 +66,10 @@ export const DayCell: React.FC<Props> = ({
       <DropTarget isOver={isOver} canDrop={canDrop} ref={drop}>
         {dayDetails && (
           <WorkoutCard
+            updateDayDetails={updateDayDetails}
             dayDetails={dayDetails}
             date={date}
             units={units}
-            swap={swap}
           />
         )}
         {!dayDetails && <BlankCard date={date} />}

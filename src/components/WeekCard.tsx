@@ -4,6 +4,7 @@ import { Units } from "../defy/models";
 import { DayDetails, RacePlan } from "../ch/models";
 import { format } from "date-fns";
 import { DayCell } from "./DayCell";
+import { RacePlanContext } from "../context/planContext";
 
 interface Props {
   desc: string;
@@ -28,11 +29,19 @@ export const WeekCard: React.FC<Props> = ({
   selectedWeek,
   hoveringWeek,
 }) => {
+  const rpContext = React.useContext(RacePlanContext);
   return (
     <div>
       {week.days.map((d, index) => (
         <div>
           <DayCell
+            updateDayDetails={(dd) => {
+              rpContext?.racePlan.dateGrid.setEvent(d.date, dd);
+              rpContext?.setRacePlan({
+                ...rpContext.racePlan,
+                dateGrid: rpContext.racePlan.dateGrid,
+              });
+            }}
             key={key(d.date)}
             date={d.date}
             dayDetails={d.event}

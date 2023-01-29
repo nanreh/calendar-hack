@@ -9,6 +9,7 @@ import { DayDetails } from "../ch/models";
 import styled from "styled-components";
 import { format } from "date-fns";
 import { getDaysHeader, WeekStartsOn } from "../ch/datecalc";
+import { RacePlanContext } from "../context/planContext";
 
 interface Props {
   racePlan: RacePlan;
@@ -63,6 +64,7 @@ export const CalendarGrid: React.FC<Props> = ({
   swapDow,
   swapWeeks,
 }) => {
+  const rpContext = React.useContext(RacePlanContext);
   const [selectedDow, setSelectedDow] = React.useState<dayOfWeek | undefined>(
     undefined
   );
@@ -93,6 +95,14 @@ export const CalendarGrid: React.FC<Props> = ({
             units={units}
             swap={swap}
             dayDetails={d.event}
+            updateDayDetails={(dd) => {
+              const dg = rpContext!.racePlan.dateGrid.clone();
+              dg.setEvent(d.date, dd);
+              rpContext?.setRacePlan({
+                ...rpContext.racePlan,
+                dateGrid: dg,
+              });
+            }}
             selected={selectedDow === format(d.date, "EEEE")}
             hovering={hoveringDow === format(d.date, "EEEE")}
           />

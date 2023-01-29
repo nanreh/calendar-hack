@@ -9,12 +9,13 @@ import { useDrag, DragSourceMonitor } from "react-dnd";
 import ItemTypes from "../ch/ItemTypes";
 import { DragHandle } from "./DragHandle";
 import { Preview, PreviewGenerator } from "react-dnd-multi-backend";
+import { RacePlanContext } from "../context/planContext";
 
 export interface WorkoutCardProps {
   dayDetails: DayDetails;
+  updateDayDetails: (dayDetails: DayDetails) => void;
   date: Date;
   units: Units;
-  swap: (d1: Date, d2: Date) => void;
 }
 
 type DragSourceProps = {
@@ -25,6 +26,10 @@ type DragSourceProps = {
 const DragSource = styled.div<DragSourceProps>`
   height: 100%;
   opacity: ${(props) => (props.isDragging ? 0.5 : 1)};
+`;
+
+const TextArea = styled.textarea`
+  width: 100%;
 `;
 
 function renderDesc(dayDetails: DayDetails, from: Units, to: Units): string {
@@ -51,10 +56,11 @@ const generateDayPreview: PreviewGenerator = ({ itemType, item, style }) => {
 
 export const WorkoutCard: React.FC<WorkoutCardProps> = ({
   dayDetails,
+  updateDayDetails,
   date,
   units,
-  swap,
 }) => {
+  const rpContext = React.useContext(RacePlanContext);
   const [{ isDragging }, drag, preview] = useDrag({
     item: {
       date: date,
@@ -72,6 +78,7 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
       }
     },
   });
+  let [title, desc] = render(dayDetails, dayDetails.sourceUnits, units);
 
   return (
     <Card>
@@ -82,7 +89,33 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
           <div ref={drag}>
             <DragHandle viewBox="0 0 32 36" />
           </div>
-          <p>{renderDesc(dayDetails, dayDetails.sourceUnits, units)}</p>
+          {rpContext?.isEditing && (
+            <>
+              <TextArea
+                value={title}
+                onChange={(v) =>
+                  updateDayDetails({
+                    ...dayDetails,
+                    title: v.target.value,
+                  })
+                }
+              />
+              {desc && (
+                <TextArea
+                  value={desc}
+                  onChange={(v) =>
+                    updateDayDetails({
+                      ...dayDetails,
+                      desc: v.target.value,
+                    })
+                  }
+                />
+              )}
+            </>
+          )}
+          {!rpContext?.isEditing && (
+            <p>{render(dayDetails, dayDetails.sourceUnits, units)}</p>
+          )}
         </Content>
       </DragSource>
     </Card>
