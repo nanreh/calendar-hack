@@ -1,9 +1,5 @@
 name: Test and Build
-on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+on: pull_request
 jobs:
   build:
     runs-on: ubuntu-latest
