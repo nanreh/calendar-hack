@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const Mark = styled.div`
@@ -8,7 +8,7 @@ const Mark = styled.div`
   height: 2.2em;
   z-index: 10;
   color: ${(props) => props.theme.colors.buttonTxt};
-  margin: 0 .1em;
+  margin: 0 0.1em;
 
   &:hover {
     cursor: pointer;
@@ -77,7 +77,7 @@ export const Radio: React.FC<Props> = ({
   value,
   labelTxt,
   changeCb,
-  currentValue
+  currentValue,
 }) => {
   return (
     <label htmlFor={id}>

@@ -1,6 +1,5 @@
-
 const AppConfig = {
-    plansPath: "plans/json/",
-}
+  plansPath: "plans/json/",
+};
 
 export const Config = AppConfig;

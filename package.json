@@ -4,18 +4,6 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/history": "^4.7.6",
-    "@types/jest": "^24.0.0",
-    "@types/moo": "^0.5.3",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-datepicker": "^2.11.1",
-    "@types/react-dnd-multi-backend": "^6.0.0",
-    "@types/react-dom": "^16.9.0",
-    "@types/styled-components": "^5.1.0",
     "copy-to-clipboard": "^3.3.1",
     "cross-fetch": "^3.1.5",
     "date-fns": "^2.14.0",
@@ -32,7 +20,6 @@
     "react-icons": "^3.10.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.1.1",
-    "typescript": "~3.7.2",
     "use-query-params": "^0.4.0",
     "weekstart": "^1.1.0"
   },
@@ -41,10 +28,15 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "validatePlans": "bash bin/validatePlans"
+    "validatePlans": "bash bin/validatePlans",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
   },
   "browserslist": {
     "production": [
@@ -57,5 +49,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/history": "^4.7.6",
+    "@types/jest": "^24.0.0",
+    "@types/moo": "^0.5.3",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-datepicker": "^2.11.1",
+    "@types/react-dnd-multi-backend": "^6.0.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^5.1.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "typescript": "~3.7.2"
   }
 }
