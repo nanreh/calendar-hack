@@ -1,0 +1,147 @@
+id: higdon_hm3
+name: 'Hal Higdon: Half Marathon 3'
+description: 'Hal Higdon: Half Marathon 3 (HM3): "Welcome to Half Marathon 3, or HM3. This 
+  is a new program created for Hal Higdon''s Half Marathon Training. It was designed to match 
+  the popular Marathon 3 program that features 3 days of running a week and 2 days of 
+  cross-training. It recognizes the fact that not all runners can handle 4, 5, 6 and 
+  especially not 7 days of running a week. We are all different and achieve success by 
+  various means. HM3 lasts 12 weeks aimed at the half marathon of your choice. In signing 
+  up for HM3, be sure to set the correct end date so all of the workouts fall into place 
+  for your goal race. Monday in HM3 is always a day of rest to recover from the hard 
+  training on the weekend. Tuesdays and Thursdays are easy running days, conversational 
+  pace mostly. In between on Wednesdays, you cross train, the most popular form of 
+  cross-training being aerobic: cycling, swimming or even walking. Friday is another 
+  rest day with long runs on Saturdays and cross-training on Sundays, although you 
+  can flipflop those workouts for convenience." (more details at the link below)'
+units: mi
+source: https://www.halhigdon.com/training-programs/half-marathon-training/half-marathon-3 
+type: Half Marathon
+schedule:
+- workouts: # Week 1
+  - title: 'Rest'
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '30 min cross'
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '30 min cross'
+- workouts: # Week 2
+  - title: 'Rest'
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '35 min cross'
+  - title: '30 min tempo'
+  - title: Rest
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '35 min cross'
+- workouts: # Week 3
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '40 min cross'
+  - title: '{3:4.8} pace'
+    distance: 3.0
+  - title: Rest
+  - title: '{7:11.3} run'
+    distance: 7.0
+  - title: '40 min cross'
+- workouts: # Week 4
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '45 min cross'
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: '{7:11.3} run'
+    distance: 7.0
+  - title: '45 min cross'
+- workouts: # Week 5
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '50 min cross'
+  - title: '40 min tempo'
+  - title: Rest
+  - title: '{8:12.9} run'
+    distance: 8.0
+  - title: '50 min cross'
+- workouts: # Week 6
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '30 min cross'
+  - title: '{3:4.8} pace'
+    distance: 3.0
+  - title: 'Rest or easy run'
+  - title: 'Rest'
+  - title: '5-K Race'
+- workouts: # Week 7
+  - title: Rest
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '50 min cross'
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: 'Rest'
+  - title: '{9:14.5} run'
+    distance: 9.0
+  - title: '50 min cross'
+- workouts: # Week 8
+  - title: Rest
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '50 min cross'
+  - title: '50 min tempo'
+  - title: 'Rest'
+  - title: '{9:14.5} run'
+    distance: 9.0
+  - title: '50 min cross'
+- workouts: # Week 9
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '30 min cross'
+  - title: '{3:4.8} pace'
+    distance: 3.0
+  - title: 'Rest or easy run'
+  - title: 'Rest'
+  - title: '10-K Race'
+- workouts: # Week 10
+  - title: Rest
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '60 min cross'
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: 'Rest'
+  - title: '{10:16.1} run'
+    distance: 10.0
+  - title: '60 min cross'
+- workouts: # Week 11
+  - title: Rest
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: '60 min cross'
+  - title: '60 min tempo'
+  - title: 'Rest'
+  - title: '{10:16.1} run'
+    distance: 10.0
+  - title: '60 min cross'
+- workouts: # Week 12
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '30 min cross'
+  - title: '{3:4.8} pace'
+    distance: 3.0
+  - title: 'Rest'
+  - title: 'Rest'
+  - title: |-
+      Half Marathon
+      ({13.1:21.1})
+    distance: 13.1
