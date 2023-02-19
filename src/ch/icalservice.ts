@@ -4,8 +4,9 @@ import { RacePlan } from "./models";
 import { addDays } from "date-fns";
 import { getWeekDistance, render, renderDist } from "./rendering";
 
-function toDate(d: Date): [number, number, number] {
-  return [d.getUTCFullYear(), 1 + d.getUTCMonth(), d.getUTCDate()];
+// public for testing
+export function toDate(d: Date): [number, number, number] {
+  return [d.getFullYear(), 1 + d.getMonth(), d.getDate()];
 }
 
 export function toIcal(plan: RacePlan, units: Units): string | undefined {
