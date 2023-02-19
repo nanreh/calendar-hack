@@ -54,7 +54,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/history": "^4.7.6",
-    "@types/jest": "^24.0.0",
+    "@types/jest": "^29.4.0",
     "@types/moo": "^0.5.3",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
