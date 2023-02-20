@@ -4,7 +4,7 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
-    "copy-to-clipboard": "^3.3.1",
+    "copy-to-clipboard": "^3.3.3",
     "cross-fetch": "^3.1.5",
     "date-fns": "^2.29.3",
     "history": "^4.10.1",
