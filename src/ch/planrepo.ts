@@ -202,6 +202,12 @@ export const availablePlans: AvailablePlan[] = [
     name: "Pfitzinger/Douglas: Multiple Marathons, 4 Weeks Between Marathons",
     type: "Marathon",
   },
+  {
+    url: Config.plansPath + "pfitz_55_recovery.json",
+    id: "pfitz_55_recovery",
+    name: "Pfitzinger/Douglas: Marathon up to 55 Miles - 5 Week Recovery Block",
+    type: "Marathon",
+  },
 ];
 
 var initialMap: { [id: string]: AvailablePlan } = {};
