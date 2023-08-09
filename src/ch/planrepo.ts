@@ -155,6 +155,18 @@ export const availablePlans: AvailablePlan[] = [
     type: "Half Marathon",
   },
   {
+    url: Config.plansPath + "higdon_int_half1.json",
+    id: "higdon_int_half1",
+    name: "Hal Higdon: Half Marathon Intermediate 1",
+    type: "Half Marathon",
+  },
+  {
+    url: Config.plansPath + "higdon_int_half2.json",
+    id: "higdon_int_half1",
+    name: "Hal Higdon: Half Marathon Intermediate 2",
+    type: "Half Marathon",
+  },
+  {
     url: Config.plansPath + "hansons_adv_mara.json",
     id: "hansons_adv_mara",
     name: "Hansons Advanced Marathon",
