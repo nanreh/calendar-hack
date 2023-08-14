@@ -20,7 +20,7 @@
     "react-icons": "^3.10.0",
     "styled-components": "^5.3.6",
     "use-query-params": "^0.4.0",
-    "weekstart": "^1.1.0"
+    "weekstart": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
