@@ -1,0 +1,360 @@
+{
+    "id": "higdon_nov_half1",
+    "name": "Hal Higdon: Half Marathon Novice 1",
+    "description": "Hal Higdon: Half Marathon Novice 1: \"The Novice 1 program is designed for beginning runners who want to prepare for their first 13.1-mile race.
+  If 13.1 is more than enough race mileage with no desires to go 26.2 (at least for now), you have discovered one of our most gentle training programs. If you can handle the
+  3-to-4-mile runs prescribed in Week 1, this program will get you ready to run 13.1 week at the end of 12 weeks.\" (more details at the link below)",
+    "units": "mi",
+    "source": "https://www.halhigdon.com/training-programs/half-marathon-training/novice-1-half-marathon/",
+    "type": "Half Marathon",
+    "schedule": [
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "distance": 2.0,
+                    "title": "{2.0:3.2} run"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "30 min Cross"
+                },
+                {
+                    "distance": 4.0,
+                    "title": "{4.0:6.4} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "distance": 2.0,
+                    "title": "{2.0:3.2} run"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "30 min Cross"
+                },
+                {
+                    "distance": 4.0,
+                    "title": "{4.0:6.4} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 3.5,
+                    "title": "{3.5:5.6} run"
+                },
+                {
+                    "distance": 2.0,
+                    "title": "{2.0:3.2} run"
+                },
+                {
+                    "distance": 3.5,
+                    "title": "{3.5:5.6} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "40 min Cross"
+                },
+                {
+                    "distance": 5.0,
+                    "title": "{5.0:8.0} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 3.5,
+                    "title": "{3.5:5.6} run"
+                },
+                {
+                    "distance": 2.0,
+                    "title": "{2.0:3.2} run"
+                },
+                {
+                    "distance": 3.5,
+                    "title": "{3.5:5.6} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "40 min Cross"
+                },
+                {
+                    "distance": 5.0,
+                    "title": "{5.0:8.0} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 4,
+                    "title": "{4:6.4} run"
+                },
+                {
+                    "distance": 2.0,
+                    "title": "{2.0:3.2} run"
+                },
+                {
+                    "distance": 4,
+                    "title": "{4:6.4} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "40 min Cross"
+                },
+                {
+                    "distance": 6.0,
+                    "title": "{6.0:9.6} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 4,
+                    "title": "{4:6.4} run"
+                },
+                {
+                    "distance": 2.0,
+                    "title": "{2.0:3.2} run"
+                },
+                {
+                    "distance": 4,
+                    "title": "{4:6.4} run"
+                },
+                {
+                    "title": "Rest or Easy Run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 3.1,
+                    "title": "5-K Race"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 4.5,
+                    "title": "{4.5:7.2} run"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "distance": 4.5,
+                    "title": "{4.5:7.2} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "50 min Cross"
+                },
+                {
+                    "distance": 7.0,
+                    "title": "{7.0:11.2} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 4.5,
+                    "title": "{4.5:7.2} run"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "distance": 4.5,
+                    "title": "{4.5:7.2} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "50 min Cross"
+                },
+                {
+                    "distance": 8.0,
+                    "title": "{8.0:12.8} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 5,
+                    "title": "{5:8} run"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "distance": 5,
+                    "title": "{5:8} run"
+                },
+                {
+                    "title": "Rest or Easy Run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 6.2,
+                    "title": "10-K Race"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 5,
+                    "title": "{5:8} run"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "distance": 5,
+                    "title": "{5:8} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "60 min Cross"
+                },
+                {
+                    "distance": 9.0,
+                    "title": "{9.0:14.2} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 5,
+                    "title": "{5:8} run"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} run"
+                },
+                {
+                    "distance": 5,
+                    "title": "{5:8} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "60 min Cross"
+                },
+                {
+                    "distance": 10,
+                    "title": "{10:16} run"
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 4.0,
+                    "title": "{4.0:6.4} run"
+                },
+                {
+                    "distance": 3.0,
+                    "title": "{3.0:4.8} pace"
+                },
+                {
+                    "distance": 2.0,
+                    "title": "{2.0:3.2} run"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "title": "Rest"
+                },
+                {
+                    "distance": 13.1,
+                    "title": "Half Marathon"
+                }
+            ]
+        }
+    ]
+}
