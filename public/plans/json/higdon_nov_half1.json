@@ -1,9 +1,7 @@
 {
     "id": "higdon_nov_half1",
     "name": "Hal Higdon: Half Marathon Novice 1",
-    "description": "Hal Higdon: Half Marathon Novice 1: \"The Novice 1 program is designed for beginning runners who want to prepare for their first 13.1-mile race.
-  If 13.1 is more than enough race mileage with no desires to go 26.2 (at least for now), you have discovered one of our most gentle training programs. If you can handle the
-  3-to-4-mile runs prescribed in Week 1, this program will get you ready to run 13.1 week at the end of 12 weeks.\" (more details at the link below)",
+    "description": "Hal Higdon: Half Marathon Novice 1: \"The Novice 1 program is designed for beginning runners who want to prepare for their first 13.1-mile race. If 13.1 is more than enough race mileage with no desires to go 26.2 (at least for now), you have discovered one of our most gentle training programs. If you can handle the 3-to-4-mile runs prescribed in Week 1, this program will get you ready to run 13.1 week at the end of 12 weeks.\" (more details at the link below)",
     "units": "mi",
     "source": "https://www.halhigdon.com/training-programs/half-marathon-training/novice-1-half-marathon/",
     "type": "Half Marathon",
