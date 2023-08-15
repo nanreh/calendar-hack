@@ -69,7 +69,7 @@ schedule:
     distance: 4.0
   - title: Rest
   - title: 40 min cross
-  - title: '{6:6.4} run'
+  - title: '{6:9.6} run'
     distance: 6.0
 - workouts: # week 6
   - title: Rest
