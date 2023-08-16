@@ -1,0 +1,159 @@
+id: higdon_nov_half1
+name: 'Hal Higdon: Half Marathon Novice 1'
+description: 'Hal Higdon: Half Marathon Novice 1: "The Novice 1 program is designed for
+  beginning runners who want to prepare for their first 13.1-mile race.
+  If 13.1 is more than enough race mileage with no desires to go 26.2
+  (at least for now), you have discovered one of our most gentle training
+  programs. If you can handle the 3-to-4-mile runs prescribed in Week 1,
+  this program will get you ready to run 13.1 week at the end of 12 weeks."
+  (more details at the link below)'
+units: mi
+source: https://www.halhigdon.com/training-programs/half-marathon-training/novice-1-half-marathon/
+type: Half Marathon
+schedule:
+- workouts: # week 1
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: 30 min cross
+  - title: '{4:6.4} run'
+    distance: 4.0
+- workouts: # week 2
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: 30 min cross
+  - title: '{4:6.4} run'
+    distance: 4.0
+- workouts: # week 3
+  - title: Rest
+  - title: '{3.5:5.6} run'
+    distance: 3.5
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: '{3.5:5.6} run'
+    distance: 3.5
+  - title: Rest
+  - title: 40 min cross
+  - title: '{5:8.0} run'
+    distance: 5.0
+- workouts: # week 4
+  - title: Rest
+  - title: '{3.5:5.6} run'
+    distance: 3.5
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: '{3.5:5.6} run'
+    distance: 3.5
+  - title: Rest
+  - title: 40 min cross
+  - title: '{5:8.0} run'
+    distance: 5.0
+- workouts: # week 5
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest
+  - title: 40 min cross
+  - title: '{6:9.6} run'
+    distance: 6.0
+- workouts: # week 6
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: Rest or Easy Run
+  - title: Rest
+  - title: 5-K Race
+    distance: 3.1
+- workouts: # week 7
+  - title: Rest
+  - title: '{4.5:7.2} run'
+    distance: 4.5
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{4.5:7.2} run'
+    distance: 4.5
+  - title: Rest
+  - title: 50 min cross
+  - title: '{7:11.2} run'
+    distance: 7.0
+- workouts: # week 8
+  - title: Rest
+  - title: '{4.5:7.2} run'
+    distance: 4.5
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{4.5:7.2} run'
+    distance: 4.5
+  - title: Rest
+  - title: 50 min cross
+  - title: '{8:12.8} run'
+    distance: 8.0
+- workouts: # week 9
+  - title: Rest
+  - title: '{5:8.0} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.0} run'
+    distance: 5.0
+  - title: Rest or Easy Run
+  - title: Rest
+  - title: 10-K Race
+    distance: 6.2
+- workouts: # week 10
+  - title: Rest
+  - title: '{5:8.0} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.0} run'
+    distance: 5.0
+  - title: Rest
+  - title: 60 min cross
+  - title: '{9:14.4} run'
+    distance: 9.0
+- workouts: # week 11
+  - title: Rest
+  - title: '{5:8.0} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.0} run'
+    distance: 5.0
+  - title: Rest
+  - title: 60 min cross
+  - title: '{10:16} run'
+    distance: 10.0
+- workouts: # week 12
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{3:4.6} run'
+    distance: 3.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: Rest
+  - title: Rest
+  - title: |-
+      Half Marathon
+      ({13.1:21.1})
+    distance: 13.1
