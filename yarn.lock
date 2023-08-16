@@ -9262,10 +9262,10 @@ websocket-extensions@>=0.1.1:
   version "0.1.4"
   resolved "https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.4.tgz"
 
-weekstart@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/weekstart/-/weekstart-1.1.0.tgz#af642eb10dc24b1af9d4dcc0415056edc087b897"
-  integrity sha512-ZO3I7c7J9nwGN1PZKZeBYAsuwWEsCOZi5T68cQoVNYrzrpp5Br0Bgi0OF4l8kH/Ez7nKfxa5mSsXjsgris3+qg==
+weekstart@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/weekstart/-/weekstart-2.0.0.tgz#3925b0626b311b353097d81638bd0403a53d81f7"
+  integrity sha512-HjYc14IQUwDcnGICuc8tVtqAd6EFpoAQMqgrqcNtWWZB+F1b7iTq44GzwM1qvnH4upFgbhJsaNHuK93NOFheSg==
 
 whatwg-encoding@^1.0.5:
   version "1.0.5"
