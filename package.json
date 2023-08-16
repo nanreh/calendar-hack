@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "copy-to-clipboard": "^3.3.1",
-    "cross-fetch": "^3.1.5",
+    "cross-fetch": "^4.0.0",
     "date-fns": "^2.29.3",
     "history": "^4.10.1",
     "ics": "^3.2.0",
