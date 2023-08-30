@@ -35,7 +35,7 @@ const DownloadButton: React.FC<Props> = ({ downloadHandler }) => {
     downloadHandler();
   };
   return (
-    <IconContext.Provider value={{ color: themeContext.colors.buttonIcons }}>
+    <IconContext.Provider value={{ color: themeContext?.colors.buttonIcons }}>
       <Root>
         <Button onClick={onClick}>Download iCal</Button>
       </Root>

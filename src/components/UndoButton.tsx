@@ -36,7 +36,7 @@ const UndoButton: React.FC<Props> = ({ undoHandler, disabled }) => {
     undoHandler();
   };
   return (
-    <IconContext.Provider value={{ color: themeContext.colors.buttonIcons }}>
+    <IconContext.Provider value={{ color: themeContext?.colors.buttonIcons }}>
       <Root>
         <Button
           onClick={onClick}

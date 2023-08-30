@@ -27,7 +27,7 @@ const Link = styled.a`
 const HomeButton: React.FC<Props> = () => {
   const themeContext = useContext(ThemeContext);
   return (
-    <IconContext.Provider value={{ color: themeContext.colors.buttonIcons }}>
+    <IconContext.Provider value={{ color: themeContext?.colors.buttonIcons }}>
       <Root>
         <Link href="/">
           <FaHome style={{ verticalAlign: "middle" }} />

@@ -47,7 +47,7 @@ const ShareButton: React.FC<Props> = () => {
   };
 
   return (
-    <IconContext.Provider value={{ color: themeContext.colors.buttonIcons }}>
+    <IconContext.Provider value={{ color: themeContext?.colors.buttonIcons }}>
       <Root onClick={shareLink}>
         <IoMdShare style={{ verticalAlign: "middle" }} />
       </Root>

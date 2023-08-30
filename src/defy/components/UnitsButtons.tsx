@@ -27,7 +27,7 @@ const UnitsButtons: React.FC<Props> = ({ units, unitsChangeHandler }) => {
   };
 
   return (
-    <IconContext.Provider value={{ color: themeContext.colors.buttonIcons }}>
+    <IconContext.Provider value={{ color: themeContext?.colors.buttonIcons }}>
       <Root>
         <Radio
           id="radio-mi"

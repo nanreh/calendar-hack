@@ -27,7 +27,7 @@ const Link = styled.a`
 const GitHubButton: React.FC<Props> = () => {
   const themeContext = useContext(ThemeContext);
   return (
-    <IconContext.Provider value={{ color: themeContext.colors.buttonIcons }}>
+    <IconContext.Provider value={{ color: themeContext?.colors.buttonIcons }}>
       <Root>
         <Link href="https://github.com/nanreh/calendar-hack">
           <FaGithub style={{ verticalAlign: "middle" }} />

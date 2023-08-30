@@ -72,7 +72,7 @@ const LongPressButton: React.FC<Props> = ({ activeCb, doneCb, type }) => {
   const themeContext = useContext(ThemeContext);
   return (
     <IconContext.Provider
-      value={{ color: themeContext.colors.buttonIcons, size: "1.5em" }}
+      value={{ color: themeContext?.colors.buttonIcons, size: "1.5em" }}
     >
       <Root
         ref={innerRef}
