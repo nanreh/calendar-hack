@@ -21,7 +21,6 @@ const UnitsButtons: React.FC<Props> = ({ units, unitsChangeHandler }) => {
   const themeContext = useContext(ThemeContext);
 
   const changeCb = (event: React.FormEvent<HTMLInputElement>) => {
-    console.log("changeCb: " + event.currentTarget.value);
     const newSelection = "mi" === event.currentTarget.value ? "mi" : "km";
     unitsChangeHandler(newSelection);
   };

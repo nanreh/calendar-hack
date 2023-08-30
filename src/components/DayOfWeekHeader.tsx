@@ -37,21 +37,21 @@ const Root = styled.div`
 `;
 
 type DragSourceProps = {
-  isDragging: boolean;
-  dow: dayOfWeek;
+  $isDragging: boolean;
+  $dow: dayOfWeek;
 };
 const DragSource = styled.div<DragSourceProps>`
   height: 100%;
-  opacity: ${(props) => (props.isDragging ? 0.5 : 1)};
+  opacity: ${(props) => (props.$isDragging ? 0.5 : 1)};
 `;
 
 type DropTargetProps = {
-  isOver: boolean;
-  canDrop: boolean;
+  $isOver: boolean;
+  $canDrop: boolean;
 };
 const DropTarget = styled.div<DropTargetProps>`
   height: 100%;
-  opacity: ${(props) => (props.isOver ? 0.5 : 1)};
+  opacity: ${(props) => (props.$isOver ? 0.5 : 1)};
 `;
 
 const generateDowPreview: PreviewGenerator = ({ itemType, item, style }) => {
@@ -124,8 +124,8 @@ export const DayOfWeekHeader: React.FC<Props> = ({
         height: "100%",
       }}
     >
-      <DragSource isDragging={isDragging} dow={dow}>
-        <DropTarget isOver={isOver} canDrop={canDrop} ref={drop}>
+      <DragSource $isDragging={isDragging} $dow={dow}>
+        <DropTarget $isOver={isOver} $canDrop={canDrop} ref={drop}>
           <Preview generator={generateDowPreview} />
           <div ref={preview}>
             <Root ref={drag}>

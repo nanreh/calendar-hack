@@ -18,13 +18,13 @@ export interface WorkoutCardProps {
 }
 
 type DragSourceProps = {
-  isDragging: boolean;
-  dayDetails: DayDetails | undefined;
+  $isDragging: boolean;
+  $dayDetails: DayDetails | undefined;
 };
 
 const DragSource = styled.div<DragSourceProps>`
   height: 100%;
-  opacity: ${(props) => (props.isDragging ? 0.5 : 1)};
+  opacity: ${(props) => (props.$isDragging ? 0.5 : 1)};
 `;
 
 function renderDesc(dayDetails: DayDetails, from: Units, to: Units): string {
@@ -76,7 +76,11 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
   return (
     <Card>
       <Dateline dayDetails={dayDetails} units={units} date={date} />
-      <DragSource isDragging={isDragging} dayDetails={dayDetails} ref={preview}>
+      <DragSource
+        $isDragging={isDragging}
+        $dayDetails={dayDetails}
+        ref={preview}
+      >
         <Preview generator={generateDayPreview} />
         <Content>
           <div ref={drag}>

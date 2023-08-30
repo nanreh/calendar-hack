@@ -18,13 +18,13 @@ interface Props {
 }
 
 type DropTargetProps = {
-  isOver: boolean;
-  canDrop: boolean;
+  $isOver: boolean;
+  $canDrop: boolean;
 };
 
 const DropTarget = styled.div<DropTargetProps>`
   height: 100%;
-  opacity: ${(props) => (props.isOver ? 0.5 : 1)};
+  opacity: ${(props) => (props.$isOver ? 0.5 : 1)};
 `;
 
 export const DayCell: React.FC<Props> = ({
@@ -61,7 +61,7 @@ export const DayCell: React.FC<Props> = ({
         height: "100%",
       }}
     >
-      <DropTarget isOver={isOver} canDrop={canDrop} ref={drop}>
+      <DropTarget $isOver={isOver} $canDrop={canDrop} ref={drop}>
         {dayDetails && (
           <WorkoutCard
             dayDetails={dayDetails}

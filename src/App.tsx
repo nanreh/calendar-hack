@@ -176,7 +176,6 @@ const App: React.FC = () => {
   };
 
   const onWeekStartsOnChanged = async (v: WeekStartsOn) => {
-    console.log("onWeekStartsOnChanged: " + v);
     const racePlan = build(await planRepo.fetch(selectedPlan), planEndDate, v);
     setWeekStartsOn(v);
     setRacePlan(racePlan);

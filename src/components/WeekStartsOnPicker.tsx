@@ -32,7 +32,6 @@ const WeekStartsOnPicker: React.FC<Props> = ({
 }) => {
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const newValue = Number(event.target.value) as WeekStartsOn;
-    console.log(`HandleChange: ${newValue}`);
     changeHandler(newValue);
   };
 
