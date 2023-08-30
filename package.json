@@ -8,7 +8,7 @@
     "cross-fetch": "^4.0.0",
     "date-fns": "^2.30.0",
     "history": "^4.10.1",
-    "ics": "^3.2.0",
+    "ics": "^3.4.0",
     "moo": "^0.5.2",
     "react": "^16.13.1",
     "react-datepicker": "^3.0.0",

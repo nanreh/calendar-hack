@@ -5325,10 +5325,10 @@ iconv-lite@^0.6.3:
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
 
-ics@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/ics/-/ics-3.2.0.tgz#0c03af122fdf733289ef5c2c9e45452af608969d"
-  integrity sha512-7YWa5LQBW7ao+9Yz+L0bdUWYXCUE/UBPMY/9w9UFU6Ho2dBz85caJKiB+Tm+qv8HN6pCpH8jaWemXJijs8+PiA==
+ics@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/ics/-/ics-3.4.0.tgz#496240bef710b16e4e68be592ee636eedb088334"
+  integrity sha512-ewKO7nF5BKhVKas3XmjB1siXdhJ7OvojY+HmD1ik/lozuzcZdy+Wt6IbB2San2gvHZAMUZhTa4UQyCE1I8e+sw==
   dependencies:
     nanoid "^3.1.23"
     yup "^1.2.0"
