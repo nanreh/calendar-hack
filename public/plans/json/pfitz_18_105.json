@@ -1,7 +1,7 @@
 {
-    "id": "pfitz_18_107",
-    "name": "Pfitzinger/Douglas: 80 to 107 Miles per Week, 18-week schedule",
-    "description": "\"80 to 107 Miles per Week, 18-week schedule\" from \"Advanced Marathoning\" by Pete Pfitzinger and Scott Douglas",
+    "id": "pfitz_18_105",
+    "name": "Pfitzinger/Douglas: 80 to 105 Miles per Week, 18-week schedule",
+    "description": "\"80 to 105 Miles per Week, 18-week schedule\" from \"Advanced Marathoning\" by Pete Pfitzinger and Scott Douglas",
     "units": "mi",
     "source": "https://www.amazon.com/gp/product/149256866X/",
     "type": "Marathon",
@@ -238,7 +238,7 @@
                 },
                 {
                     "title": "RECOVERY {6} a.m / gen aerobic + speed {10} w/ 10x100 strides",
-                    "distance": 9.0
+                    "distance": 16.0
                 },
                 {
                     "title": "Medium-long run {15}",
@@ -250,7 +250,7 @@
                 },
                 {
                     "title": "Recovey {6} a.m / {11} p.m w/ {6} at LT",
-                    "distance": 12.0
+                    "distance": 17.0
                 },
                 {
                     "title": "Gen Aerobic {10}",
@@ -282,7 +282,7 @@
                 },
                 {
                     "title": "Recovery {6} a.m. Medium-long run {14} p.m.",
-                    "distance": 20
+                    "distance": 20.0
                 },
                 {
                     "title": "Gen Aerobic {10} w/ 10 x 100m strides",
@@ -405,20 +405,20 @@
                     "distance": 20.0
                 },
                 {
-                    "title": "Recovery {5} + speed {6} w/ 8 x 100 m strides",
+                    "title": "Recovery {6} a.m {5} p.m",
                     "distance": 11.0
                 },
                 {
-                    "title": "Recovery {6}",
-                    "distance": 6.0
+                    "title": "LT {12} w/ {5} LT",
+                    "distance": 12.0
                 },
                 {
-                    "title": "8K-15K tune-up race (total 13-17 mi/14-21 km)",
-                    "distance": 13.0
+                    "title": "Gen Aerobic + speed {10} 10 x 100m strides",
+                    "distance": 10.0
                 },
                 {
-                    "title": "Gen Aerobic {8}",
-                    "distance": 8.0
+                    "title": "Gen Aerobic {22}",
+                    "distance": 22.0
                 }
             ]
         },

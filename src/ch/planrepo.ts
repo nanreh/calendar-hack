@@ -215,6 +215,12 @@ export const availablePlans: AvailablePlan[] = [
     type: "Marathon",
   },
   {
+    url: Config.plansPath + "pfitz_18_107.json",
+    id: "pfitz_18_107",
+    name: "Pfitzinger/Douglas: 80 to 107 Miles per Week, 18-week schedule",
+    type: "Marathon",
+  },
+  {
     url: Config.plansPath + "pfitz_multi_4.json",
     id: "pfitz_multi_4",
     name: "Pfitzinger/Douglas: Multiple Marathons, 4 Weeks Between Marathons",
