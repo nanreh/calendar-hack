@@ -1,7 +1,7 @@
 {
-    "id": "pfitz_18_105",
-    "name": "Pfitzinger/Douglas: 80 to 105 Miles per Week, 18-week schedule",
-    "description": "\"80 to 105 Miles per Week, 18-week schedule\" from \"Advanced Marathoning\" by Pete Pfitzinger and Scott Douglas",
+    "id": "pfitz_18_107",
+    "name": "Pfitzinger/Douglas: 80 to 107 Miles per Week, 18-week schedule",
+    "description": "\"80 to 107 Miles per Week, 18-week schedule\" from \"Advanced Marathoning\" by Pete Pfitzinger and Scott Douglas",
     "units": "mi",
     "source": "https://www.amazon.com/gp/product/149256866X/",
     "type": "Marathon",
@@ -46,7 +46,7 @@
                 },
                 {
                     "title": "Recovery {4} / General aerobic + speed {10} w/ 10 x 100 m strides & 8 / 12 sec hill sprints",
-                    "distance": 14.0
+                    "distance": 15.0
                 },
                 {
                     "title": "Medium-long run {13}",
@@ -110,7 +110,7 @@
                 },
                 {
                     "title": "Recovery {4} A.M / General aerobic + speed {10} P.M with 8 x 12 sec hill sprints & 8 x 100m strides",
-                    "distance": 12.0
+                    "distance": 14.0
                 },
                 {
                     "title": "Medium-long run {15}",
@@ -126,7 +126,7 @@
                 },
                 {
                     "title": "Recovery {7}",
-                    "distance": 9.0
+                    "distance": 7.0
                 },
                 {
                     "title": "Long run {20}",
@@ -305,7 +305,7 @@
                     "distance": 10.0
                 },
                 {
-                    "title": "VO\u2082max {10} w/ 5 x 800 m @ 5K race pace; jog 50 to 90% interval time between",
+                    "title": "VO₂max {10} w/ 5 x 800 m @ 5K race pace; jog 50 to 90% interval time between",
                     "distance": 10.0
                 },
                 {
@@ -365,7 +365,7 @@
                     "distance": 12.0
                 },
                 {
-                    "title": "Recovery {5} a.m / VO\u2082max {10} w/ 6 x 1,000 m @ 5K race pace; jog 50 to 90% interval time between",
+                    "title": "Recovery {5} a.m / VO₂max {10} w/ 6 x 1,000 m @ 5K race pace; jog 50 to 90% interval time between",
                     "distance": 15.0
                 },
                 {
@@ -429,7 +429,7 @@
                     "distance": 11.0
                 },
                 {
-                    "title": "Recovery {5} VO\u2082max {10} w/ 6 x 800 m @ 5K race pace; jog 50 to 90% interval time between",
+                    "title": "Recovery {5} VO₂max {10} w/ 6 x 800 m @ 5K race pace; jog 50 to 90% interval time between",
                     "distance": 15.0
                 },
                 {
@@ -446,7 +446,7 @@
                 },
                 {
                     "title": "8k - 15k tuneup",
-                    "distance": 6.0
+                    "distance": 13.0
                 },
                 {
                     "title": "Long run {18}",
@@ -493,7 +493,7 @@
                     "distance": 11.0
                 },
                 {
-                    "title": "VO\u2082max {10} w/ 5 x 800 m @ 5K race pace; jog 50 to 90% interval time between",
+                    "title": "VO₂max {10} w/ 5 x 800 m @ 5K race pace; jog 50 to 90% interval time between",
                     "distance": 10.0
                 },
                 {
@@ -530,11 +530,11 @@
                 },
                 {
                     "title": "Recovery {6} a.m {4} p.m",
-                    "distance": 12.0
+                    "distance": 10.0
                 },
                 {
-                    "title": "VO\u2082max {9} w/ 4 x 1200 m @ 5K race pace; jog 50 to 90% interval time between",
-                    "distance": 21.0
+                    "title": "VO₂max {9} w/ 4 x 1200 m @ 5K race pace; jog 50 to 90% interval time between",
+                    "distance": 9.0
                 },
                 {
                     "title": "Recovery {6}",
