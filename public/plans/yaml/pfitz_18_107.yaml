@@ -204,7 +204,7 @@ schedule:
     distance: 12.0
   - title: Gen Aerobic + speed {10} 10 x 100m strides
     distance: 10.0
-  - title: Gen Aerobic {22}
+  - title: Long run {22}
     distance: 22.0
 - workouts:
   - title: Recovery {6} a.m. {5} p.m.
