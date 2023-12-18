@@ -5308,12 +5308,13 @@ iconv-lite@^0.6.3:
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
 
-ics@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/ics/-/ics-3.5.0.tgz#d63f5d22a71c6fce71f046cd8f2b1ec71a5d2731"
-  integrity sha512-4jXcwh0cyGyE9FaoHE/zFjpac0t6CIPGLQ5rPr9x/Uj3YmVDIIYLa01lpgp1GsUGdhsEwa/PgCm1/kocRItOEg==
+ics@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/ics/-/ics-3.7.1.tgz#adff4158674b45772cac4d2f8b22adf7fb7bedee"
+  integrity sha512-FlCDHEjqi2vcY2p6b4zBu2bUfXep0VoFzrBAtnVzJPPPAV7w84TX7JhFzvtWY6ArLOCZTE6zpR4xfw5U2LSR1A==
   dependencies:
     nanoid "^3.1.23"
+    runes2 "^1.1.2"
     yup "^1.2.0"
 
 icss-utils@^5.0.0, icss-utils@^5.1.0:
@@ -6561,11 +6562,7 @@ multicast-dns@^7.2.5:
     dns-packet "^5.2.2"
     thunky "^1.0.2"
 
-nanoid@^3.1.23:
-  version "3.3.4"
-  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz"
-
-nanoid@^3.3.6:
+nanoid@^3.1.23, nanoid@^3.3.6:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
   integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
@@ -8098,6 +8095,11 @@ run-parallel@^1.1.9:
   resolved "https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz"
   dependencies:
     queue-microtask "^1.2.2"
+
+runes2@^1.1.2:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/runes2/-/runes2-1.1.3.tgz#290c7f1a42baade01ce27d34f150cda30be952d0"
+  integrity sha512-sJ/0iVFLne4f2S7cMB1OckBtC9lqkzP5a/wPnDIkbrWzgUsJ+JMQv6y7hk76U7zvbua+je5GltfpsZazUhG05w==
 
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
