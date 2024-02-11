@@ -13,7 +13,7 @@ function toSeconds(hours: number, minutes: number, seconds: number) {
   return hours * 60 * 60 + minutes * 60 + seconds;
 }
 
-export type RaceType = "Marathon" | "Half Marathon" | "5K" | "10K";
+export type RaceType = "Marathon" | "Half Marathon" | "5K" | "10K" | "15K/10M";
 
 export class Distance {
   private readonly _meters: number;
@@ -40,6 +40,8 @@ export function toDistance(raceType: RaceType): Distance {
       return new Distance(5000);
     case "10K":
       return new Distance(10000);
+    case "15K/10M":
+      return new Distance(15000);
     case "Half Marathon":
       return new Distance(21097.5);
     case "Marathon":

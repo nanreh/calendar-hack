@@ -83,6 +83,12 @@ export const availablePlans: AvailablePlan[] = [
     type: "10K",
   },
   {
+    url: Config.plansPath + "frr_15k_10m_01.json",
+    id: "frr_15k_10m_01",
+    name: "Faster Road Racing: 15k and 10 Miles Schedule 1",
+    type: "15K/10M",
+  },
+  {
     url: Config.plansPath + "hansons_c210k.json",
     id: "hansons_c210k",
     name: "Hansons Couch Potato to 10k",
