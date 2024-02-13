@@ -22,3 +22,28 @@ yarn create react-app ch-bootstrap --template typescript
 So you can run locally with: `yarn start`
 
 The other standard scripts exist also: `yarn test`, `yard build`, etc.
+
+
+## Validating Plans
+
+The plan validator depends on ajv to validate against a JSON schema
+
+Install ajv
+`npm install -g ajv-cli`
+
+then
+
+`yarn run validatePlans`
+
+
+
+## Converting new plans
+
+If you are adding a plan, you should write it in YAML and then run
+`./bin/convertPlans` to generate the JSON version for the application. The converter is written in python and requires pyyaml
+
+```
+virtualenv venv
+source ./venv/bin/activate
+python ./bin/convertPlans
+```
