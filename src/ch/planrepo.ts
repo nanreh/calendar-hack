@@ -89,6 +89,12 @@ export const availablePlans: AvailablePlan[] = [
     type: "15K/10M",
   },
   {
+    url: Config.plansPath + "pfitz_half_12_47.json",
+    id: "pfitz_half_12_47",
+    name: "Faster Road Racing: Half Marathon Schedule 1, 31 to 47 miles per Week",
+    type: "Half Marathon",
+  },
+  {
     url: Config.plansPath + "hansons_c210k.json",
     id: "hansons_c210k",
     name: "Hansons Couch Potato to 10k",
@@ -104,12 +110,6 @@ export const availablePlans: AvailablePlan[] = [
     url: Config.plansPath + "hansons_beg_half.json",
     id: "hansons_beg_half",
     name: "Hansons Beginner Half Marathon",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_half_12_47.json",
-    id: "pfitz_half_12_47",
-    name: "Faster Road Racing: Half Marathon Schedule 1, 31 to 47 miles per Week",
     type: "Half Marathon",
   },
   {
