@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import DatePicker from "react-datepicker";
 import { registerLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -15,6 +16,10 @@ interface ButtonProps {
 }
 
 registerLocale("enGB", enGB);
+
+export const DatePickerWrapper = styled.div`
+  z-index: 1000;
+`;
 
 // using a class component to avoid "Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?"
 class DateInputButton extends React.Component<ButtonProps> {
@@ -38,12 +43,14 @@ export class DateControl extends React.Component<Props> {
   render() {
     const { selectedDate, onDateChanged } = this.props;
     return (
-      <DatePicker
-        selected={selectedDate}
-        onChange={onDateChanged}
-        locale="enGB"
-        customInput={this.input}
-      />
+      <DatePickerWrapper>
+        <DatePicker
+          selected={selectedDate}
+          onChange={onDateChanged}
+          locale="enGB"
+          customInput={this.input}
+        />
+      </DatePickerWrapper>
     );
   }
 }
