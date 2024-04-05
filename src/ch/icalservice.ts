@@ -47,7 +47,7 @@ export function toIcal(plan: RacePlan, units: Units): string | undefined {
   }
   let res = createEvents(events);
   if (res.error) {
-    console.log("Error creating iCal events");
+    console.log("Error creating iCal events: " + res.error);
     return undefined;
   }
   return res.value;
