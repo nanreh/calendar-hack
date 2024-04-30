@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { Units } from "./defy/models";
 import { RacePlan } from "./ch/models";
-import {
-  AvailablePlan,
-  availablePlans,
-  availablePlansById,
-  PlanRepo,
-} from "./ch/planrepo";
+import { AvailablePlan, availablePlans, PlanRepo } from "./ch/planrepo";
 import { addWeeks, endOfWeek, isAfter } from "date-fns";
 import { dayOfWeek } from "./ch/dategrid";
 import { build, swap, swapDow } from "./ch/planbuilder";
@@ -72,8 +67,8 @@ const App: React.FC = () => {
   const [selectedUnits, setSelectedUnits] = useState<Units>(
     u === "mi" || u === "km" ? u : "mi"
   );
-  const [selectedPlan, setSelectedPlan] = useState(
-    p && availablePlansById[p] ? availablePlansById[p] : availablePlans[0]
+  const [selectedPlan, setSelectedPlan] = useState<AvailablePlan | undefined>(
+    undefined
   );
   const [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
   const [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
@@ -114,52 +109,82 @@ const App: React.FC = () => {
   };
 
   const initialLoad = async (
-    plan: AvailablePlan,
+    plan: AvailablePlan | undefined,
     endDate: Date,
     units: Units,
     weekStartsOn: WeekStartsOn
   ) => {
-    const racePlan = build(await planRepo.fetch(plan), endDate, weekStartsOn);
-    setRacePlan(racePlan);
-    setUndoHistory([...undoHistory, racePlan]);
-    setq(getParams(units, plan, endDate, weekStartsOn));
+    if (plan) {
+      const racePlan = build(await planRepo.fetch(plan), endDate, weekStartsOn);
+      setRacePlan(racePlan);
+      setUndoHistory([...undoHistory, racePlan]);
+      setq(getParams(units, plan, endDate, weekStartsOn));
+    } else {
+      setRacePlan(undefined);
+      setUndoHistory([]);
+    }
   };
 
-  const onSelectedPlanChange = async (plan: AvailablePlan) => {
-    const racePlan = build(
-      await planRepo.fetch(plan),
-      planEndDate,
-      weekStartsOn
-    );
-    setSelectedPlan(plan);
-    setRacePlan(racePlan);
-    setUndoHistory([racePlan]);
-    setq(getParams(selectedUnits, plan, planEndDate, weekStartsOn));
+  const onSelectedPlanChange = async (plan: AvailablePlan | undefined) => {
+    if (plan) {
+      const racePlan = build(
+        await planRepo.fetch(plan),
+        planEndDate,
+        weekStartsOn
+      );
+      setSelectedPlan(plan);
+      setRacePlan(racePlan);
+      setUndoHistory([racePlan]);
+      setq(getParams(selectedUnits, plan, planEndDate, weekStartsOn));
+    } else {
+      setSelectedPlan(undefined);
+      setRacePlan(undefined);
+      setUndoHistory([]);
+    }
   };
 
   const onSelectedEndDateChange = async (date: Date) => {
-    const racePlan = build(
-      await planRepo.fetch(selectedPlan),
-      date,
-      weekStartsOn
-    );
-    setPlanEndDate(date);
-    setRacePlan(racePlan);
-    setUndoHistory([racePlan]);
-    setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn));
+    if (selectedPlan) {
+      const racePlan = build(
+        await planRepo.fetch(selectedPlan),
+        date,
+        weekStartsOn
+      );
+      setPlanEndDate(date);
+      setRacePlan(racePlan);
+      setUndoHistory([racePlan]);
+    } else {
+      setPlanEndDate(date);
+      setRacePlan(undefined);
+      setUndoHistory([]);
+    }
   };
 
   const onSelectedUnitsChanged = (u: Units) => {
     setSelectedUnits(u);
-    setq(getParams(u, selectedPlan, planEndDate, weekStartsOn));
+    if (selectedPlan) {
+      setq(getParams(u, selectedPlan, planEndDate, weekStartsOn));
+    } else {
+      // Handle the case when selectedPlan is undefined
+    }
   };
 
   const onWeekStartsOnChanged = async (v: WeekStartsOn) => {
-    const racePlan = build(await planRepo.fetch(selectedPlan), planEndDate, v);
-    setWeekStartsOn(v);
-    setRacePlan(racePlan);
-    setUndoHistory([racePlan]);
-    setq(getParams(selectedUnits, selectedPlan, planEndDate, v));
+    if (selectedPlan) {
+      const racePlan = build(
+        await planRepo.fetch(selectedPlan),
+        planEndDate,
+        v
+      );
+      setWeekStartsOn(v);
+      setRacePlan(racePlan);
+      setUndoHistory([racePlan]);
+      setq(getParams(selectedUnits, selectedPlan, planEndDate, v));
+    } else {
+      setWeekStartsOn(v);
+      setRacePlan(undefined);
+      setUndoHistory([]);
+    }
   };
 
   function swapDates(d1: Date, d2: Date): void {
@@ -216,11 +241,13 @@ const App: React.FC = () => {
           unitsChangeHandler={onSelectedUnitsChanged}
           downloadHandler={downloadHandler}
         />
-        <PlanDetailsCard
-          racePlan={racePlan}
-          planName={selectedPlan.name}
-          className="w-full"
-        />
+        {selectedPlan && (
+          <PlanDetailsCard
+            racePlan={racePlan}
+            planName={selectedPlan.name}
+            className="w-full"
+          />
+        )}
 
         <div className="flex gap-4">
           <WeekStartsOnPicker

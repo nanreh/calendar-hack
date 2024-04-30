@@ -8,10 +8,10 @@ import { AvailablePlan } from "@/ch/planrepo";
 interface Props {
   units: Units;
   availablePlans: AvailablePlan[];
-  selectedPlan: AvailablePlan;
+  selectedPlan?: AvailablePlan;
   selectedDate: Date;
   dateChangeHandler: (d: Date) => void;
-  selectedPlanChangeHandler: (p: AvailablePlan) => void;
+  selectedPlanChangeHandler: (p: AvailablePlan | undefined) => void;
   unitsChangeHandler: (u: Units) => void;
   downloadHandler: () => void;
 }

@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Units } from "@/defy/models";
 
 interface Props {
   units: Units;

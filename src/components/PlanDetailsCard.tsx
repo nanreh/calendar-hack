@@ -34,7 +34,7 @@ export function PlanDetailsCard({
   );
 }
 
-function LinkIcon(props) {
+function LinkIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
