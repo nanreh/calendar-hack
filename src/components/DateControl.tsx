@@ -1,56 +1,38 @@
-import React from "react";
-import styled from "styled-components";
-import DatePicker from "react-datepicker";
-import { registerLocale } from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import { enGB } from "date-fns/esm/locale";
-import { Button } from "./Button";
+import React, { useState } from "react";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover";
+import { format } from "date-fns";
+import { Button } from "@/components/ui/button";
 
-interface Props {
+interface DateControlProps {
   selectedDate: Date;
   onDateChanged: (date: Date) => void;
 }
-interface ButtonProps {
-  value: string;
-  onClick: (e: React.MouseEvent<HTMLElement>) => void;
-}
 
-registerLocale("enGB", enGB);
+export function DateControl({ selectedDate, onDateChanged }: DateControlProps) {
+  const [isOpen, setIsOpen] = useState(false);
 
-export const DatePickerWrapper = styled.div`
-  z-index: 1000;
-`;
-
-// using a class component to avoid "Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?"
-class DateInputButton extends React.Component<ButtonProps> {
-  render() {
-    return (
-      <Button onClick={this.props.onClick}>
-        <span>{this.props.value}</span>
-      </Button>
-    );
+const handleSelect = (date: Date | undefined) => {
+  if (date) {
+    onDateChanged(date);
+    setIsOpen(false); // Close the popover on date selection
   }
-}
+};
 
-// using a class component to avoid "Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?"
-export class DateControl extends React.Component<Props> {
-  private input = (
-    <DateInputButton
-      value="Date"
-      onClick={(e: React.MouseEvent<HTMLElement>) => {}}
-    />
+  return (
+      <Popover open={isOpen} onOpenChange={setIsOpen}>
+        <PopoverTrigger asChild>
+          <Button variant={"outline"} className="w-48">
+            {selectedDate ? format(selectedDate, "PPP") : "Pick a date"}
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent side="bottom" align="start">
+          <Calendar
+            mode="single"
+            selected={selectedDate}
+            onSelect={handleSelect}
+          />
+        </PopoverContent>
+      </Popover>
   );
-  render() {
-    const { selectedDate, onDateChanged } = this.props;
-    return (
-      <DatePickerWrapper>
-        <DatePicker
-          selected={selectedDate}
-          onChange={onDateChanged}
-          locale="enGB"
-          customInput={this.input}
-        />
-      </DatePickerWrapper>
-    );
-  }
 }

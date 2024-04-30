@@ -1,6 +1,14 @@
 import React from "react";
 import { AvailablePlan } from "../ch/planrepo";
-import Select from "../defy/components/Select";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 interface Props {
   availablePlans: Array<AvailablePlan>;
@@ -13,26 +21,37 @@ const PlanPicker: React.FC<Props> = ({
   selectedPlan,
   planChangeHandler,
 }) => {
-  const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const newSelection = availablePlans.find(
-      (p) => p.name === (event.target.value as string)
-    );
+  const handleChange = (value: string) => {
+    const newSelection = availablePlans.find((p) => p.id === value);
     if (newSelection) {
       planChangeHandler(newSelection);
     } else {
-      throw new Error("Invalid selection: " + event.target.value);
+      throw new Error("Invalid selection: " + value);
     }
   };
 
-  const planOptions = availablePlans.map((ap) => (
-    <option key={ap.name} value={ap.name}>
-      ({ap.type}) {ap.name}
-    </option>
+  const groupedPlans = availablePlans.reduce((groups, plan) => {
+    (groups[plan.type] = groups[plan.type] || []).push(plan);
+    return groups;
+  }, {});
+
+  const planGroups = Object.entries(groupedPlans).map(([type, plans]) => (
+    <SelectGroup key={type}>
+      <SelectLabel>{type}</SelectLabel>
+      {plans.map((plan) => (
+        <SelectItem key={plan.id} value={plan.id}>
+          {plan.name}
+        </SelectItem>
+      ))}
+    </SelectGroup>
   ));
 
   return (
-    <Select value={selectedPlan.name} onChange={handleChange}>
-      {planOptions}
+    <Select onValueChange={handleChange} value={selectedPlan.id}>
+      <SelectTrigger className="w-[480px]">
+        <SelectValue placeholder="Select a plan" />
+      </SelectTrigger>
+      <SelectContent>{planGroups}</SelectContent>
     </Select>
   );
 };

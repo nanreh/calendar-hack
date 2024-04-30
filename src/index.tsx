@@ -30,14 +30,23 @@ const CustomHTML5toTouch: Backends = {
   ],
 };
 
+const PageWrapper: React.FC = ({ children }) => {
+  return (
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {children}
+      </div>
+  );
+};
+
 ReactDOM.render(
-  <React.StrictMode>
-    {/* <DndProvider backend={TouchBackend} options={{ "enableMouseEvents": true }}> */}
-    <DndProvider options={CustomHTML5toTouch}>
-      <App />
-    </DndProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+      <DndProvider options={CustomHTML5toTouch}>
+        <PageWrapper>
+          <App />
+        </PageWrapper>
+      </DndProvider>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

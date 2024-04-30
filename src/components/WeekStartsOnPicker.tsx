@@ -1,56 +1,73 @@
 import React from "react";
-import Select from "../defy/components/Select";
-import { WeekStartsOn, WeekStartsOnValues } from "../ch/datecalc";
-import styled from "styled-components";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { WeekStartsOn, WeekStartsOnValues } from "@/ch/datecalc";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
-interface Props {
-  weekStartsOn: WeekStartsOn;
-  changeHandler: (v: WeekStartsOn) => void;
-}
-
-const Root = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1em 0 5px 0;
-  color: ${(props) => props.theme.colors.controlsTitle};
-  @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
-    flex-direction: column;
-  }
-`;
-
-const Title = styled.h3`
-  display: inline;
-  margin: 0 0.4em;
-  color: ${(props) => props.theme.colors.buttonBg};
-`;
-
-const WeekStartsOnPicker: React.FC<Props> = ({
+export default function WeekStartsOnPicker({
   weekStartsOn,
   changeHandler,
-}) => {
-  const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const newValue = Number(event.target.value) as WeekStartsOn;
-    changeHandler(newValue);
+  className,
+}: {
+  weekStartsOn: WeekStartsOn;
+  changeHandler: (value: WeekStartsOn) => void;
+  className?: string;
+}) {
+  // Convert number to string for SelectItem value
+  const handleSelectChange = (value: string) => {
+    const numericValue = parseInt(value, 10); // Convert back to number
+    changeHandler(numericValue as WeekStartsOn);
   };
 
   return (
-    <Root>
-      <Title>Week starts on</Title>
-      <Select value={weekStartsOn} onChange={handleChange}>
-        <option key="monday" value={WeekStartsOnValues.Monday}>
-          Monday
-        </option>
-        <option key="sunday" value={WeekStartsOnValues.Sunday}>
-          Sunday
-        </option>
-        <option key="saturday" value={WeekStartsOnValues.Saturday}>
-          Saturday
-        </option>
-      </Select>
-    </Root>
+    <Card className={className}>
+      <CardHeader>
+        <CardTitle>Week start on</CardTitle>
+        <CardDescription>
+          Set day the week starts on, the plan will update accordingly
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <Select
+          onValueChange={handleSelectChange}
+          value={weekStartsOn.toString()}
+        >
+          <SelectTrigger className="w-full bg-white border border-gray-300 rounded-md shadow-sm">
+            <SelectValue placeholder="Week Starts On">
+              {getDayLabel(weekStartsOn)}
+            </SelectValue>
+          </SelectTrigger>
+          <SelectContent className="bg-white shadow-lg rounded-md p-1">
+            <SelectGroup>
+              {Object.entries(WeekStartsOnValues).map(([day, value]) => (
+                <div key={day} className="flex items-center space-x-2">
+                  <SelectItem value={value.toString()}>{day}</SelectItem>
+                </div>
+              ))}
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+      </CardContent>
+    </Card>
   );
-};
+}
 
-export default WeekStartsOnPicker;
+// Utility to get label from value
+function getDayLabel(value: WeekStartsOn) {
+  return Object.keys(WeekStartsOnValues).find(
+    (key) =>
+      WeekStartsOnValues[key as keyof typeof WeekStartsOnValues] === value
+  );
+}

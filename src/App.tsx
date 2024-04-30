@@ -2,29 +2,28 @@ import React, { useState } from "react";
 import { Units } from "./defy/models";
 import { RacePlan } from "./ch/models";
 import {
-  PlanRepo,
+  AvailablePlan,
   availablePlans,
   availablePlansById,
-  AvailablePlan,
+  PlanRepo,
 } from "./ch/planrepo";
-import { endOfWeek, addWeeks, isAfter } from "date-fns";
+import { addWeeks, endOfWeek, isAfter } from "date-fns";
 import { dayOfWeek } from "./ch/dategrid";
 import { build, swap, swapDow } from "./ch/planbuilder";
 import { CalendarGrid } from "./components/CalendarGrid";
 import { ThemeProvider } from "styled-components";
-import { toIcal, download } from "./ch/icalservice";
+import { download, toIcal } from "./ch/icalservice";
 import UnitsButtons from "./defy/components/UnitsButtons";
 import PlanAndDate from "./components/PlanAndDate";
 import Toolbar from "./defy/components/Toolbar";
-import styled from "styled-components";
 import DownloadButton from "./components/DownloadButton";
 import UndoButton from "./components/UndoButton";
 import history from "./defy/history";
 import {
-  useQueryParams,
-  StringParam,
   DateParam,
   NumberParam,
+  StringParam,
+  useQueryParams,
 } from "use-query-params";
 import { PlanDetailsCard } from "./components/PlanDetailsCard";
 import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
@@ -63,27 +62,6 @@ const theme = {
   },
 };
 
-const MainUI = styled.div`
-  margin-top: 2em;
-`;
-
-const SecondToolbar = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1em 0 5px 0;
-  color: ${(props) => props.theme.colors.controlsTitle};
-  @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
-    flex-direction: column;
-  }
-`;
-const UnitsDiv = styled.div`
-  @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
-    margin-top: 0.5em;
-  }
-`;
-
 const App: React.FC = () => {
   const [{ u, p, d, s }, setq] = useQueryParams({
     u: StringParam,
@@ -94,15 +72,16 @@ const App: React.FC = () => {
   const [selectedUnits, setSelectedUnits] = useState<Units>(
     u === "mi" || u === "km" ? u : "mi"
   );
-  var [selectedPlan, setSelectedPlan] = useState(
+  const [selectedPlan, setSelectedPlan] = useState(
     p && availablePlansById[p] ? availablePlansById[p] : availablePlans[0]
   );
-  var [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
-  var [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
-  var [weekStartsOn, setWeekStartsOn] = useState<WeekStartsOn>(
+  const [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
+  const [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
+  const [weekStartsOn, setWeekStartsOn] = useState<WeekStartsOn>(
     s === 0 || s === 1 || s === 6 ? s : WeekStartsOnValues.Monday
   );
-  var [planEndDate, setPlanEndDate] = useState(
+
+  const [planEndDate, setPlanEndDate] = useState(
     d && isAfter(d, new Date())
       ? d
       : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20)
@@ -225,41 +204,47 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Toolbar downloadHandler={downloadHandler} />
-      <PlanAndDate
-        units={selectedUnits}
-        availablePlans={availablePlans}
-        selectedPlan={selectedPlan}
-        selectedDate={planEndDate}
-        dateChangeHandler={onSelectedEndDateChange}
-        selectedPlanChangeHandler={onSelectedPlanChange}
-        unitsChangeHandler={onSelectedUnitsChanged}
-        downloadHandler={downloadHandler}
-      />
-      <SecondToolbar>
-        <UnitsDiv>
+      <Toolbar />
+      <div className="flex flex-col justify-center items-center mt-4 gap-4">
+        <PlanAndDate
+          units={selectedUnits}
+          availablePlans={availablePlans}
+          selectedPlan={selectedPlan}
+          selectedDate={planEndDate}
+          dateChangeHandler={onSelectedEndDateChange}
+          selectedPlanChangeHandler={onSelectedPlanChange}
+          unitsChangeHandler={onSelectedUnitsChanged}
+          downloadHandler={downloadHandler}
+        />
+        <PlanDetailsCard
+          racePlan={racePlan}
+          planName={selectedPlan.name}
+          className="w-full"
+        />
+
+        <div className="flex gap-4">
+          <WeekStartsOnPicker
+            className="w-1/2"
+            weekStartsOn={weekStartsOn}
+            changeHandler={onWeekStartsOnChanged}
+          />
           <UnitsButtons
+            className="w-1/2"
             units={selectedUnits}
             unitsChangeHandler={onSelectedUnitsChanged}
           />
-        </UnitsDiv>
-      </SecondToolbar>
-      <SecondToolbar>
-        <DownloadButton downloadHandler={downloadHandler} />
+        </div>
+        <div className="flex w-full gap-4">
+          <DownloadButton downloadHandler={downloadHandler} className="w-1/2" />
+        </div>
         <UndoButton
           disabled={undoHistory.length <= 1}
           undoHandler={undoHandler}
+          className="ml-auto"
         />
-      </SecondToolbar>
-      <PlanDetailsCard racePlan={racePlan} />
-      <SecondToolbar>
-        <WeekStartsOnPicker
-          weekStartsOn={weekStartsOn}
-          changeHandler={onWeekStartsOnChanged}
-        />
-      </SecondToolbar>
-      <MainUI>
-        {racePlan && (
+      </div>
+      {racePlan && (
+        <div className="my-5">
           <CalendarGrid
             racePlan={racePlan}
             units={selectedUnits}
@@ -268,8 +253,8 @@ const App: React.FC = () => {
             swapDow={doSwapDow}
             swapWeeks={swapWeeks}
           />
-        )}
-      </MainUI>
+        </div>
+      )}
     </ThemeProvider>
   );
 };

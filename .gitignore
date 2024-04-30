@@ -27,3 +27,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .vim
+.idea
+.yarn
+.yarnrc.yml

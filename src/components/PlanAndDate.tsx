@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { DateControl } from "./DateControl";
-import { Units } from "../defy/models";
+import { Units } from "@/defy/models";
 import PlanPicker from "./PlanPicker";
-import { AvailablePlan } from "../ch/planrepo";
+import { AvailablePlan } from "@/ch/planrepo";
 
 interface Props {
   units: Units;
@@ -15,12 +15,6 @@ interface Props {
   unitsChangeHandler: (u: Units) => void;
   downloadHandler: () => void;
 }
-
-const Title = styled.h3`
-  display: inline;
-  margin: 0 0.4em;
-  color: ${(props) => props.theme.colors.buttonBg};
-`;
 
 const Root = styled.div`
   display: flex;
@@ -45,18 +39,20 @@ const PlanAndDate: React.FC<Props> = ({
   downloadHandler,
 }) => {
   return (
-    <Root>
+    <div className="flex items-center justify-center gap-5 w-full">
       <PlanPicker
         availablePlans={availablePlans}
         selectedPlan={selectedPlan}
         planChangeHandler={selectedPlanChangeHandler}
       />
-      <Title>ending on</Title>
+      <h3 className="px-3 inline m-0.4 text-gray-500 dark:text-gray-400">
+        ending on
+      </h3>
       <DateControl
         selectedDate={selectedDate}
         onDateChanged={dateChangeHandler}
       />
-    </Root>
+    </div>
   );
 };
 
