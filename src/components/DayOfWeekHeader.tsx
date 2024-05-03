@@ -1,10 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { dayOfWeek } from "../ch/dategrid";
+import { dayOfWeek } from "@/ch/dategrid";
 import { DragHandle } from "./DragHandle";
-import { useDrop, useDrag, DragSourceMonitor } from "react-dnd";
+import { DragSourceMonitor, useDrag, useDrop } from "react-dnd";
 import ItemTypes from "../ch/ItemTypes";
-import { Preview, PreviewGenerator } from "react-dnd-multi-backend";
+
+// import { Preview, PreviewGenerator } from "react-dnd-multi-backend";
 
 interface Props {
   dow: dayOfWeek;
@@ -54,20 +55,20 @@ const DropTarget = styled.div<DropTargetProps>`
   opacity: ${(props) => (props.$isOver ? 0.5 : 1)};
 `;
 
-const generateDowPreview: PreviewGenerator = ({ itemType, item, style }) => {
-  return (
-    <div
-      style={{
-        ...style,
-      }}
-    >
-      <Root>
-        <DragHandle viewBox="0 0 32 36" />
-        <div>{item.dow}</div>
-      </Root>
-    </div>
-  );
-};
+// const generateDowPreview: PreviewGenerator = ({ itemType, item, style }) => {
+//   return (
+//     <div
+//       style={{
+//         ...style,
+//       }}
+//     >
+//       <Root>
+//         <DragHandle viewBox="0 0 32 36" />
+//         <div>{item.dow}</div>
+//       </Root>
+//     </div>
+//   );
+// };
 
 export const DayOfWeekHeader: React.FC<Props> = ({
   dow,
@@ -95,17 +96,15 @@ export const DayOfWeekHeader: React.FC<Props> = ({
   });
 
   const [{ isDragging }, drag, preview] = useDrag({
-    item: { type: ItemTypes.DOW, dow: dow },
+    type: ItemTypes.DOW,
+    item: () => {
+      selectDow(dow);
+      return { dow: dow };
+    },
     collect: (monitor) => {
-      if (monitor.isDragging()) {
-        selectDow(dow);
-      }
       return {
         isDragging: monitor.isDragging(),
       };
-    },
-    begin: (monitor: DragSourceMonitor) => {
-      selectDow(dow);
     },
     end: (item: { dow: dayOfWeek } | undefined, monitor: DragSourceMonitor) => {
       const dropResult = monitor.getDropResult();
@@ -126,7 +125,7 @@ export const DayOfWeekHeader: React.FC<Props> = ({
     >
       <DragSource $isDragging={isDragging} $dow={dow}>
         <DropTarget $isOver={isOver} $canDrop={canDrop} ref={drop}>
-          <Preview generator={generateDowPreview} />
+          {/*<Preview generator={generateDowPreview} />*/}
           <div ref={preview}>
             <Root ref={drag}>
               <DragHandle viewBox="0 0 32 36" />
