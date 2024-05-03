@@ -24,6 +24,7 @@ import { PlanDetailsCard } from "./components/PlanDetailsCard";
 import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
 import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
+import WorkInProgress from "@/components/WorkInProgress";
 
 const planRepo = new PlanRepo(availablePlans);
 
@@ -229,8 +230,9 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <WorkInProgress className="mt-5 mb-20" />
       <Toolbar />
-      <div className="flex flex-col justify-center items-center mt-4 gap-4">
+      <div className="flex flex-col justify-center items-center mt-20 gap-4">
         <PlanAndDate
           units={selectedUnits}
           availablePlans={availablePlans}
