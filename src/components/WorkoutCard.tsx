@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { useDrag } from "react-dnd";
 import ItemTypes from "../ch/ItemTypes";
 import { DragHandle } from "./DragHandle";
+import { Preview } from "react-dnd-multi-backend";
 
 // import { Preview, PreviewGenerator } from "react-dnd-multi-backend";
 
@@ -23,6 +24,12 @@ type DragSourceProps = {
   $dayDetails: DayDetails | undefined;
 };
 
+type Item = {
+  dayDetails: DayDetails;
+  units: Units;
+};
+type Style = React.CSSProperties;
+
 const DragSource = styled.div<DragSourceProps>`
   height: 100%;
   opacity: ${(props) => (props.$isDragging ? 0.5 : 1)};
@@ -33,22 +40,22 @@ function renderDesc(dayDetails: DayDetails, from: Units, to: Units): string {
   return title + "\n" + desc;
 }
 
-// const generateDayPreview: PreviewGenerator = ({ itemType, item, style }) => {
-//   return (
-//     <div
-//       style={{
-//         ...style,
-//       }}
-//     >
-//       <Content>
-//         <DragHandle viewBox="0 0 32 36" />
-//         <p>
-//           {renderDesc(item.dayDetails, item.dayDetails.sourceUnits, item.units)}
-//         </p>
-//       </Content>
-//     </div>
-//   );
-// };
+const generatePreview = ({ item, style }: { item: Item; style: Style }) => {
+  return (
+    <div
+      style={{
+        ...style,
+      }}
+    >
+      <Content>
+        <DragHandle viewBox="0 0 32 36" />
+        <p>
+          {renderDesc(item.dayDetails, item.dayDetails.sourceUnits, item.units)}
+        </p>
+      </Content>
+    </div>
+  );
+};
 
 export const WorkoutCard: React.FC<WorkoutCardProps> = ({
   dayDetails,
@@ -80,6 +87,8 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
         $dayDetails={dayDetails}
         ref={preview}
       >
+        <Preview generator={generatePreview} />
+
         {/*<Preview generator={generateDayPreview} />*/}
         <Content>
           <div ref={drag}>

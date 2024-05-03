@@ -17,6 +17,10 @@ interface Props {
   hovering: boolean;
 }
 
+interface DroppedItem {
+  date: Date;
+}
+
 type DropTargetProps = {
   $isOver: boolean;
   $canDrop: boolean;
@@ -39,11 +43,15 @@ export const DayCell: React.FC<Props> = ({
     return dayDetails !== undefined;
   }
 
-  const [{ isOver, canDrop, droppedItem }, drop] = useDrop({
+  const [{ isOver, canDrop, droppedItem }, drop] = useDrop<
+    DroppedItem,
+    any,
+    any
+  >({
     accept: ItemTypes.DAY,
     canDrop: () => canSwap(date),
-    drop: () => {
-      swap(date, droppedItem.date);
+    drop: (item: DroppedItem) => {
+      swap(date, item.date);
       return;
     },
     collect: (monitor) => ({
