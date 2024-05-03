@@ -1,16 +1,27 @@
 import * as React from "react";
 import styled from "styled-components";
-import { dayOfWeek } from "../ch/dategrid";
+import { dayOfWeek } from "@/ch/dategrid";
 import { DragHandle } from "./DragHandle";
-import { useDrop, useDrag, DragSourceMonitor } from "react-dnd";
+import { DragSourceMonitor, useDrag, useDrop } from "react-dnd";
 import ItemTypes from "../ch/ItemTypes";
-import { Preview, PreviewGenerator } from "react-dnd-multi-backend";
+import { Preview } from "react-dnd-multi-backend";
+
+// import { Preview, PreviewGenerator } from "react-dnd-multi-backend";
 
 interface Props {
   dow: dayOfWeek;
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
   selectDow: (dow: dayOfWeek | undefined) => void;
   hoverDow: (dow: dayOfWeek | undefined) => void;
+}
+
+interface DroppedItem {
+  dow: dayOfWeek;
+}
+
+interface PreviewProps {
+  item: DroppedItem;
+  style: React.CSSProperties;
 }
 
 const Root = styled.div`
@@ -54,7 +65,7 @@ const DropTarget = styled.div<DropTargetProps>`
   opacity: ${(props) => (props.$isOver ? 0.5 : 1)};
 `;
 
-const generateDowPreview: PreviewGenerator = ({ itemType, item, style }) => {
+const generatePreview = ({ item, style }: PreviewProps) => {
   return (
     <div
       style={{
@@ -75,12 +86,12 @@ export const DayOfWeekHeader: React.FC<Props> = ({
   selectDow,
   hoverDow,
 }) => {
-  const [{ isOver, canDrop, droppedItem }, drop] = useDrop({
+  const [{ isOver, canDrop }, drop] = useDrop({
     accept: ItemTypes.DOW,
     canDrop: () => true,
-    drop: () => {
-      swapDow(dow, droppedItem.dow);
-      return;
+    drop: (item: DroppedItem) => {
+      swapDow(dow, item.dow);
+      return item;
     },
     collect: (monitor) => {
       if (monitor.isOver()) {
@@ -95,17 +106,15 @@ export const DayOfWeekHeader: React.FC<Props> = ({
   });
 
   const [{ isDragging }, drag, preview] = useDrag({
-    item: { type: ItemTypes.DOW, dow: dow },
+    type: ItemTypes.DOW,
+    item: () => {
+      selectDow(dow);
+      return { dow: dow };
+    },
     collect: (monitor) => {
-      if (monitor.isDragging()) {
-        selectDow(dow);
-      }
       return {
         isDragging: monitor.isDragging(),
       };
-    },
-    begin: (monitor: DragSourceMonitor) => {
-      selectDow(dow);
     },
     end: (item: { dow: dayOfWeek } | undefined, monitor: DragSourceMonitor) => {
       const dropResult = monitor.getDropResult();
@@ -126,7 +135,7 @@ export const DayOfWeekHeader: React.FC<Props> = ({
     >
       <DragSource $isDragging={isDragging} $dow={dow}>
         <DropTarget $isOver={isOver} $canDrop={canDrop} ref={drop}>
-          <Preview generator={generateDowPreview} />
+          <Preview generator={generatePreview} />
           <div ref={preview}>
             <Root ref={drag}>
               <DragHandle viewBox="0 0 32 36" />

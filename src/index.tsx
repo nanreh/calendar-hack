@@ -3,50 +3,23 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { HTML5Backend } from "react-dnd-html5-backend";
-import { TouchBackend } from "react-dnd-touch-backend";
-import { DndProvider, Backends } from "react-dnd-multi-backend";
-import { TouchTransition, MouseTransition } from "react-dnd-multi-backend";
+import { DndProvider } from "react-dnd-multi-backend";
 import "./css/reset.css";
-
-const CustomHTML5toTouch: Backends = {
-  backends: [
-    {
-      backend: HTML5Backend as any,
-      transition: MouseTransition,
-      // by default, will dispatch a duplicate `mousedown` event when this backend is activated
-      //preview: true,
-    },
-    {
-      backend: TouchBackend as any,
-      // Note that you can call your backends with options
-      options: {
-        enableMouseEvents: true,
-        skipDispatchOnTransition: true, // will not dispatch a duplicate `touchstart` event when this backend is activated
-      },
-      preview: true,
-      transition: TouchTransition,
-    },
-  ],
-};
+import { HTML5toTouch } from "rdndmb-html5-to-touch";
 
 const PageWrapper: React.FC = ({ children }) => {
-  return (
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        {children}
-      </div>
-  );
+  return <div style={{ maxWidth: "1200px", margin: "0 auto" }}>{children}</div>;
 };
 
 ReactDOM.render(
-    <React.StrictMode>
-      <DndProvider options={CustomHTML5toTouch}>
-        <PageWrapper>
-          <App />
-        </PageWrapper>
-      </DndProvider>
-    </React.StrictMode>,
-    document.getElementById("root")
+  <React.StrictMode>
+    <DndProvider options={HTML5toTouch}>
+      <PageWrapper>
+        <App />
+      </PageWrapper>
+    </DndProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
