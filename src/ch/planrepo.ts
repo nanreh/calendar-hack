@@ -264,6 +264,10 @@ class PlanRepo {
     return this._available;
   }
 
+  getPlanById(id: string): AvailablePlan | undefined {
+    return this._available.find((plan) => plan.id === id);
+  }
+
   // For testing
   isCached(a: AvailablePlan): boolean {
     return this._cache.has(a.url);

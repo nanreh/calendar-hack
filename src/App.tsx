@@ -69,7 +69,7 @@ const App: React.FC = () => {
     u === "mi" || u === "km" ? u : "mi"
   );
   const [selectedPlan, setSelectedPlan] = useState<AvailablePlan | undefined>(
-    undefined
+    p ? planRepo.getPlanById(p) : undefined
   );
   const [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
   const [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
