@@ -1,14 +1,14 @@
 import * as React from "react";
-import { Units } from "../defy/models";
-import { RacePlan } from "../ch/models";
-import { dayOfWeek, key, Week } from "../ch/dategrid";
+import { Units } from "@/defy/models";
+import { DayDetails, RacePlan } from "@/ch/models";
+import { dayOfWeek, key, Week } from "@/ch/dategrid";
 import { DayCell } from "./DayCell";
 import { WeekSummary } from "./WeekSummary";
 import { DayOfWeekHeader } from "./DayOfWeekHeader";
-import { DayDetails } from "../ch/models";
 import styled from "styled-components";
 import { format } from "date-fns";
-import { getDaysHeader, WeekStartsOn } from "../ch/datecalc";
+import { getDaysHeader, WeekStartsOn } from "@/ch/datecalc";
+import { calcWeeklyDistance } from "@/lib/calculateDistance";
 
 interface Props {
   racePlan: RacePlan;
@@ -35,14 +35,6 @@ const WeekRow = styled.div`
 `;
 
 const Blank = styled.div``;
-
-function calcWeeklyDistance(w: Week<DayDetails>): number {
-  return w.days
-    .map((d) => d.event)
-    .reduce((a, e) => {
-      return !e || !e.dist ? a : a + e.dist;
-    }, 0);
-}
 
 function findMaxDistance(weeks: Week<DayDetails>[]): number {
   let currMax = 0.0;

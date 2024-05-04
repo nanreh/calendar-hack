@@ -25,6 +25,7 @@ import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
 import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
 import WorkInProgress from "@/components/WorkInProgress";
+import { PlanDistanceBarChart } from "@/components/PlanDistanceBarChart";
 
 const planRepo = new PlanRepo(availablePlans);
 
@@ -66,7 +67,7 @@ const App: React.FC = () => {
     s: NumberParam,
   });
   const [selectedUnits, setSelectedUnits] = useState<Units>(
-    u === "mi" || u === "km" ? u : "mi"
+    u === "mi" || u === "km" ? u : "km"
   );
   const [selectedPlan, setSelectedPlan] = useState<AvailablePlan | undefined>(
     p ? planRepo.getPlanById(p) : undefined
@@ -250,7 +251,6 @@ const App: React.FC = () => {
             className="w-full"
           />
         )}
-
         <div className="flex gap-4">
           <WeekStartsOnPicker
             className="w-1/2"
@@ -273,16 +273,19 @@ const App: React.FC = () => {
         />
       </div>
       {racePlan && (
-        <div className="my-5">
-          <CalendarGrid
-            racePlan={racePlan}
-            units={selectedUnits}
-            weekStartsOn={weekStartsOn}
-            swap={swapDates}
-            swapDow={doSwapDow}
-            swapWeeks={swapWeeks}
-          />
-        </div>
+        <>
+          <PlanDistanceBarChart racePlan={racePlan} units={selectedUnits} />
+          <div className="my-5">
+            <CalendarGrid
+              racePlan={racePlan}
+              units={selectedUnits}
+              weekStartsOn={weekStartsOn}
+              swap={swapDates}
+              swapDow={doSwapDow}
+              swapWeeks={swapWeeks}
+            />
+          </div>
+        </>
       )}
     </ThemeProvider>
   );

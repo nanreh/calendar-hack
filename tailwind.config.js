@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}", // Added Tremor content path
   ],
   prefix: "",
   theme: {
@@ -18,6 +21,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Existing colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -51,11 +55,74 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Tremor-specific colors
+        tremor: {
+          brand: {
+            faint: colors.blue[50],
+            muted: colors.blue[200],
+            subtle: colors.blue[400],
+            DEFAULT: colors.blue[500],
+            emphasis: colors.blue[700],
+            inverted: colors.white,
+          },
+          background: {
+            muted: colors.gray[50],
+            subtle: colors.gray[100],
+            DEFAULT: colors.white,
+            emphasis: colors.gray[700],
+          },
+          border: {
+            DEFAULT: colors.gray[200],
+          },
+          ring: {
+            DEFAULT: colors.gray[200],
+          },
+          content: {
+            subtle: colors.gray[400],
+            DEFAULT: colors.gray[500],
+            emphasis: colors.gray[700],
+            strong: colors.gray[900],
+            inverted: colors.white,
+          },
+          // Adding dark mode styles if needed
+          "dark-tremor": {
+            brand: {
+              faint: "#0B1229",
+              muted: colors.blue[950],
+              subtle: colors.blue[800],
+              DEFAULT: colors.blue[500],
+              emphasis: colors.blue[400],
+              inverted: colors.blue[950],
+            },
+            background: {
+              muted: "#131A2B",
+              subtle: colors.gray[800],
+              DEFAULT: colors.gray[900],
+              emphasis: colors.gray[300],
+            },
+            border: {
+              DEFAULT: colors.gray[800],
+            },
+            ring: {
+              DEFAULT: colors.gray[800],
+            },
+            content: {
+              subtle: colors.gray[600],
+              DEFAULT: colors.gray[500],
+              emphasis: colors.gray[200],
+              strong: colors.gray[50],
+              inverted: colors.gray[950],
+            },
+          },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        "tremor-small": "0.375rem",
+        "tremor-default": "0.5rem",
+        "tremor-full": "9999px",
       },
       keyframes: {
         "accordion-down": {
@@ -73,5 +140,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@headlessui/tailwindcss"), // Assuming these are needed by Tremor
+    require("@tailwindcss/forms"),
+  ],
+};
