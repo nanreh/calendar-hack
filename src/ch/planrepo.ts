@@ -35,24 +35,6 @@ export interface TrainingPlan {
 
 export const availablePlans: AvailablePlan[] = [
   {
-    url: Config.plansPath + "frr_bt_01.json",
-    id: "frr_bt_01",
-    name: "Faster Road Racing: Base Training 1",
-    type: "Base",
-  },
-  {
-    url: Config.plansPath + "frr_bt_02.json",
-    id: "frr_bt_02",
-    name: "Faster Road Racing: Base Training 2",
-    type: "Base",
-  },
-  {
-    url: Config.plansPath + "frr_bt_03.json",
-    id: "frr_bt_03",
-    name: "Faster Road Racing: Base Training 3",
-    type: "Base",
-  },
-  {
     url: Config.plansPath + "c25k.json",
     id: "c25k",
     name: "Couch to 5K",
@@ -105,6 +87,24 @@ export const availablePlans: AvailablePlan[] = [
     id: "frr_15k_10m_01",
     name: "Faster Road Racing: 15k and 10 Miles Schedule 1",
     type: "15K/10M",
+  },
+  {
+    url: Config.plansPath + "frr_bt_01.json",
+    id: "frr_bt_01",
+    name: "Faster Road Racing: Base Training 1",
+    type: "Base",
+  },
+  {
+    url: Config.plansPath + "frr_bt_02.json",
+    id: "frr_bt_02",
+    name: "Faster Road Racing: Base Training 2",
+    type: "Base",
+  },
+  {
+    url: Config.plansPath + "frr_bt_03.json",
+    id: "frr_bt_03",
+    name: "Faster Road Racing: Base Training 3",
+    type: "Base",
   },
   {
     url: Config.plansPath + "pfitz_half_12_47.json",
