@@ -43,7 +43,8 @@ If you are adding a plan, you should write it in YAML and then run
 `./bin/convertPlans` to generate the JSON version for the application. The converter is written in python and requires pyyaml
 
 ```
-virtualenv venv
+python3 -m venv my_env
 source ./venv/bin/activate
-python ./bin/convertPlans
+pip install pyyaml
+python3 ./bin/convertPlans
 ```
