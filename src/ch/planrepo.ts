@@ -89,6 +89,24 @@ export const availablePlans: AvailablePlan[] = [
     type: "15K/10M",
   },
   {
+    url: Config.plansPath + "frr_bt_01.json",
+    id: "frr_bt_01",
+    name: "Faster Road Racing: Base Training 1",
+    type: "Base",
+  },
+  {
+    url: Config.plansPath + "frr_bt_02.json",
+    id: "frr_bt_02",
+    name: "Faster Road Racing: Base Training 2",
+    type: "Base",
+  },
+  {
+    url: Config.plansPath + "frr_bt_03.json",
+    id: "frr_bt_03",
+    name: "Faster Road Racing: Base Training 3",
+    type: "Base",
+  },
+  {
     url: Config.plansPath + "pfitz_half_12_47.json",
     id: "pfitz_half_12_47",
     name: "Faster Road Racing: Half Marathon Schedule 1, 31 to 47 miles per Week",

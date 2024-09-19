@@ -16,6 +16,7 @@
         },
         "type": {
             "enum": [
+                "Base",
                 "Marathon",
                 "Half Marathon",
                 "5K",
