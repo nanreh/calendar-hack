@@ -2,10 +2,6 @@ import * as React from "react";
 import { format } from "date-fns";
 import styled from "styled-components";
 
-export interface Props {
-  date: Date;
-}
-
 const Root = styled.div`
   height: 100%;
   display: flex;
@@ -25,7 +21,7 @@ const Dateline = styled.div`
   border-radius: 0.25rem 0.25rem 0 0;
 `;
 
-export const BlankCard: React.FC<Props> = ({ date }) => {
+export const BlankCard = ({ date }: { date: Date }) => {
   return (
     <Root>
       <Dateline>

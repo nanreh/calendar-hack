@@ -71,14 +71,14 @@ interface Props {
   currentValue: string;
 }
 
-export const Radio: React.FC<Props> = ({
+export const Radio = ({
   id,
   name,
   value,
   labelTxt,
   changeCb,
   currentValue,
-}) => {
+}: Props) => {
   return (
     <label htmlFor={id}>
       <Input

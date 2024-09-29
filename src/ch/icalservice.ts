@@ -1,8 +1,8 @@
 import { createEvents, EventAttributes } from "ics";
-import { Units } from "../defy/models";
-import { RacePlan } from "./models";
 import { addDays } from "date-fns";
+import { RacePlan } from "./dategrid";
 import { getWeekDistance, render, renderDist } from "./rendering";
+import { Units } from "types/app";
 
 // public for testing
 export function toDate(d: Date): [number, number, number] {

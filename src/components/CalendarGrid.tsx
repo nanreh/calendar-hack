@@ -1,22 +1,19 @@
 import * as React from "react";
-import { Units } from "../defy/models";
-import { RacePlan } from "../ch/models";
-import { dayOfWeek, key, Week } from "../ch/dategrid";
+import { RacePlan, key } from "../ch/dategrid";
 import { DayCell } from "./DayCell";
 import { WeekSummary } from "./WeekSummary";
 import { DayOfWeekHeader } from "./DayOfWeekHeader";
-import { DayDetails } from "../ch/models";
 import styled from "styled-components";
 import { format } from "date-fns";
 import { getDaysHeader, WeekStartsOn } from "../ch/datecalc";
+import { Units, dayOfWeek, Week, DayDetails } from "types/app";
 
 interface Props {
   racePlan: RacePlan;
   units: Units;
   weekStartsOn: WeekStartsOn;
-  swap: (d1: Date, d2: Date) => void;
+  swapDates: (d1: Date, d2: Date) => void;
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
-  swapWeeks: (w1: number, w2: number) => void;
 }
 
 const Root = styled.div`
@@ -55,14 +52,13 @@ function findMaxDistance(weeks: Week<DayDetails>[]): number {
   return currMax;
 }
 
-export const CalendarGrid: React.FC<Props> = ({
+export const CalendarGrid = ({
   racePlan,
   units,
   weekStartsOn,
-  swap,
+  swapDates,
   swapDow,
-  swapWeeks,
-}) => {
+}: Props) => {
   const [selectedDow, setSelectedDow] = React.useState<dayOfWeek | undefined>(
     undefined
   );
@@ -91,7 +87,7 @@ export const CalendarGrid: React.FC<Props> = ({
             key={key(d.date)}
             date={d.date}
             units={units}
-            swap={swap}
+            swap={swapDates}
             dayDetails={d.event}
             selected={selectedDow === format(d.date, "EEEE")}
             hovering={hoveringDow === format(d.date, "EEEE")}
@@ -110,8 +106,8 @@ export const CalendarGrid: React.FC<Props> = ({
             key={dow}
             dow={dow as dayOfWeek}
             swapDow={swapDow}
-            selectDow={setSelectedDow}
-            hoverDow={setHoveringDow}
+            setSelectedDow={setSelectedDow}
+            setHoveringDow={setHoveringDow}
           />
         ))}
       </WeekRow>

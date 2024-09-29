@@ -7,8 +7,6 @@ import {
   isAfter,
   addDays,
   addWeeks,
-} from "date-fns";
-import {
   startOfWeek,
   startOfDay,
   endOfWeek,
@@ -21,26 +19,27 @@ import {
   isSunday,
 } from "date-fns";
 import { WeekStartsOn, WeekStartsOnValues } from "./datecalc";
+import {
+  PlanDates,
+  RaceType,
+  DayDetails,
+  Units,
+  Day,
+  Week,
+  dayOfWeek,
+} from "types/app";
 
-export type dayOfWeek =
-  | "Monday"
-  | "Tuesday"
-  | "Wednesday"
-  | "Thursday"
-  | "Friday"
-  | "Saturday"
-  | "Sunday";
 export const key = (d: Date) => format(d, "yyyy/MM/dd");
 
-export interface Day<T> {
-  date: Date;
-  event: T | undefined;
-}
-export interface Week<T> {
-  weekNum: number;
-  dist: number;
-  desc: string;
-  days: Day<T>[];
+// Race plan is a TrainingPlan rendered for a specific goal race day plus all of the various
+// customizations applied to it by an end user.
+export interface RacePlan {
+  planDates: PlanDates;
+  raceType: RaceType;
+  dateGrid: DateGrid<DayDetails>;
+  sourceUnits: Units;
+  description: string;
+  sourceUrl: string;
 }
 
 // A grid of dates. Always represents one or more contiguous weeks.

@@ -1,15 +1,9 @@
-import { availablePlans, PlanRepo } from "./planrepo";
-
-let planrepo: PlanRepo;
+import { repo } from "./planrepo";
 
 describe("PlanRepo", function () {
-  beforeAll(() => {
-    planrepo = new PlanRepo(availablePlans);
-  });
-
   /* This is an integration test. Was useful during dev but slow. Disabled for now, should maybe mock the request later. */
   it.skip("should load all available plans", async function () {
-    const fetches = availablePlans.map(planrepo.fetch, planrepo);
+    const fetches = repo.available.map(repo.fetch, repo);
     const p = Promise.all(fetches);
     const fetched = await p;
     // Check each plan for sanity
@@ -25,15 +19,15 @@ describe("PlanRepo", function () {
 
   it.skip("should have cached all plans", () => {
     expect(
-      availablePlans.map(planrepo.isCached, planrepo).every((b) => true === b)
+      repo.available.map(repo.isCached, repo).every((b) => true === b)
     ).toBe(true);
   });
 
   describe("Available Plans", function () {
     it.skip("should have valid RaceType values", function () {
-      for (const p of availablePlans) {
+      for (const p of repo.available) {
         expect(
-          p.type === "Marathon" || p.type === "Half Marathon" || p.type === "5K"
+          p[2] === "Marathon" || p[2] === "Half Marathon" || p[2] === "5K"
         ).toBe(true);
       }
     });

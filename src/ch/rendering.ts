@@ -1,7 +1,5 @@
 import * as moo from "moo";
-import { Units } from "../defy/models";
-import { Week } from "./dategrid";
-import { DayDetails } from "./models";
+import { Week, DayDetails, Units } from "types/app";
 
 export function kmToMiles(value: number): number {
   return value * 0.62137;

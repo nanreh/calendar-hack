@@ -45,7 +45,7 @@ const Title = styled.h1`
   color: ${(props) => props.theme.colors.buttonIcons};
 `;
 
-const Toolbar: React.FC<Props> = ({ downloadHandler }) => {
+const Toolbar = ({ downloadHandler }: Props) => {
   return (
     <>
       <Tools>

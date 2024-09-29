@@ -1,7 +1,5 @@
-var values = {
+export const ItemTypes = {
   DAY: "DAY",
   DOW: "DOW",
   WEEK: "WEEK",
 };
-
-export default values;

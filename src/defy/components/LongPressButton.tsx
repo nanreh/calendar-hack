@@ -33,7 +33,7 @@ const Root = styled.div`
 
 let timerID: number | undefined;
 
-const LongPressButton: React.FC<Props> = ({ activeCb, doneCb, type }) => {
+const LongPressButton = ({ activeCb, doneCb, type }: Props) => {
   const timer = useCallback(() => {
     timerID = window.setInterval(function doCb() {
       activeCb();

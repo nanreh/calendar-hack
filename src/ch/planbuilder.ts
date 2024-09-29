@@ -1,9 +1,13 @@
 import { eachDayOfInterval } from "date-fns";
 import { calcPlanDates, WeekStartsOn } from "./datecalc";
-import { DateGrid, dayOfWeek } from "./dategrid";
-import { TrainingPlan, PlannedWorkout } from "./planrepo";
-import { RacePlan, DayDetails } from "./models";
-import { Units } from "../defy/models";
+import { DateGrid, RacePlan } from "./dategrid";
+import {
+  DayDetails,
+  dayOfWeek,
+  PlannedWorkout,
+  TrainingPlan,
+  Units,
+} from "types/app";
 
 function renderDayDetails(
   date: Date,

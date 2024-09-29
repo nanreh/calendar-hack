@@ -29,7 +29,7 @@ const Root = styled.div`
   }
 `;
 
-const UndoButton: React.FC<Props> = ({ undoHandler, disabled }) => {
+const UndoButton = ({ undoHandler, disabled }: Props) => {
   const themeContext = useContext(ThemeContext);
 
   const onClick = (e: React.MouseEvent<HTMLElement>) => {

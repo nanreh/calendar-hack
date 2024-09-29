@@ -1,16 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { dayOfWeek } from "../ch/dategrid";
 import { DragHandle } from "./DragHandle";
-import { useDrop, useDrag, DragSourceMonitor } from "react-dnd";
-import ItemTypes from "../ch/ItemTypes";
-import { Preview, PreviewGenerator } from "react-dnd-multi-backend";
+import { useDrop, useDrag } from "react-dnd";
+import { ItemTypes } from "../ch/ItemTypes";
+import { dayOfWeek } from "types/app";
 
 interface Props {
   dow: dayOfWeek;
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
-  selectDow: (dow: dayOfWeek | undefined) => void;
-  hoverDow: (dow: dayOfWeek | undefined) => void;
+  setSelectedDow: (dow: dayOfWeek | undefined) => void;
+  setHoveringDow: (dow: dayOfWeek | undefined) => void;
 }
 
 const Root = styled.div`
@@ -40,6 +39,7 @@ type DragSourceProps = {
   $isDragging: boolean;
   $dow: dayOfWeek;
 };
+
 const DragSource = styled.div<DragSourceProps>`
   height: 100%;
   opacity: ${(props) => (props.$isDragging ? 0.5 : 1)};
@@ -49,92 +49,78 @@ type DropTargetProps = {
   $isOver: boolean;
   $canDrop: boolean;
 };
+
 const DropTarget = styled.div<DropTargetProps>`
   height: 100%;
   opacity: ${(props) => (props.$isOver ? 0.5 : 1)};
 `;
 
-const generateDowPreview: PreviewGenerator = ({ itemType, item, style }) => {
-  return (
-    <div
-      style={{
-        ...style,
-      }}
-    >
-      <Root>
-        <DragHandle viewBox="0 0 32 36" />
-        <div>{item.dow}</div>
-      </Root>
-    </div>
-  );
-};
-
-export const DayOfWeekHeader: React.FC<Props> = ({
+export const DayOfWeekHeader = ({
   dow,
   swapDow,
-  selectDow,
-  hoverDow,
-}) => {
-  const [{ isOver, canDrop, droppedItem }, drop] = useDrop({
-    accept: ItemTypes.DOW,
-    canDrop: () => true,
-    drop: () => {
-      swapDow(dow, droppedItem.dow);
-      return;
-    },
-    collect: (monitor) => {
-      if (monitor.isOver()) {
-        hoverDow(dow);
-      }
-      return {
-        isOver: monitor.isOver(),
-        canDrop: monitor.canDrop(),
-        droppedItem: monitor.getItem(),
-      };
-    },
-  });
+  setSelectedDow,
+  setHoveringDow,
+}: Props) => {
+  const canSwapWith = (other: dayOfWeek) => {
+    return dow !== other;
+  };
 
-  const [{ isDragging }, drag, preview] = useDrag({
-    item: { type: ItemTypes.DOW, dow: dow },
+  // TODO Things are structurally awkward here. We're dragging + dropping these headers but we need to
+  // send state "updwards" so the UI can draw itself. Restructure to clean this up.
+  const [{ isDragging }, drag, dragPreview] = useDrag({
+    type: ItemTypes.DOW,
+    item: { id: dow },
+    end: () => {
+      setSelectedDow(undefined);
+      setHoveringDow(undefined);
+    },
     collect: (monitor) => {
-      if (monitor.isDragging()) {
-        selectDow(dow);
-      }
       return {
         isDragging: monitor.isDragging(),
       };
     },
-    begin: (monitor: DragSourceMonitor) => {
-      selectDow(dow);
+  });
+
+  const [{ isOver, canDrop }, drop] = useDrop({
+    accept: ItemTypes.DOW,
+    canDrop: (item: { id: dayOfWeek }) => canSwapWith(item.id),
+    drop: (item: { id: dayOfWeek }) => {
+      swapDow(dow, item.id);
     },
-    end: (item: { dow: dayOfWeek } | undefined, monitor: DragSourceMonitor) => {
-      const dropResult = monitor.getDropResult();
-      if (item && dropResult) {
-        selectDow(undefined);
-        hoverDow(undefined);
+    collect: (monitor) => {
+      if (monitor.isOver()) {
+        if (monitor.canDrop()) {
+          setHoveringDow(dow);
+        } else {
+          setSelectedDow(dow);
+          setHoveringDow(undefined);
+        }
       }
+      return {
+        isOver: monitor.isOver(),
+        canDrop: monitor.canDrop(),
+      };
     },
   });
 
   return (
-    <div
-      style={{
-        position: "relative",
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <DragSource $isDragging={isDragging} $dow={dow}>
-        <DropTarget $isOver={isOver} $canDrop={canDrop} ref={drop}>
-          <Preview generator={generateDowPreview} />
-          <div ref={preview}>
+    <DragSource $isDragging={isDragging} $dow={dow}>
+      <DropTarget $isOver={isOver} $canDrop={canDrop} ref={drop}>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <div ref={dragPreview}>
             <Root ref={drag}>
               <DragHandle viewBox="0 0 32 36" />
               <div>{dow}</div>
             </Root>
           </div>
-        </DropTarget>
-      </DragSource>
-    </div>
+        </div>
+      </DropTarget>
+    </DragSource>
   );
 };

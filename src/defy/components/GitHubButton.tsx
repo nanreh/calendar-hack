@@ -5,8 +5,6 @@ import { IconContext } from "react-icons";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 
-interface Props {}
-
 const Root = styled.div`
   border-radius: 50%;
   padding: 3px;
@@ -24,7 +22,7 @@ const Link = styled.a`
     margin-right: auto;
   }
 `;
-const GitHubButton: React.FC<Props> = () => {
+const GitHubButton = () => {
   const themeContext = useContext(ThemeContext);
   return (
     <IconContext.Provider value={{ color: themeContext?.colors.buttonIcons }}>

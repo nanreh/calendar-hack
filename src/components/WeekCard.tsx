@@ -1,9 +1,8 @@
 import * as React from "react";
-import { Week, dayOfWeek, key } from "../ch/dategrid";
-import { Units } from "../defy/models";
-import { DayDetails, RacePlan } from "../ch/models";
+import { RacePlan, key } from "../ch/dategrid";
 import { format } from "date-fns";
 import { DayCell } from "./DayCell";
+import { Week, DayDetails, Units, dayOfWeek } from "types/app";
 
 interface Props {
   desc: string;
@@ -17,9 +16,7 @@ interface Props {
   hoveringWeek: number | undefined;
 }
 
-export const WeekCard: React.FC<Props> = ({
-  racePlan,
-  desc,
+export const WeekCard = ({
   week,
   units,
   swap,
@@ -27,7 +24,7 @@ export const WeekCard: React.FC<Props> = ({
   hoveringDow,
   selectedWeek,
   hoveringWeek,
-}) => {
+}: Props) => {
   return (
     <div>
       {week.days.map((d, index) => (

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { RacePlan } from "../ch/models";
+import { RacePlan } from "../ch/dategrid";
 
 const Root = styled.div`
   display: flex;
@@ -23,11 +23,11 @@ export const PlanDetailsStyle = styled.div`
   padding: 1em;
 `;
 
-interface PlanDetailsProps {
+interface Props {
   racePlan: RacePlan | undefined;
 }
 
-export const PlanDetailsCard: React.FC<PlanDetailsProps> = ({ racePlan }) => {
+export const PlanDetailsCard = ({ racePlan }: Props) => {
   return (
     <Root>
       <PlanDetailsStyle>

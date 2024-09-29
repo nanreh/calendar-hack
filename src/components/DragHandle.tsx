@@ -10,7 +10,7 @@ const DragHandleSvg = styled.svg`
   cursor: grab;
 `;
 
-export const DragHandle: React.FC<Props> = ({ viewBox = "0 0 32 52" }) => {
+export const DragHandle = ({ viewBox = "0 0 32 52" }: Props) => {
   return (
     <DragHandleSvg viewBox={viewBox}>
       <rect height="4" width="4" y="4" x="0" />

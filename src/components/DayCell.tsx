@@ -1,12 +1,11 @@
 import * as React from "react";
-import { Units } from "../defy/models";
-import { DayDetails } from "../ch/models";
 import { useDrop } from "react-dnd";
-import ItemTypes from "../ch/ItemTypes";
+import { ItemTypes } from "../ch/ItemTypes";
 import { WorkoutCard } from "./WorkoutCard";
 import { BlankCard } from "./BlankCard";
 import styled from "styled-components";
 import { Overlay } from "./Overlay";
+import { DayDetails, Units } from "types/app";
 
 interface Props {
   dayDetails: DayDetails | undefined;
@@ -27,23 +26,23 @@ const DropTarget = styled.div<DropTargetProps>`
   opacity: ${(props) => (props.$isOver ? 0.5 : 1)};
 `;
 
-export const DayCell: React.FC<Props> = ({
+export const DayCell = ({
   dayDetails,
   date,
   units,
   swap,
   selected,
   hovering,
-}) => {
+}: Props) => {
   function canSwap(d1: Date) {
     return dayDetails !== undefined;
   }
 
-  const [{ isOver, canDrop, droppedItem }, drop] = useDrop({
+  const [{ isOver, canDrop }, drop] = useDrop({
     accept: ItemTypes.DAY,
     canDrop: () => canSwap(date),
-    drop: () => {
-      swap(date, droppedItem.date);
+    drop: (item: { date: Date }) => {
+      swap(date, item.date);
       return;
     },
     collect: (monitor) => ({

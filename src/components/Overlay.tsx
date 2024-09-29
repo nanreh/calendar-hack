@@ -1,10 +1,6 @@
 import React from "react";
 
-export interface OverlayProps {
-  color: string;
-}
-
-export const Overlay: React.FC<OverlayProps> = ({ color }) => {
+export const Overlay = ({ color }: { color: string }) => {
   return (
     <div
       style={{

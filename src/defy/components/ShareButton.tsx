@@ -6,8 +6,6 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import copy from "copy-to-clipboard";
 
-interface Props {}
-
 const Root = styled.div`
   border-radius: 50%;
   padding: 3px;
@@ -23,7 +21,7 @@ const Root = styled.div`
   }
 `;
 
-const ShareButton: React.FC<Props> = () => {
+const ShareButton = () => {
   const themeContext = useContext(ThemeContext);
 
   const shareLink = (): void => {

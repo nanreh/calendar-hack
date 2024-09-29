@@ -1,12 +1,11 @@
 import * as React from "react";
-import { Week } from "../ch/dategrid";
-import { Units } from "../defy/models";
-import { DayDetails, RacePlan } from "../ch/models";
 import styled from "styled-components";
 import { renderDist, getWeekDistance } from "../ch/rendering";
 import StartIcon from "../svg/icons02/start.svg";
 import FinishIcon from "../svg/icons02/finish.svg";
 import HighMileageIcon from "../svg/highMileage.svg";
+import { RacePlan } from "../ch/dategrid";
+import { Week, DayDetails, Units } from "types/app";
 
 interface Props {
   desc: string;
@@ -44,15 +43,13 @@ const Icon = styled.img`
   }
 `;
 
-export const WeekSummary: React.FC<Props> = ({
-  desc,
+export const WeekSummary = ({
   week,
   units,
-  racePlan,
   isFirstWeek,
   isLastWeek,
   isHighestMileage,
-}) => {
+}: Props) => {
   const distance = getWeekDistance(week, units);
   return (
     <Root key={"week:" + week.weekNum}>

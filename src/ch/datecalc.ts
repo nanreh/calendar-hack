@@ -5,15 +5,8 @@ import {
   startOfDay,
   differenceInCalendarDays,
 } from "date-fns";
-import { dayOfWeek } from "./dategrid";
 
-export interface PlanDates {
-  start: Date; // first day of first week we will render
-  planStartDate: Date; // day the race plan will start
-  planEndDate: Date; // day the race plan will end
-  end: Date; // last day of the last week we will render
-  weekCount: number;
-}
+import { dayOfWeek, PlanDates } from "types/app";
 
 export const WeekStartsOnValues = {
   Sunday: 0,

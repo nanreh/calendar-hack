@@ -1,13 +1,13 @@
 import React from "react";
-import { Units } from "../defy/models";
 import { ControlCard, ControlTitle } from "./ControlCard";
+import { Units } from "types/app";
 
 interface Props {
   units: Units;
   unitsChangeHandler: (u: Units) => void;
 }
 
-const UnitsPicker: React.FC<Props> = ({ units, unitsChangeHandler }) => {
+const UnitsPicker = ({ units, unitsChangeHandler }: Props) => {
   const handleChangeFn = (event: React.FormEvent<HTMLInputElement>) => {
     const newSelection = "mi" === event.currentTarget.value ? "mi" : "km";
     unitsChangeHandler(newSelection);

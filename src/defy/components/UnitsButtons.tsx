@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { Radio } from "./Radios";
-import { Units } from "../models";
+import { Units } from "types/app";
 
 interface Props {
   units: Units;
@@ -17,7 +17,7 @@ const Root = styled.div`
   font-size: 18px;
 `;
 
-const UnitsButtons: React.FC<Props> = ({ units, unitsChangeHandler }) => {
+const UnitsButtons = ({ units, unitsChangeHandler }: Props) => {
   const themeContext = useContext(ThemeContext);
 
   const changeCb = (event: React.FormEvent<HTMLInputElement>) => {

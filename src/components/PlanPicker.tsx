@@ -1,21 +1,21 @@
 import React from "react";
-import { AvailablePlan } from "../ch/planrepo";
 import Select from "../defy/components/Select";
+import { PlanSummary } from "types/app";
 
 interface Props {
-  availablePlans: Array<AvailablePlan>;
-  selectedPlan: AvailablePlan;
-  planChangeHandler: (p: AvailablePlan) => void;
+  availablePlans: PlanSummary[];
+  selectedPlan: PlanSummary;
+  planChangeHandler: (p: PlanSummary) => void;
 }
 
-const PlanPicker: React.FC<Props> = ({
+const PlanPicker = ({
   availablePlans,
   selectedPlan,
   planChangeHandler,
-}) => {
+}: Props) => {
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const newSelection = availablePlans.find(
-      (p) => p.name === (event.target.value as string)
+      (p) => p[1] === (event.target.value as string)
     );
     if (newSelection) {
       planChangeHandler(newSelection);
@@ -25,13 +25,13 @@ const PlanPicker: React.FC<Props> = ({
   };
 
   const planOptions = availablePlans.map((ap) => (
-    <option key={ap.name} value={ap.name}>
-      ({ap.type}) {ap.name}
+    <option key={ap[1]} value={ap[1]}>
+      ({ap[2]}) {ap[1]}
     </option>
   ));
 
   return (
-    <Select value={selectedPlan.name} onChange={handleChange}>
+    <Select value={selectedPlan[1]} onChange={handleChange}>
       {planOptions}
     </Select>
   );

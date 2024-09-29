@@ -1,299 +1,53 @@
 import fetch from "cross-fetch";
-import { RaceType, Units } from "../defy/models";
-import { Tags } from "./models";
 import { Config } from "./config";
+import { plans } from "./planList";
+import { PlanSummary, TrainingPlan } from "types/app";
 
-export interface AvailablePlan {
-  url: string;
-  id: string;
-  name: string;
-  type: RaceType;
+function url(summary: PlanSummary) {
+  return Config.plansPath + summary[0] + ".json";
 }
-
-export interface PlannedWorkout {
-  title: string;
-  description: string;
-  tags: Tags[];
-  distance: number;
-  units: Units;
-}
-
-export interface WeekSchedule {
-  description: string | undefined;
-  workouts: PlannedWorkout[]; // guaranteed to be length 7
-}
-
-export interface TrainingPlan {
-  id: string;
-  name: string;
-  description: string;
-  units: Units;
-  type: RaceType;
-  schedule: WeekSchedule[];
-  source: string;
-}
-
-export const availablePlans: AvailablePlan[] = [
-  {
-    url: Config.plansPath + "c25k.json",
-    id: "c25k",
-    name: "Couch to 5K",
-    type: "5K",
-  },
-  {
-    url: Config.plansPath + "c25k_rbp.json",
-    id: "c25k_rbp",
-    name: "Couch to 5K -- Runner's Blueprint",
-    type: "5K",
-  },
-  {
-    url: Config.plansPath + "frr_5k_01.json",
-    id: "frr_5k_01",
-    name: "Faster Road Racing: 5K Schedule 1",
-    type: "5K",
-  },
-  {
-    url: Config.plansPath + "frr_5k_02.json",
-    id: "frr_5k_02",
-    name: "Faster Road Racing: 5K Schedule 2",
-    type: "5K",
-  },
-  {
-    url: Config.plansPath + "frr_5k_03.json",
-    id: "frr_5k_03",
-    name: "Faster Road Racing: 5K Schedule 3",
-    type: "5K",
-  },
-  {
-    url: Config.plansPath + "frr_8k10k_01.json",
-    id: "frr_8k10k_01",
-    name: "Faster Road Racing: 8K-10K Schedule 1",
-    type: "10K",
-  },
-  {
-    url: Config.plansPath + "frr_8k10k_02.json",
-    id: "frr_8k10k_02",
-    name: "Faster Road Racing: 8K-10K Schedule 2",
-    type: "10K",
-  },
-  {
-    url: Config.plansPath + "frr_8k10k_03.json",
-    id: "frr_8k10k_03",
-    name: "Faster Road Racing: 8K-10K Schedule 3",
-    type: "10K",
-  },
-  {
-    url: Config.plansPath + "frr_15k_10m_01.json",
-    id: "frr_15k_10m_01",
-    name: "Faster Road Racing: 15k and 10 Miles Schedule 1",
-    type: "15K/10M",
-  },
-  {
-    url: Config.plansPath + "frr_bt_01.json",
-    id: "frr_bt_01",
-    name: "Faster Road Racing: Base Training 1",
-    type: "Base",
-  },
-  {
-    url: Config.plansPath + "frr_bt_02.json",
-    id: "frr_bt_02",
-    name: "Faster Road Racing: Base Training 2",
-    type: "Base",
-  },
-  {
-    url: Config.plansPath + "frr_bt_03.json",
-    id: "frr_bt_03",
-    name: "Faster Road Racing: Base Training 3",
-    type: "Base",
-  },
-  {
-    url: Config.plansPath + "pfitz_half_12_47.json",
-    id: "pfitz_half_12_47",
-    name: "Faster Road Racing: Half Marathon Schedule 1, 31 to 47 miles per Week",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_half_12_63.json",
-    id: "pfitz_half_12_63",
-    name: "Faster Road Racing: Half Marathon Schedule 2, 46 to 63 miles per Week",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "hansons_c210k.json",
-    id: "hansons_c210k",
-    name: "Hansons Couch Potato to 10k",
-    type: "10K",
-  },
-  {
-    url: Config.plansPath + "hansons_adv_half.json",
-    id: "hansons_adv_half",
-    name: "Hansons Advanced Half Marathon",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "hansons_beg_half.json",
-    id: "hansons_beg_half",
-    name: "Hansons Beginner Half Marathon",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_adv_mara1.json",
-    id: "higdon_adv_mara1",
-    name: "Hal Higdon: Advanced 1",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_adv_mara2.json",
-    id: "higdon_adv_mara2",
-    name: "Hal Higdon: Advanced 2",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_int_mara1.json",
-    id: "higdon_int_mara1",
-    name: "Hal Higdon: Intermediate 1",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_int_mara2.json",
-    id: "higdon_int_mara2",
-    name: "Hal Higdon: Intermediate 2",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_nov_mara1.json",
-    id: "higdon_nov_mara1",
-    name: "Hal Higdon: Novice 1",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_nov_mara2.json",
-    id: "higdon_nov_mara2",
-    name: "Hal Higdon: Novice 2",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_mara3.json",
-    id: "higdon_mara3",
-    name: "Hal Higdon: Marathon 3",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_half3.json",
-    id: "higdon_half3",
-    name: "Hal Higdon: Half Marathon 3",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_int_half1.json",
-    id: "higdon_int_half1",
-    name: "Hal Higdon: Half Marathon Intermediate 1",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_int_half2.json",
-    id: "higdon_int_half1",
-    name: "Hal Higdon: Half Marathon Intermediate 2",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "higdon_nov_half1.json",
-    id: "higdon_nov_half1",
-    name: "Hal Higdon: Half Marathon Novice 1",
-    type: "Half Marathon",
-  },
-  {
-    url: Config.plansPath + "hansons_adv_mara.json",
-    id: "hansons_adv_mara",
-    name: "Hansons Advanced Marathon",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "hansons_beg_mara.json",
-    id: "hansons_beg_mara",
-    name: "Hansons Beginner Marathon",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_12_55.json",
-    id: "pfitz_12_55",
-    name: "Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_12_70.json",
-    id: "pfitz_12_70",
-    name: "Pfitzinger/Douglas: 55 to 70 Miles per Week, 12-week schedule",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_18_55.json",
-    id: "pfitz_18_55",
-    name: "Pfitzinger/Douglas: Up to 55 miles per week, 18-week schedule",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_18_70.json",
-    id: "pfitz_18_70",
-    name: "Pfitzinger/Douglas: 55 to 70 Miles per Week, 18-week schedule",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_18_85.json",
-    id: "pfitz_18_85",
-    name: "Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_18_107.json",
-    id: "pfitz_18_107",
-    name: "Pfitzinger/Douglas: 80 to 107 Miles per Week, 18-week schedule",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_multi_4.json",
-    id: "pfitz_multi_4",
-    name: "Pfitzinger/Douglas: Multiple Marathons, 4 Weeks Between Marathons",
-    type: "Marathon",
-  },
-  {
-    url: Config.plansPath + "pfitz_55_recovery.json",
-    id: "pfitz_55_recovery",
-    name: "Pfitzinger/Douglas: Marathon up to 55 Miles - 5 Week Recovery Block",
-    type: "Marathon",
-  },
-];
-
-var initialMap: { [id: string]: AvailablePlan } = {};
-export const availablePlansById = availablePlans.reduce(function (m, p) {
-  m[p.id] = p;
-  return m;
-}, initialMap);
 
 // A repository of training plans. Fetches plans on demand and caches them in memory.
 class PlanRepo {
   private readonly _cache = new Map<string, TrainingPlan>();
-  private readonly _available: AvailablePlan[];
-  constructor(available: AvailablePlan[]) {
+  private readonly _available: PlanSummary[];
+  private readonly _byId: { [id: string]: PlanSummary };
+
+  constructor(available: PlanSummary[]) {
     this._available = available;
+
+    var initialMap: { [id: string]: PlanSummary } = {};
+    this._byId = plans.reduce(function (m, p) {
+      m[p[0]] = p;
+      return m;
+    }, initialMap);
   }
 
-  get available(): AvailablePlan[] {
+  get available(): PlanSummary[] {
     return this._available;
   }
 
-  // For testing
-  isCached(a: AvailablePlan): boolean {
-    return this._cache.has(a.url);
+  find(planId: string): PlanSummary {
+    return this._byId[planId] ? this._byId[planId] : this.first;
   }
 
-  async fetch(a: AvailablePlan): Promise<TrainingPlan> {
-    return await fetchWithCache(a.url, this._cache);
+  get first(): PlanSummary {
+    return this._available[0];
+  }
+
+  // For testing
+  isCached(a: PlanSummary): boolean {
+    return this._cache.has(url(a));
+  }
+
+  async fetch(a: PlanSummary): Promise<TrainingPlan> {
+    console.log("FETCH: " + JSON.stringify(a) + " " + url(a));
+    return await fetchWithCache(url(a), this._cache);
   }
 }
 
 // Fetch a T from a URL.
-export async function fetchFromUrl<T>(url: string): Promise<T> {
+async function fetchFromUrl<T>(url: string): Promise<T> {
   const res = await fetch(url);
   if (!res.ok) {
     const error = await res.json();
@@ -304,7 +58,7 @@ export async function fetchFromUrl<T>(url: string): Promise<T> {
 }
 
 // Fetch a T from a URL, use the provided cache.
-export async function fetchWithCache<T>(
+async function fetchWithCache<T>(
   url: string,
   cache: Map<string, T>
 ): Promise<T> {
@@ -325,4 +79,4 @@ export async function fetchWithCache<T>(
   return res;
 }
 
-export { PlanRepo };
+export const repo = new PlanRepo(plans);

@@ -1,9 +1,6 @@
 import { eachDayOfInterval, format } from "date-fns";
 import { register, unregister } from "timezone-mock";
-import { calcPlanDates, PlanDates, WeekStartsOnValues } from "./datecalc";
-import { DateGrid } from "./dategrid";
-import { toDate, toIcal } from "./icalservice";
-import { RacePlan } from "./models";
+import { toDate } from "./icalservice";
 
 beforeAll(() => {
   register("Europe/London");

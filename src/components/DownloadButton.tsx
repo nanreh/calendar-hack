@@ -28,7 +28,7 @@ const Root = styled.div`
   }
 `;
 
-const DownloadButton: React.FC<Props> = ({ downloadHandler }) => {
+const DownloadButton = ({ downloadHandler }: Props) => {
   const themeContext = useContext(ThemeContext);
 
   const onClick = (e: React.MouseEvent<HTMLElement>) => {

@@ -1,14 +1,7 @@
 import React, { useState } from "react";
-import { Units } from "./defy/models";
-import { RacePlan } from "./ch/models";
-import {
-  PlanRepo,
-  availablePlans,
-  availablePlansById,
-  AvailablePlan,
-} from "./ch/planrepo";
+import { repo } from "./ch/planrepo";
 import { endOfWeek, addWeeks, isAfter } from "date-fns";
-import { dayOfWeek } from "./ch/dategrid";
+import { RacePlan } from "./ch/dategrid";
 import { build, swap, swapDow } from "./ch/planbuilder";
 import { CalendarGrid } from "./components/CalendarGrid";
 import { ThemeProvider } from "styled-components";
@@ -30,8 +23,7 @@ import { PlanDetailsCard } from "./components/PlanDetailsCard";
 import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
 import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
-
-const planRepo = new PlanRepo(availablePlans);
+import { Units, PlanSummary, dayOfWeek } from "types/app";
 
 const theme = {
   colors: {
@@ -84,7 +76,7 @@ const UnitsDiv = styled.div`
   }
 `;
 
-const App: React.FC = () => {
+const App = () => {
   const [{ u, p, d, s }, setq] = useQueryParams({
     u: StringParam,
     p: StringParam,
@@ -94,9 +86,7 @@ const App: React.FC = () => {
   const [selectedUnits, setSelectedUnits] = useState<Units>(
     u === "mi" || u === "km" ? u : "mi"
   );
-  var [selectedPlan, setSelectedPlan] = useState(
-    p && availablePlansById[p] ? availablePlansById[p] : availablePlans[0]
-  );
+  var [selectedPlan, setSelectedPlan] = useState(repo.find(p || ""));
   var [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
   var [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
   var [weekStartsOn, setWeekStartsOn] = useState<WeekStartsOn>(
@@ -122,36 +112,32 @@ const App: React.FC = () => {
 
   const getParams = (
     units: Units,
-    plan: AvailablePlan,
+    plan: PlanSummary,
     date: Date,
     weekStartsOn: WeekStartsOn
   ) => {
     return {
       u: units,
-      p: plan.id,
+      p: plan[0],
       d: date,
       s: weekStartsOn,
     };
   };
 
   const initialLoad = async (
-    plan: AvailablePlan,
+    plan: PlanSummary,
     endDate: Date,
     units: Units,
     weekStartsOn: WeekStartsOn
   ) => {
-    const racePlan = build(await planRepo.fetch(plan), endDate, weekStartsOn);
+    const racePlan = build(await repo.fetch(plan), endDate, weekStartsOn);
     setRacePlan(racePlan);
     setUndoHistory([...undoHistory, racePlan]);
     setq(getParams(units, plan, endDate, weekStartsOn));
   };
 
-  const onSelectedPlanChange = async (plan: AvailablePlan) => {
-    const racePlan = build(
-      await planRepo.fetch(plan),
-      planEndDate,
-      weekStartsOn
-    );
+  const onSelectedPlanChange = async (plan: PlanSummary) => {
+    const racePlan = build(await repo.fetch(plan), planEndDate, weekStartsOn);
     setSelectedPlan(plan);
     setRacePlan(racePlan);
     setUndoHistory([racePlan]);
@@ -159,11 +145,7 @@ const App: React.FC = () => {
   };
 
   const onSelectedEndDateChange = async (date: Date) => {
-    const racePlan = build(
-      await planRepo.fetch(selectedPlan),
-      date,
-      weekStartsOn
-    );
+    const racePlan = build(await repo.fetch(selectedPlan), date, weekStartsOn);
     setPlanEndDate(date);
     setRacePlan(racePlan);
     setUndoHistory([racePlan]);
@@ -176,7 +158,7 @@ const App: React.FC = () => {
   };
 
   const onWeekStartsOnChanged = async (v: WeekStartsOn) => {
-    const racePlan = build(await planRepo.fetch(selectedPlan), planEndDate, v);
+    const racePlan = build(await repo.fetch(selectedPlan), planEndDate, v);
     setWeekStartsOn(v);
     setRacePlan(racePlan);
     setUndoHistory([racePlan]);
@@ -196,14 +178,6 @@ const App: React.FC = () => {
       const newRacePlan = swapDow(racePlan, dow1, dow2);
       setRacePlan(newRacePlan);
       setUndoHistory([...undoHistory, newRacePlan]);
-    }
-  }
-
-  function swapWeeks(w1: number, w2: number): void {
-    if (racePlan) {
-      racePlan.dateGrid.swapWeeks(w1, w2);
-      setRacePlan(racePlan);
-      setUndoHistory([...undoHistory, racePlan]);
     }
   }
 
@@ -228,7 +202,7 @@ const App: React.FC = () => {
       <Toolbar downloadHandler={downloadHandler} />
       <PlanAndDate
         units={selectedUnits}
-        availablePlans={availablePlans}
+        availablePlans={repo.available}
         selectedPlan={selectedPlan}
         selectedDate={planEndDate}
         dateChangeHandler={onSelectedEndDateChange}
@@ -264,9 +238,8 @@ const App: React.FC = () => {
             racePlan={racePlan}
             units={selectedUnits}
             weekStartsOn={weekStartsOn}
-            swap={swapDates}
+            swapDates={swapDates}
             swapDow={doSwapDow}
-            swapWeeks={swapWeeks}
           />
         )}
       </MainUI>

@@ -1,10 +1,10 @@
 import React from "react";
-import { AvailablePlan } from "../ch/planrepo";
 import { format } from "date-fns";
 import styled from "styled-components";
+import { TrainingPlan } from "types/app";
 
 interface Props {
-  selectedPlan: AvailablePlan;
+  selectedPlan: TrainingPlan;
   endDate: Date;
 }
 
@@ -17,7 +17,7 @@ const Root = styled.div`
   background-color: #f8f9fa;
 `;
 
-const PlanSummary: React.FC<Props> = ({ selectedPlan, endDate }) => {
+const PlanSummary = ({ selectedPlan, endDate }: Props) => {
   return (
     <Root>
       <h2>{selectedPlan.name}</h2>

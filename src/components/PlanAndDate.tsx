@@ -1,17 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { DateControl } from "./DateControl";
-import { Units } from "../defy/models";
 import PlanPicker from "./PlanPicker";
-import { AvailablePlan } from "../ch/planrepo";
+import { Units, PlanSummary } from "types/app";
 
 interface Props {
   units: Units;
-  availablePlans: AvailablePlan[];
-  selectedPlan: AvailablePlan;
+  availablePlans: PlanSummary[];
+  selectedPlan: PlanSummary;
   selectedDate: Date;
   dateChangeHandler: (d: Date) => void;
-  selectedPlanChangeHandler: (p: AvailablePlan) => void;
+  selectedPlanChangeHandler: (p: PlanSummary) => void;
   unitsChangeHandler: (u: Units) => void;
   downloadHandler: () => void;
 }
@@ -34,16 +33,13 @@ const Root = styled.div`
   }
 `;
 
-const PlanAndDate: React.FC<Props> = ({
-  units,
-  unitsChangeHandler,
+const PlanAndDate = ({
   selectedPlan,
   selectedPlanChangeHandler,
   availablePlans,
   selectedDate,
   dateChangeHandler,
-  downloadHandler,
-}) => {
+}: Props) => {
   return (
     <Root>
       <PlanPicker

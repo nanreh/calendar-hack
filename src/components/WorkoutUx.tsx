@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
+type CardProps = {
+  $isDragging: boolean;
+};
+
+export const Card = styled.div<CardProps>`
   height: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 0.25rem;
   background-color: ${(props) => props.theme.colors.workoutCardBg};
+  opacity: ${(props) => (props.$isDragging ? .5 : 1)};
 `;
 
 export const Content = styled.div`

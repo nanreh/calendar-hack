@@ -26,10 +26,7 @@ const Title = styled.h3`
   color: ${(props) => props.theme.colors.buttonBg};
 `;
 
-const WeekStartsOnPicker: React.FC<Props> = ({
-  weekStartsOn,
-  changeHandler,
-}) => {
+const WeekStartsOnPicker = ({ weekStartsOn, changeHandler }: Props) => {
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const newValue = Number(event.target.value) as WeekStartsOn;
     changeHandler(newValue);
