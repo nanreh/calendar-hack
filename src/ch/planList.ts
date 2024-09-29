@@ -50,6 +50,7 @@ export const plans: PlanSummary[] = [
     "Half Marathon",
   ],
   ["higdon_nov_half1", "Hal Higdon: Half Marathon Novice 1", "Half Marathon"],
+  ["higdon_nov_half2", "Hal Higdon: Half Marathon Novice 2", "Half Marathon"],
   ["hansons_adv_mara", "Hansons Advanced Marathon", "Marathon"],
   ["hansons_beg_mara", "Hansons Beginner Marathon", "Marathon"],
   [

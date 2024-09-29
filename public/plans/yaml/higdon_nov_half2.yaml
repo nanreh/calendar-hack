@@ -1,0 +1,156 @@
+id: higdon_nov_half1
+name: 'Hal Higdon: Half Marathon Novice 2'
+description: 'Hal Higdon: Half Marathon Novice 2 fills the gap between the
+former Novice (now Novice 1) half marathon program and the Intermediate programs.
+Pace runs in the plan are  at the pace you plan to run in the race you’re
+training for.'
+units: mi
+source: https://www.halhigdon.com/training-programs/half-marathon-training/novice-2-half-marathon/
+type: Half Marathon
+schedule:
+- workouts: # week 1
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: 60 min cross
+- workouts: # week 2
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{3:4.8} pace'
+    distance: 3.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: 60 min cross
+- workouts: # week 3
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{6:9.7} run'
+    distance: 6.0
+  - title: 60 min cross
+- workouts: # week 4
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{4:6.4} pace'
+    distance: 4.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{7:11.3} run'
+    distance: 7.0
+  - title: 60 min cross
+- workouts: # week 5
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{8:12.9} run'
+    distance: 8.0
+  - title: 60 min cross
+- workouts: # week 6
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{4:6.4} pace'
+    distance: 4.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '5K race'
+    distance: 3.1
+  - title: 60 min cross
+- workouts: # week 7
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{9:14.5} run'
+    distance: 9.0
+  - title: 60 min cross
+- workouts: # week 8
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} pace'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{10:16.1} run'
+    distance: 10.0
+  - title: 60 min cross
+- workouts: # week 9
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '10K race'
+    distance: 6.2
+  - title: 60 min cross
+- workouts: # week 10
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} pace'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{11:17.7} run'
+    distance: 11.0
+  - title: 60 min cross
+- workouts: # week 11
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{5:8.1} run'
+    distance: 5.0
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: Rest
+  - title: '{12:19.3} run'
+    distance: 12.0
+  - title: 60 min cross
+- workouts: # week 12
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: Rest
+  - title: Rest
+  - title: |-
+      Half Marathon
+      ({13.1:21.1})
+    distance: 13.1
