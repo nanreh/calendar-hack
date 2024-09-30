@@ -6,7 +6,7 @@
   "dependencies": {
     "copy-to-clipboard": "3.3.3",
     "cross-fetch": "4.0.0",
-    "date-fns": "2.30.0",
+    "date-fns": "4.1.0",
     "history": "4.10.1",
     "ics": "3.5.0",
     "moo": "0.5.2",
