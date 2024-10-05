@@ -4189,7 +4189,7 @@ dnd-core@^16.0.1:
     "@react-dnd/invariant" "^4.0.1"
     redux "^4.2.0"
 
-dnd-multi-backend@^8.0.2:
+dnd-multi-backend@^8.0.2, dnd-multi-backend@^8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/dnd-multi-backend/-/dnd-multi-backend-8.0.3.tgz#2cc8121ad2b6e6164e3044be9ffdfe994ab6bdb0"
   integrity sha512-yFFARotr+OEJk787Fsj+V52pi6j7+Pt/CRp3IR2Ai3fnxA/z6J54T7+gxkXzXu4cvxTNE7NiBzzAaJ2f7JjFTw==
@@ -8311,12 +8311,12 @@ raw-body@2.5.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-rdndmb-html5-to-touch@8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/rdndmb-html5-to-touch/-/rdndmb-html5-to-touch-8.0.2.tgz#9f3fe6989db11e54dafecc1e8a9bed59b2628d58"
-  integrity sha512-OH1C7s77DrUVoeUdzjPLKQwCGm7LuSHWVMIkncfOglH4s8caupQPIqQfHqQzd+YrvG7SxlFqTbDjy60DBMJivQ==
+rdndmb-html5-to-touch@8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/rdndmb-html5-to-touch/-/rdndmb-html5-to-touch-8.0.3.tgz#dca0dd429520650a298f961a75dedd63d59808ad"
+  integrity sha512-VfIbLjlL9NAnZzc2M5fGPCNkDyK12+ahgILGO5RjS7jkgUlxwB0c/XvxVQNfY/2ocg7isTY/G7tqxJk5fSTZAA==
   dependencies:
-    dnd-multi-backend "^8.0.2"
+    dnd-multi-backend "^8.0.3"
     react-dnd-html5-backend "^16.0.1"
     react-dnd-touch-backend "^16.0.1"
 
