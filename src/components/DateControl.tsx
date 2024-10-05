@@ -3,7 +3,7 @@ import styled from "styled-components";
 import DatePicker from "react-datepicker";
 import { registerLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { enGB } from "date-fns/esm/locale";
+import { enGB } from "date-fns/locale";
 import { Button } from "./Button";
 
 interface Props {
