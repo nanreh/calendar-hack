@@ -41,7 +41,6 @@ class PlanRepo {
   }
 
   async fetch(a: PlanSummary): Promise<TrainingPlan> {
-    console.log("FETCH: " + JSON.stringify(a) + " " + url(a));
     return await fetchWithCache(url(a), this._cache);
   }
 }
@@ -64,18 +63,15 @@ async function fetchWithCache<T>(
 ): Promise<T> {
   // check in cache
   if (cache.has(url)) {
-    //console.log("Cache hit!");
     let result = cache.get(url);
     if (!result) {
       throw Error("Assertion error: cached object not found");
     }
     return result;
   }
-  //console.log(`Cache miss, fetching from: ${url}`);
   const res: T = await fetchFromUrl(url);
   // add to cache and resolve
   cache.set(url, res);
-  //console.log(`returning result from: ${url}`);
   return res;
 }
 

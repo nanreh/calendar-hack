@@ -48,7 +48,6 @@ export function build(
     raceDate,
     weekStartsOn
   );
-  //console.log(`planDates: ${JSON.stringify(planDates)}`)
   const workoutsToPlace = getWorkouts(trainingPlan);
   const map = new Map<Date, DayDetails>();
   eachDayOfInterval({
