@@ -1778,25 +1778,25 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@react-dnd/asap@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@react-dnd/asap/-/asap-4.0.0.tgz#b300eeed83e9801f51bd66b0337c9a6f04548651"
-  integrity sha512-0XhqJSc6pPoNnf8DhdsPHtUhRzZALVzYMTzRwV4VI6DJNJ/5xxfL9OQUwb8IH5/2x7lSf7nAZrnzUD+16VyOVQ==
-
 "@react-dnd/asap@4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@react-dnd/asap/-/asap-4.0.1.tgz#5291850a6b58ce6f2da25352a64f1b0674871aab"
   integrity sha512-kLy0PJDDwvwwTXxqTFNAAllPHD73AycE9ypWeln/IguoGBEbvFcPDbCV03G52bEcC5E+YgupBE0VzHGdC8SIXg==
 
-"@react-dnd/invariant@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@react-dnd/invariant/-/invariant-3.0.0.tgz#ea55db612b8be3284e87b67f1a1567595cd4c386"
-  integrity sha512-keberJRIqPX15IK3SWS/iO1t/kGETiL1oczKrDitAaMnQ+kpHf81l3MrRmFjvfqcnApE+izEvwM6GsyoIcpsVA==
+"@react-dnd/asap@^5.0.1":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@react-dnd/asap/-/asap-5.0.2.tgz#1f81f124c1cd6f39511c11a881cfb0f715343488"
+  integrity sha512-WLyfoHvxhs0V9U+GTsGilGgf2QsPl6ZZ44fnv0/b8T3nQyvzxidxsg/ZltbWssbsRDlYW8UKSQMTGotuTotZ6A==
 
 "@react-dnd/invariant@3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@react-dnd/invariant/-/invariant-3.0.1.tgz#7e70be19ea21b539e8bf1da28466f4f05df2a4cc"
   integrity sha512-blqduwV86oiKw2Gr44wbe3pj3Z/OsXirc7ybCv9F/pLAR+Aih8F3rjeJzK0ANgtYKv5lCpkGVoZAeKitKDaD/g==
+
+"@react-dnd/invariant@^4.0.1":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@react-dnd/invariant/-/invariant-4.0.2.tgz#b92edffca10a26466643349fac7cdfb8799769df"
+  integrity sha512-xKCTqAK/FFauOM9Ta2pswIyT3D8AQlfrYdOi/toTPEhqCuAs1v5tcJ3Y08Izh1cJ5Jchwy9SeAXmMg6zrKs2iw==
 
 "@react-dnd/shallowequal@3.0.1":
   version "3.0.1"
@@ -4171,15 +4171,6 @@ dlv@^1.1.3:
   resolved "https://registry.yarnpkg.com/dlv/-/dlv-1.1.3.tgz#5c198a8a11453596e751494d49874bc7732f2e79"
   integrity sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==
 
-dnd-core@15.1.1:
-  version "15.1.1"
-  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-15.1.1.tgz#b4dce2d892be2a7c9ca32ffdd545350be8d52f4f"
-  integrity sha512-Mtj/Sltcx7stVXzeDg4g7roTe/AmzRuIf/FYOxX6F8gULbY54w066BlErBOzQfn9RIJ3gAYLGX7wvVvoBSq7ig==
-  dependencies:
-    "@react-dnd/asap" "4.0.0"
-    "@react-dnd/invariant" "3.0.0"
-    redux "^4.1.1"
-
 dnd-core@15.1.2:
   version "15.1.2"
   resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-15.1.2.tgz#0983bce555c4985f58b731ffe1faed31e1ea7f6f"
@@ -4189,10 +4180,19 @@ dnd-core@15.1.2:
     "@react-dnd/invariant" "3.0.1"
     redux "^4.1.2"
 
-dnd-multi-backend@^7.1.3:
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/dnd-multi-backend/-/dnd-multi-backend-7.1.3.tgz#401ba42bb4ee79246a966cd3c5bfafbc3ed6e57c"
-  integrity sha512-INOAt4p/5fkaAUpXu0I+ialm1Ewi9HmIhs/558RFrhBZ0s/XGL991w3A2GvBuaPQNsZJEzCJh0mv/0dswxfSfQ==
+dnd-core@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-16.0.1.tgz#a1c213ed08961f6bd1959a28bb76f1a868360d19"
+  integrity sha512-HK294sl7tbw6F6IeuK16YSBUoorvHpY8RHO+9yFfaJyCDVb6n7PRcezrOEOa2SBCqiYpemh5Jx20ZcjKdFAVng==
+  dependencies:
+    "@react-dnd/asap" "^5.0.1"
+    "@react-dnd/invariant" "^4.0.1"
+    redux "^4.2.0"
+
+dnd-multi-backend@^8.0.2:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/dnd-multi-backend/-/dnd-multi-backend-8.0.3.tgz#2cc8121ad2b6e6164e3044be9ffdfe994ab6bdb0"
+  integrity sha512-yFFARotr+OEJk787Fsj+V52pi6j7+Pt/CRp3IR2Ai3fnxA/z6J54T7+gxkXzXu4cvxTNE7NiBzzAaJ2f7JjFTw==
 
 dns-packet@^5.2.2:
   version "5.6.1"
@@ -8311,14 +8311,14 @@ raw-body@2.5.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-rdndmb-html5-to-touch@^7.1.3:
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/rdndmb-html5-to-touch/-/rdndmb-html5-to-touch-7.1.3.tgz#fd8f28f3dc45862e514a0e9ccc21670b5c5e06b8"
-  integrity sha512-B5sOPHiEKgJmhXnhgxdBu7lFMGx85rfuK6lcuVN/SG0ZrqytThu2Pm4xR8YOd4OAVdkdzLhSF5B/lLwILg7/ag==
+rdndmb-html5-to-touch@8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/rdndmb-html5-to-touch/-/rdndmb-html5-to-touch-8.0.2.tgz#9f3fe6989db11e54dafecc1e8a9bed59b2628d58"
+  integrity sha512-OH1C7s77DrUVoeUdzjPLKQwCGm7LuSHWVMIkncfOglH4s8caupQPIqQfHqQzd+YrvG7SxlFqTbDjy60DBMJivQ==
   dependencies:
-    dnd-multi-backend "^7.1.3"
-    react-dnd-html5-backend "12.1.1 - 15.1.2"
-    react-dnd-touch-backend "12.0.0 - 15.1.2"
+    dnd-multi-backend "^8.0.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dnd-touch-backend "^16.0.1"
 
 react-app-polyfill@^3.0.0:
   version "3.0.0"
@@ -8373,33 +8373,33 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-"react-dnd-html5-backend@12.1.1 - 15.1.2":
-  version "15.1.2"
-  resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-15.1.2.tgz#85e2c5ad57e87190495756f68f44fd89299062fb"
-  integrity sha512-mem9QbutUF+aA2YC1y47G3ECjnYV/sCYKSnu5Jd7cbg3fLMPAwbnTf/JayYdnCH5l3eg9akD9dQt+cD0UdF8QQ==
+react-dnd-html5-backend@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-16.0.1.tgz#87faef15845d512a23b3c08d29ecfd34871688b6"
+  integrity sha512-Wu3dw5aDJmOGw8WjH1I1/yTH+vlXEL4vmjk5p+MHxP8HuHJS1lAGeIdG/hze1AvNeXWo/JgULV87LyQOr+r5jw==
   dependencies:
-    dnd-core "15.1.1"
+    dnd-core "^16.0.1"
 
-react-dnd-multi-backend@^7.1.3:
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/react-dnd-multi-backend/-/react-dnd-multi-backend-7.1.3.tgz#224eec372d2853eed0c120de62c55396e1b1967a"
-  integrity sha512-Bv1OxopD2w8ffn1/6JPuinS6ZymRfub5l1Tgu36UC/zqS8nVSqftE4Y4l1DvUghyiq98DhY+wU1BqctqRzo+hQ==
+react-dnd-multi-backend@8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/react-dnd-multi-backend/-/react-dnd-multi-backend-8.0.2.tgz#d0bd16ca4cf86bf147edd55fe119a7c0fd3a1168"
+  integrity sha512-wETyP2OC8nT6YHK2gWeFWa5f4JR9/rkD5udIGtWvs1gZ9pzwVWRCwqwOf6T5BxKLYDZo80U4srLCZd7VU70+Vw==
   dependencies:
-    dnd-multi-backend "^7.1.3"
-    react-dnd-preview "^7.1.3"
+    dnd-multi-backend "^8.0.2"
+    react-dnd-preview "^8.0.1"
 
-react-dnd-preview@^7.1.3:
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/react-dnd-preview/-/react-dnd-preview-7.1.3.tgz#41b4ebb5661fc46a3d56a31b73936c11bb9e28e0"
-  integrity sha512-vw3olTs2MVLm8MXBTM6L/znFhXxJSsRafoYMJAnKem4R9OcpE66Ff6GBK8dRuSB8kmoIeu3XjKZUaniUJ4qNLQ==
+react-dnd-preview@^8.0.1:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/react-dnd-preview/-/react-dnd-preview-8.0.3.tgz#71f22ab64b43ddc7ed8a39bb9b03523ec0dba9e4"
+  integrity sha512-s69Ro47QYDthDhj73iQ0VioMCjtlZ1AytKBDkQaHKm5DTjA8D2bIaFKCBQd330QEW0SIzqLJrZGCSlIY2xraJg==
 
-"react-dnd-touch-backend@12.0.0 - 15.1.2":
-  version "15.1.2"
-  resolved "https://registry.yarnpkg.com/react-dnd-touch-backend/-/react-dnd-touch-backend-15.1.2.tgz#936833b66e024d8640b1845782cc059ff1aac2c0"
-  integrity sha512-BId7/CYC77XcC3xpI2pA5KL+ciG6kvhIveYNOVWIgm0NM8kqv18lVfvHF4faCBPWZTbRoZQe0F8yLmL89oE98A==
+react-dnd-touch-backend@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/react-dnd-touch-backend/-/react-dnd-touch-backend-16.0.1.tgz#e73f8169e2b9fac0f687970f875cac0a4d02d6e2"
+  integrity sha512-NonoCABzzjyWGZuDxSG77dbgMZ2Wad7eQiCd/ECtsR2/NBLTjGksPUx9UPezZ1nQ/L7iD130Tz3RUshL/ClKLA==
   dependencies:
-    "@react-dnd/invariant" "3.0.1"
-    dnd-core "15.1.2"
+    "@react-dnd/invariant" "^4.0.1"
+    dnd-core "^16.0.1"
 
 react-dnd@^15.1.2:
   version "15.1.2"
@@ -8570,7 +8570,7 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
-redux@^4.1.1, redux@^4.1.2:
+redux@^4.1.2, redux@^4.2.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.1.tgz#c08f4306826c49b5e9dc901dee0452ea8fce6197"
   integrity sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==
