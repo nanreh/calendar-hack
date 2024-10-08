@@ -209,6 +209,7 @@ const App = () => {
         selectedPlanChangeHandler={onSelectedPlanChange}
         unitsChangeHandler={onSelectedUnitsChanged}
         downloadHandler={downloadHandler}
+        weekStartsOn={weekStartsOn}
       />
       <SecondToolbar>
         <UnitsDiv>

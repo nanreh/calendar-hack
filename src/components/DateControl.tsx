@@ -5,10 +5,12 @@ import { registerLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { enGB } from "date-fns/locale";
 import { Button } from "./Button";
+import { WeekStartsOn } from "../ch/datecalc";
 
 interface Props {
   selectedDate: Date;
   onDateChanged: (date: Date) => void;
+  weekStartsOn: WeekStartsOn
 }
 interface ButtonProps {
   value: string;
@@ -41,7 +43,7 @@ export class DateControl extends React.Component<Props> {
     />
   );
   render() {
-    const { selectedDate, onDateChanged } = this.props;
+    const { selectedDate, onDateChanged, weekStartsOn } = this.props;
     return (
       <DatePickerWrapper>
         <DatePicker
@@ -49,6 +51,7 @@ export class DateControl extends React.Component<Props> {
           onChange={onDateChanged}
           locale="enGB"
           customInput={this.input}
+          calendarStartDay={weekStartsOn}
         />
       </DatePickerWrapper>
     );

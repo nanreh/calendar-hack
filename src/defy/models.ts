@@ -46,49 +46,41 @@ export const distances: { [key: string]: RaceDistance } = {
   Marathon: {
     name: "Marathon",
     distance: 42195,
-    worldRecord: toSeconds(2, 1, 39),
     defaultTime: toSeconds(2, 59, 59),
   }, //  2:01:39
   "Half Marathon": {
     name: "Half Marathon",
     distance: 21097.5,
-    worldRecord: toSeconds(0, 58, 1),
     defaultTime: toSeconds(1, 29, 59),
   }, // 58:01
   "5K": {
     name: "5K",
     distance: 5000,
-    worldRecord: toSeconds(0, 12, 51),
     defaultTime: toSeconds(0, 19, 59),
   }, //12:51
   "10K": {
     name: "10K",
     distance: 10000,
-    worldRecord: toSeconds(0, 26, 24),
     defaultTime: toSeconds(0, 39, 59),
   }, // 26:24
   "15K": {
     name: "15K",
     distance: 15000,
-    worldRecord: toSeconds(0, 41, 5),
     defaultTime: toSeconds(1, 2, 59),
   }, // 41:05
   "20K": {
     name: "20K",
     distance: 20000,
-    worldRecord: toSeconds(0, 55, 21),
     defaultTime: toSeconds(1, 24, 59),
   }, // 55:21
   "30K": {
     name: "30K",
     distance: 30000,
-    worldRecord: toSeconds(1, 26, 45),
     defaultTime: toSeconds(2, 7, 59),
   }, // 1:26:45
   "50K": {
     name: "50K",
     distance: 50000,
-    worldRecord: toSeconds(2, 43, 38),
     defaultTime: toSeconds(3, 44, 59),
   }, // 2:43:38
 };

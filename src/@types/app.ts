@@ -26,7 +26,6 @@ export type RaceType =
 export type RaceDistance = {
   name: string;
   distance: number;
-  worldRecord: number;
   defaultTime: number;
 };
 

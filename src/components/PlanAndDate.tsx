@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { DateControl } from "./DateControl";
 import PlanPicker from "./PlanPicker";
 import { Units, PlanSummary } from "types/app";
+import { WeekStartsOn } from "../ch/datecalc";
 
 interface Props {
   units: Units;
@@ -13,6 +14,7 @@ interface Props {
   selectedPlanChangeHandler: (p: PlanSummary) => void;
   unitsChangeHandler: (u: Units) => void;
   downloadHandler: () => void;
+  weekStartsOn: WeekStartsOn;
 }
 
 const Title = styled.h3`
@@ -39,6 +41,7 @@ const PlanAndDate = ({
   availablePlans,
   selectedDate,
   dateChangeHandler,
+  weekStartsOn,
 }: Props) => {
   return (
     <Root>
@@ -51,6 +54,7 @@ const PlanAndDate = ({
       <DateControl
         selectedDate={selectedDate}
         onDateChanged={dateChangeHandler}
+        weekStartsOn={weekStartsOn}
       />
     </Root>
   );
