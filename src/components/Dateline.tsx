@@ -1,11 +1,10 @@
 import * as React from "react";
-import { format } from "date-fns";
 import styled from "styled-components";
-import { DayDetails, Units } from "types/app";
+import { format } from "../ch/localize";
 
-export const DatelineStyle = styled.div`
+export const DatelineStyle = styled.div<Props>`
   text-align: center;
-  background-color: ${(props) => props.theme.colors.datelineBg};
+  background-color: ${(props) => props.$blank ? props.theme.colors.datelineBlankBg : props.theme.colors.datelineBg };
   color: ${(props) => props.theme.colors.datelineTxt};
   font-weight: 700;
   font-size: 0.8em;
@@ -13,15 +12,14 @@ export const DatelineStyle = styled.div`
 `;
 
 interface Props {
-  dayDetails: DayDetails;
-  date: Date;
-  units: Units;
+  $date: Date;
+  $blank?: boolean;
 }
 
-export const Dateline = ({ dayDetails, date, units }: Props) => {
+export const Dateline = ({ $date, $blank }: Props) => {
   return (
     <>
-      <DatelineStyle>{format(date, "M/d/yyyy")}</DatelineStyle>
+      <DatelineStyle $date={$date} $blank={$blank}>{format($date)}</DatelineStyle>
     </>
   );
 };

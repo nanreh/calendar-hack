@@ -1,5 +1,5 @@
 import React from "react";
-import { format } from "date-fns";
+import { format } from "../ch/localize";
 import styled from "styled-components";
 import { TrainingPlan } from "types/app";
 
@@ -21,7 +21,7 @@ const PlanSummary = ({ selectedPlan, endDate }: Props) => {
   return (
     <Root>
       <h2>{selectedPlan.name}</h2>
-      <h3>Ending on: {format(endDate, "MM/dd/yyyy")}</h3>
+      <h3>Ending on: {format(endDate)}</h3>
     </Root>
   );
 };

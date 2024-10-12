@@ -51,7 +51,7 @@ export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
       ref={preview}
     >
       <Card $isDragging={isDragging}>
-          <Dateline dayDetails={dayDetails} units={units} date={date} />
+          <Dateline $date={date} />
           <Content>
             <div ref={drag}>
               <DragHandle viewBox="0 0 32 36" />

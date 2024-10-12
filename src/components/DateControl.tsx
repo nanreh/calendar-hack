@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import DatePicker from "react-datepicker";
-import { registerLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { enGB } from "date-fns/locale";
 import { Button } from "./Button";
 import { WeekStartsOn } from "../ch/datecalc";
+import { format } from "../ch/localize";
 
 interface Props {
   selectedDate: Date;
@@ -13,11 +12,9 @@ interface Props {
   weekStartsOn: WeekStartsOn
 }
 interface ButtonProps {
-  value: string;
+  selectedDate: Date;
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
 }
-
-registerLocale("enGB", enGB);
 
 export const DatePickerWrapper = styled.div`
   z-index: 1000;
@@ -26,31 +23,36 @@ export const DatePickerWrapper = styled.div`
 // using a class component to avoid "Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?"
 class DateInputButton extends React.Component<ButtonProps> {
   render() {
-    return (
-      <Button onClick={this.props.onClick}>
-        <span>{this.props.value}</span>
-      </Button>
-    );
+        if (!this.props.selectedDate ) {
+            return <p></p>;
+        }
+        return (
+          <Button onClick={this.props.onClick}>
+            <span>{format(this.props.selectedDate)}</span>
+          </Button>
+        );
   }
 }
 
 // using a class component to avoid "Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?"
 export class DateControl extends React.Component<Props> {
-  private input = (
-    <DateInputButton
-      value="Date"
-      onClick={(e: React.MouseEvent<HTMLElement>) => {}}
-    />
-  );
+
   render() {
+    const input = (
+      <DateInputButton
+        selectedDate={this.props.selectedDate}
+        onClick={(e: React.MouseEvent<HTMLElement>) => {}}
+      />
+    );
+
     const { selectedDate, onDateChanged, weekStartsOn } = this.props;
     return (
       <DatePickerWrapper>
         <DatePicker
           selected={selectedDate}
           onChange={onDateChanged}
-          locale="enGB"
-          customInput={this.input}
+          dateFormat="P"
+          customInput={input}
           calendarStartDay={weekStartsOn}
         />
       </DatePickerWrapper>

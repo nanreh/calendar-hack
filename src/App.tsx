@@ -24,6 +24,7 @@ import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
 import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
 import { Units, PlanSummary, dayOfWeek } from "types/app";
+import { getLocaleUnits } from "./ch/localize";
 
 const theme = {
   colors: {
@@ -36,7 +37,9 @@ const theme = {
     dowHeaderBg: "#C2C5EB",
     weekSummaryBg: "#C2C5EB",
     workoutCardBg: "#E3F7F8",
+    workoutCardBlankBg: "#e9ecef",
     datelineBg: "#B391D2",
+    datelineBlankBg: "#beafd2",
     datelineTxt: "#424242",
     planDescriptionBg: "#E3F7F8",
     planDescriptionTxt: "#424242",
@@ -84,7 +87,7 @@ const App = () => {
     s: NumberParam,
   });
   const [selectedUnits, setSelectedUnits] = useState<Units>(
-    u === "mi" || u === "km" ? u : "mi"
+    u === "mi" || u === "km" ? u : getLocaleUnits()
   );
   var [selectedPlan, setSelectedPlan] = useState(repo.find(p || ""));
   var [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
