@@ -34,6 +34,11 @@ schedule:
       12 x 400m @ 5k-10k Pace w. 400m jog rest
       {1.5} Cool Down
       ({9})
+    description: |-
+      {1.5} Warm Up
+      12 x 400m @ 5k-10k Pace w. 400m jog rest
+      {1.5} Cool Down
+      ({9})
     distance: 9.0
   - title: Rest or Cross-Train
   - title: '{6} Easy'
@@ -52,9 +57,19 @@ schedule:
       8 x 600m @ 5k-10k Pace w. 400m jog rest
       {1.5} Cool Down
       ({8})
+    description: |-
+      {1.5} Warm Up
+      8 x 600m @ 5k-10k Pace w. 400m jog rest
+      {1.5} Cool Down
+      ({8})
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {6} Tempo @ Goal MP
+      {1} Cool Down
+      ({8})
+    description: |-
       {1} Warm Up
       {6} Tempo @ Goal MP
       {1} Cool Down
@@ -74,9 +89,19 @@ schedule:
       6 x 800m @ 5k-10k Pace w. 400m jog rest
       {1.5} Cool Down
       ({8})
+    description: |-
+      {1.5} Warm Up
+      6 x 800m @ 5k-10k Pace w. 400m jog rest
+      {1.5} Cool Down
+      ({8})
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {6} Tempo @ Goal MP
+      {1} Cool Down
+      ({8})
+    description: |-
       {1} Warm Up
       {6} Tempo @ Goal MP
       {1} Cool Down
@@ -96,9 +121,19 @@ schedule:
       5 x 1km @ 5k-10k Pace w. 400m jog rest
       {1.5} Cool Down
       ({8})
+    description: |-
+      {1.5} Warm Up
+      5 x 1km @ 5k-10k Pace w. 400m jog rest
+      {1.5} Cool Down
+      ({8})
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {6} Tempo @ Goal MP
+      {1} Cool Down
+      ({8})
+    description: |-
       {1} Warm Up
       {6} Tempo @ Goal MP
       {1} Cool Down
@@ -118,9 +153,19 @@ schedule:
       4 x 1200m @ 5k-10k Pace w. 400m jog rest
       {1.5} Cool Down
       ({8})
+    description: |-
+      {1.5} Warm Up
+      4 x 1200m @ 5k-10k Pace w. 400m jog rest
+      {1.5} Cool Down
+      ({8})
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {7} Tempo @ Goal MP
+      {1} Cool Down
+      ({9})
+    description: |-
       {1} Warm Up
       {7} Tempo @ Goal MP
       {1} Cool Down
@@ -140,9 +185,19 @@ schedule:
       3 x {1} @ 5k-10k Pace w. 800m jog rest
       {1.5} Cool Down
       ({8})
+    description: |-
+      {1.5} Warm Up
+      3 x {1} @ 5k-10k Pace w. 800m jog rest
+      {1.5} Cool Down
+      ({8})
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {7} Tempo @ Goal MP
+      {1} Cool Down
+      ({9})
+    description: |-
       {1} Warm Up
       {7} Tempo @ Goal MP
       {1} Cool Down
@@ -162,9 +217,19 @@ schedule:
       4 x 1200m @ 5k-10k Pace w. 400m jog rest
       {1.5} Cool Down
       ({8})
+    description: |-
+      {1.5} Warm Up
+      4 x 1200m @ 5k-10k Pace w. 400m jog rest
+      {1.5} Cool Down
+      ({8})
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {7} Tempo @ Goal MP
+      {1} Cool Down
+      ({9})
+    description: |-
       {1} Warm Up
       {7} Tempo @ Goal MP
       {1} Cool Down
@@ -184,9 +249,19 @@ schedule:
       5 x 1km @ 5k-10k Pace w. 400m jog rest
       {1.5} Cool Down
       ({8})
+    description: |-
+      {1.5} Warm Up
+      5 x 1km @ 5k-10k Pace w. 400m jog rest
+      {1.5} Cool Down
+      ({8})
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {8} Tempo @ Goal MP
+      {1} Cool Down
+      ({10})
+    description: |-
       {1} Warm Up
       {8} Tempo @ Goal MP
       {1} Cool Down
@@ -206,9 +281,19 @@ schedule:
       6 x 800m @ 5k-10k Pace w. 400m jog rest
       {1.5} Cool Down
       ({8})
+    description: |-
+      {1.5} Warm Up
+      6 x 800m @ 5k-10k Pace w. 400m jog rest
+      {1.5} Cool Down
+      ({8})
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {8} Tempo @ Goal MP
+      {1} Cool Down
+      ({10})
+    description: |-
       {1} Warm Up
       {8} Tempo @ Goal MP
       {1} Cool Down
@@ -228,9 +313,19 @@ schedule:
       6 x {1} @ MP - 10s w. 400m jog rest
       {1.5} Cool Down
       ({10.5})
+    description: |-
+      {1.5} Warm Up
+      6 x {1} @ MP - 10s w. 400m jog rest
+      {1.5} Cool Down
+      ({10.5})
     distance: 10.5
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {8} Tempo @ Goal MP
+      {1} Cool Down
+      ({10})
+    description: |-
       {1} Warm Up
       {8} Tempo @ Goal MP
       {1} Cool Down
@@ -250,9 +345,19 @@ schedule:
       4 x {1.5} @ MP - 10s w. 800m jog rest
       {1.5} Cool Down
       ({11})
+    description: |-
+      {1.5} Warm Up
+      4 x {1.5} @ MP - 10s w. 800m jog rest
+      {1.5} Cool Down
+      ({11})
     distance: 11.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {9} Tempo @ Goal MP
+      {1} Cool Down
+      ({11})
+    description: |-
       {1} Warm Up
       {9} Tempo @ Goal MP
       {1} Cool Down
@@ -272,9 +377,19 @@ schedule:
       3 x {2} @ MP - 10s w. 800m jog rest
       {1.5} Cool Down
       ({10.5})
+    description: |-
+      {1.5} Warm Up
+      3 x {2} @ MP - 10s w. 800m jog rest
+      {1.5} Cool Down
+      ({10.5})
     distance: 10.5
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {9} Tempo @ Goal MP
+      {1} Cool Down
+      ({11})
+    description: |-
       {1} Warm Up
       {9} Tempo @ Goal MP
       {1} Cool Down
@@ -294,9 +409,19 @@ schedule:
       2 x {3} @ MP - 10s w. {1} jog rest
       {1.5} Cool Down
       ({10})
+    description: |-
+      {1.5} Warm Up
+      2 x {3} @ MP - 10s w. {1} jog rest
+      {1.5} Cool Down
+      ({10})
     distance: 10.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {9} Tempo @ Goal MP
+      {1} Cool Down
+      ({11})
+    description: |-
       {1} Warm Up
       {9} Tempo @ Goal MP
       {1} Cool Down
@@ -316,9 +441,19 @@ schedule:
       3 x {2} @ MP - 10s w. 800m jog rest
       {1.5} Cool Down
       ({10.5})
+    description: |-
+      {1.5} Warm Up
+      3 x {2} @ MP - 10s w. 800m jog rest
+      {1.5} Cool Down
+      ({10.5})
     distance: 10.5
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {10} Tempo @ Goal MP
+      {1} Cool Down
+      ({10})
+    description: |-
       {1} Warm Up
       {10} Tempo @ Goal MP
       {1} Cool Down
@@ -338,9 +473,19 @@ schedule:
       4 x {1.5} @ MP - 10s w. 800m jog rest
       {1.5} Cool Down
       ({11})
+    description: |-
+      {1.5} Warm Up
+      4 x {1.5} @ MP - 10s w. 800m jog rest
+      {1.5} Cool Down
+      ({11})
     distance: 11.0
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {10} Tempo @ Goal MP
+      {1} Cool Down
+      ({12})
+    description: |-
       {1} Warm Up
       {10} Tempo @ Goal MP
       {1} Cool Down
@@ -360,9 +505,19 @@ schedule:
       6 x {1} @ MP - 10s w. 400m jog rest
       {1.5} Cool Down
       ({10.5})
+    description: |-
+      {1.5} Warm Up
+      6 x {1} @ MP - 10s w. 400m jog rest
+      {1.5} Cool Down
+      ({10.5})
     distance: 10.5
   - title: Rest or Cross-Train
   - title: |-
+      {1} Warm Up
+      {10} Tempo @ Goal MP
+      {1} Cool Down
+      ({12})
+    description: |-
       {1} Warm Up
       {10} Tempo @ Goal MP
       {1} Cool Down

@@ -25,8 +25,7 @@ schedule:
 - workouts:
   - title: Recovery {6} a.m. {5} p.m.
     distance: 11.0
-  - title: Recovery {4} / General aerobic + speed {10} w/ 10 x 100 m strides & 8 /
-      12 sec hill sprints
+  - title: Recovery {4} / General aerobic + speed {10} w/ 10 x 100 m strides & 8 12 sec hill sprints
     distance: 15.0
   - title: Medium-long run {13}
     distance: 13.0
@@ -56,8 +55,7 @@ schedule:
 - workouts:
   - title: Recovery {6} a.m. {6} p.m.
     distance: 12.0
-  - title: Recovery {4} A.M / General aerobic + speed {10} P.M with 8 x 12 sec hill
-      sprints & 8 x 100m strides
+  - title: Recovery {4} A.M / General aerobic + speed {10} P.M with 8 x 12 sec hill sprints & 8 x 100m strides
     distance: 14.0
   - title: Medium-long run {15}
     distance: 15.0
@@ -168,8 +166,7 @@ schedule:
     distance: 15.0
   - title: Recovery {6} a.m. {6} p.m.
     distance: 12.0
-  - title: Recovery {6} a.m Lactate threshold {12} p.m w/ {7} @ 15K to half marathon
-      race pace
+  - title: Recovery {6} a.m Lactate threshold {12} p.m w/ {7} @ 15K to half marathon race pace
     distance: 18.0
   - title: General aerobic {10}
     distance: 10.0
@@ -178,8 +175,7 @@ schedule:
 - workouts:
   - title: Recovery {6} a.m. {6} p.m.
     distance: 12.0
-  - title: Recovery {5} a.m / VO₂max {10} w/ 6 x 1,000 m @ 5K race pace; jog 50 to
-      90% interval time between
+  - title: Recovery {5} a.m / VO₂max {10} w/ 6 x 1,000 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 15.0
   - title: Recovery {5} a.m Medium-long run {15} p.m
     distance: 20.0
@@ -209,8 +205,7 @@ schedule:
 - workouts:
   - title: Recovery {6} a.m. {5} p.m.
     distance: 11.0
-  - title: Recovery {5} VO₂max {10} w/ 6 x 800 m @ 5K race pace; jog 50 to 90% interval
-      time between
+  - title: Recovery {5} VO₂max {10} w/ 6 x 800 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 15.0
   - title: Recovery {5} Medium-long run {15}
     distance: 20.0

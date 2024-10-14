@@ -125,8 +125,7 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic {8}
     distance: 8.0
-  - title: "VO\u2082max {8} w/ 5 x 800 m @ 5K race pace; jog 50 to 90% interval time\
-      \ between"
+  - title: VO₂max {8} w/ 5 x 800 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 8.0
   - title: Recovery {5}
     distance: 5.0
@@ -150,8 +149,7 @@ schedule:
     distance: 20.0
 - workouts:
   - title: Rest or cross-training
-  - title: "VO\u2082max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time\
-      \ between"
+  - title: VO₂max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 8.0
   - title: Medium-long run {12}
     distance: 12.0
@@ -166,8 +164,7 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic {8}
     distance: 8.0
-  - title: "VO\u2082max {9} w/ 5 x 1,000 m @ 5K race pace; jog 50 to 90% interval\
-      \ time between"
+  - title: VO₂max {9} w/ 5 x 1,000 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 9.0
   - title: Rest or cross-training
   - title: Medium-long run {12}
@@ -178,8 +175,7 @@ schedule:
     distance: 18.0
 - workouts:
   - title: Rest or cross-training
-  - title: "VO\u2082max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time\
-      \ between"
+  - title: VO₂max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 8.0
   - title: Medium-long run {11}
     distance: 11.0
@@ -194,8 +190,7 @@ schedule:
   - title: Rest or cross-training
   - title: Recovery + speed {7} w/ 6 x 100 m strides
     distance: 7.0
-  - title: "VO\u2082max {10} w/ 4 x 1,200 m @ 5K race pace; jog 50 to 90% interval\
-      \ time between"
+  - title: VO₂max {10} w/ 4 x 1,200 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 10.0
   - title: Rest or cross-training
   - title: Medium-long run {11}
@@ -206,8 +201,7 @@ schedule:
     distance: 20.0
 - workouts:
   - title: Rest or cross-training
-  - title: "VO\u2082max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time\
-      \ between"
+  - title: VO₂max {8} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 8.0
   - title: Recovery {6}
     distance: 6.0
@@ -222,8 +216,7 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic + speed {7} w/8 x 100m strides
     distance: 7.0
-  - title: "VO\u2082max {8} w/ 3 x 1,600 m @ 5K race pace; jog 50 to 90% interval\
-      \ time between"
+  - title: VO₂max {8} w/ 3 x 1,600 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 8.0
   - title: Rest or cross-training
   - title: Recovery + speed {5} w/ 6 x 100 m strides

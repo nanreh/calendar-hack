@@ -12,26 +12,26 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{8:13}",
+               "title": "General aerobic {8:13}",
                "distance": 8.0
             },
             {
-               "title": "General aerobic\n{4:6}",
+               "title": "General aerobic {4:6}",
                "distance": 4.0
             },
             {
-               "title": "Endurance\n{9:14}",
+               "title": "Endurance {9:14}",
                "distance": 9.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{6:10}",
+               "title": "General aerobic {6:10}",
                "distance": 6.0
             },
             {
-               "title": "Endurance\n{11:18}",
+               "title": "Endurance {11:18}",
                "distance": 11.0
             }
          ]
@@ -42,26 +42,26 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{8:13}",
+               "title": "General aerobic {8:13}",
                "distance": 8.0
             },
             {
-               "title": "General aerobic\n{4:6}",
+               "title": "General aerobic {4:6}",
                "distance": 4.0
             },
             {
-               "title": "Endurance\n{10:16}",
+               "title": "Endurance {10:16}",
                "distance": 10.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{7:11}",
+               "title": "General aerobic {7:11}",
                "distance": 7.0
             },
             {
-               "title": "Endurance\n{12:19}",
+               "title": "Endurance {12:19}",
                "distance": 12.0
             }
          ]
@@ -72,26 +72,26 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{8:13}",
+               "title": "General aerobic {8:13}",
                "distance": 8.0
             },
             {
-               "title": "General aerobic\n{4:6}",
+               "title": "General aerobic {4:6}",
                "distance": 4.0
             },
             {
-               "title": "Endurance\n{10:16}",
+               "title": "Endurance {10:16}",
                "distance": 10.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{7:11}",
+               "title": "General aerobic {7:11}",
                "distance": 7.0
             },
             {
-               "title": "Endurance\n{12:19}",
+               "title": "Endurance {12:19}",
                "distance": 12.0
             }
          ]
@@ -102,27 +102,27 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{8:13}",
+               "title": "General aerobic {8:13}",
                "distance": 8.0
             },
             {
-               "title": "General aerobic\n{4:6}",
+               "title": "General aerobic {4:6}",
                "distance": 4.0
             },
             {
-               "title": "Endurance\n{10:16}",
+               "title": "Endurance {10:16}",
                "distance": 10.0
             },
             {
-               "title": "Recovery \n{4:6}",
+               "title": "Recovery {4:6}",
                "distance": 4.0
             },
             {
-               "title": "General aerobic + speed {7} w/ 8 x 100 m strides\n{7:11}",
+               "title": "General aerobic + speed {7} w/ 8 x 100 m strides {7:11}",
                "distance": 7.0
             },
             {
-               "title": "Endurance\n{13:21}",
+               "title": "Endurance {13:21}",
                "distance": 13.0
             }
          ]
@@ -133,27 +133,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{9:14}",
+               "title": "General aerobic {9:14}",
                "distance": 9.0
             },
             {
-               "title": "General aerobic\n{5:8}",
+               "title": "General aerobic {5:8}",
                "distance": 5.0
             },
             {
-               "title": "Endurance\n{11:18}",
+               "title": "Endurance {11:18}",
                "distance": 11.0
             },
             {
-               "title": "Recovery\n{4:6}",
+               "title": "Recovery {4:6}",
                "distance": 4.0
             },
             {
-               "title": "Lactate threshold\n{7:11}\n20 min tempo run",
+               "title": "Lactate threshold {7:11}",
+               "description": "Lactate threshold {7:11}\n20 min tempo run",
                "distance": 7.0
             },
             {
-               "title": "Endurance\n{13:21}",
+               "title": "Endurance {13:21}",
                "distance": 13.0
             }
          ]
@@ -164,27 +165,27 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{9:14}",
+               "title": "General aerobic {9:14}",
                "distance": 9.0
             },
             {
-               "title": "General aerobic\n{5:8}",
+               "title": "General aerobic {5:8}",
                "distance": 5.0
             },
             {
-               "title": "Endurance\n{11:18}",
+               "title": "Endurance {11:18}",
                "distance": 11.0
             },
             {
-               "title": "Recovery\n{4:6}",
+               "title": "Recovery {4:6}",
                "distance": 4.0
             },
             {
-               "title": "General aerobic + speed {7} w/ 8 x 100 m strides\n{7:11}",
+               "title": "General aerobic + speed {7} w/ 8 x 100 m strides {7:11}",
                "distance": 7.0
             },
             {
-               "title": "Endurance\n{13:21}",
+               "title": "Endurance {13:21}",
                "distance": 13.0
             }
          ]
@@ -195,27 +196,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{10:16}",
+               "title": "General aerobic {10:16}",
                "distance": 10.0
             },
             {
-               "title": "General aerobic\n{5:8}",
+               "title": "General aerobic {5:8}",
                "distance": 5.0
             },
             {
-               "title": "Endurance\n{12:19}",
+               "title": "Endurance {12:19}",
                "distance": 12.0
             },
             {
-               "title": "Recovery\n{4:6}",
+               "title": "Recovery {4:6}",
                "distance": 4.0
             },
             {
-               "title": "Lactate threshold\n{8:13}\n22 min tempo run",
+               "title": "Lactate threshold {8:13}",
+               "description": "Lactate threshold {8:13}\n22 min tempo run",
                "distance": 8.0
             },
             {
-               "title": "Endurance\n{14:23}",
+               "title": "Endurance {14:23}",
                "distance": 14.0
             }
          ]
@@ -226,27 +228,27 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{10:16}",
+               "title": "General aerobic {10:16}",
                "distance": 10.0
             },
             {
-               "title": "General aerobic\n{6:10}",
+               "title": "General aerobic {6:10}",
                "distance": 6.0
             },
             {
-               "title": "Endurance\n{12:19}",
+               "title": "Endurance {12:19}",
                "distance": 12.0
             },
             {
-               "title": "Recovery\n{5:8}",
+               "title": "Recovery {5:8}",
                "distance": 5.0
             },
             {
-               "title": "General aerobic + speed {9} w/ 10 x 100 m strides\n{9:14}",
+               "title": "General aerobic + speed {9} w/ 10 x 100 m strides {9:14}",
                "distance": 9.0
             },
             {
-               "title": "Endurance\n{14:23}",
+               "title": "Endurance {14:23}",
                "distance": 14.0
             }
          ]
@@ -257,27 +259,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{10:16}",
+               "title": "General aerobic {10:16}",
                "distance": 10.0
             },
             {
-               "title": "General aerobic\n{6:10}",
+               "title": "General aerobic {6:10}",
                "distance": 6.0
             },
             {
-               "title": "Endurance\n{12:19}",
+               "title": "Endurance {12:19}",
                "distance": 12.0
             },
             {
-               "title": "Recovery\n{5:8}",
+               "title": "Recovery {5:8}",
                "distance": 5.0
             },
             {
-               "title": "Lactate threshold\n{9:14}\n24 min tempo run",
+               "title": "Lactate threshold {9:14}",
+               "description": "Lactate threshold {9:14}\n24 min tempo run",
                "distance": 9.0
             },
             {
-               "title": "Endurance\n{14:23}",
+               "title": "Endurance {14:23}",
                "distance": 14.0
             }
          ]
@@ -288,27 +291,27 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{11:18}",
+               "title": "General aerobic {11:18}",
                "distance": 11.0
             },
             {
-               "title": "General aerobic\n{7:11}",
+               "title": "General aerobic {7:11}",
                "distance": 7.0
             },
             {
-               "title": "Endurance\n{12:19}",
+               "title": "Endurance {12:19}",
                "distance": 12.0
             },
             {
-               "title": "Recovery\n{6:10}",
+               "title": "Recovery {6:10}",
                "distance": 6.0
             },
             {
-               "title": "General aerobic + speed {10} w/ 10 x 100 m strides\n{10:16}",
+               "title": "General aerobic + speed {10} w/ 10 x 100 m strides {10:16}",
                "distance": 10.0
             },
             {
-               "title": "Endurance\n{14:23}",
+               "title": "Endurance {14:23}",
                "distance": 14.0
             }
          ]

@@ -8,8 +8,9 @@ type: 5K
 schedule:
 - workouts:
   - title: Rest
-  - title: Run 30 seconds, walk 30 seconds.
-
+  - title: Run 30 seconds, walk 30 seconds. Repeat 15 times
+    description: |-
+      Run 30 seconds, walk 30 seconds.
       Repeat 15 times
   - title: Rest
   - title: Run/walk 10 minutes
@@ -18,31 +19,36 @@ schedule:
   - title: Rest
 - workouts:
   - title: Rest
-  - title: Run 45 seconds, walk 45 seconds.
-
+  - title: Run 45 seconds, walk 45 seconds. Repeat 12 times
+    description: |-
+      Run 45 seconds, walk 45 seconds.
       Repeat 12 times
   - title: Rest
   - title: Run/walk 15 minutes
   - title: Rest
-  - title: Walk 5km
-
-      (aim to beat previous week's time)
-  - title: Rest
-- workouts:
-  - title: Rest
-  - title: Run 60 seconds, walk 60 seconds.
-
-      Repeat 10 times
-  - title: Rest
-  - title: Run/walk 20 minutes
-  - title: Rest
-  - title: |-
+  - title: Walk 5km (aim to beat previous week's time)
+    description: |-
       Walk 5km
       (aim to beat previous week's time)
   - title: Rest
 - workouts:
   - title: Rest
-  - title: |-
+  - title: Run 60 seconds, walk 60 seconds. Repeat 10 times
+    description: |-
+      Run 60 seconds, walk 60 seconds.
+      Repeat 10 times
+  - title: Rest
+  - title: Run/walk 20 minutes
+  - title: Rest
+  - title: Walk 5km (aim to beat previous week's time)
+    description: |-
+      Walk 5km
+      (aim to beat previous week's time)
+  - title: Rest
+- workouts:
+  - title: Rest
+  - title: Run 90 seconds, walk 90 seconds. Repeat 8 times
+    description: |-
       Run 90 seconds, walk 90 seconds.
       Repeat 8 times
   - title: Rest
@@ -52,7 +58,8 @@ schedule:
   - title: Rest
 - workouts:
   - title: Rest
-  - title: |-
+  - title: Run 2 minutes, walk 2 minutes. Repeat 6 times
+    description: |-
       Run 2 minutes, walk 2 minutes.
       Repeat 6 times
   - title: Rest
@@ -62,7 +69,8 @@ schedule:
   - title: Rest
 - workouts:
   - title: Rest
-  - title: |-
+  - title: Run 3 minutes, walk 2 minutes. Repeat 5 times
+    description: |-
       Run 3 minutes, walk 2 minutes.
       Repeat 5 times
   - title: Rest
@@ -72,7 +80,8 @@ schedule:
   - title: Rest
 - workouts:
   - title: Rest
-  - title: |-
+  - title: Run 5 minutes, walk 2 minutes. Repeat 4 times
+    description: |-
       Run 5 minutes, walk 2 minutes.
       Repeat 4 times
   - title: Rest
@@ -82,7 +91,8 @@ schedule:
   - title: Rest
 - workouts:
   - title: Rest
-  - title: |-
+  - title: Run 10 minutes, walk 60 seconds. Repeat 3 times
+    description: |-
       Run 10 minutes, walk 60 seconds.
       Repeat 3 times
   - title: Rest

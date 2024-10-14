@@ -9,7 +9,7 @@ schedule:
   - title: 30 min cross
   - distance: 3.0
     title: '{3.0:4.8} run'
-  - title: "5 x 400 5-K\_pace"
+  - title: "5 x 400 5-K pace"
   - distance: 3.0
     title: '{3.0:4.8} run'
   - title: Rest
@@ -33,13 +33,13 @@ schedule:
   - title: 40 min cross
   - distance: 3.5
     title: '{3.5:5.6} run'
-  - title: "6 x 400 5-K\_pace"
+  - title: "6 x 400 5-K pace"
   - distance: 3.0
     title: '{3.0:4.8} run'
   - title: Rest
   - title: Rest
   - distance: 3.1
-    title: "5-K\_Race"
+    title: "5-K Race"
 - workouts: # Week 4
   - title: 40 min cross
   - distance: 3.5
@@ -56,7 +56,7 @@ schedule:
   - title: 40 min cross
   - distance: 4.0
     title: '{4.0:6.4} run'
-  - title: "7 x 400 5-K\_pace"
+  - title: "7 x 400 5-K pace"
   - distance: 3.0
     title: '{3.0:4.8} run'
   - title: Rest
@@ -74,12 +74,12 @@ schedule:
   - title: Rest or easy run
   - title: Rest
   - distance: 6.2
-    title: "10-K\_Race"
+    title: "10-K Race"
 - workouts: # Week 7
   - title: Rest
   - distance: 4.5
     title: '{4.5:7.2} run'
-  - title: "8 x 400 5-K\_pace"
+  - title: "8 x 400 5-K pace"
   - distance: 3.0
     title: '{3.0:4.8} run'
   - title: Rest
@@ -103,13 +103,13 @@ schedule:
   - title: 60 min cross
   - distance: 5.0
     title: '{5.0:8.0} run'
-  - title: "9 x 400 5-K\_pace"
+  - title: "9 x 400 5-K pace"
   - distance: 3.0
     title: '{3.0:4.8} run'
   - title: Rest or easy run
   - title: Rest
   - distance: 9.3
-    title: "15-K\_Race"
+    title: "15-K Race"
 - workouts: # Week 10
   - title: Rest
   - distance: 5.0
@@ -126,7 +126,7 @@ schedule:
   - title: 60 min cross
   - distance: 5.0
     title: '{5.0:8.0} run'
-  - title: "10 x 400 5-K\_pace"
+  - title: "10 x 400 5-K pace"
   - distance: 3.0
     title: '{3.0:4.8} run'
   - title: Rest

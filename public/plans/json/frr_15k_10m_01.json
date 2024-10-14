@@ -12,19 +12,19 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + Speed\n{6:10}",
+               "title": "General aerobic + Speed {6:10}",
                "description": "8 x 100m strides",
                "distance": 6.0
             },
             {
-               "title": "Endurance\n{8:13}",
+               "title": "Endurance {8:13}",
                "distance": 8.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "Lactate Threshold\n{7:11}",
+               "title": "Lactate Threshold {7:11}",
                "description": "2 x 12min LT intervals (jog 4 min recovery)",
                "distance": 7.0
             },
@@ -32,7 +32,7 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "Endurance\n{10:16}",
+               "title": "Endurance {10:16}",
                "distance": 10.0
             }
          ]
@@ -43,19 +43,19 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic +  speed\n{7:11}",
+               "title": "General aerobic +  speed {7:11}",
                "description": "6 x 12sec uphill followed by 6 x 100m strides",
                "distance": 7.0
             },
             {
-               "title": "Endurance\n{8:13}",
+               "title": "Endurance {8:13}",
                "distance": 8.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "Lactate threshold\n{8:13}",
+               "title": "Lactate threshold {8:13}",
                "distance": 8.0,
                "description": "16 min LT interval (jog 4 min recovery)\n12 min LT interval"
             },
@@ -63,7 +63,7 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "Endurance\n{10:16}",
+               "title": "Endurance {10:16}",
                "distance": 10.0
             }
          ]
@@ -74,19 +74,19 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic +  speed\n{8:13}",
+               "title": "General aerobic +  speed {8:13}",
                "description": "6 x 12 sec uphill followed by 6 x 100 m strides",
                "distance": 8.0
             },
             {
-               "title": "Endurance\n{9:14}",
+               "title": "Endurance {9:14}",
                "distance": 9.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "Lactate threshold\n{8:13}",
+               "title": "Lactate threshold {8:13}",
                "description": "2 x 16 min LT intervals (jog 4 min recovery)",
                "distance": 8.0
             },
@@ -94,7 +94,7 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "Endurance\n{11:16}",
+               "title": "Endurance {11:16}",
                "distance": 11.0
             }
          ]
@@ -105,26 +105,26 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + speed\n{8:13}",
+               "title": "General aerobic + speed {8:13}",
                "description": "2 sets of 5 x 150 m strides (jog 250 m recovery and 4 min between sets)",
                "distance": 8.0
             },
             {
-               "title": "General aerobic\n{7:11}",
+               "title": "General aerobic {7:11}",
                "distance": 7.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{7:11}",
+               "title": "General aerobic {7:11}",
                "distance": 7.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic\n{9:14}",
+               "title": "General aerobic {9:14}",
                "distance": 9.0
             }
          ]
@@ -135,28 +135,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + speed\n{7:11}",
+               "title": "General aerobic + speed {7:11}",
                "description": "10 \u00d7 100m strides",
                "distance": 7.0
             },
             {
-               "title": "Endurance\n{9:14}",
+               "title": "Endurance {9:14}",
                "distance": 9.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "Lactate threshold\n{8:13}",
+               "title": "Lactate threshold {8:13}",
                "description": "16 min LT interval (log 4 min recovery)\n12 min LT interval (log 4 min recovery)\n8 min LT interval",
                "distance": 8.0
             },
             {
-               "title": "Recovery\n{6:10}",
+               "title": "Recovery {6:10}",
                "distance": 6.0
             },
             {
-               "title": "Endurance\n{11:18}",
+               "title": "Endurance {11:18}",
                "distance": 11.0
             }
          ]
@@ -167,28 +167,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "VO2 max\n{8:13}",
+               "title": "VO\u2082max {8:13}",
                "description": "5 x 1,000 m @ 3K-5K race pace (jog 50-90% interval time recovery)",
                "distance": 8.0
             },
             {
-               "title": "Endurance\n{9:14}",
+               "title": "Endurance {9:14}",
                "distance": 9.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + speed\n{8:13}",
+               "title": "General aerobic + speed {8:13}",
                "description": "2 sets of 6 x 100 m strides (jog 3 min between sets)",
                "distance": 8.0
             },
             {
-               "title": "Recovery\n{5:8}",
+               "title": "Recovery {5:8}",
                "distance": 5.0
             },
             {
-               "title": "Progression long run\n{11:18}",
+               "title": "Progression long run {11:18}",
                "description": "Increase effort steadily throughout run, last 3 miles (5 km) @ LT pace",
                "distance": 11.0
             }
@@ -200,28 +200,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + speed\n{8:13}",
+               "title": "General aerobic + speed {8:13}",
                "description": "6 x 12 sec uphill, followed by 6 x 100 m strides",
                "distance": 8.0
             },
             {
-               "title": "Endurance\n{10:16}",
+               "title": "Endurance {10:16}",
                "distance": 10.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "Lactate threshold\n{9:14}",
+               "title": "Lactate threshold {9:14}",
                "description": "36 min tempo run",
                "distance": 9.0
             },
             {
-               "title": "Recovery\n{4:6}",
+               "title": "Recovery {4:6}",
                "distance": 4.0
             },
             {
-               "title": "Endurance\n{12:19}",
+               "title": "Endurance {12:19}",
                "distance": 12.0
             }
          ]
@@ -232,27 +232,27 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + speed\n{7:11}",
+               "title": "General aerobic + speed {7:11}",
                "description": "2 sets of 4 x 150 m strides (jog 250m recovery and 4 min between sets)",
                "distance": 7.0
             },
             {
-               "title": "General aerobic\n{7:11}",
+               "title": "General aerobic {7:11}",
                "distance": 7.0
             },
             {
                "title": "Rest"
             },
             {
-               "title": "Recovery\n{3:5}",
+               "title": "Recovery {3:5}",
                "distance": 3.0
             },
             {
-               "title": "8K-10K tune-up race\n{10:16}",
+               "title": "8K-10K tune-up race {10:16}",
                "distance": 10.0
             },
             {
-               "title": "Endurance\n{9:14}",
+               "title": "Endurance {9:14}",
                "distance": 9.0
             }
          ]
@@ -263,28 +263,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + speed\n{8:13}",
+               "title": "General aerobic + speed {8:13}",
                "description": "2 sets of 6 x 100 m strides (jog 3 min between sets)",
                "distance": 8.0
             },
             {
-               "title": "Endurance\n{11:18}",
+               "title": "Endurance {11:18}",
                "distance": 11.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "VO2 max\n{9:14}",
+               "title": "VO\u2082max {9:14}",
                "description": "5 \u00d7 1,200m @ 3K-5K race pace (jog 50-90% interval time recovery)",
                "distance": 9.0
             },
             {
-               "title": "Recovery\n{4:6}",
+               "title": "Recovery {4:6}",
                "distance": 4.0
             },
             {
-               "title": "Endurance\n{13:21}",
+               "title": "Endurance {13:21}",
                "distance": 13.0
             }
          ]
@@ -295,27 +295,27 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + speed\n{8:13}",
+               "title": "General aerobic + speed {8:13}",
                "description": "2 sets of 4 x 150 m strides (jog 250m recovery and 4 min between sets)",
                "distance": 8.0
             },
             {
-               "title": "General aerobic\n{7:11}",
+               "title": "General aerobic {7:11}",
                "distance": 7.0
             },
             {
                "title": "Rest"
             },
             {
-               "title": "Recovery\n{3:5}",
+               "title": "Recovery {3:5}",
                "distance": 3.0
             },
             {
-               "title": "8K-10K tune-up race\n{10:16}",
+               "title": "8K-10K tune-up race {10:16}",
                "distance": 10.0
             },
             {
-               "title": "Endurance\n{9:14}",
+               "title": "Endurance {9:14}",
                "distance": 9.0
             }
          ]
@@ -326,28 +326,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "General aerobic + speed\n{6:10}",
+               "title": "General aerobic + speed {6:10}",
                "description": "2 sets of 6 x 100 m strides (jog 3 min between sets)",
                "distance": 6.0
             },
             {
-               "title": "Recovery\n{5:8}",
+               "title": "Recovery {5:8}",
                "distance": 5.0
             },
             {
                "title": "Rest or cross-training"
             },
             {
-               "title": "VO2 max\n{8:13}",
+               "title": "VO\u2082max {8:13}",
                "description": "2 \u00d7 1,200 m\n2 \u00d7 1,000 m\n1 \u00d7 800 m\nAll intervals @ 3K-5K race pace (jog 50-90% interval time recovery)",
                "distance": 8.0
             },
             {
-               "title": "Recovery\n{3:5}",
+               "title": "Recovery {3:5}",
                "distance": 3.0
             },
             {
-               "title": "Endurance\n{9:14}",
+               "title": "Endurance {9:14}",
                "distance": 9.0
             }
          ]
@@ -358,28 +358,28 @@
                "title": "Rest or cross-training"
             },
             {
-               "title": "Race pace + speed\n{7:11}",
+               "title": "Race pace + speed {7:11}",
                "description": "4 \u00d7 100 m strides 2 miles @ 15K or 10-mile race pace",
                "distance": 7.0
             },
             {
-               "title": "Recovery\n{5:8}",
+               "title": "Recovery {5:8}",
                "distance": 5.0
             },
             {
-               "title": "Recovery\n{4:6}",
+               "title": "Recovery {4:6}",
                "distance": 4.0
             },
             {
                "title": "Rest"
             },
             {
-               "title": "Recovery\n{3:5}",
+               "title": "Recovery {3:5}",
                "description": "4 \u00d7 100 m strides",
                "distance": 3.0
             },
             {
-               "title": "15k or 10-mile goal race\n{13:21}",
+               "title": "15k or 10-mile goal race {13:21}",
                "distance": 13.0
             }
          ]
