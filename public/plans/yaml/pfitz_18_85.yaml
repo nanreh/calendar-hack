@@ -146,8 +146,7 @@ schedule:
     distance: 10.0
   - title: General aerobic {9}
     distance: 9.0
-  - title: "VO\u2082max {9} w/ 6 x 800 m @ 5K race pace; jog 50 to 90% interval time\
-      \ between"
+  - title: VO₂max {9} w/ 6 x 800 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 9.0
   - title: Recovery {7}
     distance: 7.0
@@ -175,8 +174,7 @@ schedule:
 - workouts:
   - title: Recovery {6} a.m. {4} p.m.
     distance: 10.0
-  - title: "VO\u2082max {9} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time\
-      \ between"
+  - title: VO₂max {9} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 9.0
   - title: Medium-long run {15}
     distance: 15.0
@@ -191,8 +189,7 @@ schedule:
 - workouts:
   - title: Recovery {6} a.m. {4} p.m.
     distance: 10.0
-  - title: "VO\u2082max {12} w/ 6 x 1,000 m @ 5K race pace; jog 50 to 90% interval\
-      \ time between"
+  - title: VO₂max {12} w/ 6 x 1,000 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 12.0
   - title: Medium-long run {15}
     distance: 15.0
@@ -207,8 +204,7 @@ schedule:
 - workouts:
   - title: Recovery {6} a.m. {4} p.m.
     distance: 10.0
-  - title: "VO\u2082max {9} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time\
-      \ between"
+  - title: VO₂max {9} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 9.0
   - title: Medium-long run {14}
     distance: 14.0
@@ -225,8 +221,7 @@ schedule:
     distance: 10.0
   - title: General aerobic {8}
     distance: 8.0
-  - title: "VO\u2082max {12} w/ 6 x 1,200 m @ 5K race pace; jog 50 to 90% interval\
-      \ time between"
+  - title: VO₂max {12} w/ 6 x 1,200 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 12.0
   - title: Medium-long run {15} a.m. Recovery {4} p.m.
     distance: 19.0
@@ -239,8 +234,7 @@ schedule:
 - workouts:
   - title: Recovery {6}
     distance: 6.0
-  - title: "VO\u2082max {9} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time\
-      \ between"
+  - title: VO₂max {9} w/ 5 x 600 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 9.0
   - title: Medium-long run {14}
     distance: 14.0
@@ -259,8 +253,7 @@ schedule:
     distance: 8.0
   - title: Recovery {6}
     distance: 6.0
-  - title: "VO\u2082max {9} w/ 3 x 1,600 m @ 5K race pace; jog 50 to 90% interval\
-      \ time between"
+  - title: VO₂max {9} w/ 3 x 1,600 m @ 5K race pace; jog 50 to 90% interval time between
     distance: 9.0
   - title: Recovery {5}
     distance: 5.0

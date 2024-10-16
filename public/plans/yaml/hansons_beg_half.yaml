@@ -68,6 +68,8 @@ schedule:
     distance: 5.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {3} @ HMP, {1.5} Cool Down, ({6})
+    description: |-
       {1.5} Warm Up
       {3} @ HMP
       {1.5} Cool Down
@@ -83,6 +85,8 @@ schedule:
   - title: Easy {4}
     distance: 4.0
   - title: |-
+      {1.5} Warm Up, 12 x 400m @ 5k-10k pace w. 400m jog rest, {1.5} Cool Down, ({9})
+    description: |-
       {1.5} Warm Up
       12 x 400m @ 5k-10k pace w. 400m jog rest
       {1.5} Cool Down
@@ -90,6 +94,8 @@ schedule:
     distance: 9.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {3} @ HMP, {1.5} Cool Down, ({6})
+    description: |-
       {1.5} Warm Up
       {3} @ HMP
       {1.5} Cool Down
@@ -105,6 +111,8 @@ schedule:
   - title: Easy {4}
     distance: 4.0
   - title: |-
+      {1.5} Warm Up, 8 x 600m @ 5k-10k pace w. 400m jog rest, {1.5} Cool Down, ({7})
+    description: |-
       {1.5} Warm Up
       8 x 600m @ 5k-10k pace w. 400m jog rest
       {1.5} Cool Down
@@ -112,6 +120,8 @@ schedule:
     distance: 7.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {3} @ HMP, {1.5} Cool Down, ({6})
+    description: |-
       {1.5} Warm Up
       {3} @ HMP
       {1.5} Cool Down
@@ -127,6 +137,8 @@ schedule:
   - title: Easy {6}
     distance: 6.0
   - title: |-
+      {1.5} Warm Up, 6 x 800m @ 5k-10k pace w. 400m jog rest, {1.5} Cool Down, ({7})
+    description: |-
       {1.5} Warm Up
       6 x 800m @ 5k-10k pace w. 400m jog rest
       {1.5} Cool Down
@@ -134,6 +146,8 @@ schedule:
     distance: 7.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {4} @ HMP, {1.5} Cool Down, ({7})
+    description: |-
       {1.5} Warm Up
       {4} @ HMP
       {1.5} Cool Down
@@ -149,6 +163,8 @@ schedule:
   - title: Easy {5}
     distance: 5.0
   - title: |-
+      {1.5} Warm Up, 5 x 1k @ 5k-10k pace w. 600m jog rest, {1.5} Cool Down, ({8})
+    description: |-
       {1.5} Warm Up
       5 x 1k @ 5k-10k pace w. 600m jog rest
       {1.5} Cool Down
@@ -156,6 +172,8 @@ schedule:
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {4} @ HMP, {1.5} Cool Down, ({7})
+    description: |-
       {1.5} Warm Up
       {4} @ HMP
       {1.5} Cool Down
@@ -171,6 +189,8 @@ schedule:
   - title: Easy {6}
     distance: 6.0
   - title: |-
+      {1.5} Warm Up, 4 x 1200m @ 5k-10k pace w. 600m jog rest, {1.5} Cool Down, ({8})
+    description: |-
       {1.5} Warm Up
       4 x 1200m @ 5k-10k pace w. 600m jog rest
       {1.5} Cool Down
@@ -178,6 +198,8 @@ schedule:
     distance: 8.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {4} @ HMP, {1.5} Cool Down, ({7})
+    description: |-
       {1.5} Warm Up
       {4} @ HMP
       {1.5} Cool Down
@@ -193,6 +215,8 @@ schedule:
   - title: Easy {5}
     distance: 5.0
   - title: |-
+      {1.5} Warm Up, 6 x {1} @ HMP -10s w. 400m jog rest, {1.5} Cool Down, ({10})
+    description: |-
       {1.5} Warm Up
       6 x {1} @ HMP -10s w. 400m jog rest
       {1.5} Cool Down
@@ -200,6 +224,8 @@ schedule:
     distance: 10.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {5} @ HMP, {1.5} Cool Down, ({8})
+    description: |-
       {1.5} Warm Up
       {5} @ HMP
       {1.5} Cool Down
@@ -215,6 +241,8 @@ schedule:
   - title: Easy {5}
     distance: 5.0
   - title: |-
+      {1.5} Warm Up, 4 x {1.5} @ HMP -10s w. 800m jog rest, {1.5} Cool Down, ({10})
+    description: |-
       {1.5} Warm Up
       4 x {1.5} @ HMP -10s w. 800m jog rest
       {1.5} Cool Down
@@ -222,6 +250,8 @@ schedule:
     distance: 10.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {5} @ HMP, {1.5} Cool Down, ({8})
+    description: |-
       {1.5} Warm Up
       {5} @ HMP
       {1.5} Cool Down
@@ -237,6 +267,8 @@ schedule:
   - title: Easy {6}
     distance: 6.0
   - title: |-
+      {1.5} Warm Up, 3 x {2} @ HMP -10s w. 800m jog rest, {1.5} Cool Down, ({10})
+    description: |-
       {1.5} Warm Up
       3 x {2} @ HMP -10s w. 800m jog rest
       {1.5} Cool Down
@@ -244,6 +276,8 @@ schedule:
     distance: 10.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {5} @ HMP, {1.5} Cool Down, ({8})
+    description: |-
       {1.5} Warm Up
       {5} @ HMP
       {1.5} Cool Down
@@ -259,6 +293,8 @@ schedule:
   - title: Easy {5}
     distance: 5.0
   - title: |-
+      {1.5} Warm Up, 2 x {3} @ HMP -10s w. {1} jog rest, {1.5} Cool Down, ({10})
+    description: |-
       {1.5} Warm Up
       2 x {3} @ HMP -10s w. {1} jog rest
       {1.5} Cool Down
@@ -266,6 +302,8 @@ schedule:
     distance: 10.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {6} @ HMP, {1.5} Cool Down, ({9})
+    description: |-
       {1.5} Warm Up
       {6} @ HMP
       {1.5} Cool Down
@@ -281,6 +319,8 @@ schedule:
   - title: Easy {7}
     distance: 7.0
   - title: |-
+      {1.5} Warm Up, 3 x {2} @ HMP -10s w. 800m jog rest, {1.5} Cool Down, ({10})
+    description: |-
       {1.5} Warm Up
       3 x {2} @ HMP -10s w. 800m jog rest
       {1.5} Cool Down
@@ -288,6 +328,8 @@ schedule:
     distance: 10.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {6} @ HMP, {1.5} Cool Down, ({9})
+    description: |-
       {1.5} Warm Up
       {6} @ HMP
       {1.5} Cool Down
@@ -303,6 +345,8 @@ schedule:
   - title: Easy {5}
     distance: 5.0
   - title: |-
+      {1.5} Warm Up, 4 x {1.5} @ HMP -10s w. 800m jog rest, {1.5} Cool Down, ({10})
+    description: |-
       {1.5} Warm Up
       4 x {1.5} @ HMP -10s w. 800m jog rest
       {1.5} Cool Down
@@ -310,6 +354,8 @@ schedule:
     distance: 10.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {6} @ HMP, {1.5} Cool Down, ({9})
+    description: |-
       {1.5} Warm Up
       {6} @ HMP
       {1.5} Cool Down
@@ -325,6 +371,8 @@ schedule:
   - title: Easy {5}
     distance: 5.0
   - title: |-
+      {1.5} Warm Up, 6 x {1} @ HMP -10s w. 400m jog rest, {1.5} Cool Down, ({10})
+    description: |-
       {1.5} Warm Up
       6 x {1} @ HMP -10s w. 400m jog rest
       {1.5} Cool Down
@@ -332,6 +380,8 @@ schedule:
     distance: 10.0
   - title: Rest or Cross-Train
   - title: |-
+      {1.5} Warm Up, {5} @ HMP, {1.5} Cool Down, ({8})
+    description: |-
       {1.5} Warm Up
       {5} @ HMP
       {1.5} Cool Down

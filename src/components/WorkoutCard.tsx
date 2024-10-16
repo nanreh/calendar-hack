@@ -20,13 +20,31 @@ type DragSourceProps = {
   $dayDetails: DayDetails | undefined;
 };
 
+const Title = styled.span` 
+    font-weight: 700;
+    font-size: 1em;
+`;
+
+const Description = styled.span` 
+    font-weight: 400;
+    font-size: .8em;
+`;
+
 const DragSource = styled.div<DragSourceProps>`
   height: 100%;
 `;
 
-function renderDesc(dayDetails: DayDetails, from: Units, to: Units): string {
+function renderDesc(dayDetails: DayDetails, from: Units, to: Units): React.ReactElement {
   let [title, desc] = render(dayDetails, from, to);
-  return title + "\n" + desc;
+  // Only render the description if it differs from the title
+  // In the ical file we always render both and we automatically render the description using the same text as title if description is empty
+  if (title.replace(/\s/g, "")  === desc.replace(/\s/g, "")) {
+    return <p><Title>{title}</Title></p>
+  }
+  return <>
+    <p><Title>{title}</Title></p>
+    <p><Description>{desc}</Description></p>
+  </>;
 }
 
 export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
@@ -56,7 +74,7 @@ export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
             <div ref={drag}>
               <DragHandle viewBox="0 0 32 36" />
             </div>
-            <p>{renderDesc(dayDetails, dayDetails.sourceUnits, units)}</p>
+            {renderDesc(dayDetails, dayDetails.sourceUnits, units)}
           </Content>
       </Card>
     </DragSource>

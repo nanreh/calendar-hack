@@ -124,9 +124,7 @@ schedule:
   - title: 6 x 800
   - title: Rest
   - title: Rest
-  - title: |-
-      Half Marathon
-      ({13.1:21.1})
+  - title: Half Marathon ({13.1:21.1})
     distance: 13.1
 - workouts:
   - title: '{3:4.8} run'
@@ -242,7 +240,5 @@ schedule:
   - title: Rest
   - title: '{2:3.2} run'
     distance: 2.0
-  - title: |-
-      Marathon
-      ({26.2:42.2})
+  - title: Marathon ({26.2:42.2})
     distance: 26.2

@@ -36,6 +36,10 @@ export function toIcal(plan: RacePlan, units: Units): string | undefined {
       if (currWorkout.event) {
         let [title, desc] = render(currWorkout.event, plan.sourceUnits, units);
         desc = desc.replace(/(\r\n|\n|\r)/gm, "\n");
+        // if desc is not set, use title
+        if (desc.replace(/\s/g, "") === "") {
+          desc = title;
+        }
         events.push({
           title: title,
           description: desc,

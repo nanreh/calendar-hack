@@ -44,7 +44,8 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n12 x 400m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({9})",
+               "title": "{1.5} Warm Up, 12 x 400m @ 5k-10k Pace w. 400m jog rest, {1.5} Cool Down, ({9})",
+               "description": "{1.5} Warm Up\n12 x 400m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({9})",
                "distance": 9.0
             },
             {
@@ -75,14 +76,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n8 x 600m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
+               "title": "{1.5} Warm Up, 8 x 600m @ 5k-10k Pace w. 400m jog rest, {1.5} Cool Down, ({8})",
+               "description": "{1.5} Warm Up\n8 x 600m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
                "distance": 8.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{6} Tempo @ Goal MP\n{1} Cool Down\n({8})",
+               "title": "{1} Warm Up, {6} Tempo @ Goal MP, {1} Cool Down, ({8})",
+               "description": "{1} Warm Up\n{6} Tempo @ Goal MP\n{1} Cool Down\n({8})",
                "distance": 8.0
             },
             {
@@ -106,14 +109,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n6 x 800m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
+               "title": "{1.5} Warm Up, 6 x 800m @ 5k-10k Pace w. 400m jog rest, {1.5} Cool Down, ({8})",
+               "description": "{1.5} Warm Up\n6 x 800m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
                "distance": 8.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{6} Tempo @ Goal MP\n{1} Cool Down\n({8})",
+               "title": "{1} Warm Up, {6} Tempo @ Goal MP, {1} Cool Down, ({8})",
+               "description": "{1} Warm Up\n{6} Tempo @ Goal MP\n{1} Cool Down\n({8})",
                "distance": 8.0
             },
             {
@@ -137,14 +142,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n5 x 1km @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
+               "title": "{1.5} Warm Up, 5 x 1km @ 5k-10k Pace w. 400m jog rest, {1.5} Cool Down, ({8})",
+               "description": "{1.5} Warm Up\n5 x 1km @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
                "distance": 8.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{6} Tempo @ Goal MP\n{1} Cool Down\n({8})",
+               "title": "{1} Warm Up, {6} Tempo @ Goal MP, {1} Cool Down, ({8})",
+               "description": "{1} Warm Up\n{6} Tempo @ Goal MP\n{1} Cool Down\n({8})",
                "distance": 8.0
             },
             {
@@ -168,14 +175,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n4 x 1200m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
+               "title": "{1.5} Warm Up, 4 x 1200m @ 5k-10k Pace w. 400m jog rest, {1.5} Cool Down, ({8})",
+               "description": "{1.5} Warm Up\n4 x 1200m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
                "distance": 8.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{7} Tempo @ Goal MP\n{1} Cool Down\n({9})",
+               "title": "{1} Warm Up, {7} Tempo @ Goal MP, {1} Cool Down, ({9})",
+               "description": "{1} Warm Up\n{7} Tempo @ Goal MP\n{1} Cool Down\n({9})",
                "distance": 9.0
             },
             {
@@ -199,14 +208,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n3 x {1} @ 5k-10k Pace w. 800m jog rest\n{1.5} Cool Down\n({8})",
+               "title": "{1.5} Warm Up, 3 x {1} @ 5k-10k Pace w. 800m jog rest, {1.5} Cool Down, ({8})",
+               "description": "{1.5} Warm Up\n3 x {1} @ 5k-10k Pace w. 800m jog rest\n{1.5} Cool Down\n({8})",
                "distance": 8.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{7} Tempo @ Goal MP\n{1} Cool Down\n({9})",
+               "title": "{1} Warm Up, {7} Tempo @ Goal MP, {1} Cool Down, ({9})",
+               "description": "{1} Warm Up\n{7} Tempo @ Goal MP\n{1} Cool Down\n({9})",
                "distance": 9.0
             },
             {
@@ -230,14 +241,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n4 x 1200m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
+               "title": "{1.5} Warm Up, 4 x 1200m @ 5k-10k Pace w. 400m jog rest, {1.5} Cool Down, ({8})",
+               "description": "{1.5} Warm Up\n4 x 1200m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
                "distance": 8.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{7} Tempo @ Goal MP\n{1} Cool Down\n({9})",
+               "title": "{1} Warm Up, {7} Tempo @ Goal MP, {1} Cool Down, ({9})",
+               "description": "{1} Warm Up\n{7} Tempo @ Goal MP\n{1} Cool Down\n({9})",
                "distance": 9.0
             },
             {
@@ -261,14 +274,16 @@
                "distance": 8.0
             },
             {
-               "title": "{1.5} Warm Up\n5 x 1km @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
+               "title": "{1.5} Warm Up, 5 x 1km @ 5k-10k Pace w. 400m jog rest, {1.5} Cool Down, ({8})",
+               "description": "{1.5} Warm Up\n5 x 1km @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
                "distance": 8.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{8} Tempo @ Goal MP\n{1} Cool Down\n({10})",
+               "title": "{1} Warm Up, {8} Tempo @ Goal MP, {1} Cool Down, ({10})",
+               "description": "{1} Warm Up\n{8} Tempo @ Goal MP\n{1} Cool Down\n({10})",
                "distance": 10.0
             },
             {
@@ -292,14 +307,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n6 x 800m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
+               "title": "{1.5} Warm Up, 6 x 800m @ 5k-10k Pace w. 400m jog rest, {1.5} Cool Down, ({8})",
+               "description": "{1.5} Warm Up\n6 x 800m @ 5k-10k Pace w. 400m jog rest\n{1.5} Cool Down\n({8})",
                "distance": 8.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{8} Tempo @ Goal MP\n{1} Cool Down\n({10})",
+               "title": "{1} Warm Up, {8} Tempo @ Goal MP, {1} Cool Down, ({10})",
+               "description": "{1} Warm Up\n{8} Tempo @ Goal MP\n{1} Cool Down\n({10})",
                "distance": 10.0
             },
             {
@@ -323,14 +340,16 @@
                "distance": 8.0
             },
             {
-               "title": "{1.5} Warm Up\n6 x {1} @ MP - 10s w. 400m jog rest\n{1.5} Cool Down\n({10.5})",
+               "title": "{1.5} Warm Up, 6 x {1} @ MP - 10s w. 400m jog rest, {1.5} Cool Down, ({10.5})",
+               "description": "{1.5} Warm Up\n6 x {1} @ MP - 10s w. 400m jog rest\n{1.5} Cool Down\n({10.5})",
                "distance": 10.5
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{8} Tempo @ Goal MP\n{1} Cool Down\n({10})",
+               "title": "{1} Warm Up, {8} Tempo @ Goal MP, {1} Cool Down, ({10})",
+               "description": "{1} Warm Up\n{8} Tempo @ Goal MP\n{1} Cool Down\n({10})",
                "distance": 10.0
             },
             {
@@ -354,14 +373,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n4 x {1.5} @ MP - 10s w. 800m jog rest\n{1.5} Cool Down\n({11})",
+               "title": "{1.5} Warm Up, 4 x {1.5} @ MP - 10s w. 800m jog rest, {1.5} Cool Down, ({11})",
+               "description": "{1.5} Warm Up\n4 x {1.5} @ MP - 10s w. 800m jog rest\n{1.5} Cool Down\n({11})",
                "distance": 11.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{9} Tempo @ Goal MP\n{1} Cool Down\n({11})",
+               "title": "{1} Warm Up, {9} Tempo @ Goal MP, {1} Cool Down, ({11})",
+               "description": "{1} Warm Up\n{9} Tempo @ Goal MP\n{1} Cool Down\n({11})",
                "distance": 11.0
             },
             {
@@ -385,14 +406,16 @@
                "distance": 8.0
             },
             {
-               "title": "{1.5} Warm Up\n3 x {2} @ MP - 10s w. 800m jog rest\n{1.5} Cool Down\n({10.5})",
+               "title": "{1.5} Warm Up, 3 x {2} @ MP - 10s w. 800m jog rest, {1.5} Cool Down, ({10.5})",
+               "description": "{1.5} Warm Up\n3 x {2} @ MP - 10s w. 800m jog rest\n{1.5} Cool Down\n({10.5})",
                "distance": 10.5
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{9} Tempo @ Goal MP\n{1} Cool Down\n({11})",
+               "title": "{1} Warm Up, {9} Tempo @ Goal MP, {1} Cool Down, ({11})",
+               "description": "{1} Warm Up\n{9} Tempo @ Goal MP\n{1} Cool Down\n({11})",
                "distance": 11.0
             },
             {
@@ -416,14 +439,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n2 x {3} @ MP - 10s w. {1} jog rest\n{1.5} Cool Down\n({10})",
+               "title": "{1.5} Warm Up, 2 x {3} @ MP - 10s w. {1} jog rest, {1.5} Cool Down, ({10})",
+               "description": "{1.5} Warm Up\n2 x {3} @ MP - 10s w. {1} jog rest\n{1.5} Cool Down\n({10})",
                "distance": 10.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{9} Tempo @ Goal MP\n{1} Cool Down\n({11})",
+               "title": "{1} Warm Up, {9} Tempo @ Goal MP, {1} Cool Down, ({11})",
+               "description": "{1} Warm Up\n{9} Tempo @ Goal MP\n{1} Cool Down\n({11})",
                "distance": 11.0
             },
             {
@@ -447,14 +472,16 @@
                "distance": 8.0
             },
             {
-               "title": "{1.5} Warm Up\n3 x {2} @ MP - 10s w. 800m jog rest\n{1.5} Cool Down\n({10.5})",
+               "title": "{1.5} Warm Up, 3 x {2} @ MP - 10s w. 800m jog rest, {1.5} Cool Down, ({10.5})",
+               "description": "{1.5} Warm Up\n3 x {2} @ MP - 10s w. 800m jog rest\n{1.5} Cool Down\n({10.5})",
                "distance": 10.5
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{10} Tempo @ Goal MP\n{1} Cool Down\n({10})",
+               "title": "{1} Warm Up, {10} Tempo @ Goal MP, {1} Cool Down, ({10})",
+               "description": "{1} Warm Up\n{10} Tempo @ Goal MP\n{1} Cool Down\n({10})",
                "distance": 12.0
             },
             {
@@ -478,14 +505,16 @@
                "distance": 6.0
             },
             {
-               "title": "{1.5} Warm Up\n4 x {1.5} @ MP - 10s w. 800m jog rest\n{1.5} Cool Down\n({11})",
+               "title": "{1.5} Warm Up, 4 x {1.5} @ MP - 10s w. 800m jog rest, {1.5} Cool Down, ({11})",
+               "description": "{1.5} Warm Up\n4 x {1.5} @ MP - 10s w. 800m jog rest\n{1.5} Cool Down\n({11})",
                "distance": 11.0
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{10} Tempo @ Goal MP\n{1} Cool Down\n({12})",
+               "title": "{1} Warm Up, {10} Tempo @ Goal MP, {1} Cool Down, ({12})",
+               "description": "{1} Warm Up\n{10} Tempo @ Goal MP\n{1} Cool Down\n({12})",
                "distance": 12.0
             },
             {
@@ -509,14 +538,16 @@
                "distance": 8.0
             },
             {
-               "title": "{1.5} Warm Up\n6 x {1} @ MP - 10s w. 400m jog rest\n{1.5} Cool Down\n({10.5})",
+               "title": "{1.5} Warm Up, 6 x {1} @ MP - 10s w. 400m jog rest, {1.5} Cool Down, ({10.5})",
+               "description": "{1.5} Warm Up\n6 x {1} @ MP - 10s w. 400m jog rest\n{1.5} Cool Down\n({10.5})",
                "distance": 10.5
             },
             {
                "title": "Rest or Cross-Train"
             },
             {
-               "title": "{1} Warm Up\n{10} Tempo @ Goal MP\n{1} Cool Down\n({12})",
+               "title": "{1} Warm Up, {10} Tempo @ Goal MP, {1} Cool Down, ({12})",
+               "description": "{1} Warm Up\n{10} Tempo @ Goal MP\n{1} Cool Down\n({12})",
                "distance": 12.0
             },
             {

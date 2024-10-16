@@ -141,7 +141,5 @@ schedule:
     distance: 3.0
   - title: 'Rest'
   - title: 'Rest'
-  - title: |-
-      Half Marathon
-      ({13.1:21.1})
+  - title: Half Marathon ({13.1:21.1})
     distance: 13.1
