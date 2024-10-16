@@ -14,6 +14,7 @@ schedule:
       Repeat 15 times
   - title: Rest
   - title: Run/walk 10 minutes
+    description: Run/walk 10 minutes
   - title: Rest
   - title: Walk 5km
   - title: Rest

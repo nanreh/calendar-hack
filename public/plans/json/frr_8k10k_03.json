@@ -59,7 +59,7 @@
             },
             {
                "title": "2 recovery runs ({10:16})",
-               "description": "{6:10}\n{4:6}",
+               "description": "2 recovery runs ({10:16})\n{6:10}\n{4:6}",
                "distance": 10.0
             },
             {
@@ -94,7 +94,7 @@
             },
             {
                "title": "2 recovery runs ({9:14})",
-               "description": "{5:8}\n{4:6}",
+               "description": "2 recovery runs ({9:14})\n{5:8}\n{4:6}",
                "distance": 9.0
             },
             {
@@ -128,7 +128,7 @@
             },
             {
                "title": "2 recovery runs ({10:16})",
-               "description": "{6:10}\n{4:6}",
+               "description": "2 recovery runs ({10:16})\n{6:10}\n{4:6}",
                "distance": 6.0
             },
             {
@@ -163,7 +163,7 @@
             },
             {
                "title": "2 recovery runs ({10:14})",
-               "description": "{5:8}\n{4:6}",
+               "description": "2 recovery runs ({10:14})\n{5:8}\n{4:6}",
                "distance": 5.0
             },
             {
@@ -197,7 +197,7 @@
             },
             {
                "title": "2 recovery runs ({10:16})",
-               "description": "{6:10}\n{4:6}",
+               "description": "2 recovery runs ({10:16})\n{6:10}\n{4:6}",
                "distance": 10.0
             },
             {
@@ -232,7 +232,7 @@
             },
             {
                "title": "2 recovery runs ({10:14})",
-               "description": "{5:8}\n{4:6}",
+               "description": "2 recovery runs ({10:14})\n{5:8}\n{4:6}",
                "distance": 5.0
             },
             {
@@ -250,7 +250,7 @@
          "workouts": [
             {
                "title": "2 recovery runs ({9:14})",
-               "description": "{5:8}\n{4:6}",
+               "description": "2 recovery runs ({9:14})\n{5:8}\n{4:6}",
                "distance": 9.0
             },
             {
@@ -301,7 +301,7 @@
             },
             {
                "title": "2 recovery runs ({9:14})",
-               "description": "{5:8}\n{4:6}",
+               "description": "2 recovery runs ({9:14})\n{5:8}\n{4:6}",
                "distance": 9.0
             },
             {
@@ -319,7 +319,7 @@
          "workouts": [
             {
                "title": "2 recovery runs ({9:14})",
-               "description": "{5:8}\n{4:6}",
+               "description": "2 recovery runs ({9:14})\n{5:8}\n{4:6}",
                "distance": 9.0
             },
             {

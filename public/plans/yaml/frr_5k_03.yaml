@@ -28,6 +28,7 @@ schedule:
     distance: 10.0
   - title: 2 recovery runs ({8:12})
     description: |-
+      2 recovery runs ({8:12})
       {4:6}
       {4:6}
     distance: 8.0
@@ -45,8 +46,7 @@ schedule:
     distance: 9.0
   - title: VO₂max {10:16}
     description: |-
-      VO₂max
-      {10:16}
+      VO₂max {10:16}
       7 × 3 min uphill @ 3K-5K race effort
       (jog downhill recovery)
     distance: 10.0
@@ -54,6 +54,7 @@ schedule:
     distance: 10.0
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -79,6 +80,7 @@ schedule:
     distance: 10.0
   - title: 2 recovery runs ({10:16})
     description: |-
+      2 recovery runs ({10:16})
       {6:10}
       {4:6}
     distance: 10.0
@@ -101,6 +103,7 @@ schedule:
     distance: 9.0
   - title: 2 recovery runs ({10:16})
     description: |-
+      2 recovery runs ({10:16})
       {6:10}
       {4:6}
     distance: 6.0
@@ -127,6 +130,7 @@ schedule:
     distance: 10.0
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -140,6 +144,7 @@ schedule:
 - workouts:
   - title: 2 recovery runs ({8:12})
     description: |-
+      2 recovery runs ({8:12})
       {4:6}
       {4:6}
     distance: 8.0
@@ -154,6 +159,7 @@ schedule:
     distance: 10.0
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -168,6 +174,7 @@ schedule:
 - workouts:
   - title: 2 recovery runs ({8:12})
     description: |-
+      2 recovery runs ({8:12})
       {4:6}
       {4:6}
     distance: 8.0
@@ -186,6 +193,7 @@ schedule:
     distance: 11.0
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -200,6 +208,7 @@ schedule:
 - workouts:
   - title: 2 recovery runs ({10:16})
     description: |-
+      2 recovery runs ({10:16})
       {5:8}
       {5:8}
     distance: 10.0
@@ -222,6 +231,7 @@ schedule:
 - workouts:
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -238,6 +248,7 @@ schedule:
     distance: 11.0
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -252,6 +263,7 @@ schedule:
 - workouts:
   - title: 2 recovery runs ({10:16})
     description: |-
+      2 recovery runs ({10:16})
       {5:8}
       {5:8}
     distance: 10.0

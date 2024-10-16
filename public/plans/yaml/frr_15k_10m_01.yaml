@@ -11,13 +11,17 @@ schedule:
 - workouts:
   - title: Rest or cross-training
   - title: General aerobic + Speed {6:10}
-    description: 8 x 100m strides
+    description: |-
+      General aerobic + Speed {6:10}
+      8 x 100m strides
     distance: 6.0
   - title: Endurance {8:13}
     distance: 8.0
   - title: Rest or cross-training
   - title: Lactate Threshold {7:11}
-    description: 2 x 12min LT intervals (jog 4 min recovery)
+    description: |-
+      Lactate Threshold {7:11}
+      2 x 12min LT intervals (jog 4 min recovery)
     distance: 7.0
   - title: Rest or cross-training
   - title: Endurance {10:16}
@@ -27,7 +31,9 @@ schedule:
 - workouts:
   - title: Rest or cross-training
   - title: General aerobic +  speed {7:11}
-    description: 6 x 12sec uphill followed by 6 x 100m strides
+    description: |-
+      General aerobic +  speed {7:11}
+      6 x 12sec uphill followed by 6 x 100m strides
     distance: 7.0
   - title: Endurance {8:13}
     distance: 8.0
@@ -35,6 +41,7 @@ schedule:
   - title: Lactate threshold {8:13}
     distance: 8.0
     description: |-
+      Lactate threshold {8:13}
       16 min LT interval (jog 4 min recovery)
       12 min LT interval
   - title: Rest or cross-training
@@ -45,13 +52,16 @@ schedule:
 - workouts:
   - title: Rest or cross-training
   - title: General aerobic +  speed {8:13}
-    description: 6 x 12 sec uphill followed by 6 x 100 m strides
+    description: |-
+      General aerobic +  speed {8:13}
+      6 x 12 sec uphill followed by 6 x 100 m strides
     distance: 8.0
   - title: Endurance {9:14}
     distance: 9.0
   - title: Rest or cross-training
   - title: Lactate threshold {8:13}
     description: |-
+      Lactate threshold {8:13}
       2 x 16 min LT intervals (jog 4 min recovery)
     distance: 8.0
   - title: Rest or cross-training
@@ -63,6 +73,7 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic + speed {8:13}
     description: |-
+      General aerobic + speed {8:13}
       2 sets of 5 x 150 m strides (jog 250 m recovery and 4 min between sets)
     distance: 8.0
   - title: General aerobic {7:11}
@@ -79,6 +90,7 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic + speed {7:11}
     description: |- 
+      General aerobic + speed {7:11}
       10 × 100m strides
     distance: 7.0
   - title: Endurance {9:14}
@@ -86,6 +98,7 @@ schedule:
   - title: Rest or cross-training
   - title: Lactate threshold {8:13}
     description: |-
+      Lactate threshold {8:13}
       16 min LT interval (log 4 min recovery)
       12 min LT interval (log 4 min recovery)
       8 min LT interval
@@ -100,6 +113,7 @@ schedule:
   - title: Rest or cross-training
   - title: VO₂max {8:13}
     description: |-
+      VO₂max {8:13}
       5 x 1,000 m @ 3K-5K race pace (jog 50-90% interval time recovery)
     distance: 8.0
   - title: Endurance {9:14}
@@ -107,12 +121,14 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic + speed {8:13}
     description: |-
+      General aerobic + speed {8:13}
       2 sets of 6 x 100 m strides (jog 3 min between sets)
     distance: 8.0
   - title: Recovery {5:8}
     distance: 5.0
   - title: Progression long run {11:18}
-    description: 
+    description: |-
+      Progression long run {11:18}
       Increase effort steadily throughout run, last 3 miles (5 km) @ LT pace
     distance: 11.0
 
@@ -120,7 +136,8 @@ schedule:
 - workouts:
   - title: Rest or cross-training
   - title: General aerobic + speed {8:13}
-    description:
+    description: |-
+      General aerobic + speed {8:13}
       6 x 12 sec uphill, followed by 6 x 100 m strides
     distance: 8.0
   - title: Endurance {10:16}
@@ -128,6 +145,7 @@ schedule:
   - title: Rest or cross-training
   - title: Lactate threshold {9:14}
     description: |-
+      Lactate threshold {9:14}
       36 min tempo run
     distance: 9.0
   - title: Recovery {4:6}
@@ -140,6 +158,7 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic + speed {7:11}
     description: |-
+      General aerobic + speed {7:11}
       2 sets of 4 x 150 m strides (jog 250m recovery and 4 min between sets)
     distance: 7.0
   - title: General aerobic {7:11}
@@ -157,13 +176,15 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic + speed {8:13}
     description: |-
+      General aerobic + speed {8:13}
       2 sets of 6 x 100 m strides (jog 3 min between sets)
     distance: 8.0
   - title: Endurance {11:18}
     distance: 11.0
   - title: Rest or cross-training
   - title: VO₂max {9:14}
-    description:
+    description: |-
+      VO₂max {9:14}
       5 × 1,200m @ 3K-5K race pace (jog 50-90% interval time recovery)
     distance: 9.0
   - title: Recovery {4:6}
@@ -176,6 +197,7 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic + speed {8:13}
     description: |-
+      General aerobic + speed {8:13}
       2 sets of 4 x 150 m strides (jog 250m recovery and 4 min between sets)
     distance: 8.0
   - title: General aerobic {7:11}
@@ -193,6 +215,7 @@ schedule:
   - title: Rest or cross-training
   - title: General aerobic + speed {6:10}
     description: |-
+      General aerobic + speed {6:10}
       2 sets of 6 x 100 m strides (jog 3 min between sets)
     distance: 6.0
   - title: Recovery {5:8}
@@ -200,6 +223,7 @@ schedule:
   - title: Rest or cross-training
   - title: VO₂max {8:13}
     description: |-
+      VO₂max {8:13}
       2 × 1,200 m
       2 × 1,000 m
       1 × 800 m
@@ -214,7 +238,8 @@ schedule:
 - workouts:
   - title: Rest or cross-training
   - title: Race pace + speed {7:11}
-    description:
+    description: |-
+      Race pace + speed {7:11}
       4 × 100 m strides
       2 miles @ 15K or 10-mile race pace
     distance: 7.0
@@ -224,7 +249,9 @@ schedule:
     distance: 4.0
   - title: Rest
   - title: Recovery {3:5}
-    description: 4 × 100 m strides
+    description: |-
+      Recovery {3:5}
+      4 × 100 m strides
     distance: 3.0
   - title: 15k or 10-mile goal race {13:21}
     distance: 13.0

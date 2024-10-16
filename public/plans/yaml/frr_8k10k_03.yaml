@@ -49,6 +49,7 @@ schedule:
     distance: 11.0
   - title: 2 recovery runs ({10:16})
     description: |-
+      2 recovery runs ({10:16})
       {6:10}
       {4:6}
     distance: 10.0
@@ -75,6 +76,7 @@ schedule:
     distance: 11.0
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -96,6 +98,7 @@ schedule:
     distance: 10.0
   - title: 2 recovery runs ({10:16})
     description: |-
+      2 recovery runs ({10:16})
       {6:10}
       {4:6}
     distance: 6.0
@@ -126,6 +129,7 @@ schedule:
     distance: 11.0
   - title: 2 recovery runs ({10:14})
     description: |-
+      2 recovery runs ({10:14})
       {5:8}
       {4:6}
     distance: 5.0
@@ -152,6 +156,7 @@ schedule:
     distance: 12.0
   - title: 2 recovery runs ({10:16})
     description: |-
+      2 recovery runs ({10:16})
       {6:10}
       {4:6}
     distance: 10.0
@@ -179,6 +184,7 @@ schedule:
     distance: 12.0
   - title: 2 recovery runs ({10:14})
     description: |-
+      2 recovery runs ({10:14})
       {5:8}
       {4:6}
     distance: 5.0
@@ -193,6 +199,7 @@ schedule:
 - workouts:
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -228,6 +235,7 @@ schedule:
     distance: 12.0
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0
@@ -242,6 +250,7 @@ schedule:
 - workouts:
   - title: 2 recovery runs ({9:14})
     description: |-
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
     distance: 9.0

@@ -13,7 +13,7 @@
             },
             {
                "title": "General aerobic + speed {6:10}",
-               "description": "6 \u00d7 12 sec uphill followed by 6 \u00d7 100 m strides",
+               "description": "General aerobic + speed {6:10}\n\"6 \u00d7 12 sec uphill followed by 6 \u00d7 100 m strides\"",
                "distance": 6.0
             },
             {
@@ -25,7 +25,7 @@
             },
             {
                "title": "Lactate threshold {7:11}",
-               "description": "4 \u00d7 6 min LT intervals\n(jog 2 min recovery)",
+               "description": "Lactate threshold {7:11}\n4 \u00d7 6 min LT intervals\n(jog 2 min recovery)",
                "distance": 7.0
             },
             {
@@ -44,7 +44,7 @@
             },
             {
                "title": "General aerobic + speed {5:8}",
-               "description": "6 \u00d7 12 sec uphill followed by 6 \u00d7 100 m strides",
+               "description": "General aerobic + speed {5:8}\n\"6 \u00d7 12 sec uphill followed by 6 \u00d7 100 m strides\"",
                "distance": 5.0
             },
             {
@@ -56,7 +56,7 @@
             },
             {
                "title": "VO\u2082max {7:11}",
-               "description": "5 \u00d7 3 min uphill @ 3K-5K race effort\n(jog downhill recovery)",
+               "description": "VO\u2082max {7:11}\n5 \u00d7 3 min uphill @ 3K-5K race effort\n(jog downhill recovery)",
                "distance": 7.0
             },
             {
@@ -76,7 +76,7 @@
             },
             {
                "title": "Speed {5:8}",
-               "description": "2 sets of 3 \u00d7 300 m @ 800 m to mile race pace\n(jog 300 m recovery and 4 min between sets)",
+               "description": "Speed {5:8}\n2 sets of 3 \u00d7 300 m @ 800 m to mile race pace\n(jog 300 m recovery and 4 min between sets)",
                "distance": 5.0
             },
             {
@@ -88,7 +88,7 @@
             },
             {
                "title": "Lactate threshold {8:13}",
-               "description": "3 \u00d7 8 min LT intervals\n(jog 3 min recovery)",
+               "description": "Lactate threshold {8:13}\n3 \u00d7 8 min LT intervals\n(jog 3 min recovery)",
                "distance": 8.0
             },
             {
@@ -108,7 +108,7 @@
             },
             {
                "title": "Speed {6:10}",
-               "description": "2 sets of 4 \u00d7 200 m @ 800 m to mile race pace\n(jog 200 m recovery and 4 min between sets)",
+               "description": "Speed {6:10}\n2 sets of 4 \u00d7 200 m @ 800 m to mile race pace\n(jog 200 m recovery and 4 min between sets)",
                "distance": 6.0
             },
             {
@@ -139,7 +139,7 @@
             },
             {
                "title": "General aerobic + speed {7:11}",
-               "description": "6 \u00d7 12 sec uphill followed by 6 \u00d7 100 m strides",
+               "description": "General aerobic + speed {7:11}\n\"6 \u00d7 12 sec uphill followed by 6 \u00d7 100 m strides\"",
                "distance": 7.0
             },
             {
@@ -151,7 +151,7 @@
             },
             {
                "title": "VO\u2082max {8:13}",
-               "description": "5 \u00d7 1,000 m @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
+               "description": "VO\u2082max {8:13}\n5 \u00d7 1,000 m @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
                "distance": 8.0
             },
             {
@@ -171,7 +171,7 @@
             },
             {
                "title": "Lactate threshold {7:11}",
-               "description": "20 min tempo run",
+               "description": "Lactate threshold {7:11}\n20 min tempo run",
                "distance": 7.0
             },
             {
@@ -183,7 +183,7 @@
             },
             {
                "title": "VO\u2082max {8:13}",
-               "description": "8 \u00d7 600 m @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
+               "description": "VO\u2082max {8:13}\n8 \u00d7 600 m @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
                "distance": 8.0
             },
             {
@@ -203,7 +203,7 @@
             },
             {
                "title": "General aerobic + speed {7:11}",
-               "description": "2 sets of 6 \u00d7 100 m strides (jog 3 min between sets)",
+               "description": "General aerobic + speed {7:11}\n2 sets of 6 \u00d7 100 m strides\n(jog 3 min between sets)",
                "distance": 7.0
             },
             {
@@ -215,7 +215,7 @@
             },
             {
                "title": "VO\u2082max {9:14}",
-               "description": "3 \u00d7 1,000 m\n3 \u00d7 800 m\nAll intervals @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
+               "description": "VO\u2082max {9:14}\n3 \u00d7 1,000 m\n3 \u00d7 800 m\nAll intervals @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
                "distance": 9.0
             },
             {
@@ -235,7 +235,7 @@
             },
             {
                "title": "General aerobic + speed {7:11}",
-               "description": "2 sets of 4 \u00d7 150 m strides\n(jog 250 m recovery and 4 min between sets)",
+               "description": "General aerobic + speed {7:11}\n2 sets of 4 \u00d7 150 m strides\n(jog 250 m recovery and 4 min between sets)",
                "distance": 7.0
             },
             {
@@ -266,7 +266,7 @@
             },
             {
                "title": "General aerobic + speed {8:13}",
-               "description": "2 sets of 5 \u00d7 100 m strides\n(jog 3 min between sets)",
+               "description": "General aerobic + speed {8:13}\n2 sets of 5 \u00d7 100 m strides\n(jog 3 min between sets)",
                "distance": 8.0
             },
             {
@@ -278,7 +278,7 @@
             },
             {
                "title": "VO\u2082max {9:14}",
-               "description": "2 sets of (1,200 m, 800 m, 800 m)\nAll intervals @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
+               "description": "VO\u2082max {9:14}\n2 sets of (1,200 m, 800 m, 800 m)\nAll intervals @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
                "distance": 9.0
             },
             {
@@ -298,7 +298,7 @@
             },
             {
                "title": "General aerobic + speed {7:11}",
-               "description": "2 sets of 4 \u00d7 150 m strides\n(jog 250 m recovery and 4 min between sets)",
+               "description": "General aerobic + speed {7:11}\n2 sets of 4 \u00d7 150 m strides\n(jog 250 m recovery and 4 min between sets)",
                "distance": 7.0
             },
             {
@@ -329,7 +329,7 @@
             },
             {
                "title": "General aerobic + speed {6:10}",
-               "description": "8 \u00d7 100 m strides",
+               "description": "General aerobic + speed {6:10}\n\"8 \u00d7 100 m strides\"",
                "distance": 6.0
             },
             {
@@ -338,7 +338,7 @@
             },
             {
                "title": "VO\u2082max {8:13}",
-               "description": "4 \u00d7 800 m\n2 \u00d7 600 m\nAll intervals @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
+               "description": "VO\u2082max {8:13}\n4 \u00d7 800 m\n2 \u00d7 600 m\nAll intervals @ 3K-5K race pace\n(jog 50-90% interval time recovery)",
                "distance": 8.0
             },
             {
@@ -358,7 +358,7 @@
          "workouts": [
             {
                "title": "Race pace + speed {6:10}",
-               "description": "4 \u00d7 100 m strides\n800 m @ 5K race pace",
+               "description": "Race pace + speed {6:10}\n4 \u00d7 100 m strides\n800 m @ 5K race pace",
                "distance": 6.0
             },
             {
@@ -374,7 +374,7 @@
             },
             {
                "title": "Recovery {3:5}",
-               "description": "4 \u00d7 100 m strides",
+               "description": "Recovery {3:5}\n\"4 \u00d7 100 m strides\"",
                "distance": 3.0
             },
             {
@@ -409,7 +409,7 @@
             },
             {
                "title": "General aerobic + speed {7:11}",
-               "description": "8 \u00d7 100 m strides",
+               "description": "General aerobic + speed {7:11}\n\"8 \u00d7 100 m strides\"",
                "distance": 7.0
             },
             {

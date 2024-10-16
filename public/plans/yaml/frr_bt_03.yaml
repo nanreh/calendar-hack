@@ -56,6 +56,8 @@ schedule:
   - title: Recovery {4:6}
     distance: 4.0
   - title: General aerobic + speed {7} w/ 8 x 100 m strides {7:11}
+    description: |-
+      General aerobic + speed {7} w/ 8 x 100 m strides {7:11}
     distance: 7.0
   - title: Endurance {13:21}
     distance: 13.0
@@ -87,6 +89,8 @@ schedule:
   - title: Recovery {4:6}
     distance: 4.0
   - title: General aerobic + speed {7} w/ 8 x 100 m strides {7:11}
+    description: |-
+      General aerobic + speed {7} w/ 8 x 100 m strides {7:11}
     distance: 7.0
   - title: Endurance {13:21}
     distance: 13.0
@@ -118,6 +122,8 @@ schedule:
   - title: Recovery {5:8}
     distance: 5.0
   - title: General aerobic + speed {9} w/ 10 x 100 m strides {9:14}
+    description: |-
+      General aerobic + speed {9} w/ 10 x 100 m strides {9:14}
     distance: 9.0
   - title: Endurance {14:23}
     distance: 14.0
@@ -149,6 +155,8 @@ schedule:
   - title: Recovery {6:10}
     distance: 6.0
   - title: General aerobic + speed {10} w/ 10 x 100 m strides {10:16}
+    description: |-
+      General aerobic + speed {10} w/ 10 x 100 m strides {10:16}
     distance: 10.0
   - title: Endurance {14:23}
     distance: 14.0

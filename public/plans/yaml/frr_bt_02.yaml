@@ -52,6 +52,8 @@ schedule:
   - title: General aerobic {3:5}
     distance: 3.0
   - title: General aerobic + speed {6} w/ 8 x 100 m strides {6:10}
+    description: |-
+      General aerobic + speed {6} w/ 8 x 100 m strides {6:10}
     distance: 6.0
   - title: Rest or cross-training
   - title: General aerobic {7:11}
@@ -79,6 +81,8 @@ schedule:
   - title: General aerobic {3:5}
     distance: 3.0
   - title: General aerobic + speed {7} w/ 8 x 100 m strides {7:11}
+    description: |-
+      General aerobic + speed {7} w/ 8 x 100 m strides {7:11}
     distance: 7.0
   - title: Rest or cross-training
   - title: General aerobic {8:13}
@@ -108,6 +112,8 @@ schedule:
   - title: General aerobic {4:6}
     distance: 4.0
   - title: General aerobic + speed {8} w/ 8 x 100 m strides {8:13}
+    description: |-
+      General aerobic + speed {8} w/ 8 x 100 m strides {8:13}
     distance: 7.0
   - title: Rest or cross-training
   - title: General aerobic {9:14}
@@ -137,6 +143,8 @@ schedule:
   - title: General aerobic {5:8}
     distance: 4.0
   - title: General aerobic + speed {8} w/ 8 x 100 m strides {8:13}
+    description: |-
+      General aerobic + speed {8} w/ 8 x 100 m strides {8:13}
     distance: 8.0
   - title: Rest or cross-training
   - title: General aerobic {10:16}

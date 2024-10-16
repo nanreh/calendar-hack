@@ -279,7 +279,9 @@ schedule:
   - title: Recovery {4:6}
     distance: 4.0
   - title: General aerobic + speed {8:13}
-    description: 8 x 100m strides
+    description: |-
+      General aerobic + speed {8:13}
+      8 x 100m strides
     distance: 8.0
   - title: General aerobic {10:16}
     distance: 10.0
