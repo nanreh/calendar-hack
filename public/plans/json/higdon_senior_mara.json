@@ -1,0 +1,233 @@
+{
+   "id": "higdon_senior_mara",
+   "name": "Hal Higdon: Senior Marathon",
+   "description": "Hal Higdon: Senior: \"The Senior program is a special schedule designed for experienced runners, who want to keep their weekly mileage relatively low.\"",
+   "units": "mi",
+   "source": "https://www.halhigdon.com/training-programs/marathon-training/senior/",
+   "type": "Marathon",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} pace",
+               "distance": 4
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "{8:12.9} easy",
+               "distance": 8
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3} easy",
+               "distance": 12
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} easy pace",
+               "distance": 6
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "{6:9.7} easy",
+               "distance": 6
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{14:22.5} easy",
+               "distance": 14
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} pace",
+               "distance": 4
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "{8:12.9} easy",
+               "distance": 8
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3} easy",
+               "distance": 12
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} easy pace",
+               "distance": 6
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "{6:9.7} easy",
+               "distance": 6
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{16:25.8} easy",
+               "distance": 16
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} pace",
+               "distance": 4
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "{10:16.1} easy",
+               "distance": 10
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3} easy",
+               "distance": 12
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} easy pace",
+               "distance": 6
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "{6:9.7} easy",
+               "distance": 6
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{20:32.1} easy",
+               "distance": 20
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{4:6.4} pace",
+               "distance": 4
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "{8:12.9} easy",
+               "distance": 8
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{12:19.3} easy",
+               "distance": 12
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{6:9.7} easy pace",
+               "distance": 6
+            },
+            {
+               "title": "Stretch & strengthen"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Marathon ({26.2:42.2})",
+               "distance": 26.2
+            }
+         ]
+      }
+   ]
+}
