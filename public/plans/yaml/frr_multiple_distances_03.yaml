@@ -1,0 +1,235 @@
+id: frr_multiple_distances_03
+name: 'Faster Road Racing: Multiple Distances (5K to Half-Marathon) Schedule 3'
+description: '"This schedule is for runners who have been training 55 to 65 miles per
+  week. If you have been running fewer than 55 miles per week, follow the
+  base-training schedule in chapter 8 for building up to 60 miles per week
+  before attempting this schedule. This schedule starts at 60 miles per week
+  and gradually builds up to 75 miles with three weeks to go before your key race."'
+units: mi
+source: https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459
+type: Multiple Distances
+schedule:
+- workouts:
+  - title: Rest or cross-training
+  - title: General aerobic {10:16}
+    distance: 10.0
+  - title: Lactate threshold {10:16}
+    description: |-
+      12 min LT interval (jog 4 min recovery)
+      10 min LT interval (jog 4 min recovery)
+      10 min LT interval
+    distance: 10.0
+  - title: Endurance {11:18}
+    distance: 11.0
+  - title: Recovery {7:11}
+    distance: 7.0
+  - title: General aerobic + speed {9:14}
+    description: |-
+      6 x 12 sec uphill followed by 8 x 100m strides
+    distance: 9.0
+  - title: Endurance {13:21}
+    distance: 13.0
+- workouts:
+  - title: Rest or cross-training
+  - title: General aerobic {10:16}
+    distance: 10.0
+  - title: Lactate threshold {11:18}
+    description: |-
+      15 min LT interval (jog 4 min recovery)
+      12 min LT interval (jog 4 min recovery)
+      9 min LT interval
+    distance: 11.0
+  - title: Endurance {11:18}
+    distance: 11.0
+  - title: 2 Recovery runs {9:14}
+    description: |-
+      5 mi (8K)
+      4 mi (6K)
+    distance: 9.0
+  - title: Speed {8:13}
+    description: |-
+      3 sets of 4 x 200m @ 800m to mile race pace (jog 200m recovery and 4 min between sets)
+    distance: 8.0
+  - title: Endurance {14:23}
+    distance: 14.0
+- workouts:
+  - title: Recovery {4:6}
+    distance: 4.0
+  - title: General aerobic {10:16}
+    distance: 10.0
+  - title: VO2max {10:16}
+    description: |-
+      8 x 3 min uphill @ 3K-5K race effort (job downhill recovery)
+    distance: 10.0
+  - title: Endurance {11:18}
+    distance: 11.0
+  - title: 2 Recovery runs {8:12}
+    description: |-
+      4 mi (6K)
+      4 mi (6K)
+    distance: 8.0
+  - title: General aerobic + speed {9:14}
+    description: |-
+      6 x 12 sec uphill followed by 8 x 100m strides
+    distance: 9.0
+  - title: Endurance {14:23}
+    description: |-
+      Increase effort steadily throughout the run, last 2 miles (3K) @ LT pace
+    distance: 14.0
+- workouts:
+  - title: Recovery {5:8}
+    distance: 5.0
+  - title: General aerobic {9:14}
+    distance: 9.0
+  - title: General aerobic {7:11}
+    distance: 7.0
+  - title: Endurance {10:16}
+    distance: 10.0
+  - title: 2 Recovery runs {9:14}
+    description: |-
+      5 mi (8K)
+      4 mi (6K)
+    distance: 9.0
+  - title: Speed {8:13}
+    description: |-
+      3 sets of 4 x 200m @ 800m to mile race pace (jog 200m recovery and 4 min between sets)
+    distance: 8.0
+  - title: Endurance {12:19}
+    distance: 12.0
+- workouts:
+  - title: Recovery {5:8}
+    distance: 5.0
+  - title: VO2max {11:18}
+    description: |-
+      3 x 1200m, 3 x 1000m
+      All intervals @ 3K-5K race pace (jog 50-90% interval time recovery)
+    distance: 11.0
+  - title: General aerobic {8:13}
+    distance: 8.0
+  - title: Endurance {11:18}
+    distance: 11.0
+  - title: 2 Recovery runs {8:12}
+    description: |-
+      4 mi (6K)
+      4 mi (6K)
+    distance: 8.0
+  - title: Lactate threshold {11:18}
+    description: |-
+      16 min LT interval (jog 4 min recovery)
+      12 min LT interval (jog 4 min recovery)
+      10 min LT interval
+    distance: 11.0
+  - title: Endurance {15:24}
+    distance: 15.0
+- workouts:
+  - title: Recovery {5:8}
+    distance: 5.0
+  - title: General aerobic {10:16}
+    distance: 10.0
+  - title: VO2max {11:18}
+    description: |-
+      3 x 1200m, 3 x 1000m
+      All intervals @ 3K-5K race pace (jog 50-90% interval time recovery)
+    distance: 11.0
+  - title: Endurance {12:19}
+    distance: 12.0
+  - title: 2 Recovery runs {9:14}
+    description: |-
+      5 mi (6K)
+      4 mi (6K)
+    distance: 9.0
+  - title: General aerobic + speed {10:16}
+    description: |-
+      2 sets of 6 x 100 m strides (job 3 min between sets)
+    distance: 10.0
+  - title: Progression long run {15:24}
+    description: |-
+      Increase effort steadily throughout run, last 3 miles (5K) @ LT pace
+    distance: 15.0
+- workouts:
+  - title: 2 Recovery runs {9:14}
+    description: |-
+      5 mi (6K)
+      4 mi (6K)
+    distance: 9.0
+  - title: General aerobic {10:16}
+    distance: 10.0
+  - title: Speed {8:13}
+    description: |-
+      2 sets of 5 x 200m @ 800m to mile race pace (jog 200m recovery and 4 min between sets)
+    distance: 8.0
+  - title: Endurance {12:19}
+    distance: 12.0
+  - title: 2 Recovery runs {9:14}
+    description: |-
+      5 mi (6K)
+      4 mi (6K)
+    distance: 9.0
+  - title: Lactate threshold {11:18}
+    description: |-
+      36 min tempo run
+    distance: 11.0
+  - title: Endurance {16:26}
+    distance: 16.0
+- workouts:
+  - title: 2 Recovery runs {10:16}
+    description: |-
+      6 mi (10K)
+      4 mi (6K)
+    distance: 10.0
+  - title: General aerobic + speed {11:18}
+    description: |-
+      2 sets of 5 x 150 m strides (jog 250 m recovery and 4 min between sets)
+    distance: 11.0
+  - title: General aerobic {9:14}
+    distance: 9.0
+  - title: General aerobic {7:11}
+    distance: 7.0
+  - title: Recovery {5:8}
+    distance: 5.0 
+  - title: 5K-10K tune-up race {10:16}
+    distance: 10.0 
+  - title: Endurance {12:19}
+    distance: 12.0
+- workouts:
+  - title: Recovery {6:10}
+    distance: 6.0 
+  - title: General aerobic {8:13}
+    distance: 8.0
+  - title: Recovery {7:11}
+    distance: 7.0 
+  - title: VO2max {10:16}
+    description: |- 
+      2 x 1200m
+      2 x 800m
+      2 x 600m
+      All intervals @ 3K-5K race pace (job 50-90% interval time recovery)
+    distance: 10.0
+  - title: Recovery {5:8}
+    distance: 5.0 
+  - title: General aerobic + speed {8:13}
+    description: |-
+      8 x 100m strides
+    distance: 8.0
+  - title: General aerobic {10:16}
+    distance: 10.0
+- workouts:
+  - title: Race pace + speed {8:13}
+    description: |- 
+      4 x 100m strides
+      15% of race distance @ race pace
+    distance: 8.0
+  - title: General aerobic {7:11}
+    distance: 7.0 
+  - title: Recovery {6:10}
+    distance: 6.0 
+  - title: Rest
+  - title: Recovery {4:6}
+    description: |- 
+      4 x 100 m strides
+    distance: 4.0 
+  - title: Key race
+    description: |- 
+      Volume varies depending on race distance
+  - title: Recovery {7:11}
+    distance: 7.0 
