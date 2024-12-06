@@ -17,6 +17,7 @@
         "type": {
             "enum": [
                 "Base",
+                "Multiple Distances",
                 "Marathon",
                 "Half Marathon",
                 "5K",

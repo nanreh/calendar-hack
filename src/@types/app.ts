@@ -17,6 +17,7 @@ export type Milestone = {
 
 export type RaceType =
   | "Base"
+  | "Multiple Distances"
   | "Marathon"
   | "Half Marathon"
   | "5K"

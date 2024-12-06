@@ -29,6 +29,8 @@ export function toDistance(raceType: RaceType): Distance {
   switch (raceType) {
     case "Base":
       return new Distance(0);
+    case "Multiple Distances":
+      return new Distance(0);
     case "5K":
       return new Distance(5000);
     case "10K":
