@@ -13,7 +13,7 @@ schedule:
   - title: General aerobic + Speed {6:10}
     description: |-
       General aerobic + Speed {6:10}
-      8 x 100m strides
+      8 x 100 m strides
     distance: 6.0
   - title: Endurance {8:13}
     distance: 8.0
@@ -21,7 +21,7 @@ schedule:
   - title: Lactate Threshold {7:11}
     description: |-
       Lactate Threshold {7:11}
-      2 x 12min LT intervals (jog 4 min recovery)
+      2 x 12 min LT intervals (jog 4 min recovery)
     distance: 7.0
   - title: Rest or cross-training
   - title: Endurance {10:16}
@@ -30,10 +30,10 @@ schedule:
 # 10wtg 2
 - workouts:
   - title: Rest or cross-training
-  - title: General aerobic +  speed {7:11}
+  - title: General aerobic + speed {7:11}
     description: |-
-      General aerobic +  speed {7:11}
-      6 x 12sec uphill followed by 6 x 100m strides
+      General aerobic + speed {7:11}
+      6 x 12 sec uphill followed by 6 x 100 m strides
     distance: 7.0
   - title: Endurance {8:13}
     distance: 8.0
@@ -51,9 +51,9 @@ schedule:
 # 9wtg 3
 - workouts:
   - title: Rest or cross-training
-  - title: General aerobic +  speed {8:13}
+  - title: General aerobic + speed {8:13}
     description: |-
-      General aerobic +  speed {8:13}
+      General aerobic + speed {8:13}
       6 x 12 sec uphill followed by 6 x 100 m strides
     distance: 8.0
   - title: Endurance {9:14}
@@ -91,7 +91,7 @@ schedule:
   - title: General aerobic + speed {7:11}
     description: |- 
       General aerobic + speed {7:11}
-      10 × 100m strides
+      10 × 100 m strides
     distance: 7.0
   - title: Endurance {9:14}
     distance: 9.0
@@ -103,8 +103,8 @@ schedule:
       12 min LT interval (log 4 min recovery)
       8 min LT interval
     distance: 8.0
-  - title: Recovery {6:10}
-    distance: 6.0
+  - title: Recovery {4:6}
+    distance: 4.0
   - title: Endurance {11:18}
     distance: 11.0
 
@@ -159,7 +159,7 @@ schedule:
   - title: General aerobic + speed {7:11}
     description: |-
       General aerobic + speed {7:11}
-      2 sets of 4 x 150 m strides (jog 250m recovery and 4 min between sets)
+      2 sets of 4 x 150 m strides (jog 250 m recovery and 4 min between sets)
     distance: 7.0
   - title: General aerobic {7:11}
     distance: 7.0
@@ -198,7 +198,7 @@ schedule:
   - title: General aerobic + speed {8:13}
     description: |-
       General aerobic + speed {8:13}
-      2 sets of 4 x 150 m strides (jog 250m recovery and 4 min between sets)
+      2 sets of 4 x 150 m strides (jog 250 m recovery and 4 min between sets)
     distance: 8.0
   - title: General aerobic {7:11}
     distance: 7.0
@@ -255,3 +255,4 @@ schedule:
     distance: 3.0
   - title: 15k or 10-mile goal race {13:21}
     distance: 13.0
+

@@ -15,6 +15,16 @@ export const plans: PlanSummary[] = [
     "Faster Road Racing: 15k and 10 Miles Schedule 1",
     "15K/10M",
   ],
+  [
+    "frr_15k_10m_02",
+    "Faster Road Racing: 15k and 10 Miles Schedule 2",
+    "15K/10M",
+  ],
+  [
+    "frr_15k_10m_03",
+    "Faster Road Racing: 15k and 10 Miles Schedule 3",
+    "15K/10M",
+  ],
   ["frr_bt_01", "Faster Road Racing: Base Training 1", "Base"],
   ["frr_bt_02", "Faster Road Racing: Base Training 2", "Base"],
   ["frr_bt_03", "Faster Road Racing: Base Training 3", "Base"],
