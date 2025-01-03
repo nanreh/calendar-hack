@@ -1,7 +1,7 @@
 {
    "id": "frr_15k10m_02",
    "name": "Faster Road Racing: 15k and 10 Miles Schedule 2",
-   "description": "",
+   "description": "\"This schedule is for runners who have been training 40 to 50 miles per week. If you have been running fewer than 40 miles per week, you should follow the base-training schedule in chapter 8 for building up to 45 miles per week before attempting this schedule. This schedule starts at 46 miles per week and gradually builds up to 60 miles with three weeks to go before your goal race. The training then tapers so you are fit and refreshed for race day.\"",
    "units": "mi",
    "source": "https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459",
    "type": "15k/10m",
