@@ -1,12 +1,7 @@
-import React from "react";
 import HomeButton from "./HomeButton";
 import AboutButton from "./AboutButton";
 import GitHubButton from "./GitHubButton";
 import styled from "styled-components";
-
-interface Props {
-  downloadHandler: () => void;
-}
 
 const Tools = styled.div`
   display: grid;
@@ -45,7 +40,7 @@ const Title = styled.h1`
   color: ${(props) => props.theme.colors.buttonIcons};
 `;
 
-const Toolbar = ({ downloadHandler }: Props) => {
+const Toolbar = () => {
   return (
     <>
       <Tools>
@@ -57,10 +52,7 @@ const Toolbar = ({ downloadHandler }: Props) => {
         <ToolsMiddle>
           <Title>Calendar Hack</Title>
         </ToolsMiddle>
-        <ToolsEnd>
-          {/* <ShareButton /> */}
-          {/* <DownloadButton downloadHandler={downloadHandler} /> */}
-        </ToolsEnd>
+        <ToolsEnd />
       </Tools>
     </>
   );

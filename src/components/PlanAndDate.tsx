@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { DateControl } from "./DateControl";
 import PlanPicker from "./PlanPicker";

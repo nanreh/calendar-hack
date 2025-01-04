@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { FaHome } from "react-icons/fa";
 import { IconContext } from "react-icons";

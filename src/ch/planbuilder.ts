@@ -10,7 +10,6 @@ import {
 } from "types/app";
 
 function renderDayDetails(
-  date: Date,
   sourceUnits: Units,
   plannedWorkout: PlannedWorkout | undefined
 ): DayDetails | undefined {
@@ -55,7 +54,6 @@ export function build(
     end: planDates.planEndDate,
   }).forEach((currDate) => {
     const dayDetails = renderDayDetails(
-      currDate,
       trainingPlan.units,
       workoutsToPlace.shift()
     );

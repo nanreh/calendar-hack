@@ -41,7 +41,7 @@ export class DateControl extends React.Component<Props> {
     const input = (
       <DateInputButton
         selectedDate={this.props.selectedDate}
-        onClick={(e: React.MouseEvent<HTMLElement>) => {}}
+        onClick={() => {}}
       />
     );
 

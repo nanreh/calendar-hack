@@ -1,4 +1,3 @@
-import * as React from "react";
 import styled from "styled-components";
 import { renderDist, getWeekDistance } from "../ch/rendering";
 import StartIcon from "../svg/icons02/start.svg";

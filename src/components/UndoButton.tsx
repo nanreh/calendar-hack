@@ -1,4 +1,3 @@
-import React from "react";
 import { useContext } from "react";
 import { Button } from "./Button";
 import { IconContext } from "react-icons";
@@ -32,7 +31,7 @@ const Root = styled.div`
 const UndoButton = ({ undoHandler, disabled }: Props) => {
   const themeContext = useContext(ThemeContext);
 
-  const onClick = (e: React.MouseEvent<HTMLElement>) => {
+  const onClick = () => {
     undoHandler();
   };
   return (

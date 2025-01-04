@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useDrop } from "react-dnd";
 import { ItemTypes } from "../ch/ItemTypes";
 import { WorkoutCard } from "./WorkoutCard";
@@ -34,13 +33,13 @@ export const DayCell = ({
   selected,
   hovering,
 }: Props) => {
-  function canSwap(d1: Date) {
+  function canSwap() {
     return dayDetails !== undefined;
   }
 
   const [{ isOver, canDrop }, drop] = useDrop({
     accept: ItemTypes.DAY,
-    canDrop: () => canSwap(date),
+    canDrop: () => canSwap(),
     drop: (item: { date: Date }) => {
       swap(date, item.date);
       return;

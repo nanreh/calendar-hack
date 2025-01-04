@@ -1,4 +1,3 @@
-import React from "react";
 
 export const Overlay = ({ color }: { color: string }) => {
   return (

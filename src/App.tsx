@@ -202,7 +202,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Toolbar downloadHandler={downloadHandler} />
+      <Toolbar />
       <PlanAndDate
         units={selectedUnits}
         availablePlans={repo.available}
