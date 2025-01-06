@@ -87,18 +87,18 @@ const App = () => {
     s: NumberParam,
   });
   const [selectedUnits, setSelectedUnits] = useState<Units>(
-    u === "mi" || u === "km" ? u : getLocaleUnits()
+    u === "mi" || u === "km" ? u : getLocaleUnits(),
   );
   var [selectedPlan, setSelectedPlan] = useState(repo.find(p || ""));
   var [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
   var [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
   var [weekStartsOn, setWeekStartsOn] = useState<WeekStartsOn>(
-    s === 0 || s === 1 || s === 6 ? s : WeekStartsOnValues.Monday
+    s === 0 || s === 1 || s === 6 ? s : WeekStartsOnValues.Monday,
   );
   var [planEndDate, setPlanEndDate] = useState(
     d && isAfter(d, new Date())
       ? d
-      : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20)
+      : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20),
   );
 
   useMountEffect(() => {
@@ -117,7 +117,7 @@ const App = () => {
     units: Units,
     plan: PlanSummary,
     date: Date,
-    weekStartsOn: WeekStartsOn
+    weekStartsOn: WeekStartsOn,
   ) => {
     return {
       u: units,
@@ -131,7 +131,7 @@ const App = () => {
     plan: PlanSummary,
     endDate: Date,
     units: Units,
-    weekStartsOn: WeekStartsOn
+    weekStartsOn: WeekStartsOn,
   ) => {
     const racePlan = build(await repo.fetch(plan), endDate, weekStartsOn);
     setRacePlan(racePlan);

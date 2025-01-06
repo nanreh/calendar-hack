@@ -9,7 +9,7 @@ import { format } from "../ch/localize";
 interface Props {
   selectedDate: Date;
   onDateChanged: (date: Date) => void;
-  weekStartsOn: WeekStartsOn
+  weekStartsOn: WeekStartsOn;
 }
 interface ButtonProps {
   selectedDate: Date;
@@ -23,20 +23,19 @@ export const DatePickerWrapper = styled.div`
 // using a class component to avoid "Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?"
 class DateInputButton extends React.Component<ButtonProps> {
   render() {
-        if (!this.props.selectedDate ) {
-            return <p></p>;
-        }
-        return (
-          <Button onClick={this.props.onClick}>
-            <span>{format(this.props.selectedDate)}</span>
-          </Button>
-        );
+    if (!this.props.selectedDate) {
+      return <p></p>;
+    }
+    return (
+      <Button onClick={this.props.onClick}>
+        <span>{format(this.props.selectedDate)}</span>
+      </Button>
+    );
   }
 }
 
 // using a class component to avoid "Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?"
 export class DateControl extends React.Component<Props> {
-
   render() {
     const input = (
       <DateInputButton

@@ -10,7 +10,7 @@ export const Card = styled.div<CardProps>`
   flex-direction: column;
   border-radius: 0.25rem;
   background-color: ${(props) => props.theme.colors.workoutCardBg};
-  opacity: ${(props) => (props.$isDragging ? .5 : 1)};
+  opacity: ${(props) => (props.$isDragging ? 0.5 : 1)};
 `;
 
 export const Content = styled.div`

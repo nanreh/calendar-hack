@@ -60,10 +60,10 @@ export const CalendarGrid = ({
   swapDow,
 }: Props) => {
   const [selectedDow, setSelectedDow] = React.useState<dayOfWeek | undefined>(
-    undefined
+    undefined,
   );
   const [hoveringDow, setHoveringDow] = React.useState<dayOfWeek | undefined>(
-    undefined
+    undefined,
   );
   const maxDistance = findMaxDistance(racePlan.dateGrid.weeks);
 

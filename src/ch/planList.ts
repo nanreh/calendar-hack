@@ -28,9 +28,21 @@ export const plans: PlanSummary[] = [
   ["frr_bt_01", "Faster Road Racing: Base Training 1", "Base"],
   ["frr_bt_02", "Faster Road Racing: Base Training 2", "Base"],
   ["frr_bt_03", "Faster Road Racing: Base Training 3", "Base"],
-  ["frr_multiple_distances_01", "Faster Road Racing: Multiple Distances 1", "Multiple Distances"],
-  ["frr_multiple_distances_02", "Faster Road Racing: Multiple Distances 2", "Multiple Distances"],
-  ["frr_multiple_distances_03", "Faster Road Racing: Multiple Distances 3", "Multiple Distances"],
+  [
+    "frr_multiple_distances_01",
+    "Faster Road Racing: Multiple Distances 1",
+    "Multiple Distances",
+  ],
+  [
+    "frr_multiple_distances_02",
+    "Faster Road Racing: Multiple Distances 2",
+    "Multiple Distances",
+  ],
+  [
+    "frr_multiple_distances_03",
+    "Faster Road Racing: Multiple Distances 3",
+    "Multiple Distances",
+  ],
   [
     "pfitz_half_12_47",
     "Faster Road Racing: Half Marathon Schedule 1, 31 to 47 miles per Week",

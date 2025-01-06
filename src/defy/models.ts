@@ -122,7 +122,7 @@ export type renderOpts = {
 
 export const humanizeDuration = function (
   durationSecs: number,
-  opts: renderOpts
+  opts: renderOpts,
 ): string {
   const totalSeconds = Math.floor(durationSecs);
   const hours = Math.floor(totalSeconds / 3600);
@@ -132,17 +132,17 @@ export const humanizeDuration = function (
   let toRender: string[] = [];
   if (hours > 0 || opts.leadingZeroes) {
     toRender.push(
-      opts.padHours ? hours.toFixed().padStart(2, "0") : hours.toFixed()
+      opts.padHours ? hours.toFixed().padStart(2, "0") : hours.toFixed(),
     );
   }
   if (hours > 0 || minutes > 0 || opts.leadingZeroes) {
     toRender.push(
-      opts.padMinutes ? minutes.toFixed().padStart(2, "0") : minutes.toFixed()
+      opts.padMinutes ? minutes.toFixed().padStart(2, "0") : minutes.toFixed(),
     );
   }
   if (hours > 0 || minutes > 0 || seconds > 0 || opts.leadingZeroes) {
     toRender.push(
-      opts.padSeconds ? seconds.toFixed().padStart(2, "0") : seconds.toFixed()
+      opts.padSeconds ? seconds.toFixed().padStart(2, "0") : seconds.toFixed(),
     );
   }
   return toRender.join(":");
@@ -150,7 +150,7 @@ export const humanizeDuration = function (
 
 export const humanizeDistance = function (
   distanceMeters: number,
-  units: Units
+  units: Units,
 ): string {
   const d =
     units === "mi"

@@ -89,7 +89,7 @@ export function renderStr(input: string, from: Units, to: Units): string {
 export function render(
   input: DayDetails,
   from: Units,
-  to: Units
+  to: Units,
 ): [string, string] {
   // [title, desc]
   let title = handle_conversions(input.title, from, to);

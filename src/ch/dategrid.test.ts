@@ -113,7 +113,7 @@ describe("Plan", function () {
     expect(p.days.length).toEqual(35);
 
     expect(() => p.getEvent(dparse("03/01/2020"))).toThrow(
-      /is not within interval/
+      /is not within interval/,
     );
     expect(p.getEvent(dparse("03/02/2020"))).toEqual({
       desc: "Monday 03/02/2020",
@@ -143,10 +143,10 @@ describe("Plan", function () {
     ];
     expect(p.selectAll("Wednesday").map(fmt)).toEqual(wednesdays);
     tuesdays.forEach((s) =>
-      expect(p.getEvent(dparse(s))?.desc.startsWith("Wednesday")).toBe(true)
+      expect(p.getEvent(dparse(s))?.desc.startsWith("Wednesday")).toBe(true),
     );
     wednesdays.forEach((s) =>
-      expect(p.getEvent(dparse(s))?.desc.startsWith("Tuesday")).toBe(true)
+      expect(p.getEvent(dparse(s))?.desc.startsWith("Tuesday")).toBe(true),
     );
   });
 });

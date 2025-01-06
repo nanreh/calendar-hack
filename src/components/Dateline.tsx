@@ -3,7 +3,10 @@ import { format } from "../ch/localize";
 
 export const DatelineStyle = styled.div<Props>`
   text-align: center;
-  background-color: ${(props) => props.$blank ? props.theme.colors.datelineBlankBg : props.theme.colors.datelineBg };
+  background-color: ${(props) =>
+    props.$blank
+      ? props.theme.colors.datelineBlankBg
+      : props.theme.colors.datelineBg};
   color: ${(props) => props.theme.colors.datelineTxt};
   font-weight: 700;
   font-size: 0.8em;
@@ -18,7 +21,9 @@ interface Props {
 export const Dateline = ({ $date, $blank }: Props) => {
   return (
     <>
-      <DatelineStyle $date={$date} $blank={$blank}>{format($date)}</DatelineStyle>
+      <DatelineStyle $date={$date} $blank={$blank}>
+        {format($date)}
+      </DatelineStyle>
     </>
   );
 };

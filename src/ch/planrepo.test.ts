@@ -11,7 +11,7 @@ describe("PlanRepo", function () {
       expect(
         plan.type === "Marathon" ||
           plan.type === "Half Marathon" ||
-          plan.type === "5K"
+          plan.type === "5K",
       ).toBe(true);
       expect(plan.schedule.length % 7).toBe(0);
     }
@@ -19,7 +19,7 @@ describe("PlanRepo", function () {
 
   it.skip("should have cached all plans", () => {
     expect(
-      repo.available.map(repo.isCached, repo).every((b) => true === b)
+      repo.available.map(repo.isCached, repo).every((b) => true === b),
     ).toBe(true);
   });
 
@@ -27,7 +27,7 @@ describe("PlanRepo", function () {
     it.skip("should have valid RaceType values", function () {
       for (const p of repo.available) {
         expect(
-          p[2] === "Marathon" || p[2] === "Half Marathon" || p[2] === "5K"
+          p[2] === "Marathon" || p[2] === "Half Marathon" || p[2] === "5K",
         ).toBe(true);
       }
     });

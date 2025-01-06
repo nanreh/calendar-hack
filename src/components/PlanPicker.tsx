@@ -15,7 +15,7 @@ const PlanPicker = ({
 }: Props) => {
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const newSelection = availablePlans.find(
-      (p) => p[1] === (event.target.value as string)
+      (p) => p[1] === (event.target.value as string),
     );
     if (newSelection) {
       planChangeHandler(newSelection);
