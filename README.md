@@ -10,41 +10,35 @@ More project details are available on [the About page](https://www.defy.org/hack
 If you have a bugfix, a new feature, a new training plan, a UX/UI fix, or other contribution, please send a PR.
 Feel free to create a GitHub issue if you want to call something out.
 
-## Plans
-Training plans are represented as YAML files that are easy to create and edit. They can be found in [plans/yaml](public/plans/yaml/). A JSON schema exists at [public/schema/plan-schema.json](public/schema/plan-schema.json)
-
 ## Running Locally
 
-Calendar Hack is a React application. It was created using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) with the TypeScript template:
+Calendar Hack is a React application. Using yarn, you can run it locally with: `yarn dev`
+
+The other standard scripts exist also: `yarn test`, `yarn build`, etc.
+
+## Plans
+Training plans are represented as YAML files that are easy to create and edit. They can be found in [plans/yaml](public/plans/yaml/).
+
+Plans can be validated against a JSON schema ([public/schema/plan-schema.json](public/schema/plan-schema.json)) as follows:
+
 ```
-yarn create react-app ch-bootstrap --template typescript
+# Install ajv
+npm install -g ajv-cli
+
+# Run the validator with yarn
+yarn run validatePlans
 ```
-So you can run locally with: `yarn start`
-
-The other standard scripts exist also: `yarn test`, `yard build`, etc.
-
-
-## Validating Plans
-
-The plan validator depends on ajv to validate against a JSON schema
-
-Install ajv
-`npm install -g ajv-cli`
-
-then
-
-`yarn run validatePlans`
-
-
 
 ## Converting new plans
 
-If you are adding a plan, you should write it in YAML and then run
-`./bin/convertPlans` to generate the JSON version for the application. The converter is written in python and requires pyyaml
+If you are adding a new plan or modifying an existing one, you should work with the YAML version of the plan.
 
+A simple program then converts the YAML plans to JSON for the application to consume:
 ```
 python3 -m venv my_env
 source ./venv/bin/activate
 pip install pyyaml
 python3 ./bin/convertPlans
 ```
+
+TODO: automate this step 

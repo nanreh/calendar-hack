@@ -60,10 +60,10 @@ export const CalendarGrid = ({
   swapDow,
 }: Props) => {
   const [selectedDow, setSelectedDow] = React.useState<dayOfWeek | undefined>(
-    undefined
+    undefined,
   );
   const [hoveringDow, setHoveringDow] = React.useState<dayOfWeek | undefined>(
-    undefined
+    undefined,
   );
   const maxDistance = findMaxDistance(racePlan.dateGrid.weeks);
 
@@ -82,7 +82,7 @@ export const CalendarGrid = ({
             maxDistance > 0 && calcWeeklyDistance(w) === maxDistance
           }
         ></WeekSummary>
-        {w.days.map((d, index) => (
+        {w.days.map((d, _) => (
           <DayCell
             key={key(d.date)}
             date={d.date}
@@ -101,7 +101,7 @@ export const CalendarGrid = ({
     return (
       <WeekRow>
         <Blank key={"blank-left"} />
-        {getDaysHeader(weekStartsOn).map((dow, index) => (
+        {getDaysHeader(weekStartsOn).map((dow, _) => (
           <DayOfWeekHeader
             key={dow}
             dow={dow as dayOfWeek}
@@ -117,7 +117,7 @@ export const CalendarGrid = ({
   return (
     <Root>
       {getHeader()}
-      {racePlan.dateGrid.weeks.map((w, index) => getWeek(w))}
+      {racePlan.dateGrid.weeks.map((w, _) => getWeek(w))}
     </Root>
   );
 };

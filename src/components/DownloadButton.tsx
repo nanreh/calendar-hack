@@ -1,4 +1,3 @@
-import React from "react";
 import { useContext } from "react";
 import styled from "styled-components";
 import { ThemeContext } from "styled-components";
@@ -31,7 +30,7 @@ const Root = styled.div`
 const DownloadButton = ({ downloadHandler }: Props) => {
   const themeContext = useContext(ThemeContext);
 
-  const onClick = (e: React.MouseEvent<HTMLElement>) => {
+  const onClick = () => {
     downloadHandler();
   };
   return (

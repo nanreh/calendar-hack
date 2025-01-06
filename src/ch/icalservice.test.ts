@@ -1,4 +1,4 @@
-import { eachDayOfInterval, format } from "date-fns";
+import { eachDayOfInterval } from "date-fns";
 import { register, unregister } from "timezone-mock";
 import { toDate } from "./icalservice";
 

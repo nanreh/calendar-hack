@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { IoMdShare } from "react-icons/io";
 import { IconContext } from "react-icons";

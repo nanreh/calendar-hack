@@ -21,13 +21,13 @@ export type WeekStartsOn =
 export function calcPlanDates(
   numWeeksInPlan: number,
   planEndsOn: Date,
-  weekStartsOn: WeekStartsOn
+  weekStartsOn: WeekStartsOn,
 ): PlanDates {
   const daysInPlan = numWeeksInPlan * 7;
   const planStartsOn = subDays(planEndsOn, daysInPlan - 1);
   const end = startOfDay(endOfWeek(planEndsOn, { weekStartsOn: weekStartsOn }));
   const start = startOfDay(
-    startOfWeek(planStartsOn, { weekStartsOn: weekStartsOn })
+    startOfWeek(planStartsOn, { weekStartsOn: weekStartsOn }),
   );
   const totalDays = 1 + differenceInCalendarDays(end, start);
   if (0 !== totalDays % 7) {

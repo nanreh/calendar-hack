@@ -124,7 +124,7 @@ export class DateGrid<T> {
       // min/max/first/last/weekCount maintenance
       if (!this._max || isAfter(date, this._max)) this._max = date;
       this._last = startOfDay(
-        endOfWeek(this._max, { weekStartsOn: this._weekStartsOn })
+        endOfWeek(this._max, { weekStartsOn: this._weekStartsOn }),
       );
       if (!this._min || isBefore(date, this._min)) this._min = date;
       this._first = startOfWeek(this._min, {
@@ -132,7 +132,7 @@ export class DateGrid<T> {
       });
       this._weekCount = differenceInWeeks(
         startOfDay(addDays(this._last, 1)),
-        this._first
+        this._first,
       );
     } else {
       this._events.delete(k);
@@ -151,8 +151,8 @@ export class DateGrid<T> {
     if (!isWithinInterval(d, { start: this.first, end: this.last }))
       throw new Error(
         `"date ${key(d)} is not within interval (${key(this.first)},${key(
-          this.last
-        )})`
+          this.last,
+        )})`,
       );
   }
 

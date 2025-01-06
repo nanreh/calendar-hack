@@ -10,9 +10,8 @@ import {
 } from "types/app";
 
 function renderDayDetails(
-  date: Date,
   sourceUnits: Units,
-  plannedWorkout: PlannedWorkout | undefined
+  plannedWorkout: PlannedWorkout | undefined,
 ): DayDetails | undefined {
   if (plannedWorkout) {
     return {
@@ -41,12 +40,12 @@ function getWorkouts(trainingPlan: TrainingPlan): PlannedWorkout[] {
 export function build(
   trainingPlan: TrainingPlan,
   raceDate: Date,
-  weekStartsOn: WeekStartsOn
+  weekStartsOn: WeekStartsOn,
 ): RacePlan {
   const planDates = calcPlanDates(
     trainingPlan.schedule.length,
     raceDate,
-    weekStartsOn
+    weekStartsOn,
   );
   const workoutsToPlace = getWorkouts(trainingPlan);
   const map = new Map<Date, DayDetails>();
@@ -55,9 +54,8 @@ export function build(
     end: planDates.planEndDate,
   }).forEach((currDate) => {
     const dayDetails = renderDayDetails(
-      currDate,
       trainingPlan.units,
-      workoutsToPlace.shift()
+      workoutsToPlace.shift(),
     );
     if (dayDetails) {
       map.set(currDate, dayDetails);
@@ -91,7 +89,7 @@ export function swap(racePlan: RacePlan, d1: Date, d2: Date): RacePlan {
 export function swapDow(
   racePlan: RacePlan,
   dow1: dayOfWeek,
-  dow2: dayOfWeek
+  dow2: dayOfWeek,
 ): RacePlan {
   const newPlan = {
     planDates: racePlan.planDates,

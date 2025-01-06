@@ -1,4 +1,3 @@
-import * as React from "react";
 import styled from "styled-components";
 import { DragHandle } from "./DragHandle";
 import { useDrop, useDrag } from "react-dnd";

@@ -1,4 +1,3 @@
-import React from "react";
 import { format } from "../ch/localize";
 import styled from "styled-components";
 import { TrainingPlan } from "types/app";

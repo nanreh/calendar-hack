@@ -1,4 +1,3 @@
-import * as React from "react";
 import { RacePlan, key } from "../ch/dategrid";
 import { format } from "date-fns";
 import { DayCell } from "./DayCell";
@@ -27,7 +26,7 @@ export const WeekCard = ({
 }: Props) => {
   return (
     <div>
-      {week.days.map((d, index) => (
+      {week.days.map((d, _) => (
         <div>
           <DayCell
             key={key(d.date)}

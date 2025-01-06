@@ -59,7 +59,7 @@ async function fetchFromUrl<T>(url: string): Promise<T> {
 // Fetch a T from a URL, use the provided cache.
 async function fetchWithCache<T>(
   url: string,
-  cache: Map<string, T>
+  cache: Map<string, T>,
 ): Promise<T> {
   // check in cache
   if (cache.has(url)) {

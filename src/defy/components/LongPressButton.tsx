@@ -46,7 +46,7 @@ const LongPressButton = ({ activeCb, doneCb, type }: Props) => {
     e.preventDefault();
   }
 
-  function notPressingDown(e: React.MouseEvent | React.TouchEvent) {
+  function notPressingDown() {
     // Stop the timer
     if (undefined !== timerID) {
       clearInterval(timerID);

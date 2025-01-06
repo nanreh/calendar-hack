@@ -20,31 +20,45 @@ type DragSourceProps = {
   $dayDetails: DayDetails | undefined;
 };
 
-const Title = styled.span` 
-    font-weight: 700;
-    font-size: 1em;
+const Title = styled.span`
+  font-weight: 700;
+  font-size: 1em;
 `;
 
-const Description = styled.span` 
-    font-weight: 400;
-    font-size: .8em;
+const Description = styled.span`
+  font-weight: 400;
+  font-size: 0.8em;
 `;
 
 const DragSource = styled.div<DragSourceProps>`
   height: 100%;
 `;
 
-function renderDesc(dayDetails: DayDetails, from: Units, to: Units): React.ReactElement {
+function renderDesc(
+  dayDetails: DayDetails,
+  from: Units,
+  to: Units,
+): React.ReactElement {
   let [title, desc] = render(dayDetails, from, to);
   // Only render the description if it differs from the title
   // In the ical file we always render both and we automatically render the description using the same text as title if description is empty
-  if (title.replace(/\s/g, "")  === desc.replace(/\s/g, "")) {
-    return <p><Title>{title}</Title></p>
+  if (title.replace(/\s/g, "") === desc.replace(/\s/g, "")) {
+    return (
+      <p>
+        <Title>{title}</Title>
+      </p>
+    );
   }
-  return <>
-    <p><Title>{title}</Title></p>
-    <p><Description>{desc}</Description></p>
-  </>;
+  return (
+    <>
+      <p>
+        <Title>{title}</Title>
+      </p>
+      <p>
+        <Description>{desc}</Description>
+      </p>
+    </>
+  );
 }
 
 export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
@@ -63,19 +77,15 @@ export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
   });
 
   return (
-    <DragSource
-      $isDragging={isDragging}
-      $dayDetails={dayDetails}
-      ref={preview}
-    >
+    <DragSource $isDragging={isDragging} $dayDetails={dayDetails} ref={preview}>
       <Card $isDragging={isDragging}>
-          <Dateline $date={date} />
-          <Content>
-            <div ref={drag}>
-              <DragHandle viewBox="0 0 32 36" />
-            </div>
-            {renderDesc(dayDetails, dayDetails.sourceUnits, units)}
-          </Content>
+        <Dateline $date={date} />
+        <Content>
+          <div ref={drag}>
+            <DragHandle viewBox="0 0 32 36" />
+          </div>
+          {renderDesc(dayDetails, dayDetails.sourceUnits, units)}
+        </Content>
       </Card>
     </DragSource>
   );
