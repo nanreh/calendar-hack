@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest --watchAll",
-    "cov": "jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'"
+    "cov": "jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
+    "validatePlans": "bash bin/validatePlans"
   },
   "dependencies": {
     "copy-to-clipboard": "3.3.3",
