@@ -2,10 +2,9 @@ import { format } from "../ch/localize";
 
 interface Props {
   $date: Date;
-  $blank?: boolean;
 }
 
-export const Dateline = ({ $date, $blank }: Props) => {
+export const Dateline = ({ $date }: Props) => {
   return (
     <>
       <div className="dateline">

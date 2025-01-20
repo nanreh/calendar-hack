@@ -7,9 +7,7 @@ const HomeButton = () => {
     <IconContext.Provider value={{}}>
       <div className="tool-button">
         <Link to="/">
-          <a>
             <FaHome style={{ verticalAlign: "middle" }} />
-          </a>
         </Link>
       </div>
     </IconContext.Provider>
