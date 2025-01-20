@@ -22,13 +22,14 @@ export const DayCell = ({
   selected,
   hovering,
 }: Props) => {
-  function canSwap() {
-    return dayDetails !== undefined;
+
+  function canSwap(droppedDate: Date) {
+    return dayDetails !== undefined && date !== droppedDate;
   }
 
   const [{ isOver, canDrop }, drop] = useDrop({
     accept: ItemTypes.DAY,
-    canDrop: () => canSwap(),
+    canDrop: (item) => canSwap(item.date),
     drop: (item: { date: Date }) => {
       swap(date, item.date);
       return;

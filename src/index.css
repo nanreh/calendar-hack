@@ -404,6 +404,10 @@ svg.drag-handle {
   opacity: 1;
 }
 
+.workout-card.dragging {
+  opacity: 0.7;
+}
+
 .workout-content {
   svg {
     width: 1em;
@@ -432,10 +436,6 @@ svg.drag-handle {
 .workout-description {
   font-weight: 400;
   font-size: 0.8em;
-}
-
-.workout-drag-source {
-  height: 100%;
 }
 
 .week-summary {
