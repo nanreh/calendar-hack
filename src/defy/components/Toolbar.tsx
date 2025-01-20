@@ -1,59 +1,22 @@
 import HomeButton from "./HomeButton";
 import AboutButton from "./AboutButton";
 import GitHubButton from "./GitHubButton";
-import styled from "styled-components";
-
-const Tools = styled.div`
-  display: grid;
-  grid-template-columns: 10% auto 10%;
-  margin: 5px;
-`;
-const ToolsStart = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 5px 0;
-`;
-const ToolsMiddle = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  & > h1 {
-    font-weight: 900;
-  }
-  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
-    & > h1 {
-      font-size: 1.5em;
-    }
-  }
-`;
-const ToolsEnd = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 5px 0;
-`;
-
-const Title = styled.h1`
-  display: inline;
-  margin: 0 0.4em;
-  color: ${(props) => props.theme.colors.buttonIcons};
-`;
 
 const Toolbar = () => {
   return (
     <>
-      <Tools>
-        <ToolsStart>
+      <div className="toolbar">
+        <div className="tools-start">
           <HomeButton />
           <AboutButton />
+        </div>
+        <div className="tools-middle">
+          <h1>Calendar Hack</h1>
+        </div>
+        <div className="tools-end">
           <GitHubButton />
-        </ToolsStart>
-        <ToolsMiddle>
-          <Title>Calendar Hack</Title>
-        </ToolsMiddle>
-        <ToolsEnd />
-      </Tools>
+        </div>
+      </div>
     </>
   );
 };

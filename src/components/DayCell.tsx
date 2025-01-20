@@ -2,7 +2,6 @@ import { useDrop } from "react-dnd";
 import { ItemTypes } from "../ch/ItemTypes";
 import { WorkoutCard } from "./WorkoutCard";
 import { BlankCard } from "./BlankCard";
-import styled from "styled-components";
 import { Overlay } from "./Overlay";
 import { DayDetails, Units } from "types/app";
 
@@ -14,16 +13,6 @@ interface Props {
   selected: boolean;
   hovering: boolean;
 }
-
-type DropTargetProps = {
-  $isOver: boolean;
-  $canDrop: boolean;
-};
-
-const DropTarget = styled.div<DropTargetProps>`
-  height: 100%;
-  opacity: ${(props) => (props.$isOver ? 0.5 : 1)};
-`;
 
 export const DayCell = ({
   dayDetails,
@@ -59,7 +48,7 @@ export const DayCell = ({
         height: "100%",
       }}
     >
-      <DropTarget $isOver={isOver} $canDrop={canDrop} ref={drop}>
+      <div className="day-cell" ref={drop}>
         {dayDetails && (
           <WorkoutCard
             dayDetails={dayDetails}
@@ -74,7 +63,7 @@ export const DayCell = ({
 
         {dayDetails && selected && <Overlay color="pink" />}
         {dayDetails && !selected && hovering && <Overlay color="lightgreen" />}
-      </DropTarget>
+      </div>
     </div>
   );
 };

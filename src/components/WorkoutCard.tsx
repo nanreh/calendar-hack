@@ -1,8 +1,6 @@
 import React from "react";
 import { render } from "../ch/rendering";
-import { Card, Content } from "./WorkoutUx";
 import { Dateline } from "./Dateline";
-import styled from "styled-components";
 import { useDrag, DragSourceMonitor } from "react-dnd";
 import { ItemTypes } from "../ch/ItemTypes";
 import { DragHandle } from "./DragHandle";
@@ -15,25 +13,6 @@ interface Props {
   swap: (d1: Date, d2: Date) => void;
 }
 
-type DragSourceProps = {
-  $isDragging: boolean;
-  $dayDetails: DayDetails | undefined;
-};
-
-const Title = styled.span`
-  font-weight: 700;
-  font-size: 1em;
-`;
-
-const Description = styled.span`
-  font-weight: 400;
-  font-size: 0.8em;
-`;
-
-const DragSource = styled.div<DragSourceProps>`
-  height: 100%;
-`;
-
 function renderDesc(
   dayDetails: DayDetails,
   from: Units,
@@ -42,21 +21,17 @@ function renderDesc(
   let [title, desc] = render(dayDetails, from, to);
   // Only render the description if it differs from the title
   // In the ical file we always render both and we automatically render the description using the same text as title if description is empty
-  if (title.replace(/\s/g, "") === desc.replace(/\s/g, "")) {
-    return (
-      <p>
-        <Title>{title}</Title>
-      </p>
-    );
-  }
+  desc = title.replace(/\s/g, "") === desc.replace(/\s/g, "") ? "" : desc;
   return (
     <>
       <p>
-        <Title>{title}</Title>
+        <span className="workout-title">{title}</span>
       </p>
-      <p>
-        <Description>{desc}</Description>
-      </p>
+      {desc && 
+        <p>
+          <span className="workout-description">{desc}</span>
+        </p>
+      }
     </>
   );
 }
@@ -77,16 +52,16 @@ export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
   });
 
   return (
-    <DragSource $isDragging={isDragging} $dayDetails={dayDetails} ref={preview}>
-      <Card $isDragging={isDragging}>
+    <div className="workout-drag-source" ref={preview}>
+      <div className={`workout-card ${isDragging ? "dragging" : ""}`}>
         <Dateline $date={date} />
-        <Content>
+        <div className="workout-content">
           <div ref={drag}>
             <DragHandle viewBox="0 0 32 36" />
           </div>
           {renderDesc(dayDetails, dayDetails.sourceUnits, units)}
-        </Content>
-      </Card>
-    </DragSource>
+        </div>
+      </div>
+    </div>
   );
 };

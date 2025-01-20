@@ -1,5 +1,4 @@
 import React from "react";
-import Select from "../defy/components/Select";
 import { PlanSummary } from "types/app";
 
 interface Props {
@@ -31,9 +30,9 @@ const PlanPicker = ({
   ));
 
   return (
-    <Select value={selectedPlan[1]} onChange={handleChange}>
+    <select className="select" value={selectedPlan[1]} onChange={handleChange}>
       {planOptions}
-    </Select>
+    </select>
   );
 };
 
