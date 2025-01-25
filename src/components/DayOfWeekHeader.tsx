@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { DragHandle } from "./DragHandle";
 import { useDrop, useDrag } from "react-dnd";
 import { ItemTypes } from "../ch/ItemTypes";
@@ -10,49 +9,6 @@ interface Props {
   setSelectedDow: (dow: dayOfWeek | undefined) => void;
   setHoveringDow: (dow: dayOfWeek | undefined) => void;
 }
-
-const Root = styled.div`
-  svg {
-    width: 1em;
-  }
-  div {
-    text-align: center;
-    width: 100%;
-  }
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  align-content: stretch;
-  align-items: center;
-  padding: 2px 4px;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  background-color: ${(props) => props.theme.colors.dowHeaderBg};
-  @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
-    display: none;
-  }
-`;
-
-type DragSourceProps = {
-  $isDragging: boolean;
-  $dow: dayOfWeek;
-};
-
-const DragSource = styled.div<DragSourceProps>`
-  height: 100%;
-  opacity: ${(props) => (props.$isDragging ? 0.5 : 1)};
-`;
-
-type DropTargetProps = {
-  $isOver: boolean;
-  $canDrop: boolean;
-};
-
-const DropTarget = styled.div<DropTargetProps>`
-  height: 100%;
-  opacity: ${(props) => (props.$isOver ? 0.5 : 1)};
-`;
 
 export const DayOfWeekHeader = ({
   dow,
@@ -80,7 +36,8 @@ export const DayOfWeekHeader = ({
     },
   });
 
-  const [{ isOver, canDrop }, drop] = useDrop({
+  //const [{ isOver, canDrop }, drop] = useDrop({
+  const [{}, drop] = useDrop({
     accept: ItemTypes.DOW,
     canDrop: (item: { id: dayOfWeek }) => canSwapWith(item.id),
     drop: (item: { id: dayOfWeek }) => {
@@ -103,8 +60,8 @@ export const DayOfWeekHeader = ({
   });
 
   return (
-    <DragSource $isDragging={isDragging} $dow={dow}>
-      <DropTarget $isOver={isOver} $canDrop={canDrop} ref={drop}>
+    <div className={`week-header ${isDragging ? "dragging" : ""}`}>
+      <div ref={drop}>
         <div
           style={{
             position: "relative",
@@ -113,13 +70,13 @@ export const DayOfWeekHeader = ({
           }}
         >
           <div ref={dragPreview}>
-            <Root ref={drag}>
+            <div className="day-header" ref={drag}>
               <DragHandle viewBox="0 0 32 36" />
               <div>{dow}</div>
-            </Root>
+            </div>
           </div>
         </div>
-      </DropTarget>
-    </DragSource>
+      </div>
+    </div>
   );
 };

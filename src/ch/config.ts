@@ -1,5 +1,5 @@
 const AppConfig = {
-  plansPath: "plans/json/",
+  plansPath: "/hacks/calendarhack/plans/json/",
 };
 
 export const Config = AppConfig;

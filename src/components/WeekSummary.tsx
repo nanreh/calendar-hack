@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { renderDist, getWeekDistance } from "../ch/rendering";
 import StartIcon from "../svg/icons02/start.svg";
 import FinishIcon from "../svg/icons02/finish.svg";
@@ -16,32 +15,6 @@ interface Props {
   isHighestMileage: boolean;
 }
 
-const Root = styled.div`
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  background-color: ${(props) => props.theme.colors.weekSummaryBg};
-  @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
-    position: relative;
-  }
-`;
-
-const Icon = styled.img`
-  max-height: 64px;
-  //max-width: 64px;
-  display: inline;
-  @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    max-height: 32px;
-    max-width: 32px;
-  }
-`;
-
 export const WeekSummary = ({
   week,
   units,
@@ -51,19 +24,19 @@ export const WeekSummary = ({
 }: Props) => {
   const distance = getWeekDistance(week, units);
   return (
-    <Root key={"week:" + week.weekNum}>
+    <div className="week-summary" key={"week:" + week.weekNum}>
       <p>
         <strong>{`Week ${1 + week.weekNum}`}</strong>
       </p>
       {distance > 0 && <p>{renderDist(distance, units, units)}</p>}
-      {isFirstWeek && <Icon src={StartIcon} alt={"Start"} />}
-      {isLastWeek && <Icon src={FinishIcon} alt="Finish" />}
-      {isHighestMileage && <Icon src={HighMileageIcon} alt="Highest Mileage" />}
+      {isFirstWeek && <img src={StartIcon} alt={"Start"} />}
+      {isLastWeek && <img src={FinishIcon} alt="Finish" />}
+      {isHighestMileage && <img src={HighMileageIcon} alt="Highest Mileage" />}
       {isHighestMileage && (
         <p>
           <small>Highest Mileage</small>
         </p>
       )}
-    </Root>
+    </div>
   );
 };

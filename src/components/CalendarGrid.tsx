@@ -3,7 +3,6 @@ import { RacePlan, key } from "../ch/dategrid";
 import { DayCell } from "./DayCell";
 import { WeekSummary } from "./WeekSummary";
 import { DayOfWeekHeader } from "./DayOfWeekHeader";
-import styled from "styled-components";
 import { format } from "date-fns";
 import { getDaysHeader, WeekStartsOn } from "../ch/datecalc";
 import { Units, dayOfWeek, Week, DayDetails } from "types/app";
@@ -16,22 +15,6 @@ interface Props {
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
 }
 
-const Root = styled.div`
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-  row-gap: 0.5em;
-`;
-
-const WeekRow = styled.div`
-  display: grid;
-  @media (min-width: ${(props) => props.theme.screenSizes.lg}) {
-    grid-template-columns: 0.75fr repeat(7, 1fr);
-  }
-  column-gap: 0.5em;
-`;
-
-const Blank = styled.div``;
 
 function calcWeeklyDistance(w: Week<DayDetails>): number {
   return w.days
@@ -69,7 +52,7 @@ export const CalendarGrid = ({
 
   function getWeek(w: Week<DayDetails>) {
     return (
-      <WeekRow key={`wr:${w.weekNum}`}>
+      <div className="week-grid" key={`wr:${w.weekNum}`}>
         <WeekSummary
           key={`ws:${w.weekNum}`}
           desc={w.desc}
@@ -93,14 +76,14 @@ export const CalendarGrid = ({
             hovering={hoveringDow === format(d.date, "EEEE")}
           />
         ))}
-      </WeekRow>
+      </div>
     );
   }
 
   function getHeader() {
     return (
-      <WeekRow>
-        <Blank key={"blank-left"} />
+      <div className="week-grid">
+        <div key={"blank-left"} />
         {getDaysHeader(weekStartsOn).map((dow, _) => (
           <DayOfWeekHeader
             key={dow}
@@ -110,14 +93,14 @@ export const CalendarGrid = ({
             setHoveringDow={setHoveringDow}
           />
         ))}
-      </WeekRow>
+      </div>
     );
   }
 
   return (
-    <Root>
+    <div className="calendar-grid">
       {getHeader()}
       {racePlan.dateGrid.weeks.map((w, _) => getWeek(w))}
-    </Root>
+    </div>
   );
 };

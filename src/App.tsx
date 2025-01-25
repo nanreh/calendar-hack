@@ -4,13 +4,11 @@ import { endOfWeek, addWeeks, isAfter } from "date-fns";
 import { RacePlan } from "./ch/dategrid";
 import { build, swap, swapDow } from "./ch/planbuilder";
 import { CalendarGrid } from "./components/CalendarGrid";
-import { ThemeProvider } from "styled-components";
-import { toIcal, download } from "./ch/icalservice";
-import UnitsButtons from "./defy/components/UnitsButtons";
+import { toIcal } from "./ch/icalservice";
+import { toCsv } from "./ch/csvService";
+import { download } from "./ch/downloadservice";
+import UnitsButtons from "./components/UnitsButtons";
 import PlanAndDate from "./components/PlanAndDate";
-import Toolbar from "./defy/components/Toolbar";
-import styled from "styled-components";
-import DownloadButton from "./components/DownloadButton";
 import UndoButton from "./components/UndoButton";
 import history from "./defy/history";
 import {
@@ -25,59 +23,6 @@ import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
 import { Units, PlanSummary, dayOfWeek } from "types/app";
 import { getLocaleUnits } from "./ch/localize";
-
-const theme = {
-  colors: {
-    bodyBg: "#B8E2E6",
-    title: "#424242",
-    buttonBg: "#E3F7F8",
-    buttonIcons: "#E3F7F8",
-    buttonTxt: "#424242",
-    buttonSelectedBorder: "#FF6FDF",
-    dowHeaderBg: "#C2C5EB",
-    weekSummaryBg: "#C2C5EB",
-    workoutCardBg: "#E3F7F8",
-    workoutCardBlankBg: "#e9ecef",
-    datelineBg: "#B391D2",
-    datelineBlankBg: "#beafd2",
-    datelineTxt: "#424242",
-    planDescriptionBg: "#E3F7F8",
-    planDescriptionTxt: "#424242",
-  },
-  fonts: ["sans-serif", "Roboto"],
-  fontSizes: {
-    small: "1em",
-    medium: "2em",
-    large: "3em",
-  },
-  screenSizes: {
-    sm: "576px",
-    md: "768px",
-    lg: "992px",
-    xl: "1200px",
-  },
-};
-
-const MainUI = styled.div`
-  margin-top: 2em;
-`;
-
-const SecondToolbar = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1em 0 5px 0;
-  color: ${(props) => props.theme.colors.controlsTitle};
-  @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
-    flex-direction: column;
-  }
-`;
-const UnitsDiv = styled.div`
-  @media (max-width: ${(props) => props.theme.screenSizes.lg}) {
-    margin-top: 0.5em;
-  }
-`;
 
 const App = () => {
   const [{ u, p, d, s }, setq] = useQueryParams({
@@ -184,11 +129,20 @@ const App = () => {
     }
   }
 
-  function downloadHandler() {
+  function downloadIcalHandler() {
     if (racePlan) {
-      const iCalEventsStr = toIcal(racePlan, selectedUnits);
-      if (iCalEventsStr) {
-        download(iCalEventsStr, "plan", "ics");
+      const eventsStr = toIcal(racePlan, selectedUnits);
+      if (eventsStr) {
+        download(eventsStr, "plan", "ics");
+      }
+    }
+  }
+
+  function downloadCsvHandler() {
+    if (racePlan) {
+      const eventsStr = toCsv(racePlan, selectedUnits, weekStartsOn);
+      if (eventsStr) {
+        download(eventsStr, "plan", "csv");
       }
     }
   }
@@ -201,42 +155,39 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <Toolbar />
+    <>
       <PlanAndDate
-        units={selectedUnits}
         availablePlans={repo.available}
         selectedPlan={selectedPlan}
         selectedDate={planEndDate}
         dateChangeHandler={onSelectedEndDateChange}
         selectedPlanChangeHandler={onSelectedPlanChange}
-        unitsChangeHandler={onSelectedUnitsChanged}
-        downloadHandler={downloadHandler}
         weekStartsOn={weekStartsOn}
       />
-      <SecondToolbar>
-        <UnitsDiv>
+      <div className="second-toolbar">
+        <div className="units">
           <UnitsButtons
             units={selectedUnits}
             unitsChangeHandler={onSelectedUnitsChanged}
           />
-        </UnitsDiv>
-      </SecondToolbar>
-      <SecondToolbar>
-        <DownloadButton downloadHandler={downloadHandler} />
+        </div>
+      </div>
+      <div className="second-toolbar">
+        <button className="app-button" onClick={downloadIcalHandler}>Download iCal</button>
+        <button className="app-button" onClick={downloadCsvHandler}>Download CSV</button>
         <UndoButton
           disabled={undoHistory.length <= 1}
           undoHandler={undoHandler}
         />
-      </SecondToolbar>
+      </div>
       <PlanDetailsCard racePlan={racePlan} />
-      <SecondToolbar>
+      <div className="second-toolbar">
         <WeekStartsOnPicker
           weekStartsOn={weekStartsOn}
           changeHandler={onWeekStartsOnChanged}
         />
-      </SecondToolbar>
-      <MainUI>
+      </div>
+      <div className="main-ui">
         {racePlan && (
           <CalendarGrid
             racePlan={racePlan}
@@ -246,8 +197,8 @@ const App = () => {
             swapDow={doSwapDow}
           />
         )}
-      </MainUI>
-    </ThemeProvider>
+      </div>
+    </>
   );
 };
 

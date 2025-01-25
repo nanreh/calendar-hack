@@ -1,17 +1,11 @@
-import styled from "styled-components";
 
 interface Props {
   viewBox?: string;
 }
 
-const DragHandleSvg = styled.svg`
-  fill: gray;
-  cursor: grab;
-`;
-
 export const DragHandle = ({ viewBox = "0 0 32 52" }: Props) => {
   return (
-    <DragHandleSvg viewBox={viewBox}>
+    <svg className="drag-handle" viewBox={viewBox}>
       <rect height="4" width="4" y="4" x="0" />
       <rect height="4" width="4" y="12" x="0" />
       <rect height="4" width="4" y="20" x="0" />
@@ -51,6 +45,6 @@ export const DragHandle = ({ viewBox = "0 0 32 52" }: Props) => {
       <rect height="4" width="4" y="36" x="32" />
       <rect height="4" width="4" y="44" x="32" />
       <rect height="4" width="4" y="52" x="32" />
-    </DragHandleSvg>
+    </svg>
   );
 };
