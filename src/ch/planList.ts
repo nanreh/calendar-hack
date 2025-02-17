@@ -89,6 +89,7 @@ export const plans: PlanSummary[] = [
   ["higdon_nov_half2", "Hal Higdon: Half Marathon Novice 2", "Half Marathon"],
   ["hansons_adv_mara", "Hansons Advanced Marathon", "Marathon"],
   ["hansons_beg_mara", "Hansons Beginner Marathon", "Marathon"],
+  ["coogan_pbr_mara_up_to_65", "Personal Best Running: 16-Week Marathon - Up to 65 Miles per Week", "Marathon"],
   [
     "pfitz_12_55",
     "Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule",
