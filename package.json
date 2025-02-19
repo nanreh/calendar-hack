@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "jest --watchAll",
+    "test": "jest",
     "cov": "jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
     "validatePlans": "bash bin/validatePlans",
     "pretty": "prettier src --write"
