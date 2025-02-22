@@ -1,0 +1,534 @@
+{
+   "id": "coogan_pbr_mara_up_to_65",
+   "name": "Personal Best Running: 16-Week Marathon Schedule - Up to 65 Miles per Week",
+   "units": "mi",
+   "description": "\"16-Week Marathon Schedule: Up to 65 Miles per Week\" from the book \"Personal Best Running\" by Mark Coogan and Scott Douglas",
+   "source": "https://us.humankinetics.com/products/personal-best-running",
+   "type": "Marathon",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {4}-{6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Regular run: {4}-{6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {4}-{6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Intervals: {2} WU; 8 \u00d7 400m at 10K pace with 200m jog recovery; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 400m at 10K pace with 200m jog recovery\n{1} cool-down",
+               "distance": 6.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {8}-{10}",
+               "distance": 10.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {4}-{6}, then 6-8 \u00d7 100m strides",
+               "distance": 6.8
+            },
+            {
+               "title": "Tempo run: {2} WU; {3}-{4} continuous at HMP; {1} CD",
+               "description": "{2} Warm Up\n{3}-{4} continuous at half-marathon pace\n{1} cool-down",
+               "distance": 7.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {4}-{6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Intervals: {2} WU; 4-5 \u00d7 800m at 10K pace with 400m jog recovery; {1} CD",
+               "description": "{2} Warm Up\n4-5 \u00d7 800m at 10K pace with 400m jog recovery\n{1} cool-down",
+               "distance": 6.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {10}-{12}",
+               "distance": 12.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {5}-{7}, then 6-8 \u00d7 100m strides",
+               "distance": 7.8
+            },
+            {
+               "title": "Hilly run: {6}-{8} on hilly course at regular run pace",
+               "description": "{6}-{8} on hilly course at regular run pace\nIf no hills available, run 10 sec/mi faster than regular run pace",
+               "distance": 8.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {4}-{6}, then 6-8 \u00d7 100m strides",
+               "distance": 6.8
+            },
+            {
+               "title": "Intervals: {2} WU; 3 \u00d7 1600m at HMP with 400m jog recovery; {1} CD",
+               "description": "{2} Warm Up\n3 \u00d7 1600m at half-marathon pace with 400m jog recovery\n{1} cool-down",
+               "distance": 7.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {10}-{12}",
+               "distance": 12.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {5}-{7}, then 6-8 \u00d7 100m strides",
+               "distance": 7.8
+            },
+            {
+               "title": "Tempo run: {2} WU; {5}-{6} continuous at HMP; {1} CD",
+               "description": "{2} Warm Up\n{5}-{6} continuous at half-marathon pace\n{1} cool-down",
+               "distance": 9.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {5}-{7}, then 6-8 \u00d7 100m strides",
+               "distance": 7.8
+            },
+            {
+               "title": "Intervals: {2} WU; 8 \u00d7 400m at 10K pace with 200m jog recovery; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 400m at 10K pace with 200m jog recovery\n{1} cool-down",
+               "distance": 6.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {12}-{14}",
+               "distance": 14.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {6}-{7}, then 8 \u00d7 100m strides",
+               "distance": 7.8
+            },
+            {
+               "title": "Progression run: {2} WU; {6}-{8} continuous starting at MP, increasing pace 3-5 sec/mi after each mile; {1} CD",
+               "description": "{2} Warm Up\n{6}-{8} continuous starting at marathon pace, increasing 3-5 sec/mi after each mile\n{1} cool-down",
+               "distance": 11.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {6}-{9}, then 8 \u00d7 100m strides",
+               "distance": 9.8
+            },
+            {
+               "title": "Hills: {2} WU; 8 \u00d7 400m hill at 5K effort; jog down for recovery; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 400m hill at 5K effort; jog down for recovery\n{1} cool-down",
+               "distance": 7.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {12}-{14}",
+               "distance": 14.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {6}-{8}, then 8 \u00d7 100m strides",
+               "distance": 8.8
+            },
+            {
+               "title": "Tempo run: {2} WU; {6}-{8} continuous at MP; {1} CD",
+               "description": "{2} Warm Up\n{6}-{8} continuous at marathon pace\n{1} cool-down",
+               "distance": 11.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {6}-{9}, then 8 \u00d7 100m strides",
+               "distance": 9.8
+            },
+            {
+               "title": "Intervals: {2} WU; 6 \u00d7 800m at 10K pace with 400m jog recovery; {1} CD",
+               "description": "{2} Warm Up\n6 \u00d7 800m at 10K pace with 400m jog recovery\n{1} cool-down",
+               "distance": 7.5
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {14}-{16}",
+               "distance": 16.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {4}-{6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Tempo intervals: {2} WU; 4 \u00d7 {1.5} at MP with 800m jog between; {1} CD",
+               "description": "{2} Warm Up\n4 \u00d7 {1.5} at marathon pace with 800m jog between\n{1} cool-down",
+               "distance": 11.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {6}-{9}",
+               "distance": 9.0
+            },
+            {
+               "title": "Intervals: {2} WU; 1600m at 10K pace; 1600m at MP; 1,200m at 10K pace; 1600m at MP; 800m at 5K pace; 1600m at MP; 400m at mile pace; 200m jog between all intervals; {1} CD",
+               "description": "{2} Warm Up\n1600m at 10K pace\n1600m at marathon pace\n1200m at 10K pace\n1600m at marathon pace\n800m at 5K pace\n1600m at marathon pace\n400m at mile pace\n200m jog between all intervals\n{1} cool-down",
+               "distance": 9.4
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {14}-{16}",
+               "distance": 16.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {4}-{6}, then 8 \u00d7 100m strides",
+               "distance": 6.8
+            },
+            {
+               "title": "Tempo run: {2} WU; {8}-{10} at MP; {1} CD",
+               "description": "{2} Warm Up\n{8}-{10} at marathon pace\n{1} cool-down",
+               "distance": 13.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {6}-{9}, then 8 \u00d7 100m strides",
+               "distance": 9.8
+            },
+            {
+               "title": "Hills: {2} WU; 8 \u00d7 400m hill at 5K effort; jog down for recovery; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 400m hill at 5K effort; jog down for recovery\n{1} cool-down",
+               "distance": 7.0
+            },
+            {
+               "title": "Easy run: {1}-{4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {15}-{18}",
+               "distance": 18.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {4}-{6}, then 8 \u00d7 100m strides",
+               "distance": 6.8
+            },
+            {
+               "title": "Progression run: {2} WU; {8}-{10} continuous, starting at MP and increasing pace 3-5 sec/mi after each mile; {1} CD",
+               "description": "{2} Warm Up\n{8}-{10} continuous, starting at marathon pace and increasing 3-5 sec/mi after each mile\n{1} cool-down",
+               "distance": 13.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {7}-{9}, then 8 \u00d7 100m strides",
+               "distance": 9.8
+            },
+            {
+               "title": "Intervals: {2} WU; 4 \u00d7 1600m at MP with 400m jog between; {1} CD",
+               "description": "{2} Warm Up\n4 \u00d7 1600m at marathon pace with 400m jog between\n{1} cool-down",
+               "distance": 8.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {15}-{18}",
+               "distance": 18.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {4}-{6}, then 8 \u00d7 100m strides",
+               "distance": 6.8
+            },
+            {
+               "title": "Hilly run: {10}-{12} on hilly course at regular run pace",
+               "description": "{10}-{12} on hilly course at regular run pace\nIf no hills available, run 10 sec/mi faster than regular run pace",
+               "distance": 12.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Easy run: {6}-{8}",
+               "distance": 8.0
+            },
+            {
+               "title": "Intervals: {2} WU; 8 \u00d7 400m at 10K pace with 200m jog between; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 400m at 10K pace with 200m jog between\n{1} cool-down",
+               "distance": 6.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {12}-{14}",
+               "distance": 14.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {4}-{6}",
+               "distance": 6.0
+            },
+            {
+               "title": "Tempo intervals: {2} WU; 4 \u00d7 {2} at MP with 800m jog between; {1} CD",
+               "description": "{2} Warm Up\n4 \u00d7 {2} at marathon pace with 800m jog between\n{1} cool-down",
+               "distance": 11.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {6}-{8}, then 8 \u00d7 100m strides",
+               "distance": 8.8
+            },
+            {
+               "title": "Hills: {2} WU; 8 \u00d7 400m hill at 5K effort; jog down for recovery; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 400m hill at 5K effort; jog down for recovery\n{1} cool-down",
+               "distance": 7.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Long run: {18}-{20}",
+               "distance": 20.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {3}-{6}, then 8 \u00d7 100m strides",
+               "distance": 6.8
+            },
+            {
+               "title": "Tempo run: {2} WU; {6}-{8} at MP; {1} CD",
+               "description": "{2} Warm Up\n{6}-{8} at marathon pace\n{1} cool-down",
+               "distance": 11.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {6}-{8}, then 8 \u00d7 100m strides",
+               "distance": 8.8
+            },
+            {
+               "title": "Intervals: {2} WU; 800m at 10K pace; 1600m at HMP; 800m at 10K pace; 1600m at HMP; 400m jog between intervals; {1} CD",
+               "description": "{2} Warm Up\n800m at 10K pace\n1600m at half-marathon pace\n800m at 10K pace\n1600m at half-marathon pace\n400m jog between intervals\n{1} cool-down",
+               "distance": 6.8
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Long run: {20}-{22}",
+               "distance": 22.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {3}-{8}, then 8 \u00d7 100m strides",
+               "distance": 8.8
+            },
+            {
+               "title": "Tempo run: {2} WU; {4}-{6} continuous at HMP; 800m jog; 6 \u00d7 400m at mile pace with 200m jog between; {1} CD",
+               "description": "{2} Warm Up\n{4}-{6} continuous at half-marathon pace\n800m jog\n6 \u00d7 400m at mile pace with 200m jog between\n{1} cool-down",
+               "distance": 11.6
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {6}-{8}, then 6 \u00d7 100m strides",
+               "distance": 8.6
+            },
+            {
+               "title": "Intervals: {2} WU; 8 \u00d7 800m at 10K pace with 400m jog between; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 800m at 10K pace with 400m jog between\n{1} cool-down",
+               "distance": 9.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {15}-{18}, last 2 miles faster than MP",
+               "distance": 18.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {4}-{6}, then 6 \u00d7 100m strides",
+               "distance": 6.6
+            },
+            {
+               "title": "Tempo run: {2} WU; {4}-{6} continuous at MP; {1} CD",
+               "description": "{2} Warm Up\n{4}-{6} continuous at marathon pace\n{1} cool-down",
+               "distance": 9.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Regular run: {6}-{8}, then 8 \u00d7 100m strides",
+               "distance": 8.8
+            },
+            {
+               "title": "Intervals: {2} WU; 8 \u00d7 400m at 10K pace with 200m jog between; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 400m at 10K pace with 200m jog between\n{1} cool-down",
+               "distance": 6.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {10}-{12}",
+               "distance": 12.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Tempo intervals: {2} WU; 2 \u00d7 {3} continuous at MP with {1} jog between; {1} CD",
+               "description": "{2} Warm Up\n2 \u00d7 {3} continuous at marathon pace with {1} jog between\n{1} cool-down",
+               "distance": 11.0
+            },
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Easy run: {1}-{4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Tempo run: {2} WU; {4} continuous at MP; {1} CD",
+               "description": "{2} Warm Up\n{4} continuous at marathon pace\n{1} cool-down",
+               "distance": 7.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Long run: {8}-{10}",
+               "distance": 10.0
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Day off"
+            },
+            {
+               "title": "Intervals: {2} WU; 8 \u00d7 400m at 10K pace with 200m jog between; {1} CD",
+               "description": "{2} Warm Up\n8 \u00d7 400m at 10K pace with 200m jog between\n{1} cool-down",
+               "distance": 6.0
+            },
+            {
+               "title": "Easy run: {2}-{4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Easy run: {1}-{4} OR Day off",
+               "distance": 4.0
+            },
+            {
+               "title": "Easy run: {2}-{4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Easy run: {2}-{4}",
+               "distance": 4.0
+            },
+            {
+               "title": "Race: 26.2 miles",
+               "distance": 26.2
+            }
+         ]
+      }
+   ]
+}

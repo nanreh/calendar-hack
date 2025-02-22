@@ -1,0 +1,524 @@
+id: coogan_pbr_mara_up_to_65
+name: "Personal Best Running: 16-Week Marathon Schedule - Up to 65 Miles per Week"
+units: mi
+description: '"16-Week Marathon Schedule: Up to 65 Miles per Week" from the book "Personal Best Running" by Mark Coogan and Scott Douglas'
+source: https://us.humankinetics.com/products/personal-best-running
+type: Marathon
+# The plan was adapted to start on Monday instead of Sunday (which technically
+# changes the peak mileage week to be 60 instead of 65 miles).
+# The distance calculations always use the higher value of the suggested 
+# mileage range.
+schedule:
+  # Week 1
+  - workouts:
+      # Monday
+      - title: "Easy run: {4}-{6}"
+        distance: 6.0
+      # Tuesday
+      - title: "Regular run: {4}-{6}"
+        distance: 6.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {4}-{6}"
+        distance: 6.0
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 8 × 400m at 10K pace with 200m jog recovery; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 400m at 10K pace with 200m jog recovery
+          {1} cool-down
+        distance: 6.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {8}-{10}"
+        distance: 10.0
+  # Week 2
+  - workouts:
+      # Monday
+      - title: "Easy run: {4}-{6}, then 6-8 × 100m strides"
+        # Strides: count 0.1 mi each (using the higher value: 8 strides)
+        distance: 6.8
+      # Tuesday
+      - title: |-
+          Tempo run: {2} WU; {3}-{4} continuous at HMP; {1} CD
+        description: |-
+          {2} Warm Up
+          {3}-{4} continuous at half-marathon pace
+          {1} cool-down
+        distance: 7.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {4}-{6}"
+        distance: 6.0
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 4-5 × 800m at 10K pace with 400m jog recovery; {1} CD
+        description: |-
+          {2} Warm Up
+          4-5 × 800m at 10K pace with 400m jog recovery
+          {1} cool-down
+        distance: 6.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {10}-{12}"
+        distance: 12.0
+  # Week 3
+  - workouts:
+      # Monday
+      - title: "Easy run: {5}-{7}, then 6-8 × 100m strides"
+        distance: 7.8
+      # Tuesday
+      - title: |-
+          Hilly run: {6}-{8} on hilly course at regular run pace
+        description: |-
+          {6}-{8} on hilly course at regular run pace
+          If no hills available, run 10 sec/mi faster than regular run pace
+        distance: 8.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {4}-{6}, then 6-8 × 100m strides"
+        distance: 6.8
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 3 × 1600m at HMP with 400m jog recovery; {1} CD
+        description: |-
+          {2} Warm Up
+          3 × 1600m at half-marathon pace with 400m jog recovery
+          {1} cool-down
+        distance: 7.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {10}-{12}"
+        distance: 12.0
+  # Week 4
+  - workouts:
+      # Monday
+      - title: "Easy run: {5}-{7}, then 6-8 × 100m strides"
+        distance: 7.8
+      # Tuesday
+      - title: |-
+          Tempo run: {2} WU; {5}-{6} continuous at HMP; {1} CD
+        description: |-
+          {2} Warm Up
+          {5}-{6} continuous at half-marathon pace
+          {1} cool-down
+        distance: 9.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {5}-{7}, then 6-8 × 100m strides"
+        distance: 7.8
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 8 × 400m at 10K pace with 200m jog recovery; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 400m at 10K pace with 200m jog recovery
+          {1} cool-down
+        distance: 6.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {12}-{14}"
+        distance: 14.0
+  # Week 5
+  - workouts:
+      # Monday
+      - title: "Easy run: {6}-{7}, then 8 × 100m strides"
+        distance: 7.8
+      # Tuesday
+      - title: |-
+          Progression run: {2} WU; {6}-{8} continuous starting at MP, increasing pace 3-5 sec/mi after each mile; {1} CD
+        description: |-
+          {2} Warm Up
+          {6}-{8} continuous starting at marathon pace, increasing 3-5 sec/mi after each mile
+          {1} cool-down
+        distance: 11.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {6}-{9}, then 8 × 100m strides"
+        distance: 9.8
+      # Friday
+      - title: |-
+          Hills: {2} WU; 8 × 400m hill at 5K effort; jog down for recovery; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 400m hill at 5K effort; jog down for recovery
+          {1} cool-down
+        distance: 7.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {12}-{14}"
+        distance: 14.0
+  # Week 6
+  - workouts:
+      # Monday
+      - title: "Easy run: {6}-{8}, then 8 × 100m strides"
+        distance: 8.8
+      # Tuesday
+      - title: |-
+          Tempo run: {2} WU; {6}-{8} continuous at MP; {1} CD
+        description: |-
+          {2} Warm Up
+          {6}-{8} continuous at marathon pace
+          {1} cool-down
+        distance: 11.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {6}-{9}, then 8 × 100m strides"
+        distance: 9.8
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 6 × 800m at 10K pace with 400m jog recovery; {1} CD
+        description: |-
+          {2} Warm Up
+          6 × 800m at 10K pace with 400m jog recovery
+          {1} cool-down
+        distance: 7.5
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {14}-{16}"
+        distance: 16.0
+  # Week 7
+  - workouts:
+      # Monday
+      - title: "Easy run: {4}-{6}"
+        distance: 6.0
+      # Tuesday
+      - title: |-
+          Tempo intervals: {2} WU; 4 × {1.5} at MP with 800m jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          4 × {1.5} at marathon pace with 800m jog between
+          {1} cool-down
+        distance: 11.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {6}-{9}"
+        distance: 9.0
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 1600m at 10K pace; 1600m at MP; 1,200m at 10K pace; 1600m at MP; 800m at 5K pace; 1600m at MP; 400m at mile pace; 200m jog between all intervals; {1} CD
+        description: |-
+          {2} Warm Up
+          1600m at 10K pace
+          1600m at marathon pace
+          1200m at 10K pace
+          1600m at marathon pace
+          800m at 5K pace
+          1600m at marathon pace
+          400m at mile pace
+          200m jog between all intervals
+          {1} cool-down
+        distance: 9.4
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {14}-{16}"
+        distance: 16.0
+  # Week 8
+  - workouts:
+      # Monday
+      - title: "Easy run: {4}-{6}, then 8 × 100m strides"
+        distance: 6.8
+      # Tuesday
+      - title: |-
+          Tempo run: {2} WU; {8}-{10} at MP; {1} CD
+        description: |-
+          {2} Warm Up
+          {8}-{10} at marathon pace
+          {1} cool-down
+        distance: 13.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {6}-{9}, then 8 × 100m strides"
+        distance: 9.8
+      # Friday
+      - title: |-
+          Hills: {2} WU; 8 × 400m hill at 5K effort; jog down for recovery; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 400m hill at 5K effort; jog down for recovery
+          {1} cool-down
+        distance: 7.0
+      # Saturday
+      - title: "Easy run: {1}-{4}"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {15}-{18}"
+        distance: 18.0
+  # Week 9
+  - workouts:
+      # Monday
+      - title: "Easy run: {4}-{6}, then 8 × 100m strides"
+        distance: 6.8
+      # Tuesday
+      - title: |-
+          Progression run: {2} WU; {8}-{10} continuous, starting at MP and increasing pace 3-5 sec/mi after each mile; {1} CD
+        description: |-
+          {2} Warm Up
+          {8}-{10} continuous, starting at marathon pace and increasing 3-5 sec/mi after each mile
+          {1} cool-down
+        distance: 13.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {7}-{9}, then 8 × 100m strides"
+        distance: 9.8
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 4 × 1600m at MP with 400m jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          4 × 1600m at marathon pace with 400m jog between
+          {1} cool-down
+        distance: 8.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {15}-{18}"
+        distance: 18.0
+  # Week 10
+  - workouts:
+      # Monday
+      - title: "Easy run: {4}-{6}, then 8 × 100m strides"
+        distance: 6.8
+      # Tuesday
+      - title: |-
+          Hilly run: {10}-{12} on hilly course at regular run pace
+        description: |-
+          {10}-{12} on hilly course at regular run pace
+          If no hills available, run 10 sec/mi faster than regular run pace
+        distance: 12.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Easy run: {6}-{8}"
+        distance: 8.0
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 8 × 400m at 10K pace with 200m jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 400m at 10K pace with 200m jog between
+          {1} cool-down
+        distance: 6.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {12}-{14}"
+        distance: 14.0
+  # Week 11
+  - workouts:
+      # Monday
+      - title: "Easy run: {4}-{6}"
+        distance: 6.0
+      # Tuesday
+      - title: |-
+          Tempo intervals: {2} WU; 4 × {2} at MP with 800m jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          4 × {2} at marathon pace with 800m jog between
+          {1} cool-down
+        distance: 11.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {6}-{8}, then 8 × 100m strides"
+        distance: 8.8
+      # Friday
+      - title: |-
+          Hills: {2} WU; 8 × 400m hill at 5K effort; jog down for recovery; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 400m hill at 5K effort; jog down for recovery
+          {1} cool-down
+        distance: 7.0
+      # Saturday
+      - title: "Day off"
+        # No Saturday workout (Day off)
+      # Sunday
+      - title: "Long run: {18}-{20}"
+        distance: 20.0
+  # Week 12
+  - workouts:
+      # Monday
+      - title: "Easy run: {3}-{6}, then 8 × 100m strides"
+        distance: 6.8
+      # Tuesday
+      - title: |-
+          Tempo run: {2} WU; {6}-{8} at MP; {1} CD
+        description: |-
+          {2} Warm Up
+          {6}-{8} at marathon pace
+          {1} cool-down
+        distance: 11.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {6}-{8}, then 8 × 100m strides"
+        distance: 8.8
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 800m at 10K pace; 1600m at HMP; 800m at 10K pace; 1600m at HMP; 400m jog between intervals; {1} CD
+        description: |-
+          {2} Warm Up
+          800m at 10K pace
+          1600m at half-marathon pace
+          800m at 10K pace
+          1600m at half-marathon pace
+          400m jog between intervals
+          {1} cool-down
+        distance: 6.8
+      # Saturday
+      - title: "Day off"
+      # Sunday
+      - title: "Long run: {20}-{22}"
+        distance: 22.0
+  # Week 13
+  - workouts:
+      # Monday
+      - title: "Easy run: {3}-{8}, then 8 × 100m strides"
+        distance: 8.8
+      # Tuesday
+      - title: |-
+          Tempo run: {2} WU; {4}-{6} continuous at HMP; 800m jog; 6 × 400m at mile pace with 200m jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          {4}-{6} continuous at half-marathon pace
+          800m jog
+          6 × 400m at mile pace with 200m jog between
+          {1} cool-down
+        distance: 11.6
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {6}-{8}, then 6 × 100m strides"
+        distance: 8.6
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 8 × 800m at 10K pace with 400m jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 800m at 10K pace with 400m jog between
+          {1} cool-down
+        distance: 9.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {15}-{18}, last 2 miles faster than MP"
+        distance: 18.0
+  # Week 14
+  - workouts:
+      # Monday
+      - title: "Easy run: {4}-{6}, then 6 × 100m strides"
+        distance: 6.6
+      # Tuesday
+      - title: |-
+          Tempo run: {2} WU; {4}-{6} continuous at MP; {1} CD
+        description: |-
+          {2} Warm Up
+          {4}-{6} continuous at marathon pace
+          {1} cool-down
+        distance: 9.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Regular run: {6}-{8}, then 8 × 100m strides"
+        distance: 8.8
+      # Friday
+      - title: |-
+          Intervals: {2} WU; 8 × 400m at 10K pace with 200m jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 400m at 10K pace with 200m jog between
+          {1} cool-down
+        distance: 6.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {10}-{12}"
+        distance: 12.0
+  # Week 15
+  - workouts:
+      # Monday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Tuesday
+      - title: |-
+          Tempo intervals: {2} WU; 2 × {3} continuous at MP with {1} jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          2 × {3} continuous at marathon pace with {1} jog between
+          {1} cool-down
+        distance: 11.0
+      # Wednesday
+      - title: "Day off"
+      # Thursday
+      - title: "Easy run: {1}-{4}"
+        distance: 4.0
+      # Friday
+      - title: |-
+          Tempo run: {2} WU; {4} continuous at MP; {1} CD
+        description: |-
+          {2} Warm Up
+          {4} continuous at marathon pace
+          {1} cool-down
+        distance: 7.0
+      # Saturday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Sunday
+      - title: "Long run: {8}-{10}"
+        distance: 10.0
+  # Week 16
+  - workouts:
+      # Monday
+      - title: "Day off"
+      # Tuesday
+      - title: |-
+          Intervals: {2} WU; 8 × 400m at 10K pace with 200m jog between; {1} CD
+        description: |-
+          {2} Warm Up
+          8 × 400m at 10K pace with 200m jog between
+          {1} cool-down
+        distance: 6.0
+      # Wednesday
+      - title: "Easy run: {2}-{4}"
+        distance: 4.0
+      # Thursday
+      - title: "Easy run: {1}-{4} OR Day off"
+        distance: 4.0
+      # Friday
+      - title: "Easy run: {2}-{4}"
+        distance: 4.0
+      # Saturday
+      - title: "Easy run: {2}-{4}"
+        distance: 4.0
+      # Sunday
+      - title: "Race: 26.2 miles"
+        distance: 26.2
