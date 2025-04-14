@@ -1,0 +1,658 @@
+{
+    "id": "leveltwo",
+    "source": "https://www.baa.org//races/boston-marathon/enter/training/leveltwo",
+    "title": "Boston Level Two Marathon Training Plan",
+    "description": "Level Two (Novice to intermediate) is designed around running an average of five days per week. This plan targets a mileage progression starting at 30 miles per week and goes up to 45 miles per week during peak mileage weeks. Additionally, long runs go up to 18-20 miles.",
+    "units": "mi",
+    "type": "Marathon",
+    "schedule": [
+        {
+            "workouts": [
+                {
+                    "title": "5-6 mile Easy Run {6}",
+                    "distance": 6
+                },
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "7 mile Aerobic Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "6-7 mile Easy Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "9-11 mile Easy Run {11}",
+                    "distance": 11
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "6-7 mile Aerobic Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "7 mile Aerobic Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "6-7 mile Easy Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "11-12 mile Aerobic Run {12}",
+                    "distance": 12
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "7 miles, consisting of:\n2-3 mile Warm Up\n6 x (200m uphill at 10k Pace, 30 seconds rest, 200m downhill at MP)\n90 seconds rest between sets\n2 mile Warm Down {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "4-6 mile Easy Run {6}",
+                    "distance": 6
+                },
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8 miles, consisting of:\n2 mile Warm Up\n2 x 2 miles at HMP with 3 minutes easy jog in between\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "11-13 miles, consisting of:\n7 miles easy\n10 x (1 minute at 10k Pace/ 1 minute at MP)\n1-2 miles easy {13}",
+                    "distance": 13
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8 miles, consisting of:\n2 mile Warm Up\n4 x 1k at 10k pace with 2 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "6-7 mile Aerobic Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "12-13 miles, consisting of:\n2 mile Warm Up\n4 x 2 miles at MP with 2-3 minutes rest\n2 mile Warm Down {13}",
+                    "distance": 13
+                },
+                {
+                    "title": "6-8 mile Easy Run {8}",
+                    "distance": 8
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "7-8 miles, consisting of:\n2-3 mile Warm Up\n6 x (300m uphill at 10k Pace, 30 seconds rest, 300m downhill at MP)\n90 seconds rest between sets\n2-3 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "5-7 mile Easy Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8 miles, consisting of:\n2 mile Warm Up\n4 x 1 mile at HMP with 2 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "12-14 mile Aerobic Run {14}",
+                    "distance": 14
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "7-8 miles, consisting of:\n2-3 mile Warm Up\n5 x 1k at 10k pace with 2 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "4-5 mile Easy Run {5}",
+                    "distance": 5
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "7 miles, consisting of:\n2 mile Warm Up\n2 x 1.5 miles at HM with 3 minutes jog\n2 mile Warm Down {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "3-4 mile Easy Run {4}",
+                    "distance": 4
+                },
+                {
+                    "title": "12-15 miles Marathon Simulation (on rolling hill course), consisting of:\n5-6 miles easy\n6-7 miles at MP\n1-2 miles easy {15}",
+                    "distance": 15
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "7-8 miles, consisting of:\n2-3 mile Warm Up\n6 x (300m uphill at 10k Pace, 45 seconds rest, 300m downhill at MP)\n90 seconds rest between sets\n2-3 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "6-8 mile Aerobic Run {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "13 miles, consisting of:\n2 mile Warm Up\n3 x 3 miles at MP with 2-3 minutes rest\n2 mile Warm Down {1}",
+                    "distance": 1
+                },
+                {
+                    "title": "8-10 mile Easy Run {10}",
+                    "distance": 10
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "7-8 miles, consisting of:\n2-3 mile Warm Up\n4 x 1200 at 10k Pace with 2 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "5-7 mile Easy Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "8 miles, consisting of:\n2 mile Warm Up\n4 miles at HMP\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "4-6 mile Easy Run {6}",
+                    "distance": 6
+                },
+                {
+                    "title": "13-15 miles, consisting of:\n7 miles easy\n8 x (2 minutes at 10k Pace with 2 minutes easy)\n1-2 miles easy {15}",
+                    "distance": 15
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "7-8 miles, consisting of:\n2-3 mile Warm Up\n6 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2-3 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "6-8 mile Easy Run {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "10 miles, consisting of:\n2 mile Warm Up\n3 x 2 miles at HM with 3 minutes jog\n2 mile Warm Down {1}",
+                    "distance": 1
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "12-14 mile Aerobic Run {14}",
+                    "distance": 14
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8-9 miles, consisting of:\n2 mile Warm Up\n5 x 1200 at 10k pace with 2:30 rest\n2 mile Warm Down {9}",
+                    "distance": 9
+                },
+                {
+                    "title": "4-5 mile Easy Run {5}",
+                    "distance": 5
+                },
+                {
+                    "title": "5-7 mile Aerobic Run {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "15-16 miles, consisting of:\n2-3 mile Warm Up\n3 x (3 miles at MP with 1 mile easy recovery)\n2 mile Warm Down {16}",
+                    "distance": 16
+                },
+                {
+                    "title": "4-5 mile Easy Run {5}",
+                    "distance": 5
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8-10 miles, consisting of:\n2-3 mile Warm Up\n8 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2-3 mile Warm Down {10}",
+                    "distance": 10
+                },
+                {
+                    "title": "6-8 mile Easy Run {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "9 miles, consisting of:\n2 mile Warm Up\n3 miles at HMP, 3 minutes jog\n2 miles at HMP\n2 mile Warm Down {9}",
+                    "distance": 9
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "14-16 mile Marathon Simulation (on rolling hill course), consisting of:\n6-8 miles easy\n6 miles at MP\n2 miles easy {16}",
+                    "distance": 16
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8 miles, consisting of:\n2 mile Warm Up\n4 x mile at 10k Pace with 3 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "4-5 mile Easy Run {5}",
+                    "distance": 5
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "10 miles, consisting of:\n2 mile Warm Up\n2 x 3 miles at HM with 3 minutes jog\n2 mile Warm Down {1}",
+                    "distance": 1
+                },
+                {
+                    "title": "4-5 mile Easy Run {5}",
+                    "distance": 5
+                },
+                {
+                    "title": "13-16 miles, consisting of:\n7 miles easy\n6 x (3 minutes at HMP with 2 minutes easy recovery)\n1-2 miles easy {16}",
+                    "distance": 16
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "7-8 miles, consisting of:\n2-3 mile Warm Up\n8 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2-3 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "6-8 mile Aerobic Run {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "5 mile Aerobic Run {5}",
+                    "distance": 5
+                },
+                {
+                    "title": "14 miles, consisting of:\n2 mile Warm Up\n10 miles at MP (start a little slower and finish faster)\n2 mile Warm Down {1}",
+                    "distance": 1
+                },
+                {
+                    "title": "7 mile Easy Run {7}",
+                    "distance": 7
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8 miles, consisting of:\n2 mile Warm Up\n4 x 1 mile at 10k pace with 3 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "3-4 mile Easy Run {4}",
+                    "distance": 4
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "7 miles, consisting of:\n2 mile Warm Up\n2 x 2 miles at HMP with 2 minutes rest\n1 mile Warm Down {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "3-4 mile Easy Run {4}",
+                    "distance": 4
+                },
+                {
+                    "title": "16-19 Marathon Simulation (on rolling hill course), consisting of:\n8-9 miles easy\n6-8 miles at MP\n2 miles easy {19}",
+                    "distance": 19
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8-10 miles, consisting of:\n2-3 mile Warm Up\n2 x (800m uphill at HMP, 60 seconds rest, 800m downhill at MP)\n2 minutes rest between sets\n4 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2-3 mile Warm Down {10}",
+                    "distance": 10
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "6-8 mile Aerobic Run {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "14 miles, consisting of:\n2 mile Warm Up\n2 x 5 miles at MP with 5 minutes jog between\n2 mile Warm Down {1}",
+                    "distance": 1
+                },
+                {
+                    "title": "8-10 mile Easy Run {10}",
+                    "distance": 10
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8 miles, consisting of:\n2 mile Warm Up\n2 x (2k at HM, 1k at 10k) all with 2 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "4-5 mile Easy Run {5}",
+                    "distance": 5
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "10 miles, consisting of:\n2 mile Warm Up\n6 mile cutdown at MP\u00a0(start a little slower & increase the pace every 2 miles)\n2 mile Warm Down {1}",
+                    "distance": 1
+                },
+                {
+                    "title": "4-5 mile Easy Run {5}",
+                    "distance": 5
+                },
+                {
+                    "title": "11-13 mile Easy Run {13}",
+                    "distance": 13
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8-10 miles, consisting of:\n2-3 mile Warm Up\n4 x (800m uphill at HMP, 60 seconds rest, 800m downhill at MP)\n2 minutes rest between sets\n2-3 mile Warm Down {10}",
+                    "distance": 10
+                },
+                {
+                    "title": "6-8 mile Easy Run {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "9 miles, consisting of:\n2 mile Warm Up\n4-5 mile tempo at HMP\n1-2 mile Warm Down {9}",
+                    "distance": 9
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "18-20 mile Marathon Simulation (on rolling hill course), consisting of:\n8-9 miles easy,\n8-9 miles at MP\n2 miles easy {20}",
+                    "distance": 20
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "8 miles, consisting of:\n2 mile Warm Up\n2 x (2k at HM, 1k at 10k) all with 2 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "6-8 mile Easy Run {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "6-8 mile Aerobic Run {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "14-15 miles, consisting of:\n2 mile Warm Up\n10-11 miles MP Tempo\n2 mile Warm Down {15}",
+                    "distance": 15
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "7-8 miles, consisting of:\n2 mile Warm Up\n5 x 1k at 10k pace with 2 minutes rest\n2 mile Warm Down {8}",
+                    "distance": 8
+                },
+                {
+                    "title": "4-6 mile Easy Run {6}",
+                    "distance": 6
+                },
+                {
+                    "title": "Off Day or Cross Training or Strength Training",
+                    "distance": null
+                },
+                {
+                    "title": "2 mile Warm Up\n2 x (2 miles at HM on/ 1 miles easy)\n2 mile Warm Down {2}",
+                    "distance": 2
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "7-8 mile Easy Run {8}",
+                    "distance": 8
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "6-7 miles, consisting of:\n2 mile Warm Up\n3 x 1k at HMP with 2 minutes rest\n1 x 1k at 10k Pace\n2 mile Warm Down {7}",
+                    "distance": 7
+                },
+                {
+                    "title": "2-4 mile Easy Run {4}",
+                    "distance": 4
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "5 miles, consisting of:\n2 mile Warm Up\n2 miles at MP\n1 mile Warm Down {5}",
+                    "distance": 5
+                },
+                {
+                    "title": "Off Day",
+                    "distance": null
+                },
+                {
+                    "title": "2-3 mile Easy Run {3}",
+                    "distance": 3
+                }
+            ]
+        },
+        {
+            "workouts": [
+                {
+                    "title": "RACE DAY",
+                    "distance": null
+                }
+            ]
+        }
+    ]
+}
