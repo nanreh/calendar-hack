@@ -101,7 +101,7 @@ schedule:
       2 recovery runs ({10:16})
       {6:10}
       {4:6}
-    distance: 6.0
+    distance: 10.0
   - title: Speed {8:13}
     description: |-
       Speed {8:13}
@@ -127,12 +127,12 @@ schedule:
     distance: 11.0
   - title: Endurance {11:18}
     distance: 11.0
-  - title: 2 recovery runs ({10:14})
+  - title: 2 recovery runs ({9:14})
     description: |-
-      2 recovery runs ({10:14})
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
-    distance: 5.0
+    distance: 9.0
   - title: General aerobic + speed {10:16}
     description: |-
       General aerobic + speed {10:16}
@@ -182,12 +182,12 @@ schedule:
     distance: 11.0
   - title: Endurance {12:19}
     distance: 12.0
-  - title: 2 recovery runs ({10:14})
+  - title: 2 recovery runs ({9:14})
     description: |-
-      2 recovery runs ({10:14})
+      2 recovery runs ({9:14})
       {5:8}
       {4:6}
-    distance: 5.0
+    distance: 9.0
   - title: General aerobic + speed {10:16}
     description: |-
       General aerobic + speed {10:16}
