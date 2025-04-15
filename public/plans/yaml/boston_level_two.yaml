@@ -1,6 +1,6 @@
 id: boston_level_two
 source: https://www.baa.org//races/boston-marathon/enter/training/leveltwo
-title: Boston Level Two Marathon Training Plan
+name: Boston Level Two Marathon Training Plan
 description:
   Level Two (Novice to intermediate) is designed around running an average
   of five days per week. This plan targets a mileage progression starting at 30 miles
@@ -13,35 +13,28 @@ schedule:
       - title: 5-6 mile Easy Run {6}
         distance: 6
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: 7 mile Aerobic Run {7}
         distance: 7
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: 6-7 mile Easy Run {7}
         distance: 7
       - title: Off Day
-        distance: null
       - title: 9-11 mile Easy Run {11}
         distance: 11
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: 6-7 mile Aerobic Run {7}
         distance: 7
       - title: Off Day
-        distance: null
       - title: 7 mile Aerobic Run {7}
         distance: 7
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: 6-7 mile Easy Run {7}
         distance: 7
       - title: 11-12 mile Aerobic Run {12}
         distance: 12
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "7 miles, consisting of:
 
           2-3 mile Warm Up
@@ -55,7 +48,6 @@ schedule:
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -65,7 +57,6 @@ schedule:
           2 mile Warm Down {8}"
         distance: 8
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "11-13 miles, consisting of:
 
           7 miles easy
@@ -76,7 +67,6 @@ schedule:
         distance: 13
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -86,11 +76,9 @@ schedule:
           2 mile Warm Down {8}"
         distance: 8
       - title: Cross Training or Strength Training
-        distance: null
       - title: 6-7 mile Aerobic Run {7}
         distance: 7
       - title: Off Day
-        distance: null
       - title: "12-13 miles, consisting of:
 
           2 mile Warm Up
@@ -103,7 +91,6 @@ schedule:
         distance: 8
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2-3 mile Warm Up
@@ -117,7 +104,6 @@ schedule:
       - title: 5-7 mile Easy Run {7}
         distance: 7
       - title: Cross Training or Strength Training
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -127,12 +113,10 @@ schedule:
           2 mile Warm Down {8}"
         distance: 8
       - title: Off Day
-        distance: null
       - title: 12-14 mile Aerobic Run {14}
         distance: 14
   - workouts:
       - title: Off Day
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2-3 mile Warm Up
@@ -144,7 +128,6 @@ schedule:
       - title: 4-5 mile Easy Run {5}
         distance: 5
       - title: Cross Training or Strength Training
-        distance: null
       - title: "7 miles, consisting of:
 
           2 mile Warm Up
@@ -166,7 +149,6 @@ schedule:
         distance: 15
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2-3 mile Warm Up
@@ -178,11 +160,9 @@ schedule:
           2-3 mile Warm Down {8}"
         distance: 8
       - title: Cross Training or Strength Training
-        distance: null
       - title: 6-8 mile Aerobic Run {8}
         distance: 8
       - title: Off Day
-        distance: null
       - title: "13 miles, consisting of:
 
           2 mile Warm Up
@@ -195,7 +175,6 @@ schedule:
         distance: 10
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2-3 mile Warm Up
@@ -207,7 +186,6 @@ schedule:
       - title: 5-7 mile Easy Run {7}
         distance: 7
       - title: Off Day
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -228,7 +206,6 @@ schedule:
         distance: 15
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2-3 mile Warm Up
@@ -242,7 +219,6 @@ schedule:
       - title: 6-8 mile Easy Run {8}
         distance: 8
       - title: Cross Training or Strength Training
-        distance: null
       - title: "10 miles, consisting of:
 
           2 mile Warm Up
@@ -252,12 +228,10 @@ schedule:
           2 mile Warm Down {1}"
         distance: 1
       - title: Off Day
-        distance: null
       - title: 12-14 mile Aerobic Run {14}
         distance: 14
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8-9 miles, consisting of:
 
           2 mile Warm Up
@@ -271,7 +245,6 @@ schedule:
       - title: 5-7 mile Aerobic Run {7}
         distance: 7
       - title: Off Day
-        distance: null
       - title: "15-16 miles, consisting of:
 
           2-3 mile Warm Up
@@ -284,7 +257,6 @@ schedule:
         distance: 5
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8-10 miles, consisting of:
 
           2-3 mile Warm Up
@@ -298,7 +270,6 @@ schedule:
       - title: 6-8 mile Easy Run {8}
         distance: 8
       - title: Cross Training or Strength Training
-        distance: null
       - title: "9 miles, consisting of:
 
           2 mile Warm Up
@@ -310,7 +281,6 @@ schedule:
           2 mile Warm Down {9}"
         distance: 9
       - title: Off Day
-        distance: null
       - title:
           "14-16 mile Marathon Simulation (on rolling hill course), consisting of:
 
@@ -322,7 +292,6 @@ schedule:
         distance: 16
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -334,7 +303,6 @@ schedule:
       - title: 4-5 mile Easy Run {5}
         distance: 5
       - title: Off Day
-        distance: null
       - title: "10 miles, consisting of:
 
           2 mile Warm Up
@@ -355,7 +323,6 @@ schedule:
         distance: 16
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2-3 mile Warm Up
@@ -367,7 +334,6 @@ schedule:
           2-3 mile Warm Down {8}"
         distance: 8
       - title: Cross Training or Strength Training
-        distance: null
       - title: 6-8 mile Aerobic Run {8}
         distance: 8
       - title: 5 mile Aerobic Run {5}
@@ -384,7 +350,6 @@ schedule:
         distance: 7
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -396,7 +361,6 @@ schedule:
       - title: 3-4 mile Easy Run {4}
         distance: 4
       - title: Off Day
-        distance: null
       - title: "7 miles, consisting of:
 
           2 mile Warm Up
@@ -418,7 +382,6 @@ schedule:
         distance: 19
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8-10 miles, consisting of:
 
           2-3 mile Warm Up
@@ -434,11 +397,9 @@ schedule:
           2-3 mile Warm Down {10}"
         distance: 10
       - title: Cross Training or Strength Training
-        distance: null
       - title: 6-8 mile Aerobic Run {8}
         distance: 8
       - title: Off Day
-        distance: null
       - title: "14 miles, consisting of:
 
           2 mile Warm Up
@@ -451,7 +412,6 @@ schedule:
         distance: 10
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -463,7 +423,6 @@ schedule:
       - title: 4-5 mile Easy Run {5}
         distance: 5
       - title: Off Day
-        distance: null
       - title: "10 miles, consisting of:
 
           2 mile Warm Up
@@ -478,7 +437,6 @@ schedule:
         distance: 13
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8-10 miles, consisting of:
 
           2-3 mile Warm Up
@@ -492,7 +450,6 @@ schedule:
       - title: 6-8 mile Easy Run {8}
         distance: 8
       - title: Cross Training or Strength Training
-        distance: null
       - title: "9 miles, consisting of:
 
           2 mile Warm Up
@@ -502,7 +459,6 @@ schedule:
           1-2 mile Warm Down {9}"
         distance: 9
       - title: Off Day
-        distance: null
       - title:
           "18-20 mile Marathon Simulation (on rolling hill course), consisting of:
 
@@ -514,7 +470,6 @@ schedule:
         distance: 20
   - workouts:
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -526,7 +481,6 @@ schedule:
       - title: 6-8 mile Easy Run {8}
         distance: 8
       - title: Cross Training or Strength Training
-        distance: null
       - title: 6-8 mile Aerobic Run {8}
         distance: 8
       - title: "14-15 miles, consisting of:
@@ -538,10 +492,8 @@ schedule:
           2 mile Warm Down {15}"
         distance: 15
       - title: Off Day
-        distance: null
   - workouts:
       - title: Off Day
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2 mile Warm Up
@@ -553,7 +505,6 @@ schedule:
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: Off Day or Cross Training or Strength Training
-        distance: null
       - title: "2 mile Warm Up
 
           2 x (2 miles at HM on/ 1 miles easy)
@@ -561,12 +512,10 @@ schedule:
           2 mile Warm Down {2}"
         distance: 2
       - title: Off Day
-        distance: null
       - title: 7-8 mile Easy Run {8}
         distance: 8
   - workouts:
       - title: Off Day
-        distance: null
       - title: "6-7 miles, consisting of:
 
           2 mile Warm Up
@@ -580,7 +529,6 @@ schedule:
       - title: 2-4 mile Easy Run {4}
         distance: 4
       - title: Off Day
-        distance: null
       - title: "5 miles, consisting of:
 
           2 mile Warm Up
@@ -590,9 +538,5 @@ schedule:
           1 mile Warm Down {5}"
         distance: 5
       - title: Off Day
-        distance: null
       - title: 2-3 mile Easy Run {3}
         distance: 3
-  - workouts:
-      - title: RACE DAY
-        distance: null

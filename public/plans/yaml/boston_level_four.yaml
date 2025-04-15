@@ -1,6 +1,6 @@
 id: boston_level_four
 source: https://www.baa.org//races/boston-marathon/enter/training/levelfour
-title: Boston Level Four Marathon Training Plan
+name: Boston Level Four Marathon Training Plan
 description:
   Level Four (Advance) is designed around running an average of six to
   seven days per week. This plan targets a mileage progression starting at 35 miles
@@ -17,7 +17,6 @@ schedule:
       - title: 7 mile Aerobic Run {7}
         distance: 7
       - title: Off Day
-        distance: null
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: 5-6 mile Easy Run {6}
@@ -26,7 +25,6 @@ schedule:
         distance: 13
   - workouts:
       - title: Off Day
-        distance: null
       - title: 6-7 mile Aerobic Run {7}
         distance: 7
       - title: 4-6 mile Easy Run {6}
@@ -41,7 +39,6 @@ schedule:
         distance: 13
   - workouts:
       - title: Off Day
-        distance: null
       - title: "6-7 miles, consisting of:
 
           2-3 mile Warm Up
@@ -76,7 +73,6 @@ schedule:
         distance: 14
   - workouts:
       - title: Off Day
-        distance: null
       - title: "10 miles, consisting of:
 
           2 mile Warm Up
@@ -105,7 +101,6 @@ schedule:
         distance: 10
   - workouts:
       - title: Off Day
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2 mile Warm Up
@@ -134,7 +129,6 @@ schedule:
         distance: 16
   - workouts:
       - title: Off Day
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -169,7 +163,6 @@ schedule:
         distance: 16
   - workouts:
       - title: Off Day
-        distance: null
       - title: "7 miles, consisting of:
 
           2 mile Warm Up
@@ -198,7 +191,6 @@ schedule:
         distance: 11
   - workouts:
       - title: Off Day
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -233,7 +225,6 @@ schedule:
         distance: 16
   - workouts:
       - title: Off Day
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -262,7 +253,6 @@ schedule:
         distance: 17
   - workouts:
       - title: Off Day
-        distance: null
       - title: "9-10 miles, consisting of:
 
           2 mile Warm Up
@@ -287,7 +277,6 @@ schedule:
         distance: 12
   - workouts:
       - title: Off Day
-        distance: null
       - title: "9 miles, consisting of:
 
           2 mile Warm Up
@@ -326,7 +315,6 @@ schedule:
         distance: 18
   - workouts:
       - title: Off Day
-        distance: null
       - title: "9 miles, consisting of:
 
           2 mile Warm Up
@@ -361,7 +349,6 @@ schedule:
         distance: 16
   - workouts:
       - title: Off Day
-        distance: null
       - title: "10 miles, consisting of:
 
           2 mile Warm Up
@@ -390,7 +377,6 @@ schedule:
         distance: 11
   - workouts:
       - title: Off Day
-        distance: null
       - title: "9 miles, consisting of:
 
           2 mile Warm Up
@@ -425,7 +411,6 @@ schedule:
         distance: 18
   - workouts:
       - title: Off Day
-        distance: null
       - title: "10 miles, consisting of:
 
           2 mile Warm Up
@@ -458,7 +443,6 @@ schedule:
         distance: 11
   - workouts:
       - title: Off Day
-        distance: null
       - title: "9 miles, consisting of:
 
           2 mile Warm Up
@@ -489,7 +473,6 @@ schedule:
         distance: 21
   - workouts:
       - title: Off Day
-        distance: null
       - title: "10 miles, consisting of:
 
           2 mile Warm Up
@@ -526,7 +509,6 @@ schedule:
         distance: 22
   - workouts:
       - title: Off Day
-        distance: null
       - title: "10 miles, consisting of:
 
           2 mile Warm Up
@@ -550,10 +532,8 @@ schedule:
           2 mile Warm Down {18}"
         distance: 18
       - title: Off Day
-        distance: null
   - workouts:
       - title: Off Day
-        distance: null
       - title: "8 miles, consisting of:
 
           2 mile Warm Up
@@ -582,7 +562,6 @@ schedule:
         distance: 11
   - workouts:
       - title: Off Day
-        distance: null
       - title: "7-8 miles, consisting of:
 
           2 mile Warm Up
@@ -610,9 +589,5 @@ schedule:
           1 mile Warm Down {7}"
         distance: 7
       - title: Off Day
-        distance: null
       - title: 2-3 mile Easy Run {3}
         distance: 3
-  - workouts:
-      - title: RACE DAY
-        distance: null
