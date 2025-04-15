@@ -58,8 +58,6 @@ const App = () => {
     });
   }, []);
 
-  console.log(repo.available);
-
   const getParams = (
     units: Units,
     plan: PlanSummary,
@@ -175,12 +173,8 @@ const App = () => {
         </div>
       </div>
       <div className="second-toolbar">
-        <button className="app-button" onClick={downloadIcalHandler}>
-          Download iCal
-        </button>
-        <button className="app-button" onClick={downloadCsvHandler}>
-          Download CSV
-        </button>
+        <button className="app-button" onClick={downloadIcalHandler}>Download iCal</button>
+        <button className="app-button" onClick={downloadCsvHandler}>Download CSV</button>
         <UndoButton
           disabled={undoHistory.length <= 1}
           undoHandler={undoHandler}
