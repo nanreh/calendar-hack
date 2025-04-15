@@ -29,9 +29,9 @@ schedule:
     distance: 9.0
 - workouts:
   - title: Rest or cross-training
-  - title: General aerobic + Speed {6:10}
+  - title: Speed {6:10}
     description: |-
-      General aerobic + Speed {6:10}
+      Speed {6:10}
       2 sets of 4 x 200m @ 800m to mile race pace (jog 200m recovery and 4 min between sets)
     distance: 6.0
   - title: Endurance {8:13}
