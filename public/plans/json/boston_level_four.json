@@ -1,7 +1,7 @@
 {
-   "id": "levelfour",
+   "id": "boston_level_four",
    "source": "https://www.baa.org//races/boston-marathon/enter/training/levelfour",
-   "title": "Boston Level Four Marathon Training Plan",
+   "name": "Boston Level Four Marathon Training Plan",
    "description": "Level Four (Advance) is designed around running an average of six to seven days per week. This plan targets a mileage progression starting at 35 miles per week and goes up to 60 miles per week during peak mileage weeks. Additionally, long runs go up to 20-22 miles.",
    "units": "mi",
    "type": "Marathon",
@@ -21,8 +21,7 @@
                "distance": 7
             },
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "4-6 mile Easy Run {6}",
@@ -41,8 +40,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "6-7 mile Aerobic Run {7}",
@@ -73,8 +71,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "6-7 miles, consisting of:\n2-3 mile Warm Up\n6 x (300m uphill at 10k Pace, 30 seconds rest, 300m downhill at MP)\n90 seconds rest between sets\n2 mile Warm Down {7}",
@@ -105,8 +102,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "10 miles, consisting of:\n2 mile Warm Up\n5 x 1k at 10k pace with 2 minutes rest\n5 x 200 at 5k Pace with 30 seconds rest\n2 mile Warm Down {1}",
@@ -137,8 +133,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "7-8 miles, consisting of:\n2 mile Warm Up\n8 x (300m uphill at 10k Pace, 30 seconds rest, 300m downhill at MP)\n90 seconds rest between sets\n2 mile Warm Down {8}",
@@ -169,8 +164,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "8 miles, consisting of:\n2 mile Warm Up\n6 x 1k at 10k pace with 2 minutes rest\n2 mile Warm Down {8}",
@@ -201,8 +195,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "7 miles, consisting of:\n2 mile Warm Up\n6 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2 mile Warm Down {7}",
@@ -233,8 +226,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "8 miles, consisting of:\n2 mile Warm Up\n4 x 1200 at 10k Pace with 2 minutes rest\n4 x 400 at 5k Pace with 1 minute rest\n2 mile Warm Down {8}",
@@ -265,8 +257,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "8 miles, consisting of:\n2 mile Warm Up\n8 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2 mile Warm Down {8}",
@@ -297,8 +288,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "9-10 miles, consisting of:\n2 mile Warm Up\n6 x 1200 at 10k pace with 2:30 rest between\n2 mile Warm Down {10}",
@@ -329,8 +319,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "9 miles, consisting of:\n2 mile Warm Up\n10 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2 mile Warm Down {9}",
@@ -361,8 +350,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "9 miles, consisting of:\n2 mile Warm Up\n4 x mile at 10k Pace with 3 minutes rest\n4 x 400 at 5k Pace with 1 minute rest\n2 mile Warm Down {9}",
@@ -393,8 +381,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "10 miles, consisting of:\n2 mile Warm Up\n12 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2 mile Warm Down {1}",
@@ -425,8 +412,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "9 miles, consisting of:\n2 mile Warm Up\n5 x 1 mile at 10k pace with 3 minutes rest\n2 mile Warm Down {9}",
@@ -457,8 +443,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "10 miles, consisting of:\n2 mile Warm Up\n3 x (800m uphill at HMP, 60 seconds rest, 800m downhill at MP)\n2 minutes rest between sets\n6 x (400m uphill at 10k Pace, 45 seconds rest, 400m downhill at MP)\n90 seconds rest between sets\n2 mile Warm Down {1}",
@@ -489,8 +474,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "9 miles, consisting of:\n2 mile Warm Up\n2 x (2k at HM, 1k at 10k) all with 2 minutes rest\n5 x 400 at 5k Pace with 1 minute rest\n2 mile Warm Down {9}",
@@ -521,8 +505,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "10 miles, consisting of:\n2 mile Warm Up\n6 x (800m uphill at HMP, 60 seconds rest, 800m downhill at MP)\n2 minutes rest between sets\n2 mile Warm Down {1}",
@@ -553,8 +536,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "10 miles, consisting of:\n2 mile Warm Up\n3 x (2k at HM, 1k at 10k) all with 2 minutes rest\n2 mile Warm Down {1}",
@@ -577,16 +559,14 @@
                "distance": 18
             },
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             }
          ]
       },
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "8 miles, consisting of:\n2 mile Warm Up\n5 x 1k at 10k pace with 2 minutes rest\n5 x 200 at 5k Pace with 30 seconds rest\n2 mile Warm Down {8}",
@@ -617,8 +597,7 @@
       {
          "workouts": [
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "7-8 miles, consisting of:\n2 mile Warm Up\n3 x 1200 at HMP with 2 minutes rest\n4 x 400 at 5k Pace with 2 minutes rest\n2 mile Warm Down {8}",
@@ -637,20 +616,11 @@
                "distance": 7
             },
             {
-               "title": "Off Day",
-               "distance": null
+               "title": "Off Day"
             },
             {
                "title": "2-3 mile Easy Run {3}",
                "distance": 3
-            }
-         ]
-      },
-      {
-         "workouts": [
-            {
-               "title": "RACE DAY",
-               "distance": null
             }
          ]
       }
