@@ -100,32 +100,37 @@ export const plans: PlanSummary[] = [
   ["boston_level_four", "Boston Marathon Level 4 Plan", "Marathon"],
   [
     "pfitz_12_55",
-    "Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule",
+    "Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule (third edition)",
     "Marathon",
   ],
   [
     "pfitz_12_70",
-    "Pfitzinger/Douglas: 55 to 70 Miles per Week, 12-week schedule",
+    "Pfitzinger/Douglas: 55 to 70 Miles per Week, 12-week schedule (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_12_85",
+    "Pfitzinger/Douglas: 70 to 85 Miles per Week, 12-week schedule (third edition)",
     "Marathon",
   ],
   [
     "pfitz_18_55",
-    "Pfitzinger/Douglas: Up to 55 miles per week, 18-week schedule",
+    "Pfitzinger/Douglas: Up to 55 miles per week, 18-week schedule (third edition)",
     "Marathon",
   ],
   [
     "pfitz_18_70",
-    "Pfitzinger/Douglas: 55 to 70 Miles per Week, 18-week schedule",
+    "Pfitzinger/Douglas: 55 to 70 Miles per Week, 18-week schedule (third edition)",
     "Marathon",
   ],
   [
     "pfitz_18_85",
-    "Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule",
+    "Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule (third edition)",
     "Marathon",
   ],
   [
-    "pfitz_18_107",
-    "Pfitzinger/Douglas: 80 to 107 Miles per Week, 18-week schedule",
+    "pfitz_18_more_than_85",
+    "Pfitzinger/Douglas: More Than 85 Miles per Week, 18-week schedule (third edition)",
     "Marathon",
   ],
   [
