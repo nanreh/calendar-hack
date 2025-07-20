@@ -1,7 +1,8 @@
 ---
 id: pfitz_18_more_than_85
 name: 'Pfitzinger/Douglas: More than 85 Miles per Week, 18-week schedule'
-description: '"More Than 85 Miles per Week, 18-week schedule" from "Advanced Marathoning" (third edition) by Pete Pfitzinger and Scott Douglas'
+description: |-
+  "More Than 85 Miles per Week, 18-week schedule" from "Advanced Marathoning" (third edition) by Pete Pfitzinger and Scott Douglas
 units: mi
 source: https://www.amazon.com/gp/product/149256866X/
 type: Marathon
@@ -116,7 +117,7 @@ schedule:
     distance: 11.0
   - title: Med-long run {13:21}
     distance: 13.0
-  - title: Gen-aerobic + speed {10:16} with 8 x 12 sec hill repeats + 8 x 100 m strides
+  - title: Gen-aerobic + speed {10:16} with 8 x 12 sec hill sprints + 8 x 100 m strides
     distance: 10.0
   - title: Long run {20:32}
     distance: 20.0
@@ -172,7 +173,7 @@ schedule:
 - workouts:
   - title: Recovery AM {6:10} PM {6:10}
     distance: 12.0
-  - title: Recovery {6:10} Gen-aerobic + speed PM {10:16} with 10 x 100 m strides
+  - title: Recovery AM {6:10} Gen-aerobic + speed PM {10:16} with 10 x 100 m strides
     distance: 16.0
   - title: Med-long run {15:24}
     distance: 15.0

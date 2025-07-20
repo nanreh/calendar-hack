@@ -1,6 +1,7 @@
 id: pfitz_18_55
 name: 'Pfitzinger/Douglas: Up to 55 miles per week, 18-week schedule'
-description: '"Up to 55 miles per week, 18-week schedule" from "Advanced Marathoning (third edition)" by Pete Pfitzinger and Scott Douglas'
+description: |-
+  "Up to 55 miles per week, 18-week schedule" from "Advanced Marathoning (third edition)" by Pete Pfitzinger and Scott Douglas
 units: mi
 source: https://www.amazon.com/gp/product/149256866X/
 type: Marathon

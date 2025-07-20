@@ -1,6 +1,7 @@
 id: pfitz_12_55
 name: 'Pfitzinger/Douglas: Up to 55 miles per week, 12-week schedule'
-description: '"Up to 55 miles per week, 12-week schedule" from "Advanced Marathoning" (third edition) by Pete Pfitzinger and Scott Douglas'
+description: |-
+  "Up to 55 miles per week, 12-week schedule" from "Advanced Marathoning" (third edition) by Pete Pfitzinger and Scott Douglas
 units: mi
 source: https://www.amazon.com/gp/product/149256866X/
 type: Marathon
@@ -79,7 +80,7 @@ schedule:
   - title: Rest or cross-train
   - title: Recovery {5:8}
     distance: 5.0
-  - title: VO₂max {10:16} with 5 x 1000 m at 5K race pace; jog 50-90% interval time
+  - title: VO₂max {10:16} with 5 x 1,000 m at 5K race pace; jog 50-90% interval time
     distance: 10.0
   - title: Med-long run {12:19}
     distance: 12.0

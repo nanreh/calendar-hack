@@ -1,6 +1,7 @@
 id: pfitz_18_70
 name: 'Pfitzinger/Douglas: 55 to 70 Miles per Week, 18-week schedule'
-description: '"55 to 70 Miles per Week, 18-week schedule" from "Advanced Marathoning" (third edition) by Pete Pfitzinger and Scott Douglas'
+description: |-
+  "55 to 70 Miles per Week, 18-week schedule" from "Advanced Marathoning" (third edition) by Pete Pfitzinger and Scott Douglas
 units: mi
 source: https://www.amazon.com/gp/product/149256866X/
 type: Marathon
@@ -179,7 +180,7 @@ schedule:
     distance: 9.0
   - title: Med-long run {14:23}
     distance: 14.0
-  - title: Recovery + speed {6:10} with 6 x 100 m strides PM {4:6}
+  - title: Recovery + speed AM {6:10} with 6 x 100 m strides PM {4:6}
     distance: 10.0
   - title: Recovery {5:8}
     distance: 5.0
