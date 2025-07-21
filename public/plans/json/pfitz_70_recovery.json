@@ -1,7 +1,7 @@
 {
-   "id": "pfitz_55_recovery",
-   "name": "Pfitzinger/Douglas: Marathon Up to 55 Miles per Week Recovery",
-   "description": "\"Up to 55 Miles per Week Recovery: Training Block 5 - Recovery\" from \"Advanced Marathoning\" (third edition) by Pete Pfitzinger and Scott Douglas",
+   "id": "pfitz_70_recovery",
+   "name": "Pfitzinger/Douglas: Marathon 55 to 70 Miles per Week Recovery",
+   "description": "\"55 to 70 Miles per Week Recovery: Training Block 5 - Recovery\" from \"Advanced Marathoning\" (third edition) by Pete Pfitzinger and Scott Douglas",
    "units": "mi",
    "source": "https://www.amazon.com/gp/product/149256866X/",
    "type": "Marathon",
@@ -22,15 +22,15 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "Recovery {4:6}",
-               "distance": 4
+               "title": "Recovery {5:8}",
+               "distance": 5
             },
             {
                "title": "Rest or cross-train"
             },
             {
-               "title": "Recovery {5:8}",
-               "distance": 5
+               "title": "Recovery {6:10}",
+               "distance": 6
             }
          ]
       },
@@ -58,8 +58,8 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "Recovery {7:11}",
-               "distance": 7
+               "title": "Recovery {8:13}",
+               "distance": 8
             }
          ]
       },
@@ -84,7 +84,8 @@
                "distance": 7
             },
             {
-               "title": "Rest or cross-train"
+               "title": "Recovery {5:8}",
+               "distance": 5
             },
             {
                "title": "Gen-aerobic {9:14}",
@@ -98,12 +99,12 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "Gen-aerobic {7:11}",
-               "distance": 7
-            },
-            {
                "title": "Recovery {5:8}",
                "distance": 5
+            },
+            {
+               "title": "Gen-aerobic {7:11}",
+               "distance": 7
             },
             {
                "title": "Rest or cross-train"
@@ -113,11 +114,12 @@
                "distance": 8
             },
             {
-               "title": "Rest or cross-train"
+               "title": "Recovery {5:8}",
+               "distance": 5
             },
             {
-               "title": "Gen-aerobic {10:16}",
-               "distance": 10
+               "title": "Med-long {11:18}",
+               "distance": 11
             }
          ]
       },
@@ -127,27 +129,27 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "Gen-aerobic {7:11}",
-               "distance": 7
+               "title": "Recovery {6:10}",
+               "distance": 6
             },
             {
-               "title": "Recovery {5:8}",
-               "distance": 5
+               "title": "Gen-aerobic {8:13}",
+               "distance": 8
             },
             {
                "title": "Rest or cross-train"
             },
             {
-               "title": "Gen-aerobic + speed {8:13} with 8 x 100 m strides",
-               "distance": 8
+               "title": "Gen-aerobic + speed {9:14} with 8 x 100 m strides",
+               "distance": 9
             },
             {
-               "title": "Recovery {4:6}",
-               "distance": 4
+               "title": "Recovery {6:10}",
+               "distance": 6
             },
             {
-               "title": "Med-long {11:18}",
-               "distance": 11
+               "title": "Med-long {12:19}",
+               "distance": 12
             }
          ]
       }

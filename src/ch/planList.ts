@@ -160,7 +160,22 @@ export const plans: PlanSummary[] = [
   ],
   [
     "pfitz_55_recovery",
-    "Pfitzinger/Douglas: Marathon up to 55 Miles - 5 Week Recovery Block (third edition)",
+    "Pfitzinger/Douglas: Marathon Up to 55 Miles per Week Recovery (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_70_recovery",
+    "Pfitzinger/Douglas: Marathon 55 to 70 Miles per Week Recovery (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_85_recovery",
+    "Pfitzinger/Douglas: Marathon 70 to 85 Miles per Week Recovery (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_more_than_85_recovery",
+    "Pfitzinger/Douglas: Marathon More Than 85 Miles per Week Recovery (third edition)",
     "Marathon",
   ],
 ];
