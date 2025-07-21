@@ -139,13 +139,28 @@ export const plans: PlanSummary[] = [
     "Marathon",
   ],
   [
-    "pfitz_multi_4",
-    "Pfitzinger/Douglas: Multiple Marathons, 4 Weeks Between Marathons",
+    "pfitz_04_multi",
+    "Pfitzinger/Douglas: Multiple Marathoning, 4-Week Schedule (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_06_multi",
+    "Pfitzinger/Douglas: Multiple Marathoning, 6-Week Schedule (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_08_multi",
+    "Pfitzinger/Douglas: Multiple Marathoning, 8-Week Schedule (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_10_multi",
+    "Pfitzinger/Douglas: Multiple Marathoning, 10-Week Schedule (third edition)",
     "Marathon",
   ],
   [
     "pfitz_55_recovery",
-    "Pfitzinger/Douglas: Marathon up to 55 Miles - 5 Week Recovery Block",
+    "Pfitzinger/Douglas: Marathon up to 55 Miles - 5 Week Recovery Block (third edition)",
     "Marathon",
   ],
 ];
