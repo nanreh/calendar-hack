@@ -34,7 +34,7 @@ export interface PlannedWorkout {
   title: string;
   description: string;
   tags: Tags[];
-  distance: number;
+  distance: number[];
   units: Units;
 }
 
@@ -66,7 +66,7 @@ export interface DayDetails {
   title: string;
   desc: string;
   tags: Tags[];
-  dist: number;
+  dist: number[];
   sourceUnits: Units;
 }
 

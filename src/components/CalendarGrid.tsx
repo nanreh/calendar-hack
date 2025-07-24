@@ -15,15 +15,16 @@ interface Props {
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
 }
 
-
+// TODO - Handle intervals
 function calcWeeklyDistance(w: Week<DayDetails>): number {
   return w.days
     .map((d) => d.event)
     .reduce((a, e) => {
-      return !e || !e.dist ? a : a + e.dist;
+     return !e || !e.dist ? a : a + e.dist[0];
     }, 0);
 }
 
+// Todo handle intervals
 function findMaxDistance(weeks: Week<DayDetails>[]): number {
   let currMax = 0.0;
   for (var i = 0; i < weeks.length; i++) {

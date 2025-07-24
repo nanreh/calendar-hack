@@ -28,6 +28,9 @@ const About = () => {
                     Several plans by Pete Pfitzinger and Scott Douglas from their popular <a href="http://www.amazon.com/Advanced-Marathoning-Edition-Pete-Pfitzinger/dp/0736074600" target="_blank">Advanced Marathoning</a> book
                 </li>
                 <li>
+                    Several plans by Pete Pfitzinger and Scott Douglas from their popular <a href="https://a.co/d/ccn7WlG" target="_blank">Advanced Marathoning</a> book
+                </li>
+                <li>
                     Several plans by Pete Pfitzinger and Philip Latter from their popular <a href="https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459" target="_blank"> Faster Road Racing: 5K to Half Marathon</a> book
                 </li>
                 <li>

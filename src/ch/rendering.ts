@@ -18,13 +18,13 @@ export function getWeekDistance(week: Week<DayDetails>, units: Units): number {
       }
       if (units === "mi") {
         if (e.dist) {
-          return a + e.dist;
+          return a + e.dist[0];
         } else {
           return a;
         }
       } else {
         if (e.dist) {
-          return a + miToKm(e.dist);
+          return a + miToKm(e.dist[0]);
         } else {
           return a;
         }
@@ -47,17 +47,33 @@ export function renderDist(value: number, from: Units, to: Units): string {
   return (value * 0.62137).toFixed(1) + " " + suffix;
 }
 
+
 let dlexer = moo.compile({
-  single: [{ match: /{\d+(?:\.\d+)?}/, value: (x) => x.slice(1, -1) }], // {17}
-  with_conversion: [
+  with_range: [
     {
-      match: /{\d+(?:\.\d+)?(?::\d+(?:\.\d+)?)}/,
+      match: /{\d+-\d+:\d+-\d+}/,
       value: (x) => x.slice(1, -1),
     },
-  ], // {1,1.6}
-  text: /.+?/,
+  ],
+  with_conversion: [
+    {
+      match: /{\d+(?:\.\d+)?:\d+(?:\.\d+)?}/,
+      value: (x) => x.slice(1, -1),
+    },
+  ],
+  single: [
+    {
+      match: /{\d+(?:\.\d+)?}/,
+      value: (x) => x.slice(1, -1),
+    },
+  ],
+  text: /[^{\n}]+/,
   NL: { match: /\n/, lineBreaks: true },
 });
+
+function getUnitLabel(unit: Units): string {
+  return unit === "km" ? "km" : "mi";
+}
 
 function handle_conversions(input: string, from: Units, to: Units): string {
   let result = "";
@@ -67,20 +83,34 @@ function handle_conversions(input: string, from: Units, to: Units): string {
     if (t.type === "single") {
       result += renderDist(Number(t.value), from, to);
     } else if (t.type === "with_conversion") {
-      let tokens = t.value.split(":");
+      let [fromVal, toVal] = t.value.split(":").map(Number);
       if (from === to) {
-        result += renderDist(Number(tokens[0]), from, from);
+        result += renderDist(fromVal, from, from);
       } else {
-        result += renderDist(Number(tokens[1]), to, to);
+        result += renderDist(toVal, to, to);
+      }
+    } else if (t.type === "with_range") {
+      let [fromRange, toRange] = t.value.split(":");
+      const [fromStart, fromEnd] = fromRange.split("-").map(Number);
+      const [toStart, toEnd] = toRange.split("-").map(Number);
+
+      if (from === to) {
+        const unit = getUnitLabel(from);
+        result += `${fromStart}–${fromEnd} ${unit}`;
+      } else {
+        const unit = getUnitLabel(to);
+        result += `${toStart}–${toEnd} ${unit}`;
       }
     } else {
-      // t.type === 'text' || t.type === 'NL')
+      // text or NL
       result += t.value;
     }
     t = dlexer.next();
   }
   return result;
 }
+
+
 
 export function renderStr(input: string, from: Units, to: Units): string {
   return handle_conversions(input, from, to);
