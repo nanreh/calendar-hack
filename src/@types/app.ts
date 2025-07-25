@@ -86,7 +86,7 @@ export interface Day<T> {
 
 export interface Week<T> {
   weekNum: number;
-  dist: number;
+  dist: number[];
   desc: string;
   days: Day<T>[];
 }
