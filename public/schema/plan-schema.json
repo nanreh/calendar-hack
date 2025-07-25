@@ -78,7 +78,17 @@
             "properties": {
                 "title": {"type": "string"},
                 "description": {"type": "string"},
-                "distance": {"type": "number"},
+                "distance": {
+                    "anyOf": [
+                      { "type": "number" },
+                      {
+                        "type": "array",
+                        "items": { "type": "number" },
+                        "minItems": 1,
+                        "maxItems": 2
+                      }
+                    ]
+                  },
                 "tags": {
                     "type": "array",
                     "items": {
