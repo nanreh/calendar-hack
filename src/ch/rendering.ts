@@ -9,72 +9,111 @@ export function miToKm(value: number): number {
   return value / 0.62137;
 }
 
-export function getWeekDistance(week: Week<DayDetails>, units: Units): number {
-  return week.days
-    .map((d) => d.event)
-    .reduce((a, e) => {
-      if (!e) {
-        return a;
+export function getWeekDistance(week: Week<DayDetails>, units: Units): number[] {
+  let min = 0;
+  let max = 0;
+  let hasRange = false;
+
+  for (const day of week.days) {
+    const e = day.event;
+    if (!e || !e.dist) continue;
+
+    if (typeof e.dist === "number") {
+      const dist = units === "mi" ? e.dist : miToKm(e.dist);
+      min += dist;
+      max += dist;
+    } else if (Array.isArray(e.dist) && e.dist.length === 2) {
+      let [lo, hi] = e.dist;
+      if (units === "km") {
+        lo = miToKm(lo);
+        hi = miToKm(hi);
       }
-      if (units === "mi") {
-        if (e.dist) {
-          return a + e.dist;
-        } else {
-          return a;
-        }
-      } else {
-        if (e.dist) {
-          return a + miToKm(e.dist);
-        } else {
-          return a;
-        }
-      }
-    }, 0);
+      min += lo;
+      max += hi;
+      hasRange = true;
+    }
+  }
+  return hasRange ? [min, max] : [max];
 }
 
-export function renderDist(value: number, from: Units, to: Units): string {
-  let suffix = to;
-  if (from === to) {
-    return (
-      (Number.isInteger(value) ? value.toFixed(0) : value.toFixed(1)) +
-      " " +
-      suffix
-    );
+
+export function renderDist(value: number[], from: Units, to: Units): string {
+  function convert(val: number): number {
+    return from === to ? val : from === "mi" ? val / 0.62137 : val * 0.62137;
   }
-  if ("mi" === from) {
-    return (value / 0.62137).toFixed(1) + " " + suffix;
+
+  function format(val: number): string {
+    return Number.isInteger(val) ? val.toFixed(0) : val.toFixed(1);
   }
-  return (value * 0.62137).toFixed(1) + " " + suffix;
+
+  if (Array.isArray(value)) {
+    if (value.length === 1) {
+      const v = convert(value[0]);
+      return format(v) + " " + to;
+    }
+    if (value.length === 2) {
+      const [v1, v2] = value.map(convert);
+      return format(v1) +  "-" + format(v2) + " " + to;
+    }
+  }
+  return "";
 }
+
 
 let dlexer = moo.compile({
-  single: [{ match: /{\d+(?:\.\d+)?}/, value: (x) => x.slice(1, -1) }], // {17}
-  with_conversion: [
+  with_range: [
     {
-      match: /{\d+(?:\.\d+)?(?::\d+(?:\.\d+)?)}/,
+      match: /{\d+-\d+:\d+-\d+}/,
       value: (x) => x.slice(1, -1),
     },
-  ], // {1,1.6}
-  text: /.+?/,
+  ],
+  with_conversion: [
+    {
+      match: /{\d+(?:\.\d+)?:\d+(?:\.\d+)?}/,
+      value: (x) => x.slice(1, -1),
+    },
+  ],
+  single: [
+    {
+      match: /{\d+(?:\.\d+)?}/,
+      value: (x) => x.slice(1, -1),
+    },
+  ],
+  text: /[^{\n}]+/,
   NL: { match: /\n/, lineBreaks: true },
 });
+
+// function getUnitLabel(unit: Units): string {
+//   return unit === "km" ? "km" : "mi";
+// }
 
 function handle_conversions(input: string, from: Units, to: Units): string {
   let result = "";
   dlexer.reset(input);
   let t = dlexer.next();
+
   while (t) {
     if (t.type === "single") {
-      result += renderDist(Number(t.value), from, to);
+      // e.g. {9}
+      const out = renderDist([Number(t.value)], from, to);
+      result += out;
     } else if (t.type === "with_conversion") {
-      let tokens = t.value.split(":");
-      if (from === to) {
-        result += renderDist(Number(tokens[0]), from, from);
-      } else {
-        result += renderDist(Number(tokens[1]), to, to);
-      }
+      // e.g. {9:14}
+      const [fromVal, toVal] = t.value.split(":").map(Number);
+      const out = from === to
+        ? renderDist([fromVal], from, from)
+        : renderDist([toVal], to, to);
+      result += out;
+    } else if (t.type === "with_range") {
+      // e.g. {8-9:13-14}
+      const [fromRange, toRange] = t.value.split(":");
+      const [fromStart, fromEnd] = fromRange.split("-").map(Number);
+      const [toStart, toEnd] = toRange.split("-").map(Number);
+      const out = from === to
+        ? renderDist([fromStart, fromEnd], from, from)
+        : renderDist([toStart, toEnd], to, to);
+      result += out;
     } else {
-      // t.type === 'text' || t.type === 'NL')
       result += t.value;
     }
     t = dlexer.next();

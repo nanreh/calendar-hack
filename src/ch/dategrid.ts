@@ -101,7 +101,7 @@ export class DateGrid<T> {
     const allDays = this.days;
     for (let i = 0; i < this.weekCount; i++) {
       const daysSlice = allDays.slice(i * 7, i * 7 + 7);
-      weeks.push({ weekNum: i, dist: 0.0, desc: `Week ${i}`, days: daysSlice });
+      weeks.push({ weekNum: i, dist: [0.0], desc: `Week ${i}`, days: daysSlice });
     }
     return weeks;
   }

@@ -28,7 +28,7 @@ export const WeekSummary = ({
       <p>
         <strong>{`Week ${1 + week.weekNum}`}</strong>
       </p>
-      {distance > 0 && <p>{renderDist(distance, units, units)}</p>}
+      {distance[0] > 0 && <p>{renderDist(distance, units, units)}</p>}
       {isFirstWeek && <img src={StartIcon} alt={"Start"} />}
       {isLastWeek && <img src={FinishIcon} alt="Finish" />}
       {isHighestMileage && <img src={HighMileageIcon} alt="Highest Mileage" />}

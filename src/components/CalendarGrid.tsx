@@ -15,25 +15,51 @@ interface Props {
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
 }
 
+function calcWeeklyDistance(w: Week<DayDetails>): number[] {
+  let min = 0;
+  let max = 0;
+  let hasRange = false;
 
-function calcWeeklyDistance(w: Week<DayDetails>): number {
-  return w.days
-    .map((d) => d.event)
-    .reduce((a, e) => {
-      return !e || !e.dist ? a : a + e.dist;
-    }, 0);
-}
+  for (const day of w.days) {
+    const e = day.event;
+    if (!e || !e.dist) continue;
 
-function findMaxDistance(weeks: Week<DayDetails>[]): number {
-  let currMax = 0.0;
-  for (var i = 0; i < weeks.length; i++) {
-    let d = calcWeeklyDistance(weeks[i]);
-    if (d > currMax) {
-      currMax = d;
+    if (typeof e.dist === "number") {
+      max += e.dist;
+    } else if (Array.isArray(e.dist) && e.dist.length === 2) {
+      const [low, high] = e.dist;
+      min += low;
+      max += high;
+      hasRange = true;
     }
   }
-  return currMax;
+  return hasRange ? [min, max] : [max];
 }
+
+
+function findMaxDistance(weeks: Week<DayDetails>[]): number[] {
+  let maxOfMins = 0;
+  let maxOfMaxes = 0;
+  let hasRanges = false;
+
+  for (let i = 0; i < weeks.length; i++) {
+    const dist = calcWeeklyDistance(weeks[i]);
+
+    if (dist.length === 1) {
+      const val = dist[0];
+      if (val > maxOfMins) maxOfMins = val;
+      if (val > maxOfMaxes) maxOfMaxes = val;
+    } else if (dist.length === 2) {
+      const [weekMin, weekMax] = dist;
+      if (weekMin > maxOfMins) maxOfMins = weekMin;
+      if (weekMax > maxOfMaxes) maxOfMaxes = weekMax;
+      hasRanges = true;
+    }
+  }
+
+  return hasRanges ? [maxOfMins, maxOfMaxes] : [maxOfMaxes];
+}
+
 
 export const CalendarGrid = ({
   racePlan,
@@ -51,6 +77,20 @@ export const CalendarGrid = ({
   const maxDistance = findMaxDistance(racePlan.dateGrid.weeks);
 
   function getWeek(w: Week<DayDetails>) {
+    const weekDist = calcWeeklyDistance(w);
+
+    let isHighestMileage = false;
+    if (maxDistance[0] > 0) {
+      if (weekDist.length === 1) {
+        isHighestMileage = maxDistance.length === 1 && weekDist[0] === maxDistance[0];
+      } else if (weekDist.length === 2) {
+        isHighestMileage =
+          maxDistance.length === 2 &&
+          weekDist[0] === maxDistance[0] &&
+          weekDist[1] === maxDistance[1];
+      }
+  }
+  
     return (
       <div className="week-grid" key={`wr:${w.weekNum}`}>
         <WeekSummary
@@ -61,10 +101,8 @@ export const CalendarGrid = ({
           racePlan={racePlan}
           isFirstWeek={w.weekNum === 0}
           isLastWeek={w.weekNum === racePlan.dateGrid.weekCount - 1}
-          isHighestMileage={
-            maxDistance > 0 && calcWeeklyDistance(w) === maxDistance
-          }
-        ></WeekSummary>
+          isHighestMileage={isHighestMileage}
+        />
         {w.days.map((d, _) => (
           <DayCell
             key={key(d.date)}
@@ -77,7 +115,7 @@ export const CalendarGrid = ({
           />
         ))}
       </div>
-    );
+    );  
   }
 
   function getHeader() {
