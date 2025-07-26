@@ -43,7 +43,7 @@ describe("Plan", function () {
     expect(p.days).toEqual(expectedDays);
     expect(p.weekCount).toEqual(1);
     expect(p.weeks).toEqual([
-      { weekNum: 0, dist: 0, desc: "Week 0", days: expectedDays },
+      { weekNum: 0, dist: [0], desc: "Week 0", days: expectedDays },
     ]);
   });
 
@@ -80,8 +80,8 @@ describe("Plan", function () {
     expect(p.days).toEqual(expectedDaysWeek1.concat(expectedDaysWeek2));
     expect(p.weekCount).toEqual(2);
     expect(p.weeks).toEqual([
-      { weekNum: 0, dist: 0, desc: "Week 0", days: expectedDaysWeek1 },
-      { weekNum: 1, dist: 0, desc: "Week 1", days: expectedDaysWeek2 },
+      { weekNum: 0, dist: [0], desc: "Week 0", days: expectedDaysWeek1 },
+      { weekNum: 1, dist: [0], desc: "Week 1", days: expectedDaysWeek2 },
     ]);
   });
 
