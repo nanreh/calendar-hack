@@ -80,14 +80,16 @@ export const CalendarGrid = ({
     const weekDist = calcWeeklyDistance(w);
 
     let isHighestMileage = false;
-    if (weekDist.length === 1) {
-      isHighestMileage = maxDistance.length === 1 && weekDist[0] === maxDistance[0];
-    } else if (weekDist.length === 2) {
-      isHighestMileage =
-        maxDistance.length === 2 &&
-        weekDist[0] === maxDistance[0] &&
-        weekDist[1] === maxDistance[1];
-    }
+    if (maxDistance[0] > 0) {
+      if (weekDist.length === 1) {
+        isHighestMileage = maxDistance.length === 1 && weekDist[0] === maxDistance[0];
+      } else if (weekDist.length === 2) {
+        isHighestMileage =
+          maxDistance.length === 2 &&
+          weekDist[0] === maxDistance[0] &&
+          weekDist[1] === maxDistance[1];
+      }
+  }
   
     return (
       <div className="week-grid" key={`wr:${w.weekNum}`}>
