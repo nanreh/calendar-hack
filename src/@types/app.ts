@@ -34,7 +34,7 @@ export interface PlannedWorkout {
   title: string;
   description: string;
   tags: Tags[];
-  distance: number;
+  distance: number[];
   units: Units;
 }
 
@@ -66,7 +66,7 @@ export interface DayDetails {
   title: string;
   desc: string;
   tags: Tags[];
-  dist: number;
+  dist: number[];
   sourceUnits: Units;
 }
 
@@ -86,7 +86,7 @@ export interface Day<T> {
 
 export interface Week<T> {
   weekNum: number;
-  dist: number;
+  dist: number[];
   desc: string;
   days: Day<T>[];
 }

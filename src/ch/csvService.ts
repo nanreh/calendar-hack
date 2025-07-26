@@ -26,7 +26,7 @@ export function toCsv(plan: RacePlan, units: Units, weekStartsOn: WeekStartsOn):
       } else {
         row.push(`Training Week ${1 + i}`);
       }
-      if (distance > 0) {
+      if (distance[0] > 0) {
         row.push(renderDist(distance, units, units));
       } else {
         row.push("");

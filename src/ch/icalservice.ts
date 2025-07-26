@@ -21,7 +21,7 @@ export function toIcal(plan: RacePlan, units: Units): string | undefined {
     } else {
       weekDesc = `Training Week ${1 + i}`;
     }
-    if (distance > 0) {
+    if (distance[0] > 0) {
       weekDesc += " Distance: " + renderDist(distance, units, units);
     }
     events.push({
