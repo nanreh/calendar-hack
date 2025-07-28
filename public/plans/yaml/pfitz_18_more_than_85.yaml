@@ -198,8 +198,8 @@ schedule:
     distance: 11.0
   - title: Recovery {6:10}
     distance: 6.0
-  - title: 15k to half marathon tune up race (total 13-17 miles [21-27 km])
-    distance: 13.0
+  - title: 15k to half marathon tune up race (total {13-17:21-27})
+    distance: [13.0, 17.0]
   - title: Gen-aerobic {8:13}
     distance: 8.0
 # Weeks to goal: 5
@@ -230,8 +230,8 @@ schedule:
     distance: 13.0
   - title: Recovery {6:10}
     distance: 6.0
-  - title: 8k - 15k tune-up race (total 9-13 miles [14-21 km])
-    distance: 9.0
+  - title: 8k - 15k tune-up race (total {9-13:14-21})
+    distance: [9.0, 13.0]
   - title: Long run {18:29}
     distance: 18.0
 # Weeks to goal: 3
@@ -262,8 +262,8 @@ schedule:
     distance: 12.0
   - title: Recovery {6:10}
     distance: 6.0
-  - title: 8 - 10K tune-up race (total 9-11 miles [14-18 km])
-    distance: 9.0
+  - title: 8 - 10K tune-up race (total {9-11:14-18})
+    distance: [9.0, 11.0]
   - title: Long run {17:27}
     distance: 17.0
 # Weeks to goal: 1
@@ -298,4 +298,3 @@ schedule:
     distance: 4.0
   - title: Plan Ends
     distance: 26.2
-      

@@ -59,8 +59,8 @@ schedule:
     distance: 6.0
   - title: Recovery {5:8}
     distance: 5.0
-  - title: 8K-10K tune-up race (total 9-11 miles [14-18 km])
-    distance: 9.0
+  - title: 8K-10K tune-up race (total {9-11:14-18})
+    distance: [9.0, 11.0]
   - title: Long run {18:29}
     distance: 18.0
 # Weeks to next marathon: 1
@@ -93,4 +93,3 @@ schedule:
     distance: 4.0
   - title: Second Marathon
     distance: 26.2
-
