@@ -1,261 +1,261 @@
 id: pfitz_18_55
-name: 'Pfitzinger/Douglas: Up to 55 miles per week, 18-week schedule'
+name: "Pfitzinger/Douglas: Up to 55 miles per week, 18-week schedule"
 description: |-
   "Up to 55 miles per week, 18-week schedule" from "Advanced Marathoning (third edition)" by Pete Pfitzinger and Scott Douglas
 units: mi
 source: https://www.amazon.com/gp/product/149256866X/
 type: Marathon
 schedule:
-# Training Block 1 - Endurance
-# Weeks to goal: 17
-- workouts:
-  - title: Rest or cross-train
-  - title: LT {8:13} with {4:6} at LT pace
-    distance: 8.0
-  - title: Rest or cross-train
-  - title: Gen-aerobic {9:14}
-    distance: 9.0
-  - title: Rest or cross-train
-  - title: Recovery {4:6}
-    distance: 4.0
-  - title: Med-long run {12:19}
-    distance: 12.0
-# Weeks to goal: 16
-- workouts:
-  - title: Rest or cross-train
-  - title: Gen-aerobic + speed {8:13} with 6 x 10 sec hill sprints + 8 x 100 m strides
-    distance: 8.0
-  - title: Rest or cross-train
-  - title: Gen-aerobic {10:16}
-    distance: 10.0
-  - title: Rest or cross-train
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Marathon-pace run {13:21} with {8:13} at marathon pace
-    distance: 13.0
-# Weeks to goal: 15
-- workouts:
-  - title: Rest or cross-train
-  - title: Gen-aerobic {10:16}
-    distance: 10.0
-  - title: Recovery {4:6}
-    distance: 4.0
-  - title: LT {8:13} with {4:6} at LT pace
-    distance: 8.0
-  - title: Rest or cross-train
-  - title: Recovery {4:6}
-    distance: 4.0
-  - title: Med-long run {14:23}
-    distance: 14.0
-# Weeks to goal: 14
-- workouts:
-  - title: Rest or cross-train
-  - title: Gen-aerobic + speed {8:13} with 6 x 10 sec hill sprints + 8 X 100 m strides
-    distance: 8.0
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Gen-aerobic {10:16}
-    distance: 10.0
-  - title: Rest or cross-train
-  - title: Recovery {4:6}
-    distance: 4.0
-  - title: Med-long run {15:24}
-    distance: 15.0
-# Weeks to goal: 13
-- workouts:
-  - title: Rest or cross-train
-  - title: LT {9:14} with {5:8} at LT pace
-    distance: 9.0
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Gen-aerobic {10:16}
-    distance: 10.0
-  - title: Rest or cross-train
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Marathon-pace run {16:26} with {10:16} at marathon pace
-    distance: 16.0
-# Weeks to goal: (Recovery) 12
-- workouts:
-  - title: Rest or cross-train
-  - title: Gen-aerobic + speed {8:13} with 10 x 100 m strides
-    distance: 8.0
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Gen-aerobic {8:13}
-    distance: 8.0
-  - title: Rest or cross-train
-  - title: Recovery {4:6}
-    distance: 4.0
-  - title: Med-long run {12:19}
-    distance: 12.0
-# Training Block 2 - LT + Endurance
-# Weeks to goal: 11
-- workouts:
-  - title: Rest or cross-train
-  - title: LT {10:16} with {5:8} at LT pace
-    distance: 10.0
-  - title: Recovery {4:6}
-    distance: 4.0
-  - title: Med-long run {11:18}
-    distance: 11.0
-  - title: Rest or cross-train
-  - title: Gen-aerobic + speed {7:11} with 8 x 100 m strides
-    distance: 7.0
-  - title: Long run {18:29}
-    distance: 18.0
-# Weeks to goal: 10
-- workouts:
-  - title: Rest or cross-train
-  - title: Recovery + speed {7:11} with 6 x 100 m strides
-    distance: 7.0
-  - title: Med-long run {12:19}
-    distance: 12.0
-  - title: Rest or cross-train
-  - title: LT {10:16} with {6:10} at LT pace
-    distance: 10.0
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Long run {20:32}
-    distance: 20.0
-# Weeks to goal: 9
-- workouts:
-  - title: Rest or cross-train
-  - title: Recovery {6:10}
-    distance: 6.0
-  - title: Med-long run {14:23}
-    distance: 14.0
-  - title: Recovery {6:10}
-    distance: 6.0
-  - title: Rest or cross-train
-  - title: Recovery + speed {6:10} with 6 x 100 m strides
-    distance: 6.0
-  - title: Marathon-pace run {16:26} with {12:19} at marathon pace
-    distance: 16.0
-# Weeks to goal: (Recovery) 8
-- workouts:
-  - title: Rest or cross-train
-  - title: Gen-aerobic {8:13}
-    distance: 8.0
-  - title: VO₂max {8:13} with 5 x 800 m at 5K race pace; jog 50-90% interval time
-    distance: 8.0
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Rest or cross-train
-  - title: Gen-aerobic + speed {8:13} with 6 x 10 sec hill sprints + 8 x 100 m strides
-    distance: 8.0
-  - title: Med-long run {14:23}
-    distance: 14.0
-# Weeks to goal: 7
-- workouts:
-  - title: Rest or cross-train
-  - title: Recovery + speed {7:11} with 6 x 100 m strides
-    distance: 7.0
-  - title: LT {11:18} with {7:11} at LT pace
-    distance: 11.0
-  - title: Rest or cross-train
-  - title: Med-long run {12:19}
-    distance: 12.0
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Long run {20:32}
-    distance: 20.0
-# Training Block 3 - Race Preparation
-# Weeks to goal: 6
-- workouts:
-  - title: Rest or cross-train
-  - title: VO₂max {8:13} with 5 x 600 m at 5K race pace; jog 50-90% interval time
-    distance: 8.0
-  - title: Med-long run {12:19}
-    distance: 12.0
-  - title: Rest or cross-train
-  - title: Recovery + speed {5:8} with 6 x 100 m strides
-    distance: 5.0
-  - title: 8K-15K tune-up race (total 9-13 miles [14-21 km])
-    distance: 9.0
-  - title: Long run {17:27}
-    distance: 17.0
-# Weeks to goal: 5
-- workouts:
-  - title: Rest or cross-train
-  - title: Gen-aerobic {8:13}
-    distance: 8.0
-  - title: VO₂max {9:14} with 5 x 1,000 m at 5K race pace; jog 50-90% interval time
-    distance: 9.0
-  - title: Rest or cross-train
-  - title: Med-long run {12:19}
-    distance: 12.0
-  - title: Recovery {5:8}
-    distance: 5.0
-  - title: Marathon-pace run {18:29} with {14:23} at marathon pace
-    distance: 18.0
-# Weeks to goal: 4
-- workouts:
-  - title: Rest or cross-train
-  - title: VO₂max {8:13} with 5 x 600 m at 5K race pace; jog 50-90% interval time
-    distance: 8.0
-  - title: Med-long run {11:18}
-    distance: 11.0
-  - title: Rest or cross-train
-  - title: Recovery + speed {4:6} with 6 x 100 m strides
-    distance: 4.0
-  - title: 8K-15K tune-up race (total 9-13 miles [14-21 km])
-    distance: 9.0
-  - title: Long run {17:27}
-    distance: 17.0
-# Training Block 4 - Taper and Race
-# Weeks to goal: 3
-- workouts:
-  - title: Rest or cross-train
-  - title: Recovery + speed {7:11} with 6 x 100 m strides
-    distance: 7.0
-  - title: VO₂max {10:16} with 4 x 1,200 m at 5K race pace; jog 50-90% interval time
-    distance: 10.0
-  - title: Rest or cross-train
-  - title: Med-long run {11:18}
-    distance: 11.0
-  - title: Recovery {4:6}
-    distance: 4.0
-  - title: Long run {20:32}
-    distance: 20.0
-# Weeks to goal: 2
-- workouts:
-  - title: Rest or cross-train
-  - title: VO₂max {8:13} with 5 x 600 m at 5K race pace; jog 50-90% interval time
-    distance: 8.0
-  - title: Recovery {6:10}
-    distance: 6.0
-  - title: Rest or cross-train
-  - title: Recovery + speed {4:6} with 6 x 100 m strides
-    distance: 4.0
-  - title: 8K-10K tune-up race (total 9-11 miles [14-18 km])
-    distance: 9.0
-  - title: Long run {16:26}
-    distance: 16.0
-# Weeks to goal: 1
-- workouts:
-  - title: Rest or cross-train
-  - title: Recovery + speed {7:11} with 8 x 100 m strides
-    distance: 7.0
-  - title: VO₂max {8:13} with 4 x 1,200 m at 5K race pace; jog 50-90% interval time
-    distance: 8.0
-  - title: Rest or cross-train
-  - title: Recovery + speed {5:8} with 6 x 100 m strides
-    distance: 5.0
-  - title: Rest or cross-train
-  - title: Med-long run {12:19}
-    distance: 12.0
-# Race week
-- workouts:
-  - title: Rest
-  - title: Recovery {6:10}
-    distance: 6.0
-  - title: Dress rehearsal {7:11} with {2:3} at marathon pace
-    distance: 7.0
-  - title: Rest
-  - title: Recovery + speed {5:8} with 6 x 100 m strides
-    distance: 5.0
-  - title: Recovery {4:6}
-    distance: 4.0
-  - title: Plan Ends
-    distance: 26.2
+  # Training Block 1 - Endurance
+  # Weeks to goal: 17
+  - workouts:
+      - title: Rest or cross-train
+      - title: LT {8:13} with {4:6} at LT pace
+        distance: 8.0
+      - title: Rest or cross-train
+      - title: Gen-aerobic {9:14}
+        distance: 9.0
+      - title: Rest or cross-train
+      - title: Recovery {4:6}
+        distance: 4.0
+      - title: Med-long run {12:19}
+        distance: 12.0
+  # Weeks to goal: 16
+  - workouts:
+      - title: Rest or cross-train
+      - title: Gen-aerobic + speed {8:13} with 6 x 10 sec hill sprints + 8 x 100 m strides
+        distance: 8.0
+      - title: Rest or cross-train
+      - title: Gen-aerobic {10:16}
+        distance: 10.0
+      - title: Rest or cross-train
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Marathon-pace run {13:21} with {8:13} at marathon pace
+        distance: 13.0
+  # Weeks to goal: 15
+  - workouts:
+      - title: Rest or cross-train
+      - title: Gen-aerobic {10:16}
+        distance: 10.0
+      - title: Recovery {4:6}
+        distance: 4.0
+      - title: LT {8:13} with {4:6} at LT pace
+        distance: 8.0
+      - title: Rest or cross-train
+      - title: Recovery {4:6}
+        distance: 4.0
+      - title: Med-long run {14:23}
+        distance: 14.0
+  # Weeks to goal: 14
+  - workouts:
+      - title: Rest or cross-train
+      - title: Gen-aerobic + speed {8:13} with 6 x 10 sec hill sprints + 8 X 100 m strides
+        distance: 8.0
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Gen-aerobic {10:16}
+        distance: 10.0
+      - title: Rest or cross-train
+      - title: Recovery {4:6}
+        distance: 4.0
+      - title: Med-long run {15:24}
+        distance: 15.0
+  # Weeks to goal: 13
+  - workouts:
+      - title: Rest or cross-train
+      - title: LT {9:14} with {5:8} at LT pace
+        distance: 9.0
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Gen-aerobic {10:16}
+        distance: 10.0
+      - title: Rest or cross-train
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Marathon-pace run {16:26} with {10:16} at marathon pace
+        distance: 16.0
+  # Weeks to goal: (Recovery) 12
+  - workouts:
+      - title: Rest or cross-train
+      - title: Gen-aerobic + speed {8:13} with 10 x 100 m strides
+        distance: 8.0
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Gen-aerobic {8:13}
+        distance: 8.0
+      - title: Rest or cross-train
+      - title: Recovery {4:6}
+        distance: 4.0
+      - title: Med-long run {12:19}
+        distance: 12.0
+  # Training Block 2 - LT + Endurance
+  # Weeks to goal: 11
+  - workouts:
+      - title: Rest or cross-train
+      - title: LT {10:16} with {5:8} at LT pace
+        distance: 10.0
+      - title: Recovery {4:6}
+        distance: 4.0
+      - title: Med-long run {11:18}
+        distance: 11.0
+      - title: Rest or cross-train
+      - title: Gen-aerobic + speed {7:11} with 8 x 100 m strides
+        distance: 7.0
+      - title: Long run {18:29}
+        distance: 18.0
+  # Weeks to goal: 10
+  - workouts:
+      - title: Rest or cross-train
+      - title: Recovery + speed {7:11} with 6 x 100 m strides
+        distance: 7.0
+      - title: Med-long run {12:19}
+        distance: 12.0
+      - title: Rest or cross-train
+      - title: LT {10:16} with {6:10} at LT pace
+        distance: 10.0
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Long run {20:32}
+        distance: 20.0
+  # Weeks to goal: 9
+  - workouts:
+      - title: Rest or cross-train
+      - title: Recovery {6:10}
+        distance: 6.0
+      - title: Med-long run {14:23}
+        distance: 14.0
+      - title: Recovery {6:10}
+        distance: 6.0
+      - title: Rest or cross-train
+      - title: Recovery + speed {6:10} with 6 x 100 m strides
+        distance: 6.0
+      - title: Marathon-pace run {16:26} with {12:19} at marathon pace
+        distance: 16.0
+  # Weeks to goal: (Recovery) 8
+  - workouts:
+      - title: Rest or cross-train
+      - title: Gen-aerobic {8:13}
+        distance: 8.0
+      - title: VO₂max {8:13} with 5 x 800 m at 5K race pace; jog 50-90% interval time
+        distance: 8.0
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Rest or cross-train
+      - title: Gen-aerobic + speed {8:13} with 6 x 10 sec hill sprints + 8 x 100 m strides
+        distance: 8.0
+      - title: Med-long run {14:23}
+        distance: 14.0
+  # Weeks to goal: 7
+  - workouts:
+      - title: Rest or cross-train
+      - title: Recovery + speed {7:11} with 6 x 100 m strides
+        distance: 7.0
+      - title: LT {11:18} with {7:11} at LT pace
+        distance: 11.0
+      - title: Rest or cross-train
+      - title: Med-long run {12:19}
+        distance: 12.0
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Long run {20:32}
+        distance: 20.0
+  # Training Block 3 - Race Preparation
+  # Weeks to goal: 6
+  - workouts:
+      - title: Rest or cross-train
+      - title: VO₂max {8:13} with 5 x 600 m at 5K race pace; jog 50-90% interval time
+        distance: 8.0
+      - title: Med-long run {12:19}
+        distance: 12.0
+      - title: Rest or cross-train
+      - title: Recovery + speed {5:8} with 6 x 100 m strides
+        distance: 5.0
+      - title: 8K-15K tune-up race (total {9-13:14-21})
+        distance: [9.0, 13.0]
+      - title: Long run {17:27}
+        distance: 17.0
+  # Weeks to goal: 5
+  - workouts:
+      - title: Rest or cross-train
+      - title: Gen-aerobic {8:13}
+        distance: 8.0
+      - title: VO₂max {9:14} with 5 x 1,000 m at 5K race pace; jog 50-90% interval time
+        distance: 9.0
+      - title: Rest or cross-train
+      - title: Med-long run {12:19}
+        distance: 12.0
+      - title: Recovery {5:8}
+        distance: 5.0
+      - title: Marathon-pace run {18:29} with {14:23} at marathon pace
+        distance: 18.0
+  # Weeks to goal: 4
+  - workouts:
+      - title: Rest or cross-train
+      - title: VO₂max {8:13} with 5 x 600 m at 5K race pace; jog 50-90% interval time
+        distance: 8.0
+      - title: Med-long run {11:18}
+        distance: 11.0
+      - title: Rest or cross-train
+      - title: Recovery + speed {4:6} with 6 x 100 m strides
+        distance: 4.0
+      - title: 8K-15K tune-up race (total {9-13:14-21})
+        distance: [9.0, 13.0]
+      - title: Long run {17:27}
+        distance: 17.0
+  # Training Block 4 - Taper and Race
+  # Weeks to goal: 3
+  - workouts:
+      - title: Rest or cross-train
+      - title: Recovery + speed {7:11} with 6 x 100 m strides
+        distance: 7.0
+      - title: VO₂max {10:16} with 4 x 1,200 m at 5K race pace; jog 50-90% interval time
+        distance: 10.0
+      - title: Rest or cross-train
+      - title: Med-long run {11:18}
+        distance: 11.0
+      - title: Recovery {4:6}
+        distance: 4.0
+      - title: Long run {20:32}
+        distance: 20.0
+  # Weeks to goal: 2
+  - workouts:
+      - title: Rest or cross-train
+      - title: VO₂max {8:13} with 5 x 600 m at 5K race pace; jog 50-90% interval time
+        distance: 8.0
+      - title: Recovery {6:10}
+        distance: 6.0
+      - title: Rest or cross-train
+      - title: Recovery + speed {4:6} with 6 x 100 m strides
+        distance: 4.0
+      - title: 8K-10K tune-up race (total {9-11:14-18})
+        distance: [9.0, 11.0]
+      - title: Long run {16:26}
+        distance: 16.0
+  # Weeks to goal: 1
+  - workouts:
+      - title: Rest or cross-train
+      - title: Recovery + speed {7:11} with 8 x 100 m strides
+        distance: 7.0
+      - title: VO₂max {8:13} with 4 x 1,200 m at 5K race pace; jog 50-90% interval time
+        distance: 8.0
+      - title: Rest or cross-train
+      - title: Recovery + speed {5:8} with 6 x 100 m strides
+        distance: 5.0
+      - title: Rest or cross-train
+      - title: Med-long run {12:19}
+        distance: 12.0
+  # Race week
+  - workouts:
+      - title: Rest
+      - title: Recovery {6:10}
+        distance: 6.0
+      - title: Dress rehearsal {7:11} with {2:3} at marathon pace
+        distance: 7.0
+      - title: Rest
+      - title: Recovery + speed {5:8} with 6 x 100 m strides
+        distance: 5.0
+      - title: Recovery {4:6}
+        distance: 4.0
+      - title: Plan Ends
+        distance: 26.2
