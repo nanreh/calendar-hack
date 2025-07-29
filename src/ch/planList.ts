@@ -144,6 +144,11 @@ export const plans: PlanSummary[] = [
     "Marathon",
   ],
   [
+    "pfitz_18_70_4th",
+    "Pfitzinger/Douglas: 55 to 70 Miles per Week, 18-week schedule (fourth edition)",
+    "Marathon",
+  ],
+  [
     "pfitz_18_85",
     "Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule (third edition)",
     "Marathon",
