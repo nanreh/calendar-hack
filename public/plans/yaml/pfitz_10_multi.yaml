@@ -89,7 +89,7 @@ schedule:
   - title: Recovery {5:8}
     distance: 5.0
   - title: 8K-15K tune-up race (total {9-13:14-21})
-    distance: 9.0
+    distance: [9.0, 13.0]
   - title: Long run {17:27}
     distance: 17.0
 # Weeks to next marathon: 3
