@@ -381,8 +381,11 @@
                "distance": 6.0
             },
             {
-               "title": "8K-15K tune-up race (total 9-13 miles [14-21 km])",
-               "distance": 9.0
+               "title": "8K-15K tune-up race (total {9-13:14-21})",
+               "distance": [
+                  9.0,
+                  13.0
+               ]
             },
             {
                "title": "Long run {18:29}",
@@ -445,8 +448,11 @@
                "distance": 6.0
             },
             {
-               "title": "8K-15K tune-up race (total 9-13 miles [14-21 km])",
-               "distance": 9.0
+               "title": "8K-15K tune-up race (total {9-13:14-21})",
+               "distance": [
+                  9.0,
+                  13.0
+               ]
             },
             {
                "title": "Long run {18:29}",
@@ -509,8 +515,11 @@
                "distance": 6.0
             },
             {
-               "title": "8K-10K tune-up race (total 9-11 miles [14-18 km])",
-               "distance": 9.0
+               "title": "8K-10K tune-up race (total {9-11:14-18})",
+               "distance": [
+                  9.0,
+                  11.0
+               ]
             },
             {
                "title": "Long run {17:27}",

@@ -171,8 +171,8 @@ schedule:
   - title: Rest or cross-train
   - title: Recovery + speed {5:8} with 6 x 100 m strides
     distance: 5.0
-  - title: 8K-15K tune-up race (total 9-13 miles [14-21 km])
-    distance: 9.0
+  - title: 8K-15K tune-up race (total {9-13:14-21})
+    distance: [9.0, 13.0]
   - title: Long run {17:27}
     distance: 17.0
 # Weeks to goal: 5
@@ -199,8 +199,8 @@ schedule:
   - title: Rest or cross-train
   - title: Recovery + speed {4:6} with 6 x 100 m strides
     distance: 4.0
-  - title: 8K-15K tune-up race (total 9-13 miles [14-21 km])
-    distance: 9.0
+  - title: 8K-15K tune-up race (total {9-13:14-21})
+    distance: [9.0, 13.0]
   - title: Long run {17:27}
     distance: 17.0
 # Training Block 4 - Taper and Race
@@ -228,8 +228,8 @@ schedule:
   - title: Rest or cross-train
   - title: Recovery + speed {4:6} with 6 x 100 m strides
     distance: 4.0
-  - title: 8K-10K tune-up race (total 9-11 miles [14-18 km])
-    distance: 9.0
+  - title: 8K-10K tune-up race (total {9-11:14-18})
+    distance: [9.0, 11.0]
   - title: Long run {16:26}
     distance: 16.0
 # Weeks to goal: 1
