@@ -124,6 +124,11 @@ export const plans: PlanSummary[] = [
     "Marathon",
   ],
   [
+    "pfitz_12_85_4th",
+    "Pfitzinger/Douglas: 70 to 85 Miles per Week, 12-week schedule (fourth edition)",
+    "Marathon",
+  ],
+  [
     "pfitz_12_more_than_85",
     "Pfitzinger/Douglas: More Than 85 Miles per Week, 12-week schedule (third edition)",
     "Marathon",
@@ -151,6 +156,11 @@ export const plans: PlanSummary[] = [
   [
     "pfitz_18_85",
     "Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_18_85_4th",
+    "Pfitzinger/Douglas: 70 to 85 Miles per Week, 18-week schedule (fourth edition)",
     "Marathon",
   ],
   [
