@@ -134,6 +134,11 @@ export const plans: PlanSummary[] = [
     "Marathon",
   ],
   [
+    "pfitz_12_more_than_85_4th",
+    "Pfitzinger/Douglas: More Than 85 Miles per Week, 12-week schedule (fourth edition)",
+    "Marathon",
+  ],
+  [
     "pfitz_18_55",
     "Pfitzinger/Douglas: Up to 55 miles per week, 18-week schedule (third edition)",
     "Marathon",
@@ -169,8 +174,18 @@ export const plans: PlanSummary[] = [
     "Marathon",
   ],
   [
+    "pfitz_18_more_than_85_4th",
+    "Pfitzinger/Douglas: More Than 85 Miles per Week, 18-week schedule (fourth edition)",
+    "Marathon",
+  ],
+  [
     "pfitz_04_multi",
     "Pfitzinger/Douglas: Multiple Marathoning, 4-Week Schedule (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_04_multi_4th",
+    "Pfitzinger/Douglas: Multiple Marathoning, 4-Week Schedule (fourth edition)",
     "Marathon",
   ],
   [
@@ -179,8 +194,18 @@ export const plans: PlanSummary[] = [
     "Marathon",
   ],
   [
+    "pfitz_06_multi_4th",
+    "Pfitzinger/Douglas: Multiple Marathoning, 6-Week Schedule (fourth edition)",
+    "Marathon",
+  ],
+  [
     "pfitz_08_multi",
     "Pfitzinger/Douglas: Multiple Marathoning, 8-Week Schedule (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_08_multi_4th",
+    "Pfitzinger/Douglas: Multiple Marathoning, 8-Week Schedule (fourth edition)",
     "Marathon",
   ],
   [
@@ -189,8 +214,18 @@ export const plans: PlanSummary[] = [
     "Marathon",
   ],
   [
+    "pfitz_10_multi_4th",
+    "Pfitzinger/Douglas: Multiple Marathoning, 10-Week Schedule (fourth edition)",
+    "Marathon",
+  ],
+  [
     "pfitz_55_recovery",
     "Pfitzinger/Douglas: Marathon Up to 55 Miles per Week Recovery (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_55_recovery_4th",
+    "Pfitzinger/Douglas: Marathon Up to 55 Miles per Week Recovery (fourth edition)",
     "Marathon",
   ],
   [
@@ -199,13 +234,28 @@ export const plans: PlanSummary[] = [
     "Marathon",
   ],
   [
+    "pfitz_70_recovery_4th",
+    "Pfitzinger/Douglas: Marathon 55 to 70 Miles per Week Recovery (fourth edition)",
+    "Marathon",
+  ],
+  [
     "pfitz_85_recovery",
     "Pfitzinger/Douglas: Marathon 70 to 85 Miles per Week Recovery (third edition)",
     "Marathon",
   ],
   [
+    "pfitz_85_recovery_4th",
+    "Pfitzinger/Douglas: Marathon 70 to 85 Miles per Week Recovery (fourth edition)",
+    "Marathon",
+  ],
+  [
     "pfitz_more_than_85_recovery",
     "Pfitzinger/Douglas: Marathon More Than 85 Miles per Week Recovery (third edition)",
+    "Marathon",
+  ],
+  [
+    "pfitz_more_than_85_recovery_4th",
+    "Pfitzinger/Douglas: Marathon More Than 85 Miles per Week Recovery (fourth edition)",
     "Marathon",
   ],
 ];
