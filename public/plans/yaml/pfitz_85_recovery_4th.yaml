@@ -1,0 +1,93 @@
+id: pfitz_85_recovery_4th
+name: 'Pfitzinger/Douglas: Marathon 70 to 85 Miles per Week Recovery'
+description: |-
+  "70 to 85 Miles per Week Recovery: Training Block 5 - Recovery" from "Advanced Marathoning" (fourth edition) by Pete Pfitzinger and Scott Douglas
+units: mi
+source: https://www.amazon.com/dp/1718237472/
+type: Marathon
+schedule:
+# Training Block 5 - Postmarathon Recovery
+# Weeks after the marathon: 1
+- workouts:
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Recovery {3-4:5-6}
+    distance: [3.0, 4.0]
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Recovery {4-5:6-8}
+    distance: [4.0, 5.0]
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Recovery {6-7:10-11}
+    distance: [6.0, 7.0]
+
+# Weeks after the marathon: 2
+- workouts:
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Recovery {4-5:6-8}
+    distance: [4.0, 5.0]
+  - title: Recovery {5-6:8-10}
+    distance: [5.0, 6.0]
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Recovery {5-6:8-10}
+    distance: [5.0, 6.0]
+  - title: Recovery {5-6:8-10}
+    distance: [5.0, 6.0]
+  - title: Gen-aerobic {9-10:14-16}
+    distance: [9.0, 10.0]
+
+# Weeks after the marathon: 3
+- workouts:
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Recovery {6-7:10-11}
+    distance: [6.0, 7.0]
+  - title: Recovery {5-6:8-10}
+    distance: [5.0, 6.0]
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Gen-aerobic + speed {8-9:13-14} with 8 x 100 m strides
+    distance: [8.0, 9.0]
+  - title: Recovery {6-7:10-11}
+    distance: [6.0, 7.0]
+  - title: Gen-aerobic {9-10:14-16}
+    distance: [9.0, 10.0]
+
+# Weeks after the marathon: 4
+- workouts:
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Recovery {5-6:8-10}
+    distance: [5.0, 6.0]
+  - title: Gen-aerobic {9-10:14-16}
+    distance: [9.0, 10.0]
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Gen-aerobic + speed {8-9:13-14} with 8 x 100 m strides
+    distance: [8.0, 9.0]
+  - title: Recovery {6-7:10-11}
+    distance: [6.0, 7.0]
+  - title: Med-long run {11-12:18-19}
+    distance: [11.0, 12.0]
+
+# Weeks after the marathon: 5
+- workouts:
+  - title: Rest or cross-train
+    distance: [0.0, 0.0]
+  - title: Gen-aerobic {8-9:13-14}
+    distance: [8.0, 9.0]
+  - title: Gen-aerobic + speed {9-10:14-16} with 8 x 100 m strides
+    distance: [9.0, 10.0]
+  - title: Recovery {5-6:8-10}
+    distance: [5.0, 6.0]
+  - title: Gen-aerobic + speed {9-10:14-16} with 8 x 100 m strides
+    distance: [9.0, 10.0]
+  - title: Recovery {6-7:10-11}
+    distance: [6.0, 7.0]
+  - title: Med-long run {12-13:19-21}
+    distance: [12.0, 13.0]
