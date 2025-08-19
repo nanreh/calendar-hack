@@ -9,9 +9,6 @@ type: Marathon
 schedule:
 # Training Block 1 - Endurance
 # Weeks to goal: 17
-schedule:
-# Training Block 1 - Endurance
-# Weeks to goal: 17
 - workouts:
   - title: Recovery AM {5-6:8-10} PM {4-5:6-8}
     distance: [9.0, 11.0]

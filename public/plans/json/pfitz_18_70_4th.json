@@ -110,17 +110,17 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "LT {9-10:14-16} with 24\u201332 minutes at LT pace",
+               "title": "Gen-aerobic {9-10:14-16]",
                "distance": [
                   9.0,
                   10.0
                ]
             },
             {
-               "title": "Med-long run {11-13:18-21}",
+               "title": "Med-long run {12-14:19-23}",
                "distance": [
-                  11.0,
-                  13.0
+                  12.0,
+                  14.0
                ]
             },
             {
@@ -131,10 +131,10 @@
                ]
             },
             {
-               "title": "Gen-aerobic {10-11:16-18}",
+               "title": "LT {9-10:14-16} with 25-30 minutes at LT pace",
                "distance": [
-                  10.0,
-                  11.0
+                  9.0,
+                  10.0
                ]
             },
             {
@@ -145,10 +145,10 @@
                ]
             },
             {
-               "title": "Long run {17-18:27-29}",
+               "title": "Med-long run {14-15:23-24}",
                "distance": [
-                  17.0,
-                  18.0
+                  14.0,
+                  15.0
                ]
             }
          ]
@@ -208,9 +208,9 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "LT {9-10:14-16} with 24\u201332 minutes at LT pace",
+               "title": "LT {8-10:13-16} with 30\u201335 minutes at LT pace",
                "distance": [
-                  9.0,
+                  8.0,
                   10.0
                ]
             },
@@ -229,17 +229,17 @@
                ]
             },
             {
-               "title": "Gen-aerobic {10-11:16-18}",
+               "title": "Gen-aerobic {9-10:14-16}",
                "distance": [
-                  10.0,
-                  11.0
+                  9.0,
+                  10.0
                ]
             },
             {
-               "title": "Recovery {4-6:6-10}",
+               "title": "Recovery {4-5:6-8}",
                "distance": [
                   4.0,
-                  6.0
+                  5.0
                ]
             },
             {
@@ -257,45 +257,45 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "Gen-aerobic + speed {9-10:14-16} with 6 \u00d7 10 sec hill sprints + 8 \u00d7 100 m strides",
+               "title": "Gen-aerobic + speed {8-9:13-14} with 10 \u00d7 100 m strides",
                "distance": [
-                  9.0,
-                  10.0
+                  8.0,
+                  9.0
                ]
             },
             {
-               "title": "Med-long run {13-15:21-24}",
+               "title": "Med-long run {11-12:18-19}",
                "distance": [
-                  13.0,
+                  11.0,
+                  12.0
+               ]
+            },
+            {
+               "title": "Recovery {4-5:6-8}",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "Gen-aerobic {8-9:13-14}",
+               "distance": [
+                  8.0,
+                  9.0
+               ]
+            },
+            {
+               "title": "Recovery {4-5:6-8}",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "Med-long run {14-15:23-24}",
+               "distance": [
+                  14.0,
                   15.0
-               ]
-            },
-            {
-               "title": "Recovery {4-6:6-10}",
-               "distance": [
-                  4.0,
-                  6.0
-               ]
-            },
-            {
-               "title": "Gen-aerobic {10-11:16-18}",
-               "distance": [
-                  10.0,
-                  11.0
-               ]
-            },
-            {
-               "title": "Recovery {4-6:6-10}",
-               "distance": [
-                  4.0,
-                  6.0
-               ]
-            },
-            {
-               "title": "Long run {18-20:29-32}",
-               "distance": [
-                  18.0,
-                  20.0
                ]
             }
          ]
@@ -481,7 +481,7 @@
                ]
             },
             {
-               "title": "Recovery {6-7:10-11}",
+               "title": "Recovery + speed {6-7:10-11} with 8 x 10 sec hill sprints + 8 x 100 m strides",
                "distance": [
                   6.0,
                   7.0
@@ -579,7 +579,7 @@
                ]
             },
             {
-               "title": "Tune-up race 8K\u201315K (total {10-14:16-23})",
+               "title": "8K\u201315K tune-up race (total {10-14:16-23})",
                "distance": [
                   10.0,
                   14.0
@@ -635,7 +635,7 @@
                ]
             },
             {
-               "title": "Marathon-pace run {19-20:31-32} with 14 miles (23 km) at marathon pace",
+               "title": "Marathon-pace run {19-20:31-32} with {14:23} at marathon pace",
                "distance": [
                   19.0,
                   20.0
@@ -677,7 +677,7 @@
                ]
             },
             {
-               "title": "Tune-up race 8K\u201315K (total {10-14:16-23})",
+               "title": "8K\u201315K tune-up race (total {10-14:16-23})",
                "distance": [
                   10.0,
                   14.0
@@ -866,7 +866,7 @@
                ]
             },
             {
-               "title": "Recovery + speed {4-5:6-8} with 8 x 100 m strides",
+               "title": "Recovery + speed {4-5:6-8} with 6 x 100 m strides",
                "distance": [
                   4.0,
                   5.0
@@ -880,7 +880,7 @@
                ]
             },
             {
-               "title": "Plan Ends",
+               "title": "Goal Marathon",
                "distance": 26.2
             }
          ]
