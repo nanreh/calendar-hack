@@ -203,10 +203,10 @@
                ]
             },
             {
-               "title": "Recovery {6-7:10-11}",
+               "title": "Recovery {5-6:8-10}",
                "distance": [
-                  6.0,
-                  7.0
+                  5.0,
+                  6.0
                ]
             },
             {
@@ -228,9 +228,9 @@
                ]
             },
             {
-               "title": "LT {10-11:16-18} with 30\u201335 minutes at LT pace",
+               "title": "LT {9-11:14-18} with 30\u201335 minutes at LT pace",
                "distance": [
-                  10.0,
+                  9.0,
                   11.0
                ]
             },
@@ -256,10 +256,10 @@
                ]
             },
             {
-               "title": "Recovery {5-6:8-10}",
+               "title": "Recovery {6-7:10-11}",
                "distance": [
-                  5.0,
-                  6.0
+                  6.0,
+                  7.0
                ]
             },
             {
@@ -362,17 +362,17 @@
                ]
             },
             {
-               "title": "Gen-aerobic + speed {7-8:11-13} with 6 \u00d7 12 sec hill sprints",
+               "title": "Gen-aerobic + speed {7-8:11-13} with 6 \u00d7 12 sec hill sprints + 10 \u00d7 100 m strides",
                "distance": [
                   7.0,
                   8.0
                ]
             },
             {
-               "title": "Long run {16-17:26-27}",
+               "title": "Long run {19-21:31-34}",
                "distance": [
-                  16.0,
-                  17.0
+                  19.0,
+                  21.0
                ]
             }
          ]
@@ -422,10 +422,10 @@
                ]
             },
             {
-               "title": "Long run {17-18:27-29}",
+               "title": "Long run {20-22:32-35}",
                "distance": [
-                  17.0,
-                  18.0
+                  20.0,
+                  22.0
                ]
             }
          ]
@@ -475,7 +475,7 @@
                ]
             },
             {
-               "title": "Long run {17-18:27-29}",
+               "title": "Marathon-pace run {17-18:27-29} with {12:19} at marathon pace",
                "distance": [
                   17.0,
                   18.0
@@ -528,10 +528,10 @@
                ]
             },
             {
-               "title": "Long run {17-18:27-29}",
+               "title": "Long run {15-16:24-26}",
                "distance": [
-                  17.0,
-                  18.0
+                  15.0,
+                  16.0
                ]
             }
          ]
@@ -539,10 +539,10 @@
       {
          "workouts": [
             {
-               "title": "Recovery {6-7:10-11}",
+               "title": "Recovery AM {6-7:10-11} PM {4-5:6-8}",
                "distance": [
-                  6.0,
-                  7.0
+                  10.0,
+                  12.0
                ]
             },
             {
@@ -581,10 +581,10 @@
                ]
             },
             {
-               "title": "Long run {18-20:29-32}",
+               "title": "Long run {22-24:35-39}",
                "distance": [
-                  18.0,
-                  20.0
+                  22.0,
+                  24.0
                ]
             }
          ]
@@ -645,7 +645,7 @@
       {
          "workouts": [
             {
-               "title": "Recovery AM {6-7:10-11}, PM {4-5:6-8}",
+               "title": "Recovery AM {6-7:10-11} PM {4-5:6-8}",
                "distance": [
                   10.0,
                   12.0
@@ -666,7 +666,7 @@
                ]
             },
             {
-               "title": "Recovery AM {6-7:10-11}, PM {4-5:6-8}",
+               "title": "Recovery AM {6-7:10-11} PM {4-5:6-8}",
                "distance": [
                   10.0,
                   12.0
@@ -687,7 +687,7 @@
                ]
             },
             {
-               "title": "Marathon-pace run {20-21:32-34} with {14}",
+               "title": "Marathon-pace run {20-21:32-34} with {14:23} at marathon pace",
                "distance": [
                   20.0,
                   21.0
@@ -698,7 +698,7 @@
       {
          "workouts": [
             {
-               "title": "Recovery AM {5-6:8-10}, PM {4-5:6-8}",
+               "title": "Recovery AM {5-6:8-10} PM {4-5:6-8}",
                "distance": [
                   9.0,
                   11.0
@@ -751,7 +751,7 @@
       {
          "workouts": [
             {
-               "title": "Recovery AM {5-6:8-10}, PM {4:6}",
+               "title": "Recovery AM {5-6:8-10} PM {4:6}",
                "distance": [
                   9.0,
                   10.0
@@ -804,10 +804,17 @@
       {
          "workouts": [
             {
-               "title": "Recovery {5-6:8-10}, PM {4-5:6-8}",
+               "title": "Recovery {6-7:10-11}",
+               "distance": [
+                  6.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "Gen-aerobic + speed {9-10:14-16} with 6 x 10 sec hill sprints + 12 x 100 m strides",
                "distance": [
                   9.0,
-                  11.0
+                  10.0
                ]
             },
             {
@@ -818,24 +825,17 @@
                ]
             },
             {
-               "title": "VO\u2082max {9-10:14-16} with 5 \u00d7 600 m at 5K race pace; jog 50%\u201390% interval time",
-               "distance": [
-                  9.0,
-                  10.0
-               ]
-            },
-            {
-               "title": "Recovery AM {6-7:10-11}, PM {4-5:6-8}",
-               "distance": [
-                  10.0,
-                  12.0
-               ]
-            },
-            {
-               "title": "Recovery + speed {6-7:10-11} with 8 \u00d7 100 m strides",
+               "title": "Recovery + speed {6-7:10-11} with 6 \u00d7 100 m strides",
                "distance": [
                   6.0,
                   7.0
+               ]
+            },
+            {
+               "title": "Recovery {5-6:8-10}",
+               "distance": [
+                  5.0,
+                  6.0
                ]
             },
             {
@@ -843,6 +843,59 @@
                "distance": [
                   10.0,
                   12.0
+               ]
+            },
+            {
+               "title": "Long run {16-17:26-27}",
+               "distance": [
+                  16.0,
+                  17.0
+               ]
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Recovery {5-6:8-10}",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "Recovery + speed {6-7:10-11} with 8 x 100 m strides",
+               "distance": [
+                  6.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "Recovery {5-6:8-10}",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "VO\u2082max {8-10:13-16} with 5 \u00d7 1 km at 5K race pace; jog 50%\u201390% interval time",
+               "distance": [
+                  8.0,
+                  10.0
+               ]
+            },
+            {
+               "title": "Recovery {5-6:8-10}",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "Recovery + speed {6-7:10-11} with 8 x 100 m strides",
+               "distance": [
+                  6.0,
+                  7.0
                ]
             },
             {
@@ -857,38 +910,34 @@
       {
          "workouts": [
             {
-               "title": "Recovery {4-6:6-10} with 6 \u00d7 100 m strides",
+               "title": "Rest or cross-train"
+            },
+            {
+               "title": "Gen-aerobic {7-8:11-13}",
+               "distance": [
+                  7.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "Dress rehearsal {7-8:11-13} with {2:3} at marathon pace",
+               "distance": [
+                  7.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "Recovery {5-6:8-10}",
+               "distance": [
+                  8.0,
+                  10.0
+               ]
+            },
+            {
+               "title": "Recovery + speed {4-6:6-10} with 6 x 100 m strides",
                "distance": [
                   4.0,
                   6.0
-               ]
-            },
-            {
-               "title": "Gen-aerobic {8-9:13-14}",
-               "distance": [
-                  8.0,
-                  9.0
-               ]
-            },
-            {
-               "title": "VO\u2082max {11-12:18-19} with 6 \u00d7 1 km at 5K race pace; jog 50%\u201390% interval time",
-               "distance": [
-                  11.0,
-                  12.0
-               ]
-            },
-            {
-               "title": "Med-long run {14-15:23-24}, Recovery PM {4:6}",
-               "distance": [
-                  18.0,
-                  19.0
-               ]
-            },
-            {
-               "title": "Gen-aerobic + speed {7-9:11-14} with 8 \u00d7 100 m strides",
-               "distance": [
-                  7.0,
-                  9.0
                ]
             },
             {
