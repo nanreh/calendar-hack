@@ -175,17 +175,17 @@
                ]
             },
             {
-               "title": "Recovery AM {4-5:6-8} LT PM {10-11:16-18} with 25-30 minutes at LT pace",
+               "title": "Recovery AM {4-5:6-8} Gen-aerobic PM {10-11:16-18}",
                "distance": [
                   14.0,
                   16.0
                ]
             },
             {
-               "title": "Med-long run {13-14:21-23}",
+               "title": "Recovery AM {5-6:8-10} LT PM {10-11:16-18} with 25-30 minutes at LT pace",
                "distance": [
-                  13.0,
-                  14.0
+                  15.0,
+                  17.0
                ]
             },
             {
@@ -362,10 +362,10 @@
                ]
             },
             {
-               "title": "Gen-aerobic + speed {8-9:13-14} with 8 x 100 m strides",
+               "title": "Gen-aerobic + speed {9-10:14-16} with 8 x 100 m strides",
                "distance": [
-                  8.0,
-                  9.0
+                  9.0,
+                  10.0
                ]
             },
             {
@@ -635,10 +635,7 @@
             },
             {
                "title": "Goal marathon",
-               "distance": [
-                  26.2,
-                  26.2
-               ]
+               "distance": 26.2
             }
          ]
       }

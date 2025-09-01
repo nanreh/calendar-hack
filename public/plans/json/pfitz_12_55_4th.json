@@ -94,9 +94,10 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "Gen-aerobic + speed {8-9:13-14} with 6 x 10 sec hill sprints + 8 X 100 m strides",
+               "title": "Gen-aerobic + speed {8-9:13-14} with 6 x 10 sec hill sprints + 8 x 100 m strides",
                "distance": [
-                  8.0
+                  8.0,
+                  9.0
                ]
             },
             {
@@ -231,7 +232,7 @@
                ]
             },
             {
-               "title": "VO\u2082max {10-11:16-18} with 5 x 1 km at 5K race pace; jog 50-90% interval time",
+               "title": "VO\u2082max {10-11:16-18} with 5 x 1 km at 5K race pace; jog 50%-90% interval time",
                "distance": [
                   10.0,
                   11.0
@@ -366,7 +367,7 @@
                ]
             },
             {
-               "title": "VO\u2082max {9-10:14-16} with 5 x 1 km at 5K race pace; jog 50-90% interval time",
+               "title": "VO\u2082max {9-10:14-16} with 5 x 1 km at 5K race pace; jog 50%-90% interval time",
                "distance": [
                   9.0,
                   10.0
@@ -404,7 +405,7 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "Gen-aerobic {7-8:11-13} with 6 x 10 sex hill sprints + 10 x 100m strides",
+               "title": "Gen-aerobic {7-8:11-13} with 6 x 10 sec hill sprints + 10 x 100 m strides",
                "distance": [
                   7.0,
                   8.0
@@ -456,7 +457,7 @@
                ]
             },
             {
-               "title": "VO\u2082max {8-9:13-14} with 5 x 1 km at 5K race pace; jog 50-90% interval time",
+               "title": "VO\u2082max {8-9:13-14} with 5 x 1 km at 5K race pace; jog 50%-90% interval time",
                "distance": [
                   8.0,
                   9.0
@@ -492,6 +493,7 @@
             {
                "title": "Recovery {5-6:8-10}",
                "distance": [
+                  5.0,
                   6.0
                ]
             },
@@ -520,7 +522,7 @@
                ]
             },
             {
-               "title": "Plan Ends",
+               "title": "Goal marathon",
                "distance": [
                   26.2
                ]

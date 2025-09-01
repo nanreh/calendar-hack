@@ -10,47 +10,38 @@ schedule:
 # Weeks after the marathon: 1
 - workouts:
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Recovery {3-4:5-6}
     distance: [3.0, 4.0]
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Recovery {4-5:6-8}
     distance: [4.0, 5.0]
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Recovery {5-6:8-10}
     distance: [5.0, 6.0]
 
-  # Weeks after the marathon: 2
+# Weeks after the marathon: 2
 - workouts:
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Recovery {4-5:6-8}
     distance: [4.0, 5.0]
   - title: Recovery {4-6:6-10}
     distance: [4.0, 6.0]
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Recovery {5-6:8-10}
     distance: [5.0, 6.0]
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Gen-aerobic {7-8:11-13}
     distance: [7.0, 8.0]
 
-  # Weeks after the marathon: 3
+# Weeks after the marathon: 3
 - workouts:
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Recovery {5-6:8-10}
     distance: [5.0, 6.0]
   - title: Recovery {4-5:6-8}
     distance: [4.0, 5.0]
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Gen-aerobic + speed {7-8:11-13} with 8 × 100 m strides
     distance: [7.0, 8.0]
   - title: Recovery {4-5:6-8}
@@ -58,16 +49,14 @@ schedule:
   - title: Gen-aerobic {8-9:13-14}
     distance: [8.0, 9.0]
 
-  # Weeks after the marathon: 4
+# Weeks after the marathon: 4
 - workouts:
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
-  - title: Recovery {5-6:8-10}
-    distance: [5.0, 6.0]
-  - title: Gen-aerobic {9-10:14-16}
-    distance: [9.0, 10.0]
+  - title: Recovery {4-5:6-8}
+    distance: [4.0, 5.0]
+  - title: Gen-aerobic {7-8:11-13}
+    distance: [7.0, 8.0]
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Gen-aerobic + speed {8-9:13-14} with 8 × 100 m strides
     distance: [8.0, 9.0]
   - title: Recovery {4-5:6-8}
@@ -75,16 +64,14 @@ schedule:
   - title: Med-long run {10-11:16-18}
     distance: [10.0, 11.0]
 
-  # Weeks after the marathon: 5
+# Weeks after the marathon: 5
 - workouts:
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Recovery {6-7:10-11}
     distance: [6.0, 7.0]
-  - title: Gen-aerobic + speed {8-9:13-14} with 8 × 100 m strides
+  - title: Gen-aerobic + speed {8-9:13-14}
     distance: [8.0, 9.0]
   - title: Rest or cross-train
-    distance: [0.0, 0.0]
   - title: Gen-aerobic + speed {8-9:13-14} with 8 × 100 m strides
     distance: [8.0, 9.0]
   - title: Recovery {5-6:8-10}

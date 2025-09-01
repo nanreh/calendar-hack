@@ -85,9 +85,9 @@ schedule:
   # Weeks to goal: 6
   - workouts:
       - title: Rest or cross-train
-      - title: Recovery AM {6-7:10-11}
+      - title: Recovery {6-7:10-11}
         distance: [6.0, 7.0]
-      - title: VO₂max {11-12:18-19} with 6 x 1 km at 5K race pace; jog 50-90% interval time
+      - title: VO₂max {11-12:18-19} with 6 x 1 km at 5K race pace; jog 50%-90% interval time
         distance: [11.0, 12.0]
       - title: Med-long run {14-15:23-24}
         distance: [14.0, 15.0]
@@ -117,7 +117,7 @@ schedule:
       - title: Rest or cross-train
       - title: Gen-aerobic {9-10:14-16}
         distance: [9.0, 10.0]
-      - title: VO₂max {9-10:14-16} with 5 x 600 m at 5K race pace; jog 50-90% interval time
+      - title: VO₂max {9-10:14-16} with 5 x 600 m at 5K race pace; jog 50%-90% interval time
         distance: [9.0, 10.0]
       - title: Recovery + speed {6-7:10-11} with 6 x 100 m strides
         distance: [6.0, 7.0]
@@ -132,7 +132,7 @@ schedule:
       - title: Rest or cross-train
       - title: Recovery {6-7:10-11}
         distance: [6.0, 7.0]
-      - title: VO₂max {10-11:16-18} with 6 x 1 km at 5K race pace; jog 50-90% interval time
+      - title: VO₂max {10-11:16-18} with 6 x 1 km at 5K race pace; jog 50%-90% interval time
         distance: [10.0, 11.0]
       - title: Med-long run {14-15:23-24}
         distance: [14.0, 15.0]
@@ -164,7 +164,7 @@ schedule:
         distance: [6.0, 7.0]
       - title: Recovery {4-5:6-8}
         distance: [4.0, 5.0]
-      - title: VO₂max {8-9:13-14} with 5 x 1 km at 5K race pace; jog 50-90% interval time
+      - title: VO₂max {8-9:13-14} with 5 x 1 km at 5K race pace; jog 50%-90% interval time
         distance: [8.0, 9.0]
       - title: Recovery {5-6:8-10}
         distance: [5.0, 6.0]
@@ -180,10 +180,11 @@ schedule:
       - title: Dress rehearsal {6-7:10-11} with {2:3} at marathon pace
         distance: [6.0, 7.0]
       - title: Recovery {3-4:5-6}
-        distance: [5.0]
+        distance: [3.0, 4.0]
       - title: Recovery + speed {4-5:6-8} with 6 x 100 m strides
         distance: [4.0, 5.0]
       - title: Recovery {2-4:3-6}
         distance: [2.0, 4.0]
-      - title: Plan Ends
+      - title: Goal marathon
         distance: [26.2]
+

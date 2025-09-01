@@ -257,14 +257,14 @@
                "title": "Rest or cross-train"
             },
             {
-               "title": "Recovery AM {6-7:10-11}",
+               "title": "Recovery {6-7:10-11}",
                "distance": [
                   6.0,
                   7.0
                ]
             },
             {
-               "title": "VO\u2082max {11-12:18-19} with 6 x 1 km at 5K race pace; jog 50-90% interval time",
+               "title": "VO\u2082max {11-12:18-19} with 6 x 1 km at 5K race pace; jog 50%-90% interval time",
                "distance": [
                   11.0,
                   12.0
@@ -362,7 +362,7 @@
                ]
             },
             {
-               "title": "VO\u2082max {9-10:14-16} with 5 x 600 m at 5K race pace; jog 50-90% interval time",
+               "title": "VO\u2082max {9-10:14-16} with 5 x 600 m at 5K race pace; jog 50%-90% interval time",
                "distance": [
                   9.0,
                   10.0
@@ -411,7 +411,7 @@
                ]
             },
             {
-               "title": "VO\u2082max {10-11:16-18} with 6 x 1 km at 5K race pace; jog 50-90% interval time",
+               "title": "VO\u2082max {10-11:16-18} with 6 x 1 km at 5K race pace; jog 50%-90% interval time",
                "distance": [
                   10.0,
                   11.0
@@ -516,7 +516,7 @@
                ]
             },
             {
-               "title": "VO\u2082max {8-9:13-14} with 5 x 1 km at 5K race pace; jog 50-90% interval time",
+               "title": "VO\u2082max {8-9:13-14} with 5 x 1 km at 5K race pace; jog 50%-90% interval time",
                "distance": [
                   8.0,
                   9.0
@@ -567,7 +567,8 @@
             {
                "title": "Recovery {3-4:5-6}",
                "distance": [
-                  5.0
+                  3.0,
+                  4.0
                ]
             },
             {
@@ -585,7 +586,7 @@
                ]
             },
             {
-               "title": "Plan Ends",
+               "title": "Goal marathon",
                "distance": [
                   26.2
                ]

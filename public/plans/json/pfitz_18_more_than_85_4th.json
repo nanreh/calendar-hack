@@ -461,7 +461,7 @@
                ]
             },
             {
-               "title": "Recovery AM {5-6:8-10} PM {13-14:21-23}",
+               "title": "Recovery AM {5-6:8-10} Med-long run PM {13-14:21-23}",
                "distance": [
                   18.0,
                   20.0
@@ -546,10 +546,10 @@
                ]
             },
             {
-               "title": "Gen-aerobic + speed PM {9-10:14-16} with 6 x 100 sec hill sprints + 10 x 100 m strides",
+               "title": "Recovery AM {5-6:8-10} Gen-aerobic + speed PM {9-10:14-16} with 6 x 10 sec hill sprints + 10 x 100 m strides",
                "distance": [
-                  9.0,
-                  10.0
+                  14.0,
+                  16.0
                ]
             },
             {
@@ -680,7 +680,7 @@
                ]
             },
             {
-               "title": "Gen-aerobic {9-10:14-16} with 8 x 100 m strides",
+               "title": "Gen-aerobic + speed {9-10:14-16} with 8 x 100 m strides",
                "distance": [
                   9.0,
                   10.0
@@ -733,10 +733,10 @@
                ]
             },
             {
-               "title": "8K-15K tune-up race (total {16-24:26-24})",
+               "title": "8K-15K tune-up race (total {10-15:16-24})",
                "distance": [
-                  16.0,
-                  24.0
+                  10.0,
+                  15.0
                ]
             },
             {
@@ -786,10 +786,10 @@
                ]
             },
             {
-               "title": "Recovery + speed PM {7-8:11-13} with 8 x 100 m strides",
+               "title": "Recovery AM {4-5:6-8} Recovery + speed PM {7-8:11-13} with 8 x 100 m strides",
                "distance": [
-                  7.0,
-                  8.0
+                  11.0,
+                  13.0
                ]
             },
             {
@@ -953,10 +953,7 @@
             },
             {
                "title": "Goal marathon",
-               "distance": [
-                  26.2,
-                  26.2
-               ]
+               "distance": 26.2
             }
          ]
       }

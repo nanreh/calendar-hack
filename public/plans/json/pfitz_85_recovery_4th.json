@@ -9,18 +9,10 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {3-4:5-6}",
@@ -30,11 +22,7 @@
                ]
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {4-5:6-8}",
@@ -44,11 +32,7 @@
                ]
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {6-7:10-11}",
@@ -62,11 +46,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {4-5:6-8}",
@@ -83,11 +63,7 @@
                ]
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {5-6:8-10}",
@@ -115,11 +91,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {6-7:10-11}",
@@ -136,11 +108,7 @@
                ]
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Gen-aerobic + speed {8-9:13-14} with 8 x 100 m strides",
@@ -168,11 +136,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {5-6:8-10}",
@@ -189,11 +153,7 @@
                ]
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Gen-aerobic + speed {8-9:13-14} with 8 x 100 m strides",
@@ -221,21 +181,17 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
+               "title": "Rest or cross-train"
+            },
+            {
+               "title": "Recovery {5-6:8-10}",
                "distance": [
-                  0.0,
-                  0.0
+                  5.0,
+                  6.0
                ]
             },
             {
-               "title": "Gen-aerobic {8-9:13-14}",
-               "distance": [
-                  8.0,
-                  9.0
-               ]
-            },
-            {
-               "title": "Gen-aerobic + speed {9-10:14-16} with 8 x 100 m strides",
+               "title": "Gen-aerobic {9-10:14-16}",
                "distance": [
                   9.0,
                   10.0
