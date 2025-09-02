@@ -9,18 +9,10 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {4-5:6-8}",
@@ -30,11 +22,7 @@
                ]
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {5-6:8-10}",
@@ -62,11 +50,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {5-6:8-10}",
@@ -83,11 +67,7 @@
                ]
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Gen-aerobic + speed {7-8:11-13} with 8 x 100 m strides",
@@ -115,11 +95,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {5-6:8-10}",
@@ -136,11 +112,7 @@
                ]
             },
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Gen-aerobic + speed {9-10:14-16} with 8 x 100 m strides",
@@ -168,11 +140,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Gen-aerobic + speed {8-9:13-14} with 10 x 100 m strides",
@@ -221,11 +189,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "V\u0307O\u2082max {10-11:16-18} with 6 x 800 m at 5K race pace; jog 50%-90% interval time",
@@ -274,11 +238,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Gen-aerobic + speed {8-9:13-14} with 10 x 100 m strides",
@@ -327,11 +287,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {5-6:8-10}",
@@ -380,11 +336,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "V\u0307O\u2082max {8-9:13-14} with 6 x 600 m at 5K race pace; jog 50%-90% interval time",
@@ -433,11 +385,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery {5-6:8-10}",
@@ -486,11 +434,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "V\u0307O\u2082max {8-9:13-14} with 6 x 600 m at 5K race pace; jog 50%-90% interval time",
@@ -539,11 +483,7 @@
       {
          "workouts": [
             {
-               "title": "Rest or cross-train",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest or cross-train"
             },
             {
                "title": "Recovery + speed {6-7:10-11} with 8 x 100 m strides",
@@ -592,11 +532,7 @@
       {
          "workouts": [
             {
-               "title": "Rest",
-               "distance": [
-                  0.0,
-                  0.0
-               ]
+               "title": "Rest"
             },
             {
                "title": "Recovery {5-6:8-10}",
@@ -635,10 +571,7 @@
             },
             {
                "title": "Second marathon",
-               "distance": [
-                  26.2,
-                  26.2
-               ]
+               "distance": 26.2
             }
          ]
       }

@@ -9,13 +9,10 @@ schedule:
 # Weeks to goal: 9
   - workouts:
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Recovery {4-5:6-8}
         distance: [4.0, 5.0]
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Recovery {5-6:8-10}
         distance: [5.0, 6.0]
       - title: Recovery {4-5:6-8}
@@ -26,13 +23,11 @@ schedule:
   # Weeks to goal: 8
   - workouts:
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Recovery {5-6:8-10}
         distance: [5.0, 6.0]
       - title: Recovery {5-6:8-10}
         distance: [5.0, 6.0]
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Gen-aerobic + speed {7-8:11-13} with 8 x 100 m strides
         distance: [7.0, 8.0]
       - title: Recovery {4-5:6-8}
@@ -43,13 +38,11 @@ schedule:
   # Weeks to goal: 7
   - workouts:
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Recovery {5-6:8-10}
         distance: [5.0, 6.0]
       - title: Gen-aerobic {8-9:13-14}
         distance: [8.0, 9.0]
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Gen-aerobic + speed {9-10:14-16} with 8 x 100 m strides
         distance: [9.0, 10.0]
       - title: Recovery {5-6:8-10}
@@ -60,7 +53,6 @@ schedule:
   # Weeks to goal: 6
   - workouts:
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Gen-aerobic + speed {8-9:13-14} with 6 x 10 sec hill sprints + 8 x 100 m strides
         distance: [8.0, 9.0]
       - title: Med-long run {11-12:18-19}
@@ -77,7 +69,6 @@ schedule:
   # Weeks to goal: 5
   - workouts:
       - title: Rest or cross-train
-        distance: [0.0, 0.0]
       - title: Recovery {5-6:8-10}
         distance: [5.0, 6.0]
       - title: V̇O₂max {10-11:16-18} with 5 x 1 km at 5K race pace; jog 50%-90% interval time
@@ -94,7 +85,6 @@ schedule:
   # Weeks to goal: 4
   - workouts:
     - title: Rest or cross-train
-      distance: [0.0, 0.0]
     - title: V̇O₂max {8-9:13-14} with 6 x 600 m at 5K race pace; jog 50%-90% interval time
       distance: [8.0, 9.0]
     - title: Gen-aerobic {10-11:16-18}
@@ -111,7 +101,6 @@ schedule:
   # Weeks to goal: 3
   - workouts:
     - title: Rest or cross-train
-      distance: [0.0, 0.0]
     - title: Recovery {5-6:8-10}
       distance: [5.0, 6.0]
     - title: V̇O₂max {11-12:18-19} with 6 x 1 km at 5K race pace; jog 50%-90% interval time
@@ -128,7 +117,6 @@ schedule:
   # Weeks to goal: 2
   - workouts:
     - title: Rest or cross-train
-      distance: [0.0, 0.0]
     - title: V̇O₂max {8-9:13-14} with 6 x 600 m at 5K race pace; jog 50%-90% interval time
       distance: [8.0, 9.0]
     - title: Gen-aerobic {9-10:14-16}
@@ -145,12 +133,11 @@ schedule:
   # Weeks to goal: 1
   - workouts:
     - title: Rest or cross-train
-      distance: [0.0, 0.0]
     - title: Recovery + speed {6-7:10-11} with 8 x 100 m strides
       distance: [6.0, 7.0]
     - title: Recovery {4-5:6-8}
       distance: [4.0, 5.0]
-    - title: V̇O₂max {8-9:13-14} with 5  1 km at 5K race pace; jog 50%-90% interval time
+    - title: V̇O₂max {8-9:13-14} with 5 x 1 km at 5K race pace; jog 50%-90% interval time
       distance: [8.0, 9.0]
     - title: Recovery {4-5:6-8}
       distance: [4.0, 5.0]
@@ -161,8 +148,7 @@ schedule:
  
   # Race week
   - workouts:
-    - title: Rest or cross-train
-      distance: [0.0, 0.0]
+    - title: Rest
     - title: Recovery {5-6:8-10}
       distance: [5.0, 6.0]
     - title: Dress rehearsal {6-7:10-11} with {2:3} at marathon pace
@@ -174,4 +160,5 @@ schedule:
     - title: Recovery {2-4:3-6}
       distance: [2.0, 4.0]
     - title: Second marathon
-      distance: [26.2, 26.2]
+      distance: 26.2
+
