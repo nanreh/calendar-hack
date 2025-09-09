@@ -186,7 +186,7 @@ schedule:
     distance: 10.0
   - title: General aerobic {9:14}
     distance: 9.0
-  - title: Rocovery {7:11}
+  - title: Recovery {7:11}
     distance: 7.0
   - title: Recovery {4:6}
     description: |-
