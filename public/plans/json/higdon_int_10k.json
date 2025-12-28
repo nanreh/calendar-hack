@@ -1,0 +1,258 @@
+{
+   "id": "higdon_int_10k",
+   "name": "Hal Higdon: 10K Intermediate",
+   "description": "Hal Higdon: 10K Intermediate: \"This is the Intermediate 10K Training Program, for runners who want to improve their performances. What defines an Intermediate runner? You should be running five to six times a week, averaging 15-25 miles weekly training. You probably also should have run a half dozen or more races at distances between the 5K and the Half-Marathon. With that as background, you now need a somewhat more sophisticated schedule to improve. \" (more details at the link below)",
+   "units": "mi",
+   "source": "https://www.halhigdon.com/training-programs/10k-training/intermediate-10k/",
+   "type": "10K",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "35 min Tempo",
+               "distance": 3.5
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "60 min Cross"
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{3.5:5.9} run",
+               "distance": 3.5
+            },
+            {
+               "title": "8 x 400 5K pace"
+            },
+            {
+               "distance": 4.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "60 min Cross"
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4
+            },
+            {
+               "title": "40 min Tempo",
+               "distance": 4.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "60 min Cross"
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{4.5:7.3} run",
+               "distance": 4.5
+            },
+            {
+               "title": "9 x 400 5K pace"
+            },
+            {
+               "distance": 4.5
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "5K Race ({3.1:5})",
+               "distance": 3.10685
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5
+            },
+            {
+               "title": "45 min Tempo",
+               "distance": 4.5
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "60 min Cross"
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{5.5:8.9} run",
+               "distance": 5.5
+            },
+            {
+               "title": "10 x 400 5K pace"
+            },
+            {
+               "distance": 5.0
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "60 min Cross"
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6
+            },
+            {
+               "title": "50 min Tempo",
+               "distance": 5.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "60 min Cross"
+            },
+            {
+               "title": "{8:12.9} run",
+               "distance": 8
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "5 x 400 5K pace"
+            },
+            {
+               "distance": 3.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "10K Race ({6.2:10})",
+               "distance": 6.213
+            }
+         ]
+      }
+   ]
+}
