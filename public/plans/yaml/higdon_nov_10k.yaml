@@ -17,8 +17,7 @@ schedule:
   - title: '{2:3.2} run'
     distance: 2
   - title: Rest
-  - title: '{1.5:2.4} run'
-    distance: 1.5
+  - title: "40 min Cross"
   - title: '{3:4.8} run'
     distance: 3
 - workouts: # week 2
@@ -29,7 +28,7 @@ schedule:
   - title: '{2:3.2} run'
     distance: 2
   - title: Rest
-  - title: "30 min Cross"
+  - title: "40 min Cross"
   - title: '{3.5:5.9} run'
     distance: 3.5
 - workouts: # week 3
@@ -40,7 +39,7 @@ schedule:
   - title: '{2:3.2} run'
     distance: 2
   - title: Rest
-  - title: "30 min Cross"
+  - title: "50 min Cross"
   - title: '{4:6.4} run'
     distance: 4
 - workouts: # week 4
@@ -51,7 +50,7 @@ schedule:
   - title: '{2:3.2} run'
     distance: 2
   - title: Rest
-  - title: "30 min Cross"
+  - title: "50 min Cross"
   - title: '{4:6.4} run'
     distance: 4
 - workouts: # week 5
@@ -62,7 +61,7 @@ schedule:
   - title: '{2:3.2} run'
     distance: 2
   - title: Rest
-  - title: "30 min Cross"
+  - title: "60 min Cross"
   - title: '{4.5:7.3} run'
     distance: 4.5
 - workouts: # week 6
@@ -73,7 +72,7 @@ schedule:
   - title: '{2:3.2} run'
     distance: 2
   - title: Rest
-  - title: "30 min Cross"
+  - title: "60 min Cross"
   - title: '{5:8.1} run'
     distance: 5
 - workouts: # week 7
@@ -84,7 +83,7 @@ schedule:
   - title: '{2:3.2} run'
     distance: 2
   - title: Rest
-  - title: "30 min Cross"
+  - title: "60 min Cross"
   - title: '{5.5:8.9} run'
     distance: 5.5
 - workouts: # week 8
