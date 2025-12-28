@@ -1,0 +1,100 @@
+id: higdon_nov_5k
+name: 'Hal Higdon: 5K Novice'
+description: "Hal Higdon: 5K Novice: \"This Novice 5K Training Plan is designed
+  for beginning runners or for runners who want to take a low-mileage approach
+  to their training. Set that race as your end date and use it as a focus of
+  your training. Even if you do not have a goal 5K at the end of 8 weeks, Hal
+  Higdon's 5K Novice program is a great way to begin your life as a runner.\"
+  (more details at the link below)"
+units: mi
+source: https://www.halhigdon.com/training-programs/5k-training/novice-5k/
+type: 5K
+schedule:
+- workouts: # week 1
+  - title: Rest or Run/Walk
+  - title: '{1.5:2.4} run'
+    distance: 1.5
+  - title: Rest or Run/Walk
+  - title: '{1.5:2.4} run'
+    distance: 1.5
+  - title: Rest
+  - title: '{1.5:2.4} run'
+    distance: 1.5
+  - title: 30 Min Walk
+- workouts: # week 2
+  - title: Rest or Run/Walk
+  - title: '{1.75:2.8} run'
+    distance: 1.5
+  - title: Rest or Run/Walk
+  - title: '{1.5:2.4} run'
+    distance: 1.5
+  - title: Rest
+  - title: '{1.75:2.8} run'
+    distance: 1.5
+  - title: 35 Min Walk
+- workouts: # week 3
+  - title: Rest or Run/Walk
+  - title: '{2:3.2} run'
+    distance: 1.5
+  - title: Rest or Run/Walk
+  - title: '{1.5:2.4} run'
+    distance: 1.5
+  - title: Rest
+  - title: '{2:3.2} run'
+    distance: 1.5
+  - title: 40 Min Walk
+- workouts: # week 4
+  - title: Rest or Run/Walk
+  - title: '{2.25:3.6} run'
+    distance: 1.5
+  - title: Rest or Run/Walk
+  - title: '{1.5:2.4} run'
+    distance: 1.5
+  - title: Rest
+  - title: '{2.25:3.6} run'
+    distance: 1.5
+  - title: 45 Min Walk
+- workouts: # week 5
+  - title: Rest or Run/Walk
+  - title: '{2.5:4} run'
+    distance: 1.5
+  - title: Rest or Run/Walk
+  - title: '{2:3.2} run'
+    distance: 1.5
+  - title: Rest
+  - title: '{2.5:4} run'
+    distance: 1.5
+  - title: 50 Min Walk
+- workouts: # week 6
+  - title: Rest or Run/Walk
+  - title: '{2.75:4.4} run'
+    distance: 1.5
+  - title: Rest or Run/Walk
+  - title: '{2:3.2} run'
+    distance: 1.5
+  - title: Rest
+  - title: '{2.75:4.4} run'
+    distance: 1.5
+  - title: 55 Min Walk
+- workouts: # week 7
+  - title: Rest or Run/Walk
+  - title: '{3:4.8} run'
+    distance: 1.5
+  - title: Rest or Run/Walk
+  - title: '{2:3.2} run'
+    distance: 1.5
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 1.5
+  - title: 60 Min Walk
+- workouts: # week 8
+  - title: Rest or Run/Walk
+  - title: '{3:4.8} run'
+    distance: 1.5
+  - title: Rest or Run/Walk
+  - title: '{2:3.2} run'
+    distance: 1.5
+  - title: Rest
+  - title: Rest
+  - title: '5K Race ({3:5})'
+    distance: 3.10685
