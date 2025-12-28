@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "jest",
     "cov": "jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
-    "validatePlans": "bash bin/validatePlans",
+    "validatePlans": "node bin/validatePlans.js",
     "pretty": "prettier src --write"
   },
   "dependencies": {
