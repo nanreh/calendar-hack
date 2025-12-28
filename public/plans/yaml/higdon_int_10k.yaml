@@ -57,7 +57,7 @@ schedule:
   - title: '{4.5:7.3} run'
     distance: 4.5
   - title: "9 x 400 5K pace"
-  - distance: 5.0
+  - distance: 4.5
   - title: '{4:6.4} run'
     distance: 4
   - title: Rest
@@ -83,7 +83,7 @@ schedule:
   - title: '{5.5:8.9} run'
     distance: 5.5
   - title: "10 x 400 5K pace"
-  - distance: 6.0
+  - distance: 5.0
   - title: '{4:6.4} run'
     distance: 4
   - title: Rest
