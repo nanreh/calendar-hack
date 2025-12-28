@@ -96,5 +96,5 @@ schedule:
     distance: 2
   - title: Rest
   - title: Rest
-  - title: '5K Race ({3:5})'
+  - title: '5K Race ({3.1:5})'
     distance: 3.10685
