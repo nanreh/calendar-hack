@@ -20,7 +20,7 @@ schedule:
   - title: Rest
   - title: '{1.5:2.4} run'
     distance: 1.5
-  - title: 30 Min Walk
+  - title: 30 min Walk
 - workouts: # week 2
   - title: Rest or Run/Walk
   - title: '{1.75:2.8} run'
@@ -31,7 +31,7 @@ schedule:
   - title: Rest
   - title: '{1.75:2.8} run'
     distance: 1.75
-  - title: 35 Min Walk
+  - title: 35 min Walk
 - workouts: # week 3
   - title: Rest or Run/Walk
   - title: '{2:3.2} run'
@@ -42,7 +42,7 @@ schedule:
   - title: Rest
   - title: '{2:3.2} run'
     distance: 2
-  - title: 40 Min Walk
+  - title: 40 min Walk
 - workouts: # week 4
   - title: Rest or Run/Walk
   - title: '{2.25:3.6} run'
@@ -53,7 +53,7 @@ schedule:
   - title: Rest
   - title: '{2.25:3.6} run'
     distance: 2/25
-  - title: 45 Min Walk
+  - title: 45 min Walk
 - workouts: # week 5
   - title: Rest or Run/Walk
   - title: '{2.5:4} run'
@@ -64,7 +64,7 @@ schedule:
   - title: Rest
   - title: '{2.5:4} run'
     distance: 2.5
-  - title: 50 Min Walk
+  - title: 50 min Walk
 - workouts: # week 6
   - title: Rest or Run/Walk
   - title: '{2.75:4.4} run'
@@ -75,7 +75,7 @@ schedule:
   - title: Rest
   - title: '{2.75:4.4} run'
     distance: 2.75
-  - title: 55 Min Walk
+  - title: 55 min Walk
 - workouts: # week 7
   - title: Rest or Run/Walk
   - title: '{3:4.8} run'
@@ -86,7 +86,7 @@ schedule:
   - title: Rest
   - title: '{3:4.8} run'
     distance: 3
-  - title: 60 Min Walk
+  - title: 60 min Walk
 - workouts: # week 8
   - title: Rest or Run/Walk
   - title: '{3:4.8} run'
