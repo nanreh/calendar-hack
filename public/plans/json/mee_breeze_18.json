@@ -1,0 +1,896 @@
+{
+   "id": "mee_breeze_18",
+   "name": "Marathon Excellence: Breeze 40 or 50 Miles per Week, 18-week schedule",
+   "description": "\"The Breeze plan is a low-mileage plan designed for newer marathoners who are still learning the ropes of marathon training and racing. The Breeze plan has modest time requirements and features less-challenging workouts than the higher-mileage Marathon Excellence plans. Breeze is a great fit for first-time marathoners, injury-prone runners, weekend warriors, and runners with less than two years of experience.\" - Marathon Excellence for Everyone by John Davis",
+   "units": "mi",
+   "source": "https://www.amazon.com/dp/B0FNRPHLRY",
+   "type": "Marathon",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "{5:8} Kenyan-style progression run",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{4-5:6-7} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  4.0,
+                  4.0
+               ]
+            },
+            {
+               "title": "10 \u00d7 1.5 min at 100% 5k with 1 min jog",
+               "distance": [
+                  3.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "Rest or {3-5:6-7} easy",
+               "distance": [
+                  0.0,
+                  3.0
+               ]
+            },
+            {
+               "title": "{3-5:6-8} easy",
+               "distance": [
+                  3.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "Easy {10-11:16-18} through rolling hills",
+               "distance": [
+                  10.0,
+                  11.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{5:8} Kenyan-style progression run",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{4-5:6-7} easy",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{4:6} at 85% 5k",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "Rest or {4-5:6-8} easy",
+               "distance": [
+                  0.0,
+                  4.0
+               ]
+            },
+            {
+               "title": "{4-5:6-8} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{11-12:18-20} easy through rolling hills",
+               "distance": [
+                  11.0,
+                  12.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "6\u20137 \u00d7 3 min at 90% 5k with 1 min jog",
+               "distance": [
+                  5.5,
+                  6.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy",
+               "distance": [
+                  5.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "8 \u00d7 2 min at 100% 5k with 1.5 min jog",
+               "distance": [
+                  4.5,
+                  5.5
+               ]
+            },
+            {
+               "title": "{3-6:5-10} easy",
+               "distance": [
+                  3.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{5-7:8-11} easy",
+               "distance": [
+                  5.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "{9:15} at 70\u201375% 5k",
+               "distance": [
+                  10.0,
+                  10.5
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3-5:5-8} easy",
+               "distance": [
+                  5.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{5-6:8-10} easy to moderate with 4 \u00d7 20 sec strides",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{5:8} at 85% 5k",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "Off or {4-5:6-8} easy",
+               "distance": [
+                  0.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{4-6:7-10} easy",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{6:10} Kenyan-style progression run",
+               "distance": [
+                  8.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "7\u20138 \u00d7 3 min at 90% 5k with 45 sec jog",
+               "distance": [
+                  7.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} easy",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "3 sets of (3 min at 100% 5k, 1.5 min jog, 2 min at 102% 5k, 3 min walk/jog)",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "Rest or {4-6:6-10} very easy",
+               "distance": [
+                  0.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} easy progressing to moderate",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{13-14:22-24} easy through rolling hills",
+               "distance": [
+                  13.0,
+                  13.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "2 sets of (6 \u00d7 500m at 95% 5k with 30 sec walk), 4 min set rest",
+               "distance": [
+                  8.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} easy",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{6:10} at 85% 5k",
+               "distance": [
+                  8.0,
+                  9.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} very easy",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{4-7:7-12} easy",
+               "distance": [
+                  5.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "{7:12} Kenyan-style progression run",
+               "distance": [
+                  8.0,
+                  10.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "4\u20135 \u00d7 5 min at 90\u201392% 5k with 1 min jog",
+               "distance": [
+                  6.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "{5-7:8-11} easy",
+               "distance": [
+                  5.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "7 \u00d7 1 km at 95% 5k with 2 min jog",
+               "distance": [
+                  7.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{4-7:7-12} easy",
+               "distance": [
+                  4.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "{6-8:10-14} easy progressing to moderate",
+               "distance": [
+                  6.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{11-12:18-20} at 75\u201380% 5k",
+               "distance": [
+                  12.0,
+                  13.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-6:6-10} very easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "3 sets of (3 min at 98% 5k, 1 min jog, 3 min at 100\u2013102% 5k, 4 min walk/jog)",
+               "distance": [
+                  7.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "Rest or {4-5:6-8} very easy",
+               "distance": [
+                  0.0,
+                  3.0
+               ]
+            },
+            {
+               "title": "{6-7:10-12} easy",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} easy to moderate",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{15-16:24-26} easy through rolling hills",
+               "distance": [
+                  15.0,
+                  16.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-7:7-12} easy",
+               "distance": [
+                  6.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "4\u20135 sets of (1200m at 90\u201392% 5k, 400m at 75% 5k)",
+               "distance": [
+                  8.0,
+                  9.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} very easy to easy",
+               "distance": [
+                  5.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{6:10} Kenyan-style progression run",
+               "distance": [
+                  7.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{5-8:8-12} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  6.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "5\u20136 \u00d7 2 km at 86\u201388% 5k with 2 min walk",
+               "distance": [
+                  8.0,
+                  10.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-7:6-12} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "4 \u00d7 1.5 km at 95% 5k with 3 min jog",
+               "distance": [
+                  7.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "Rest or {3-6:5-10} very easy",
+               "distance": [
+                  0.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{7-8:12-13} at 85% 5k",
+               "distance": [
+                  8.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} very easy",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{16-18:27-30} easy through rolling hills",
+               "distance": [
+                  16.0,
+                  18.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-6:7-10} very easy",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "3\u20134 sets of (1600m at 90\u201392% 5k, 400m at 75% 5k)",
+               "distance": [
+                  6.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} very easy",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{7:10} Kenyan-style progression run with optional fast finish",
+               "distance": [
+                  7.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{4-7:7-12} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{15-16:24-26} at 90\u201392% MP",
+               "distance": [
+                  15.0,
+                  16.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-6:6-10} very easy to easy",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy to moderate",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "2 sets of (2 km at 108% MP, 3 min jog, 1 km at 112% MP, 4 min jog)",
+               "distance": [
+                  7.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "Rest or {4-5:6-8} very easy",
+               "distance": [
+                  0.0,
+                  4.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy progressing to moderate",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "9\u201310 \u00d7 (1 km at 100\u2013102% MP, 1 km at 85% MP)",
+               "distance": [
+                  14.0,
+                  14.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-6:6-10} very easy to easy",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} easy progressing to moderate with 4 \u00d7 20 sec strides",
+               "distance": [
+                  4.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "7 \u00d7 (1 km at 105% MP, 1 km at 80% MP)",
+               "distance": [
+                  10.0,
+                  10.0
+               ]
+            },
+            {
+               "title": "Rest or {4-6:6-10} very easy",
+               "distance": [
+                  0.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{4-6:8-12} easy",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{16-18:27-30} at 90\u201392% MP",
+               "distance": [
+                  17.0,
+                  18.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-7:6-10} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy progressing to moderate",
+               "distance": [
+                  5.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "(3 \u00d7 2 km at 108% MP with 4 min jog) then at end, 1 km at 110\u2013112% MP",
+               "distance": [
+                  7.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} very easy",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{5-8:8-12} easy",
+               "distance": [
+                  5.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "7 \u00d7 (2 km at 100% MP, 1 km at 85% MP)",
+               "distance": [
+                  15.0,
+                  16.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-7:7-12} very easy to easy",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy to moderate",
+               "distance": [
+                  5.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{3-5:6-8} at 105% MP",
+               "distance": [
+                  7.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "Rest or {4-6:6-10} easy",
+               "distance": [
+                  0,
+                  3.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  4.0,
+                  4.0
+               ]
+            },
+            {
+               "title": "{6:10} at 88% MP + {5:8} at 90% MP + {5:8} at 92% MP + {3-4:4-6} at 95% MP",
+               "distance": [
+                  20.0,
+                  20.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4:6} very easy",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} very easy to easy",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "10\u201312 \u00d7 500m at 108\u2013110% MP with 30\u201345 sec walk",
+               "distance": [
+                  7.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "5-4-3-2-1 km at 98\u2013102% MP with 1 km easy run at 65\u201375% MP",
+               "distance": [
+                  12.0,
+                  14.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{4-6:6-10} very easy to easy",
+               "distance": [
+                  5.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "5 \u00d7 (1 km at 103% MP, 1 km at 85% MP)",
+               "distance": [
+                  8.0,
+                  8.0
+               ]
+            },
+            {
+               "title": "{4-7:6-11} very easy to easy",
+               "distance": [
+                  5.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "{5-7:8-12} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  6.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "3\u20134 \u00d7 {2:3} at 100% MP with 2\u20133 min jog",
+               "distance": [
+                  10.0,
+                  10.0
+               ]
+            },
+            {
+               "title": "Rest"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{5-7:8-12} easy",
+               "distance": [
+                  5.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "{5-6:8-10} easy",
+               "distance": [
+                  5.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "5\u20136 \u00d7 3 min at 103\u2013106% MP with 1 min jog",
+               "distance": [
+                  5.0,
+                  7.0
+               ]
+            },
+            {
+               "title": "Rest or {4-6:6-10} very easy to easy",
+               "distance": [
+                  0.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{4-6:6-10} easy",
+               "distance": [
+                  4.0,
+                  6.0
+               ]
+            },
+            {
+               "title": "{3-5:6-8} easy with 4 \u00d7 20 sec strides",
+               "distance": [
+                  3.0,
+                  5.0
+               ]
+            },
+            {
+               "title": "Marathon race",
+               "distance": [
+                  27.0,
+                  27.0
+               ]
+            }
+         ]
+      }
+   ]
+}

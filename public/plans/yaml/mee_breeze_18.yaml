@@ -1,0 +1,315 @@
+id: mee_breeze_18
+name: 'Marathon Excellence: Breeze 40 or 50 Miles per Week, 18-week schedule'
+description: |-
+  "The Breeze plan is a low-mileage plan designed for newer marathoners who are still learning the ropes of marathon training and racing. The Breeze plan has modest time requirements and features less-challenging workouts than the higher-mileage Marathon Excellence plans. Breeze is a great fit for first-time marathoners, injury-prone runners, weekend warriors, and runners with less than two years of experience." - Marathon Excellence for Everyone by John Davis
+units: mi
+source: https://www.amazon.com/dp/B0FNRPHLRY
+type: Marathon
+schedule:
+
+# Week 1 - General Phase Begins
+- workouts:
+  - title: "{5:8} Kenyan-style progression run"
+    distance: [5.0, 6.0]
+  - title: "{4-5:6-7} easy with 4 × 20 sec strides"
+    distance: [4.0, 4.0]
+  - title: 10 × 1.5 min at 100% 5k with 1 min jog
+    distance: [3.0, 5.0]
+  - title: Rest or {3-5:6-7} easy
+    distance: [0.0, 3.0]
+  - title: "{3-5:6-8} easy"
+    distance: [3.0, 5.0]
+  - title: Easy {10-11:16-18} through rolling hills
+    distance: [10.0, 11.0]
+  - title: Rest
+# Total: 25 / 34 mi 
+
+# Week 2
+- workouts:
+  - title: "{5:8} Kenyan-style progression run"
+    distance: [5.0,6.0]
+  - title: "{4-5:6-7} easy"
+    distance: [4.0, 5.0]
+  - title: "{4:6} at 85% 5k"
+    distance: [5.0, 6.0]
+  - title: Rest or {4-5:6-8} easy
+    distance: [0.0, 4.0]
+  - title: "{4-5:6-8} easy with 4 × 20 sec strides"
+    distance: [4.0, 5.0]
+  - title: "{11-12:18-20} easy through rolling hills"
+    distance: [11.0, 12.0]
+  - title: Rest
+# Total: 29 / 38 mi 
+
+# Week 3
+- workouts:
+  - title: 6–7 × 3 min at 90% 5k with 1 min jog
+    distance: [5.5, 6.0]
+  - title: "{5-7:8-12} easy"
+    distance: [5.0, 7.0]
+  - title: 8 × 2 min at 100% 5k with 1.5 min jog
+    distance: [4.5, 5.5]
+  - title: "{3-6:5-10} easy"
+    distance: [3.0, 6.0]
+  - title: "{5-7:8-11} easy"
+    distance: [5.0, 7.0]
+  - title: "{9:15} at 70–75% 5k"
+    distance: [10.0, 10.5]
+  - title: Rest
+# Total: 33 / 42 mi 
+
+# Week 4
+- workouts:
+  - title: "{3-5:5-8} easy"
+    distance: [5.0, 5.0]
+  - title: "{5-6:8-10} easy to moderate with 4 × 20 sec strides"
+    distance: [6.0, 6.0]
+  - title: "{5:8} at 85% 5k"
+    distance: [6.0, 6.0]
+  - title: "Off or {4-5:6-8} easy"
+    distance: [0.0, 5.0]
+  - title: "{4-6:7-10} easy"
+    distance: [5.0, 6.0]
+  - title: "{6:10} Kenyan-style progression run"
+    distance: [8.0, 8.0]
+  - title: Rest
+# Total: 30 / 36 mi 
+
+# Week 5
+- workouts:
+  - title: 7–8 × 3 min at 90% 5k with 45 sec jog
+    distance: [7.0, 7.0]
+  - title: "{4-6:6-10} easy"
+    distance: [4.0, 5.0]
+  - title: 3 sets of (3 min at 100% 5k, 1.5 min jog, 2 min at 102% 5k, 3 min walk/jog)
+    distance: [6.0, 6.0]
+  - title: Rest or {4-6:6-10} very easy
+    distance: [0.0, 6.0]
+  - title: "{4-6:6-10} easy progressing to moderate"
+    distance: [4.0, 5.0]
+  - title: "{13-14:22-24} easy through rolling hills"
+    distance: [13.0, 13.0]
+  - title: Rest
+# Total: 34 / 42 mi 
+
+# Week 6
+- workouts:
+  - title: 2 sets of (6 × 500m at 95% 5k with 30 sec walk), 4 min set rest
+    distance: [8.0, 8.0]
+  - title: "{4-6:6-10} easy"
+    distance: [4.0, 6.0]
+  - title: "{6:10} at 85% 5k"
+    distance: [8.0, 9.0]
+  - title: "{4-6:6-10} very easy"
+    distance: [4.0, 6.0]
+  - title: "{4-7:7-12} easy"
+    distance: [5.0, 7.0]
+  - title: "{7:12} Kenyan-style progression run"
+    distance: [8.0, 10.0]
+  - title: Rest
+# Total: 37 / 46 mi 
+
+# Week 7
+- workouts:
+  - title: 4–5 × 5 min at 90–92% 5k with 1 min jog
+    distance: [6.0, 7.0]
+  - title: "{5-7:8-11} easy"
+    distance: [5.0, 7.0]
+  - title: 7 × 1 km at 95% 5k with 2 min jog
+    distance: [7.0, 8.0]
+  - title: "{4-7:7-12} easy"
+    distance: [4.0, 7.0]
+  - title: "{6-8:10-14} easy progressing to moderate"
+    distance: [6.0, 8.0]
+  - title: "{11-12:18-20} at 75–80% 5k"
+    distance: [12.0, 13.0]
+  - title: Rest
+# Total: 40 / 50 mi 
+
+# Week 8
+- workouts:
+  - title: "{4-6:6-10} very easy with 4 × 20 sec strides"
+    distance: [4.0, 5.0]
+  - title: 3 sets of (3 min at 98% 5k, 1 min jog, 3 min at 100–102% 5k, 4 min walk/jog)
+    distance: [7.0, 7.0]
+  - title: Rest or {4-5:6-8} very easy
+    distance: [0.0, 3.0]
+  - title: "{6-7:10-12} easy"
+    distance: [6.0, 6.0]
+  - title: "{4-6:6-10} easy to moderate"
+    distance: [4.0, 5.0]
+  - title: "{15-16:24-26} easy through rolling hills"
+    distance: [15.0, 16.0]
+  - title: Rest
+# Total: 36 / 42 mi  
+
+# Week 9
+- workouts:
+  - title: "{4-7:7-12} easy"
+    distance: [6.0, 7.0]
+  - title: 4–5 sets of (1200m at 90–92% 5k, 400m at 75% 5k)
+    distance: [8.0, 9.0]
+  - title: "{5-7:8-12} very easy to easy"
+    distance: [5.0, 8.0]
+  - title: "{6:10} Kenyan-style progression run"
+    distance: [7.0, 8.0]
+  - title: "{5-8:8-12} easy with 4 × 20 sec strides"
+    distance: [6.0, 8.0]
+  - title: 5–6 × 2 km at 86–88% 5k with 2 min walk
+    distance: [8.0, 10.0]
+  - title: Rest
+# Total: 40 / 50 mi 
+
+# Week 10
+- workouts:
+  - title: "{4-7:6-12} easy with 4 × 20 sec strides"
+    distance: [4.0, 6.0]
+  - title: 4 × 1.5 km at 95% 5k with 3 min jog
+    distance: [7.0, 7.0]
+  - title: Rest or {3-6:5-10} very easy
+    distance: [0.0, 5.0]
+  - title: "{7-8:12-13} at 85% 5k"
+    distance: [8.0, 8.0]
+  - title: "{4-6:6-10} very easy"
+    distance: [5.0, 6.0]
+  - title: "{16-18:27-30} easy through rolling hills"
+    distance: [16.0, 18.0]
+  - title: Rest
+# Total: 40 / 50 mi 
+
+# Week 11 - marathon supportive phase begins
+- workouts:
+  - title: "{4-6:7-10} very easy"
+    distance: [4.0, 6.0]
+  - title: 3–4 sets of (1600m at 90–92% 5k, 400m at 75% 5k)
+    distance: [6.0, 8.0]
+  - title: "{4-6:6-10} very easy"
+    distance: [4.0, 6.0]
+  - title: "{7:10} Kenyan-style progression run with optional fast finish"
+    distance: [7.0, 8.0]
+  - title: "{4-7:7-12} easy with 4 × 20 sec strides"
+    distance: [4.0, 6.0]
+  - title: "{15-16:24-26} at 90–92% MP"
+    distance: [15.0, 16.0]
+  - title: Rest
+# Total: 40 / 50 mi 
+
+# Week 12
+- workouts:
+  - title: "{4-6:6-10} very easy to easy"
+    distance: [4.0, 5.0]
+  - title: "{5-7:8-12} easy to moderate"
+    distance: [5.0, 6.0]
+  - title: 2 sets of (2 km at 108% MP, 3 min jog, 1 km at 112% MP, 4 min jog)
+    distance: [7.0, 7.0]
+  - title: Rest or {4-5:6-8} very easy
+    distance: [0.0, 4.0]
+  - title: "{5-7:8-12} easy progressing to moderate"
+    distance: [6.0, 6.0]
+  - title: 9–10 × (1 km at 100–102% MP, 1 km at 85% MP)
+    distance: [14.0, 14.0]
+  - title: Rest
+# Total: 36 / 42 mi 
+
+# Week 13
+- workouts:
+  - title: "{4-6:6-10} very easy to easy"
+    distance: [4.0, 5.0]
+  - title: "{4-6:6-10} easy progressing to moderate with 4 × 20 sec strides"
+    distance: [4.0, 5.0]
+  - title: 7 × (1 km at 105% MP, 1 km at 80% MP)
+    distance: [10.0, 10.0]
+  - title: Rest or {4-6:6-10} very easy
+    distance: [0.0, 6.0]
+  - title: "{4-6:8-12} easy"
+    distance: [5.0, 6.0]
+  - title: "{16-18:27-30} at 90–92% MP"
+    distance: [17.0, 18.0]
+  - title: Rest
+# Total: 40 / 50 mi 
+
+# Week 14
+- workouts:
+  - title: "{4-7:6-10} easy with 4 × 20 sec strides"
+    distance: [4.0, 6.0]
+  - title: "{5-7:8-12} easy progressing to moderate"
+    distance: [5.0, 7.0]
+  - title: "(3 × 2 km at 108% MP with 4 min jog) then at end, 1 km at 110–112% MP"
+    distance: [7.0, 8.0]
+  - title: "{4-6:6-10} very easy"
+    distance: [4.0, 6.0]
+  - title: "{5-8:8-12} easy"
+    distance: [5.0, 7.0]
+  - title: 7 × (2 km at 100% MP, 1 km at 85% MP)
+    distance: [15.0, 16.0]
+  - title: Rest
+# Total: 40 / 50 mi 
+
+# Week 15
+- workouts:
+  - title: "{4-7:7-12} very easy to easy"
+    distance: [4.0, 6.0]
+  - title: "{5-7:8-12} easy to moderate"
+    distance: [5.0, 5.0]
+  - title: "{3-5:6-8} at 105% MP"
+    distance: [7.0, 7.0]
+  - title: Rest or {4-6:6-10} easy
+    distance: [0, 3.0]
+  - title: "{4-6:6-10} easy with 4 × 20 sec strides"
+    distance: [4.0, 4.0]
+  - title: "{6:10} at 88% MP + {5:8} at 90% MP + {5:8} at 92% MP + {3-4:4-6} at 95% MP"
+    distance: [20.0, 20.0]
+  - title: Rest
+# Total: 40 / 45 mi 
+
+# Week 16
+- workouts:
+  - title: "{4:6} very easy"
+    distance: [4.0, 6.0]
+  - title: "{5-7:8-12} very easy to easy"
+    distance: [5.0, 6.0]
+  - title: 10–12 × 500m at 108–110% MP with 30–45 sec walk 
+    distance: [7.0, 7.0]
+  - title: "{5-7:8-12} easy"
+    distance: [6.0, 6.0]
+  - title: "{5-7:8-12} easy with 4 × 20 sec strides"
+    distance: [6.0, 6.0]
+  - title: 5-4-3-2-1 km at 98–102% MP with 1 km easy run at 65–75% MP
+    distance: [12.0, 14.0]
+  - title: Rest
+# Total: 40 / 45 mi 
+
+# Week 17
+- workouts:
+  - title: "{4-6:6-10} very easy to easy"
+    distance: [5.0, 5.0]
+  - title: "{5-7:8-12} easy"
+    distance: [6.0, 6.0]
+  - title: 5 × (1 km at 103% MP, 1 km at 85% MP)
+    distance: [8.0, 8.0]
+  - title: "{4-7:6-11} very easy to easy"
+    distance: [5.0, 5.0]
+  - title: "{5-7:8-12} easy with 4 × 20 sec strides"
+    distance: [6.0, 6.0]
+  - title: 3–4 × {2:3} at 100% MP with 2–3 min jog
+    distance: [10.0, 10.0]
+  - title: Rest
+# Total: 40 / 40 mi 
+
+# Week 18
+- workouts:
+  - title: "{5-7:8-12} easy"
+    distance: [5.0, 7.0]
+  - title: "{5-6:8-10} easy"
+    distance: [5.0, 6.0]
+  - title: 5–6 × 3 min at 103–106% MP with 1 min jog
+    distance: [5.0, 7.0]
+  - title: Rest or {4-6:6-10} very easy to easy
+    distance: [0.0, 6.0]
+  - title: "{4-6:6-10} easy"
+    distance: [4.0, 6.0]
+  - title: "{3-5:6-8} easy with 4 × 20 sec strides"
+    distance: [3.0, 5.0]
+  - title: Marathon race
+    distance: [27.0, 27.0]
+# Total: na / na mi - just let app count it up
