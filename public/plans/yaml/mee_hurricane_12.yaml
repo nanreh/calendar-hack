@@ -1,0 +1,225 @@
+id: mee_hurricane_12
+name: 'Marathon Excellence: Hurricane 100 or 120 Miles per Week, 12-week schedule'
+description: |-
+  "The Hurricane plan uses high mileage and high-volume workouts to push your marathon performance to the highest level possible. This plan is geared for runners who want top results and who are willing to adopt a high-risk, high-reward strategy. Hurricane is a great fit for runners who do very well on high-mileage training and with five or more years of experience, as well as runners competing at the regional, national, and international level." - Marathon Excellence for Everyone by John Davis
+units: mi
+source: https://www.amazon.com/dp/B0FNRPHLRY
+type: Marathon
+schedule:
+
+# Week 1 - General Phase Begins
+- workouts:
+  - title: 10 × 3 min at 90–92% 5k with 45 sec jog
+    distance: [10.0, 10.0]
+  - title: "AM: {4-5:6-8} easy* / PM: {8-10:12-16} easy"
+    distance: [10.0, 15.0]
+  - title: "{8:14} at 85% 5k"
+    distance: [12.0, 12.0]
+  - title: "AM: {4-5:6-8} very easy* / PM: {8-10:12-16} easy"
+    distance: [10.0, 15.0]
+  - title: "AM: {5-6:8-10} easy* / PM: {5-7:8-12} moderate"
+    distance: [7.0, 12.0]
+  - title: "AM: {5-6:8-10} easy / PM: {5-6:8-10} at 90% 5k"
+    distance: [15.0, 15.0]
+  - title: "{8-12:14-20} easy"
+    distance: [12.0, 12.0]
+# Total: 76 / 91 mi
+
+# Week 2
+- workouts:
+  - title: "AM: {4-5:6-8} easy / PM: 10–12 × 600m at 98–100% 5k with 1–2 min jog"
+    distance: [13.0, 14.0]
+  - title: "AM: {5-6:8-10} very easy* / PM: {8-11:13-18} easy"
+    distance: [10.0, 16.0]
+  - title: "AM: 3-2-2-1 km at 86-88-90-92% 5k with 2 min walk / PM: 4–5 × 1.5 km at 90–92% 5k with 1 min walk"
+    distance: [14.0, 14.0]
+  - title: "{8-10:12-16} very easy"
+    distance: [9.0, 10.0]
+  - title: "AM: {5-6:8-10} easy / PM: {6-8:10-12} moderate with 5 × 25 sec strides"
+    distance: [12.0, 14.0]
+  - title: "{13-14:21-23} at 80% 5k through rolling hills"
+    distance: [16.0, 17.0]
+  - title: "AM: {5-7:8-12} very easy / PM: {5-7:8-12} very easy*"
+    distance: [8.0, 12.0]
+# Total: 82 / 97 mi
+
+# Week 3
+- workouts:
+  - title: "AM: {4-6:6-10} easy / PM: {7-10:12-16} easy to moderate with 40 min of (1 min at ~95% 5k effort, 3 min easy) in the middle"
+    distance: [16.0, 16.0]
+  - title: "AM: {4-6:6-10} very easy* / PM: 4 × (1 km at 95% 5k, 2 min jog, 1 km at 100% 5k, 4 min jog)"
+    distance: [10.0, 14.0]
+  - title: "{8-12:14-20} easy"
+    distance: [10.0, 12.0]
+  - title: "AM: {4-6:6-10} very easy* / PM: 6–7 × 2 km at 86–88% 5k with 2 min walk"
+    distance: [11.0, 15.0]
+  - title: "AM: {4-5:6-8} easy* / PM: {8-10:12-16} easy"
+    distance: [10.0, 14.0]
+  - title: "{18-20:30-32} easy through rolling hills"
+    distance: [18.0, 20.0]
+  - title: "AM: {4-7:7-12} very easy / PM: {4-7:7-12} easy*"
+    distance: [12.0, 12.0]
+# Total: 87 / 103 mi
+
+# Week 4
+- workouts:
+  - title: "AM: 4 × 2 km at 86–88% 5k with 2 min walk / PM: 7 × 1 km at 90–92% 5k with 1 min walk"
+    distance: [15.0, 15.0]
+  - title: "AM: {4-6:6-10} very easy / PM: {8-10:12-16} easy"
+    distance: [13.0, 15.0]
+  - title: "AM: {4-5:6-8} very easy* / PM: 6 × {1:1.6} at 95% 5k with 3 min jog"
+    distance: [10.0, 13.0]
+  - title: "AM: {5-6:8-10} very easy / PM: {8-11:13-18} very easy"
+    distance: [14.0, 16.0]
+  - title: "AM: {5-6:8-10} easy / PM: {10-12:16-20} easy progressing to moderate with 30 min of (30 sec at ~5k effort, 2.5 min moderate) in the middle"
+    distance: [16.0, 18.0]
+  - title: "{15-16:25-27} at 80% 5k through rolling hills"
+    distance: [18.0, 19.0]
+  - title: "AM: {5-6:8-10} very easy / PM: {5-7:8-12} very easy"
+    distance: [7.0, 14.0]
+# Total: 93 / 110 mi
+
+# Week 5 - Marathon-Supportive Phase Begins
+- workouts:
+  - title: "AM: {4-6:6-10} easy / PM: {8-12:14-20} easy with 5 × 25 sec strides"
+    distance: [14.0, 17.0]
+  - title: "AM: {4-6:6-10} very easy* / PM: {11-12:18-21} at 100% MP"
+    distance: [15.0, 18.0]
+  - title: "AM: {5-7:8-12} very easy / PM: {8-10:12-16} easy"
+    distance: [14.0, 16.0]
+  - title: "AM: {6-8:10-12} easy progressing to moderate / PM: {6-8:10-12} moderate progressing to strong"
+    distance: [13.0, 15.0]
+  - title: "AM: {5-7:8-12} easy / PM: {8-12:14-20} easy with 5 × 25 sec strides"
+    distance: [14.0, 18.0]
+  - title: "{20-21:32-34} at 90–92% MP"
+    distance: [22.0, 23.0]
+  - title: "AM: {5-8:8-12} very easy / PM: {5-8:8-12} very easy*"
+    distance: [8.0, 8.0]
+# Total: 100 / 115 mi
+
+# Week 6
+- workouts:
+  - title: "AM: {5-8:8-12} easy / PM: {8-12:14-20} easy"
+    distance: [14.0, 20.0]
+  - title: "AM: {4-5:6-8} very easy* / PM: {8-10:12-16} easy with 5 × 25 sec strides"
+    distance: [10.0, 14.0]
+  - title: "Special block AM: {4:7} prog. + 4-1, 3-1, 2-1, 1-1 km at 103/105% MP with 2 min walk / PM: {4:7} prog. + 8 × 500m at 108–110% MP + 3–4 km at 110–112% MP"
+    distance: [22.0, 22.0]
+  - title: "AM: {4-6:6-10} very easy* / PM: {6-8:10-12} very easy"
+    distance: [8.0, 12.0]
+  - title: "AM: {4-6:6-10} very easy / PM: {8-10:12-16} easy"
+    distance: [13.0, 16.0]
+  - title: "AM: {4-6:6-10} easy / PM: {8-10:12-16} easy with 40 min of (1 min at ~95% 5k effort, 3 min easy) in the middle"
+    distance: [14.0, 16.0]
+  - title: 5 × 4 km at 102–103% MP with 3 min walk
+    distance: [19.0, 20.0]
+# Total: 100 / 120 mi
+
+# Week 7
+- workouts:
+  - title: "AM: {5-6:8-10} very easy* / PM: {8-10:12-16} very easy to easy"
+    distance: [10.0, 15.0]
+  - title: "AM: {5-8:8-12} easy / PM: {8-10:12-16} easy with 5 × 25 sec strides"
+    distance: [14.0, 17.0]
+  - title: "AM: {4-6:6-10} very easy* / PM: 10 × (1 km at 105% MP, 1 km at 90–92% MP)"
+    distance: [16.0, 20.0]
+  - title: "AM: {5-6:8-10} very easy* / PM: {8-10:12-16} easy"
+    distance: [12.0, 15.0]
+  - title: "AM: {5-8:8-12} easy / PM: {8-12:14-20} easy progressing to moderate with 40 min of (1 min at ~95% 5k, 3 min moderate) in the middle"
+    distance: [14.0, 19.0]
+  - title: "{7:12} at 90% MP + {6:10} at 92% MP + {5:8} at 94% MP + {4:6} at 96% MP"
+    distance: [24.0, 24.0]
+  - title: "AM: {5-8:8-12} very easy / PM: {5-8:8-12} very easy*"
+    distance: [10.0, 10.0]
+# Total: 100 / 120 mi
+
+# Week 8 - Marathon-Specific Phase Begins
+- workouts:
+  - title: "AM: {4-5:6-8} easy / PM: {8-10:12-16} easy"
+    distance: [13.0, 15.0]
+  - title: "AM: {5-8:8-12} easy / PM: {10-12:16-20} easy progressing to moderate with 5 × 25 sec strides"
+    distance: [16.0, 20.0]
+  - title: "AM: 8 × 1 km at 102–106% MP with 1 min walk / PM: 12–15 × 500m at 108–110% MP with 25 sec walk"
+    distance: [16.0, 18.0]
+  - title: "AM: {4-7:7-12} very easy / PM: {8-10:12-16} easy"
+    distance: [13.0, 16.0]
+  - title: "AM: {5-6:8-10} very easy* / PM: {8-10:12-16} easy with 5 × 25 sec strides"
+    distance: [10.0, 16.0]
+  - title: "{16-18:27-30} at 98% MP"
+    distance: [20.0, 22.0]
+  - title: "AM: {4-6:6-10} very easy / PM: {4-6:6-10} very easy*"
+    distance: [12.0, 13.0]
+# Total: 100 / 120 mi
+
+# Week 9
+- workouts:
+  - title: "AM: {5-7:8-12} very easy* / PM: {6-8:10-12} easy"
+    distance: [8.0, 14.0]
+  - title: "AM: {5-6:8-10} very easy / PM: {8-10:12-16} easy with 5 × 25 sec strides"
+    distance: [14.0, 15.0]
+  - title: "AM: 3–4 × 2 km at 103% MP with 2 min walk / PM: 12–16 × 400m at 108–110% MP with 25 sec walk"
+    distance: [12.0, 12.0]
+  - title: "AM: {5-7:8-12} very easy / PM: {8-10:14-16} very easy to easy"
+    distance: [14.0, 16.0]
+  - title: "AM: {4-6:6-10} very easy* / PM: {6-8:10-12} easy with 5 × 25 sec strides"
+    distance: [8.0, 13.0]
+  - title: "{22-23:34-37} at 95% MP"
+    distance: [24.0, 25.0]
+  - title: "AM: {4-6:6-10} very easy / PM: {4-6:6-10} very easy*"
+    distance: [10.0, 10.0]
+# Total: 90 / 105 mi
+
+# Week 10
+- workouts:
+  - title: "AM: {5-7:8-12} very easy* / PM: {7-9:12-15} very easy to easy"
+    distance: [9.0, 15.0]
+  - title: "AM: {5-7:8-12} easy / PM: {6-8:10-12} easy progressing to moderate"
+    distance: [12.0, 14.0]
+  - title: 8–10 × 3 min at 105–107% MP with 30 sec jog
+    distance: [10.0, 10.0]
+  - title: "AM: {5-7:8-12} very easy / PM: {8-10:12-16} easy"
+    distance: [14.0, 16.0]
+  - title: "AM: {4-6:6-10} easy* / PM: {6-8:10-12} easy with 5 × 25 sec strides"
+    distance: [8.0, 13.0]
+  - title: 5 × (5 km at 100% MP, 1 km at 90% MP)
+    distance: [21.0, 22.0]
+  - title: "AM: {4-6:6-10} very easy / PM: {4-6:6-10} very easy*"
+    distance: [6.0, 10.0]
+# Total: 80 / 100 mi
+
+# Week 11
+- workouts:
+  - title: "AM: {4-6:6-10} very easy* / PM: {7-9:12-15} easy"
+    distance: [9.0, 14.0]
+  - title: "AM: {4-6:6-10} easy / PM: {8-10:12-16} easy progressing to moderate"
+    distance: [13.0, 15.0]
+  - title: "AM: {4-6:6-10} very easy* / PM: {7-9:12-15} easy with 5 × 25 sec strides"
+    distance: [9.0, 14.0]
+  - title: 8–10 × (1 km at 103–105% MP, 1 km at 94–96% MP)
+    distance: [14.0, 14.0]
+  - title: "{6-8:10-12} very easy"
+    distance: [7.0, 8.0]
+  - title: "AM: {4-5:6-8} easy* / PM: {7-9:12-15} easy with 5 × 25 sec strides"
+    distance: [9.0, 13.0]
+  - title: 3 km at 107% MP (optional), 2 km at 108% MP, 2 km at 109% MP, 1 km at 110–112% MP all with 4 min jog
+    distance: [4.0, 12.0]
+# Total: 65 / 90 mi
+
+# Week 12 - Race Week
+- workouts:
+  - title: "{7-9:12-15} very easy"
+    distance: [7.0, 9.0]
+  - title: "AM: {4-5:6-8} easy* / PM: {7-9:12-15} easy with 5 × 25 sec strides"
+    distance: [7.0, 14.0]
+  - title: 6–8 × 3 min at 105–107% MP with 45 sec jog
+    distance: [9.0, 10.0]
+  - title: "AM: {4-5:6-8} very easy* / PM: {6-8:10-12} easy"
+    distance: [6.0, 13.0]
+  - title: "{5-7:8-12} easy"
+    distance: [5.0, 7.0]
+  - title: "{4-5:6-8} easy with 5 × 25 sec strides"
+    distance: [4.0, 5.0]
+  - title: Marathon race
+    distance: [27.0, 27.0]
+# Total: na / na mi - race week
+

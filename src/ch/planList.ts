@@ -258,4 +258,54 @@ export const plans: PlanSummary[] = [
     "Pfitzinger/Douglas: Marathon More Than 85 Miles per Week Recovery (fourth edition)",
     "Marathon",
   ],
+  [
+    "mee_breeze_12",
+    "Marathon Excellence: Breeze 40 or 50 Miles per Week, 12-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_breeze_18",
+    "Marathon Excellence: Breeze 40 or 50 Miles per Week, 18-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_wind_12",
+    "Marathon Excellence: Wind 55 or 65 Miles per Week, 12-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_wind_18",
+    "Marathon Excellence: Wind 55 or 65 Miles per Week, 18-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_gale_12",
+    "Marathon Excellence: Gale 70 or 80 Miles per Week, 12-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_gale_18",
+    "Marathon Excellence: Gale 70 or 80 Miles per Week, 18-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_tornado_12",
+    "Marathon Excellence: Tornado 85 or 95 Miles per Week, 12-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_tornado_18",
+    "Marathon Excellence: Tornado 85 or 95 Miles per Week, 18-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_hurricane_12",
+    "Marathon Excellence: Hurricane 100 or 120 Miles per Week, 12-week schedule",
+    "Marathon",
+  ],
+  [
+    "mee_hurricane_18",
+    "Marathon Excellence: Hurricane 100 or 120 Miles per Week, 18-week schedule",
+    "Marathon",
+  ],
 ];
