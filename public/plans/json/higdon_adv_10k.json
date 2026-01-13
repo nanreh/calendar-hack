@@ -1,0 +1,279 @@
+{
+   "id": "higdon_adv_10k",
+   "name": "Hal Higdon: 10K Advanced",
+   "description": "Hal Higdon: 10K Advanced: \"This 10K Training Program is for Advanced runners, those individuals who compete regularly in races up to 10K or beyond and who want to improve their performances. You should be capable of running 30 to 60 minutes a day, five to seven days a week and have a basic understanding of how to do speedwork.\" (more details at the link below)",
+   "units": "mi",
+   "source": "https://www.halhigdon.com/training-programs/10k-training/advanced-10k/",
+   "type": "10K",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "30 min Tempo",
+               "distance": 4.0
+            },
+            {
+               "title": "6 x 400 1-mile pace"
+            },
+            {
+               "distance": 3.0
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest or {3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{5:8.1} total, {2:3.2} pace",
+               "distance": 5
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "40 min Tempo",
+               "distance": 5.25
+            },
+            {
+               "title": "7 x 400 1-mile pace"
+            },
+            {
+               "distance": 3.5
+            },
+            {
+               "title": "{4:6.4} run",
+               "distance": 4
+            },
+            {
+               "title": "Rest or {3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{5:8.1} total, {2:3.2} pace",
+               "distance": 5
+            },
+            {
+               "title": "{7:11.3} run",
+               "distance": 7
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "50 min Tempo",
+               "distance": 6.5
+            },
+            {
+               "title": "8 x 400 1-mile pace"
+            },
+            {
+               "distance": 4.0
+            },
+            {
+               "title": "{5:8.1} run",
+               "distance": 5
+            },
+            {
+               "title": "Rest or {3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{5:8.1} total, {3:4.8} pace",
+               "distance": 5
+            },
+            {
+               "title": "{8:12.9} run (3/4 easy, last 1/4 pace)",
+               "distance": 8
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "30 min Tempo",
+               "distance": 4.0
+            },
+            {
+               "title": "9 x 400 5K pace"
+            },
+            {
+               "distance": 4.5
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest or {3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "5K Race ({3.1:5})",
+               "distance": 3.10685
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "50 min Tempo",
+               "distance": 6.5
+            },
+            {
+               "title": "10 x 400 1-mile pace"
+            },
+            {
+               "distance": 5.0
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6
+            },
+            {
+               "title": "Rest or {3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{6:9.7} total, {3:4.8} pace",
+               "distance": 6
+            },
+            {
+               "title": "{8:12.9} run (3/4 easy, last 1/4 pace)",
+               "distance": 8
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "30 min Tempo",
+               "distance": 4.0
+            },
+            {
+               "title": "11 x 400 1-mile pace"
+            },
+            {
+               "distance": 5.5
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest or {3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "8K Race ({4.971:8})",
+               "distance": 4.971
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "50 min Tempo",
+               "distance": 8
+            },
+            {
+               "title": "12 x 400 1-mile pace"
+            },
+            {
+               "distance": 6.0
+            },
+            {
+               "title": "{6:9.7} run",
+               "distance": 6
+            },
+            {
+               "title": "Rest or {3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "{6:9.7} total, {3:4.8} pace",
+               "distance": 6
+            },
+            {
+               "title": "{10:16.1} run (3/4 easy, last 1/4 pace)",
+               "distance": 8
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "30 min Tempo",
+               "distance": 4.0
+            },
+            {
+               "title": "6 x 400 5K pace"
+            },
+            {
+               "distance": 3.5
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest or {3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "10K Race ({6.2:10})",
+               "distance": 6.213
+            }
+         ]
+      }
+   ]
+}
