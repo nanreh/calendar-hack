@@ -1,5 +1,6 @@
 import React from "react";
 import { PlanSummary } from "types/app";
+import { REMOVED_PLANS } from "../ch/config";
 
 interface Props {
   availablePlans: PlanSummary[];
@@ -23,11 +24,21 @@ const PlanPicker = ({
     }
   };
 
-  const planOptions = availablePlans.map((ap) => (
-    <option key={ap[1]} value={ap[1]}>
-      ({ap[2]}) {ap[1]}
-    </option>
-  ));
+  const planOptions = availablePlans.map((ap) => {
+    const isRemoved = REMOVED_PLANS.has(ap[0]);
+    const label = isRemoved
+      ? `❌ (${ap[2]}) ${ap[1]}`
+      : `(${ap[2]}) ${ap[1]}`;
+    return (
+      <option
+        key={ap[1]}
+        value={ap[1]}
+        style={isRemoved ? { color: "red" } : undefined}
+      >
+        {label}
+      </option>
+    );
+  });
 
   return (
     <select className="select" value={selectedPlan[1]} onChange={handleChange}>

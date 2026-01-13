@@ -24,13 +24,13 @@ const About = () => {
             <p>(If you do use Google Calendar, I recommend creating a new calendar to import into so your training schedule gets its own color and so you can show/hide it as needed.)</p>
             <p>The app knows about some training plans:</p>
             <ul>
-                <li>
+                <li style={{ textDecoration: "line-through" }}>
                     Several plans by Pete Pfitzinger and Scott Douglas from their popular <a href="http://www.amazon.com/Advanced-Marathoning-Edition-Pete-Pfitzinger/dp/0736074600" target="_blank">Advanced Marathoning (3rd edition)</a> book
                 </li>
-                <li>
+                <li style={{ textDecoration: "line-through" }}>
                     Several plans by Pete Pfitzinger and Scott Douglas from their popular <a href="https://www.amazon.com/dp/1718237472" target="_blank">Advanced Marathoning (4th edition)</a> book
                 </li>
-                <li>
+                <li style={{ textDecoration: "line-through" }}>
                     Several plans by Pete Pfitzinger and Philip Latter from their popular <a href="https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459" target="_blank"> Faster Road Racing: 5K to Half Marathon</a> book
                 </li>
                 <li>
@@ -39,6 +39,7 @@ const About = () => {
                     Several plans by Hal Higdon from his popular <a href="http://www.amazon.com/Marathon-Ultimate-Training-Programs-Marathons/dp/1609612248" target="_blank">Marathon: The Ultimate Training Guide</a> book</li>
                 <li>A few popular “Couch to 5K” plans for new runners</li>
             </ul>
+            <p style={{ fontWeight: "bold" }}>UPDATE 2026/01/12 Human Kinetics, publisher of Advanced Marathoning and Faster Road Racing has requested the removal of their plans. This makes me sad, I love these books and I know you do too. It's disappointing. But if they don't want to be here then they shouldn't be. But no point in dwelling on it. Go for a run.</p>
             <p>I’ve read these books and have trained with programs from them in the past. The plans will make little sense if you don’t take the time to read the books they came from. So, seriously, understand what you’re getting yourself into so you get the most out of your training and don’t hurt yourself.</p>
             <p>The scope of this app is intentionally narrow—it helps get a stock training plan onto your calendar with as little friction as possible. Once it’s on your calendar, by all means adjust the scheduled runs as necessary so your running life doesn’t wreck your non-running life and vice-versa.</p>
             <p>That being said, you can make some minor changes to the plan before you download it:</p>

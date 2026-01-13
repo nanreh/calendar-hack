@@ -540,6 +540,20 @@ svg.drag-handle {
   padding: 5px;
 }
 
+.plan-removed-message {
+  text-align: center;
+  background-color: var(--card-color);
+  border: 3px solid var(--secondary-color);
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  padding: 2em;
+  h2 {
+    color: var(--text-color);
+  }
+}
+
 .footer {
   font-size: .7em;
 }

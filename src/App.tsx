@@ -23,6 +23,7 @@ import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
 import { Units, PlanSummary, dayOfWeek } from "types/app";
 import { getLocaleUnits } from "./ch/localize";
+import { isPlanRemoved } from "./ch/config";
 
 const App = () => {
   const [{ u, p, d, s }, setq] = useQueryParams({
@@ -78,6 +79,10 @@ const App = () => {
     units: Units,
     weekStartsOn: WeekStartsOn,
   ) => {
+    if (isPlanRemoved(plan)) {
+      setq(getParams(units, plan, endDate, weekStartsOn));
+      return;
+    }
     const racePlan = build(await repo.fetch(plan), endDate, weekStartsOn);
     setRacePlan(racePlan);
     setUndoHistory([...undoHistory, racePlan]);
@@ -85,8 +90,14 @@ const App = () => {
   };
 
   const onSelectedPlanChange = async (plan: PlanSummary) => {
-    const racePlan = build(await repo.fetch(plan), planEndDate, weekStartsOn);
     setSelectedPlan(plan);
+    if (isPlanRemoved(plan)) {
+      setRacePlan(undefined);
+      setUndoHistory([]);
+      setq(getParams(selectedUnits, plan, planEndDate, weekStartsOn));
+      return;
+    }
+    const racePlan = build(await repo.fetch(plan), planEndDate, weekStartsOn);
     setRacePlan(racePlan);
     setUndoHistory([racePlan]);
     setq(getParams(selectedUnits, plan, planEndDate, weekStartsOn));
@@ -164,38 +175,58 @@ const App = () => {
         selectedPlanChangeHandler={onSelectedPlanChange}
         weekStartsOn={weekStartsOn}
       />
-      <div className="second-toolbar">
-        <div className="units">
-          <UnitsButtons
-            units={selectedUnits}
-            unitsChangeHandler={onSelectedUnitsChanged}
-          />
-        </div>
-      </div>
-      <div className="second-toolbar">
-        <button className="app-button" onClick={downloadIcalHandler}>Download iCal</button>
-        <button className="app-button" onClick={downloadCsvHandler}>Download CSV</button>
-        <UndoButton
-          disabled={undoHistory.length <= 1}
-          undoHandler={undoHandler}
-        />
-      </div>
-      <PlanDetailsCard racePlan={racePlan} />
-      <div className="second-toolbar">
-        <WeekStartsOnPicker
-          weekStartsOn={weekStartsOn}
-          changeHandler={onWeekStartsOnChanged}
-        />
-      </div>
+      {!isPlanRemoved(selectedPlan) && (
+        <>
+          <div className="second-toolbar">
+            <div className="units">
+              <UnitsButtons
+                units={selectedUnits}
+                unitsChangeHandler={onSelectedUnitsChanged}
+              />
+            </div>
+          </div>
+          <div className="second-toolbar">
+            <button className="app-button" onClick={downloadIcalHandler}>Download iCal</button>
+            <button className="app-button" onClick={downloadCsvHandler}>Download CSV</button>
+            <UndoButton
+              disabled={undoHistory.length <= 1}
+              undoHandler={undoHandler}
+            />
+          </div>
+          <PlanDetailsCard racePlan={racePlan} />
+          <div className="second-toolbar">
+            <WeekStartsOnPicker
+              weekStartsOn={weekStartsOn}
+              changeHandler={onWeekStartsOnChanged}
+            />
+          </div>
+        </>
+      )}
       <div className="main-ui">
-        {racePlan && (
-          <CalendarGrid
-            racePlan={racePlan}
-            units={selectedUnits}
-            weekStartsOn={weekStartsOn}
-            swapDates={swapDates}
-            swapDow={doSwapDow}
-          />
+        {isPlanRemoved(selectedPlan) ? (
+          <div className="plan-removed-message">
+            <h2>THIS PLAN HAS BEEN REMOVED</h2>
+            <p>Human Kinetics, publisher of the book this plan comes from, has requested the removal of this plan.</p>
+            <p>This makes me sad, I love these books and I know you do too.</p>
+            <p>It's disappointing.</p>
+            <p>But if they don't want to be here then they shouldn't be.</p>
+            <p>No point in dwelling on it.</p>
+            <p>Go for a run.</p>
+            <br/>
+            <p>• Advanced Marathoning, Third Edition</p>
+            <p>• Advanced Marathoning, Fourth Edition</p>
+            <p>• Faster Road Racing: 5k to Half Marathon</p>
+          </div>
+        ) : (
+          racePlan && (
+            <CalendarGrid
+              racePlan={racePlan}
+              units={selectedUnits}
+              weekStartsOn={weekStartsOn}
+              swapDates={swapDates}
+              swapDow={doSwapDow}
+            />
+          )
         )}
       </div>
     </>
