@@ -2,6 +2,8 @@ export type PlanSummary = [string, string, RaceType];
 
 export type Units = "mi" | "km";
 
+export type PlanMode = "select" | "byop";
+
 export interface PlanDates {
   start: Date; // first day of first week we will render
   planStartDate: Date; // day the race plan will start

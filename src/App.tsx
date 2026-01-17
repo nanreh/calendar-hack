@@ -21,16 +21,38 @@ import { PlanDetailsCard } from "./components/PlanDetailsCard";
 import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
 import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
-import { Units, PlanSummary, dayOfWeek } from "types/app";
+import { Units, PlanSummary, dayOfWeek, PlanMode } from "types/app";
 import { getLocaleUnits } from "./ch/localize";
 import { isPlanRemoved } from "./ch/config";
+import { parseYamlContent } from "./ch/yamlService";
+import pako from "pako";
+
+const encodeYaml = (yaml: string): string => {
+  const compressed = pako.deflate(yaml);
+  const binary = String.fromCharCode(...compressed);
+  return btoa(binary);
+};
+
+const decodeYaml = (encoded: string): string | null => {
+  try {
+    const binary = atob(encoded);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) {
+      bytes[i] = binary.charCodeAt(i);
+    }
+    return pako.inflate(bytes, { to: "string" });
+  } catch {
+    return null;
+  }
+};
 
 const App = () => {
-  const [{ u, p, d, s }, setq] = useQueryParams({
+  const [{ u, p, d, s, customplan }, setq] = useQueryParams({
     u: StringParam,
     p: StringParam,
     d: DateParam,
     s: NumberParam,
+    customplan: StringParam,
   });
   const [selectedUnits, setSelectedUnits] = useState<Units>(
     u === "mi" || u === "km" ? u : getLocaleUnits(),
@@ -46,10 +68,56 @@ const App = () => {
       ? d
       : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20),
   );
+  const [planMode, setPlanMode] = useState<PlanMode>(customplan ? "byop" : "select");
+  const [byopError, setByopError] = useState<string | null>(null);
+  const [byopLoading, setByopLoading] = useState<boolean>(false);
+  const [byopYaml, setByopYaml] = useState<string | null>(null);
+
+  const onPlanModeChange = async (mode: PlanMode) => {
+    setPlanMode(mode);
+    if (mode === "byop") {
+      setRacePlan(undefined);
+      setUndoHistory([]);
+      setByopError(null);
+      setByopYaml(null);
+      setq({ p: undefined, customplan: undefined });
+    } else if (mode === "select") {
+      setByopYaml(null);
+      if (!isPlanRemoved(selectedPlan)) {
+        const rp = build(await repo.fetch(selectedPlan), planEndDate, weekStartsOn);
+        setRacePlan(rp);
+        setUndoHistory([rp]);
+        setq({ ...getParams(selectedUnits, selectedPlan, planEndDate, weekStartsOn), customplan: undefined });
+      }
+    }
+  };
 
   useMountEffect(() => {
-    initialLoad(selectedPlan, planEndDate, selectedUnits, weekStartsOn);
+    if (customplan) {
+      const yaml = decodeYaml(customplan);
+      if (yaml) {
+        loadCustomPlan(yaml);
+      } else {
+        setByopError("Failed to decode custom plan from URL");
+      }
+    } else {
+      initialLoad(selectedPlan, planEndDate, selectedUnits, weekStartsOn);
+    }
   });
+
+  const loadCustomPlan = async (yaml: string) => {
+    setByopLoading(true);
+    const result = await parseYamlContent(yaml);
+    if (result.success && result.plan) {
+      const rp = build(result.plan, planEndDate, weekStartsOn);
+      setRacePlan(rp);
+      setUndoHistory([rp]);
+      setByopYaml(yaml);
+    } else {
+      setByopError(result.error || "Failed to load custom plan");
+    }
+    setByopLoading(false);
+  };
 
   const [, forceUpdate] = React.useReducer((x) => x + 1, 0);
   React.useEffect(() => {
@@ -71,6 +139,22 @@ const App = () => {
       d: date,
       s: weekStartsOn,
     };
+  };
+
+  const onByopFileLoad = async (content: string) => {
+    setByopLoading(true);
+    setByopError(null);
+    const result = await parseYamlContent(content);
+    if (result.success && result.plan) {
+      const rp = build(result.plan, planEndDate, weekStartsOn);
+      setRacePlan(rp);
+      setUndoHistory([rp]);
+      setByopYaml(content);
+      setq({ p: undefined, customplan: encodeYaml(content) });
+    } else {
+      setByopError(result.error || "Failed to load plan");
+    }
+    setByopLoading(false);
   };
 
   const initialLoad = async (
@@ -117,11 +201,20 @@ const App = () => {
   };
 
   const onWeekStartsOnChanged = async (v: WeekStartsOn) => {
-    const racePlan = build(await repo.fetch(selectedPlan), planEndDate, v);
     setWeekStartsOn(v);
-    setRacePlan(racePlan);
-    setUndoHistory([racePlan]);
-    setq(getParams(selectedUnits, selectedPlan, planEndDate, v));
+    if (planMode === "byop" && byopYaml) {
+      const result = await parseYamlContent(byopYaml);
+      if (result.success && result.plan) {
+        const rp = build(result.plan, planEndDate, v);
+        setRacePlan(rp);
+        setUndoHistory([rp]);
+      }
+    } else {
+      const rp = build(await repo.fetch(selectedPlan), planEndDate, v);
+      setRacePlan(rp);
+      setUndoHistory([rp]);
+      setq(getParams(selectedUnits, selectedPlan, planEndDate, v));
+    }
   };
 
   function swapDates(d1: Date, d2: Date): void {
@@ -174,8 +267,14 @@ const App = () => {
         dateChangeHandler={onSelectedEndDateChange}
         selectedPlanChangeHandler={onSelectedPlanChange}
         weekStartsOn={weekStartsOn}
+        planMode={planMode}
+        onPlanModeChange={onPlanModeChange}
+        onByopFileLoad={onByopFileLoad}
+        byopError={byopError}
+        byopLoading={byopLoading}
+        byopPlanLoaded={planMode === "byop" && racePlan !== undefined}
       />
-      {!isPlanRemoved(selectedPlan) && (
+      {(planMode === "byop" ? racePlan : !isPlanRemoved(selectedPlan)) && (
         <>
           <div className="second-toolbar">
             <div className="units">
@@ -203,7 +302,7 @@ const App = () => {
         </>
       )}
       <div className="main-ui">
-        {isPlanRemoved(selectedPlan) ? (
+        {planMode === "select" && isPlanRemoved(selectedPlan) ? (
           <div className="plan-removed-message">
             <h2>THIS PLAN HAS BEEN REMOVED</h2>
             <p>Human Kinetics, publisher of the book this plan comes from, has requested the removal of this plan.</p>
