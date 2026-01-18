@@ -1,3 +1,4 @@
+schemaVersion: 1
 id: c25k_rbp
 name: Runner's Blueprint Couch to 5K
 description: Popular 8 week "Couch to 5K" plan from Runner's Blueprint.

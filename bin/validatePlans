@@ -5,6 +5,6 @@ FILES=./public/plans/yaml/*.yaml
 for f in $FILES
 do
   echo "Validating plan $f ..."
-  ajv -s ./public/schema/plan-schema.json -d $f
+  ajv -s ./public/schema/plan-schema-v1.json -d $f
 done
 

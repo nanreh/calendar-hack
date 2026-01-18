@@ -21,6 +21,7 @@ interface RawWeek {
 }
 
 interface RawPlan {
+  schemaVersion?: number;
   id: string;
   name: string;
   description: string;
@@ -30,18 +31,19 @@ interface RawPlan {
   schedule: RawWeek[];
 }
 
-let schemaCache: object | null = null;
+const schemaCache: Map<number, object> = new Map();
 
-async function fetchSchema(): Promise<object> {
-  if (schemaCache) {
-    return schemaCache;
+async function fetchSchema(version: number): Promise<object> {
+  if (schemaCache.has(version)) {
+    return schemaCache.get(version)!;
   }
-  const response = await fetch("/hacks/calendarhack/schema/plan-schema.json");
+  const response = await fetch(`/hacks/calendarhack/schema/plan-schema-v${version}.json`);
   if (!response.ok) {
-    throw new Error("Failed to load schema");
+    throw new Error(`Failed to load schema v${version}`);
   }
-  schemaCache = await response.json();
-  return schemaCache!;
+  const schema = await response.json();
+  schemaCache.set(version, schema);
+  return schema;
 }
 
 function normalizeDistance(distance: number | number[] | undefined): number[] {
@@ -103,10 +105,13 @@ export async function parseYamlContent(content: string): Promise<YamlLoadResult>
       return { success: false, error: "YAML content is not a valid plan object" };
     }
 
+    // Determine schema version (default to 1 if not specified)
+    const schemaVersion = rawPlan.schemaVersion ?? 1;
+
     // Fetch and validate against schema
     let schema: object;
     try {
-      schema = await fetchSchema();
+      schema = await fetchSchema(schemaVersion);
     } catch {
       // If schema can't be loaded, skip validation
       console.warn("Could not load schema, skipping validation");
