@@ -1,7 +1,6 @@
 import { build, swap, swapDow } from "./planbuilder";
 import { TrainingPlan, PlannedWorkout, Tags } from "types/app";
 import { WeekStartsOnValues } from "./datecalc";
-import { format } from "date-fns";
 
 function createWorkout(title: string, distance: number[] = []): PlannedWorkout {
   return {

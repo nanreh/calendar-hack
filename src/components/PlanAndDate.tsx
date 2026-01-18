@@ -48,7 +48,7 @@ const PlanAndDate = ({
           byopPlanLoaded={byopPlanLoaded}
         />
       </div>
-{planMode === "select" && (
+{(planMode === "select" || byopPlanLoaded) && (
         <div className="plan-and-date-row">
           <h3>ending on</h3>
           <DateControl

@@ -181,11 +181,20 @@ const App = () => {
   };
 
   const onSelectedEndDateChange = async (date: Date) => {
-    const racePlan = build(await repo.fetch(selectedPlan), date, weekStartsOn);
     setPlanEndDate(date);
-    setRacePlan(racePlan);
-    setUndoHistory([racePlan]);
-    setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn));
+    if (planMode === "byop" && byopYaml) {
+      const result = await parseYamlContent(byopYaml);
+      if (result.success && result.plan) {
+        const rp = build(result.plan, date, weekStartsOn);
+        setRacePlan(rp);
+        setUndoHistory([rp]);
+      }
+    } else {
+      const racePlan = build(await repo.fetch(selectedPlan), date, weekStartsOn);
+      setRacePlan(racePlan);
+      setUndoHistory([racePlan]);
+      setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn));
+    }
   };
 
   const onSelectedUnitsChanged = (u: Units) => {
