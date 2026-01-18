@@ -16,17 +16,18 @@ export function getWeekDistance(week: Week<DayDetails>, units: Units): number[] 
 
   for (const day of week.days) {
     const e = day.event;
-    if (!e || !e.dist) continue;
+    if (!e || !e.dist || e.dist.length === 0) continue;
 
-    if (typeof e.dist === "number") {
-      const dist = units === "mi" ? e.dist : miToKm(e.dist);
+    if (e.dist.length === 1) {
+      const dist = units === e.sourceUnits ? e.dist[0] :
+        (e.sourceUnits === "mi" ? miToKm(e.dist[0]) : kmToMiles(e.dist[0]));
       min += dist;
       max += dist;
-    } else if (Array.isArray(e.dist) && e.dist.length === 2) {
+    } else if (e.dist.length === 2) {
       let [lo, hi] = e.dist;
-      if (units === "km") {
-        lo = miToKm(lo);
-        hi = miToKm(hi);
+      if (units !== e.sourceUnits) {
+        lo = e.sourceUnits === "mi" ? miToKm(lo) : kmToMiles(lo);
+        hi = e.sourceUnits === "mi" ? miToKm(hi) : kmToMiles(hi);
       }
       min += lo;
       max += hi;

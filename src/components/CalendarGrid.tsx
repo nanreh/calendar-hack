@@ -6,6 +6,7 @@ import { DayOfWeekHeader } from "./DayOfWeekHeader";
 import { format } from "date-fns";
 import { getDaysHeader, WeekStartsOn } from "../ch/datecalc";
 import { Units, dayOfWeek, Week, DayDetails } from "types/app";
+import { getWeekDistance } from "../ch/rendering";
 
 interface Props {
   racePlan: RacePlan;
@@ -60,6 +61,28 @@ function findMaxDistance(weeks: Week<DayDetails>[]): number[] {
   return hasRanges ? [maxOfMins, maxOfMaxes] : [maxOfMaxes];
 }
 
+function calcCumulativeDistances(weeks: Week<DayDetails>[], units: Units): number[][] {
+  const result: number[][] = [];
+  let runningMin = 0;
+  let runningMax = 0;
+  let hasRange = false;
+
+  for (const week of weeks) {
+    const weekDist = getWeekDistance(week, units);
+    if (weekDist.length === 1) {
+      runningMin += weekDist[0];
+      runningMax += weekDist[0];
+    } else if (weekDist.length === 2) {
+      runningMin += weekDist[0];
+      runningMax += weekDist[1];
+      hasRange = true;
+    }
+    result.push(hasRange ? [runningMin, runningMax] : [runningMax]);
+  }
+
+  return result;
+}
+
 
 export const CalendarGrid = ({
   racePlan,
@@ -75,8 +98,9 @@ export const CalendarGrid = ({
     undefined,
   );
   const maxDistance = findMaxDistance(racePlan.dateGrid.weeks);
+  const cumulativeDistances = calcCumulativeDistances(racePlan.dateGrid.weeks, units);
 
-  function getWeek(w: Week<DayDetails>) {
+  function getWeek(w: Week<DayDetails>, cumulativeDistance: number[]) {
     const weekDist = calcWeeklyDistance(w);
 
     let isHighestMileage = false;
@@ -90,7 +114,7 @@ export const CalendarGrid = ({
           weekDist[1] === maxDistance[1];
       }
   }
-  
+
     return (
       <div className="week-grid" key={`wr:${w.weekNum}`}>
         <WeekSummary
@@ -102,6 +126,7 @@ export const CalendarGrid = ({
           isFirstWeek={w.weekNum === 0}
           isLastWeek={w.weekNum === racePlan.dateGrid.weekCount - 1}
           isHighestMileage={isHighestMileage}
+          cumulativeDistance={cumulativeDistance}
         />
         {w.days.map((d, _) => (
           <DayCell
@@ -138,7 +163,7 @@ export const CalendarGrid = ({
   return (
     <div className="calendar-grid">
       {getHeader()}
-      {racePlan.dateGrid.weeks.map((w, _) => getWeek(w))}
+      {racePlan.dateGrid.weeks.map((w, i) => getWeek(w, cumulativeDistances[i]))}
     </div>
   );
 };

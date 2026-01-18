@@ -478,6 +478,10 @@ svg.drag-handle {
     font-size: 80%;
     font-weight: 400;
   }
+  .week-distance {
+    font-size: 0.75em;
+    margin: 0.25em 0;
+  }
 }
 
 .week-start-picker {
