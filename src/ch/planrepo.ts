@@ -2,9 +2,10 @@ import fetch from "cross-fetch";
 import { Config } from "./config";
 import { plans } from "./planList";
 import { PlanSummary, TrainingPlan } from "types/app";
+import { parseYamlContent } from "./yamlService";
 
 function url(summary: PlanSummary) {
-  return Config.plansPath + summary[0] + ".json";
+  return Config.plansPath + summary[0] + ".yaml";
 }
 
 // A repository of training plans. Fetches plans on demand and caches them in memory.
@@ -45,22 +46,25 @@ class PlanRepo {
   }
 }
 
-// Fetch a T from a URL.
-async function fetchFromUrl<T>(url: string): Promise<T> {
+// Fetch a TrainingPlan from a YAML URL.
+async function fetchPlanFromUrl(url: string): Promise<TrainingPlan> {
   const res = await fetch(url);
   if (!res.ok) {
-    const error = await res.json();
-    return Promise.reject(error);
+    return Promise.reject(new Error(`Failed to fetch plan: ${res.status}`));
   }
-  let result = await res.json();
-  return result;
+  const yamlContent = await res.text();
+  const result = await parseYamlContent(yamlContent);
+  if (!result.success || !result.plan) {
+    return Promise.reject(new Error(result.error || "Failed to parse plan"));
+  }
+  return result.plan;
 }
 
-// Fetch a T from a URL, use the provided cache.
-async function fetchWithCache<T>(
+// Fetch a TrainingPlan from a URL, use the provided cache.
+async function fetchWithCache(
   url: string,
-  cache: Map<string, T>,
-): Promise<T> {
+  cache: Map<string, TrainingPlan>,
+): Promise<TrainingPlan> {
   // check in cache
   if (cache.has(url)) {
     let result = cache.get(url);
@@ -69,7 +73,7 @@ async function fetchWithCache<T>(
     }
     return result;
   }
-  const res: T = await fetchFromUrl(url);
+  const res = await fetchPlanFromUrl(url);
   // add to cache and resolve
   cache.set(url, res);
   return res;

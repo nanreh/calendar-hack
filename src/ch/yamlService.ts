@@ -36,7 +36,7 @@ async function fetchSchema(): Promise<object> {
   if (schemaCache) {
     return schemaCache;
   }
-  const response = await fetch("/schema/plan-schema.json");
+  const response = await fetch("/hacks/calendarhack/schema/plan-schema.json");
   if (!response.ok) {
     throw new Error("Failed to load schema");
   }

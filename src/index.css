@@ -267,6 +267,8 @@ svg.drag-handle {
   align-items: center;
   gap: 0.5em;
   margin: 1em 0 5px 0;
+  width: 100%;
+  min-width: 0;
   h3 {
     display: inline;
     margin: 0 0.4em;
@@ -280,6 +282,7 @@ svg.drag-handle {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  min-width: 0;
 }
 
 .calendar-grid {
@@ -560,12 +563,67 @@ svg.drag-handle {
   font-size: .7em;
 }
 
+/* About Burst */
+.burst-container {
+  height: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-burst {
+  display: inline-block;
+  text-decoration: none;
+  transform: rotate(-12deg);
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.1) rotate(10deg);
+  }
+  .burst-shape {
+    fill: var(--primary-color);
+    stroke: var(--secondary-color);
+    stroke-width: 1;
+    transition: fill 0.2s ease;
+  }
+  .burst-text {
+    fill: var(--text-color);
+    font-size: 21px;
+    font-weight: 900;
+    animation: burst-text-in 0.4s ease-out;
+  }
+  &:hover .burst-shape {
+    fill: var(--focus-color);
+  }
+}
+
+@keyframes burst-text-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-15deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
 /* Plan Finder */
 .plan-finder {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
+  width: 100%;
+  min-width: 0;
+  .select {
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 /* Segmented Control */
@@ -605,8 +663,9 @@ svg.drag-handle {
 }
 
 .segmented-control button.selected {
-  background-color: var(--primary-color);
+  background-color: var(--controls-bg-color);
   color: var(--text-color);
+  border: 3px solid var(--focus-color);
 }
 
 /* BYOP Form */
@@ -618,14 +677,39 @@ svg.drag-handle {
 }
 
 .byop-error {
-  color: #dc3545;
-  font-size: 0.9em;
-  font-weight: 500;
   text-align: center;
-  padding: 0.5em;
-  background-color: rgba(220, 53, 69, 0.1);
-  border-radius: 0.25em;
-  max-width: 300px;
+  width: 75%;
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+  background-color: var(--card-color);
+  border: 3px solid #dc3545;
+  color: #dc3545;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1em;
   word-break: break-word;
+}
+
+.byop-description {
+  text-align: center;
+  width: 75%;
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+  background-color: var(--card-color);
+  border: 3px solid var(--secondary-color);
+  color: var(--text-color);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1em;
+  h1 {
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin: 0 0 0.5em 0;
+  }
+  p {
+    margin: 0;
+  }
 }
 

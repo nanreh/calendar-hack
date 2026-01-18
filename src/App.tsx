@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { repo } from "./ch/planrepo";
 import { endOfWeek, addWeeks, isAfter } from "date-fns";
 import { RacePlan } from "./ch/dategrid";
@@ -25,25 +25,14 @@ import { Units, PlanSummary, dayOfWeek, PlanMode } from "types/app";
 import { getLocaleUnits } from "./ch/localize";
 import { isPlanRemoved } from "./ch/config";
 import { parseYamlContent } from "./ch/yamlService";
-import pako from "pako";
+import LZString from "lz-string";
 
 const encodeYaml = (yaml: string): string => {
-  const compressed = pako.deflate(yaml);
-  const binary = String.fromCharCode(...compressed);
-  return btoa(binary);
+  return LZString.compressToEncodedURIComponent(yaml);
 };
 
 const decodeYaml = (encoded: string): string | null => {
-  try {
-    const binary = atob(encoded);
-    const bytes = new Uint8Array(binary.length);
-    for (let i = 0; i < binary.length; i++) {
-      bytes[i] = binary.charCodeAt(i);
-    }
-    return pako.inflate(bytes, { to: "string" });
-  } catch {
-    return null;
-  }
+  return LZString.decompressFromEncodedURIComponent(encoded);
 };
 
 const App = () => {
@@ -72,6 +61,7 @@ const App = () => {
   const [byopError, setByopError] = useState<string | null>(null);
   const [byopLoading, setByopLoading] = useState<boolean>(false);
   const [byopYaml, setByopYaml] = useState<string | null>(null);
+  const initStarted = useRef(false);
 
   const onPlanModeChange = async (mode: PlanMode) => {
     setPlanMode(mode);
@@ -93,6 +83,9 @@ const App = () => {
   };
 
   useMountEffect(() => {
+    if (initStarted.current) return;
+    initStarted.current = true;
+
     if (customplan) {
       const yaml = decodeYaml(customplan);
       if (yaml) {
