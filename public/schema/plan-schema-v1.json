@@ -63,7 +63,6 @@
             "type": "object",
             "properties": {
                 "description": {"type": "string"},
-                "distance": {"type": "number"},
                 "workouts": {
                     "type": "array",
                     "items": {
@@ -92,24 +91,7 @@
                         "maxItems": 2
                       }
                     ]
-                  },
-                "tags": {
-                    "type": "array",
-                    "items": {
-                        "enum": [
-                            "Rest",
-                            "Easy Run",
-                            "Run",
-                            "Long Run",
-                            "Cross Train",
-                            "Race",
-                            "Speedwork",
-                            "Hills"
-                        ]
-                    },
-                    "minItems": 1,
-                    "uniqueItems": true
-                }
+                  }
             },
             "required": [
                 "title"

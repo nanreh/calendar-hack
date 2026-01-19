@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: sample
+name: 'Sample Plan'
+description: |-
+  This is a sample plan to demonstrate the file format.
+units: mi # The units used for distances in this plan. km is also acceptable
+source: https://defy.org/hacks/calendarhack/
+type: Half Marathon # valid values: Base, Multiple Distances, Marathon, Half Marathon, 5K, 10K 10K/10m, 50K, 100K, 100M
+schedule:
+- description: Week 1
+  workouts:
+  # There must be 7 workouts for each week
+  # A workout must have a title. This week starts with Weights on the first day of the week.
+  - title: Weights
+  # Workouts can have a distance. It will be interpreted in the units declared at the top of this file.
+  # The second workout for this week is a 5 mile run.
+  - title: '{5} run' # Surround distances in curly braces so they can be converted to other units.
+    distance: 5.0
+  # Third day of the week calls for a 2 mile run.
+  - title: '{2:3.2} run' # We can provide the converted value so we have full control over how the units conversion happens.
+    distance: 2.0
+  - title: Weights
+  - title: Rest
+  - title: Rest or cross train
+  - title: '{4} hills'
+    distance: 4.0
+- description: Week 2
+  workouts:
+  - title: Weights
+  - title: '{4:6.4} run'
+    distance: 4.0
+  - title: '{3:4.6} run'
+    distance: 3.0
+  - title: '{2:3.2} run'
+    distance: 2.0
+  - title: Rest
+  - title: Rest
+  - title: Half Marathon ({13.1:21.1})
+    distance: 13.1
