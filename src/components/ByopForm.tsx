@@ -37,11 +37,21 @@ const ByopForm = ({ onFileLoad, error, loading, planLoaded }: Props) => {
         <>
           <div className="byop-description">
             <h1>Bring Your Own Plan</h1>
-            <p>Plans are defined as YAML files. You can look at the <a href="/hacks/calendarhack/plans/yaml/">plans currently hosted here</a> to see what the format looks like (it's simple!). Make your own plan from scratch or modify an existing plan as you see fit.</p>
-            <br />
-            <p>Load your custom plan and you can view it in the calendar view before exporting it as an iCal or CSV file.</p>
-            <br />
-            <p>This works locally, your plan never leaves your browser. You can bookmark the result and come back to it later.</p>
+            <ol>
+              <li>Make your own plan file from scratch or modify an existing plan.</li>
+              <li>Load it here.</li>
+              <li>Fit it on the calendar as you like and then export it as an iCal or CSV file.</li>
+            </ol>
+            <p>
+            This works locally, your plan never leaves your browser. You can bookmark the result and come back to it later.
+            </p>
+            <h3>Plan File Format</h3>
+            <p>
+            Plans are defined as <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> files.
+            See the <a href="/hacks/calendarhack/plans/yaml/">plans currently hosted here</a> to understand what the format looks like (hint: it's pretty simple!).
+            Download the <a href="/hacks/calendarhack/sampleplan.yaml">sample plan</a> and check out the comments in it. Load it here to see how this works.
+            There's a <a href="/hacks/calendarhack/schema/plan-schema-v1.json">JSON schema</a> describing the format in detail.
+            </p>
           </div>
           <input
             ref={fileInputRef}

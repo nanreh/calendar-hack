@@ -12,21 +12,28 @@ schedule:
   # There must be 7 workouts for each week
   # A workout must have a title. This week starts with Weights on the first day of the week.
   - title: Weights
+    description: Leg Day!
   # Workouts can have a distance. It will be interpreted in the units declared at the top of this file.
   # The second workout for this week is a 5 mile run.
   - title: '{5} run' # Surround distances in curly braces so they can be converted to other units.
     distance: 5.0
+    description: Run at an easy pace
   # Third day of the week calls for a 2 mile run.
   - title: '{2:3.2} run' # We can provide the converted value so we have full control over how the units conversion happens.
     distance: 2.0
+    description: Short and sweet recovery run
   - title: Weights
+    description: Upper body weights
   - title: Rest
+    description: Don't you love rest days?
   - title: Rest or cross train
   - title: '{4} hills'
     distance: 4.0
+    description: Find a hilly neighborhood and run at a steady pace
 - description: Week 2
   workouts:
   - title: Weights
+    description: Leg Day!
   - title: '{4:6.4} run'
     distance: 4.0
   - title: '{3:4.6} run'
@@ -35,5 +42,7 @@ schedule:
     distance: 2.0
   - title: Rest
   - title: Rest
+    description: Two rest days in a row!
   - title: Half Marathon ({13.1:21.1})
     distance: 13.1
+    description: Run fast!
