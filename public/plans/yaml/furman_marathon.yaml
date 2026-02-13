@@ -1,0 +1,208 @@
+id: furman_marathon
+name: 'FIRST: Marathon Training Program'
+description: |-
+  FIRST (Furman Institute of Running and Scientific Training): "Marathon Training Program" from "Run Less, Run Faster" by Bill Pierce, Scott Murr and Ray Moss
+units: mi
+source: https://www.amazon.com/gp/product/0593232232/
+type: Marathon
+schedule:
+# Distance for 20 min warm-up estimated to 2mi, 10 min cool-down to 1mi, approx. pace at ~6:30min/km or ~10:30min/mi
+# Distance for recovery interval pace estimated at ~8:30min/km or ~13:40min/mi pace
+# Week 16
+- workouts:
+  - title: Cross-Train
+    description: |-
+      Aerobic cross-training is essential as part of the FIRST 3Plus2 Training Program and not optional.
+  - title: Track Repeats 3 × 1,600 m (400 m recovery)
+    description: |-
+      Track workouts begin with a 10–20-min warm-up and ends with a 10-min cool-down
+    distance: 5.3
+  - title: Cross-Train
+    description: |-
+      Aerobic cross-training is essential as part of the FIRST 3Plus2 Training Program and not optional.
+  - title: Tempo Run {2:3} easy; {2:3} at ST; {2:3} easy
+    distance: 6
+  - title: Off
+  - title: Long Run {13:21} at MP + {30 sec per:19 sec per}
+    distance: 13
+  - title: Cross-Train or Rest
+# Week 15
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 4 × 800 m (2 min recovery)
+    distance: 4.3
+  - title: Cross-Train
+  - title: Tempo Run {1:1.5} easy; {5:8} at MP; {1:1.5} easy
+    distance: 7
+  - title: Off
+  - title: Long Run {15:24} at MP + {45 sec per:28 sec per}
+    distance: 15
+  - title: Cross-Train or Rest
+# Week 14
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 1,200 m; 1,000 m; 800 m; 600 m; 400 m (200 m recovery)
+    distance: 4.8
+  - title: Cross-Train
+  - title: Tempo Run {1:1.5} easy; {5:8} at LT; {1:1.5} easy
+    distance: 7
+  - title: Off
+  - title: Long Run {17:27} at MP + {45 sec per:28 sec per}
+    distance: 17
+  - title: Cross-Train or Rest
+# Week 13
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 5 × 1,000 m (400 m recovery)
+    distance: 6.0
+  - title: Cross-Train
+  - title: Tempo Run {1:1.5} easy; {4:6.5} at MT; {1:1.5} easy
+    distance: 6
+  - title: Off
+  - title: Long Run {20:32} at MP + {60 sec per:37 sec per}
+    distance: 20
+  - title: Cross-Train or Rest
+# Week 12
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 3 × 1,600 m (400 m recovery)
+    distance: 5.3
+  - title: Cross-Train
+  - title: Tempo Run {2:3} easy; {3:5} at ST; {1:1.5} easy
+    distance: 6
+  - title: Off
+  - title: Long Run {18:28} at MP + {45 sec per:28 sec per}
+    distance: 18
+  - title: Cross-Train or Rest
+# Week 11
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 2 × 1,200 m (2 min recovery); 4 × 800 m (2 min recovery)
+    distance: 6.1
+  - title: Cross-Train
+  - title: Tempo Run {1:1.5} easy; {5:8} at MT; {1:1.5} easy
+    distance: 7
+  - title: Off
+  - title: Long Run {20:32} at MP + {45 sec per:28 sec per}
+    distance: 20
+  - title: Cross-Train or Rest
+# Week 10
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 6 × 800 m (90 sec recovery)
+    distance: 5.4
+  - title: Cross-Train
+  - title: Tempo Run {1:1.5} easy; {6:10} at LT; {1:1.5} easy
+    distance: 8
+  - title: Off
+  - title: Long Run {13:21} at MP + {15 sec per:9 sec per}
+    distance: 13
+  - title: Cross-Train or Rest
+  # Week 9
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 2 × (6 × 400 m) (90 sec recovery) (2 min 30 sec recovery between sets)
+    distance: 6.1
+  - title: Cross-Train
+  - title: Tempo Run {2:3} easy; {3:5} at ST; {1:1.5} easy
+    distance: 6
+  - title: Off
+  - title: Long Run {18:29} at MP + {30 sec per:19 sec per}
+    distance: 18
+  - title: Cross-Train or Rest
+  # Week 8
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 2 × 1,600 m (60 sec recovery); 2 × 800 m (60 sec recovery)
+    distance: 5.1
+  - title: Cross-Train
+  - title: Tempo Run {1:1.5} easy; {4:6.5} at MT; {1:1.5} easy
+    distance: 6
+  - title: Off
+  - title: Long Run {20:32} at MP + {30 sec per:19 sec per}
+    distance: 20
+  - title: Cross-Train or Rest
+  # Week 7
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 4 × 1,200 m (2 min recovery)
+    distance: 5.3
+  - title: Cross-Train
+  - title: Tempo Run {10:16} at MP
+    distance: 10
+  - title: Off
+  - title: Long Run {15:24} at MP + {20 sec per:12 sec per}
+    distance: 15
+  - title: Cross-Train or Rest
+  # Week 6
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 1,000 m; 2,000 m; 1,000 m; 1,000 m (400 m recovery)
+    distance: 5.7
+  - title: Cross-Train
+  - title: Tempo Run {1:1.5} easy; {5:8} at MP; {1:1.5} easy
+    distance: 7
+  - title: Off
+  - title: Long Run {20:32} at MP + {30 sec per:19 sec per}
+    distance: 20
+  - title: Cross-Train or Rest
+  # Week 5
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 3 × 1,600 m (400 m recovery)
+    distance: 5.3
+  - title: Cross-Train
+  - title: Tempo Run {10:16} at MP
+    distance: 10
+  - title: Off
+  - title: Long Run {15:24} at MP + {15 sec per:9 sec per}
+    distance: 15
+  - title: Cross-Train or Rest
+  # Week 4
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 10 × 400 m (400 m recovery)
+    distance: 6.6
+  - title: Cross-Train
+  - title: Tempo Run 10 min warmup; {8:13} at MP; 10 min cooldown
+    distance: 9.9
+  - title: Off
+  - title: Long Run {20:32} at MP + {15 sec per:9 sec per}
+    distance: 20
+  - title: Cross-Train or Rest
+  # Week 3
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 8 × 800 m (90 sec recovery)
+    distance: 6.6
+  - title: Cross-Train
+  - title: Tempo Run {1:1.5} easy; {5:8} at MT; {1:1.5} easy
+    distance: 7
+  - title: Off
+  - title: Long Run {13:21} at MP
+    distance: 13
+  - title: Cross-Train or Rest
+  # Week 2
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 5 × 1,000 m (400 m recovery)
+    distance: 6.0
+  - title: Cross-Train
+  - title: Tempo Run {2:3} easy; {3:5} at ST; {1:1.5} easy
+    distance: 6
+  - title: Off
+  - title: Long Run {10:16} at MP
+    distance: 10
+  - title: Cross-Train or Rest
+  # Week 1
+- workouts:
+  - title: Cross-Train
+  - title: Track Repeats 6 × 400 m (400 m recovery)
+    distance: 4.6
+  - title: Cross-Train
+  - title: Tempo Run 10 min warmup; {3:5} at MP; 10 min cooldown
+    distance: 4.9
+  - title: Off
+  - title: Cross-Train or Rest
+  - title: Marathon
+    distance: 42.195
