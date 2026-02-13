@@ -1,0 +1,234 @@
+{
+   "id": "higdon_nov_5k",
+   "name": "Hal Higdon: 5K Novice",
+   "description": "Hal Higdon: 5K Novice: \"This Novice 5K Training Plan is designed for beginning runners or for runners who want to take a low-mileage approach to their training. Set that race as your end date and use it as a focus of your training. Even if you do not have a goal 5K at the end of 8 weeks, Hal Higdon's 5K Novice program is a great way to begin your life as a runner.\" (more details at the link below)",
+   "units": "mi",
+   "source": "https://www.halhigdon.com/training-programs/5k-training/novice-5k/",
+   "type": "5K",
+   "schedule": [
+      {
+         "workouts": [
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{1.5:2.4} run",
+               "distance": 1.5
+            },
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{1.5:2.4} run",
+               "distance": 1.5
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{1.5:2.4} run",
+               "distance": 1.5
+            },
+            {
+               "title": "30 min Walk"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{1.75:2.8} run",
+               "distance": 1.75
+            },
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{1.5:2.4} run",
+               "distance": 1.75
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{1.75:2.8} run",
+               "distance": 1.75
+            },
+            {
+               "title": "35 min Walk"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{2:3.2} run",
+               "distance": 2
+            },
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{1.5:2.4} run",
+               "distance": 1.5
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{2:3.2} run",
+               "distance": 2
+            },
+            {
+               "title": "40 min Walk"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{2.25:3.6} run",
+               "distance": 2.25
+            },
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{1.5:2.4} run",
+               "distance": 1.5
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{2.25:3.6} run",
+               "distance": "2/25"
+            },
+            {
+               "title": "45 min Walk"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{2.5:4} run",
+               "distance": 2.5
+            },
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{2:3.2} run",
+               "distance": 2
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{2.5:4} run",
+               "distance": 2.5
+            },
+            {
+               "title": "50 min Walk"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{2.75:4.4} run",
+               "distance": 2.75
+            },
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{2:3.2} run",
+               "distance": 2
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{2.75:4.4} run",
+               "distance": 2.75
+            },
+            {
+               "title": "55 min Walk"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{2:3.2} run",
+               "distance": 2
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "60 min Walk"
+            }
+         ]
+      },
+      {
+         "workouts": [
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{3:4.8} run",
+               "distance": 3
+            },
+            {
+               "title": "Rest or Run/Walk"
+            },
+            {
+               "title": "{2:3.2} run",
+               "distance": 2
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "Rest"
+            },
+            {
+               "title": "5K Race ({3.1:5})",
+               "distance": 3.10685
+            }
+         ]
+      }
+   ]
+}

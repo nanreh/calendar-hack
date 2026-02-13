@@ -1,0 +1,99 @@
+id: higdon_nov_10k
+name: 'Hal Higdon: 10K Novice'
+description: "Hal Higdon: 10K Novice: \"This program has been designed for new
+  runners looking for a training program to prepare them for a 10K race. Or for
+  experienced runners, looking for an easy schedule involving a relatively low
+  level of weekly miles.\"
+  (more details at the link below)"
+units: mi
+source: https://www.halhigdon.com/training-programs/10k-training/novice-10k/
+type: 10K
+schedule:
+- workouts: # week 1
+  - title: Rest
+  - title: '{2.5:4} run'
+    distance: 2.5
+  - title: "30 min Cross"
+  - title: '{2:3.2} run'
+    distance: 2
+  - title: Rest
+  - title: "40 min Cross"
+  - title: '{3:4.8} run'
+    distance: 3
+- workouts: # week 2
+  - title: Rest
+  - title: '{2.5:4} run'
+    distance: 2.5
+  - title: "30 min Cross"
+  - title: '{2:3.2} run'
+    distance: 2
+  - title: Rest
+  - title: "40 min Cross"
+  - title: '{3.5:5.9} run'
+    distance: 3.5
+- workouts: # week 3
+  - title: Rest
+  - title: '{2.5:4} run'
+    distance: 2.5
+  - title: "35 min Cross"
+  - title: '{2:3.2} run'
+    distance: 2
+  - title: Rest
+  - title: "50 min Cross"
+  - title: '{4:6.4} run'
+    distance: 4
+- workouts: # week 4
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3
+  - title: "35 min Cross"
+  - title: '{2:3.2} run'
+    distance: 2
+  - title: Rest
+  - title: "50 min Cross"
+  - title: '{4:6.4} run'
+    distance: 4
+- workouts: # week 5
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3
+  - title: "40 min Cross"
+  - title: '{2:3.2} run'
+    distance: 2
+  - title: Rest
+  - title: "60 min Cross"
+  - title: '{4.5:7.3} run'
+    distance: 4.5
+- workouts: # week 6
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3
+  - title: "40 min Cross"
+  - title: '{2:3.2} run'
+    distance: 2
+  - title: Rest
+  - title: "60 min Cross"
+  - title: '{5:8.1} run'
+    distance: 5
+- workouts: # week 7
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3
+  - title: "45 min Cross"
+  - title: '{2:3.2} run'
+    distance: 2
+  - title: Rest
+  - title: "60 min Cross"
+  - title: '{5.5:8.9} run'
+    distance: 5.5
+- workouts: # week 8
+  - title: Rest
+  - title: '{3:4.8} run'
+    distance: 3
+  - title: "30 min Cross"
+  - title: '{2:3.2} run'
+    distance: 2
+  - title: Rest
+  - title: Rest
+  - title: '10K Race ({6.2:10})'
+    distance: 6.213
