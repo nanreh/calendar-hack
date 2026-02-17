@@ -7,6 +7,7 @@ interface Props {
   selectedPlan: PlanSummary;
   planChangeHandler: (p: PlanSummary) => void;
   onUploadCustomSelected: () => void;
+  isCustomUploadActive: boolean;
 }
 
 const UPLOAD_CUSTOM_VALUE = "__upload_custom__";
@@ -16,6 +17,7 @@ const PlanPicker = ({
   selectedPlan,
   planChangeHandler,
   onUploadCustomSelected,
+  isCustomUploadActive,
 }: Props) => {
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const value = event.target.value as string;
@@ -50,7 +52,7 @@ const PlanPicker = ({
   });
 
   return (
-    <select className="select" value={selectedPlan[1]} onChange={handleChange}>
+    <select className="select" value={isCustomUploadActive ? UPLOAD_CUSTOM_VALUE : selectedPlan[1]} onChange={handleChange}>
       {planOptions}
       <option value={UPLOAD_CUSTOM_VALUE}>(Custom) Upload Custom</option>
     </select>

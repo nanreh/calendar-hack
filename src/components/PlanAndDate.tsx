@@ -59,6 +59,7 @@ const PlanAndDate = ({
         selectedPlan={selectedPlan}
         planChangeHandler={selectedPlanChangeHandler}
         onUploadCustomSelected={onUploadCustomSelected}
+        isCustomUploadActive={showUploadButton}
       />
       {showUploadButton && (
         <>

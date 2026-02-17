@@ -115,7 +115,6 @@ const App = () => {
     setSelectedPlan(summary);
     setRacePlan(racePlan);
     setUndoHistory([racePlan]);
-    setShowUploadButton(false);
     setq(getParams(selectedUnits, summary, planEndDate, weekStartsOn));
   };
 
