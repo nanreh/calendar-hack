@@ -21,7 +21,7 @@ import { PlanDetailsCard } from "./components/PlanDetailsCard";
 import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
 import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
-import { Units, PlanSummary, dayOfWeek } from "types/app";
+import { Units, PlanSummary, TrainingPlan, dayOfWeek } from "types/app";
 import { getLocaleUnits } from "./ch/localize";
 import { isPlanRemoved } from "./ch/config";
 
@@ -46,6 +46,7 @@ const App = () => {
       ? d
       : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20),
   );
+  var [showUploadButton, setShowUploadButton] = useState(false);
 
   useMountEffect(() => {
     initialLoad(selectedPlan, planEndDate, selectedUnits, weekStartsOn);
@@ -91,6 +92,7 @@ const App = () => {
 
   const onSelectedPlanChange = async (plan: PlanSummary) => {
     setSelectedPlan(plan);
+    setShowUploadButton(false);
     if (isPlanRemoved(plan)) {
       setRacePlan(undefined);
       setUndoHistory([]);
@@ -101,6 +103,19 @@ const App = () => {
     setRacePlan(racePlan);
     setUndoHistory([racePlan]);
     setq(getParams(selectedUnits, plan, planEndDate, weekStartsOn));
+  };
+
+  const onUploadCustomSelected = () => {
+    setShowUploadButton(true);
+  };
+
+  const onCustomPlanLoaded = (plan: TrainingPlan) => {
+    const summary = repo.addCustomPlan(plan);
+    const racePlan = build(plan, planEndDate, weekStartsOn);
+    setSelectedPlan(summary);
+    setRacePlan(racePlan);
+    setUndoHistory([racePlan]);
+    setq(getParams(selectedUnits, summary, planEndDate, weekStartsOn));
   };
 
   const onSelectedEndDateChange = async (date: Date) => {
@@ -174,6 +189,9 @@ const App = () => {
         dateChangeHandler={onSelectedEndDateChange}
         selectedPlanChangeHandler={onSelectedPlanChange}
         weekStartsOn={weekStartsOn}
+        onUploadCustomSelected={onUploadCustomSelected}
+        onCustomPlanLoaded={onCustomPlanLoaded}
+        showUploadButton={showUploadButton}
       />
       {!isPlanRemoved(selectedPlan) && (
         <>
