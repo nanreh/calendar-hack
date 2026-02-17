@@ -43,6 +43,15 @@ class PlanRepo {
   async fetch(a: PlanSummary): Promise<TrainingPlan> {
     return await fetchWithCache(url(a), this._cache);
   }
+
+  addCustomPlan(plan: TrainingPlan): PlanSummary {
+    const summary: PlanSummary = [plan.id, plan.name, plan.type];
+    // Store under the same URL-based key that fetch() uses,
+    // so subsequent fetch() calls (e.g., on date change) find it in cache
+    this._cache.set(url(summary), plan);
+    this._byId[plan.id] = summary;
+    return summary;
+  }
 }
 
 // Fetch a T from a URL.
