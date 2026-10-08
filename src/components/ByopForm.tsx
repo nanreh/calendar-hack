@@ -103,7 +103,6 @@ const ByopForm = ({
             ) : (
               "Loaded from a file on this device"
             )}
-            {" · not provided by Calendar Hack"}
           </p>
           <div className="byop-actions">
             <button

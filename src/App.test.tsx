@@ -214,9 +214,6 @@ describe("App with a shared plan", function () {
       "href",
       "https://gist.github.com/someuser/a47c4688520b1cf0",
     );
-    expect(
-      screen.getByText(/not provided by Calendar Hack/),
-    ).toBeInTheDocument();
   });
 
   it("copies a link to the shared plan", async function () {
