@@ -6,6 +6,8 @@ description:
   of six days per week. This plan targets a mileage progression starting at 35 miles
   per week and goes up to 55 miles per week during peak mileage weeks. Additionally,
   long runs go up to 20 miles.
+  Race day is the Monday of the final week, so set the end date to the Sunday
+  after the race.
 units: mi
 type: Marathon
 schedule:
@@ -574,3 +576,12 @@ schedule:
       - title: Off Day
       - title: 2-3 mile Easy Run {3}
         distance: 3
+  - workouts:
+      - title: "Boston Marathon ({26.2:42.2})"
+        distance: 26.2
+      - title: ""
+      - title: ""
+      - title: ""
+      - title: ""
+      - title: ""
+      - title: ""
