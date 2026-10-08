@@ -54,37 +54,6 @@ const About = () => {
         </p>
         <p>The app knows about some training plans:</p>
         <ul>
-          <li style={{ textDecoration: "line-through" }}>
-            Several plans by Pete Pfitzinger and Scott Douglas from their
-            popular{" "}
-            <a
-              href="http://www.amazon.com/Advanced-Marathoning-Edition-Pete-Pfitzinger/dp/0736074600"
-              target="_blank"
-            >
-              Advanced Marathoning (3rd edition)
-            </a>{" "}
-            book
-          </li>
-          <li style={{ textDecoration: "line-through" }}>
-            Several plans by Pete Pfitzinger and Scott Douglas from their
-            popular{" "}
-            <a href="https://www.amazon.com/dp/1718237472" target="_blank">
-              Advanced Marathoning (4th edition)
-            </a>{" "}
-            book
-          </li>
-          <li style={{ textDecoration: "line-through" }}>
-            Several plans by Pete Pfitzinger and Philip Latter from their
-            popular{" "}
-            <a
-              href="https://www.amazon.com/Faster-Road-Racing-Half-Marathon/dp/1450470459"
-              target="_blank"
-            >
-              {" "}
-              Faster Road Racing: 5K to Half Marathon
-            </a>{" "}
-            book
-          </li>
           <li>
             Beginner and Advanced Marathon plans by Keith and Kevin Hanson from
             their popular{" "}
@@ -108,12 +77,10 @@ const About = () => {
           </li>
           <li>A few popular “Couch to 5K” plans for new runners</li>
         </ul>
-        <p style={{ fontWeight: "bold" }}>
-          UPDATE 2026/01/12 Human Kinetics, publisher of Advanced Marathoning
-          and Faster Road Racing has requested the removal of their plans. This
-          makes me sad, I love these books and I know you do too. It's
-          disappointing. But if they don't want to be here then they shouldn't
-          be. But no point in dwelling on it. Go for a run.
+        <p>
+          Note: plans from Advanced Marathoning and Faster Road Racing were
+          removed in January 2026 at the request of their publisher, Human
+          Kinetics.
         </p>
         <p>
           I’ve read these books and have trained with programs from them in the
