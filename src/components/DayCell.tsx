@@ -3,7 +3,7 @@ import { ItemTypes } from "../ch/ItemTypes";
 import { WorkoutCard } from "./WorkoutCard";
 import { BlankCard } from "./BlankCard";
 import { Overlay } from "./Overlay";
-import { DayDetails, Units } from "types/app";
+import type { DayDetails, Units } from "types/app";
 
 interface Props {
   dayDetails: DayDetails | undefined;

@@ -1,4 +1,4 @@
-import { RacePlan } from "../ch/dategrid";
+import type { RacePlan } from "../ch/dategrid";
 
 interface Props {
   racePlan: RacePlan | undefined;

@@ -18,8 +18,9 @@ import {
   isSaturday,
   isSunday,
 } from "date-fns";
-import { WeekStartsOn, WeekStartsOnValues } from "./datecalc";
-import {
+import type { WeekStartsOn } from "./datecalc";
+import { WeekStartsOnValues } from "./datecalc";
+import type {
   PlanDates,
   RaceType,
   DayDetails,

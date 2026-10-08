@@ -1,4 +1,4 @@
-import { PlanSummary } from "types/app";
+import type { PlanSummary } from "types/app";
 
 const AppConfig = {
   plansPath: "/hacks/calendarhack/plans/json/",

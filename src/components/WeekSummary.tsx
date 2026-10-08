@@ -2,8 +2,8 @@ import { renderDist, getWeekDistance } from "../ch/rendering";
 import StartIcon from "../svg/icons02/start.svg";
 import FinishIcon from "../svg/icons02/finish.svg";
 import HighMileageIcon from "../svg/highMileage.svg";
-import { RacePlan } from "../ch/dategrid";
-import { Week, DayDetails, Units } from "types/app";
+import type { RacePlan } from "../ch/dategrid";
+import type { Week, DayDetails, Units } from "types/app";
 
 interface Props {
   desc: string;

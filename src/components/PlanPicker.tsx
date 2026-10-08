@@ -1,5 +1,5 @@
 import React from "react";
-import { PlanSummary } from "types/app";
+import type { PlanSummary } from "types/app";
 import { REMOVED_PLANS } from "../ch/config";
 
 interface Props {

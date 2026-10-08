@@ -1,4 +1,4 @@
-import { Units } from "types/app";
+import type { Units } from "types/app";
 
 const formatter = new Intl.DateTimeFormat(navigator.language);
 

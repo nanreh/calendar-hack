@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { repo } from "./ch/planrepo";
 import { endOfWeek, addWeeks, isAfter } from "date-fns";
-import { RacePlan } from "./ch/dategrid";
+import type { RacePlan } from "./ch/dategrid";
 import { build, swap, swapDow } from "./ch/planbuilder";
 import { CalendarGrid } from "./components/CalendarGrid";
 import { toIcal } from "./ch/icalservice";
@@ -18,10 +18,11 @@ import {
   NumberParam,
 } from "use-query-params";
 import { PlanDetailsCard } from "./components/PlanDetailsCard";
-import { WeekStartsOn, WeekStartsOnValues } from "./ch/datecalc";
+import type { WeekStartsOn } from "./ch/datecalc";
+import { WeekStartsOnValues } from "./ch/datecalc";
 import WeekStartsOnPicker from "./components/WeekStartsOnPicker";
 import { useMountEffect } from "./ch/hooks";
-import { Units, PlanSummary, dayOfWeek } from "types/app";
+import type { Units, PlanSummary, dayOfWeek } from "types/app";
 import { getLocaleUnits } from "./ch/localize";
 import { isPlanRemoved } from "./ch/config";
 
@@ -104,6 +105,11 @@ const App = () => {
   };
 
   const onSelectedEndDateChange = async (date: Date) => {
+    if (isPlanRemoved(selectedPlan)) {
+      setPlanEndDate(date);
+      setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn));
+      return;
+    }
     const racePlan = build(await repo.fetch(selectedPlan), date, weekStartsOn);
     setPlanEndDate(date);
     setRacePlan(racePlan);
