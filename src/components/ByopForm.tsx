@@ -1,14 +1,29 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 interface Props {
   onFileLoad: (content: string) => void;
+  onLinkLoad: (link: string) => void;
   error: string | null;
   loading: boolean;
   planLoaded: boolean;
 }
 
-const ByopForm = ({ onFileLoad, error, loading, planLoaded }: Props) => {
+const ByopForm = ({
+  onFileLoad,
+  onLinkLoad,
+  error,
+  loading,
+  planLoaded,
+}: Props) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [link, setLink] = useState("");
+
+  const handleLinkSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (link.trim() !== "") {
+      onLinkLoad(link);
+    }
+  };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -70,21 +85,54 @@ const ByopForm = ({ onFileLoad, error, loading, planLoaded }: Props) => {
               describing the format in detail.
             </p>
           </div>
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept=".yaml,.yml"
-            onChange={handleFileChange}
-            style={{ display: "none" }}
-          />
-          <button
-            type="button"
-            className="app-button"
-            onClick={handleUploadClick}
-            disabled={loading}
-          >
-            {loading ? "Loading..." : "Load Plan File"}
-          </button>
+          <div className="byop-load">
+            <form className="byop-load-option" onSubmit={handleLinkSubmit}>
+              <label htmlFor="byop-link">From a link</label>
+              <div className="byop-link-row">
+                <input
+                  id="byop-link"
+                  className="text-input"
+                  type="text"
+                  inputMode="url"
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  placeholder="https://gist.github.com/you/…"
+                  value={link}
+                  onChange={(e) => setLink(e.target.value)}
+                  disabled={loading}
+                />
+                <button
+                  type="submit"
+                  className="app-button"
+                  disabled={loading || link.trim() === ""}
+                >
+                  {loading ? "Loading..." : "Load"}
+                </button>
+              </div>
+              <p className="byop-hint">Works with GitHub Gist links.</p>
+            </form>
+            <div className="byop-load-option">
+              <span className="byop-load-label">
+                From a file on this device
+              </span>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".yaml,.yml"
+                onChange={handleFileChange}
+                style={{ display: "none" }}
+              />
+              <button
+                type="button"
+                className="app-button"
+                onClick={handleUploadClick}
+                disabled={loading}
+              >
+                Load Plan File
+              </button>
+            </div>
+          </div>
         </>
       )}
       {error && <div className="byop-error">{error}</div>}

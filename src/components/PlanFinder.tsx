@@ -11,6 +11,7 @@ interface Props {
   planChangeHandler: (p: PlanSummary) => void;
   // BYOP mode props
   onByopFileLoad: (content: string) => void;
+  onByopLinkLoad: (link: string) => void;
   byopError: string | null;
   byopLoading: boolean;
   byopPlanLoaded: boolean;
@@ -23,6 +24,7 @@ const PlanFinder = ({
   selectedPlan,
   planChangeHandler,
   onByopFileLoad,
+  onByopLinkLoad,
   byopError,
   byopLoading,
   byopPlanLoaded,
@@ -52,6 +54,7 @@ const PlanFinder = ({
       ) : (
         <ByopForm
           onFileLoad={onByopFileLoad}
+          onLinkLoad={onByopLinkLoad}
           error={byopError}
           loading={byopLoading}
           planLoaded={byopPlanLoaded}

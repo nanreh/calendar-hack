@@ -14,6 +14,7 @@ interface Props {
   planMode: PlanMode;
   onPlanModeChange: (mode: PlanMode) => void;
   onByopFileLoad: (content: string) => void;
+  onByopLinkLoad: (link: string) => void;
   byopError: string | null;
   byopLoading: boolean;
   byopPlanLoaded: boolean;
@@ -29,6 +30,7 @@ const PlanAndDate = ({
   planMode,
   onPlanModeChange,
   onByopFileLoad,
+  onByopLinkLoad,
   byopError,
   byopLoading,
   byopPlanLoaded,
@@ -43,6 +45,7 @@ const PlanAndDate = ({
           selectedPlan={selectedPlan}
           planChangeHandler={selectedPlanChangeHandler}
           onByopFileLoad={onByopFileLoad}
+          onByopLinkLoad={onByopLinkLoad}
           byopError={byopError}
           byopLoading={byopLoading}
           byopPlanLoaded={byopPlanLoaded}

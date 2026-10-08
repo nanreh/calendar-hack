@@ -20,7 +20,6 @@
     "dnd-core": "^16.0.1",
     "history": "5.3.0",
     "ics": "3.12.1",
-    "lz-string": "^1.5.0",
     "moo": "0.5.3",
     "rdndmb-html5-to-touch": "^9.0.0",
     "react": "^19.3.0",
