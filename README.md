@@ -12,14 +12,14 @@ Feel free to create a GitHub issue if you want to call something out.
 
 ## Running Locally
 
-Calendar Hack is a React application built with Vite. You need Node.js 24.9 or later and yarn.
+Calendar Hack is a React application built with Vite. You need Node.js 24.9 or later, which includes npm.
 
 ```
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
-The other standard scripts exist also: `yarn test`, `yarn lint`, `yarn build`, etc.
+The other standard scripts exist also: `npm test`, `npm run lint`, `npm run build`, etc.
 
 ## Plans
 Training plans are represented as YAML files that are easy to create and edit. They can be found in [plans/yaml](public/plans/yaml/).
@@ -27,7 +27,7 @@ Training plans are represented as YAML files that are easy to create and edit. T
 Plans can be validated against a JSON schema ([public/schema/plan-schema.json](public/schema/plan-schema.json)) as follows:
 
 ```
-yarn validatePlans
+npm run validatePlans
 ```
 
 This also runs in CI on every pull request.
@@ -41,7 +41,7 @@ A simple program then converts the YAML plans to JSON for the application to con
 python3 -m venv my_env
 source ./my_env/bin/activate
 pip install pyyaml
-yarn convertPlans
+npm run convertPlans
 ```
 
 Commit the generated JSON files in [plans/json](public/plans/json/) along with your YAML changes. A new plan also needs an entry in [src/ch/planList.ts](src/ch/planList.ts) to show up in the app.
