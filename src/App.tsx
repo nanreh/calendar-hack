@@ -47,10 +47,6 @@ const App = () => {
       : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20),
   );
 
-  useMountEffect(() => {
-    initialLoad(selectedPlan, planEndDate, selectedUnits, weekStartsOn);
-  });
-
   const [, forceUpdate] = React.useReducer((x) => x + 1, 0);
   React.useEffect(() => {
     // listen for changes to the URL and force the app to re-render
@@ -88,6 +84,10 @@ const App = () => {
     setUndoHistory([...undoHistory, racePlan]);
     setq(getParams(units, plan, endDate, weekStartsOn));
   };
+
+  useMountEffect(() => {
+    initialLoad(selectedPlan, planEndDate, selectedUnits, weekStartsOn);
+  });
 
   const onSelectedPlanChange = async (plan: PlanSummary) => {
     setSelectedPlan(plan);

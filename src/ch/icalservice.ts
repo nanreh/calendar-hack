@@ -11,16 +11,14 @@ export function toDate(d: Date): [number, number, number] {
 
 export function toIcal(plan: RacePlan, units: Units): string | undefined {
   const events = new Array<EventAttributes>();
-  let weekDesc = null;
   const weeks = plan.dateGrid.weeks;
   for (let i = 0; i < weeks.length; i++) {
     const currWeek = weeks[i];
     const distance = getWeekDistance(currWeek, units);
-    if (i === weeks.length - 1) {
-      weekDesc = "Final Training Week!";
-    } else {
-      weekDesc = `Training Week ${1 + i}`;
-    }
+    let weekDesc =
+      i === weeks.length - 1
+        ? "Final Training Week!"
+        : `Training Week ${1 + i}`;
     if (distance[0] > 0) {
       weekDesc += " Distance: " + renderDist(distance, units, units);
     }
