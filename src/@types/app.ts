@@ -54,13 +54,7 @@ export interface TrainingPlan {
 }
 
 export type Tags =
-  | "Rest"
-  | "Run"
-  | "Cross Train"
-  | "Hills"
-  | "Speedwork"
-  | "Long Run"
-  | "Race";
+  "Rest" | "Run" | "Cross Train" | "Hills" | "Speedwork" | "Long Run" | "Race";
 
 export interface DayDetails {
   title: string;

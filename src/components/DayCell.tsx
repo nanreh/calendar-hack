@@ -22,7 +22,6 @@ export const DayCell = ({
   selected,
   hovering,
 }: Props) => {
-
   function canSwap(droppedDate: Date) {
     return dayDetails !== undefined && date !== droppedDate;
   }

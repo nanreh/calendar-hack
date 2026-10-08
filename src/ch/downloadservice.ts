@@ -1,4 +1,3 @@
-
 /**
  * Download calendar using the saveAs function from filesave.js
  * @param  {string} filename Filename

@@ -1,26 +1,26 @@
 :root {
   --app-bg-color: #677c96;
-  --focus-color: #FF6FDF;
-  --primary-color: #B391D2;
-  --secondary-color: #C2C5EB;
+  --focus-color: #ff6fdf;
+  --primary-color: #b391d2;
+  --secondary-color: #c2c5eb;
   --text-color: #424242;
-  --card-color: #E3F7F8;
+  --card-color: #e3f7f8;
   --link-color: var(--primary-color);
   --disabled-fg-color: #fff;
   --disabled-bg-color: #dddddd;
   --elt-border: 1px solid rgba(0, 0, 0, 0.125);
   --controls-fg-color: var(--text-color);
-  --controls-bg-color: #E3F7F8;
+  --controls-bg-color: #e3f7f8;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    color: var(--text-color);
-    background-color: var(--app-bg-color);
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: var(--text-color);
+  background-color: var(--app-bg-color);
 }
 
 a {
@@ -32,20 +32,48 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin-bottom: 1rem;
   font-weight: 500;
   line-height: 1.2;
   color: var(--card-color);
 }
 
-h1, .h1 { font-size: 2.5rem }
-h2, .h2 { font-size: 2rem }
-h3, .h3 { font-size: 1.75rem }
-h4, .h4 { font-size: 1.5rem }
-h5, .h5 { font-size: 1.25rem }
-h6, .h6 { font-size: 1rem }
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+h2,
+.h2 {
+  font-size: 2rem;
+}
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+h6,
+.h6 {
+  font-size: 1rem;
+}
 
 .select {
   display: inline;
@@ -71,16 +99,24 @@ h6, .h6 { font-size: 1rem }
 }
 
 @media (min-width: 576px) {
-  .app { max-width: 540px; }
+  .app {
+    max-width: 540px;
+  }
 }
 @media (min-width: 768px) {
-  .app { max-width: 720px; }
+  .app {
+    max-width: 720px;
+  }
 }
 @media (min-width: 992px) {
-  .app { max-width: 960px; }
+  .app {
+    max-width: 960px;
+  }
 }
 @media (min-width: 1200px) {
-  .app { max-width: 1140px; }
+  .app {
+    max-width: 1140px;
+  }
 }
 
 a:link {
@@ -97,7 +133,7 @@ a:active {
 }
 
 .about-container {
-  background-color: var(--card-color); 
+  background-color: var(--card-color);
   border: 3px solid var(--secondary-color);
   border-radius: 5px;
   padding: 1.5em 1em 1em 1em;
@@ -108,14 +144,14 @@ a:active {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
   p {
     margin-top: 0;
-    margin-bottom: 1rem;  
+    margin-bottom: 1rem;
   }
-  h3{
-    margin-top: .2em;
+  h3 {
+    margin-top: 0.2em;
     font-weight: 700;
     color: var(--text-color);
   }
@@ -250,9 +286,11 @@ svg.drag-handle {
    See the following link for an example (and tool) to convert hex values to a corresponding CSS filter:
    https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element
    */
-  filter: invert(74%) sepia(15%) saturate(1566%) hue-rotate(214deg) brightness(83%) contrast(98%);
+  filter: invert(74%) sepia(15%) saturate(1566%) hue-rotate(214deg)
+    brightness(83%) contrast(98%);
   &:hover {
-    filter: invert(72%) sepia(29%) saturate(5023%) hue-rotate(283deg) brightness(101%) contrast(108%);
+    filter: invert(72%) sepia(29%) saturate(5023%) hue-rotate(283deg)
+      brightness(101%) contrast(108%);
   }
   cursor: grab;
 }
@@ -316,7 +354,7 @@ svg.drag-handle {
   }
   h1 {
     display: inline;
-    margin: 0 .4em;
+    margin: 0 0.4em;
   }
 }
 
@@ -353,7 +391,7 @@ svg.drag-handle {
 .tool-button a.active {
   pointer-events: None;
   & > svg {
-    fill: var(--disabled-bg-color)
+    fill: var(--disabled-bg-color);
   }
 }
 
@@ -506,9 +544,9 @@ svg.drag-handle {
   @media (max-width: 992px) {
     width: 90%;
   }
-  background-color: var(--card-color); 
+  background-color: var(--card-color);
   border: 3px solid var(--secondary-color);
-  color:  var(--text-color);
+  color: var(--text-color);
   font-weight: 700;
   border-radius: 0.5rem;
   padding: 1em;
@@ -555,5 +593,5 @@ svg.drag-handle {
 }
 
 .footer {
-  font-size: .7em;
+  font-size: 0.7em;
 }

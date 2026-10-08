@@ -27,11 +27,11 @@ function renderDesc(
       <p>
         <span className="workout-title">{title}</span>
       </p>
-      {desc && 
+      {desc && (
         <p>
           <span className="workout-description">{desc}</span>
         </p>
-      }
+      )}
     </>
   );
 }
@@ -52,7 +52,10 @@ export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
   });
 
   return (
-    <div ref={preview} className={`workout-card ${isDragging ? "dragging" : ""}`}>
+    <div
+      ref={preview}
+      className={`workout-card ${isDragging ? "dragging" : ""}`}
+    >
       <Dateline $date={date} />
       <div className="workout-content">
         <div ref={drag}>

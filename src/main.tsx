@@ -15,16 +15,16 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <DndProvider options={HTML5toTouch}>
       <QueryParamProvider adapter={WindowHistoryAdapter}>
-          <div className="app">
-            <BrowserRouter basename="/hacks/calendarhack">
-              <Routes>
-                <Route path="/" element={<Index />} >
-                  <Route index path="/" element={<App />}/>
-                  <Route path="about" element={<About />}/>
-                </Route>
-              </Routes>
-            </BrowserRouter>
-          </div>
+        <div className="app">
+          <BrowserRouter basename="/hacks/calendarhack">
+            <Routes>
+              <Route path="/" element={<Index />}>
+                <Route index path="/" element={<App />} />
+                <Route path="about" element={<About />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </div>
       </QueryParamProvider>
     </DndProvider>
   </StrictMode>,
