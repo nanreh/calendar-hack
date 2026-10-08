@@ -27,12 +27,10 @@ Training plans are represented as YAML files that are easy to create and edit. T
 Plans can be validated against a JSON schema ([public/schema/plan-schema.json](public/schema/plan-schema.json)) as follows:
 
 ```
-# Install ajv
-npm install -g ajv-cli
-
-# Run the validator with yarn
-yarn run validatePlans
+yarn validatePlans
 ```
+
+This also runs in CI on every pull request.
 
 ## Converting new plans
 

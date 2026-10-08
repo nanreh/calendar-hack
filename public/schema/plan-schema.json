@@ -22,7 +22,7 @@
                 "Half Marathon",
                 "5K",
                 "10K",
-                "15k/10m",
+                "15K/10M",
                 "50K",
                 "100K",
                 "100M"
@@ -84,7 +84,7 @@
                       {
                         "type": "array",
                         "items": { "type": "number" },
-                        "minItems": 1,
+                        "minItems": 2,
                         "maxItems": 2
                       }
                     ]
