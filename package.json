@@ -29,8 +29,7 @@
     "react-dom": "^19.3.0",
     "react-icons": "5.7.0",
     "react-router-dom": "^7.1.1",
-    "use-query-params": "2.2.2",
-    "weekstart": "2.0.0"
+    "use-query-params": "2.2.2"
   },
   "devDependencies": {
     "@babel/core": "^8.0.7",

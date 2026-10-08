@@ -104,6 +104,11 @@ const App = () => {
   };
 
   const onSelectedEndDateChange = async (date: Date) => {
+    if (isPlanRemoved(selectedPlan)) {
+      setPlanEndDate(date);
+      setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn));
+      return;
+    }
     const racePlan = build(await repo.fetch(selectedPlan), date, weekStartsOn);
     setPlanEndDate(date);
     setRacePlan(racePlan);

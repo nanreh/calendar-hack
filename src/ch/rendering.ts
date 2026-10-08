@@ -1,10 +1,6 @@
 import * as moo from "moo";
 import { Week, DayDetails, Units } from "types/app";
 
-export function kmToMiles(value: number): number {
-  return value * 0.62137;
-}
-
 export function miToKm(value: number): number {
   return value / 0.62137;
 }
