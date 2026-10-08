@@ -2,6 +2,7 @@ import { DateControl } from "./DateControl";
 import PlanFinder from "./PlanFinder";
 import type { PlanSummary, PlanMode } from "types/app";
 import type { WeekStartsOn } from "../ch/datecalc";
+import type { PlanSource } from "../ch/planSource";
 
 interface Props {
   availablePlans: PlanSummary[];
@@ -18,6 +19,8 @@ interface Props {
   byopError: string | null;
   byopLoading: boolean;
   byopPlanLoaded: boolean;
+  byopPlanName: string | undefined;
+  byopSource: PlanSource | null;
 }
 
 const PlanAndDate = ({
@@ -34,6 +37,8 @@ const PlanAndDate = ({
   byopError,
   byopLoading,
   byopPlanLoaded,
+  byopPlanName,
+  byopSource,
 }: Props) => {
   return (
     <div className="plan-and-date">
@@ -49,6 +54,8 @@ const PlanAndDate = ({
           byopError={byopError}
           byopLoading={byopLoading}
           byopPlanLoaded={byopPlanLoaded}
+          byopPlanName={byopPlanName}
+          byopSource={byopSource}
         />
       </div>
       {(planMode === "select" || byopPlanLoaded) && (

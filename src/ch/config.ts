@@ -1,7 +1,12 @@
 import type { PlanSummary } from "types/app";
 
+// Where the app is served from. It ends with a slash: the web server drops the query string when
+// it redirects the address without one, which would lose the plan from a shared link.
+const basePath = "/hacks/calendarhack/";
+
 const AppConfig = {
-  plansPath: "/hacks/calendarhack/plans/yaml/",
+  basePath,
+  plansPath: basePath + "plans/yaml/",
 };
 
 export const Config = AppConfig;

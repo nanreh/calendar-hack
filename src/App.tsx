@@ -177,7 +177,9 @@ const App = () => {
   const onByopLinkLoad = async (link: string) => {
     const source = parsePlanLink(link);
     if (!source) {
-      setByopError("Only GitHub Gist links are supported.");
+      setByopError(
+        "Only links from GitHub Gist, dpaste.com and Dropbox are supported.",
+      );
       return;
     }
     await loadByopSource(source);
@@ -328,6 +330,8 @@ const App = () => {
         byopError={byopError}
         byopLoading={byopLoading}
         byopPlanLoaded={planMode === "byop" && racePlan !== undefined}
+        byopPlanName={byopPlan?.name}
+        byopSource={byopSource}
       />
       {(planMode === "byop" ? racePlan : !isPlanRemoved(selectedPlan)) && (
         <>

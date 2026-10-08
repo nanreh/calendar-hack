@@ -718,10 +718,64 @@ svg.drag-handle {
   gap: 0.5em;
 }
 
+.byop-loaded {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 75%;
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+  background-color: var(--card-color);
+  border: 3px solid var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  padding: 1em;
+  text-align: center;
+}
+
+.byop-plan-name {
+  font-size: 1.4em;
+  font-weight: 900;
+  margin: 0;
+  color: var(--text-color);
+  overflow-wrap: anywhere;
+}
+
+.byop-source {
+  margin: 0;
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+.byop-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+.byop-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
 .byop-load {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    color: var(--text-color);
+    display: block;
+  }
   width: 75%;
   @media (max-width: 992px) {
     width: 90%;
@@ -819,5 +873,10 @@ svg.drag-handle {
   }
   p {
     margin: 0;
+  }
+  ul {
+    margin: 0.3em 0 0 0;
+    padding-left: 1.5em;
+    list-style: disc;
   }
 }

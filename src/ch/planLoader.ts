@@ -1,5 +1,5 @@
 import type { PlanSource } from "./planSource";
-import { planFetchUrl, planSourceLabel } from "./planSource";
+import { planFetchUrl, planSourceHost, planSourceLabel } from "./planSource";
 import type { YamlLoadResult } from "./yamlService";
 import { parseYamlContent } from "./yamlService";
 
@@ -21,7 +21,7 @@ export async function loadPlanFromSource(
   source: PlanSource,
 ): Promise<SharedPlanResult> {
   const where = planSourceLabel(source);
-  const host = where.split("/")[0];
+  const host = planSourceHost(source);
 
   let response: Response;
   try {
@@ -37,6 +37,11 @@ export async function loadPlanFromSource(
   if (response.status === 404) {
     return failure(
       `No plan was found at ${where}. It may have been deleted, or it may have expired or been made private.`,
+    );
+  }
+  if (response.status === 429) {
+    return failure(
+      `${host} is limiting requests right now. Wait a moment and try again.`,
     );
   }
   if (!response.ok) {

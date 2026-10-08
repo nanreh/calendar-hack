@@ -28,7 +28,11 @@ const AboutBurst = ({ size = 80, points = 30 }: Props) => {
   const path = pathPoints.join(" ") + " Z";
 
   return (
-    <NavLink to={targetPath} className="about-burst">
+    <NavLink
+      // keep the query so the plan is still there on the way back from the About page
+      to={{ pathname: targetPath, search: location.search }}
+      className="about-burst"
+    >
       <svg
         width={size}
         height={size}

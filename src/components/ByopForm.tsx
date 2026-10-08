@@ -1,22 +1,36 @@
 import { useRef, useState } from "react";
+import type { PlanSource } from "../ch/planSource";
+import { planPageUrl, planSourceShortLabel } from "../ch/planSource";
+import { Config } from "../ch/config";
 
 interface Props {
   onFileLoad: (content: string) => void;
   onLinkLoad: (link: string) => void;
+  onChangePlan: () => void;
   error: string | null;
   loading: boolean;
   planLoaded: boolean;
+  // details of the loaded plan
+  planName: string | undefined;
+  // where the loaded plan came from, null for a plan loaded from a file
+  source: PlanSource | null;
 }
 
 const ByopForm = ({
   onFileLoad,
   onLinkLoad,
+  onChangePlan,
   error,
   loading,
   planLoaded,
+  planName,
+  source,
 }: Props) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [link, setLink] = useState("");
+  const [copied, setCopied] = useState(false);
+  // shown for copying by hand when the browser will not let the page write to the clipboard
+  const [linkToCopy, setLinkToCopy] = useState<string | null>(null);
 
   const handleLinkSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -46,32 +60,196 @@ const ByopForm = ({
     fileInputRef.current?.click();
   };
 
+  // The address bar's query already describes the plan and how it is laid out. The path is written
+  // out in full so the link works however this page was reached.
+  const handleShare = async () => {
+    const url =
+      window.location.origin + Config.basePath + window.location.search;
+    try {
+      await navigator.clipboard.writeText(url);
+      setLinkToCopy(null);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      setLinkToCopy(url);
+    }
+  };
+
+  const handleChangePlan = () => {
+    setLink("");
+    setCopied(false);
+    setLinkToCopy(null);
+    onChangePlan();
+  };
+
   return (
     <div className="byop-form">
-      {!planLoaded && (
+      {planLoaded ? (
+        <div className="byop-loaded">
+          <h2 className="byop-plan-name">{planName || "Your plan"}</h2>
+          <p className="byop-source">
+            {source ? (
+              <>
+                Loaded from{" "}
+                <a href={planPageUrl(source)} target="_blank" rel="noreferrer">
+                  {planSourceShortLabel(source)}
+                </a>
+              </>
+            ) : (
+              "Loaded from a file on this device"
+            )}
+            {" · not provided by Calendar Hack"}
+          </p>
+          <div className="byop-actions">
+            <button
+              type="button"
+              className="app-button"
+              onClick={handleShare}
+              disabled={!source}
+            >
+              {copied ? "Link copied" : "Share"}
+            </button>
+            <button
+              type="button"
+              className="app-button"
+              onClick={handleChangePlan}
+            >
+              Load a different plan
+            </button>
+          </div>
+          {!source && (
+            <p className="byop-hint">
+              To share this plan, put it on GitHub Gist, dpaste.com or Dropbox
+              and load it from its link.
+            </p>
+          )}
+          {linkToCopy && (
+            <div className="byop-copy">
+              <label htmlFor="byop-share-link">Copy this link to share:</label>
+              <input
+                id="byop-share-link"
+                className="text-input"
+                type="text"
+                readOnly
+                value={linkToCopy}
+                onFocus={(e) => e.target.select()}
+              />
+            </div>
+          )}
+        </div>
+      ) : (
         <>
-          <div className="byop-description">
+          <div className="byop-load">
             <h1>Bring Your Own Plan</h1>
+            <form className="byop-load-option" onSubmit={handleLinkSubmit}>
+              <label htmlFor="byop-link">From a link</label>
+              <div className="byop-link-row">
+                <input
+                  id="byop-link"
+                  className="text-input"
+                  type="text"
+                  inputMode="url"
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  placeholder="Paste a link to your plan"
+                  value={link}
+                  onChange={(e) => setLink(e.target.value)}
+                  disabled={loading}
+                />
+                <button
+                  type="submit"
+                  className="app-button"
+                  disabled={loading || link.trim() === ""}
+                >
+                  {loading ? "Loading..." : "Load"}
+                </button>
+              </div>
+              <p className="byop-hint">
+                Works with links from GitHub Gist, dpaste.com and Dropbox.
+              </p>
+            </form>
+            <div className="byop-load-option">
+              <span className="byop-load-label">
+                From a file on this device
+              </span>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".yaml,.yml"
+                onChange={handleFileChange}
+                style={{ display: "none" }}
+                aria-label="Plan file"
+              />
+              <button
+                type="button"
+                className="app-button"
+                onClick={handleUploadClick}
+                disabled={loading}
+              >
+                Load Plan File
+              </button>
+            </div>
+          </div>
+          {error && <div className="byop-error">{error}</div>}
+          <div className="byop-description">
+            <h3>How it works</h3>
             <ol>
               <li>
-                Make your own plan file from scratch or modify an existing plan.
+                Write your own plan file from scratch, or adapt an existing
+                plan.
               </li>
-              <li>Load it here.</li>
+              <li>Load it here from a link or from a file.</li>
               <li>
-                Fit it on the calendar as you like and then export it as an iCal
-                or CSV file.
+                Fit it on the calendar as you like, then export it as an iCal or
+                CSV file.
               </li>
             </ol>
+            <h3>Sharing a plan</h3>
             <p>
-              This works locally, your plan never leaves your browser. You can
-              bookmark the result and come back to it later.
+              Put your plan file somewhere this page can read it, load it here
+              from its link, then press Share to copy a link that opens the plan
+              for anyone. Three places work:
             </p>
-            <h3>Plan File Format</h3>
+            <ul>
+              <li>
+                <a href="https://dpaste.com/" target="_blank" rel="noreferrer">
+                  dpaste.com
+                </a>
+                : no account needed. Pastes expire, after a year at most.
+              </li>
+              <li>
+                <a
+                  href="https://gist.github.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Gist
+                </a>
+                : needs a free GitHub account. You can edit the plan later and
+                the link stays the same.
+              </li>
+              <li>
+                Dropbox: use "Copy link" on the file, with access set to anyone
+                with the link.
+              </li>
+            </ul>
+            <h3>Privacy</h3>
+            <p>
+              A file you load stays on your device. A plan loaded from a link is
+              fetched by your browser directly from the site that hosts it.
+              Either way, your plan is never sent to defy.org.
+            </p>
+            <h3>Plan file format</h3>
             <p>
               Plans are defined as{" "}
               <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> files. See
               the{" "}
-              <a href="/hacks/calendarhack/plans/yaml/">
+              <a
+                href="https://github.com/nanreh/calendar-hack/tree/main/public/plans/yaml"
+                target="_blank"
+                rel="noreferrer"
+              >
                 plans currently hosted here
               </a>{" "}
               to understand what the format looks like (hint: it's pretty
@@ -85,57 +263,9 @@ const ByopForm = ({
               describing the format in detail.
             </p>
           </div>
-          <div className="byop-load">
-            <form className="byop-load-option" onSubmit={handleLinkSubmit}>
-              <label htmlFor="byop-link">From a link</label>
-              <div className="byop-link-row">
-                <input
-                  id="byop-link"
-                  className="text-input"
-                  type="text"
-                  inputMode="url"
-                  autoCapitalize="none"
-                  autoCorrect="off"
-                  spellCheck={false}
-                  placeholder="https://gist.github.com/you/…"
-                  value={link}
-                  onChange={(e) => setLink(e.target.value)}
-                  disabled={loading}
-                />
-                <button
-                  type="submit"
-                  className="app-button"
-                  disabled={loading || link.trim() === ""}
-                >
-                  {loading ? "Loading..." : "Load"}
-                </button>
-              </div>
-              <p className="byop-hint">Works with GitHub Gist links.</p>
-            </form>
-            <div className="byop-load-option">
-              <span className="byop-load-label">
-                From a file on this device
-              </span>
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept=".yaml,.yml"
-                onChange={handleFileChange}
-                style={{ display: "none" }}
-              />
-              <button
-                type="button"
-                className="app-button"
-                onClick={handleUploadClick}
-                disabled={loading}
-              >
-                Load Plan File
-              </button>
-            </div>
-          </div>
         </>
       )}
-      {error && <div className="byop-error">{error}</div>}
+      {planLoaded && error && <div className="byop-error">{error}</div>}
     </div>
   );
 };

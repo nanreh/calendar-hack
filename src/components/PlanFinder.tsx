@@ -1,4 +1,5 @@
 import type { PlanSummary, PlanMode } from "types/app";
+import type { PlanSource } from "../ch/planSource";
 import PlanPicker from "./PlanPicker";
 import ByopForm from "./ByopForm";
 
@@ -15,6 +16,8 @@ interface Props {
   byopError: string | null;
   byopLoading: boolean;
   byopPlanLoaded: boolean;
+  byopPlanName: string | undefined;
+  byopSource: PlanSource | null;
 }
 
 const PlanFinder = ({
@@ -28,6 +31,8 @@ const PlanFinder = ({
   byopError,
   byopLoading,
   byopPlanLoaded,
+  byopPlanName,
+  byopSource,
 }: Props) => {
   return (
     <div className="plan-finder">
@@ -58,6 +63,9 @@ const PlanFinder = ({
           error={byopError}
           loading={byopLoading}
           planLoaded={byopPlanLoaded}
+          planName={byopPlanName}
+          source={byopSource}
+          onChangePlan={() => onModeChange("byop")}
         />
       )}
     </div>

@@ -39,6 +39,47 @@ describe("Plan loader", function () {
     expect(result.yaml).toBe(samplePlan);
   });
 
+  it("should load a plan from dpaste", async function () {
+    const fetchMock = hostText(samplePlan);
+
+    const result = await loadPlanFromSource({
+      service: "dpaste",
+      id: "5SZ6H9EHL",
+    });
+
+    expect(fetchMock).toHaveBeenCalledWith("https://dpaste.com/5SZ6H9EHL.txt");
+    expect(result.success).toBe(true);
+  });
+
+  it("should load a plan from Dropbox", async function () {
+    const fetchMock = hostText(samplePlan);
+
+    const result = await loadPlanFromSource({
+      service: "dropbox",
+      id: "u4mi1qn2w5i2el2p7uru3",
+      file: "plan.yaml",
+      key: "6sos6735olvkgxq1yplucgjhu",
+    });
+
+    expect(fetchMock).toHaveBeenCalledWith(
+      "https://dl.dropboxusercontent.com/scl/fi/u4mi1qn2w5i2el2p7uru3/plan.yaml?rlkey=6sos6735olvkgxq1yplucgjhu",
+    );
+    expect(result.success).toBe(true);
+  });
+
+  it("should explain when the host is limiting requests", async function () {
+    hostPlan({ ok: false, status: 429 });
+
+    const result = await loadPlanFromSource({
+      service: "dpaste",
+      id: "5SZ6H9EHL",
+    });
+
+    expect(result.error).toBe(
+      "dpaste.com is limiting requests right now. Wait a moment and try again.",
+    );
+  });
+
   it("should explain when the plan no longer exists", async function () {
     hostPlan({ ok: false, status: 404 });
 
