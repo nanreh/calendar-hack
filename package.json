@@ -12,6 +12,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "cov": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
     "validatePlans": "bash bin/validatePlans",
+    "convertPlans": "python3 bin/convertPlans",
     "pretty": "prettier src --write"
   },
   "dependencies": {
