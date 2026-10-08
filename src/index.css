@@ -811,6 +811,32 @@ svg.drag-handle {
   font-size: 0.9em;
 }
 
+.byop-samples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2em 0.8em;
+}
+
+/* a button that reads as a link */
+.link-button {
+  font: inherit;
+  font-weight: 700;
+  color: var(--link-color);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  &:hover {
+    color: var(--focus-color);
+  }
+  &:disabled {
+    color: var(--disabled-bg-color);
+    cursor: not-allowed;
+  }
+}
+
 .text-input {
   flex: 1;
   min-width: 0;

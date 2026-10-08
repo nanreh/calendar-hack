@@ -8,6 +8,7 @@ import {
   planSourceShortLabel,
   toPlanRef,
 } from "./planSource";
+import { SAMPLE_PLAN_LINKS } from "./config";
 
 const GIST_ID = "a47c4688520b1cf0e4e6a1f0f5f5c3d2";
 
@@ -107,6 +108,15 @@ describe("Plan source", function () {
     ])("should reject %s", function (_name, link) {
       expect(parsePlanLink(link)).toBeUndefined();
     });
+  });
+
+  describe("sample links", function () {
+    it.each(SAMPLE_PLAN_LINKS)(
+      "should understand the $label sample link",
+      function ({ link }) {
+        expect(parsePlanLink(link)).toBeDefined();
+      },
+    );
   });
 
   describe("plan refs", function () {

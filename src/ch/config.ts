@@ -67,3 +67,18 @@ export const REMOVED_PLANS = new Set([
 ]);
 
 export const isPlanRemoved = (plan: PlanSummary) => REMOVED_PLANS.has(plan[0]);
+
+// Copies of public/sampleplan.yaml hosted on each service a plan can be shared from,
+// offered in the form as one-click examples.
+export const SAMPLE_PLAN_LINKS: { label: string; link: string }[] = [
+  {
+    label: "GitHub Gist",
+    link: "https://gist.github.com/nanreh/0fddae86708d3a509dd68729116e746e",
+  },
+  // this paste expires in October 2027
+  { label: "dpaste.com", link: "https://dpaste.com/5SZ6H9EHL" },
+  {
+    label: "Dropbox",
+    link: "https://www.dropbox.com/scl/fi/mt32a5vkf40vcvf75yza8/sampleplan.yaml?rlkey=yv5uxir3tvglh4o7wos2pwaey&dl=0",
+  },
+];

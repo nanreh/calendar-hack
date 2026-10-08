@@ -156,6 +156,31 @@ describe("App with a shared plan", function () {
     );
   });
 
+  it("fills in a sample link and waits for Load to be pressed", async function () {
+    const fetchMock = hostSharedPlan({ text: async () => samplePlan });
+    renderApp("?u=mi&d=2030-06-02&s=1");
+    await userEvent.click(await screen.findByRole("button", { name: "BYOP" }));
+    fetchMock.mockClear();
+
+    await userEvent.click(screen.getByRole("button", { name: "dpaste.com" }));
+
+    expect(screen.getByLabelText("From a link")).toHaveValue(
+      "https://dpaste.com/5SZ6H9EHL",
+    );
+    expect(fetchMock).not.toHaveBeenCalled();
+    expect(new URLSearchParams(window.location.search).has("plan")).toBe(false);
+
+    await userEvent.click(screen.getByRole("button", { name: "Load" }));
+
+    expect(
+      await screen.findByText("Half Marathon (13.1 mi)"),
+    ).toBeInTheDocument();
+    expect(fetchMock).toHaveBeenCalledWith("https://dpaste.com/5SZ6H9EHL.txt");
+    expect(new URLSearchParams(window.location.search).get("plan")).toBe(
+      "dpaste:5SZ6H9EHL",
+    );
+  });
+
   it("refuses a link to an unsupported site", async function () {
     const fetchMock = hostSharedPlan({ text: async () => samplePlan });
     renderApp("?u=mi");

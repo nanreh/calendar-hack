@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import type { PlanSource } from "../ch/planSource";
 import { planPageUrl, planSourceShortLabel } from "../ch/planSource";
-import { Config } from "../ch/config";
+import { Config, SAMPLE_PLAN_LINKS } from "../ch/config";
 
 interface Props {
   onFileLoad: (content: string) => void;
@@ -37,6 +37,11 @@ const ByopForm = ({
     if (link.trim() !== "") {
       onLinkLoad(link);
     }
+  };
+
+  // A sample only fills in the field. Loading it is left to the Load button.
+  const handleSampleClick = (sampleLink: string) => {
+    setLink(sampleLink);
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -168,6 +173,20 @@ const ByopForm = ({
               <p className="byop-hint">
                 Works with links from GitHub Gist, dpaste.com and Dropbox.
               </p>
+              <p className="byop-hint byop-samples">
+                Fill in a sample link from:
+                {SAMPLE_PLAN_LINKS.map((sample) => (
+                  <button
+                    key={sample.label}
+                    type="button"
+                    className="link-button"
+                    onClick={() => handleSampleClick(sample.link)}
+                    disabled={loading}
+                  >
+                    {sample.label}
+                  </button>
+                ))}
+              </p>
             </form>
             <div className="byop-load-option">
               <span className="byop-load-label">
@@ -230,15 +249,21 @@ const ByopForm = ({
                 the link stays the same.
               </li>
               <li>
-                Dropbox: use "Copy link" on the file, with access set to anyone
-                with the link.
+                <a
+                  href="https://www.dropbox.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Dropbox
+                </a>
+                : use "Copy link" on the file, with access set to anyone with
+                the link.
               </li>
             </ul>
             <h3>Privacy</h3>
             <p>
               A file you load stays on your device. A plan loaded from a link is
               fetched by your browser directly from the site that hosts it.
-              Either way, your plan is never sent to defy.org.
             </p>
             <h3>Plan file format</h3>
             <p>

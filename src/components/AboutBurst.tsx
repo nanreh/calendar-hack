@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 interface Props {
   size?: number;
@@ -7,6 +7,7 @@ interface Props {
 
 const AboutBurst = ({ size = 80, points = 30 }: Props) => {
   const location = useLocation();
+  const navigate = useNavigate();
   const isAboutPage = location.pathname === "/about";
   const targetPath = isAboutPage ? "/" : "/about";
   const displayText = isAboutPage ? "Plan" : "About";
@@ -29,9 +30,14 @@ const AboutBurst = ({ size = 80, points = 30 }: Props) => {
 
   return (
     <NavLink
-      // keep the query so the plan is still there on the way back from the About page
-      to={{ pathname: targetPath, search: location.search }}
+      to={targetPath}
       className="about-burst"
+      onClick={(e) => {
+        // Take the query along, so the address still describes the calendar on the way back.
+        // It is read from the address bar because the calendar updates it without telling the router.
+        e.preventDefault();
+        navigate({ pathname: targetPath, search: window.location.search });
+      }}
     >
       <svg
         width={size}
