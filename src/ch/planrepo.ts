@@ -1,5 +1,5 @@
 import fetch from "cross-fetch";
-import { Config } from "./config";
+import { Config, isPlanRemoved } from "./config";
 import { plans } from "./planList";
 import { PlanSummary, TrainingPlan } from "types/app";
 
@@ -14,7 +14,11 @@ class PlanRepo {
   private readonly _byId: { [id: string]: PlanSummary };
 
   constructor(available: PlanSummary[]) {
-    this._available = available;
+    // removed plans go to the bottom of the list, order is otherwise preserved
+    this._available = [
+      ...available.filter((p) => !isPlanRemoved(p)),
+      ...available.filter((p) => isPlanRemoved(p)),
+    ];
 
     var initialMap: { [id: string]: PlanSummary } = {};
     this._byId = plans.reduce(function (m, p) {
