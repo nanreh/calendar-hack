@@ -26,7 +26,7 @@ export const WeekCard = ({
 }: Props) => {
   return (
     <div>
-      {week.days.map((d, _) => (
+      {week.days.map((d) => (
         <div>
           <DayCell
             key={key(d.date)}

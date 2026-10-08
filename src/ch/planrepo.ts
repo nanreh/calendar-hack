@@ -20,7 +20,7 @@ class PlanRepo {
       ...available.filter((p) => isPlanRemoved(p)),
     ];
 
-    var initialMap: { [id: string]: PlanSummary } = {};
+    const initialMap: { [id: string]: PlanSummary } = {};
     this._byId = plans.reduce(function (m, p) {
       m[p[0]] = p;
       return m;
@@ -58,7 +58,7 @@ async function fetchFromUrl<T>(url: string): Promise<T> {
     const error = await res.json();
     return Promise.reject(error);
   }
-  let result = await res.json();
+  const result = await res.json();
   return result;
 }
 
@@ -69,7 +69,7 @@ async function fetchWithCache<T>(
 ): Promise<T> {
   // check in cache
   if (cache.has(url)) {
-    let result = cache.get(url);
+    const result = cache.get(url);
     if (!result) {
       throw Error("Assertion error: cached object not found");
     }

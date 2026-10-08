@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "../ch/rendering";
 import { Dateline } from "./Dateline";
-import { useDrag, DragSourceMonitor } from "react-dnd";
+import { useDrag } from "react-dnd";
 import { ItemTypes } from "../ch/ItemTypes";
 import { DragHandle } from "./DragHandle";
 import { DayDetails, Units } from "types/app";
@@ -18,10 +18,11 @@ function renderDesc(
   from: Units,
   to: Units,
 ): React.ReactElement {
-  let [title, desc] = render(dayDetails, from, to);
+  const [title, rawDesc] = render(dayDetails, from, to);
   // Only render the description if it differs from the title
   // In the ical file we always render both and we automatically render the description using the same text as title if description is empty
-  desc = title.replace(/\s/g, "") === desc.replace(/\s/g, "") ? "" : desc;
+  const desc =
+    title.replace(/\s/g, "") === rawDesc.replace(/\s/g, "") ? "" : rawDesc;
   return (
     <>
       <p>
@@ -44,11 +45,6 @@ export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
       isDragging: monitor.isDragging(),
       canDrag: dayDetails !== undefined,
     }),
-    end: (item: { date: Date } | undefined, monitor: DragSourceMonitor) => {
-      const dropResult = monitor.getDropResult();
-      if (item && dropResult) {
-      }
-    },
   });
 
   return (

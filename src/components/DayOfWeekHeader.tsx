@@ -37,7 +37,7 @@ export const DayOfWeekHeader = ({
   });
 
   //const [{ isOver, canDrop }, drop] = useDrop({
-  const [{}, drop] = useDrop({
+  const [, drop] = useDrop({
     accept: ItemTypes.DOW,
     canDrop: (item: { id: dayOfWeek }) => canSwapWith(item.id),
     drop: (item: { id: dayOfWeek }) => {

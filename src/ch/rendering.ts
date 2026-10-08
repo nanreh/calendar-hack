@@ -61,7 +61,7 @@ export function renderDist(value: number[], from: Units, to: Units): string {
   return "";
 }
 
-let dlexer = moo.compile({
+const dlexer = moo.compile({
   with_range: [
     {
       match: /{\d+-\d+:\d+-\d+}/,
@@ -134,7 +134,7 @@ export function render(
   to: Units,
 ): [string, string] {
   // [title, desc]
-  let title = handle_conversions(input.title, from, to);
-  let desc = handle_conversions(input.desc, from, to);
+  const title = handle_conversions(input.title, from, to);
+  const desc = handle_conversions(input.desc, from, to);
   return [title, desc];
 }

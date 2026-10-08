@@ -12,7 +12,7 @@ export function toDate(d: Date): [number, number, number] {
 export function toIcal(plan: RacePlan, units: Units): string | undefined {
   const events = new Array<EventAttributes>();
   let weekDesc = null;
-  let weeks = plan.dateGrid.weeks;
+  const weeks = plan.dateGrid.weeks;
   for (let i = 0; i < weeks.length; i++) {
     const currWeek = weeks[i];
     const distance = getWeekDistance(currWeek, units);
@@ -31,11 +31,15 @@ export function toIcal(plan: RacePlan, units: Units): string | undefined {
       end: toDate(addDays(currWeek.days[6].date, 1)), // end dates are non-inclusive in iCal
     });
 
-    for (var j = 0; j < currWeek.days.length; j++) {
+    for (let j = 0; j < currWeek.days.length; j++) {
       const currWorkout = currWeek.days[j];
       if (currWorkout.event) {
-        let [title, desc] = render(currWorkout.event, plan.sourceUnits, units);
-        desc = desc.replace(/(\r\n|\n|\r)/gm, "\n");
+        const [title, rawDesc] = render(
+          currWorkout.event,
+          plan.sourceUnits,
+          units,
+        );
+        let desc = rawDesc.replace(/(\r\n|\n|\r)/gm, "\n");
         // if desc is not set, use title
         if (desc.replace(/\s/g, "") === "") {
           desc = title;
@@ -49,7 +53,7 @@ export function toIcal(plan: RacePlan, units: Units): string | undefined {
       }
     }
   }
-  let res = createEvents(events);
+  const res = createEvents(events);
   if (res.error) {
     console.log("Error creating iCal events: " + res.error);
     return undefined;

@@ -102,7 +102,7 @@ export const CalendarGrid = ({
           isLastWeek={w.weekNum === racePlan.dateGrid.weekCount - 1}
           isHighestMileage={isHighestMileage}
         />
-        {w.days.map((d, _) => (
+        {w.days.map((d) => (
           <DayCell
             key={key(d.date)}
             date={d.date}
@@ -121,7 +121,7 @@ export const CalendarGrid = ({
     return (
       <div className="week-grid">
         <div key={"blank-left"} />
-        {getDaysHeader(weekStartsOn).map((dow, _) => (
+        {getDaysHeader(weekStartsOn).map((dow) => (
           <DayOfWeekHeader
             key={dow}
             dow={dow as dayOfWeek}
@@ -137,7 +137,7 @@ export const CalendarGrid = ({
   return (
     <div className="calendar-grid">
       {getHeader()}
-      {racePlan.dateGrid.weeks.map((w, _) => getWeek(w))}
+      {racePlan.dateGrid.weeks.map((w) => getWeek(w))}
     </div>
   );
 };
