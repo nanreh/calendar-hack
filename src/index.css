@@ -301,21 +301,26 @@ svg.drag-handle {
 
 .plan-and-date {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 0.5em;
   margin: 1em 0 5px 0;
-  @media (max-width: 992px) {
-    flex-direction: column;
-  }
-}
-
-.plan-and-date {
+  width: 100%;
+  min-width: 0;
   h3 {
     display: inline;
     margin: 0 0.4em;
     color: var(--controls-bg-color);
   }
+}
+
+.plan-and-date-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 0;
 }
 
 .calendar-grid {
@@ -511,6 +516,10 @@ svg.drag-handle {
     font-size: 80%;
     font-weight: 400;
   }
+  .week-distance {
+    font-size: 0.75em;
+    margin: 0.25em 0;
+  }
 }
 
 .week-start-picker {
@@ -594,4 +603,306 @@ svg.drag-handle {
 
 .footer {
   font-size: 0.7em;
+}
+
+/* About Burst */
+.burst-container {
+  height: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-burst {
+  display: inline-block;
+  text-decoration: none;
+  transform: rotate(-12deg);
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.1) rotate(10deg);
+  }
+  .burst-shape {
+    fill: var(--primary-color);
+    stroke: var(--secondary-color);
+    stroke-width: 1;
+    transition: fill 0.2s ease;
+  }
+  .burst-text {
+    fill: var(--text-color);
+    font-size: 21px;
+    font-weight: 900;
+    animation: burst-text-in 0.4s ease-out;
+  }
+  &:hover .burst-shape {
+    fill: var(--focus-color);
+  }
+}
+
+@keyframes burst-text-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-15deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Plan Finder */
+.plan-finder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+  min-width: 0;
+  .select {
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Segmented Control */
+.segmented-control {
+  display: flex;
+}
+
+.segmented-control button {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--text-color);
+  line-height: 1.3;
+  padding: 0.6em 0.8em 0.5em 0.8em;
+  border: 1px solid var(--primary-color);
+  background-color: var(--controls-bg-color);
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.segmented-control button:first-child {
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+.segmented-control button:last-child {
+  border-radius: 0 0.5em 0.5em 0;
+  border-left: none;
+}
+
+.segmented-control button:focus {
+  outline: none;
+}
+
+.segmented-control button:hover:not(.selected) {
+  border-color: var(--focus-color);
+}
+
+.segmented-control button.selected {
+  background-color: var(--controls-bg-color);
+  color: var(--text-color);
+  border: 3px solid var(--focus-color);
+}
+
+/* BYOP Form */
+.byop-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.byop-loaded {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 75%;
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+  background-color: var(--card-color);
+  border: 3px solid var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  padding: 1em;
+  text-align: center;
+}
+
+.byop-plan-name {
+  font-size: 1.4em;
+  font-weight: 900;
+  margin: 0;
+  color: var(--text-color);
+  overflow-wrap: anywhere;
+}
+
+.byop-source {
+  margin: 0;
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+.byop-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+.byop-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.byop-load {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    color: var(--text-color);
+    display: block;
+  }
+  width: 75%;
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+  background-color: var(--card-color);
+  border: 3px solid var(--secondary-color);
+  color: var(--text-color);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1em;
+}
+
+.byop-load-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4em;
+  label,
+  .byop-load-label {
+    font-weight: 900;
+  }
+}
+
+.byop-link-row {
+  display: flex;
+  gap: 0.4em;
+  width: 100%;
+}
+
+.byop-hint {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.byop-samples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2em 0.8em;
+}
+
+/* a button that reads as a link */
+.link-button {
+  font: inherit;
+  font-weight: 700;
+  color: var(--link-color);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  &:hover {
+    color: var(--focus-color);
+  }
+  &:disabled {
+    color: var(--disabled-bg-color);
+    cursor: not-allowed;
+  }
+}
+
+.text-input {
+  flex: 1;
+  min-width: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.3;
+  padding: 0.6em 0.8em 0.5em 0.8em;
+  border-radius: 0.5em;
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  &:focus {
+    outline: none;
+    border: 1px solid var(--focus-color);
+  }
+  &:disabled {
+    background: var(--disabled-bg-color);
+  }
+}
+
+.byop-error {
+  text-align: center;
+  width: 75%;
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+  background-color: var(--card-color);
+  border: 3px solid #dc3545;
+  color: #dc3545;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1em;
+  word-break: break-word;
+}
+
+.byop-description {
+  width: 75%;
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+  background-color: var(--card-color);
+  border: 3px solid var(--secondary-color);
+  color: var(--text-color);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1em;
+  h1,
+  h3 {
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 0 0 0.5em 0;
+  }
+  h3 {
+    font-size: 1.3em;
+    margin: 0.5em 0;
+  }
+  p {
+    margin: 0;
+  }
+  ul {
+    margin: 0.3em 0 0 0;
+    padding-left: 1.5em;
+    list-style: disc;
+  }
 }

@@ -2,6 +2,8 @@ export type PlanSummary = [string, string, RaceType];
 
 export type Units = "mi" | "km";
 
+export type PlanMode = "select" | "byop";
+
 export interface PlanDates {
   start: Date; // first day of first week we will render
   planStartDate: Date; // day the race plan will start
@@ -66,8 +68,8 @@ export type Tags =
   | "Long Run"
   | "Race";
 
-// A workout's distance in the plan's units: a single value or a [low, high] range.
-export type WorkoutDistance = number | [number, number];
+// A workout's distance in the plan's units: [] for none, [value], or a [low, high] range.
+export type WorkoutDistance = number[];
 
 export interface DayDetails {
   title: string;
