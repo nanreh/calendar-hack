@@ -55,23 +55,42 @@ const About = () => {
         <p>The app knows about some training plans:</p>
         <ul>
           <li>
-            Beginner and Advanced Marathon plans by Keith and Kevin Hanson from
-            their popular{" "}
-            <a
-              href="https://www.amazon.com/Hansons-Marathon-Method-Your-Fastest/dp/1937715485"
-              target="_blank"
-            >
-              Hansons Marathon Method
-            </a>{" "}
-            book
+            Ten marathon plans, from 40 to 120 miles per week, by John Davis
+            from his book{" "}
+            <a href="https://www.amazon.com/dp/B0FNRPHLRY" target="_blank">
+              Marathon Excellence for Everyone
+            </a>
           </li>
           <li>
-            Several plans by Hal Higdon from his popular{" "}
+            Several marathon and half marathon plans by Hal Higdon, author of
+            the popular{" "}
             <a
               href="http://www.amazon.com/Marathon-Ultimate-Training-Programs-Marathons/dp/1609612248"
               target="_blank"
             >
               Marathon: The Ultimate Training Guide
+            </a>{" "}
+            book
+          </li>
+          <li>
+            The four{" "}
+            <a
+              href="https://www.baa.org/races/boston-marathon/info-for-athletes/boston-marathon-training/"
+              target="_blank"
+            >
+              Boston Marathon training plans
+            </a>{" "}
+            from the Boston Athletic Association
+          </li>
+          <li>
+            Beginner and Advanced marathon and half marathon plans, and a Couch
+            Potato to 10K plan, by Keith and Kevin Hanson, authors of the
+            popular{" "}
+            <a
+              href="https://www.amazon.com/Hansons-Marathon-Method-Your-Fastest/dp/1937715485"
+              target="_blank"
+            >
+              Hansons Marathon Method
             </a>{" "}
             book
           </li>
