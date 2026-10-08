@@ -129,7 +129,7 @@ export const humanizeDuration = function (
   const minutes = Math.floor((totalSeconds - hours * 3600) / 60);
   const seconds = totalSeconds - hours * 3600 - minutes * 60;
 
-  let toRender: string[] = [];
+  const toRender: string[] = [];
   if (hours > 0 || opts.leadingZeroes) {
     toRender.push(
       opts.padHours ? hours.toFixed().padStart(2, "0") : hours.toFixed(),

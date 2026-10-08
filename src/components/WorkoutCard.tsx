@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "../ch/rendering";
 import { Dateline } from "./Dateline";
-import { useDrag, DragSourceMonitor } from "react-dnd";
+import { useDrag } from "react-dnd";
 import { ItemTypes } from "../ch/ItemTypes";
 import { DragHandle } from "./DragHandle";
 import { DayDetails, Units } from "types/app";
@@ -18,20 +18,21 @@ function renderDesc(
   from: Units,
   to: Units,
 ): React.ReactElement {
-  let [title, desc] = render(dayDetails, from, to);
+  const [title, rawDesc] = render(dayDetails, from, to);
   // Only render the description if it differs from the title
   // In the ical file we always render both and we automatically render the description using the same text as title if description is empty
-  desc = title.replace(/\s/g, "") === desc.replace(/\s/g, "") ? "" : desc;
+  const desc =
+    title.replace(/\s/g, "") === rawDesc.replace(/\s/g, "") ? "" : rawDesc;
   return (
     <>
       <p>
         <span className="workout-title">{title}</span>
       </p>
-      {desc && 
+      {desc && (
         <p>
           <span className="workout-description">{desc}</span>
         </p>
-      }
+      )}
     </>
   );
 }
@@ -44,18 +45,22 @@ export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
       isDragging: monitor.isDragging(),
       canDrag: dayDetails !== undefined,
     }),
-    end: (item: { date: Date } | undefined, monitor: DragSourceMonitor) => {
-      const dropResult = monitor.getDropResult();
-      if (item && dropResult) {
-      }
-    },
   });
 
   return (
-    <div ref={preview} className={`workout-card ${isDragging ? "dragging" : ""}`}>
+    <div
+      ref={(node) => {
+        preview(node);
+      }}
+      className={`workout-card ${isDragging ? "dragging" : ""}`}
+    >
       <Dateline $date={date} />
       <div className="workout-content">
-        <div ref={drag}>
+        <div
+          ref={(node) => {
+            drag(node);
+          }}
+        >
           <DragHandle viewBox="0 0 32 36" />
         </div>
         {renderDesc(dayDetails, dayDetails.sourceUnits, units)}

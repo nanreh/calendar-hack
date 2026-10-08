@@ -2,6 +2,6 @@
     "presets": [
       ["@babel/preset-env", { "targets": { "esmodules": true } }], // It's the name of the lib you installed
       ["@babel/preset-react", { "runtime": "automatic" }], // It's the name of the lib you installed
-      "@babel/preset-typescript" // It's the name of the lib you installed
+      ["@babel/preset-typescript", { "onlyRemoveTypeImports": false }] // Babel 8 only strips "import type" by default; the code here imports types with plain "import"
     ]
 }

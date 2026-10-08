@@ -1,5 +1,5 @@
 import fetch from "cross-fetch";
-import { Config } from "./config";
+import { Config, isPlanRemoved } from "./config";
 import { plans } from "./planList";
 import { PlanSummary, TrainingPlan } from "types/app";
 
@@ -14,9 +14,13 @@ class PlanRepo {
   private readonly _byId: { [id: string]: PlanSummary };
 
   constructor(available: PlanSummary[]) {
-    this._available = available;
+    // removed plans go to the bottom of the list, order is otherwise preserved
+    this._available = [
+      ...available.filter((p) => !isPlanRemoved(p)),
+      ...available.filter((p) => isPlanRemoved(p)),
+    ];
 
-    var initialMap: { [id: string]: PlanSummary } = {};
+    const initialMap: { [id: string]: PlanSummary } = {};
     this._byId = plans.reduce(function (m, p) {
       m[p[0]] = p;
       return m;
@@ -28,7 +32,9 @@ class PlanRepo {
   }
 
   find(planId: string): PlanSummary {
-    return this._byId[planId] ? this._byId[planId] : this._byId['higdon_int_mara1']; // arbitrary choice
+    return this._byId[planId]
+      ? this._byId[planId]
+      : this._byId["higdon_int_mara1"]; // arbitrary choice
   }
 
   get first(): PlanSummary {
@@ -52,7 +58,7 @@ async function fetchFromUrl<T>(url: string): Promise<T> {
     const error = await res.json();
     return Promise.reject(error);
   }
-  let result = await res.json();
+  const result = await res.json();
   return result;
 }
 
@@ -63,7 +69,7 @@ async function fetchWithCache<T>(
 ): Promise<T> {
   // check in cache
   if (cache.has(url)) {
-    let result = cache.get(url);
+    const result = cache.get(url);
     if (!result) {
       throw Error("Assertion error: cached object not found");
     }

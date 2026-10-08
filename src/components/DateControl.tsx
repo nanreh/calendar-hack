@@ -43,7 +43,7 @@ export class DateControl extends React.Component<Props> {
       <div className="date-picker-wrapper">
         <DatePicker
           selected={selectedDate}
-          onChange={onDateChanged}
+          onChange={(date: Date | null) => date && onDateChanged(date)}
           dateFormat="P"
           customInput={input}
           calendarStartDay={weekStartsOn}

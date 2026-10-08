@@ -35,21 +35,17 @@ const App = () => {
   const [selectedUnits, setSelectedUnits] = useState<Units>(
     u === "mi" || u === "km" ? u : getLocaleUnits(),
   );
-  var [selectedPlan, setSelectedPlan] = useState(repo.find(p || ""));
-  var [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
-  var [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
-  var [weekStartsOn, setWeekStartsOn] = useState<WeekStartsOn>(
+  const [selectedPlan, setSelectedPlan] = useState(repo.find(p || ""));
+  const [racePlan, setRacePlan] = useState<RacePlan | undefined>(undefined);
+  const [undoHistory, setUndoHistory] = useState([] as RacePlan[]);
+  const [weekStartsOn, setWeekStartsOn] = useState<WeekStartsOn>(
     s === 0 || s === 1 || s === 6 ? s : WeekStartsOnValues.Monday,
   );
-  var [planEndDate, setPlanEndDate] = useState(
+  const [planEndDate, setPlanEndDate] = useState(
     d && isAfter(d, new Date())
       ? d
       : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20),
   );
-
-  useMountEffect(() => {
-    initialLoad(selectedPlan, planEndDate, selectedUnits, weekStartsOn);
-  });
 
   const [, forceUpdate] = React.useReducer((x) => x + 1, 0);
   React.useEffect(() => {
@@ -88,6 +84,10 @@ const App = () => {
     setUndoHistory([...undoHistory, racePlan]);
     setq(getParams(units, plan, endDate, weekStartsOn));
   };
+
+  useMountEffect(() => {
+    initialLoad(selectedPlan, planEndDate, selectedUnits, weekStartsOn);
+  });
 
   const onSelectedPlanChange = async (plan: PlanSummary) => {
     setSelectedPlan(plan);
@@ -186,8 +186,12 @@ const App = () => {
             </div>
           </div>
           <div className="second-toolbar">
-            <button className="app-button" onClick={downloadIcalHandler}>Download iCal</button>
-            <button className="app-button" onClick={downloadCsvHandler}>Download CSV</button>
+            <button className="app-button" onClick={downloadIcalHandler}>
+              Download iCal
+            </button>
+            <button className="app-button" onClick={downloadCsvHandler}>
+              Download CSV
+            </button>
             <UndoButton
               disabled={undoHistory.length <= 1}
               undoHandler={undoHandler}
@@ -206,13 +210,16 @@ const App = () => {
         {isPlanRemoved(selectedPlan) ? (
           <div className="plan-removed-message">
             <h2>THIS PLAN HAS BEEN REMOVED</h2>
-            <p>Human Kinetics, publisher of the book this plan comes from, has requested the removal of this plan.</p>
+            <p>
+              Human Kinetics, publisher of the book this plan comes from, has
+              requested the removal of this plan.
+            </p>
             <p>This makes me sad, I love these books and I know you do too.</p>
             <p>It's disappointing.</p>
             <p>But if they don't want to be here then they shouldn't be.</p>
             <p>No point in dwelling on it.</p>
             <p>Go for a run.</p>
-            <br/>
+            <br />
             <p>• Advanced Marathoning, Third Edition</p>
             <p>• Advanced Marathoning, Fourth Edition</p>
             <p>• Faster Road Racing: 5k to Half Marathon</p>

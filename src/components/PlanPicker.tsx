@@ -26,9 +26,7 @@ const PlanPicker = ({
 
   const planOptions = availablePlans.map((ap) => {
     const isRemoved = REMOVED_PLANS.has(ap[0]);
-    const label = isRemoved
-      ? `❌ (${ap[2]}) ${ap[1]}`
-      : `(${ap[2]}) ${ap[1]}`;
+    const label = isRemoved ? `❌ (${ap[2]}) ${ap[1]}` : `(${ap[2]}) ${ap[1]}`;
     return (
       <option
         key={ap[1]}

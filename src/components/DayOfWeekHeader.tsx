@@ -37,7 +37,7 @@ export const DayOfWeekHeader = ({
   });
 
   //const [{ isOver, canDrop }, drop] = useDrop({
-  const [{}, drop] = useDrop({
+  const [, drop] = useDrop({
     accept: ItemTypes.DOW,
     canDrop: (item: { id: dayOfWeek }) => canSwapWith(item.id),
     drop: (item: { id: dayOfWeek }) => {
@@ -61,7 +61,11 @@ export const DayOfWeekHeader = ({
 
   return (
     <div className={`week-header ${isDragging ? "dragging" : ""}`}>
-      <div ref={drop}>
+      <div
+        ref={(node) => {
+          drop(node);
+        }}
+      >
         <div
           style={{
             position: "relative",
@@ -69,8 +73,17 @@ export const DayOfWeekHeader = ({
             height: "100%",
           }}
         >
-          <div ref={dragPreview}>
-            <div className="day-header" ref={drag}>
+          <div
+            ref={(node) => {
+              dragPreview(node);
+            }}
+          >
+            <div
+              className="day-header"
+              ref={(node) => {
+                drag(node);
+              }}
+            >
               <DragHandle viewBox="0 0 32 36" />
               <div>{dow}</div>
             </div>
