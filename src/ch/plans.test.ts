@@ -3,7 +3,7 @@ import { parse } from "yaml";
 import { isPlanRemoved } from "./config";
 import { plans } from "./planList";
 
-// Checks that span more than one file, which the JSON schema (see `yarn validatePlans`) cannot express:
+// Checks that span more than one file, which the JSON schema (see `npm run validatePlans`) cannot express:
 // the plan list, the YAML sources and the generated JSON all have to agree.
 
 const YAML_DIR = "public/plans/yaml";
@@ -53,7 +53,7 @@ describe("Plan files", function () {
       expect(plan.type).toBe(summary?.[2]);
     });
 
-    it("should have JSON that is up to date with the YAML (run `yarn convertPlans`)", function () {
+    it("should have JSON that is up to date with the YAML (run `npm run convertPlans`)", function () {
       expect(readJson(id)).toEqual(plan);
     });
   });
