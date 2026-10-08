@@ -4,7 +4,7 @@ import { Dateline } from "./Dateline";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "../ch/ItemTypes";
 import { DragHandle } from "./DragHandle";
-import { DayDetails, Units } from "types/app";
+import type { DayDetails, Units } from "types/app";
 
 interface Props {
   dayDetails: DayDetails;

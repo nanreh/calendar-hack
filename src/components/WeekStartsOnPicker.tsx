@@ -1,5 +1,6 @@
 import React from "react";
-import { WeekStartsOn, WeekStartsOnValues } from "../ch/datecalc";
+import type { WeekStartsOn } from "../ch/datecalc";
+import { WeekStartsOnValues } from "../ch/datecalc";
 
 interface Props {
   weekStartsOn: WeekStartsOn;

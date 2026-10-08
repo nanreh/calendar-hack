@@ -1,7 +1,9 @@
 import { eachDayOfInterval } from "date-fns";
-import { calcPlanDates, WeekStartsOn } from "./datecalc";
-import { DateGrid, RacePlan } from "./dategrid";
-import {
+import type { WeekStartsOn } from "./datecalc";
+import { calcPlanDates } from "./datecalc";
+import type { RacePlan } from "./dategrid";
+import { DateGrid } from "./dategrid";
+import type {
   DayDetails,
   dayOfWeek,
   PlannedWorkout,

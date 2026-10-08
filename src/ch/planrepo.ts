@@ -1,7 +1,6 @@
-import fetch from "cross-fetch";
 import { Config, isPlanRemoved } from "./config";
 import { plans } from "./planList";
-import { PlanSummary, TrainingPlan } from "types/app";
+import type { PlanSummary, TrainingPlan } from "types/app";
 
 function url(summary: PlanSummary) {
   return Config.plansPath + summary[0] + ".json";

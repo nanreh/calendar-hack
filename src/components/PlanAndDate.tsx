@@ -1,7 +1,7 @@
 import { DateControl } from "./DateControl";
 import PlanPicker from "./PlanPicker";
-import { PlanSummary } from "types/app";
-import { WeekStartsOn } from "../ch/datecalc";
+import type { PlanSummary } from "types/app";
+import type { WeekStartsOn } from "../ch/datecalc";
 
 interface Props {
   availablePlans: PlanSummary[];

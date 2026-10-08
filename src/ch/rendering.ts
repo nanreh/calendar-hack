@@ -1,14 +1,12 @@
 import * as moo from "moo";
-import { Week, DayDetails, Units } from "types/app";
+import type { Week, DayDetails, Units } from "types/app";
 
 export function miToKm(value: number): number {
   return value / 0.62137;
 }
 
-export function getWeekDistance(
-  week: Week<DayDetails>,
-  units: Units,
-): number[] {
+// Total distance for a week in the plan's source units: [total], or [min, max] when any day is a range.
+export function sumWeekDistance(week: Week<DayDetails>): number[] {
   let min = 0;
   let max = 0;
   let hasRange = false;
@@ -18,21 +16,24 @@ export function getWeekDistance(
     if (!e || !e.dist) continue;
 
     if (typeof e.dist === "number") {
-      const dist = units === "mi" ? e.dist : miToKm(e.dist);
-      min += dist;
-      max += dist;
+      min += e.dist;
+      max += e.dist;
     } else if (Array.isArray(e.dist) && e.dist.length === 2) {
-      let [lo, hi] = e.dist;
-      if (units === "km") {
-        lo = miToKm(lo);
-        hi = miToKm(hi);
-      }
+      const [lo, hi] = e.dist;
       min += lo;
       max += hi;
       hasRange = true;
     }
   }
   return hasRange ? [min, max] : [max];
+}
+
+export function getWeekDistance(
+  week: Week<DayDetails>,
+  units: Units,
+): number[] {
+  const dist = sumWeekDistance(week);
+  return units === "mi" ? dist : dist.map(miToKm);
 }
 
 export function renderDist(value: number[], from: Units, to: Units): string {

@@ -1,8 +1,9 @@
 import { format } from "date-fns";
-import { RacePlan } from "./dategrid";
+import type { RacePlan } from "./dategrid";
 import { getWeekDistance, render, renderDist } from "./rendering";
-import { Units } from "types/app";
-import { getDaysHeader, WeekStartsOn } from "./datecalc";
+import type { Units } from "types/app";
+import type { WeekStartsOn } from "./datecalc";
+import { getDaysHeader } from "./datecalc";
 
 export function toCsv(
   plan: RacePlan,

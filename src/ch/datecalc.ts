@@ -6,7 +6,7 @@ import {
   differenceInCalendarDays,
 } from "date-fns";
 
-import { dayOfWeek, PlanDates } from "types/app";
+import type { dayOfWeek, PlanDates } from "types/app";
 
 export const WeekStartsOnValues = {
   Sunday: 0,

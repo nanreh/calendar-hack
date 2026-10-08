@@ -9,13 +9,12 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "jest",
-    "cov": "jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "cov": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
     "validatePlans": "bash bin/validatePlans",
     "pretty": "prettier src --write"
   },
   "dependencies": {
-    "cross-fetch": "4.1.0",
     "date-fns": "4.4.0",
     "dnd-core": "^16.0.1",
     "history": "5.3.0",
@@ -43,6 +42,7 @@
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^30.0.0",
     "@types/moo": "^0.5.2",
+    "@types/node": "^24",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",

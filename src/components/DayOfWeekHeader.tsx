@@ -1,7 +1,7 @@
 import { DragHandle } from "./DragHandle";
 import { useDrop, useDrag } from "react-dnd";
 import { ItemTypes } from "../ch/ItemTypes";
-import { dayOfWeek } from "types/app";
+import type { dayOfWeek } from "types/app";
 
 interface Props {
   dow: dayOfWeek;

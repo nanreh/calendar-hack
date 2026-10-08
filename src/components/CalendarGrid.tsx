@@ -1,11 +1,14 @@
 import * as React from "react";
-import { RacePlan, key } from "../ch/dategrid";
+import type { RacePlan } from "../ch/dategrid";
+import { key } from "../ch/dategrid";
 import { DayCell } from "./DayCell";
 import { WeekSummary } from "./WeekSummary";
 import { DayOfWeekHeader } from "./DayOfWeekHeader";
+import { sumWeekDistance } from "../ch/rendering";
 import { format } from "date-fns";
-import { getDaysHeader, WeekStartsOn } from "../ch/datecalc";
-import { Units, dayOfWeek, Week, DayDetails } from "types/app";
+import type { WeekStartsOn } from "../ch/datecalc";
+import { getDaysHeader } from "../ch/datecalc";
+import type { Units, dayOfWeek, Week, DayDetails } from "types/app";
 
 interface Props {
   racePlan: RacePlan;
@@ -15,34 +18,13 @@ interface Props {
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
 }
 
-function calcWeeklyDistance(w: Week<DayDetails>): number[] {
-  let min = 0;
-  let max = 0;
-  let hasRange = false;
-
-  for (const day of w.days) {
-    const e = day.event;
-    if (!e || !e.dist) continue;
-
-    if (typeof e.dist === "number") {
-      max += e.dist;
-    } else if (Array.isArray(e.dist) && e.dist.length === 2) {
-      const [low, high] = e.dist;
-      min += low;
-      max += high;
-      hasRange = true;
-    }
-  }
-  return hasRange ? [min, max] : [max];
-}
-
 function findMaxDistance(weeks: Week<DayDetails>[]): number[] {
   let maxOfMins = 0;
   let maxOfMaxes = 0;
   let hasRanges = false;
 
   for (let i = 0; i < weeks.length; i++) {
-    const dist = calcWeeklyDistance(weeks[i]);
+    const dist = sumWeekDistance(weeks[i]);
 
     if (dist.length === 1) {
       const val = dist[0];
@@ -75,7 +57,7 @@ export const CalendarGrid = ({
   const maxDistance = findMaxDistance(racePlan.dateGrid.weeks);
 
   function getWeek(w: Week<DayDetails>) {
-    const weekDist = calcWeeklyDistance(w);
+    const weekDist = sumWeekDistance(w);
 
     let isHighestMileage = false;
     if (maxDistance[0] > 0) {

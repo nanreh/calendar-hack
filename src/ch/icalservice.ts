@@ -1,8 +1,9 @@
-import { createEvents, EventAttributes } from "ics";
+import type { EventAttributes } from "ics";
+import { createEvents } from "ics";
 import { addDays } from "date-fns";
-import { RacePlan } from "./dategrid";
+import type { RacePlan } from "./dategrid";
 import { getWeekDistance, render, renderDist } from "./rendering";
-import { Units } from "types/app";
+import type { Units } from "types/app";
 
 // public for testing
 export function toDate(d: Date): [number, number, number] {

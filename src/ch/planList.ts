@@ -1,4 +1,4 @@
-import { PlanSummary } from "types/app";
+import type { PlanSummary } from "types/app";
 
 // list of all current plans
 export const plans: PlanSummary[] = [
