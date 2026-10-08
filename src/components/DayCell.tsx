@@ -48,7 +48,12 @@ export const DayCell = ({
         height: "100%",
       }}
     >
-      <div className="day-cell" ref={drop}>
+      <div
+        className="day-cell"
+        ref={(node) => {
+          drop(node);
+        }}
+      >
         {dayDetails && (
           <WorkoutCard
             dayDetails={dayDetails}

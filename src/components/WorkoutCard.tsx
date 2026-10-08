@@ -49,12 +49,18 @@ export const WorkoutCard = ({ dayDetails, date, units }: Props) => {
 
   return (
     <div
-      ref={preview}
+      ref={(node) => {
+        preview(node);
+      }}
       className={`workout-card ${isDragging ? "dragging" : ""}`}
     >
       <Dateline $date={date} />
       <div className="workout-content">
-        <div ref={drag}>
+        <div
+          ref={(node) => {
+            drag(node);
+          }}
+        >
           <DragHandle viewBox="0 0 32 36" />
         </div>
         {renderDesc(dayDetails, dayDetails.sourceUnits, units)}
