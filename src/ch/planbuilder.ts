@@ -15,7 +15,8 @@ function renderDayDetails(
   sourceUnits: Units,
   plannedWorkout: PlannedWorkout | undefined,
 ): DayDetails | undefined {
-  if (plannedWorkout) {
+  // a workout with a blank title is a placeholder for a day with nothing planned
+  if (plannedWorkout && plannedWorkout.title.trim() !== "") {
     return {
       title: plannedWorkout.title,
       desc: plannedWorkout.description,
