@@ -40,11 +40,6 @@ class PlanRepo {
     return this._available[0];
   }
 
-  // For testing
-  isCached(a: PlanSummary): boolean {
-    return this._cache.has(url(a));
-  }
-
   async fetch(a: PlanSummary): Promise<TrainingPlan> {
     return await fetchWithCache(url(a), this._cache);
   }
