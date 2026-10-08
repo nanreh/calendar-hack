@@ -1,6 +1,10 @@
 import * as moo from "moo";
 import type { Week, DayDetails, Units } from "types/app";
 
+export function kmToMiles(value: number): number {
+  return value * 0.62137;
+}
+
 export function miToKm(value: number): number {
   return value / 0.62137;
 }
@@ -13,12 +17,12 @@ export function sumWeekDistance(week: Week<DayDetails>): number[] {
 
   for (const day of week.days) {
     const e = day.event;
-    if (!e || !e.dist) continue;
+    if (!e || !e.dist || e.dist.length === 0) continue;
 
-    if (typeof e.dist === "number") {
-      min += e.dist;
-      max += e.dist;
-    } else if (Array.isArray(e.dist) && e.dist.length === 2) {
+    if (e.dist.length === 1) {
+      min += e.dist[0];
+      max += e.dist[0];
+    } else if (e.dist.length === 2) {
       const [lo, hi] = e.dist;
       min += lo;
       max += hi;
@@ -28,12 +32,15 @@ export function sumWeekDistance(week: Week<DayDetails>): number[] {
   return hasRange ? [min, max] : [max];
 }
 
+// Total distance for a week converted from the plan's source units to the given units.
 export function getWeekDistance(
   week: Week<DayDetails>,
   units: Units,
 ): number[] {
   const dist = sumWeekDistance(week);
-  return units === "mi" ? dist : dist.map(miToKm);
+  const sourceUnits = week.days.find((d) => d.event)?.event?.sourceUnits;
+  if (!sourceUnits || sourceUnits === units) return dist;
+  return dist.map(sourceUnits === "mi" ? miToKm : kmToMiles);
 }
 
 export function renderDist(value: number[], from: Units, to: Units): string {

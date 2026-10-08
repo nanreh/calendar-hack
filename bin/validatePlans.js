@@ -9,7 +9,7 @@ import { parse } from "yaml";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const plansDir = join(root, "public", "plans", "yaml");
-const schemaPath = join(root, "public", "schema", "plan-schema.json");
+const schemaPath = join(root, "public", "schema", "plan-schema-v1.json");
 
 const ajv = new Ajv({ allErrors: true });
 const validate = ajv.compile(JSON.parse(readFileSync(schemaPath, "utf8")));

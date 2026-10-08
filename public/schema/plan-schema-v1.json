@@ -1,9 +1,13 @@
 {
-    "description": "Plan schema",
-    "$id": "https://defy.org/plan",
+    "description": "Plan schema v1",
+    "$id": "https://defy.org/plan/v1",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
+        "schemaVersion": {
+            "type": "integer",
+            "const": 1
+        },
         "id": {
             "type": "string",
             "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
@@ -59,7 +63,6 @@
             "type": "object",
             "properties": {
                 "description": {"type": "string"},
-                "distance": {"type": "number"},
                 "workouts": {
                     "type": "array",
                     "items": {
@@ -88,24 +91,7 @@
                         "maxItems": 2
                       }
                     ]
-                  },
-                "tags": {
-                    "type": "array",
-                    "items": {
-                        "enum": [
-                            "Rest",
-                            "Easy Run",
-                            "Run",
-                            "Long Run",
-                            "Cross Train",
-                            "Race",
-                            "Speedwork",
-                            "Hills"
-                        ]
-                    },
-                    "minItems": 1,
-                    "uniqueItems": true
-                }
+                  }
             },
             "required": [
                 "title"

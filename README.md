@@ -1,6 +1,6 @@
 # Calendar Hack Project Info
 
-Calendar Hack is a web application for runners who train for races. It renders a training program on a calendar and provides some basic editing features. It also provides for downloading the result as an iCal file which can be imported into any calendar application worth using.
+Calendar Hack is a web application for runners who train for races. It renders a training program on a calendar and provides some basic editing features. It also provides for downloading the result as an iCal file which can be imported into any calendar application worth using. CSV download is also available.
 
 The project is hosted at [defy.org/hacks/calendarhack](https://www.defy.org/hacks/calendarhack)
 
@@ -32,16 +32,4 @@ npm run validatePlans
 
 This also runs in CI on every pull request.
 
-## Converting new plans
-
-If you are adding a new plan or modifying an existing one, you should work with the YAML version of the plan.
-
-A simple program then converts the YAML plans to JSON for the application to consume:
-```
-python3 -m venv my_env
-source ./my_env/bin/activate
-pip install pyyaml
-npm run convertPlans
-```
-
-Commit the generated JSON files in [plans/json](public/plans/json/) along with your YAML changes. A new plan also needs an entry in [src/ch/planList.ts](src/ch/planList.ts) to show up in the app.
+A new plan also needs an entry in [src/ch/planList.ts](src/ch/planList.ts) to show up in the app.

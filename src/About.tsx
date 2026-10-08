@@ -102,6 +102,11 @@ const About = () => {
           Kinetics.
         </p>
         <p>
+          You can also put together your own training plan. The file format is
+          simple and can be constructed by hand in a text editor or with help
+          from an LLM.
+        </p>
+        <p>
           I’ve read these books and have trained with programs from them in the
           past. The plans will make little sense if you don’t take the time to
           read the books they came from. So, seriously, understand what you’re

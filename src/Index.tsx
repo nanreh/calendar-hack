@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 import Toolbar from "./components/Toolbar";
 import Footer from "./components/Footer";
 
-const About = () => {
+const Index = () => {
   return (
     <>
       <Toolbar />
@@ -13,4 +13,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Index;

@@ -1,7 +1,7 @@
 import type { PlanSummary } from "types/app";
 
 const AppConfig = {
-  plansPath: "/hacks/calendarhack/plans/json/",
+  plansPath: "/hacks/calendarhack/plans/yaml/",
 };
 
 export const Config = AppConfig;

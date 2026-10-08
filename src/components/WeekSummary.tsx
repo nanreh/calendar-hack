@@ -13,6 +13,7 @@ interface Props {
   isFirstWeek: boolean;
   isLastWeek: boolean;
   isHighestMileage: boolean;
+  cumulativeDistance: number[];
 }
 
 export const WeekSummary = ({
@@ -21,6 +22,7 @@ export const WeekSummary = ({
   isFirstWeek,
   isLastWeek,
   isHighestMileage,
+  cumulativeDistance,
 }: Props) => {
   const distance = getWeekDistance(week, units);
   return (
@@ -28,7 +30,8 @@ export const WeekSummary = ({
       <p>
         <strong>{`Week ${1 + week.weekNum}`}</strong>
       </p>
-      {distance[0] > 0 && <p>{renderDist(distance, units, units)}</p>}
+      {distance[0] > 0 && <p className="week-distance">Week: {renderDist(distance, units, units)}</p>}
+      {cumulativeDistance[0] > 0 && <p className="week-distance">Cumulative: {renderDist(cumulativeDistance, units, units)}</p>}
       {isFirstWeek && <img src={StartIcon} alt={"Start"} />}
       {isLastWeek && <img src={FinishIcon} alt="Finish" />}
       {isHighestMileage && <img src={HighMileageIcon} alt="Highest Mileage" />}
