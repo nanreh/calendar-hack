@@ -41,7 +41,10 @@ function findMaxDistance(weeks: Week<DayDetails>[]): number[] {
   return hasRanges ? [maxOfMins, maxOfMaxes] : [maxOfMaxes];
 }
 
-function calcCumulativeDistances(weeks: Week<DayDetails>[], units: Units): number[][] {
+function calcCumulativeDistances(
+  weeks: Week<DayDetails>[],
+  units: Units,
+): number[][] {
   const result: number[][] = [];
   let runningMin = 0;
   let runningMax = 0;
@@ -63,7 +66,6 @@ function calcCumulativeDistances(weeks: Week<DayDetails>[], units: Units): numbe
   return result;
 }
 
-
 export const CalendarGrid = ({
   racePlan,
   units,
@@ -78,7 +80,10 @@ export const CalendarGrid = ({
     undefined,
   );
   const maxDistance = findMaxDistance(racePlan.dateGrid.weeks);
-  const cumulativeDistances = calcCumulativeDistances(racePlan.dateGrid.weeks, units);
+  const cumulativeDistances = calcCumulativeDistances(
+    racePlan.dateGrid.weeks,
+    units,
+  );
 
   function getWeek(w: Week<DayDetails>, cumulativeDistance: number[]) {
     const weekDist = sumWeekDistance(w);
@@ -144,7 +149,9 @@ export const CalendarGrid = ({
   return (
     <div className="calendar-grid">
       {getHeader()}
-      {racePlan.dateGrid.weeks.map((w, i) => getWeek(w, cumulativeDistances[i]))}
+      {racePlan.dateGrid.weeks.map((w, i) =>
+        getWeek(w, cumulativeDistances[i]),
+      )}
     </div>
   );
 };

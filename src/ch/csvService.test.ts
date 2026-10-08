@@ -1,9 +1,13 @@
 import { toCsv } from "./csvService";
 import { build } from "./planbuilder";
-import { TrainingPlan, PlannedWorkout, Tags } from "types/app";
+import type { TrainingPlan, PlannedWorkout, Tags } from "types/app";
 import { WeekStartsOnValues } from "./datecalc";
 
-function createWorkout(title: string, distance: number[] = [], description = ""): PlannedWorkout {
+function createWorkout(
+  title: string,
+  distance: number[] = [],
+  description = "",
+): PlannedWorkout {
   return {
     title,
     description,
@@ -61,7 +65,9 @@ describe("CsvService", function () {
 
       expect(csv).toBeDefined();
       const lines = csv!.split("\n");
-      expect(lines[0]).toBe("Week,Distance,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday");
+      expect(lines[0]).toBe(
+        "Week,Distance,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday",
+      );
     });
 
     it("should include week distance in output", function () {
@@ -121,7 +127,9 @@ describe("CsvService", function () {
 
       expect(csv).toBeDefined();
       const lines = csv!.split("\n");
-      expect(lines[0]).toBe("Week,Distance,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday");
+      expect(lines[0]).toBe(
+        "Week,Distance,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday",
+      );
     });
 
     it("should handle Saturday week start", function () {
@@ -133,7 +141,9 @@ describe("CsvService", function () {
 
       expect(csv).toBeDefined();
       const lines = csv!.split("\n");
-      expect(lines[0]).toBe("Week,Distance,Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday");
+      expect(lines[0]).toBe(
+        "Week,Distance,Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday",
+      );
     });
 
     it("should include dates in workout cells", function () {

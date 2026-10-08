@@ -44,7 +44,9 @@ async function fetchSchema(version: number): Promise<object> {
   if (schemaCache.has(version)) {
     return schemaCache.get(version)!;
   }
-  const response = await fetch(`/hacks/calendarhack/schema/plan-schema-v${version}.json`);
+  const response = await fetch(
+    `/hacks/calendarhack/schema/plan-schema-v${version}.json`,
+  );
   if (!response.ok) {
     throw new Error(`Failed to load schema v${version}`);
   }
@@ -93,7 +95,9 @@ function convertRawPlanToTrainingPlan(raw: RawPlan): TrainingPlan {
   };
 }
 
-export async function parseYamlContent(content: string): Promise<YamlLoadResult> {
+export async function parseYamlContent(
+  content: string,
+): Promise<YamlLoadResult> {
   try {
     if (!content.trim()) {
       return { success: false, error: "No content provided" };
@@ -109,7 +113,10 @@ export async function parseYamlContent(content: string): Promise<YamlLoadResult>
     }
 
     if (!rawPlan || typeof rawPlan !== "object") {
-      return { success: false, error: "YAML content is not a valid plan object" };
+      return {
+        success: false,
+        error: "YAML content is not a valid plan object",
+      };
     }
 
     // Determine schema version (default to 1 if not specified)

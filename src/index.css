@@ -744,7 +744,8 @@ svg.drag-handle {
   font-weight: 700;
   border-radius: 0.5rem;
   padding: 1em;
-  h1, h3 {
+  h1,
+  h3 {
     color: var(--text-color);
     text-align: center;
     display: block;

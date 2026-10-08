@@ -1,4 +1,4 @@
-import { PlanSummary, PlanMode } from "types/app";
+import type { PlanSummary, PlanMode } from "types/app";
 import PlanPicker from "./PlanPicker";
 import ByopForm from "./ByopForm";
 

@@ -24,7 +24,7 @@ The other standard scripts exist also: `npm test`, `npm run lint`, `npm run buil
 ## Plans
 Training plans are represented as YAML files that are easy to create and edit. They can be found in [plans/yaml](public/plans/yaml/).
 
-Plans can be validated against a JSON schema ([public/schema/plan-schema.json](public/schema/plan-schema.json)) as follows:
+Plans can be validated against a JSON schema ([public/schema/plan-schema-v1.json](public/schema/plan-schema-v1.json)) as follows:
 
 ```
 npm run validatePlans

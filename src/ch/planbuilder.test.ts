@@ -17,7 +17,9 @@ function createSimplePlan(numWeeks: number): TrainingPlan {
   for (let w = 0; w < numWeeks; w++) {
     const workouts: PlannedWorkout[] = [];
     for (let d = 0; d < 7; d++) {
-      workouts.push(createWorkout(`W${w + 1}D${d + 1}`, d === 0 ? [] : [d + 1]));
+      workouts.push(
+        createWorkout(`W${w + 1}D${d + 1}`, d === 0 ? [] : [d + 1]),
+      );
     }
     schedule.push({ description: `Week ${w + 1}`, workouts });
   }

@@ -2,7 +2,7 @@ import { parseYamlContent } from "./yamlService";
 
 // Mock fetch for schema loading
 global.fetch = jest.fn(() =>
-  Promise.reject(new Error("Schema not available in test"))
+  Promise.reject(new Error("Schema not available in test")),
 ) as jest.Mock;
 
 // Silence console.warn for these tests (expected when schema fetch fails)
@@ -230,7 +230,7 @@ schedule:
 
       expect(result.success).toBe(true);
       expect(result.plan?.schedule[0].workouts[1].description).toBe(
-        "Run at tempo pace for 20 minutes"
+        "Run at tempo pace for 20 minutes",
       );
     });
 

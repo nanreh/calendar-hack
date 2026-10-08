@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Validate each YAML plan in public/plans/yaml against public/schema/plan-schema.json.
+// Validate each YAML plan in public/plans/yaml against public/schema/plan-schema-v1.json.
 // Exits non-zero if any plan is invalid.
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";

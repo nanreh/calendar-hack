@@ -1,4 +1,3 @@
-import { readFileSync } from "fs";
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { DndProvider } from "react-dnd-multi-backend";
@@ -6,15 +5,7 @@ import { HTML5toTouch } from "rdndmb-html5-to-touch";
 import { QueryParamProvider } from "use-query-params";
 import { WindowHistoryAdapter } from "use-query-params/adapters/window";
 import App from "./App";
-
-// Serve plans from public/plans/json the way the web server would.
-function mockPlanFetch() {
-  globalThis.fetch = jest.fn(async (url: RequestInfo | URL) => {
-    const file = String(url).split("/").pop();
-    const body = readFileSync(`public/plans/json/${file}`, "utf8");
-    return { ok: true, json: async () => JSON.parse(body) } as Response;
-  });
-}
+import { servePublicFiles } from "../test/servePublicFiles";
 
 function renderApp(query: string) {
   window.history.replaceState(null, "", `/hacks/calendarhack/${query}`);
@@ -28,7 +19,7 @@ function renderApp(query: string) {
 }
 
 describe("App", function () {
-  beforeEach(mockPlanFetch);
+  beforeEach(servePublicFiles);
 
   it("renders the selected plan as a calendar", async function () {
     const { container } = renderApp("?p=higdon_int_mara1&u=mi");
@@ -41,7 +32,7 @@ describe("App", function () {
     );
 
     const firstWeek = container.querySelectorAll<HTMLElement>(".week-grid")[1];
-    expect(within(firstWeek).getByText("24 mi")).toBeInTheDocument();
+    expect(within(firstWeek).getByText("Week: 24 mi")).toBeInTheDocument();
     expect(within(firstWeek).getByText("8 mi")).toBeInTheDocument();
   });
 
@@ -52,7 +43,7 @@ describe("App", function () {
     await userEvent.click(screen.getByLabelText("Km"));
 
     const firstWeek = container.querySelectorAll<HTMLElement>(".week-grid")[1];
-    expect(within(firstWeek).getByText("38.6 km")).toBeInTheDocument();
+    expect(within(firstWeek).getByText("Week: 38.6 km")).toBeInTheDocument();
     expect(within(firstWeek).getByText("12.9 km")).toBeInTheDocument();
     expect(window.location.search).toContain("u=km");
   });

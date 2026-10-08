@@ -58,7 +58,9 @@ const App = () => {
       ? d
       : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20),
   );
-  const [planMode, setPlanMode] = useState<PlanMode>(customplan ? "byop" : "select");
+  const [planMode, setPlanMode] = useState<PlanMode>(
+    customplan ? "byop" : "select",
+  );
   const [byopError, setByopError] = useState<string | null>(null);
   const [byopLoading, setByopLoading] = useState<boolean>(false);
   const [byopYaml, setByopYaml] = useState<string | null>(null);
@@ -75,10 +77,17 @@ const App = () => {
     } else if (mode === "select") {
       setByopYaml(null);
       if (!isPlanRemoved(selectedPlan)) {
-        const rp = build(await repo.fetch(selectedPlan), planEndDate, weekStartsOn);
+        const rp = build(
+          await repo.fetch(selectedPlan),
+          planEndDate,
+          weekStartsOn,
+        );
         setRacePlan(rp);
         setUndoHistory([rp]);
-        setq({ ...getParams(selectedUnits, selectedPlan, planEndDate, weekStartsOn), customplan: undefined });
+        setq({
+          ...getParams(selectedUnits, selectedPlan, planEndDate, weekStartsOn),
+          customplan: undefined,
+        });
       }
     }
   };
