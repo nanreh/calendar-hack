@@ -8,8 +8,10 @@ interface Props {
 const AboutBurst = ({ size = 80, points = 30 }: Props) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const isAboutPage = location.pathname === "/about";
-  const targetPath = isAboutPage ? "/" : "/about";
+  const isAboutPage = location.pathname.replace(/\/+$/, "") === "/about";
+  // The trailing slash matters: "about/" is the path that exists on the web server, so a reload
+  // while on the page works and keeps the query.
+  const targetPath = isAboutPage ? "/" : "/about/";
   const displayText = isAboutPage ? "Plan" : "About";
 
   // Generate starburst path
