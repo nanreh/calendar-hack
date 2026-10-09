@@ -26,7 +26,7 @@ describe("Moving between the calendar and the About page", function () {
 
     expect(screen.getByRole("heading", { name: "About" })).toBeVisible();
     expect(screen.getByText("Week 8")).not.toBeVisible();
-    expect(window.location.pathname).toBe("/hacks/calendarhack/about");
+    expect(window.location.pathname).toBe("/hacks/calendarhack/about/");
 
     await userEvent.click(planLink());
 
@@ -59,6 +59,19 @@ describe("Moving between the calendar and the About page", function () {
     expect(screen.getByRole("heading", { name: "Sample Plan" })).toBeVisible();
     expect(new URLSearchParams(window.location.search).has("p")).toBe(false);
   });
+
+  it.each(["/hacks/calendarhack/about/", "/hacks/calendarhack/about"])(
+    "opens the About page from a direct link to %s",
+    function (path) {
+      servePublicFiles();
+      renderAt(path + "?p=c25k&u=km");
+
+      expect(screen.getByRole("heading", { name: "About" })).toBeVisible();
+      // the burst offers the way back, and the query is left alone
+      expect(planLink()).toBeVisible();
+      expect(window.location.search).toBe("?p=c25k&u=km");
+    },
+  );
 
   it("does not load a plan when the About page is opened directly", async function () {
     const fetchMock = servePublicFiles();
