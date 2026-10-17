@@ -136,7 +136,7 @@ a:active {
   background-color: var(--card-color);
   border: 3px solid var(--secondary-color);
   border-radius: 5px;
-  padding: 1.5em 1em 1em 1em;
+  padding: 2.5em 1em 1em 1em;
   font-weight: 400;
   color: var(--text-color);
   margin: 0 0 1em 0;
@@ -168,6 +168,7 @@ a:active {
 }
 
 .toolbar {
+  position: relative;
   display: grid;
   grid-template-columns: 10% auto 10%;
   margin: 5px;
@@ -671,9 +672,17 @@ svg.drag-handle {
 
 /* About Burst */
 .burst-container {
-  height: 40px;
+  /* Centered on the top left corner of the card below the toolbar, which sits just outside the
+     toolbar's 5px margin. On narrow screens it moves right far enough to stay on screen, given
+     that the toolbar is centered in the window. */
+  position: absolute;
+  left: max(-5px, calc(50px - (100vw - 100%) / 2));
+  top: calc(100% + 5px);
+  transform: translate(-50%, -50%);
   display: flex;
-  align-items: flex-start;
+  svg {
+    display: block;
+  }
 }
 
 .about-burst {
