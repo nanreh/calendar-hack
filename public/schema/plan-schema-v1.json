@@ -1,24 +1,32 @@
 {
-    "description": "Plan schema v1",
+    "title": "Calendar Hack training plan",
+    "description": "Plan schema v1. A training plan for Calendar Hack, usually written as YAML. See https://defy.org/hacks/calendarhack/sampleplan.yaml for an annotated example.",
     "$id": "https://defy.org/plan/v1",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
         "schemaVersion": {
+            "description": "The version of this schema the plan is written for. Plans without it are treated as version 1.",
             "type": "integer",
             "const": 1
         },
         "id": {
+            "description": "A short identifier for the plan: lowercase letters and digits, in words joined by single underscores.",
             "type": "string",
-            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$",
+            "examples": ["higdon_nov_half1"]
         },
         "name": {
-            "type": "string"
+            "description": "The plan's name, as shown in the plan picker.",
+            "type": "string",
+            "examples": ["Hal Higdon: Half Marathon Novice 1"]
         },
         "description": {
+            "description": "A paragraph about the plan, shown with it in the app.",
             "type": "string"
         },
         "type": {
+            "description": "The race or kind of training the plan is for.",
             "enum": [
                 "Base",
                 "Multiple Distances",
@@ -33,15 +41,18 @@
             ]
         },
         "units": {
+            "description": "The units of every distance in the plan: workout distances and the first number of each distance in curly braces.",
             "enum": [
                 "mi",
                 "km"
             ]
         },
         "source": {
+            "description": "Where the plan comes from, usually a link to the original.",
             "type": "string"
         },
         "schedule": {
+            "description": "The weeks of the plan, in order. The app lines the plan up so its last day falls on the end date you pick, usually race day.",
             "type": "array",
             "items": {
                 "$ref": "#/definitions/week"
@@ -62,8 +73,12 @@
         "week": {
             "type": "object",
             "properties": {
-                "description": {"type": "string"},
+                "description": {
+                    "description": "An optional note about the week.",
+                    "type": "string"
+                },
                 "workouts": {
+                    "description": "Exactly seven workouts, one for each day of the week.",
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/workout"
@@ -79,9 +94,14 @@
         "workout": {
             "type": "object",
             "properties": {
-                "title": {"type": "string"},
-                "description": {"type": "string"},
+                "title": {
+                    "$ref": "#/definitions/textWithDistances"
+                },
+                "description": {
+                    "$ref": "#/definitions/textWithDistances"
+                },
                 "distance": {
+                    "description": "How far the workout goes, in the plan's units, for weekly totals: a number, or [low, high] for a range.",
                     "anyOf": [
                       { "type": "number" },
                       {
@@ -90,12 +110,19 @@
                         "minItems": 2,
                         "maxItems": 2
                       }
-                    ]
+                    ],
+                    "examples": [5, [8, 9]]
                   }
             },
             "required": [
                 "title"
             ]
+        },
+        "textWithDistances": {
+            "description": "Text shown on the calendar. Put distances in curly braces so they can be shown in either unit: {5} is 5 in the plan's units, converted automatically; {2:3.2} is 2 in the plan's units and 3.2 in the other unit; {8-9:13-14} or {1-3:1.6-4.8} is a range, written the same way. Curly braces can't be used for anything else.",
+            "type": "string",
+            "examples": ["Rest", "{5} run", "{2:3.2} run", "{8-9:13-14} easy", "Rest or {1-3:1.6-4.8} run", "Half Marathon ({13.1:21.1})"],
+            "pattern": "^(?:[^{}]|\\{\\d+(?:\\.\\d+)?(?::\\d+(?:\\.\\d+)?)?\\}|\\{\\d+(?:\\.\\d+)?-\\d+(?:\\.\\d+)?:\\d+(?:\\.\\d+)?-\\d+(?:\\.\\d+)?\\})*$"
         }
     }
 }

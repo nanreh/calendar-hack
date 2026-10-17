@@ -1,5 +1,5 @@
 import { parse } from "yaml";
-import { Ajv } from "ajv";
+import { Ajv, type ErrorObject } from "ajv";
 import type {
   TrainingPlan,
   PlannedWorkout,
@@ -95,6 +95,16 @@ function convertRawPlanToTrainingPlan(raw: RawPlan): TrainingPlan {
   };
 }
 
+// A failed pattern would be reported as the regular expression itself, which doesn't help anyone
+// fix their plan, so the value and the description of what was expected are given instead.
+// Needs the validator to be compiled with verbose: true.
+function describeError(e: ErrorObject): string {
+  if (e.keyword === "pattern" && e.parentSchema?.description) {
+    return `${e.instancePath} ${JSON.stringify(e.data)} is not in the expected format. ${e.parentSchema.description}`;
+  }
+  return `${e.instancePath} ${e.message}`;
+}
+
 export async function parseYamlContent(
   content: string,
 ): Promise<YamlLoadResult> {
@@ -133,14 +143,12 @@ export async function parseYamlContent(
       return { success: true, plan };
     }
 
-    const ajv = new Ajv({ allErrors: true });
+    const ajv = new Ajv({ allErrors: true, verbose: true });
     const validate = ajv.compile(schema);
     const valid = validate(rawPlan);
 
     if (!valid) {
-      const errors = validate.errors
-        ?.map((e) => `${e.instancePath} ${e.message}`)
-        .join("; ");
+      const errors = validate.errors?.map(describeError).join("; ");
       return { success: false, error: `Schema validation failed: ${errors}` };
     }
 

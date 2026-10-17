@@ -11,7 +11,7 @@ const root = fileURLToPath(new URL("..", import.meta.url));
 const plansDir = join(root, "public", "plans", "yaml");
 const schemaPath = join(root, "public", "schema", "plan-schema-v1.json");
 
-const ajv = new Ajv({ allErrors: true });
+const ajv = new Ajv({ allErrors: true, verbose: true });
 const validate = ajv.compile(JSON.parse(readFileSync(schemaPath, "utf8")));
 
 const files = readdirSync(plansDir)
@@ -24,8 +24,12 @@ for (const file of files) {
   try {
     const plan = parse(readFileSync(join(plansDir, file), "utf8"));
     if (!validate(plan)) {
-      errors = validate.errors.map(
-        (e) => `${e.instancePath || "/"} ${e.message}`,
+      errors = validate.errors.map((e) =>
+        // A failed pattern is shown as the value and what was expected rather than the regular
+        // expression, as in src/ch/yamlService.ts.
+        e.keyword === "pattern" && e.parentSchema?.description
+          ? `${e.instancePath} ${JSON.stringify(e.data)} is not in the expected format. ${e.parentSchema.description}`
+          : `${e.instancePath || "/"} ${e.message}`,
       );
     }
   } catch (e) {

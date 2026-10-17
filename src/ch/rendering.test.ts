@@ -60,6 +60,20 @@ describe("Rendering", function () {
       expect(renderStr(eight, "km", "km")).toEqual("10 km Easy");
       expect(renderStr(eight, "km", "mi")).toEqual("6 mi Easy");
     });
+
+    it("should render ranges in correct units", function () {
+      const whole = "{8-9:13-14} Easy";
+      expect(renderStr(whole, "mi", "mi")).toEqual("8-9 mi Easy");
+      expect(renderStr(whole, "mi", "km")).toEqual("13-14 km Easy");
+
+      const decimal = "Rest or {1-3:1.6-4.8} run";
+      expect(renderStr(decimal, "mi", "mi")).toEqual("Rest or 1-3 mi run");
+      expect(renderStr(decimal, "mi", "km")).toEqual("Rest or 1.6-4.8 km run");
+
+      const bothDecimal = "{2.5-3.5:4-5.6} Easy";
+      expect(renderStr(bothDecimal, "mi", "mi")).toEqual("2.5-3.5 mi Easy");
+      expect(renderStr(bothDecimal, "mi", "km")).toEqual("4-5.6 km Easy");
+    });
   });
 
   describe("kmToMiles", function () {
