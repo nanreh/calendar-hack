@@ -62,8 +62,8 @@ const About = () => {
             </a>
           </li>
           <li>
-            Several marathon and half marathon plans by Hal Higdon, author of
-            the popular{" "}
+            Several marathon, half marathon, 10K and 5K plans by Hal Higdon,
+            author of the popular{" "}
             <a
               href="http://www.amazon.com/Marathon-Ultimate-Training-Programs-Marathons/dp/1609612248"
               target="_blank"
