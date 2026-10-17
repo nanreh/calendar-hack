@@ -6,7 +6,12 @@ description: "Hal Higdon: 10K Advanced: \"This 10K Training Program is for
   or beyond and who want to improve their performances. You should be capable of
   running 30 to 60 minutes a day, five to seven days a week and have a basic
   understanding of how to do speedwork.\"
-  (more details at the link below)"
+  (more details at the link below)
+  Note: Hal Higdon prescribes tempo runs by time and intervals by
+  repetitions, without distances. The distances used for them here are
+  estimates: 10 minutes per mile for tempo runs, and half a mile per 400
+  repetition including an equal-distance recovery jog, not counting the
+  warm-up and cool-down. Weekly mileage totals are approximate."
 units: mi
 source: https://www.halhigdon.com/training-programs/10k-training/advanced-10k/
 type: 10K

@@ -11,7 +11,14 @@ description: "Hal Higdon: 5K Advanced: \"If you are a seasoned veteran of the
   program also is useful as a prelude to a more endurance-based program aimed at
   a full or half marathon. Thus, Advanced 5K is a specialty program, useful for
   your improvement as a runner. \"
-  (more details at the link below)"
+  (more details at the link below)
+  Note: Hal Higdon prescribes tempo runs by time and intervals by
+  repetitions, without distances. The distances used for them here are
+  estimates: 10 minutes per mile for tempo runs, and half a mile per 400
+  (a quarter mile per 200) including an equal-distance recovery jog, not counting
+  the warm-up and cool-down.
+  Long runs are prescribed by time as well and are also estimated at 10
+  minutes per mile. Weekly mileage totals are approximate."
 units: mi
 source: https://www.halhigdon.com/training-programs/5k-training/advanced-5k/
 type: 5K
