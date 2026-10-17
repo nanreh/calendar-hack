@@ -1,0 +1,44 @@
+name: Deploy to Stage
+# Run by hand from the Actions tab, picking the branch to deploy. It builds that branch and puts it
+# at http://stage.defy.org/hacks/calendarhack/, replacing whatever was there.
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # The AWS role is available only to jobs in this environment, and can only change the app's
+    # folder in the stage bucket (see ops/github-deploy.tf in the defywww repo).
+    environment:
+      name: stage
+      url: http://stage.defy.org/hacks/calendarhack/
+    concurrency:
+      group: stage-deploy
+      cancel-in-progress: false
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      TARGET: s3://stage.defy.org/hacks/calendarhack
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: arn:aws:iam::230118742527:role/calendarhack-stage-deploy
+          aws-region: us-east-1
+      # Same order as the production deploy: the hashed scripts and styles first, keeping old ones,
+      # then everything else, removing files no longer in the build. Stage has no CDN, so pages are
+      # marked to be revalidated on every load and a new deploy shows up on the next reload.
+      - name: Upload assets
+        run: >-
+          aws s3 sync dist/assets/ "$TARGET/assets/"
+          --cache-control "public, max-age=31536000, immutable"
+      - name: Upload pages and other files
+        run: >-
+          aws s3 sync dist/ "$TARGET/" --delete --exclude "assets/*"
+          --cache-control "no-cache"
