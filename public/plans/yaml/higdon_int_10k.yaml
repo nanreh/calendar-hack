@@ -116,7 +116,7 @@ schedule:
     distance: 3
   - title: "5 x 400 5K pace"
     distance: 2.5
-  - title: '{1-3:1.6-4.8} run'
+  - title: '{1-3:2-5} run'
     distance: [1, 3]
   - title: Rest
   - title: Rest
