@@ -41,6 +41,8 @@ export interface RacePlan {
   sourceUnits: Units;
   description: string;
   sourceUrl: string;
+  // where the plan as written puts its goal race; it stays put when workouts are moved around
+  goalRaceDate?: Date;
 }
 
 // A grid of dates. Always represents one or more contiguous weeks.

@@ -112,7 +112,11 @@
                       }
                     ],
                     "examples": [5, [8, 9]]
-                  }
+                  },
+                "goalRace": {
+                    "description": "Marks the plan's goal race, which is then placed on the date picked in the app; without one, the plan's last day is. At most one workout in a plan can be the goal race, and it needs a title. Tune-up races along the way are not marked.",
+                    "type": "boolean"
+                }
             },
             "required": [
                 "title"

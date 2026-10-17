@@ -121,3 +121,4 @@ schedule:
   - title: Rest
   - title: '5K Race ({3.1:5})'
     distance: 3.10685
+    goalRace: true

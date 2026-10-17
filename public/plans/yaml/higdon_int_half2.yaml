@@ -146,4 +146,5 @@ schedule:
   - title: Rest
   - distance: 13.1
     title: Half Marathon
+    goalRace: true
 

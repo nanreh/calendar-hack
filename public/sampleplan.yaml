@@ -51,9 +51,10 @@ schedule:
   - title: '{2:3.2} run'
     distance: 2.0
   - title: Rest
+  # Mark the goal race so it lands on the date picked in the app. Without one, the plan's last day does.
   - title: Half Marathon ({13.1:21.1})
     distance: 13.1
     description: Run fast!
-  # The last day of the last week falls on the end date you pick. A blank title leaves a day empty,
-  # here so the race can be on Saturday.
+    goalRace: true
+  # A blank title leaves a day empty.
   - title: ""

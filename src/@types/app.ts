@@ -41,6 +41,8 @@ export interface PlannedWorkout {
   tags: Tags[];
   distance: WorkoutDistance;
   units: Units;
+  // the plan's goal race; at most one workout in a plan has this
+  goalRace?: boolean;
 }
 
 export interface WeekSchedule {

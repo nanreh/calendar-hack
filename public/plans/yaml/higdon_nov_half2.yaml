@@ -153,3 +153,4 @@ schedule:
   - title: Rest
   - title: Half Marathon ({13.1:21.1})
     distance: 13.1
+    goalRace: true
