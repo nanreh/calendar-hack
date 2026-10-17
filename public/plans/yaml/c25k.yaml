@@ -102,3 +102,4 @@ schedule:
   - title: Rest
   - title: Rest
   - title: Race Day!
+    goalRace: true

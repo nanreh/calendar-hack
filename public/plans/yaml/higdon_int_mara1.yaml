@@ -245,3 +245,4 @@ schedule:
     distance: 2.0
   - title: Marathon ({26.2:42.2})
     distance: 26.2
+    goalRace: true

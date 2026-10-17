@@ -1,4 +1,12 @@
-import { build, swap, swapDow } from "./planbuilder";
+import { register, unregister } from "timezone-mock";
+import {
+  build,
+  dateForPlanEnd,
+  hasGoalRace,
+  planEndDate,
+  swap,
+  swapDow,
+} from "./planbuilder";
 import type { TrainingPlan, PlannedWorkout, Tags } from "types/app";
 import { WeekStartsOnValues } from "./datecalc";
 
@@ -188,6 +196,88 @@ describe("PlanBuilder", function () {
       swapDow(racePlan, "Monday", "Tuesday");
 
       expect(racePlan.dateGrid.getEvent(mon)?.title).toBe(original);
+    });
+  });
+
+  describe("goal race", function () {
+    // A copy of the plan with the goal race on the given day, counted from 0 at the plan's first day.
+    function withGoalRace(plan: TrainingPlan, day: number): TrainingPlan {
+      const schedule = plan.schedule.map((week) => ({
+        ...week,
+        workouts: week.workouts.map((w) => ({ ...w })),
+      }));
+      schedule[Math.floor(day / 7)].workouts[day % 7].goalRace = true;
+      return { ...plan, schedule };
+    }
+
+    it("should use the date as the last day of a plan without a goal race", function () {
+      const plan = createSimplePlan(2);
+      const date = new Date(2024, 0, 14);
+      expect(hasGoalRace(plan)).toBe(false);
+      expect(planEndDate(plan, date)).toEqual(date);
+      expect(dateForPlanEnd(plan, date)).toEqual(date);
+      expect(build(plan, date, WeekStartsOnValues.Monday).goalRaceDate).toBe(
+        undefined,
+      );
+    });
+
+    it("should use the date as the last day when the goal race is the last day", function () {
+      const plan = withGoalRace(createSimplePlan(2), 13);
+      const date = new Date(2024, 0, 14);
+      expect(planEndDate(plan, date)).toEqual(date);
+      expect(dateForPlanEnd(plan, date)).toEqual(date);
+    });
+
+    it("should end the plan after a goal race on its first day", function () {
+      const plan = withGoalRace(createSimplePlan(2), 0);
+      const race = new Date(2024, 0, 1);
+      expect(planEndDate(plan, race)).toEqual(new Date(2024, 0, 14));
+      expect(dateForPlanEnd(plan, new Date(2024, 0, 14))).toEqual(race);
+    });
+
+    it("should put a goal race on the first day of the last week on the date, like Boston", function () {
+      const plan = withGoalRace(createSimplePlan(3), 14);
+      const race = new Date(2030, 3, 15); // Monday April 15, 2030
+      const racePlan = build(plan, race, WeekStartsOnValues.Monday);
+
+      expect(racePlan.goalRaceDate).toEqual(race);
+      expect(racePlan.dateGrid.getEvent(race)?.title).toBe("W3D1");
+      expect(racePlan.planDates.planEndDate).toEqual(new Date(2030, 3, 21));
+    });
+
+    it("should put the goal race on the date whatever day of the week it is", function () {
+      const plan = withGoalRace(createSimplePlan(3), 14);
+      const race = new Date(2030, 3, 17); // Wednesday
+      const racePlan = build(plan, race, WeekStartsOnValues.Sunday);
+
+      expect(racePlan.dateGrid.getEvent(race)?.title).toBe("W3D1");
+    });
+
+    it("should keep the goal race date as written when workouts are moved", function () {
+      const plan = withGoalRace(createSimplePlan(3), 14);
+      const race = new Date(2030, 3, 15);
+      const racePlan = build(plan, race, WeekStartsOnValues.Monday);
+
+      const swapped = swap(racePlan, race, new Date(2030, 3, 16));
+      expect(swapped.goalRaceDate).toEqual(race);
+      expect(swapDow(swapped, "Monday", "Friday").goalRaceDate).toEqual(race);
+    });
+
+    describe("across a change to daylight saving time", function () {
+      beforeAll(() => register("Europe/London"));
+      afterAll(() => unregister());
+
+      it("should count calendar days, not hours", function () {
+        // London moves its clocks forward on March 26, 2023
+        const plan = withGoalRace(createSimplePlan(2), 7);
+        const race = new Date(2023, 2, 20);
+        const end = planEndDate(plan, race);
+
+        expect(end).toEqual(new Date(2023, 2, 26));
+        expect(dateForPlanEnd(plan, end)).toEqual(race);
+        const racePlan = build(plan, race, WeekStartsOnValues.Monday);
+        expect(racePlan.dateGrid.getEvent(race)?.title).toBe("W2D1");
+      });
     });
   });
 });

@@ -7,8 +7,6 @@ description:
   of four days per week. This plan targets a mileage progression starting at 25 miles
   per week and goes up to 40 miles per week during peak mileage weeks. Additionally,
   long runs go up to 16-18 miles.
-  Race day is the Monday of the final week, so set the end date to the Sunday
-  after the race.
 units: mi
 type: Marathon
 schedule:
@@ -517,6 +515,7 @@ schedule:
   - workouts:
       - title: "Boston Marathon ({26.2:42.2})"
         distance: 26.2
+        goalRace: true
       - title: ""
       - title: ""
       - title: ""

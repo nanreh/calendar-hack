@@ -175,3 +175,4 @@ schedule:
   - title: ''
   - title: 5 minute walk, 10 minute jog, 5 minute walk
   - title: Race Day!
+    goalRace: true

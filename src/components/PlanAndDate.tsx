@@ -9,6 +9,8 @@ interface Props {
   selectedPlan: PlanSummary;
   selectedDate: Date;
   dateChangeHandler: (d: Date) => void;
+  // whether the selected date is the day of the plan's goal race rather than its last day
+  hasGoalRace: boolean;
   selectedPlanChangeHandler: (p: PlanSummary) => void;
   weekStartsOn: WeekStartsOn;
   // BYOP props
@@ -29,6 +31,7 @@ const PlanAndDate = ({
   availablePlans,
   selectedDate,
   dateChangeHandler,
+  hasGoalRace,
   weekStartsOn,
   planMode,
   onPlanModeChange,
@@ -60,7 +63,7 @@ const PlanAndDate = ({
       </div>
       {(planMode === "select" || byopPlanLoaded) && (
         <div className="plan-and-date-row">
-          <h3>ending on</h3>
+          <h3>{hasGoalRace ? "race on" : "ending on"}</h3>
           <DateControl
             selectedDate={selectedDate}
             onDateChanged={dateChangeHandler}

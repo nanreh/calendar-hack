@@ -20,6 +20,7 @@ interface RawWorkout {
   description?: string;
   tags?: string[];
   distance?: number | number[];
+  goalRace?: boolean;
 }
 
 interface RawWeek {
@@ -81,6 +82,7 @@ function convertRawPlanToTrainingPlan(raw: RawPlan): TrainingPlan {
       tags: normalizeTags(workout.tags),
       distance: normalizeDistance(workout.distance),
       units: raw.units as Units,
+      ...(workout.goalRace ? { goalRace: true } : {}),
     })),
   }));
 
@@ -93,6 +95,20 @@ function convertRawPlanToTrainingPlan(raw: RawPlan): TrainingPlan {
     source: raw.source,
     schedule,
   };
+}
+
+// Rules for the goal race that the schema can't express, as they span the whole schedule.
+function goalRaceError(raw: RawPlan): string | undefined {
+  const goalRaces = (raw.schedule ?? [])
+    .flatMap((week) => week?.workouts ?? [])
+    .filter((workout) => workout?.goalRace);
+  if (goalRaces.length > 1) {
+    return `Only one workout can be the goal race, but ${goalRaces.length} are`;
+  }
+  if (goalRaces.length === 1 && !goalRaces[0].title?.trim()) {
+    return "The goal race needs a title";
+  }
+  return undefined;
 }
 
 // A failed pattern would be reported as the regular expression itself, which doesn't help anyone
@@ -133,23 +149,26 @@ export async function parseYamlContent(
     const schemaVersion = rawPlan.schemaVersion ?? 1;
 
     // Fetch and validate against schema
-    let schema: object;
+    let schema: object | undefined;
     try {
       schema = await fetchSchema(schemaVersion);
     } catch {
       // If schema can't be loaded, skip validation
       console.warn("Could not load schema, skipping validation");
-      const plan = convertRawPlanToTrainingPlan(rawPlan);
-      return { success: true, plan };
     }
 
-    const ajv = new Ajv({ allErrors: true, verbose: true });
-    const validate = ajv.compile(schema);
-    const valid = validate(rawPlan);
+    if (schema) {
+      const ajv = new Ajv({ allErrors: true, verbose: true });
+      const validate = ajv.compile(schema);
+      if (!validate(rawPlan)) {
+        const errors = validate.errors?.map(describeError).join("; ");
+        return { success: false, error: `Schema validation failed: ${errors}` };
+      }
+    }
 
-    if (!valid) {
-      const errors = validate.errors?.map(describeError).join("; ");
-      return { success: false, error: `Schema validation failed: ${errors}` };
+    const goalError = goalRaceError(rawPlan);
+    if (goalError) {
+      return { success: false, error: goalError };
     }
 
     const plan = convertRawPlanToTrainingPlan(rawPlan);

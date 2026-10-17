@@ -451,3 +451,4 @@ schedule:
     distance: 3.0
   - title: Race Day!
     distance: 26.2
+    goalRace: true

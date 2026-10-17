@@ -79,7 +79,7 @@ describe("App with a shared plan", function () {
     const fetchMock = hostSharedPlan({ text: async () => samplePlan });
 
     const { container } = renderApp(
-      "?plan=gist:someuser/a47c4688520b1cf0&u=mi&d=2030-06-02&s=1",
+      "?plan=gist:someuser/a47c4688520b1cf0&u=mi&r=2030-06-01&s=1",
     );
 
     expect(
@@ -93,7 +93,8 @@ describe("App with a shared plan", function () {
 
     const params = new URLSearchParams(window.location.search);
     expect(params.get("plan")).toBe("gist:someuser/a47c4688520b1cf0");
-    expect(params.get("d")).toBe("2030-06-02");
+    expect(params.get("r")).toBe("2030-06-01");
+    expect(params.has("d")).toBe(false);
     expect(params.has("p")).toBe(false);
   });
 
@@ -234,7 +235,9 @@ describe("App with a shared plan", function () {
     expect(shared.searchParams.get("plan")).toBe(
       "gist:someuser/a47c4688520b1cf0",
     );
-    expect(shared.searchParams.get("d")).toBe("2030-06-02");
+    // the sample plan has a goal race, so the link gives its date
+    expect(shared.searchParams.get("r")).toBe("2030-06-01");
+    expect(shared.searchParams.has("d")).toBe(false);
     expect(shared.searchParams.get("u")).toBe("mi");
     expect(
       await screen.findByRole("button", { name: "Link copied" }),
@@ -336,5 +339,76 @@ describe("App with a shared plan", function () {
       ),
     ).toBeInTheDocument();
     expect(fetchMock).not.toHaveBeenCalled();
+  });
+});
+
+describe("App with a goal race", function () {
+  beforeEach(servePublicFiles);
+
+  // the workout card shown on a date, written the way the calendar shows it
+  const cardOn = (container: HTMLElement, date: string) =>
+    [...container.querySelectorAll<HTMLElement>(".workout-card")].find(
+      (card) => card.querySelector(".dateline")?.textContent === date,
+    );
+
+  it("puts the goal race on the date in the link", async function () {
+    const { container } = renderApp(
+      "?p=boston_level_two&u=mi&r=2030-04-15&s=1",
+    );
+
+    expect(await screen.findByText("race on")).toBeInTheDocument();
+    expect(cardOn(container, "4/15/2030")).toHaveTextContent(
+      "Boston Marathon (26.2 mi)",
+    );
+    const params = new URLSearchParams(window.location.search);
+    expect(params.get("r")).toBe("2030-04-15");
+    expect(params.has("d")).toBe(false);
+  });
+
+  it("reads the date in an older link as the plan's last day", async function () {
+    // links made before goal races existed give the Sunday after Boston's Monday race
+    const { container } = renderApp(
+      "?p=boston_level_two&u=mi&d=2030-04-21&s=1",
+    );
+
+    expect(await screen.findByText("race on")).toBeInTheDocument();
+    expect(cardOn(container, "4/15/2030")).toHaveTextContent(
+      "Boston Marathon (26.2 mi)",
+    );
+    const params = new URLSearchParams(window.location.search);
+    expect(params.get("r")).toBe("2030-04-15");
+    expect(params.has("d")).toBe(false);
+  });
+
+  it("keeps the date when switching between plans with and without a goal race", async function () {
+    const { container } = renderApp(
+      "?p=boston_level_two&u=mi&r=2030-04-15&s=1",
+    );
+    await screen.findByText("race on");
+
+    // this plan has no race in it, so the date is its last day
+    await userEvent.selectOptions(
+      container.querySelector("select")!,
+      "(Marathon) Hansons Beginner Marathon",
+    );
+
+    expect(await screen.findByText("ending on")).toBeInTheDocument();
+    expect(cardOn(container, "4/15/2030")).toHaveTextContent("Plan Ends");
+    let params = new URLSearchParams(window.location.search);
+    expect(params.get("d")).toBe("2030-04-15");
+    expect(params.has("r")).toBe(false);
+
+    await userEvent.selectOptions(
+      container.querySelector("select")!,
+      "(Marathon) Boston Marathon Level 2 Plan",
+    );
+
+    expect(await screen.findByText("race on")).toBeInTheDocument();
+    expect(cardOn(container, "4/15/2030")).toHaveTextContent(
+      "Boston Marathon (26.2 mi)",
+    );
+    params = new URLSearchParams(window.location.search);
+    expect(params.get("r")).toBe("2030-04-15");
+    expect(params.has("d")).toBe(false);
   });
 });

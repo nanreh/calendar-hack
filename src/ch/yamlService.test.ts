@@ -234,6 +234,46 @@ schedule:
       );
     });
 
+    describe("goal race", function () {
+      // validYaml with goalRace: true added to the workouts on the given days, counted from 0
+      const withGoalRaces = (...days: number[]) => {
+        let day = -1;
+        return validYaml.replace(/^ {4}- title: .*$/gm, (line) => {
+          day++;
+          return days.includes(day) ? `${line}\n      goalRace: true` : line;
+        });
+      };
+
+      it("should mark the goal race", async function () {
+        const result = await parseYamlContent(withGoalRaces(5));
+
+        expect(result.success).toBe(true);
+        const workouts = result.plan!.schedule[0].workouts;
+        expect(workouts[5].goalRace).toBe(true);
+        expect(workouts.filter((w) => w.goalRace)).toHaveLength(1);
+      });
+
+      it("should refuse more than one goal race", async function () {
+        const result = await parseYamlContent(withGoalRaces(1, 5));
+
+        expect(result.success).toBe(false);
+        expect(result.error).toBe(
+          "Only one workout can be the goal race, but 2 are",
+        );
+      });
+
+      it("should refuse a goal race without a title", async function () {
+        const yaml = withGoalRaces(6).replace(
+          "    - title: Cross\n",
+          '    - title: ""\n',
+        );
+        const result = await parseYamlContent(yaml);
+
+        expect(result.success).toBe(false);
+        expect(result.error).toBe("The goal race needs a title");
+      });
+    });
+
     it("should default empty description to empty string", async function () {
       const result = await parseYamlContent(validYaml);
 

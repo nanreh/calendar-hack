@@ -98,3 +98,4 @@ schedule:
   - title: Rest
   - title: '10K Race ({6.2:10})'
     distance: 6.213
+    goalRace: true

@@ -1,4 +1,4 @@
-import { eachDayOfInterval } from "date-fns";
+import { addDays, eachDayOfInterval } from "date-fns";
 import type { WeekStartsOn } from "./datecalc";
 import { calcPlanDates } from "./datecalc";
 import type { RacePlan } from "./dategrid";
@@ -40,14 +40,42 @@ function getWorkouts(trainingPlan: TrainingPlan): PlannedWorkout[] {
   return result;
 }
 
+// The date picked in the app is the day of the plan's goal race, if it has one, or else its last
+// day. Everything after that works from the last day, so these convert between the two.
+
+// Position of the goal race among all the plan's days, or -1 if it has none.
+function goalRaceIndex(trainingPlan: TrainingPlan): number {
+  return getWorkouts(trainingPlan).findIndex((w) => w.goalRace);
+}
+
+// Days from the goal race to the plan's last day, 0 if it has no goal race.
+function daysAfterGoalRace(trainingPlan: TrainingPlan): number {
+  const index = goalRaceIndex(trainingPlan);
+  return index < 0 ? 0 : trainingPlan.schedule.length * 7 - 1 - index;
+}
+
+export function hasGoalRace(trainingPlan: TrainingPlan): boolean {
+  return goalRaceIndex(trainingPlan) >= 0;
+}
+
+export function planEndDate(trainingPlan: TrainingPlan, date: Date): Date {
+  return addDays(date, daysAfterGoalRace(trainingPlan));
+}
+
+// The date to show in the app for a plan that ends on the given day.
+export function dateForPlanEnd(trainingPlan: TrainingPlan, end: Date): Date {
+  return addDays(end, -daysAfterGoalRace(trainingPlan));
+}
+
+// Lays out the plan so its goal race, or its last day if it has none, falls on the given date.
 export function build(
   trainingPlan: TrainingPlan,
-  raceDate: Date,
+  date: Date,
   weekStartsOn: WeekStartsOn,
 ): RacePlan {
   const planDates = calcPlanDates(
     trainingPlan.schedule.length,
-    raceDate,
+    planEndDate(trainingPlan, date),
     weekStartsOn,
   );
   const workoutsToPlace = getWorkouts(trainingPlan);
@@ -72,6 +100,7 @@ export function build(
     sourceUnits: trainingPlan.units,
     description: trainingPlan.description,
     sourceUrl: trainingPlan.source,
+    goalRaceDate: hasGoalRace(trainingPlan) ? date : undefined,
   };
 }
 
@@ -84,6 +113,7 @@ export function swap(racePlan: RacePlan, d1: Date, d2: Date): RacePlan {
     sourceUnits: racePlan.sourceUnits,
     description: racePlan.description,
     sourceUrl: racePlan.sourceUrl,
+    goalRaceDate: racePlan.goalRaceDate,
   };
   newPlan.dateGrid.swap(d1, d2);
   return newPlan;
@@ -102,6 +132,7 @@ export function swapDow(
     sourceUnits: racePlan.sourceUnits,
     description: racePlan.description,
     sourceUrl: racePlan.sourceUrl,
+    goalRaceDate: racePlan.goalRaceDate,
   };
   newPlan.dateGrid.swapDow(dow1, dow2);
   return newPlan;

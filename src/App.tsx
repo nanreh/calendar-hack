@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { repo } from "./ch/planrepo";
 import { endOfWeek, addWeeks, isAfter } from "date-fns";
 import type { RacePlan } from "./ch/dategrid";
-import { build, swap, swapDow } from "./ch/planbuilder";
+import { build, dateForPlanEnd, swap, swapDow } from "./ch/planbuilder";
 import { CalendarGrid } from "./components/CalendarGrid";
 import { toIcal } from "./ch/icalservice";
 import { toCsv } from "./ch/csvService";
@@ -37,10 +37,13 @@ import { parsePlanLink, parsePlanRef, toPlanRef } from "./ch/planSource";
 import { loadPlanFromSource } from "./ch/planLoader";
 
 const App = () => {
-  const [{ u, p, d, s, plan }, setq] = useQueryParams({
+  const [{ u, p, d, r, s, plan }, setq] = useQueryParams({
     u: StringParam,
     p: StringParam,
+    // the plan's last day; links to plans with a goal race use r instead
     d: DateParam,
+    // the day of the plan's goal race
+    r: DateParam,
     s: NumberParam,
     // where a shared custom plan is hosted, e.g. "gist:someuser/0fddae86"
     plan: StringParam,
@@ -54,11 +57,18 @@ const App = () => {
   const [weekStartsOn, setWeekStartsOn] = useState<WeekStartsOn>(
     s === 0 || s === 1 || s === 6 ? s : WeekStartsOnValues.Monday,
   );
-  const [planEndDate, setPlanEndDate] = useState(
-    d && isAfter(d, new Date())
-      ? d
-      : addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20),
+  const linkedRaceDate = r && isAfter(r, new Date()) ? r : undefined;
+  const linkedEndDate = d && isAfter(d, new Date()) ? d : undefined;
+  // The date picked in the app: the day of the plan's goal race, or its last day if it has none.
+  // It stays when another plan is picked, and is converted for each plan when it is laid out.
+  const [selectedDate, setSelectedDate] = useState(
+    linkedRaceDate ??
+      linkedEndDate ??
+      addWeeks(endOfWeek(new Date(), { weekStartsOn: weekStartsOn }), 20),
   );
+  // Links made before goal races existed give the plan's last day (d) even for plans that now
+  // have a goal race. That date is converted to the race date when the first plan is laid out.
+  const dateIsPlanEnd = useRef(!linkedRaceDate && !!linkedEndDate);
   const [planMode, setPlanMode] = useState<PlanMode>(plan ? "byop" : "select");
   const [byopError, setByopError] = useState<string | null>(null);
   const [byopLoading, setByopLoading] = useState<boolean>(false);
@@ -78,14 +88,12 @@ const App = () => {
       setq({ p: undefined, plan: undefined });
     } else if (mode === "select") {
       if (!isPlanRemoved(selectedPlan)) {
-        const rp = build(
-          await repo.fetch(selectedPlan),
-          planEndDate,
-          weekStartsOn,
-        );
+        const trainingPlan = await repo.fetch(selectedPlan);
+        const date = dateFor(trainingPlan);
+        const rp = build(trainingPlan, date, weekStartsOn);
         setRacePlan(rp);
         setUndoHistory([rp]);
-        setq(getParams(selectedUnits, selectedPlan, planEndDate, weekStartsOn));
+        setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn, rp));
       }
     }
   };
@@ -98,17 +106,35 @@ const App = () => {
     });
   }, []);
 
+  // The selected date to lay out the given plan from, converting a date from an old link first.
+  const dateFor = (plan: TrainingPlan): Date => {
+    if (!dateIsPlanEnd.current) {
+      return selectedDate;
+    }
+    dateIsPlanEnd.current = false;
+    const date = dateForPlanEnd(plan, selectedDate);
+    setSelectedDate(date);
+    return date;
+  };
+
+  // The date goes in r for a plan with a goal race and in d otherwise.
+  const dateParams = (date: Date, racePlan: RacePlan | undefined) =>
+    racePlan?.goalRaceDate
+      ? { d: undefined, r: date }
+      : { d: date, r: undefined };
+
   const getParams = (
     units: Units,
     plan: PlanSummary,
     date: Date,
     weekStartsOn: WeekStartsOn,
+    racePlan: RacePlan | undefined,
   ) => {
     return {
       u: units,
       p: plan[0],
       plan: undefined,
-      d: date,
+      ...dateParams(date, racePlan),
       s: weekStartsOn,
     };
   };
@@ -120,23 +146,25 @@ const App = () => {
     units: Units,
     date: Date,
     weekStartsOn: WeekStartsOn,
+    racePlan: RacePlan | undefined,
   ) => {
     return {
       u: units,
       p: undefined,
       plan: source ? toPlanRef(source) : undefined,
-      d: date,
+      ...dateParams(date, racePlan),
       s: weekStartsOn,
     };
   };
 
   const showByopPlan = (plan: TrainingPlan, source: PlanSource | null) => {
-    const rp = build(plan, planEndDate, weekStartsOn);
+    const date = dateFor(plan);
+    const rp = build(plan, date, weekStartsOn);
     setRacePlan(rp);
     setUndoHistory([rp]);
     setByopPlan(plan);
     setByopSource(source);
-    setq(getByopParams(source, selectedUnits, planEndDate, weekStartsOn));
+    setq(getByopParams(source, selectedUnits, date, weekStartsOn, rp));
   };
 
   const onByopFileLoad = async (content: string) => {
@@ -187,18 +215,19 @@ const App = () => {
 
   const initialLoad = async (
     plan: PlanSummary,
-    endDate: Date,
     units: Units,
     weekStartsOn: WeekStartsOn,
   ) => {
     if (isPlanRemoved(plan)) {
-      setq(getParams(units, plan, endDate, weekStartsOn));
+      setq(getParams(units, plan, selectedDate, weekStartsOn, undefined));
       return;
     }
-    const racePlan = build(await repo.fetch(plan), endDate, weekStartsOn);
+    const trainingPlan = await repo.fetch(plan);
+    const date = dateFor(trainingPlan);
+    const racePlan = build(trainingPlan, date, weekStartsOn);
     setRacePlan(racePlan);
     setUndoHistory([...undoHistory, racePlan]);
-    setq(getParams(units, plan, endDate, weekStartsOn));
+    setq(getParams(units, plan, date, weekStartsOn, racePlan));
   };
 
   useMountEffect(() => {
@@ -208,7 +237,7 @@ const App = () => {
     if (plan) {
       loadSharedPlan(plan);
     } else {
-      initialLoad(selectedPlan, planEndDate, selectedUnits, weekStartsOn);
+      initialLoad(selectedPlan, selectedUnits, weekStartsOn);
     }
   });
 
@@ -217,42 +246,50 @@ const App = () => {
     if (isPlanRemoved(plan)) {
       setRacePlan(undefined);
       setUndoHistory([]);
-      setq(getParams(selectedUnits, plan, planEndDate, weekStartsOn));
+      setq(
+        getParams(selectedUnits, plan, selectedDate, weekStartsOn, undefined),
+      );
       return;
     }
-    const racePlan = build(await repo.fetch(plan), planEndDate, weekStartsOn);
+    const trainingPlan = await repo.fetch(plan);
+    const date = dateFor(trainingPlan);
+    const racePlan = build(trainingPlan, date, weekStartsOn);
     setRacePlan(racePlan);
     setUndoHistory([racePlan]);
-    setq(getParams(selectedUnits, plan, planEndDate, weekStartsOn));
+    setq(getParams(selectedUnits, plan, date, weekStartsOn, racePlan));
   };
 
-  const onSelectedEndDateChange = async (date: Date) => {
-    setPlanEndDate(date);
+  const onSelectedDateChange = async (date: Date) => {
+    // a date picked here already means what the date picker says
+    dateIsPlanEnd.current = false;
+    setSelectedDate(date);
     if (planMode === "byop") {
       if (byopPlan) {
         const rp = build(byopPlan, date, weekStartsOn);
         setRacePlan(rp);
         setUndoHistory([rp]);
-        setq(getByopParams(byopSource, selectedUnits, date, weekStartsOn));
+        setq(getByopParams(byopSource, selectedUnits, date, weekStartsOn, rp));
       }
       return;
     }
     if (isPlanRemoved(selectedPlan)) {
-      setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn));
+      setq(
+        getParams(selectedUnits, selectedPlan, date, weekStartsOn, undefined),
+      );
       return;
     }
     const racePlan = build(await repo.fetch(selectedPlan), date, weekStartsOn);
     setRacePlan(racePlan);
     setUndoHistory([racePlan]);
-    setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn));
+    setq(getParams(selectedUnits, selectedPlan, date, weekStartsOn, racePlan));
   };
 
   const onSelectedUnitsChanged = (u: Units) => {
     setSelectedUnits(u);
     if (planMode === "byop") {
-      setq(getByopParams(byopSource, u, planEndDate, weekStartsOn));
+      setq(getByopParams(byopSource, u, selectedDate, weekStartsOn, racePlan));
     } else {
-      setq(getParams(u, selectedPlan, planEndDate, weekStartsOn));
+      setq(getParams(u, selectedPlan, selectedDate, weekStartsOn, racePlan));
     }
   };
 
@@ -260,17 +297,17 @@ const App = () => {
     setWeekStartsOn(v);
     if (planMode === "byop") {
       if (byopPlan) {
-        const rp = build(byopPlan, planEndDate, v);
+        const rp = build(byopPlan, selectedDate, v);
         setRacePlan(rp);
         setUndoHistory([rp]);
-        setq(getByopParams(byopSource, selectedUnits, planEndDate, v));
+        setq(getByopParams(byopSource, selectedUnits, selectedDate, v, rp));
       }
       return;
     }
-    const rp = build(await repo.fetch(selectedPlan), planEndDate, v);
+    const rp = build(await repo.fetch(selectedPlan), selectedDate, v);
     setRacePlan(rp);
     setUndoHistory([rp]);
-    setq(getParams(selectedUnits, selectedPlan, planEndDate, v));
+    setq(getParams(selectedUnits, selectedPlan, selectedDate, v, rp));
   };
 
   function swapDates(d1: Date, d2: Date): void {
@@ -319,8 +356,9 @@ const App = () => {
       <PlanAndDate
         availablePlans={repo.available}
         selectedPlan={selectedPlan}
-        selectedDate={planEndDate}
-        dateChangeHandler={onSelectedEndDateChange}
+        selectedDate={selectedDate}
+        dateChangeHandler={onSelectedDateChange}
+        hasGoalRace={racePlan?.goalRaceDate !== undefined}
         selectedPlanChangeHandler={onSelectedPlanChange}
         weekStartsOn={weekStartsOn}
         planMode={planMode}
