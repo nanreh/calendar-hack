@@ -1,93 +1,85 @@
-import { DragHandle } from "./DragHandle";
+import { useRef } from "react";
+import type { PointerEvent as ReactPointerEvent, RefObject } from "react";
 import { useDrop, useDrag } from "react-dnd";
-import { ItemTypes } from "../ch/ItemTypes";
+import { DragHandle } from "./DragHandle";
+import { ItemTypes, type DowDragItem } from "../ch/ItemTypes";
 import type { dayOfWeek } from "types/app";
 
 interface Props {
   dow: dayOfWeek;
+  // true while this column is the drag source (shown dimmed/lifted)
+  lifting: boolean;
   swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
-  setSelectedDow: (dow: dayOfWeek | undefined) => void;
-  setHoveringDow: (dow: dayOfWeek | undefined) => void;
+  // shared off-screen column replica (DowColumnGhost) and a callback that
+  // makes it show this column before the drag starts
+  ghostRef: RefObject<HTMLDivElement | null>;
+  onPrepareDragImage: () => void;
 }
 
 export const DayOfWeekHeader = ({
   dow,
+  lifting,
   swapDow,
-  setSelectedDow,
-  setHoveringDow,
+  ghostRef,
+  onPrepareDragImage,
 }: Props) => {
-  const canSwapWith = (other: dayOfWeek) => {
-    return dow !== other;
-  };
-
-  // TODO Things are structurally awkward here. We're dragging + dropping these headers but we need to
-  // send state "updwards" so the UI can draw itself. Restructure to clean this up.
-  const [{ isDragging }, drag, dragPreview] = useDrag({
+  // preview() is wired up in onGrab: the drag image is a full-column
+  // off-screen replica, not just the header chip
+  const [, drag, preview] = useDrag({
     type: ItemTypes.DOW,
     item: { id: dow },
-    end: () => {
-      setSelectedDow(undefined);
-      setHoveringDow(undefined);
-    },
-    collect: (monitor) => {
-      return {
-        isDragging: monitor.isDragging(),
-      };
-    },
   });
 
-  //const [{ isOver, canDrop }, drop] = useDrop({
   const [, drop] = useDrop({
     accept: ItemTypes.DOW,
-    canDrop: (item: { id: dayOfWeek }) => canSwapWith(item.id),
-    drop: (item: { id: dayOfWeek }) => {
+    canDrop: (item: DowDragItem) => item.id !== dow,
+    drop: (item: DowDragItem) => {
       swapDow(dow, item.id);
-    },
-    collect: (monitor) => {
-      if (monitor.isOver()) {
-        if (monitor.canDrop()) {
-          setHoveringDow(dow);
-        } else {
-          setSelectedDow(dow);
-          setHoveringDow(undefined);
-        }
-      }
-      return {
-        isOver: monitor.isOver(),
-        canDrop: monitor.canDrop(),
-      };
     },
   });
 
+  const chipRef = useRef<HTMLDivElement>(null);
+
+  function onGrab(e: ReactPointerEvent<HTMLDivElement>) {
+    const chip = chipRef.current;
+    const ghost = ghostRef.current;
+    if (!chip || !ghost) return;
+    // make the replica show this column; the update is committed before the
+    // browser paints, i.e. before the drag image is snapshotted
+    onPrepareDragImage();
+    const rect = chip.getBoundingClientRect();
+    // (offsetX, offsetY) is the image point placed under the cursor;
+    // "cursor minus the column top-left" overlays the replica exactly on
+    // the place the real column just occupied
+    preview(ghost, {
+      offsetX: e.clientX - rect.left,
+      offsetY: e.clientY - rect.top,
+    });
+  }
+
   return (
-    <div className={`week-header ${isDragging ? "dragging" : ""}`}>
+    <div className={`week-header ${lifting ? "lifting" : ""}`}>
       <div
         ref={(node) => {
           drop(node);
         }}
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "100%",
+        }}
       >
         <div
-          style={{
-            position: "relative",
-            width: "100%",
-            height: "100%",
+          className="day-header"
+          data-dow={dow}
+          ref={(node) => {
+            drag(node);
+            chipRef.current = node;
           }}
+          onPointerDown={onGrab}
         >
-          <div
-            ref={(node) => {
-              dragPreview(node);
-            }}
-          >
-            <div
-              className="day-header"
-              ref={(node) => {
-                drag(node);
-              }}
-            >
-              <DragHandle viewBox="0 0 32 36" />
-              <div>{dow}</div>
-            </div>
-          </div>
+          <DragHandle viewBox="0 0 32 36" />
+          <div>{dow}</div>
         </div>
       </div>
     </div>

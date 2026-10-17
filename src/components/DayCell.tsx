@@ -1,17 +1,25 @@
+import type { RefObject } from "react";
 import { useDrop } from "react-dnd";
-import { ItemTypes } from "../ch/ItemTypes";
+import { ItemTypes, type DayDragItem, type DragItem } from "../ch/ItemTypes";
+import { format } from "date-fns";
 import { WorkoutCard } from "./WorkoutCard";
 import { BlankCard } from "./BlankCard";
-import { Overlay } from "./Overlay";
-import type { DayDetails, Units } from "types/app";
+import type { DayDetails, Units, dayOfWeek } from "types/app";
 
 interface Props {
   dayDetails: DayDetails | undefined;
   date: Date;
   units: Units;
   swap: (d1: Date, d2: Date) => void;
-  selected: boolean;
-  hovering: boolean;
+  swapDow: (dow1: dayOfWeek, dow2: dayOfWeek) => void;
+  // shared off-screen card replica (CardGhost) and a callback to make it
+  // show this cell's card before the drag starts; forwarded from
+  // CalendarGrid to WorkoutCard
+  cardGhostRef: RefObject<HTMLDivElement | null>;
+  onPrepareDragImage: (item: DayDragItem) => void;
+  // true while this cell (or, for DOW drags, its whole column) is the
+  // source of the drag in progress; the source is dimmed, never framed
+  lifting: boolean;
 }
 
 export const DayCell = ({
@@ -19,26 +27,43 @@ export const DayCell = ({
   date,
   units,
   swap,
-  selected,
-  hovering,
+  swapDow,
+  cardGhostRef,
+  onPrepareDragImage,
+  lifting,
 }: Props) => {
-  function canSwap(droppedDate: Date) {
-    return dayDetails !== undefined && date !== droppedDate;
+  const thisDow = format(date, "EEEE") as dayOfWeek;
+
+  function canDropItem(item: DragItem) {
+    if ("date" in item) {
+      // date value, not identity: the drag item may hold another Date
+      // instance for the same day
+      return dayDetails !== undefined && date.getTime() !== item.date.getTime();
+    }
+    return item.id !== thisDow;
   }
 
-  const [{ isOver, canDrop }, drop] = useDrop({
-    accept: ItemTypes.DAY,
-    canDrop: (item) => canSwap(item.date),
-    drop: (item: { date: Date }) => {
-      swap(date, item.date);
-      return;
+  const [{ isOver, canDrop, itemType }, drop] = useDrop({
+    accept: [ItemTypes.DAY, ItemTypes.DOW],
+    canDrop: canDropItem,
+    drop: (item: DragItem) => {
+      if ("date" in item) {
+        swap(date, item.date);
+      } else {
+        swapDow(thisDow, item.id);
+      }
     },
     collect: (monitor) => ({
-      isOver: monitor.isOver(),
+      isOver: monitor.isOver({ shallow: true }),
       canDrop: monitor.canDrop(),
-      droppedItem: monitor.getItem(),
+      itemType: monitor.getItemType(),
     }),
   });
+
+  // frame the hovered cell while a card (not a column) is dragged, except
+  // over the source cell itself; column drags are framed by the
+  // DowColumnIndicator instead
+  const showFrame = itemType === ItemTypes.DAY && isOver && !lifting;
 
   return (
     <div
@@ -49,7 +74,7 @@ export const DayCell = ({
       }}
     >
       <div
-        className="day-cell"
+        className={`day-cell ${lifting ? "lifting" : ""}`}
         ref={(node) => {
           drop(node);
         }}
@@ -59,15 +84,14 @@ export const DayCell = ({
             dayDetails={dayDetails}
             date={date}
             units={units}
-            swap={swap}
+            cardGhostRef={cardGhostRef}
+            onPrepareDragImage={onPrepareDragImage}
           />
         )}
         {!dayDetails && <BlankCard date={date} />}
-        {isOver && !canDrop && <Overlay color="pink" />}
-        {isOver && canDrop && <Overlay color="lightgreen" />}
-
-        {dayDetails && selected && <Overlay color="pink" />}
-        {dayDetails && !selected && hovering && <Overlay color="lightgreen" />}
+        {showFrame && (
+          <div className={`drop-frame ${canDrop ? "" : "blocked"}`} />
+        )}
       </div>
     </div>
   );

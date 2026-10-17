@@ -295,10 +295,6 @@ svg.drag-handle {
   cursor: grab;
 }
 
-.dragging {
-  opacity: 0.5;
-}
-
 .plan-and-date {
   display: flex;
   flex-direction: column;
@@ -455,10 +451,6 @@ svg.drag-handle {
   opacity: 1;
 }
 
-.workout-card.dragging {
-  opacity: 0.7;
-}
-
 .workout-content {
   svg {
     width: 1em;
@@ -565,8 +557,80 @@ svg.drag-handle {
   height: 100%;
 }
 
+/* the source of a drag, shown "lifted": the whole column while a day-of-week
+   header is dragged, the single date tile while a card is dragged;
+   the native drag image follows the cursor */
+.lifting {
+  opacity: 0.35;
+  transition: opacity 0.12s ease;
+}
+
+/* off-screen replicas used as native drag images (see CardGhost,
+   DowColumnGhost); they must stay laid out (not display:none / zero-size)
+   or the snapshot is empty */
+.card-ghost,
+.dow-ghost {
+  position: fixed;
+  top: 0;
+  left: -10000px;
+  pointer-events: none;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.35));
+}
+
+.dow-ghost {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+/* frame around the column that is currently the drop target while a
+   day-of-week header is dragged; slides between columns via the transition */
+.dow-target {
+  position: fixed;
+  box-sizing: border-box;
+  border: 2px solid #6abf69;
+  background-color: rgba(106, 191, 105, 0.08);
+  border-radius: 0.4em;
+  pointer-events: none;
+  z-index: 9997; /* above the grid content */
+  transition:
+    left 0.12s ease,
+    top 0.12s ease,
+    width 0.12s ease,
+    height 0.12s ease,
+    opacity 0.15s ease;
+}
+
 .day-cell {
   height: 100%;
+}
+
+/* frame around the date cell that is currently the drop target while a
+   card is dragged (see DayCell); .blocked marks an invalid drop */
+.drop-frame {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #6abf69;
+  background-color: rgba(106, 191, 105, 0.08);
+  border-radius: 0.25rem;
+  pointer-events: none;
+  animation: drop-frame-in 0.12s ease;
+}
+
+.drop-frame.blocked {
+  border-color: #d77a95;
+  background-color: rgba(215, 122, 149, 0.08);
+}
+
+@keyframes drop-frame-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .dateline {
