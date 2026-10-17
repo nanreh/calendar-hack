@@ -1,3 +1,5 @@
+# Editors that support it (such as VS Code with the YAML extension) use this schema to check the plan as you write it.
+# yaml-language-server: $schema=https://defy.org/hacks/calendarhack/schema/plan-schema-v1.json
 schemaVersion: 1
 id: sample
 name: 'Sample Plan'
@@ -5,7 +7,7 @@ description: |-
   This is a sample plan to demonstrate the file format.
 units: mi # The units used for distances in this plan. km is also acceptable
 source: https://defy.org/hacks/calendarhack/
-type: Half Marathon # valid values: Base, Multiple Distances, Marathon, Half Marathon, 5K, 10K 10K/10m, 50K, 100K, 100M
+type: Half Marathon # valid values: Base, Multiple Distances, Marathon, Half Marathon, 5K, 10K, 15K/10M, 50K, 100K, 100M
 schedule:
 - description: Week 1
   workouts:
@@ -27,8 +29,10 @@ schedule:
   - title: Rest
     description: Don't you love rest days?
   - title: Rest or cross train
-  - title: '{4} hills'
-    distance: 4.0
+  # A range of distances: the low and high values, then the same in the other unit. Ranges take whole numbers only.
+  # Give the distance as a range too, as [low, high].
+  - title: '{4-5:6-8} hills'
+    distance: [4.0, 5.0]
     description: Find a hilly neighborhood and run at a steady pace
 - description: Week 2
   workouts:
@@ -36,7 +40,7 @@ schedule:
     description: Leg Day!
   - title: '{4:6.4} run'
     distance: 4.0
-  - title: '{3:4.6} run'
+  - title: '{3:4.8} run'
     distance: 3.0
   - title: '{2:3.2} run'
     distance: 2.0
