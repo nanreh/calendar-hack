@@ -68,7 +68,7 @@ export function renderDist(value: number[], from: Units, to: Units): string {
 const dlexer = moo.compile({
   with_range: [
     {
-      match: /{\d+-\d+:\d+-\d+}/,
+      match: /{\d+(?:\.\d+)?-\d+(?:\.\d+)?:\d+(?:\.\d+)?-\d+(?:\.\d+)?}/,
       value: (x) => x.slice(1, -1),
     },
   ],
@@ -111,7 +111,7 @@ function handle_conversions(input: string, from: Units, to: Units): string {
           : renderDist([toVal], to, to);
       result += out;
     } else if (t.type === "with_range") {
-      // e.g. {8-9:13-14}
+      // e.g. {8-9:13-14} or {1-3:1.6-4.8}
       const [fromRange, toRange] = t.value.split(":");
       const [fromStart, fromEnd] = fromRange.split("-").map(Number);
       const [toStart, toEnd] = toRange.split("-").map(Number);

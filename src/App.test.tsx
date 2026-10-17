@@ -88,7 +88,8 @@ describe("App with a shared plan", function () {
     expect(fetchMock).toHaveBeenCalledWith(
       "https://gist.githubusercontent.com/someuser/a47c4688520b1cf0/raw",
     );
-    expect(container.querySelectorAll(".workout-card")).toHaveLength(14);
+    // Two weeks of seven days, less the blank last day, which gets no card.
+    expect(container.querySelectorAll(".workout-card")).toHaveLength(13);
 
     const params = new URLSearchParams(window.location.search);
     expect(params.get("plan")).toBe("gist:someuser/a47c4688520b1cf0");
@@ -165,7 +166,7 @@ describe("App with a shared plan", function () {
     await userEvent.click(screen.getByRole("button", { name: "dpaste.com" }));
 
     expect(screen.getByLabelText("From a link")).toHaveValue(
-      "https://dpaste.com/5SZ6H9EHL",
+      "https://dpaste.com/FKSPE2JXF",
     );
     expect(fetchMock).not.toHaveBeenCalled();
     expect(new URLSearchParams(window.location.search).has("plan")).toBe(false);
@@ -175,9 +176,9 @@ describe("App with a shared plan", function () {
     expect(
       await screen.findByText("Half Marathon (13.1 mi)"),
     ).toBeInTheDocument();
-    expect(fetchMock).toHaveBeenCalledWith("https://dpaste.com/5SZ6H9EHL.txt");
+    expect(fetchMock).toHaveBeenCalledWith("https://dpaste.com/FKSPE2JXF.txt");
     expect(new URLSearchParams(window.location.search).get("plan")).toBe(
-      "dpaste:5SZ6H9EHL",
+      "dpaste:FKSPE2JXF",
     );
   });
 

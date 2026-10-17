@@ -5,7 +5,7 @@ id: sample
 name: 'Sample Plan'
 description: |-
   This is a sample plan to demonstrate the file format.
-units: mi # The units used for distances in this plan. km is also acceptable
+units: mi # mi or km. Every distance in the plan is in these units, including the first number in curly braces.
 source: https://defy.org/hacks/calendarhack/
 type: Half Marathon # valid values: Base, Multiple Distances, Marathon, Half Marathon, 5K, 10K, 15K/10M, 50K, 100K, 100M
 schedule:
@@ -17,6 +17,7 @@ schedule:
     description: Leg Day!
   # Workouts can have a distance. It will be interpreted in the units declared at the top of this file.
   # The second workout for this week is a 5 mile run.
+  # Quote a title that starts with { or contains ": ", or YAML will misread it.
   - title: '{5} run' # Surround distances in curly braces so they can be converted to other units.
     distance: 5.0
     description: Run at an easy pace
@@ -24,14 +25,19 @@ schedule:
   - title: '{2:3.2} run' # We can provide the converted value so we have full control over how the units conversion happens.
     distance: 2.0
     description: Short and sweet recovery run
-  - title: Weights
-    description: Upper body weights
+  # Descriptions can span several lines and use curly braces too.
+  - title: '{6:9.7} intervals'
+    distance: 6.0
+    description: |-
+      {2:3.2} warm-up
+      6 x 800m at 5K pace with 400m jog recovery
+      {1:1.6} cool-down
   - title: Rest
     description: Don't you love rest days?
   - title: Rest or cross train
-  # A range of distances: the low and high values, then the same in the other unit. Ranges take whole numbers only.
+  # A range of distances: the low and high values, then the same in the other unit.
   # Give the distance as a range too, as [low, high].
-  - title: '{4-5:6-8} hills'
+  - title: '{4-5:6.4-8} hills'
     distance: [4.0, 5.0]
     description: Find a hilly neighborhood and run at a steady pace
 - description: Week 2
@@ -40,13 +46,14 @@ schedule:
     description: Leg Day!
   - title: '{4:6.4} run'
     distance: 4.0
-  - title: '{3:4.8} run'
-    distance: 3.0
+  # Leave out the distance when a workout is set by time. It then doesn't count toward the weekly total.
+  - title: 45 min tempo
   - title: '{2:3.2} run'
     distance: 2.0
   - title: Rest
-  - title: Rest
-    description: Two rest days in a row!
   - title: Half Marathon ({13.1:21.1})
     distance: 13.1
     description: Run fast!
+  # The last day of the last week falls on the end date you pick. A blank title leaves a day empty,
+  # here so the race can be on Saturday.
+  - title: ""

@@ -76,7 +76,7 @@ export const SAMPLE_PLAN_LINKS: { label: string; link: string }[] = [
     link: "https://gist.github.com/nanreh/0fddae86708d3a509dd68729116e746e",
   },
   // this paste expires in October 2027
-  { label: "dpaste.com", link: "https://dpaste.com/5SZ6H9EHL" },
+  { label: "dpaste.com", link: "https://dpaste.com/FKSPE2JXF" },
   {
     label: "Dropbox",
     link: "https://www.dropbox.com/scl/fi/mt32a5vkf40vcvf75yza8/sampleplan.yaml?rlkey=yv5uxir3tvglh4o7wos2pwaey&dl=0",

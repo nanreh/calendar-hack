@@ -99,6 +99,8 @@ describe("Distances in curly braces", function () {
     "{2:3.2} run",
     "{13.1:21.1}",
     "{8-9:13-14} easy",
+    "{1-3:1.6-4.8} run",
+    "{2.5-3.5:4-5.6} easy",
     "{5} run, then {2:3.2} fast",
     "Half Marathon ({13.1:21.1})",
     "First line\nSecond line {3}",
@@ -108,8 +110,11 @@ describe("Distances in curly braces", function () {
   });
 
   it.each([
-    "{1-3:1.6-4.8} run",
     "{1-3} run",
+    "{1.5-3} run",
+    "{1.-3:2-5} run",
+    "{.5-1:1-2} run",
+    "{1-3:2-} run",
     "{} run",
     "{five} run",
     "{5:} run",
@@ -136,13 +141,13 @@ describe("Distances in curly braces", function () {
         "  - workouts:",
         "",
       ].join("\n") +
-        day("{1-3:1.6-4.8} run") +
+        day("{1-3} run") +
         day("Rest").repeat(6),
     );
     expect(result.success).toBe(false);
     expect(result.error).toContain(
-      '/schedule/0/workouts/0/title "{1-3:1.6-4.8} run" is not in the expected format.',
+      '/schedule/0/workouts/0/title "{1-3} run" is not in the expected format.',
     );
-    expect(result.error).toContain("whole numbers only");
+    expect(result.error).toContain("{8-9:13-14} or {1-3:1.6-4.8} is a range");
   });
 });
