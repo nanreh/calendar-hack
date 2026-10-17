@@ -7,9 +7,7 @@ interface Props {
 export const Dateline = ({ $date }: Props) => {
   return (
     <>
-      <div className="dateline">
-        {format($date)}
-      </div>
+      <div className="dateline">{format($date)}</div>
     </>
   );
 };

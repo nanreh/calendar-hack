@@ -1,0 +1,101 @@
+{
+    "description": "Plan schema v1",
+    "$id": "https://defy.org/plan/v1",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "schemaVersion": {
+            "type": "integer",
+            "const": 1
+        },
+        "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        },
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "type": {
+            "enum": [
+                "Base",
+                "Multiple Distances",
+                "Marathon",
+                "Half Marathon",
+                "5K",
+                "10K",
+                "15K/10M",
+                "50K",
+                "100K",
+                "100M"
+            ]
+        },
+        "units": {
+            "enum": [
+                "mi",
+                "km"
+            ]
+        },
+        "source": {
+            "type": "string"
+        },
+        "schedule": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/week"
+            },
+            "minItems": 1
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description",
+        "units",
+        "source",
+        "type",
+        "schedule"
+    ],
+    "definitions": {
+        "week": {
+            "type": "object",
+            "properties": {
+                "description": {"type": "string"},
+                "workouts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/workout"
+                    },
+                    "minItems": 7,
+                    "maxItems": 7
+                }
+            },
+            "required": [
+                "workouts"
+            ]
+        },
+        "workout": {
+            "type": "object",
+            "properties": {
+                "title": {"type": "string"},
+                "description": {"type": "string"},
+                "distance": {
+                    "anyOf": [
+                      { "type": "number" },
+                      {
+                        "type": "array",
+                        "items": { "type": "number" },
+                        "minItems": 2,
+                        "maxItems": 2
+                      }
+                    ]
+                  }
+            },
+            "required": [
+                "title"
+            ]
+        }
+    }
+}

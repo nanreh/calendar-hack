@@ -1,7 +1,7 @@
 import React from "react";
 import { IconContext } from "react-icons";
 import { Radio } from "./Radios";
-import { Units } from "types/app";
+import type { Units } from "types/app";
 
 interface Props {
   units: Units;

@@ -1,4 +1,3 @@
-
 interface Props {
   viewBox?: string;
 }

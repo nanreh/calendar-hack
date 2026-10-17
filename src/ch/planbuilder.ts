@@ -1,7 +1,9 @@
 import { eachDayOfInterval } from "date-fns";
-import { calcPlanDates, WeekStartsOn } from "./datecalc";
-import { DateGrid, RacePlan } from "./dategrid";
-import {
+import type { WeekStartsOn } from "./datecalc";
+import { calcPlanDates } from "./datecalc";
+import type { RacePlan } from "./dategrid";
+import { DateGrid } from "./dategrid";
+import type {
   DayDetails,
   dayOfWeek,
   PlannedWorkout,
@@ -13,7 +15,8 @@ function renderDayDetails(
   sourceUnits: Units,
   plannedWorkout: PlannedWorkout | undefined,
 ): DayDetails | undefined {
-  if (plannedWorkout) {
+  // a workout with a blank title is a placeholder for a day with nothing planned
+  if (plannedWorkout && plannedWorkout.title.trim() !== "") {
     return {
       title: plannedWorkout.title,
       desc: plannedWorkout.description,

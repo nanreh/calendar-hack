@@ -2,6 +2,8 @@ export type PlanSummary = [string, string, RaceType];
 
 export type Units = "mi" | "km";
 
+export type PlanMode = "select" | "byop";
+
 export interface PlanDates {
   start: Date; // first day of first week we will render
   planStartDate: Date; // day the race plan will start
@@ -22,7 +24,10 @@ export type RaceType =
   | "Half Marathon"
   | "5K"
   | "10K"
-  | "15K/10M";
+  | "15K/10M"
+  | "50K"
+  | "100K"
+  | "100M";
 
 export type RaceDistance = {
   name: string;
@@ -34,7 +39,7 @@ export interface PlannedWorkout {
   title: string;
   description: string;
   tags: Tags[];
-  distance: number[];
+  distance: WorkoutDistance;
   units: Units;
 }
 
@@ -55,6 +60,7 @@ export interface TrainingPlan {
 
 export type Tags =
   | "Rest"
+  | "Easy Run"
   | "Run"
   | "Cross Train"
   | "Hills"
@@ -62,11 +68,14 @@ export type Tags =
   | "Long Run"
   | "Race";
 
+// A workout's distance in the plan's units: [] for none, [value], or a [low, high] range.
+export type WorkoutDistance = number[];
+
 export interface DayDetails {
   title: string;
   desc: string;
   tags: Tags[];
-  dist: number[];
+  dist: WorkoutDistance;
   sourceUnits: Units;
 }
 

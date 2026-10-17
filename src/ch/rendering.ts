@@ -1,5 +1,5 @@
 import * as moo from "moo";
-import { Week, DayDetails, Units } from "types/app";
+import type { Week, DayDetails, Units } from "types/app";
 
 export function kmToMiles(value: number): number {
   return value * 0.62137;
@@ -9,25 +9,21 @@ export function miToKm(value: number): number {
   return value / 0.62137;
 }
 
-export function getWeekDistance(week: Week<DayDetails>, units: Units): number[] {
+// Total distance for a week in the plan's source units: [total], or [min, max] when any day is a range.
+export function sumWeekDistance(week: Week<DayDetails>): number[] {
   let min = 0;
   let max = 0;
   let hasRange = false;
 
   for (const day of week.days) {
     const e = day.event;
-    if (!e || !e.dist) continue;
+    if (!e || !e.dist || e.dist.length === 0) continue;
 
-    if (typeof e.dist === "number") {
-      const dist = units === "mi" ? e.dist : miToKm(e.dist);
-      min += dist;
-      max += dist;
-    } else if (Array.isArray(e.dist) && e.dist.length === 2) {
-      let [lo, hi] = e.dist;
-      if (units === "km") {
-        lo = miToKm(lo);
-        hi = miToKm(hi);
-      }
+    if (e.dist.length === 1) {
+      min += e.dist[0];
+      max += e.dist[0];
+    } else if (e.dist.length === 2) {
+      const [lo, hi] = e.dist;
       min += lo;
       max += hi;
       hasRange = true;
@@ -36,6 +32,16 @@ export function getWeekDistance(week: Week<DayDetails>, units: Units): number[] 
   return hasRange ? [min, max] : [max];
 }
 
+// Total distance for a week converted from the plan's source units to the given units.
+export function getWeekDistance(
+  week: Week<DayDetails>,
+  units: Units,
+): number[] {
+  const dist = sumWeekDistance(week);
+  const sourceUnits = week.days.find((d) => d.event)?.event?.sourceUnits;
+  if (!sourceUnits || sourceUnits === units) return dist;
+  return dist.map(sourceUnits === "mi" ? miToKm : kmToMiles);
+}
 
 export function renderDist(value: number[], from: Units, to: Units): string {
   function convert(val: number): number {
@@ -53,14 +59,13 @@ export function renderDist(value: number[], from: Units, to: Units): string {
     }
     if (value.length === 2) {
       const [v1, v2] = value.map(convert);
-      return format(v1) +  "-" + format(v2) + " " + to;
+      return format(v1) + "-" + format(v2) + " " + to;
     }
   }
   return "";
 }
 
-
-let dlexer = moo.compile({
+const dlexer = moo.compile({
   with_range: [
     {
       match: /{\d+-\d+:\d+-\d+}/,
@@ -100,18 +105,20 @@ function handle_conversions(input: string, from: Units, to: Units): string {
     } else if (t.type === "with_conversion") {
       // e.g. {9:14}
       const [fromVal, toVal] = t.value.split(":").map(Number);
-      const out = from === to
-        ? renderDist([fromVal], from, from)
-        : renderDist([toVal], to, to);
+      const out =
+        from === to
+          ? renderDist([fromVal], from, from)
+          : renderDist([toVal], to, to);
       result += out;
     } else if (t.type === "with_range") {
       // e.g. {8-9:13-14}
       const [fromRange, toRange] = t.value.split(":");
       const [fromStart, fromEnd] = fromRange.split("-").map(Number);
       const [toStart, toEnd] = toRange.split("-").map(Number);
-      const out = from === to
-        ? renderDist([fromStart, fromEnd], from, from)
-        : renderDist([toStart, toEnd], to, to);
+      const out =
+        from === to
+          ? renderDist([fromStart, fromEnd], from, from)
+          : renderDist([toStart, toEnd], to, to);
       result += out;
     } else {
       result += t.value;
@@ -131,7 +138,7 @@ export function render(
   to: Units,
 ): [string, string] {
   // [title, desc]
-  let title = handle_conversions(input.title, from, to);
-  let desc = handle_conversions(input.desc, from, to);
+  const title = handle_conversions(input.title, from, to);
+  const desc = handle_conversions(input.desc, from, to);
   return [title, desc];
 }

@@ -1,4 +1,3 @@
-
 /**
  * Download calendar using the saveAs function from filesave.js
  * @param  {string} filename Filename
@@ -11,7 +10,7 @@ export function download(events: string, filename: string, ext: string) {
 
   ext = typeof ext !== "undefined" ? ext : ".ics";
   filename = typeof filename !== "undefined" ? filename : "calendar";
-  var blob = new Blob([events], { type: "text/x-vCalendar;charset=utf8;" });
+  const blob = new Blob([events], { type: "text/x-vCalendar;charset=utf8;" });
   downloadBlob(blob, `${filename}.${ext}`);
 }
 

@@ -19,7 +19,8 @@ export const Radio = ({
 }: Props) => {
   return (
     <label htmlFor={id}>
-      <input className="radio-input"
+      <input
+        className="radio-input"
         id={id}
         name={name}
         type="radio"

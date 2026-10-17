@@ -6,7 +6,7 @@ import {
   differenceInCalendarDays,
 } from "date-fns";
 
-import { dayOfWeek, PlanDates } from "types/app";
+import type { dayOfWeek, PlanDates } from "types/app";
 
 export const WeekStartsOnValues = {
   Sunday: 0,
@@ -34,7 +34,7 @@ export function calcPlanDates(
     throw new Error("total days %7 !==0: " + totalDays);
   }
   const weekCount = totalDays / 7;
-  let result = {
+  const result = {
     start: start,
     planStartDate: planStartsOn,
     planEndDate: planEndsOn, // before or on race day
