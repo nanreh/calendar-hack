@@ -1,3 +1,4 @@
+schemaVersion: 1
 id: higdon_int_5k
 name: 'Hal Higdon: 5K Intermediate'
 description: "Hal Higdon: 5K Intermediate: \"This Intermediate 5K Training Plan
@@ -18,7 +19,7 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "5 x 400 1-mile pace"
-  - distance: 3.0
+    distance: 2.5
   - title: '{3:4.8} run'
     distance: 3
   - title: Rest
@@ -30,8 +31,8 @@ schedule:
   - title: Rest
   - title: '{3:4.8} run'
     distance: 3
-  - title: "30 Min Tempo"
-    distance: 3.0
+  - title: "30 min tempo"
+    distance: 3
   - title: '{3:4.8} run'
     distance: 3
   - title: Rest
@@ -44,7 +45,7 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "6 x 400 1-mile pace"
-  - distance: 3.0
+    distance: 3
   - title: '{3:4.8} run'
     distance: 3
   - title: Rest
@@ -56,7 +57,7 @@ schedule:
   - title: Rest
   - title: '{3:4.8} run'
     distance: 3
-  - title: "35 Min Tempo"
+  - title: "35 min tempo"
     distance: 3.5
   - title: '{3:4.8} run'
     distance: 3
@@ -69,7 +70,7 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "7 x 400 1-mile pace"
-  - distance: 4.0
+    distance: 3.5
   - title: '{3:4.8} run'
     distance: 3
   - title: Rest
@@ -81,8 +82,8 @@ schedule:
   - title: Rest
   - title: '{3:4.8} run'
     distance: 3
-  - title: "40 Min Tempo"
-    distance: 4.0
+  - title: "40 min tempo"
+    distance: 4
   - title: '{3:4.8} run'
     distance: 3
   - title: Rest
@@ -95,7 +96,7 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "8 x 400 1-mile pace"
-  - distance: 4.0
+    distance: 4
   - title: '{3:4.8} run'
     distance: 3
   - title: Rest
@@ -106,11 +107,11 @@ schedule:
 - workouts: # week 8
   - title: Rest
   - title: '{3:4.8} run'
-    distance: 1.5
-  - title: "30 Min Tempo"
-    distance: 3.0
+    distance: 3
+  - title: "30 min tempo"
+    distance: 3
   - title: '{2:3.2} run'
-    distance: 1.5
+    distance: 2
   - title: Rest
   - title: Rest
   - title: '5K Race ({3.1:5})'

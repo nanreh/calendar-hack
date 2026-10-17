@@ -1,3 +1,4 @@
+schemaVersion: 1
 id: higdon_adv_5k
 name: 'Hal Higdon: 5K Advanced'
 description: "Hal Higdon: 5K Advanced: \"If you are a seasoned veteran of the
@@ -19,9 +20,10 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "5 x 400 1-mile pace"
+    distance: 2.5
   - title: Rest or easy run
-  - title: "30 Min Tempo"
-    distance: 3.0
+  - title: "30 min tempo"
+    distance: 3
   - title: Rest
   - title: '{4:6.4} fast'
     distance: 4
@@ -31,9 +33,10 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "8 x 200 800m pace"
+    distance: 2
   - title: Rest or easy run
-  - title: "30 Min Tempo"
-    distance: 3.0
+  - title: "30 min tempo"
+    distance: 3
   - title: Rest
   - title: '{4:6.4} fast'
     distance: 4
@@ -43,8 +46,9 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "6 x 400 1-mile pace"
+    distance: 3
   - title: Rest or easy run
-  - title: "35 Min Tempo"
+  - title: "35 min tempo"
     distance: 3.5
   - title: Rest
   - title: '{5:8.1} fast'
@@ -55,8 +59,9 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "9 x 200 800m pace"
+    distance: 2.25
   - title: Rest or easy run
-  - title: "35 Min Tempo"
+  - title: "35 min tempo"
     distance: 3.5
   - title: Rest or easy run
   - title: Rest
@@ -66,9 +71,10 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "7 x 400 1-mile pace"
+    distance: 3.5
   - title: Rest or easy run
-  - title: "40 Min Tempo"
-    distance: 4.0
+  - title: "40 min tempo"
+    distance: 4
   - title: Rest
   - title: '{5:8.1} fast'
     distance: 5
@@ -78,9 +84,10 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "10 x 200 800m pace"
+    distance: 2.5
   - title: Rest or easy run
-  - title: "40 Min Tempo"
-    distance: 4.0
+  - title: "40 min tempo"
+    distance: 4
   - title: Rest
   - title: '{6:9.7} fast'
     distance: 6
@@ -90,8 +97,9 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3
   - title: "8 x 400 1-mile pace"
+    distance: 4
   - title: Rest or easy run
-  - title: "45 Min Tempo"
+  - title: "45 min tempo"
     distance: 4.5
   - title: Rest
   - title: '{6:9.7} fast'
@@ -99,11 +107,12 @@ schedule:
   - title: "90 min run"
     distance: 9
 - workouts: # week 8
-  - title: '{3:4.8} run'
-    distance: 3
+  - title: '{2:3.2} run'
+    distance: 2
   - title: "6 x 200 800m pace"
-  - title: "30 Min Tempo"
-    distance: 3.0
+    distance: 1.5
+  - title: "30 min tempo"
+    distance: 3
   - title: Rest or easy run
   - title: Rest
   - title: Rest
