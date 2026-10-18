@@ -50,18 +50,18 @@ schedule:
   - title: Rest
   - title: '{5:8.1} pace'
     distance: 5.0
-  - title: '{6:8.7}'
+  - title: '{6:9.7}'
     distance: 6.0
 - workouts:
   - title: Cross
   - title: '{3:4.8} run'
     distance: 3.0
-  - title: '{6:8.7} run'
+  - title: '{6:9.7} run'
     distance: 6.0
   - title: '{3:4.8} run'
     distance: 3.0
   - title: Rest
-  - title: '{6:8.7} pace'
+  - title: '{6:9.7} pace'
     distance: 6.0
   - title: '{11:17.7}'
     distance: 11.0
@@ -69,12 +69,12 @@ schedule:
   - title: Cross
   - title: '{3:4.8} run'
     distance: 3.0
-  - title: '{6:8.7} run'
+  - title: '{6:9.7} run'
     distance: 6.0
   - title: '{3:4.8} run'
     distance: 3.0
   - title: Rest
-  - title: '{6:8.7} run'
+  - title: '{6:9.7} run'
     distance: 6.0
   - title: '{12:19.3}'
     distance: 12.0
@@ -87,7 +87,7 @@ schedule:
   - title: '{3:4.8} run'
     distance: 3.0
   - title: Rest
-  - title: '{6:8.7} pace'
+  - title: '{6:9.7} pace'
     distance: 6.0
   - title: '{9:14.5}'
     distance: 9.0
@@ -211,7 +211,7 @@ schedule:
   - title: Cross
   - title: '{5:8.1} run'
     distance: 5.0
-  - title: '{6:8.7} run'
+  - title: '{6:9.7} run'
     distance: 6.0
   - title: '{5:8.1} run'
     distance: 5.0

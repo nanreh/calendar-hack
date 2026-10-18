@@ -16,7 +16,7 @@ schedule:
   - title: Rest
   - title: '{3:4.8} run'
     distance: 3.0
-  - title: '{2:3.2} run'
+  - title: '{2:3.2} run or cross'
     distance: 2.0
   - title: '{3:4.8} run'
     distance: 3.0
@@ -28,7 +28,7 @@ schedule:
   - title: Rest
   - title: '{3:4.8} run'
     distance: 3.0
-  - title: '{2:3.2} run'
+  - title: '{2:3.2} run or cross'
     distance: 2.0
   - title: '{3:4.8} run'
     distance: 3.0
@@ -40,7 +40,7 @@ schedule:
   - title: Rest
   - title: '{3.5:5.6} run'
     distance: 3.5
-  - title: '{2:3.2} run'
+  - title: '{2:3.2} run or cross'
     distance: 2.0
   - title: '{3.5:5.6} run'
     distance: 3.5
@@ -52,7 +52,7 @@ schedule:
   - title: Rest
   - title: '{3.5:5.6} run'
     distance: 3.5
-  - title: '{2:3.2} run'
+  - title: '{2:3.2} run or cross'
     distance: 2.0
   - title: '{3.5:5.6} run'
     distance: 3.5
@@ -64,7 +64,7 @@ schedule:
   - title: Rest
   - title: '{4:6.4} run'
     distance: 4.0
-  - title: '{2:3.2} run'
+  - title: '{2:3.2} run or cross'
     distance: 2.0
   - title: '{4:6.4} run'
     distance: 4.0
@@ -76,7 +76,7 @@ schedule:
   - title: Rest
   - title: '{4:6.4} run'
     distance: 4.0
-  - title: '{2:3.2} run'
+  - title: '{2:3.2} run or cross'
     distance: 2.0
   - title: '{4:6.4} run'
     distance: 4.0
@@ -88,7 +88,7 @@ schedule:
   - title: Rest
   - title: '{4.5:7.2} run'
     distance: 4.5
-  - title: '{3:4.8} run'
+  - title: '{3:4.8} run or cross'
     distance: 3.0
   - title: '{4.5:7.2} run'
     distance: 4.5
@@ -100,7 +100,7 @@ schedule:
   - title: Rest
   - title: '{4.5:7.2} run'
     distance: 4.5
-  - title: '{3:4.8} run'
+  - title: '{3:4.8} run or cross'
     distance: 3.0
   - title: '{4.5:7.2} run'
     distance: 4.5
@@ -112,7 +112,7 @@ schedule:
   - title: Rest
   - title: '{5:8.0} run'
     distance: 5.0
-  - title: '{3:4.8} run'
+  - title: '{3:4.8} run or cross'
     distance: 3.0
   - title: '{5:8.0} run'
     distance: 5.0
@@ -124,7 +124,7 @@ schedule:
   - title: Rest
   - title: '{5:8.0} run'
     distance: 5.0
-  - title: '{3:4.8} run'
+  - title: '{3:4.8} run or cross'
     distance: 3.0
   - title: '{5:8.0} run'
     distance: 5.0
@@ -136,7 +136,7 @@ schedule:
   - title: Rest
   - title: '{5:8.0} run'
     distance: 5.0
-  - title: '{3:4.8} run'
+  - title: '{3:4.8} run or cross'
     distance: 3.0
   - title: '{5:8.0} run'
     distance: 5.0
@@ -148,7 +148,7 @@ schedule:
   - title: Rest
   - title: '{4:6.4} run'
     distance: 4.0
-  - title: '{3:4.6} run'
+  - title: '{3:4.8} run or cross'
     distance: 3.0
   - title: '{2:3.2} run'
     distance: 2.0

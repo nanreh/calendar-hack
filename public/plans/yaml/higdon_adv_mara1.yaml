@@ -33,7 +33,7 @@ schedule:
     distance: 3.0
   - title: 30 tempo
   - title: Rest
-  - title: '{5:8.1} pace'
+  - title: '{5:8.1} run'
     distance: 5.0
   - title: '{11:17.7}'
     distance: 11.0

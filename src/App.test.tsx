@@ -386,14 +386,14 @@ describe("App with a goal race", function () {
     );
     await screen.findByText("race on");
 
-    // this plan has no race in it, so the date is its last day
+    // this plan has no goal race, so the date is its last day
     await userEvent.selectOptions(
       container.querySelector("select")!,
-      "(Marathon) Hansons Beginner Marathon",
+      "(5K) Couch to 5K -- Runner's Blueprint",
     );
 
     expect(await screen.findByText("ending on")).toBeInTheDocument();
-    expect(cardOn(container, "4/15/2030")).toHaveTextContent("Plan Ends");
+    expect(cardOn(container, "4/15/2030")).toHaveTextContent("Rest");
     let params = new URLSearchParams(window.location.search);
     expect(params.get("d")).toBe("2030-04-15");
     expect(params.has("r")).toBe(false);

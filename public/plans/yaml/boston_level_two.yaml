@@ -170,8 +170,8 @@ schedule:
 
           3 x 3 miles at MP with 2-3 minutes rest
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {13}"
+        distance: 13
       - title: 8-10 mile Easy Run {10}
         distance: 10
   - workouts:
@@ -226,8 +226,8 @@ schedule:
 
           3 x 2 miles at HM with 3 minutes jog
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: Off Day
       - title: 12-14 mile Aerobic Run {14}
         distance: 14
@@ -310,8 +310,8 @@ schedule:
 
           2 x 3 miles at HM with 3 minutes jog
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-5 mile Easy Run {5}
         distance: 5
       - title: "13-16 miles, consisting of:
@@ -345,8 +345,8 @@ schedule:
 
           10 miles at MP (start a little slower and finish faster)
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {14}"
+        distance: 14
       - title: 7 mile Easy Run {7}
         distance: 7
   - workouts:
@@ -407,8 +407,8 @@ schedule:
 
           2 x 5 miles at MP with 5 minutes jog between
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {14}"
+        distance: 14
       - title: 8-10 mile Easy Run {10}
         distance: 10
   - workouts:
@@ -430,8 +430,8 @@ schedule:
 
           6 mile cutdown at MP (start a little slower & increase the pace every 2 miles)
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-5 mile Easy Run {5}
         distance: 5
       - title: 11-13 mile Easy Run {13}
@@ -510,8 +510,8 @@ schedule:
 
           2 x (2 miles at HM on/ 1 miles easy)
 
-          2 mile Warm Down {2}"
-        distance: 2
+          2 mile Warm Down {8}"
+        distance: 8
       - title: Off Day
       - title: 7-8 mile Easy Run {8}
         distance: 8

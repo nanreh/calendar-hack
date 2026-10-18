@@ -116,7 +116,7 @@ schedule:
   - title: Rest
   - title: Rest
   - title: 5-K Race
-    distance: 0
+    distance: 3.1
 - workouts:
   - title: Rest
   - title: '{7:11.3} run'
@@ -150,11 +150,11 @@ schedule:
   - title: 'Bike: 45 min'
     distance: 0
   - title: '{6:9.7} run'
-    distance: 0
+    distance: 6.0
   - title: Rest
   - title: Rest
   - title: 10-K Race
-    distance: 0
+    distance: 6.2
 - workouts:
   - title: Rest
   - title: '{8:12.9} run'
@@ -256,7 +256,7 @@ schedule:
   - title: Rest
   - title: Rest
   - title: 10-K Race
-    distance: 0
+    distance: 6.2
 - workouts:
   - title: Rest
   - title: '{10:16.1} run'
@@ -307,4 +307,5 @@ schedule:
   - title: 1-{2:3.2} run
     distance: 2.0
   - title: Marathon ({26.2:42.2})
+    distance: 26.2
     goalRace: true
