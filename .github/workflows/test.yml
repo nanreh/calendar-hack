@@ -64,8 +64,12 @@ jobs:
           --cache-control "public, max-age=31536000, immutable"
       # Everything else (pages, plans, icons) replaces what is there, and files no longer in the
       # build are removed.
+      # Browsers check for a new version of these on every load (max-age=0), and CloudFront keeps
+      # them for a day (s-maxage), until the invalidation below clears them.
       - name: Upload pages and other files
-        run: aws s3 sync dist/ "$TARGET/" --delete --exclude "assets/*"
+        run: >-
+          aws s3 sync dist/ "$TARGET/" --delete --exclude "assets/*"
+          --cache-control "public, max-age=0, s-maxage=86400"
       - name: Invalidate CloudFront
         run: >-
           aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION"
