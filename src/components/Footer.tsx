@@ -7,6 +7,8 @@ const Footer = () => {
       <a rel="me" href="https://sfba.social/@nanreh">
         mastodon
       </a>
+      <br />
+      <a href="/">← defy.org</a>
     </div>
   );
 };
