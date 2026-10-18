@@ -82,8 +82,8 @@ schedule:
 
           5 x 200 at 5k Pace with 30 seconds rest
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: 6-7 mile Aerobic Run {7}
@@ -96,8 +96,8 @@ schedule:
 
           4 x 2 miles at MP with 2-3 minutes rest
 
-          1-2 mile Warm Down {1}"
-        distance: 1
+          1-2 mile Warm Down {15}"
+        distance: 15
       - title: 7-10 mile Easy Run {10}
         distance: 10
   - workouts:
@@ -186,8 +186,8 @@ schedule:
 
           3 x 4 miles at MP with 2-3 minutes rest
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {16}"
+        distance: 16
       - title: 9-11 mile Easy Run {11}
         distance: 11
   - workouts:
@@ -246,8 +246,8 @@ schedule:
 
           3 x 2 miles at HM with 3 minutes jog
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: 15-17 mile Aerobic Run {17}
@@ -300,8 +300,8 @@ schedule:
 
           1 mile at 10k pace
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title:
@@ -336,8 +336,8 @@ schedule:
 
           2 x 3 miles at HM with 3 minutes jog
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: "14-16 miles, consisting of:
@@ -358,8 +358,8 @@ schedule:
 
           90 seconds rest between sets
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: 5-7 mile Aerobic Run {7}
@@ -372,8 +372,8 @@ schedule:
 
           10 miles at MP (start a little slower and finish faster)
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {14}"
+        distance: 14
       - title: 9-11 mile Easy Run {11}
         distance: 11
   - workouts:
@@ -424,8 +424,8 @@ schedule:
 
           90 seconds rest between sets
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: 5-7 mile Aerobic Run {7}
@@ -438,8 +438,8 @@ schedule:
 
           2 x 6 miles at MP with 5 minutes jog between reps
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {16}"
+        distance: 16
       - title: 9-11 mile Easy Run {11}
         distance: 11
   - workouts:
@@ -466,8 +466,8 @@ schedule:
 
           (start a little slower & increase the pace every 2 miles)
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {12}"
+        distance: 12
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: 18-21 mile Aerobic Run {21}
@@ -482,8 +482,8 @@ schedule:
 
           2 minutes rest between sets
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: 4-6 mile Easy Run {6}
@@ -494,8 +494,8 @@ schedule:
 
           6 mile tempo at HMP
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title:
@@ -516,8 +516,8 @@ schedule:
 
           3 x (2k at HM, 1k at 10k) all with 2 minutes rest
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 4-6 mile Easy Run {6}
         distance: 6
       - title: 5-7 mile Aerobic Run {7}
@@ -555,8 +555,8 @@ schedule:
 
           2 x (3 miles at HM on/ 1 miles easy)
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {10}"
+        distance: 10
       - title: 3-5 mile Easy Run {5}
         distance: 5
       - title: 8-11 mile Easy Run {11}

@@ -1,96 +1,100 @@
 schemaVersion: 1
 id: c25k_rbp
 name: Runner's Blueprint Couch to 5K
-description: Popular 8 week "Couch to 5K" plan from Runner's Blueprint.
+description: >-
+  Runner's Blueprint's 8-week "Couch to 5K" run-walk plan: three workouts a week,
+  on days with a rest day between them. Every workout starts with a 5-minute brisk walk and
+  ends with a 5-minute cool-down walk. Run at an easy pace, and repeat any week that feels too
+  hard.
 units: km
 source: https://www.runnersblueprint.com/couch-to-5k/
 type: 5K
 schedule:
 - workouts:
-  - title: 'Session I, Workout Time: 20 min'
-    description: A 5-min brisk walk followed by a 30-sec jog and a 90-sec walk. Repeat 5 times.
+  - title: 'Run 1 min / walk 1.5-2 min x 6'
+    description: 'Walk briskly for 5 minutes, then run 1 minute, walk 90 seconds to 2 minutes. Repeat 6 times. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session II, Workout Time: 20 min'
-    description: A 5-min brisk walk followed by a 30-sec jog, and one-min walk. Repeat 6 times.
+  - title: 'Run 1 min / walk 2 min x 8'
+    description: 'Walk briskly for 5 minutes, then run 1 minute, walk 2 minutes. Repeat 8 times. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session III, Workout Time: 30 min'
-    description: A 5-min brisk walk followed by a 30-sec jog and a one-min walk. Repeat 8 times.
-  - title: Rest
-  - title: Rest
-- workouts:
-  - title: 'Session I, Workout Time: 20 min'
-    description: A 5-min brisk walk followed by a one-min jog and a one-min walk. Repeat 8 times.
-  - title: Rest
-  - title: 'Session II, Workout Time: 20 min'
-    description: A 5-min brisk walk followed by a one-min jog and 30-sec walk. Repeat 10 times.
-  - title: Rest
-  - title: 'Session III, Workout Time: 30 min'
-    description: A 5-min brisk walk followed by a one-min jog and a 30-sec walk. Repeat 15 times.
+  - title: 'Run 1 min / walk 1 min x 10'
+    description: 'Walk briskly for 5 minutes, then run 1 minute, walk 1 minute. Repeat 10 times. Walk for 5 minutes to cool down.'
   - title: Rest
   - title: Rest
 - workouts:
-  - title: 'Session I, Workout Time: 25 min'
-    description: A 5-min brisk walk followed by a two-min jog and a one-min walk. Repeat 7 times.
+  - title: 'Run 2 min / walk 2 min x 5'
+    description: 'Walk briskly for 5 minutes, then run 2 minutes, walk 2 minutes. Repeat 5 times. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session II, Workout Time: 25 min'
-    description: A 5-min brisk walk followed by a two-min jog and 30-sec walk. Repeat 8 times.
+  - title: 'Run 3 min / walk 2 min x 4'
+    description: 'Walk briskly for 5 minutes, then run 3 minutes, walk 2 minutes. Repeat 4 times. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session III, Workout Time: 30 min'
-    description: A 5-min brisk walk followed by a three-min jog and a one-min walk. Repeat 7 times.
-  - title: Rest
-  - title: Rest
-- workouts:
-  - title: 'Session I, Workout Time: 30 min'
-    description: A 5-min brisk walk followed by a three-min jog and a one-min walk. Repeat 7 times.
-  - title: Rest
-  - title: 'Session II, Workout Time: 30 min'
-    description: A 5-min brisk walk followed by a four-min jog and one-min walk. Repeat 5 times.
-  - title: Rest
-  - title: 'Session III, Workout Time: 30 min'
-    description: A 5-min brisk walk followed by a four-min jog and a 30-sec walk. Repeat 5 times.
+  - title: 'Run 3 min / walk 1 min x 5'
+    description: 'Walk briskly for 5 minutes, then run 3 minutes, walk 1 minute. Repeat 5 times. Walk for 5 minutes to cool down.'
   - title: Rest
   - title: Rest
 - workouts:
-  - title: 'Session I, Workout Time: 20 min'
-    description: A 5-min brisk walk followed by a 6-min jog and a one-min walk. Repeat 3 times.
+  - title: 'Run 5 min / walk 3 min x 3'
+    description: 'Walk briskly for 5 minutes, then run 5 minutes, walk 3 minutes. Repeat 3 times. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session II, Workout Time: 25 min'
-    description: A 5-min brisk walk followed by a 7-min jog and one-min walk. Repeat 3 times.
+  - title: 'Run 5 min / walk 2 min x 3'
+    description: 'Walk briskly for 5 minutes, then run 5 minutes, walk 2 minutes. Repeat 3 times. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session III, Workout Time: 25 min'
-    description: A 5-min brisk walk followed by a 7-min jog and a 30-sec walk. Repeat 3 times.
-  - title: Rest
-  - title: Rest
-- workouts:
-  - title: 'Session I, Workout Time: 35 min'
-    description: A 5-min brisk walk followed by a 10-min jog and a one-min walk. Repeat 3 times.
-  - title: Rest
-  - title: 'Session II, Workout Time: 30 min'
-    description: A 5-min brisk walk followed by a 10-min jog and 30-sec walk. Repeat 3 times.
-  - title: Rest
-  - title: 'Session III, Workout Time: 35 min'
-    description: A 5-min brisk walk followed by a 15-min jog and a two-min walk. Repeat 2 times.
+  - title: 'Run 6 min / walk 2 min x 3'
+    description: 'Walk briskly for 5 minutes, then run 6 minutes, walk 2 minutes. Repeat 3 times. Walk for 5 minutes to cool down.'
   - title: Rest
   - title: Rest
 - workouts:
-  - title: 'Session I, Workout Time: 40 min'
-    description: A 5-min brisk walk followed by a 20-min jog. Repeat 2 times.
+  - title: 'Run 8 min / walk 3 min x 2'
+    description: 'Walk briskly for 5 minutes, then run 8 minutes, walk 3 minutes. Repeat 2 times. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session II, Workout Time: 30 min'
-    description: A 5-min brisk walk followed by a 15-min jog. Repeat 2 times.
+  - title: 'Run 10 min / walk 2 min x 2'
+    description: 'Walk briskly for 5 minutes, then run 10 minutes, walk 2 minutes. Repeat 2 times. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session III, Workout Time: 45 min'
-    description: A 5-min brisk walk followed by a 20-min jog. Repeat 2 times.
+  - title: 'Run 12 min / walk 2 min x 2'
+    description: 'Walk briskly for 5 minutes, then run 12 minutes, walk 2 minutes. Repeat 2 times. Walk for 5 minutes to cool down.'
   - title: Rest
   - title: Rest
 - workouts:
-  - title: 'Session I, Workout Time: 50 min'
-    description: A 5-min brisk walk followed by a 15-min jog, walk for two min, jog for 10 min, walk for one min, jog for 15 min.
+  - title: 'Run 15 min / walk 3 min / run 5 min'
+    description: 'Walk briskly for 5 minutes, then run 15 minutes, walk 3 minutes, then run 5 minutes. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: 'Session II, Workout Time: 40 min'
-    description: A 5-min brisk walk, jog for 25 min, walk for five min, jog for 15 min.
+  - title: 'Run 20 min nonstop'
+    description: 'Walk briskly for 5 minutes, then run 20 minutes nonstop. Walk for 5 minutes to cool down.'
   - title: Rest
-  - title: Session III, Run 5K
-    description: Run 5K -- 30 to 40 min. Jog at a slow and conversational pace.
+  - title: 'Run 8 min / walk 5 min / run 8 min'
+    description: 'Walk briskly for 5 minutes, then run 8 minutes, walk 5 minutes, then run 8 minutes. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: Rest
+- workouts:
+  - title: 'Run 20 min / walk 3 min / run 5 min'
+    description: 'Walk briskly for 5 minutes, then run 20 minutes, walk 3 minutes, then run 5 minutes. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: 'Run 22 min nonstop'
+    description: 'Walk briskly for 5 minutes, then run 22 minutes nonstop. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: 'Run 25 min nonstop'
+    description: 'Walk briskly for 5 minutes, then run 25 minutes nonstop. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: Rest
+- workouts:
+  - title: 'Run 26 min nonstop'
+    description: 'Walk briskly for 5 minutes, then run 26 minutes nonstop. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: 'Run 28 min nonstop'
+    description: 'Walk briskly for 5 minutes, then run 28 minutes nonstop. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: 'Run 30 min nonstop'
+    description: 'Walk briskly for 5 minutes, then run 30 minutes nonstop. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: Rest
+- workouts:
+  - title: 'Run 20 min easy'
+    description: 'Walk briskly for 5 minutes, then run 20 minutes easy. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: 'Run 10 min / walk 5 min / run 10 min'
+    description: 'Walk briskly for 5 minutes, then run 10 minutes, walk 5 minutes, then run 10 minutes. Walk for 5 minutes to cool down.'
+  - title: Rest
+  - title: 'Run your 5K'
+    description: 'Walk briskly for 5 minutes, then run your 5K race or solo 5K. Take a walk break if you need one. Walk for 5 minutes to cool down.'
   - title: Rest
   - title: Rest

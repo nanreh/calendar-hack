@@ -221,7 +221,7 @@ schedule:
     distance: 3.0
   - title: '{4:6.4} run'
     distance: 4.0
-  - title: '{2:4.8} run'
+  - title: '{2:3.2} run'
     distance: 2.0
   - title: Rest
   - title: Rest

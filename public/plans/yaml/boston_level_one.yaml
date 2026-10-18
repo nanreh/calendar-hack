@@ -42,8 +42,8 @@ schedule:
 
           90 seconds rest between sets
 
-          2-3 mile Warm Down {3}"
-        distance: 3
+          2-3 mile Warm Down {7}"
+        distance: 7
       - title: Cross Training or Strength Training
       - title: 4-5 mile Easy Run {5}
         distance: 5
@@ -152,8 +152,8 @@ schedule:
 
           4 x 2 miles at MP with 2-3 minutes rest
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {13}"
+        distance: 13
       - title: 4-6 mile Easy Run {6}
         distance: 6
   - workouts:
@@ -317,8 +317,8 @@ schedule:
 
           10 miles at MP (start a little slower and finish faster)
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {14}"
+        distance: 14
       - title: 5-6 mile Easy Run {6}
         distance: 6
   - workouts:
@@ -378,8 +378,8 @@ schedule:
 
           2 x 5 miles at MP with 5 minutes jog between reps
 
-          2 mile Warm Down {1}"
-        distance: 1
+          2 mile Warm Down {14}"
+        distance: 14
       - title: 5-7 mile Easy Run {7}
         distance: 7
   - workouts:

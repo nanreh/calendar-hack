@@ -145,7 +145,7 @@ schedule:
   - title: Rest
   - title: '{3:4.8} run'
     distance: 3.0
-  - title: '{2:3.2} run'
+  - title: '{2:3.2} pace'
     distance: 2.0
   - title: '{2:3.2} run'
     distance: 2.0

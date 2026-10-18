@@ -10,7 +10,7 @@ description: "Summary of the Hansons Marathon Method: \"Hansons Marathon Method 
   \ bodies and minds to run the hardest final miles of the marathon\u2014and finish\
   \ strong.\""
 units: mi
-source: https://hansons-running.com/pages/training-plans
+source: https://hansons-running.com/content/training-plans
 type: Marathon
 schedule:
 - workouts:
@@ -401,5 +401,6 @@ schedule:
     distance: 5.0
   - title: '{3} Easy'
     distance: 3.0
-  - title: Plan Ends
+  - title: Race Day!
     distance: 26.2
+    goalRace: true

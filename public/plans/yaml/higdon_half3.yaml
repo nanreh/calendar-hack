@@ -15,7 +15,7 @@ description: 'Hal Higdon: Half Marathon 3 (HM3): "Welcome to Half Marathon 3, or
   rest day with long runs on Saturdays and cross-training on Sundays, although you 
   can flipflop those workouts for convenience." (more details at the link below)'
 units: mi
-source: https://www.halhigdon.com/training-programs/half-marathon-training/half-marathon-3 
+source: https://www.halhigdon.com/training-programs/half-marathon-training/half-marathon-3/
 type: Half Marathon
 schedule:
 - workouts: # Week 1
@@ -81,6 +81,7 @@ schedule:
   - title: 'Rest or easy run'
   - title: 'Rest'
   - title: '5-K Race'
+    distance: 3.1
 - workouts: # Week 7
   - title: Rest
   - title: '{6:9.7} run'
@@ -112,6 +113,7 @@ schedule:
   - title: 'Rest or easy run'
   - title: 'Rest'
   - title: '10-K Race'
+    distance: 6.2
 - workouts: # Week 10
   - title: Rest
   - title: '{6:9.7} run'
