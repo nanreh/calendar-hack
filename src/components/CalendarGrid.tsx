@@ -150,6 +150,17 @@ export const CalendarGrid = ({
     units,
   );
 
+  // the finish flag's week: the week of the plan's goal race if it has one,
+  // otherwise the plan's final week
+  const goalRace = racePlan.goalRaceDate;
+  const raceWeekNum = goalRace
+    ? racePlan.dateGrid.weeks.findIndex((w) =>
+        w.days.some((d) => key(d.date) === key(goalRace)),
+      )
+    : -1;
+  const finishWeekNum =
+    raceWeekNum >= 0 ? raceWeekNum : racePlan.dateGrid.weekCount - 1;
+
   function getWeek(w: Week<DayDetails>, cumulativeDistance: number[]) {
     const weekDist = sumWeekDistance(w);
 
@@ -175,7 +186,7 @@ export const CalendarGrid = ({
           units={units}
           racePlan={racePlan}
           isFirstWeek={w.weekNum === 0}
-          isLastWeek={w.weekNum === racePlan.dateGrid.weekCount - 1}
+          isFinishWeek={w.weekNum === finishWeekNum}
           isHighestMileage={isHighestMileage}
           cumulativeDistance={cumulativeDistance}
         />
