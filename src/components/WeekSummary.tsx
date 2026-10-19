@@ -1,5 +1,5 @@
 import { renderDist, getWeekDistance } from "../ch/rendering";
-import StartIcon from "../svg/icons02/start.svg";
+import StartIcon from "../svg/icons02/greenFlag.svg";
 import FinishIcon from "../svg/icons02/finish.svg";
 import HighMileageIcon from "../svg/highMileage.svg";
 import type { RacePlan } from "../ch/dategrid";
@@ -11,7 +11,7 @@ interface Props {
   units: Units;
   racePlan: RacePlan;
   isFirstWeek: boolean;
-  isLastWeek: boolean;
+  isFinishWeek: boolean;
   isHighestMileage: boolean;
   cumulativeDistance: number[];
 }
@@ -20,7 +20,7 @@ export const WeekSummary = ({
   week,
   units,
   isFirstWeek,
-  isLastWeek,
+  isFinishWeek,
   isHighestMileage,
   cumulativeDistance,
 }: Props) => {
@@ -41,9 +41,11 @@ export const WeekSummary = ({
         </p>
       )}
       {isFirstWeek && <img src={StartIcon} alt={"Start"} />}
-      {isLastWeek && <img src={FinishIcon} alt="Finish" />}
-      {isHighestMileage && <img src={HighMileageIcon} alt="Highest Mileage" />}
-      {isHighestMileage && (
+      {isFinishWeek && <img src={FinishIcon} alt="Finish" />}
+      {!isFirstWeek && !isFinishWeek && isHighestMileage && (
+        <img src={HighMileageIcon} alt="Highest Mileage" />
+      )}
+      {!isFirstWeek && !isFinishWeek && isHighestMileage && (
         <p>
           <small>Highest Mileage</small>
         </p>
