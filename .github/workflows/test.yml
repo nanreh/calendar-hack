@@ -30,12 +30,16 @@ jobs:
           retention-days: 7
 
   # Deploys the build that was just tested to www.defy.org/hacks/calendarhack/. The AWS role it
-  # assumes can only be used from this repo's main branch, and can only change that folder of the
-  # site and invalidate it in CloudFront (see ops/github-deploy.tf in the defywww repo).
+  # assumes can only be used by jobs in the production environment, which only the main branch can
+  # deploy to, and can only change that folder of the site and invalidate it in CloudFront (see
+  # ops/github-deploy.tf in the defywww repo).
   deploy:
     needs: build
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://www.defy.org/hacks/calendarhack/
     # one deploy at a time, in order
     concurrency:
       group: deploy
